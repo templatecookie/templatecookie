@@ -16,6 +16,9 @@ module.exports = {
         "dark-06": "#061C3D",
         "dark-42": "#42526B",
         "gray-f5": "#F5F6F7",
+        "gray-b4": "#B4BBC5",
+        "gray-83": "#838E9E",
+        "gray-24": "#243752",
       },
       fontFamily: {
         lexend: ["Lexend", "sans-serif"],
@@ -27,6 +30,12 @@ module.exports = {
         body: ["18px", "26px"],
         "body-16": ["16px", "24px"],
         button: ["14px", "44px"],
+      },
+      maxWidth: {
+        1320: "1320px",
+      },
+      spacing: {
+        72: "72px",
       },
     },
   },

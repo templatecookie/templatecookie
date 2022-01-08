@@ -1,6 +1,26 @@
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap");
 
+// Tailwind css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .button {
+    @apply text-button capitalize font-medium bg-blue-0b overflow-hidden rounded  inline-block px-5;
+  }
+}
+
+@layer utilities {
+  body {
+    @apply font-lexend font-normal;
+  }
+  .container {
+    @apply mx-auto px-3  xl:max-w-1320;
+  }
+}
+
 // Toggle Button
 .toggle {
   width: 65px;
@@ -57,22 +77,36 @@
   }
 }
 
-// Tailwind css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+// footer Menu
+.footer-menu {
+  li {
+    a {
+      position: relative;
+      padding-left: 0px;
+      transition: all 0.2s linear;
+      &::before {
+        content: "";
+        width: 16px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: white;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        transition-delay: 0.1s;
+      }
 
-@layer components {
-  .button {
-    @apply text-button capitalize font-medium bg-blue-0b overflow-hidden rounded  inline-block px-5;
-  }
-}
+      &:hover {
+        padding-left: 28px;
 
-@layer utilities {
-  body {
-    @apply font-lexend font-normal;
-  }
-  .container {
-    @apply mx-auto px-3;
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
   }
 }
