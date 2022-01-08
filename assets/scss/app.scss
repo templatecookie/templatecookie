@@ -1,5 +1,4 @@
-body {
-  h2 {
-    display: none;
-  }
-}
+// Tailwind css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
