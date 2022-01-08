@@ -25,6 +25,8 @@ module.exports = {
         "heading-40": ["40px", "48px"],
         title: ["48px", "56px"],
         body: ["18px", "26px"],
+        "body-16": ["16px", "24px"],
+        button: ["14px", "44px"],
       },
     },
   },
