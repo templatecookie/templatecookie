@@ -19,16 +19,19 @@ module.exports = {
         "gray-b4": "#B4BBC5",
         "gray-83": "#838E9E",
         "gray-24": "#243752",
+        "gray-f0": "#F0F5FF",
       },
       fontFamily: {
         lexend: ["Lexend", "sans-serif"],
       },
       fontSize: {
         heading: ["72px", "80px"],
+        "heading-80": ["80px", "88px"],
         "heading-40": ["40px", "48px"],
         title: ["48px", "56px"],
         body: ["18px", "26px"],
         "body-16": ["16px", "24px"],
+        "body-17": ["17px", "24px"],
         button: ["14px", "44px"],
       },
       maxWidth: {
@@ -37,6 +40,12 @@ module.exports = {
       spacing: {
         72: "72px",
       },
+      letterSpacing: {
+        ls02: '-0.02em',
+      },
+      borderRadius: {
+        'br7': '7px',
+      }
     },
   },
   variants: {
