@@ -32,6 +32,7 @@ module.exports = {
         "green-e7": "#E7F5E8",
         "yellow-ff": "#FFF9EE",
         "pink-fe": "#FEEDFA",
+        "gray-cd": "#CDD2D8",
       },
       fontFamily: {
         lexend: ["Lexend", "sans-serif"],
@@ -58,6 +59,8 @@ module.exports = {
       maxWidth: {
         1320: "1320px",
         536: "536px",
+        680: "680px",
+        872: "872px",
       },
       height: {
         76: "76px",
@@ -68,9 +71,14 @@ module.exports = {
       spacing: {
         72: "72px",
       },
+      width: {
+        76: "76px",
+      },
       height: {
         190: "190px",
         296: "296px",
+        76: "76px",
+        48: "48px",
       },
       margin: {
         72: "72px",
@@ -84,6 +92,11 @@ module.exports = {
       },
       borderRadius: {
         7: "7px",
+        5: "5px",
+      },
+      boxShadow: {
+        bs8: "0px 12px 32px rgba(6, 28, 61, 0.08)",
+        bs08: "0px 16px 72px rgba(6, 28, 61, 0.08)",
       },
     },
   },
