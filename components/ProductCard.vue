@@ -27,13 +27,15 @@
         {{ text }}
       </p>
       <!-- actions content  -->
-      <div class="flex items-center justify-between">
+      <div
+        class="flex flex-col sm:flex-row items-end sm:items-center sm:justify-between"
+      >
         <!-- Purchase  -->
-        <div class="flex items-center space-x-3">
+        <div class="flex items-center space-x-3 order-2 sm:order-1">
           <div>
             <nuxt-link
               to="#"
-              class="flex items-center overflow-hidden px-8 text-button-17 border-1.5 border-blue-0b text-blue-0b rounded-lg group"
+              class="flex items-center overflow-hidden px-8 text-button-17 border-1.5 border-blue-0b text-blue-0b rounded-lg group whitespace-nowrap"
             >
               Learn More
               <span class="inline-block ml-3">
@@ -41,7 +43,7 @@
               </span>
             </nuxt-link>
           </div>
-          <div>
+          <div class="flex-shrink-0">
             <button
               class="inline-block overflow-hidden p-4 bg-gray-f5 hover:bg-gray-200 transition-all rounded-lg"
             >
@@ -50,7 +52,7 @@
           </div>
         </div>
         <!-- Price  -->
-        <div>
+        <div class="mb-4">
           <h5 class="text-body-24 font-normal uppercase text-pink-75">
             ${{ price }}
           </h5>

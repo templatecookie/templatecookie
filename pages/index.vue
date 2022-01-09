@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Featured Card  -->
-    <section class="featured py-124">
+    <section class="featured py-14 md:py-124">
       <div class="container">
         <!-- section title  -->
         <div class="mb-72 text-center">
@@ -29,7 +29,7 @@
     </section>
 
     <!-- Latest Product -->
-    <section class="latest py-124 pt-0">
+    <section class="latest py-14 md:py-124 pt-0">
       <div class="container">
         <!-- section title  -->
         <div class="mb-72 text-center">
