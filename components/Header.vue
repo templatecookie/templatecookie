@@ -35,12 +35,14 @@
 
       <!-- Toggole -->
       <div class="lg:hidden">
-        <div class="toggle">
+        <div>
           <span></span>
           <span></span>
           <span></span>
         </div>
       </div>
+
+      <!-- Mobile Navigation  -->
     </div>
   </header>
 </template>
