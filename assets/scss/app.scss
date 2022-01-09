@@ -110,3 +110,36 @@
     }
   }
 }
+
+
+// 
+
+
+.build-solution{
+  &:nth-child(2) .build-solution-wrap{
+    margin-top: 50px;
+    @media (max-width: 640px) {
+      margin: 0;
+    }
+    border: 2px solid #FCDBF4;
+    .icon{
+      background-color: #F249C8;
+    }
+  }
+  &:nth-child(3) .build-solution-wrap{
+    margin-top: -50px;
+    border: 2px solid #E3D6FF;
+     @media (max-width: 640px) {
+      margin: 0;
+    }
+    .icon{
+      background-color: #7534FF;
+    }
+  }
+  &:nth-child(4) .build-solution-wrap{
+    border: 2px solid #CFEBD1;
+    .icon{
+      background-color: #0F9918;
+    }
+  }
+}
