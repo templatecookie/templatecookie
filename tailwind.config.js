@@ -28,6 +28,7 @@ module.exports = {
         "green-of": "#0F9918",
         "green-cf": "#CFEBD",
         "orange-ff": "#FFF4DE",
+        "gray-cd": "#CDD2D8",
       },
       fontFamily: {
         lexend: ["Lexend", "sans-serif"],
@@ -66,6 +67,7 @@ module.exports = {
         190: "190px",
         296: "296px",
         76: "76px",
+        48: "48px",
       },
       margin: {
         72: "72px",
@@ -79,7 +81,12 @@ module.exports = {
       },
       borderRadius: {
         7: "7px",
+        5: "5px",
       },
+      boxShadow: {
+        'bs8': '0px 12px 32px rgba(6, 28, 61, 0.08)',
+        'bs08': '0px 16px 72px rgba(6, 28, 61, 0.08)',
+      }
     },
   },
   variants: {
