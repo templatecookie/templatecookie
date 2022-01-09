@@ -72,9 +72,6 @@ module.exports = {
       borderRadius: {
         7: "7px",
       },
-      padding: {
-        30: "124px",
-      },
     },
   },
   variants: {
