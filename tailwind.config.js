@@ -50,6 +50,8 @@ module.exports = {
       maxWidth: {
         1320: "1320px",
         536: "536px",
+        680: "680px",
+        872: "872px",
       },
       borderWidth: {
         1.5: "1.5px",
@@ -57,9 +59,13 @@ module.exports = {
       spacing: {
         72: "72px",
       },
+      width: {
+        76: "76px",
+      },
       height: {
         190: "190px",
         296: "296px",
+        76: "76px",
       },
       margin: {
         72: "72px",
@@ -77,6 +83,9 @@ module.exports = {
       padding: {
         30: "124px",
       },
+      boxShadow: {
+        'bs08': ' 0px 12px 32px rgba(6, 28, 61, 0.08)',
+      }
     },
   },
   variants: {

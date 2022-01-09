@@ -145,3 +145,23 @@
     }
   }
 }
+
+.business-card{
+  &:hover {
+    .icon{
+      background-color: #0B63E5;
+    }
+    
+    path{
+      stroke: white;
+    }
+     
+  }
+  .icon{
+   svg path{
+        transition: all 0.4s;
+      }
+     
+  }
+  
+}
