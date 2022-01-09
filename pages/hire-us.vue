@@ -14,7 +14,7 @@
         </p>
         <nuxt-link
           to="/"
-          class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06"
+          class="inline-block bg-blue-0b rounded-br7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06"
           >Let’s Work together
           <img
             class="inline-block ml-2"

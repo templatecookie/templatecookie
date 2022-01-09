@@ -21,6 +21,12 @@ module.exports = {
         "gray-24": "#243752",
         "gray-e6": "#E6E8EC",
         "gray-f0": "#F0F5FF",
+        "blue-ce": "#CEE0FA",
+        "pink-fc": "#FCDBF4",
+        "pink-f2": "#F249C8",
+        "purple-e3": "#E3D6FF",
+        "green-of": "#0F9918",
+        "green-cf": "#CFEBD",
       },
       fontFamily: {
         lexend: ["Lexend", "sans-serif"],
@@ -28,6 +34,7 @@ module.exports = {
       fontSize: {
         heading: ["72px", "80px"],
         "heading-80": ["80px", "88px"],
+        "heading-56": ["56px", "60px"],
         "heading-40": ["40px", "48px"],
         title: ["48px", "56px"],
         button: ["14px", "44px"],
@@ -36,9 +43,12 @@ module.exports = {
         "body-16": ["16px", "24px"],
         "body-17": ["17px", "24px"],
         "body-24": ["24px", "32px"],
+        "body-17": ["17px", "24px"],
+        button: ["14px", "44px"],
       },
       maxWidth: {
         1320: "1320px",
+        536: "536px",
       },
       borderWidth: {
         1.5: "1.5px",
@@ -61,6 +71,9 @@ module.exports = {
       },
       borderRadius: {
         7: "7px",
+      },
+      padding: {
+        30: "124px",
       },
     },
   },
