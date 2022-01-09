@@ -80,12 +80,6 @@ module.exports = {
       borderRadius: {
         7: "7px",
       },
-      padding: {
-        30: "124px",
-      },
-      boxShadow: {
-        'bs08': ' 0px 12px 32px rgba(6, 28, 61, 0.08)',
-      }
     },
   },
   variants: {
