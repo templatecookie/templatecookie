@@ -27,6 +27,7 @@ module.exports = {
         "purple-e3": "#E3D6FF",
         "green-of": "#0F9918",
         "green-cf": "#CFEBD",
+        "orange-ff": "#FFF4DE",
       },
       fontFamily: {
         lexend: ["Lexend", "sans-serif"],
@@ -67,7 +68,8 @@ module.exports = {
         124: "124px",
       },
       letterSpacing: {
-        ls02: "-0.02em",
+        ls02: '-0.02em',
+        ls01: ' -0.015em',
       },
       borderRadius: {
         7: "7px",
