@@ -17,20 +17,21 @@
     <div class="py-20 lg:py-124 ">
         <div class="container">
           <div class="lg:grid grid-cols-12 gap-7">
-            <div class="col-span-6 flex items-center">
-              <div class=" lg:max-w-536 lg:mb-0 mb-8">
-                <h2 class="text-dark-06 text-4xl md:text-5xl  xl:text-heading-56 font-semibold mb-6 tracking-ls01">We design & build your solution.</h2>
-              <p class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9">Nunc convallis semper justo quis tempor. Praesent molestie, lorem sed imperdiet tempor, libero urna semper urna, facilisis vulputate velit arcu vitae mi. Donec ac nisi ex.  </p>
-              <nuxt-link to="/" class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06">Request A Quote <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></nuxt-link>
-              </div>
-            </div>
-            <div class="col-span-6">
+            <div class="col-span-6 lg:order-2 lg:mb-0 mb-8">
                 <div class="grid grid-cols-12 gap-6">
                     <div v-for="(item, itemIndex) in items" :key="itemIndex" class="sm:col-span-6 col-span-12 build-solution">
                       <SolutionCard :title="item.title" :text="item.text"/>
                     </div>
                 </div>
             </div>
+            <div class="col-span-6 flex items-center">
+              <div class=" lg:max-w-536">
+                <h2 class="text-dark-06 text-4xl md:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-ls01">We design & build your solution.</h2>
+              <p class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9">Nunc convallis semper justo quis tempor. Praesent molestie, lorem sed imperdiet tempor, libero urna semper urna, facilisis vulputate velit arcu vitae mi. Donec ac nisi ex.  </p>
+              <nuxt-link to="/" class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06">Request A Quote <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></nuxt-link>
+              </div>
+            </div>
+            
           </div>
         </div>
     </div>
@@ -42,7 +43,7 @@
           </div>
           <div class="grid grid-cols-12 gap-6">
               <div v-for="(item, itemIndex) in BusinessItems" :key="itemIndex" class="col-span-12 xl:col-span-4  lg:col-span-6 md:col-span-6">
-                  <BusinessCard :title="item.title" :text="item.text"/>
+                  <BusinessCard className="text-center" classNameIcon="m-auto" :title="item.title" :text="item.text"/>
               </div>
           </div>
         </div>
@@ -249,7 +250,8 @@ export default{
           title: "315+",
           text: "COMPLETED PROJECT",
         }
-      ]
+      ],
+
     }
   }
 };

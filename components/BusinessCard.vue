@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-white rounded-lg p-8 text-center business-card duration-300 hover:shadow-bs8 ">
-      <div class="icon w-76 h-76 bg-gray-f0 rounded-lg flex items-center justify-center m-auto mb-7 duration-300">
+  <div :class="`bg-white rounded-lg p-8 business-card duration-300 hover:shadow-bs8 ${className}`">
+      <div :class="`icon w-76 h-76 bg-gray-f0 rounded-lg flex items-center justify-center mb-7 duration-300 ${classNameIcon}`">
           <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path opacity="0.2" d="M18 31.5C25.4558 31.5 31.5 25.4558 31.5 18C31.5 10.5442 25.4558 4.5 18 4.5C10.5442 4.5 4.5 10.5442 4.5 18C4.5 25.4558 10.5442 31.5 18 31.5Z" fill="#0B63E5"/>
             <path d="M18 31.5C25.4558 31.5 31.5 25.4558 31.5 18C31.5 10.5442 25.4558 4.5 18 4.5C10.5442 4.5 4.5 10.5442 4.5 18C4.5 25.4558 10.5442 31.5 18 31.5Z" stroke="#0B63E5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -18,12 +18,21 @@
 <script>
   export default{
     name: "BusinessCard",
+    
     props: {
       title:{
         type: String,
         requied: true
       },
       text:{
+        type: String,
+        requied: true
+      },
+      className:{
+        type: String,
+        requied: true
+      },
+      classNameIcon:{
         type: String,
         requied: true
       },
