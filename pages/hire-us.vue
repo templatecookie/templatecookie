@@ -7,6 +7,11 @@
           <p class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9 max-w-xl m-auto">Golio gives you everything you need to create your website in minutes. Bootstrap code with a well-organized Figma file to design & develop your next websites in minutes.</p>
           <nuxt-link to="/" class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06">Let’s Work together <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></nuxt-link>
         </div>
+        <div class="grid grid-cols-12 gap-6">
+          <div v-for="(item, indexItem) in CounterUpItem" :key="indexItem" class="lg:col-span-3 md:col-span-6 sm:col-span-6 col-span-12">
+              <CounterUp :title="item.title" :text="item.text" />
+          </div>
+        </div>
       </div>
     </div>
     <div class="py-20 lg:py-124 ">
@@ -83,8 +88,6 @@
             </div>
         </div>
       </div>
-        
-        
     </div>
     <div class="py-20 lg:py-124 bg-cover bg-center" :style="projectIdea">
       <div class="container">
@@ -93,7 +96,7 @@
            <p class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9">Got a project? Drop me a line if you want to work together on something exciting. Or do you need our help? Feel free to contact us.</p>
           </div>
           <div class="shadow-bs08 rounded-3xl p-12 bg-white max-w-872 m-auto">
-            <h2 class="text-dark-06 font-semibold tracking-ls01 text-2xl md:text-4xl mb-12 text-center">Request a quote to <span class="text-blue-0b">Golio</span></h2>
+            <h2 class="text-dark-06 font-semibold tracking-ls01 text-2xl md:text-4xl mb-12 text-center">Request a quote to <span class="text-blue-0b">Templatecookie</span></h2>
             <div class="mb-6">
                 <div class="lg:grid grid-cols-12 gap-6">
                     <div class="col-span-6 mb-6">
@@ -172,11 +175,13 @@
 <script>
 import SolutionCard from "../components/SolutionCard.vue";
 import BusinessCard from "../components/BusinessCard.vue";
+import CounterUp from "../components/CounterUp.vue";
 export default{
   name: "HireUsPage",
   component:{
     SolutionCard,
-    BusinessCard
+    BusinessCard,
+    CounterUp
   },
   data(){
     return{
@@ -227,6 +232,24 @@ export default{
       projectIdea: {
         backgroundImage: "url(https://i.imgur.com/2HNdUlR.png)",
       },
+      CounterUpItem:[
+        {
+          title: "17+",
+          text: "Awards Rewarded",
+        },
+        {
+          title: "23+",
+          text: "Years of Experience",
+        },
+        {
+          title: "183+",
+          text: "Happy Clients",
+        },
+        {
+          title: "315+",
+          text: "COMPLETED PROJECT",
+        }
+      ]
     }
   }
 };
