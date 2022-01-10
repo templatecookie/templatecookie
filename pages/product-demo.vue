@@ -3,7 +3,7 @@
       <div class="py-28 lg:py-56 bg-dark-06 bg-content bg-right bg-no-repeat hero-demo" :style="DemoHero">
         <div class="container">
           <div class="max-w-2xl">
-            <h1 class="tracking-ls01 font-semibold text-3xl md:text-4xl lg:text-5xl text-white mb-8">Relik - Admin Dashboard Figma Template</h1>
+            <h1 class="tracking-ls01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8">Relik - Admin Dashboard Figma Template</h1>
             <p class="text-white font-light text-lg md:text-xl max-w-536">👉 Relik is a beautiful, simple, developer-friendly, highly customizable  admin dashboard template  with a 💎 high-quality UI & well-organized Figma file 🔥.</p>
             <div class="mt-8">
               <nuxt-link to="/" class="inline-block border-1.5 border-blue-0b bg-blue-0b font-medium rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 mr-3">Buy Now <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="" /></nuxt-link>
@@ -12,23 +12,250 @@
           </div>
       </div>
     </div>
+    <!-- end -->
 
-    <div class="py-124">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet iusto fugiat quasi eius quis facere dolore, doloribus eveniet. Voluptatum, perspiciatis.
+    <div class="py-20 lg:py-124 ">
+      <div class="container">
+        <div class="md:grid grid-cols-12 gap-6 mb-12">
+          <div class="col-span-7 max-w-sm mb-4 md:mb-0">
+              <h2 class="text-dark-06 text-4xl xl:text-title font-semibold tracking-ls01">Explore Relik Notable Feature</h2>
+          </div>
+          <div class="col-span-5">
+              <p class="text-dark-06 text-lg sm:text-xl lg:mb-9 font-light">You get all Bootstrap components fully customized. Besides, you receive numerous plugins out of the box and ready to use</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-12 gap-6">
+              <div v-for="(item, itemIndex) in BusinessItems" :key="itemIndex" class="col-span-12 xl:col-span-4  lg:col-span-6 md:col-span-6">
+                  <BusinessCard className="shadow-bs8 border border-gray-e6" :title="item.title" :text="item.text"/>
+              </div>
+          </div>
+      </div>
     </div>
+    <!-- end -->
+
+    <div>
+      <div class="container">
+        <div class="grid grid-cols-12">
+          <div v-for="(item, indexItem) in FunItems" :key="indexItem" class="col-span-6 lg:col-span-3 fun-column">
+              <FunFact :title="item.title" :text="item.text"/>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!-- end  -->
+
+    <div class="py-20 lg:py-124">
+      <div class="container">
+        <div class="lg:grid grid-cols-12 gap-6">
+          <div class="col-span-6 lg:order-2">
+                <div class="mb-6 lg:mb-0">
+                  <img class="w-full h-full object-cover rounded-20" src="~@/assets/images/all-img/demo-thumb.png" alt="">
+                </div>
+            </div>
+            <div class="col-span-6 flex items-center">
+                <div class=" lg:max-w-536">
+                  <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">Explore our Gilio team services.</h3>
+                  <h2 class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01">Feature Name 01</h2>
+                  <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">Nunc convallis semper justo quis tempor. Praesent molestie, lorem sed imperdiet tempor, libero urna semper urna, facilisis vulputate velit arcu vitae mi. Donec ac nisi ex.  </p>
+                  <nuxt-link to="/" class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06">Button Label <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></nuxt-link>
+                </div>
+            </div>
+            
+        </div>
+          
+      </div>
+      
+    </div>
+    <!-- end -->
+
+     <div class="py-20 lg:py-124">
+      <div class="container">
+        <div class=" lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
+            <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">Explore our Gilio team services.</h3>
+            <h2 class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01">Feature Name 01</h2>
+            <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">Nunc convallis semper justo quis tempor. Praesent molestie, lorem sed imperdiet tempor, libero urna semper urna, facilisis vulputate velit arcu vitae mi. Donec ac nisi ex.  </p>
+        </div>
+        <div class="mb-6 lg:mb-0">
+          <img class="w-full object-cover rounded-20" src="~@/assets/images/all-img/demo-thumb2.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+
+    <div class="py-20 lg:py-124 bg-gray-f0">
+      <div class="container">
+        <div class="lg:grid grid-cols-12 gap-6">
+          <div class="col-span-6">
+                <div class="lg:mr-20 mb-6 lg:mb-0">
+                  <img class="w-full h-full object-cover rounded-20" src="~@/assets/images/all-img/demo-thumb.png" alt="">
+                </div>
+            </div>
+            <div class="col-span-6 flex items-center">
+                <div class=" lg:max-w-536">
+                  <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">Explore our Gilio team services.</h3>
+                  <h2 class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01">Feature Name 01</h2>
+                  <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">Nunc convallis semper justo quis tempor. Praesent molestie, lorem sed imperdiet tempor, libero urna semper urna, facilisis vulputate velit arcu vitae mi. Donec ac nisi ex.  </p>
+                  <nuxt-link to="/" class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06">Button Label <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></nuxt-link>
+                </div>
+            </div>
+        </div>
+          
+      </div>
+      
+    </div>
+    <!-- end -->
+
+    <div class="py-20 lg:py-124">
+      <div class="container">
+        <div class=" lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
+            <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">Explore our Gilio team services.</h3>
+            <h2 class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01">Feature Name 01</h2>
+            <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">Nunc convallis semper justo quis tempor. Praesent molestie, lorem sed imperdiet tempor, libero urna semper urna, facilisis vulputate velit arcu vitae mi. Donec ac nisi ex.  </p>
+        </div>
+        <div class="lg:grid grid-cols-12 gap-6">
+          <div class="lg:col-span-8 order-2 lg:ml-6">
+              <div class="mb-6 lg:mb-0">
+                <img class="w-full object-cover rounded-20" src="~@/assets/images/all-img/demo-thumb3.png" alt="">
+              </div>
+          </div>
+          <div class="lg:col-span-4">
+            <div v-for="(item , indexItem) in contentItems" :key="indexItem" class="border border-gray-e6 rounded-2xl overflow-hidden p-6 lg:p-8 mb-6 duration-300 hover:bg-blue-0b hover:border-blue-0b content-wrap">
+                <h3 class="text-dark-06 text-2xl font-medium mb-4 duration-300">{{item.title}}</h3>
+                <p class="text-dark-42 text-base font-light duration-300">{{item.text}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+
+    <div class="py-20 lg:py-124 bg-gray-f0">
+      <div class="container">
+        <div class="lg:grid grid-cols-12 gap-6">
+          <div class="col-span-6">
+                <div class="lg:mr-20 mb-6 lg:mb-0">
+                  <img class="w-full h-full object-cover rounded-20" src="~@/assets/images/all-img/demo-thumb.png" alt="">
+                </div>
+            </div>
+            <div class="col-span-6 flex items-center">
+                <div class=" lg:max-w-536">
+                  <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">Explore our Gilio team services.</h3>
+                  <h2 class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01">Feature Name 01</h2>
+                  <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">Nunc convallis semper justo quis tempor. Praesent molestie, lorem sed imperdiet tempor, libero urna semper urna, facilisis vulputate velit arcu vitae mi. Donec ac nisi ex.  </p>
+                  <nuxt-link to="/" class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06">Button Label <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></nuxt-link>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+
+    <div class="py-20 lg:py-124 ">
+      <div class="container">
+          <div class="text-center mb-8 lg:mb-12">
+            <h2 class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01">45+ Beautiful hand-crafted pages</h2>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+
+    
+ 
   </div>
   
   
 </template>
 <script>
+import BusinessCard from "../components/BusinessCard.vue";
+import FunFact from "../components/Fun.vue";
+
 export default{
   name: "ProductDemo",
+  components: {
+    BusinessCard,
+    FunFact
+  },
 
 data(){
   return{
       DemoHero: {
         backgroundImage: "url(https://i.imgur.com/aBzS4DP.png)",
     },
+    BusinessItems:[
+        {
+          title: "Project Introduction",
+          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna."
+        },
+        {
+          title: "User Experience Design",
+          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna."
+        },
+        {
+          title: "User Interface Design",
+          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna."
+        },
+        {
+          title: "Front-end Development",
+          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna."
+        },
+        {
+          title: "Back-end Development",
+          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna."
+        },
+        {
+          title: "Delivery & Client Feedback",
+          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna."
+        },
+    ],
+    FunItems:[
+        {
+          title: "55+",
+          text: "High-Quality Pages"
+        },
+        {
+          title: "55+",
+          text: "Figma UI Components"
+        },
+        {
+          title: "24/7",
+          text: "Dedicated Support all"
+        },
+        {
+          title: "100%",
+          text: "Money-Back Guarantee"
+        },
+        {
+          title: "Doc",
+          text: "Detailed Documentation"
+        },
+        {
+          title: "Global",
+          text: "Auto-Updatedable Style Guide"
+        },
+        {
+          title: "Inter",
+          text: "Free Google Font Used"
+        },
+        {
+          title: "Fig",
+          text: "Well-Organize & Easy-to-use File"
+        },
+    ],
+    contentItems:[
+      {
+        title: "Back-end Development",
+        text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut."
+      },
+      {
+        title: "Back-end Development",
+        text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut."
+      },
+      {
+        title: "Back-end Development",
+        text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut."
+      }
+    ]
   }
 }
 

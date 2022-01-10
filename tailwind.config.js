@@ -109,6 +109,7 @@ module.exports = {
       borderRadius: {
         7: "7px",
         5: "5px",
+        20: "20px",
       },
       boxShadow: {
         bs8: "0px 12px 32px rgba(6, 28, 61, 0.08)",
