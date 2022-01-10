@@ -1,5 +1,5 @@
 <template lang="">
-  <footer class="relative bg-dark-06 pt-200">
+  <footer class="relative bg-dark-06 pt-40 lg:pt-200">
     <div class="container">
       <!-- footer top content  -->
       <div class="grid xl:grid-cols-3 pb-12 md:pb-72">
