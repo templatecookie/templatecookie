@@ -1,8 +1,8 @@
 <template lang="">
-  <footer class="relative bg-dark-06">
+  <footer class="relative bg-dark-06 pt-200">
     <div class="container">
       <!-- footer top content  -->
-      <div class="grid xl:grid-cols-3 py-12 md:py-72">
+      <div class="grid xl:grid-cols-3 pb-12 md:pb-72">
         <!-- Brand info -->
         <div class="mb-12">
           <!-- logo -->
