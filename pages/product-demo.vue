@@ -30,6 +30,18 @@
           </div>
       </div>
     </div>
+
+    <div class="pb-20 lg:pb-124">
+      <div class="container">
+        <div class="grid grid-cols-12">
+          <div v-for="(item, indexItem) in FunItems" :key="indexItem" class="col-span-6 lg:col-span-3 fun-column">
+              <FunFact :title="item.title" :text="item.text"/>
+          </div>
+        </div>
+          
+      </div>
+      
+    </div>
  
   </div>
   
@@ -37,10 +49,13 @@
 </template>
 <script>
 import BusinessCard from "../components/BusinessCard.vue";
+import FunFact from "../components/Fun.vue";
+
 export default{
   name: "ProductDemo",
   components: {
-    BusinessCard
+    BusinessCard,
+    FunFact
   },
 
 data(){
@@ -73,7 +88,41 @@ data(){
           title: "Delivery & Client Feedback",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna."
         },
-      ],
+    ],
+    FunItems:[
+        {
+          title: "55+",
+          text: "High-Quality Pages"
+        },
+        {
+          title: "55+",
+          text: "Figma UI Components"
+        },
+        {
+          title: "24/7",
+          text: "Dedicated Support all"
+        },
+        {
+          title: "100%",
+          text: "Money-Back Guarantee"
+        },
+        {
+          title: "Doc",
+          text: "Detailed Documentation"
+        },
+        {
+          title: "Global",
+          text: "Auto-Updatedable Style Guide"
+        },
+        {
+          title: "Inter",
+          text: "Free Google Font Used"
+        },
+        {
+          title: "Fig",
+          text: "Well-Organize & Easy-to-use File"
+        },
+    ],
   }
 }
 
