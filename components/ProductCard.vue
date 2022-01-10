@@ -54,7 +54,7 @@
           </div>
         </div>
         <!-- Price  -->
-        <div class="mb-4 order-1 sm:order-2">
+        <div class="mb-4 sm:mb-0 order-1 sm:order-2">
           <h5 class="text-body-24 font-normal uppercase text-pink-75">
             ${{ price }}
           </h5>

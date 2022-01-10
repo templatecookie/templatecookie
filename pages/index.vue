@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Featured Card  -->
-    <section class="featured py-14 md:py-124">
+    <section class="featured pt-14 md:pt-124">
       <div class="container">
         <!-- section title  -->
         <div class="mb-72 text-center">
@@ -9,7 +9,7 @@
         </div>
 
         <!-- Features Card  -->
-        <div class="grid md:grid-cols-2 gap-6">
+        <div class="grid lg:grid-cols-2 gap-6">
           <div
             v-for="(item, itemIndex) in featuredList"
             :key="itemIndex"
@@ -29,14 +29,14 @@
     </section>
 
     <!-- Latest Product -->
-    <section class="latest py-14 md:py-124 pt-0">
+    <section class="latest py-14 md:py-124">
       <div class="container">
         <!-- section title  -->
         <div class="mb-72 text-center">
           <h2 class="text-title font-semibold capitalize">Latest Product</h2>
         </div>
         <!-- Latest Product -->
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
           <div
             v-for="(item, itemIndex) in latestProduct"
             :key="itemIndex"
