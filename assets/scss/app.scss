@@ -182,3 +182,19 @@ input[type="radio"]:checked + label span {
 }
 
 
+// product demo
+
+
+
+
+
+.hero-demo{
+  @media (max-width: 1500px) {
+      background-image: none!important;
+  }
+  //  @media (max-width: 1400px) {
+  //     background-position: 290%!important;
+  // }
+}
+
+
