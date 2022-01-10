@@ -135,23 +135,27 @@
     <!-- Why us   -->
     <section class="relative overflow-hidden">
       <!-- content wrapper   -->
-      <div class="grid xl:grid-cols-12">
+      <div class="flex flex-col lg:grid lg:grid-cols-16 px-3 lg:px-0">
         <!-- textcontent  -->
-        <div class="xl:col-start-3 xl:col-end-7 py-124">
+        <div
+          class="lg:col-start-3 lg:col-end-9 lg:py-124 order-2 lg:order-1 pb-14 lg:pb-0"
+        >
           <h1 class="text-title font-semibold capitalize mb-8">
             Why Tempalte Cookie is the Best in the world
           </h1>
-          <p class="text-body-16 font-light text-dark-06">
+          <p class="text-body-16 font-light text-dark-06 mb-10">
             Cras at pellentesque eros. Nullam vitae sapien et felis eleifend
             luctus. Nam ac dui cursus, efficitur ante sed, tempor sapien.
             Praesent nec mattis enim. Mauris a laoreet purus.
           </p>
           <!-- features card  -->
-          <div class="grid grid-cols-2 gap-6">
-            <div class="flex items-center space-x-3 p-6 bg-pink-f1 rounded-xl">
+          <div class="grid sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6">
+            <div
+              class="flex flex-col sm:flex-row items-center justify-center sm:justify-start sm:space-x-3 p-6 bg-pink-f1 rounded-xl overflow-hidden"
+            >
               <!-- icons -->
               <div>
-                <span>
+                <span class="inline-block">
                   <svg
                     width="56"
                     height="56"
@@ -202,17 +206,21 @@
                   </svg>
                 </span>
               </div>
-              <div>
+              <div class="text-center sm:text-left">
                 <h2 class="text-body-24 font-medium text-dark-06 mb-2">17+</h2>
-                <p class="text-body-14 text-dark-42 uppercase">
+                <p
+                  class="text-body-14 text-dark-42 uppercase whitespace-nowrap overflow-ellipsis"
+                >
                   Awards Rewarded
                 </p>
               </div>
             </div>
-            <div class="flex items-center space-x-3 p-6 bg-green-e7 rounded-xl">
+            <div
+              class="flex flex-col sm:flex-row items-center justify-center sm:justify-start sm:space-x-3 p-6 bg-green-e7 rounded-xl overflow-hidden"
+            >
               <!-- icons -->
               <div>
-                <span>
+                <span class="inline-block">
                   <svg
                     width="56"
                     height="56"
@@ -255,7 +263,7 @@
                   </svg>
                 </span>
               </div>
-              <div>
+              <div class="text-center sm:text-left">
                 <h2 class="text-body-24 font-medium text-dark-06 mb-2">23+</h2>
                 <p class="text-body-14 text-dark-42 uppercase">
                   Years of Experience
@@ -263,7 +271,7 @@
               </div>
             </div>
             <div
-              class="flex items-center space-x-3 p-6 bg-yellow-ff rounded-xl"
+              class="flex flex-col sm:flex-row items-center justify-center sm:justify-start space-x-3 p-6 bg-yellow-ff rounded-xl"
             >
               <!-- icons -->
               <div>
@@ -308,12 +316,14 @@
                   </svg>
                 </span>
               </div>
-              <div>
+              <div class="text-center sm:text-left">
                 <h2 class="text-body-24 font-medium text-dark-06 mb-2">183+</h2>
                 <p class="text-body-14 text-dark-42 uppercase">Happy Clients</p>
               </div>
             </div>
-            <div class="flex items-center space-x-3 p-6 bg-pink-fe rounded-xl">
+            <div
+              class="flex flex-col sm:flex-row justify-center sm:justify-start items-center space-x-3 p-6 bg-pink-fe rounded-xl"
+            >
               <!-- icons -->
               <div>
                 <span>
@@ -360,7 +370,7 @@
                   </svg>
                 </span>
               </div>
-              <div>
+              <div class="text-center sm:text-left">
                 <h2 class="text-body-24 font-medium text-dark-06 mb-2">315+</h2>
                 <p class="text-body-14 text-dark-42 uppercase">
                   Completed Project
@@ -369,11 +379,13 @@
             </div>
           </div>
         </div>
-        <div class="col-start-8 col-end-13 h-full">
+        <div
+          class="lg:col-start-10 lg:col-end-17 h-full order-1 lg:order-2 mb-6 lg:mb-0"
+        >
           <img
             src="~assets/images/all-img/img-four.png"
             alt=""
-            class="w-full h-full object-contain"
+            class="w-full h-full object-cover lg:object-fill"
           />
         </div>
       </div>

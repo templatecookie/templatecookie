@@ -98,6 +98,23 @@ module.exports = {
         bs8: "0px 12px 32px rgba(6, 28, 61, 0.08)",
         bs08: "0px 16px 72px rgba(6, 28, 61, 0.08)",
       },
+      gridTemplateColumns: {
+        16: "repeat(16, minmax(0,1fr))",
+      },
+      gridColumnStart: {
+        13: "13",
+        14: "14",
+        15: "15",
+        16: "16",
+        17: "17",
+      },
+      gridColumnEnd: {
+        13: "13",
+        14: "14",
+        15: "15",
+        16: "16",
+        17: "17",
+      },
     },
   },
   variants: {
