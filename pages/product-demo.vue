@@ -12,6 +12,7 @@
           </div>
       </div>
     </div>
+    <!-- end -->
 
     <div class="py-20 lg:py-124 ">
       <div class="container">
@@ -30,18 +31,136 @@
           </div>
       </div>
     </div>
+    <!-- end -->
 
-    <div class="pb-20 lg:pb-124">
+    <div>
       <div class="container">
         <div class="grid grid-cols-12">
           <div v-for="(item, indexItem) in FunItems" :key="indexItem" class="col-span-6 lg:col-span-3 fun-column">
               <FunFact :title="item.title" :text="item.text"/>
           </div>
         </div>
+      </div>
+      
+    </div>
+    <!-- end  -->
+
+    <div class="py-20 lg:py-124">
+      <div class="container">
+        <div class="lg:grid grid-cols-12 gap-6">
+          <div class="col-span-6 lg:order-2">
+                <div class="mb-6 lg:mb-0">
+                  <img class="w-full h-full object-cover rounded-20" src="~@/assets/images/all-img/demo-thumb.png" alt="">
+                </div>
+            </div>
+            <div class="col-span-6 flex items-center">
+                <div class=" lg:max-w-536">
+                  <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">Explore our Gilio team services.</h3>
+                  <h2 class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01">Feature Name 01</h2>
+                  <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">Nunc convallis semper justo quis tempor. Praesent molestie, lorem sed imperdiet tempor, libero urna semper urna, facilisis vulputate velit arcu vitae mi. Donec ac nisi ex.  </p>
+                  <nuxt-link to="/" class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06">Button Label <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></nuxt-link>
+                </div>
+            </div>
+            
+        </div>
           
       </div>
       
     </div>
+    <!-- end -->
+
+     <div class="py-20 lg:py-124">
+      <div class="container">
+        <div class=" lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
+            <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">Explore our Gilio team services.</h3>
+            <h2 class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01">Feature Name 01</h2>
+            <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">Nunc convallis semper justo quis tempor. Praesent molestie, lorem sed imperdiet tempor, libero urna semper urna, facilisis vulputate velit arcu vitae mi. Donec ac nisi ex.  </p>
+        </div>
+        <div class="mb-6 lg:mb-0">
+          <img class="w-full object-cover rounded-20" src="~@/assets/images/all-img/demo-thumb2.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+
+    <div class="py-20 lg:py-124 bg-gray-f0">
+      <div class="container">
+        <div class="lg:grid grid-cols-12 gap-6">
+          <div class="col-span-6">
+                <div class="lg:mr-20 mb-6 lg:mb-0">
+                  <img class="w-full h-full object-cover rounded-20" src="~@/assets/images/all-img/demo-thumb.png" alt="">
+                </div>
+            </div>
+            <div class="col-span-6 flex items-center">
+                <div class=" lg:max-w-536">
+                  <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">Explore our Gilio team services.</h3>
+                  <h2 class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01">Feature Name 01</h2>
+                  <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">Nunc convallis semper justo quis tempor. Praesent molestie, lorem sed imperdiet tempor, libero urna semper urna, facilisis vulputate velit arcu vitae mi. Donec ac nisi ex.  </p>
+                  <nuxt-link to="/" class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06">Button Label <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></nuxt-link>
+                </div>
+            </div>
+        </div>
+          
+      </div>
+      
+    </div>
+    <!-- end -->
+
+    <div class="py-20 lg:py-124">
+      <div class="container">
+        <div class=" lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
+            <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">Explore our Gilio team services.</h3>
+            <h2 class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01">Feature Name 01</h2>
+            <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">Nunc convallis semper justo quis tempor. Praesent molestie, lorem sed imperdiet tempor, libero urna semper urna, facilisis vulputate velit arcu vitae mi. Donec ac nisi ex.  </p>
+        </div>
+        <div class="lg:grid grid-cols-12 gap-6">
+          <div class="lg:col-span-8 order-2 lg:ml-6">
+              <div class="mb-6 lg:mb-0">
+                <img class="w-full object-cover rounded-20" src="~@/assets/images/all-img/demo-thumb3.png" alt="">
+              </div>
+          </div>
+          <div class="lg:col-span-4">
+            <div v-for="(item , indexItem) in contentItems" :key="indexItem" class="border border-gray-e6 rounded-2xl overflow-hidden p-6 lg:p-8 mb-6 duration-300 hover:bg-blue-0b hover:border-blue-0b content-wrap">
+                <h3 class="text-dark-06 text-2xl font-medium mb-4 duration-300">{{item.title}}</h3>
+                <p class="text-dark-42 text-base font-light duration-300">{{item.text}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+
+    <div class="py-20 lg:py-124 bg-gray-f0">
+      <div class="container">
+        <div class="lg:grid grid-cols-12 gap-6">
+          <div class="col-span-6">
+                <div class="lg:mr-20 mb-6 lg:mb-0">
+                  <img class="w-full h-full object-cover rounded-20" src="~@/assets/images/all-img/demo-thumb.png" alt="">
+                </div>
+            </div>
+            <div class="col-span-6 flex items-center">
+                <div class=" lg:max-w-536">
+                  <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">Explore our Gilio team services.</h3>
+                  <h2 class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01">Feature Name 01</h2>
+                  <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">Nunc convallis semper justo quis tempor. Praesent molestie, lorem sed imperdiet tempor, libero urna semper urna, facilisis vulputate velit arcu vitae mi. Donec ac nisi ex.  </p>
+                  <nuxt-link to="/" class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06">Button Label <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></nuxt-link>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+
+    <div class="py-20 lg:py-124 ">
+      <div class="container">
+          <div class="text-center mb-8 lg:mb-12">
+            <h2 class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01">45+ Beautiful hand-crafted pages</h2>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+
+    
  
   </div>
   
@@ -123,6 +242,20 @@ data(){
           text: "Well-Organize & Easy-to-use File"
         },
     ],
+    contentItems:[
+      {
+        title: "Back-end Development",
+        text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut."
+      },
+      {
+        title: "Back-end Development",
+        text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut."
+      },
+      {
+        title: "Back-end Development",
+        text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut."
+      }
+    ]
   }
 }
 

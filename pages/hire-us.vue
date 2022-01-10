@@ -14,6 +14,8 @@
         </div>
       </div>
     </div>
+    <!-- end -->
+
     <div class="py-20 lg:py-124 ">
         <div class="container">
           <div class="lg:grid grid-cols-12 gap-7">
@@ -35,6 +37,8 @@
           </div>
         </div>
     </div>
+    <!-- end -->
+
     <div class="bg-orange-ff py-20 lg:py-124">
         <div class="container">
           <div class="lg:max-w-680 m-auto text-center mb-16">
@@ -48,6 +52,8 @@
           </div>
         </div>
     </div>
+    <!-- end -->
+
     <div class="py-20 lg:py-124">
       <div class="container">
           <div class="lg:max-w-3xl m-auto text-center mb-16">
@@ -90,6 +96,8 @@
         </div>
       </div>
     </div>
+    <!-- end -->
+
     <div class="py-20 lg:py-124 bg-cover bg-center" :style="projectIdea">
       <div class="container">
           <div class="lg:max-w-680 m-auto text-center mb-16">
@@ -170,6 +178,7 @@
           </div>
       </div>
     </div>
+    <!-- end -->
 </div>
   
 </template>

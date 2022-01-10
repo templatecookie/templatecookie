@@ -227,3 +227,12 @@ input[type="radio"]:checked + label span {
     border: none;
   }
 }
+
+.content-wrap{
+  &:last-child{
+    margin: 0;
+  }
+  &:hover h3, &:hover p{
+    color: white;
+  }
+}
