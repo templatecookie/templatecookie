@@ -52,6 +52,7 @@ module.exports = {
         "body-17": ["17px", "24px"],
         "body-20": ["20px", "28px"],
         "body-14": ["14px", "14px"],
+        "body-10": ["10px", "10px"],
       },
       width: {
         76: "76px",
@@ -87,8 +88,10 @@ module.exports = {
         124: "124px",
       },
       letterSpacing: {
-        ls02: "-0.02em",
         ls01: " -0.015em",
+        ls02: "-0.02em",
+        ls03: " -0.012em",
+        ls04: " 0.01em",
       },
       borderRadius: {
         7: "7px",
