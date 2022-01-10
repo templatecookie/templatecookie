@@ -1,7 +1,63 @@
 <template>
   <div>
+    <!-- Banner  -->
+    <section
+      class="realtive overflow-hidden py-14 lg:py-124 bg-no-repeat bg-center bg-cover"
+      :style="{ backgroundImage: `url(${bannerImg})` }"
+    >
+      <div class="container">
+        <!-- banner content  -->
+        <div class="text-center">
+          <h1
+            class="text-4xl md:text-heading text-dark-06 mb-8 max-w-680 mx-auto font-semibold"
+          >
+            Premium UI & Html Template.
+          </h1>
+          <p
+            class="text-lg md:text-body-20 text-dark-06 mb-8 max-w-680 mx-auto"
+          >
+            Quisque sed est condimentum, placerat tellus a, dictum diam.
+            Praesent volutpat nisl ac ligula lobortis imperdiet.
+          </p>
+          <div>
+            <nuxt-link
+              to="/"
+              class="flex items-center bg-blue-0b hover:bg-dark-06 transition-all w-auto max-w-232 justify-center text-button-17 text-white rounded-lg overflow-hidden mx-auto"
+            >
+              Browse Product
+              <!-- arrow toggle icon -->
+              <span class="inline-block ml-3">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.75 12H20.25"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13.5 5.25L20.25 12L13.5 18.75"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Featured Card  -->
-    <section class="featured py-14 md:py-124">
+    <section class="featured pt-14 md:pt-124">
       <div class="container">
         <!-- section title  -->
         <div class="mb-72 text-center">
@@ -9,7 +65,7 @@
         </div>
 
         <!-- Features Card  -->
-        <div class="grid md:grid-cols-2 gap-6">
+        <div class="grid lg:grid-cols-2 gap-6">
           <div
             v-for="(item, itemIndex) in featuredList"
             :key="itemIndex"
@@ -29,14 +85,14 @@
     </section>
 
     <!-- Latest Product -->
-    <section class="latest py-14 md:py-124 pt-0">
+    <section class="latest py-14 md:py-124">
       <div class="container">
         <!-- section title  -->
         <div class="mb-72 text-center">
           <h2 class="text-title font-semibold capitalize">Latest Product</h2>
         </div>
         <!-- Latest Product -->
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
           <div
             v-for="(item, itemIndex) in latestProduct"
             :key="itemIndex"
@@ -71,62 +127,8 @@
         <!-- Project services -->
         <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
           <div v-for="(item, itemIndex) in productList" :key="itemIndex">
-            <!-- service card  -->
-            <div
-              class="bg-white overflow-hidden rounded-2xl relative p-8 flex flex-col items-stretch justify-center text-center"
-            >
-              <!-- icon  -->
-              <div
-                class="inline-block bg-gray-f0 p-5 overflow-hidden rounded-lg w-76 h-76 mx-auto mb-6"
-              >
-                <span>
-                  <svg
-                    width="36"
-                    height="36"
-                    viewBox="0 0 36 36"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      opacity="0.2"
-                      d="M18 31.5C25.4558 31.5 31.5 25.4558 31.5 18C31.5 10.5442 25.4558 4.5 18 4.5C10.5442 4.5 4.5 10.5442 4.5 18C4.5 25.4558 10.5442 31.5 18 31.5Z"
-                      fill="#0B63E5"
-                    />
-                    <path
-                      d="M18 31.5C25.4558 31.5 31.5 25.4558 31.5 18C31.5 10.5442 25.4558 4.5 18 4.5C10.5442 4.5 4.5 10.5442 4.5 18C4.5 25.4558 10.5442 31.5 18 31.5Z"
-                      stroke="#0B63E5"
-                      stroke-width="2.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M16.875 16.875H18V24.75H19.125"
-                      stroke="#0B63E5"
-                      stroke-width="2.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M18.4375 11.8125C18.4375 12.0541 18.2416 12.25 18 12.25C17.7584 12.25 17.5625 12.0541 17.5625 11.8125C17.5625 11.5709 17.7584 11.375 18 11.375C18.2416 11.375 18.4375 11.5709 18.4375 11.8125Z"
-                      fill="#0B63E5"
-                      stroke="#0B63E5"
-                      stroke-width="2.5"
-                    />
-                  </svg>
-                </span>
-              </div>
-
-              <div>
-                <h2
-                  class="text-body-20 font-normal capitalize mb-3 text-dark-06"
-                >
-                  {{ item.title }}
-                </h2>
-                <p class="text-dark-42 text-body-16 font-light">
-                  {{ item.text }}
-                </p>
-              </div>
-            </div>
+            <!-- Service card  -->
+            <BusinessCard :title="item.title" :text="item.text" />
           </div>
         </div>
       </div>
@@ -394,12 +396,14 @@
 </template>
 
 <script>
+import bannerImg from "~/assets/images/all-img/img-five.png";
 import ProductCard from "../components/ProductCard.vue";
 export default {
   name: "IndexPage",
   components: { ProductCard },
   data() {
     return {
+      bannerImg,
       featuredList: [
         {
           img: "https://i.imgur.com/YD6WZwi.png",
