@@ -69,7 +69,7 @@
           </p>
         </div>
         <!-- Project services -->
-        <div class="grid grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
           <div v-for="(item, itemIndex) in productList" :key="itemIndex">
             <!-- service card  -->
             <div
