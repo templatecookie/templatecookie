@@ -31,7 +31,9 @@
         class="flex flex-col sm:flex-row items-end sm:items-center sm:justify-between"
       >
         <!-- Purchase  -->
-        <div class="flex items-center space-x-3 order-2 sm:order-1">
+        <div
+          class="flex items-center justify-center w-full sm:w-auto space-x-3 order-2 sm:order-1"
+        >
           <div>
             <nuxt-link
               to="#"
@@ -52,7 +54,7 @@
           </div>
         </div>
         <!-- Price  -->
-        <div class="mb-4">
+        <div class="mb-4 order-1 sm:order-2">
           <h5 class="text-body-24 font-normal uppercase text-pink-75">
             ${{ price }}
           </h5>
