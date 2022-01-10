@@ -99,6 +99,7 @@ module.exports = {
         124: "124px",
         18: "18px",
         200: "200px",
+        72: "72px",
       },
       letterSpacing: {
         ls01: " -0.015em",
