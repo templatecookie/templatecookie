@@ -33,6 +33,16 @@ module.exports = {
         "yellow-ff": "#FFF9EE",
         "pink-fe": "#FEEDFA",
         "gray-cd": "#CDD2D8",
+        "blue-18": " #1877F214",
+        facebook: "#1877F2",
+        linkedin: "#0E76A8",
+        dribble: "#EA4C89",
+        behance: "#053EFF",
+        "green-0e": "#0E76A814",
+        "pink-ea": " #EA4C8914 ",
+        "blue-05": "#053EFF14",
+        "gray-14": "#00000014",
+        "dark-e6": " #E6E8EC",
       },
       fontFamily: {
         lexend: ["Lexend", "sans-serif"],
@@ -87,6 +97,8 @@ module.exports = {
       },
       padding: {
         124: "124px",
+        18: "18px",
+        200: "200px",
       },
       letterSpacing: {
         ls01: " -0.015em",
