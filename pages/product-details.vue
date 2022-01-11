@@ -85,7 +85,7 @@
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, ex!
               </div>
             </div>
-            <div class="bg-blue-09 xl:pl-14 xl:p-0 p-10 pb-0  rounded-2xl">
+            <div class="bg-blue-09 xl:pl-14 xl:p-0 p-10 pb-0 rounded-2xl mt-20 lg:mt-124">
                 <div class="xl:grid grid-cols-12">
                     <div class="col-span-6 flex items-center">
                       <div class="xl:max-w-536 xl:py-16 text-center xl:text-left">
@@ -124,7 +124,7 @@
                       :title="item.title"
                       :text="item.text"
                       :price="item.price"
-                      className="h-296"
+                      className="h-196"
                     />
                   </div>
                   
