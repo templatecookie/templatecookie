@@ -14,7 +14,11 @@
     "swiper": "^7.4.1",
     "vue": "^2.6.14",
     "vue-awesome-swiper": "^4.1.1",
+<<<<<<< HEAD
     "vue-faq-accordion": "^1.6.2",
+=======
+    "vue-select": "^3.16.0",
+>>>>>>> 123e4c3ad067b27d6e6897ddcae8a6b9285288d8
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
     "webpack": "^4.46.0"
