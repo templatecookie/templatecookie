@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       colors: {
         "blue-0b": "#0B63E5",
+        "blue-09": "#094FB7",
         "pink-75": "#7534FF",
         "dark-06": "#061C3D",
         "dark-42": "#42526B",
@@ -43,7 +44,8 @@ module.exports = {
         "blue-05": "#053EFF14",
         "gray-14": "#00000014",
         "dark-e6": " #E6E8EC",
-        "gray-6a": " #6a778b",
+        "gray-6a": " #6A778B",
+        "white-12": " rgba(255, 255, 255, 0.12)",
       },
       fontFamily: {
         lexend: ["Lexend", "sans-serif"],
