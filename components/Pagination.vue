@@ -121,7 +121,6 @@ export default {
 };
 </script>
 <style scoped>
-.nuxt-link-active,
 .active {
   color: #fff;
   background-color: #0b63e5;
