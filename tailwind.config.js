@@ -64,9 +64,7 @@ module.exports = {
         "body-14": ["14px", "14px"],
         "body-10": ["10px", "10px"],
       },
-      width: {
-        76: "76px",
-      },
+
       maxWidth: {
         1320: "1320px",
         536: "536px",
@@ -74,9 +72,7 @@ module.exports = {
         872: "872px",
         232: "232px",
       },
-      height: {
-        76: "76px",
-      },
+
       borderWidth: {
         1.5: "1.5px",
       },
@@ -85,12 +81,14 @@ module.exports = {
       },
       width: {
         76: "76px",
+        84: "84px",
       },
       height: {
         190: "190px",
         296: "296px",
         76: "76px",
         48: "48px",
+        84: "84px",
       },
       margin: {
         72: "72px",
@@ -116,6 +114,8 @@ module.exports = {
         bs8: "0px 12px 32px rgba(6, 28, 61, 0.08)",
         bs08: "0px 16px 72px rgba(6, 28, 61, 0.08)",
         bs12: "0px 0px 24px rgba(6, 28, 61, 0.12)",
+        bs12: "0px 0px 24px rgba(6, 28, 61, 0.12)",
+
       },
       gridTemplateColumns: {
         16: "repeat(16, minmax(0,1fr))",

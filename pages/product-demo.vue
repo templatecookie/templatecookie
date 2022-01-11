@@ -1,15 +1,25 @@
 <template>
   <div>
-      <div class="py-28 lg:py-56 bg-dark-06 bg-content bg-right bg-no-repeat hero-demo" :style="DemoHero">
+      <div class="py-28 lg:py-56 bg-dark-06 bg-content bg-right bg-no-repeat hero-demo " :style="DemoHero">
         <div class="container">
-          <div class="max-w-2xl">
+          <div class="max-w-2xl relative">
             <h1 class="tracking-ls01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8">Relik - Admin Dashboard Figma Template</h1>
             <p class="text-white font-light text-lg md:text-xl max-w-536">👉 Relik is a beautiful, simple, developer-friendly, highly customizable  admin dashboard template  with a 💎 high-quality UI & well-organized Figma file 🔥.</p>
-            <div class="mt-8">
-              <nuxt-link to="/" class="inline-block border-1.5 border-blue-0b bg-blue-0b font-medium rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 mr-3">Buy Now <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="" /></nuxt-link>
-              <nuxt-link to="/" class="inline-block font-medium border-1.5 border-white rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 ">Live Preview</nuxt-link>
+              <div class="mt-8">
+                <nuxt-link to="/" class="inline-block border-1.5 border-blue-0b bg-blue-0b font-medium rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 mr-3">Buy Now <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="" /></nuxt-link>
+                <nuxt-link to="/" class="inline-block font-medium border-1.5 border-white rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 ">Live Preview</nuxt-link>
             </div>
+            <div class="shadow-bs8 rounded-xl p-6 bg-white border border-gray-e6 flex items-center absolute -bottom-36 lg:-bottom-64 left-0">
+            <p class="text-dark-06 text-xs mr-4">Compatible with:</p>
+            <ul class="flex space-x-3">
+              <li><nuxt-link to="#"><img src="~@/assets/images/svg/icon1.svg" alt=""></nuxt-link></li>
+              <li><nuxt-link to="#"><img src="~@/assets/images/svg/icon2.svg" alt=""></nuxt-link></li>
+              <li><nuxt-link to="#"><img src="~@/assets/images/svg/icon3.svg" alt=""></nuxt-link></li>
+              <li><nuxt-link to="#"><img src="~@/assets/images/svg/icon4.svg" alt=""></nuxt-link></li>
+            </ul>
           </div>
+          </div>
+          
       </div>
     </div>
     <!-- end -->
@@ -213,6 +223,33 @@
       </div>
     </div>
 
+    <!-- end -->
+
+    <div class="py-20 lg:py-124 bg-gray-f5">
+      <div class="container">
+        <div class="grid grid-cols-12 gap-6">
+            <div class="col-span-6">
+              <div class="lg:pr-20">
+                <h2 class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01">Folder Structure</h2>
+                <p class="text-dark-06 text-base sm:text-lg font-light">Nunc convallis semper justo quis tempor. Praesent molestie, lorem sed imperdiet tempor, libero urna semper urna, facilisis vulputate velit arcu vitae mi. Donec ac nisi ex.  </p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+
+    <div class="pt-20 lg:pt-124">
+      <div class="container">
+        <div class="grid grid-cols-12 gap-6">
+            <div v-for="(item, itemIndex) in PurchaseItems" :key="itemIndex" class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 purchase-card-wrap">
+                <PurchaseCard :title="item.title" :text="item.text" :btnUrl="item.url" :btnText="item.btnText"/>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+
  
   </div>
   
@@ -223,6 +260,7 @@
 import BusinessCard from "../components/BusinessCard.vue";
 import FunFact from "../components/Fun.vue";
 import LinkThumb from "../components/LinkThumb.vue";
+import PurchaseCard from "../components/PurchaseCard.vue";
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import 'swiper/swiper-bundle.css'
 
@@ -232,6 +270,7 @@ export default{
     BusinessCard,
     FunFact,
     LinkThumb,
+    PurchaseCard,
     Swiper,
     SwiperSlide
   },
@@ -400,7 +439,6 @@ data(){
       },
       
     ],
-
      swiperOptionOne: {
         slidesPerView: 1,
         spaceBetween: 24,
@@ -428,7 +466,6 @@ data(){
             },
         },
     },
-
     swiperOptionTwo: {
         slidesPerView: 1,
         spaceBetween: 0,
@@ -448,6 +485,26 @@ data(){
           },
     
     },
+    PurchaseItems:[
+      {
+        url: "https://www.google.com/",
+        title: "Let’s Purchase This Product",
+        text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
+        btnText: "Purchase Now"
+      },
+      {
+        url: "https://www.google.com/",
+        title: "Well-Organize Documentation",
+        text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
+        btnText: "Documentation"
+      },
+      {
+        url: "https://www.google.com/",
+        title: "24/7 Customer Support",
+        text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
+        btnText: "Get Support"
+      }
+    ]
     
   }
 }

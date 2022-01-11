@@ -1,6 +1,6 @@
 <template>
   <div class="shadow-bs12 thumb-link">
-      <a  :href="url" target="_blank">
+      <a :href="url" target="_blank">
         <img
           :src="img"
           alt="product-img"
