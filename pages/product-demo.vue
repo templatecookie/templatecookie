@@ -165,22 +165,75 @@
     </div>
     <!-- end -->
 
+    <div class="pt-20 lg:pt-124 bg-dark-06">
+      <div class="container">
+          <div class="text-center mb-24">
+            <h2 class="text-white text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01">Feature Name 01</h2>
+            <p class="text-white text-base sm:text-lg mb-6 lg:mb-12 font-light">Pick a demo and start building your WordPress website today.  </p>
+            <nuxt-link to="/" class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-black">Purchase Now <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></nuxt-link>
+          </div>
+      </div>
+      <div>
+          <swiper class="swiper" :options="swiperOptionOne">
+            <swiper-slide><img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt=""></swiper-slide>
+            <swiper-slide><img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt=""></swiper-slide>
+            <swiper-slide><img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt=""></swiper-slide>
+            <swiper-slide><img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt=""></swiper-slide>
+            <swiper-slide><img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt=""></swiper-slide>
+            <swiper-slide><img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt=""></swiper-slide>
+            <swiper-slide><img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt=""></swiper-slide>
+            <swiper-slide><img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt=""></swiper-slide>
+            <swiper-slide><img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt=""></swiper-slide>
+            <swiper-slide><img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt=""></swiper-slide>
+          </swiper>
+      </div>
+      
+    </div>
+    <!-- end -->
+
+    <div class="py-20 lg:py-124">
+      <div class="container">
+        <div class=" lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
+            <h2 class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01">Folder Structure</h2>
+            <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9 font-light">Nunc convallis semper justo quis tempor. Praesent molestie, lorem sed imperdiet tempor, libero urna semper urna  </p>
+        </div>
+        <div>
+          <swiper class="swiper" :options="swiperOptionTwo">
+            <swiper-slide><img class="w-full h-ful" src="~@/assets/images/all-img/slider4.png" alt=""></swiper-slide>
+            <swiper-slide><img class="w-full h-ful" src="~@/assets/images/all-img/slider4.png" alt=""></swiper-slide>
+            <swiper-slide><img class="w-full h-ful" src="~@/assets/images/all-img/slider4.png" alt=""></swiper-slide>
+            <swiper-slide><img class="w-full h-ful" src="~@/assets/images/all-img/slider4.png" alt=""></swiper-slide>
+            <swiper-slide><img class="w-full h-ful" src="~@/assets/images/all-img/slider4.png" alt=""></swiper-slide>
+            <swiper-slide><img class="w-full h-ful" src="~@/assets/images/all-img/slider4.png" alt=""></swiper-slide>
+             <div class="swiper-pagination" slot="pagination"></div>
+            <div class="swiper-button-prev" slot="button-prev"></div>
+            <div class="swiper-button-next" slot="button-next"></div>
+          </swiper>
+        </div>
+      </div>
+    </div>
+
  
   </div>
   
   
 </template>
 <script>
+
 import BusinessCard from "../components/BusinessCard.vue";
 import FunFact from "../components/Fun.vue";
 import LinkThumb from "../components/LinkThumb.vue";
+import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+import 'swiper/swiper-bundle.css'
 
 export default{
   name: "ProductDemo",
   components: {
     BusinessCard,
     FunFact,
-    LinkThumb
+    LinkThumb,
+    Swiper,
+    SwiperSlide
   },
 
 data(){
@@ -346,10 +399,81 @@ data(){
         img: "https://i.imgur.com/gE2RT42.png",
       },
       
-    ]
+    ],
+
+     swiperOptionOne: {
+        slidesPerView: 1,
+        spaceBetween: 24,
+        centeredSlides: true,
+        loop:true,
+        autoplay: {
+            delay: 1600,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            1199: {
+                slidesPerView: 4,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            640: {
+                slidesPerView: 2,
+            },
+            320: {
+                slidesPerView: 1,
+            },
+        },
+    },
+
+    swiperOptionTwo: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        centeredSlides: true,
+        loop:true,
+        autoplay: {
+            delay: 1600,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          },
+    
+    },
+    
   }
 }
 
   
 }
 </script>
+
+<style lang="scss" scoped>
+
+  .swiper-slide {
+    width: 60%;
+  }
+  .swiper-slide:nth-child(2n) {
+      width: 40%;
+  }
+  .swiper-slide:nth-child(3n) {
+      width: 20%;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: .2;
+}
+</style>
