@@ -98,7 +98,7 @@
     </div>
     <!-- end -->
 
-    <div class="py-20 lg:py-124 bg-cover bg-center" :style="projectIdea">
+    <div class="pt-20 lg:pt-124 bg-content bg-center-top bg-no-repeat" :style="projectIdea">
       <div class="container">
           <div class="lg:max-w-680 m-auto text-center mb-16">
             <h2 class="text-dark-06 text-4xl md:text-5xl  xl:text-heading-56 font-semibold mb-6  tracking-ls02">Have a project idea! Write down a quote.</h2>

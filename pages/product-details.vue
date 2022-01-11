@@ -11,10 +11,10 @@
                       <img class="w-full h-full" src="~@/assets/images/all-img/product-details-thumb.png" alt="">
                   </div>
                   <div class="sm:flex justify-between">
-                      <nuxt-link to="#" class="btn inline-block bg-blue-0b rounded-5 text-sm py-2.5 px-5 text-white duration-300 hover:bg-black">
+                      <nuxt-link to="#" class="block sm:mb-0 mb-3 text-center sm:inline-block bg-blue-0b rounded-5 text-sm py-2.5 px-5 text-white duration-300 hover:bg-black">
                       <img class="inline-block mr-1.5 duration-300" src="~/assets/images/svg/image-square.svg" alt="" /> Screenshots 
                       </nuxt-link>
-                      <div class="flex items-center">
+                      <div class="flex items-center justify-center sm:justify-end">
                       <p class="text-dark-06 text-base mr-4">Compatible with:</p>
                       <ul class="flex space-x-3">
                         <li><nuxt-link to="#"><img src="~@/assets/images/svg/icon2.svg" alt=""></nuxt-link></li>
@@ -82,13 +82,96 @@
                 </div>
               </div>
               <div class="col-span-4">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, ex!
+                <div class="bg-white rounded p-6 mt-6">
+              <h3 class="heading mb-1">Choose how to pay</h3>
+              <p class="mb-2 text-black text-opacity-75 body-text">
+                Please enter the email address where you would like to receive
+                your confirmation
+              </p>
+              <div>
+                <label
+                  for="plan-hobby"
+                  class="
+                    relative
+                    flex flex-col
+                    p-5
+                    rounded
+                    cursor-pointer
+                    border border-black
+                  "
+                >
+                  <div class="flex justify-between">
+                    <h4
+                      class="
+                        font-bold
+                        text-body14
+                        font-FivoSans
+                        text-black text-opacity-90
+                        mb-2
+                      "
+                    >
+                      Pay part now, part after accepting your offer
+                    </h4>
+                    <h4
+                      class="
+                        font-bold
+                        text-body14
+                        font-FivoSans
+                        text-black text-opacity-90
+                        mb-2
+                        mr-5
+                      "
+                    >
+                      $ 67
+                    </h4>
+                  </div>
+
+                  <p class="body-text text-black text-opacity-90">
+                    Pay $67 now, and the rest ($204) will be automatically
+                    charged when the property accept your offer. If not you will
+                    refund you payment ($67) immediately. No extra fees.
+                  </p>
+
+                  <input
+                    type="radio"
+                    name="plan"
+                    id="plan-hobby"
+                    value="hobby"
+                    class="absolute h-0 w-0 appearance-none"
+                  />
+                  <span
+                    aria-hidden="true"
+                    class="
+                      hidden
+                      absolute
+                      inset-0
+                      border-1 border-black
+                      rounded
+                    "
+                  >
+                    <span
+                      class="
+                        absolute
+                        top-4
+                        right-4
+                        h-6
+                        w-6
+                        inline-flex
+                        items-center
+                        justify-center
+                      "
+                    >
+                    </span>
+                  </span>
+                </label>
               </div>
             </div>
-            <div class="bg-blue-09 xl:px-14 xl:p-0 p-10 pb-0  rounded-2xl">
+              </div>
+            </div>
+            <div class="bg-blue-09 xl:pl-14 xl:p-0 p-10 pb-0  rounded-2xl">
                 <div class="xl:grid grid-cols-12">
                     <div class="col-span-6 flex items-center">
-                      <div class="xl:max-w-536 xl:py-16">
+                      <div class="xl:max-w-536 xl:py-16 text-center xl:text-left">
                           <h2 class="text-white text-3xl lg:text-heading-40 font-semibold mb-5 tracking-ls01">24/7 Customer Support</h2>
                           <p class="text-white text-lg sm:text-lg mb-5 lg:mb-8 font-light">Nunc convallis semper justo quis tempor. Praesent molestie, lorem sed imperdiet tempor, libero urna semper urna, facilisis vulputate velit arcu vitae mi. Donec ac nisi ex.  </p>
                           <div>
@@ -102,6 +185,54 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Featured Card  -->
+            <section class="featured  py-14 md:pt-124">
+              <div class="container">
+                <!-- section title  -->
+                <div class="mb-72 text-center">
+                  <h2 class="text-title font-semibold capitalize">Featured Product</h2>
+                </div>
+
+                <!-- Features Card  -->
+                <div class="grid xl:grid-cols-3 lg:grid-cols-2 gap-6">
+                  <div
+                    v-for="(item, itemIndex) in featuredList"
+                    :key="itemIndex"
+                    class="flex items-stretch"
+                  >
+                    <ProductCard
+                      :img="item.img"
+                      :tag="item.tags"
+                      :title="item.title"
+                      :text="item.text"
+                      :price="item.price"
+                      className="h-296"
+                    />
+                  </div>
+                  
+                </div>
+                <div class="flex justify-center space-x-4 mt-16">
+                    <nuxt-link to="#">
+                      <span class="w-16 h-16 rounded-full flex items-center justify-center bg-gray-f0 duration-300 hover:bg-blue-0b arrow-icon">
+                          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27 16H5" stroke="#0B63E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M14 7L5 16L14 25" stroke="#0B63E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                      </span>
+                    </nuxt-link>
+                    <nuxt-link to="#">
+                      <span class="w-16 h-16 rounded-full flex items-center justify-center bg-gray-f0 duration-300 hover:bg-blue-0b arrow-icon">
+                          <svg class="arrow-icon-right" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27 16H5" stroke="#0B63E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M14 7L5 16L14 25" stroke="#0B63E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+
+                      </span>
+                    </nuxt-link>
+                  </div>
+              </div>
+            </section>
             
         </div>
       </div>
@@ -111,13 +242,14 @@
 
 <script>
 import VueFaqAccordion from 'vue-faq-accordion'
-
+import ProductCard from "../components/ProductCard.vue";
 import Breadcrumb from "../components/Breadcrumb.vue"
   export default{
     name: "ProductDetails",
     components: {
       Breadcrumb,
-      VueFaqAccordion
+      VueFaqAccordion,
+      ProductCard
     },
     data() {
       return{
@@ -176,8 +308,48 @@ import Breadcrumb from "../components/Breadcrumb.vue"
             title: 'What animal smells like popcorn?',
             value: 'Binturongs smell like popcorn.',
           }
-        ]
+        ],
+        featuredList: [
+        {
+          img: "https://i.imgur.com/YD6WZwi.png",
+          tags: "Figma,Html",
+          title: "Onest - Classified Ad Listing ",
+          text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
+          price: 13,
+        },
+        {
+          img: "https://i.imgur.com/IwfwAGA.png",
+          tags: "Figma",
+          title: "Relik - Admin Dashboard",
+          text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
+          price: 18,
+        },
+        {
+          img: "https://i.imgur.com/YD6WZwi.png",
+          tags: "Figma,Html",
+          title: "Onest - Classified Ad Listing ",
+          text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
+          price: 13,
+        },
+      ],
       }
     }
   }
 </script>
+
+<style lang="scss" scoped>
+    .arrow-icon{
+      path{
+        stroke: #0B63E5;
+        transition: all 0.4s;
+      }
+      &:hover path{
+        stroke: white;
+      }
+      svg.arrow-icon-right{
+           transform: rotate(180deg);
+      }
+      
+    }
+</style>
+   
