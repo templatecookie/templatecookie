@@ -6,8 +6,8 @@
             <h1 class="tracking-ls01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8">Relik - Admin Dashboard Figma Template</h1>
             <p class="text-white font-light text-lg md:text-xl max-w-536">👉 Relik is a beautiful, simple, developer-friendly, highly customizable  admin dashboard template  with a 💎 high-quality UI & well-organized Figma file 🔥.</p>
               <div class="mt-8">
-                <nuxt-link to="/" class="inline-block border-1.5 border-blue-0b bg-blue-0b font-medium rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 mr-3">Buy Now <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="" /></nuxt-link>
-                <nuxt-link to="/" class="inline-block font-medium border-1.5 border-white rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 ">Live Preview</nuxt-link>
+                <nuxt-link to="/" class="block text-center sm:inline-block border-1.5 border-blue-0b bg-blue-0b font-medium rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 mb-3 sm:mb-0 sm:mr-3">Buy Now <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="" /></nuxt-link>
+                <nuxt-link to="/" class="block text-center sm:inline-block font-medium border-1.5 border-white rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 ">Live Preview</nuxt-link>
             </div>
             <div class="shadow-bs8 rounded-xl p-6 bg-white border border-gray-e6 flex items-center absolute -bottom-36 lg:-bottom-64 left-0">
             <p class="text-dark-06 text-xs mr-4">Compatible with:</p>
@@ -71,11 +71,8 @@
                   <nuxt-link to="/" class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06">Button Label <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></nuxt-link>
                 </div>
             </div>
-            
         </div>
-          
       </div>
-      
     </div>
     <!-- end -->
 
@@ -178,7 +175,7 @@
     <div class="pt-20 lg:pt-124 bg-dark-06">
       <div class="container">
           <div class="text-center mb-24">
-            <h2 class="text-white text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01">Feature Name 01</h2>
+            <h2 class="text-white text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01">Let’s Get Started</h2>
             <p class="text-white text-base sm:text-lg mb-6 lg:mb-12 font-light">Pick a demo and start building your WordPress website today.  </p>
             <nuxt-link to="/" class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-black">Purchase Now <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></nuxt-link>
           </div>
@@ -256,7 +253,7 @@
     </div>
     <!-- end -->
 
-    <div class="pt-20 lg:pt-124">
+    <div class="pt-20 lg:pt-124 md:pb-0 pb-20">
       <div class="container">
         <div class="grid grid-cols-12 gap-6">
             <div v-for="(item, itemIndex) in PurchaseItems" :key="itemIndex" class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 purchase-card-wrap">
@@ -266,8 +263,6 @@
       </div>
     </div>
     <!-- end -->
-
- 
   </div>
   
   
