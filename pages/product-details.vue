@@ -10,7 +10,7 @@
                   <div class="mb-6">
                       <img class="w-full h-full" src="~@/assets/images/all-img/product-details-thumb.png" alt="">
                   </div>
-                  <div class="flex justify-between">
+                  <div class="sm:flex justify-between">
                       <nuxt-link to="#" class="btn inline-block bg-blue-0b rounded-5 text-sm py-2.5 px-5 text-white duration-300 hover:bg-black">
                       <img class="inline-block mr-1.5 duration-300" src="~/assets/images/svg/image-square.svg" alt="" /> Screenshots 
                       </nuxt-link>
