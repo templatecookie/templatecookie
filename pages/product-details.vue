@@ -74,13 +74,12 @@
                 </pre>
                   </div>
                   <!-- end -->
-                  <div id="change-log" class="py-8 border-b border-gray-e6">
+                  <div id="change-log" class="py-8">
                     <h4 class="text-dark-06 text-xl mb-5 uppercase">CHANGELOG</h4>
                      <p class="text-dark-42 text-base font-light mb-5">Donec volutpat risus ac turpis tempor pulvinar. Mauris viverra varius felis, ut auctor sapien commodo eu. In finibus quis tellus nec auctor. Morbi vehicula suscipit fringilla. Etiam varius libero iaculis rutrum rutrum. Nunc augue ipsum, malesuada ut erat mollis, viverra porta dolor.</p>
 
-                     <VueFaqAccordion 
-                      :items="myItems"
-                    />
+                     <Accordion/>
+      	
                   </div>
                   <!-- end -->
                 </div>
@@ -210,21 +209,25 @@
 </template>
 
 <script>
-import VueFaqAccordion from 'vue-faq-accordion'
+
+
+
 import ProductCard from "../components/ProductCard.vue";
 import Breadcrumb from "../components/Breadcrumb.vue"
+import Accordion from "../components/Accordion.vue";
 
 
   export default{
     name: "ProductDetails",
     components: {
       Breadcrumb,
-      VueFaqAccordion,
       ProductCard,
+      Accordion,
     },
     
     data() {
       return{
+		    
          highlightItemOne:[
            {
              text: "150+ Widgets & Components."
@@ -330,9 +333,21 @@ import Breadcrumb from "../components/Breadcrumb.vue"
             text: "Well Documented"
           },
         ],
-        
+        myContents: [
+          {
+            title: 'How are you?',
+            msg: 'Test for fun!',
+          },
+          {
+            title: 'Who let the dog out?',
+            msg: 'I do not know, dude.',
+          },
+          
+        ],
       }
+      
     }
+
   }
 </script>
 
@@ -384,6 +399,9 @@ import Breadcrumb from "../components/Breadcrumb.vue"
 }
 
 }
+
+// faq
+
 
 
  
