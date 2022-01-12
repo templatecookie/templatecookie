@@ -13,7 +13,7 @@
             {{faq.title}}</a>
           </dt>
         <ul :class="{active: currentFaq == i}" class="pl-10">
-          <li v-for="(item, indexIteam) in faqBody" :key="indexIteam" class="text-dark-42 text-sm mb-1.5">{{item.text}}</li>
+          <li v-for="(item, indexIteam) in faqBody" :key="indexIteam" class="text-dark-42 text-sm mb-1.5">{{item.bodyText}}</li>
         </ul>
         </div>					
       <div>
@@ -41,22 +41,22 @@ export default {
             title: 'Version 1.1 (9th July, 2021)', 
           },
           {
-            title: 'Version 1.0 (21st January, 2021)', 
+            title: 'Version 1.1 (9th July, 2021)', 
           },
       ],
 
       faqBody: [
         {
-          text: "Bug resolved in email page button down"
+          bodyText: "Bug resolved in email page button down"
         },
         {
-          text: "Bug resolved of Landing Page main banner image overlapping in Safari"
+          bodyText: "Bug resolved of Landing Page main banner image overlapping in Safari"
         },
         {
-          text: "Bug resolved of Landing Page main banner image overlapping in Safari"
+          bodyText: "Bug resolved of Landing Page main banner image overlapping in Safari"
         },
         {
-          text: "Bug resolved of Left sidebar menu (icon and text) alignment"
+          bodyText: "Bug resolved of Left sidebar menu (icon and text) alignment"
         },
         
       ]
