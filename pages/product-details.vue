@@ -25,8 +25,12 @@
                 </div>
                 <!-- end -->
                 <div class="pt-6">
-                  <div>
-                    header menu
+                  <div class="border-b border-gray-e6">
+                    <ul class="flex">
+                      <li><nuxt-link to="#" class="text-dark-42 text-base px-5 py-2.5 block duration-300 border-b border-white hover:text-blue-0b hover:border-b hover:border-blue-0b">Overview</nuxt-link></li>
+                      <li><nuxt-link to="#folder-structure" class="text-dark-42 text-base px-5 py-2.5 block duration-300 border-b border-white hover:text-blue-0b hover:border-b hover:border-blue-0b">Folder Structure</nuxt-link></li>
+                      <li><nuxt-link to="#change-log" class="text-dark-42 text-base px-5 py-2.5 block duration-300 border-b border-white hover:text-blue-0b hover:border-b hover:border-blue-0b">Change Log</nuxt-link></li>
+                    </ul>
                   </div>
                   <div class="py-8 border-b border-gray-e6 xl:pr-24">
                     <h4 class="text-dark-06 text-xl mb-5 uppercase">DESCRIPTION</h4>
@@ -51,10 +55,10 @@
                     </div>
                   </div>
                   <!-- end -->
-                  <div class="py-8 border-b border-gray-e6">
+                  <div id="folder-structure" class="py-8 border-b border-gray-e6">
                     <h4 class="text-dark-06 text-xl mb-5 uppercase">FOLDER STRUCTURE</h4>
                      <p class="text-dark-42 text-base font-light mb-5">Donec volutpat risus ac turpis tempor pulvinar. Mauris viverra varius felis, ut auctor sapien commodo eu. In finibus quis tellus nec auctor. Morbi vehicula suscipit fringilla. Etiam varius libero iaculis rutrum rutrum. Nunc augue ipsum, malesuada ut erat mollis, viverra porta dolor.</p>
-                      <pre class=" p-8 rounded-lg bg-gray-f5 text-sm text-dark-06 pb-0">
+                      <pre class=" p-8 rounded-lg bg-gray-f5 text-sm text-dark-06 pb-0 h-200 overflow-y-scroll custom-scroll">
     ├── templatecookie
         ├── assets
           ├── css
@@ -70,7 +74,7 @@
                 </pre>
                   </div>
                   <!-- end -->
-                  <div class="py-8 border-b border-gray-e6">
+                  <div id="change-log" class="py-8 border-b border-gray-e6">
                     <h4 class="text-dark-06 text-xl mb-5 uppercase">CHANGELOG</h4>
                      <p class="text-dark-42 text-base font-light mb-5">Donec volutpat risus ac turpis tempor pulvinar. Mauris viverra varius felis, ut auctor sapien commodo eu. In finibus quis tellus nec auctor. Morbi vehicula suscipit fringilla. Etiam varius libero iaculis rutrum rutrum. Nunc augue ipsum, malesuada ut erat mollis, viverra porta dolor.</p>
 
@@ -209,13 +213,16 @@
 import VueFaqAccordion from 'vue-faq-accordion'
 import ProductCard from "../components/ProductCard.vue";
 import Breadcrumb from "../components/Breadcrumb.vue"
+
+
   export default{
     name: "ProductDetails",
     components: {
       Breadcrumb,
       VueFaqAccordion,
-      ProductCard
+      ProductCard,
     },
+    
     data() {
       return{
          highlightItemOne:[
@@ -322,7 +329,8 @@ import Breadcrumb from "../components/Breadcrumb.vue"
             title: "Documentation:",
             text: "Well Documented"
           },
-        ]
+        ],
+        
       }
     }
   }
@@ -347,16 +355,37 @@ import Breadcrumb from "../components/Breadcrumb.vue"
         border: 1px solid #0B63E5;
   }
 
-input[type="radio"] + label span {
-    transition: background .2s,
-      transform .2s;
+    input[type="radio"] + label span {
+        transition: background .2s,
+        transform .2s;
+    }
+    input[type="radio"]:checked + label span {
+      background-color: #0B63E5; //bg-green-dark
+      box-shadow: 0px 0px 0px 4px white inset;
+    }
+
 }
-input[type="radio"]:checked + label span {
-  background-color: #0B63E5; //bg-green-dark
-  box-shadow: 0px 0px 0px 4px white inset;
+
+// custom scroll
+
+.custom-scroll{
+  &::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+&::-webkit-scrollbar{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+&::-webkit-scrollbar-thumb{
+	background-color: #061C3D;
 }
 
 }
+
+
  
 </style>
    
