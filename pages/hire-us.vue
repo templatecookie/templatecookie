@@ -2,7 +2,7 @@
   <div>
     <div class="bg-gray-f0 py-20 lg:py-124">
       <div class="container">
-        <div class="text-center max-w-4xl m-auto mb-28">
+        <div class="text-center max-w-4xl m-auto mb-20 lg:mb-28">
           <h1
             class="text-dark-06 text-4xl md:text-5xl lg:text-6xl xl:text-heading-80 font-semibold mb-6 lg:mb-9 tracking-ls02"
           >
@@ -55,7 +55,7 @@
           <div class="col-span-6 flex items-center">
             <div class="lg:max-w-536">
               <h2
-                class="text-dark-06 text-4xl md:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-01"
+                class="text-dark-06 text-4xl md:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-ls01"
               >
                 We design & build your solution.
               </h2>
@@ -200,7 +200,7 @@
     <!-- end -->
 
     <div
-      class="pt-20 lg:pt-124 bg-content bg-center-top bg-no-repeat"
+      class="pt-20 md:pb-0 pb-20 lg:pt-124 bg-content bg-center-top bg-no-repeat"
       :style="projectIdea"
     >
       <div class="container">
@@ -216,9 +216,11 @@
             us.
           </p>
         </div>
-        <div class="shadow-bs08 rounded-3xl p-12 bg-white max-w-872 m-auto">
+        <div
+          class="shadow-bs08 rounded-3xl p-8 sm:p-12 bg-white max-w-872 m-auto"
+        >
           <h2
-            class="text-dark-06 font-semibold tracking-01 text-2xl md:text-4xl mb-12 text-center"
+            class="text-dark-06 font-semibold tracking-ls01 text-2xl md:text-4xl mb-8 md:mb-12 text-center"
           >
             Request a quote to <span class="text-blue-0b">Templatecookie</span>
           </h2>

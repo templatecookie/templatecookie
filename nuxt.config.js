@@ -7,6 +7,7 @@ export default {
     title: "template-cookie",
     htmlAttrs: {
       lang: "en",
+
     },
     meta: [
       { charset: "utf-8" },

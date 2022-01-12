@@ -7,7 +7,7 @@
       <div class="container">
         <div class="max-w-2xl relative">
           <h1
-            class="tracking-01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8"
+            class="tracking-ls01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8"
           >
             Relik - Admin Dashboard Figma Template
           </h1>
@@ -19,7 +19,7 @@
           <div class="mt-8">
             <nuxt-link
               to="/"
-              class="inline-block border-1.5 border-blue-0b bg-blue-0b font-medium rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 mr-3"
+              class="block text-center sm:inline-block border-1.5 border-blue-0b bg-blue-0b font-medium rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 mb-3 sm:mb-0 sm:mr-3"
               >Buy Now
               <img
                 class="inline-block ml-2"
@@ -28,7 +28,7 @@
             /></nuxt-link>
             <nuxt-link
               to="/"
-              class="inline-block font-medium border-1.5 border-white rounded-7 py-3.5 px-8 text-body-17 text-white duration-300"
+              class="block text-center sm:inline-block font-medium border-1.5 border-white rounded-7 py-3.5 px-8 text-body-17 text-white duration-300"
               >Live Preview</nuxt-link
             >
           </div>
@@ -153,348 +153,349 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- end -->
+      <!-- end -->
 
-    <div class="py-20 lg:py-124">
-      <div class="container">
-        <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
-          <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">
-            Explore our Gilio team services.
-          </h3>
-          <h2
-            class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
-          >
-            Feature Name 01
-          </h2>
-          <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">
-            Nunc convallis semper justo quis tempor. Praesent molestie, lorem
-            sed imperdiet tempor, libero urna semper urna, facilisis vulputate
-            velit arcu vitae mi. Donec ac nisi ex.
-          </p>
-        </div>
-        <div class="mb-6 lg:mb-0">
-          <img
-            class="w-full object-cover rounded-20"
-            src="~@/assets/images/all-img/demo-thumb2.png"
-            alt=""
-          />
-        </div>
-      </div>
-    </div>
-    <!-- end -->
-
-    <div class="py-20 lg:py-124 bg-gray-f0">
-      <div class="container">
-        <div class="lg:grid grid-cols-12 gap-6">
-          <div class="col-span-6">
-            <div class="lg:mr-20 mb-6 lg:mb-0">
-              <img
-                class="w-full h-full object-cover rounded-20"
-                src="~@/assets/images/all-img/demo-thumb.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="col-span-6 flex items-center">
-            <div class="lg:max-w-536">
-              <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">
-                Explore our Gilio team services.
-              </h3>
-              <h2
-                class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
-              >
-                Feature Name 01
-              </h2>
-              <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">
-                Nunc convallis semper justo quis tempor. Praesent molestie,
-                lorem sed imperdiet tempor, libero urna semper urna, facilisis
-                vulputate velit arcu vitae mi. Donec ac nisi ex.
-              </p>
-              <nuxt-link
-                to="/"
-                class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06"
-                >Button Label
-                <img
-                  class="inline-block ml-2"
-                  src="~/assets/images/svg/arrow-right.svg"
-                  alt="brand-logo"
-              /></nuxt-link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end -->
-
-    <div class="py-20 lg:py-124">
-      <div class="container">
-        <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
-          <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">
-            Explore our Gilio team services.
-          </h3>
-          <h2
-            class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
-          >
-            Feature Name 01
-          </h2>
-          <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">
-            Nunc convallis semper justo quis tempor. Praesent molestie, lorem
-            sed imperdiet tempor, libero urna semper urna, facilisis vulputate
-            velit arcu vitae mi. Donec ac nisi ex.
-          </p>
-        </div>
-        <div class="lg:grid grid-cols-12 gap-6">
-          <div class="lg:col-span-8 order-2 lg:ml-6">
-            <div class="mb-6 lg:mb-0">
-              <img
-                class="w-full object-cover rounded-20"
-                src="~@/assets/images/all-img/demo-thumb3.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="lg:col-span-4">
-            <div
-              v-for="(item, indexItem) in contentItems"
-              :key="indexItem"
-              class="border border-gray-e6 rounded-2xl overflow-hidden p-6 lg:p-8 mb-6 duration-300 hover:bg-blue-0b hover:border-blue-0b content-wrap"
+      <div class="py-20 lg:py-124">
+        <div class="container">
+          <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
+            <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">
+              Explore our Gilio team services.
+            </h3>
+            <h2
+              class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
             >
-              <h3 class="text-dark-06 text-2xl font-medium mb-4 duration-300">
-                {{ item.title }}
-              </h3>
-              <p class="text-dark-42 text-base font-light duration-300">
-                {{ item.text }}
-              </p>
-            </div>
+              Feature Name 01
+            </h2>
+            <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">
+              Nunc convallis semper justo quis tempor. Praesent molestie, lorem
+              sed imperdiet tempor, libero urna semper urna, facilisis vulputate
+              velit arcu vitae mi. Donec ac nisi ex.
+            </p>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- end -->
-
-    <div class="py-20 lg:py-124 bg-gray-f0">
-      <div class="container">
-        <div class="lg:grid grid-cols-12 gap-6">
-          <div class="col-span-6">
-            <div class="lg:mr-20 mb-6 lg:mb-0">
-              <img
-                class="w-full h-full object-cover rounded-20"
-                src="~@/assets/images/all-img/demo-thumb.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="col-span-6 flex items-center">
-            <div class="lg:max-w-536">
-              <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">
-                Explore our Gilio team services.
-              </h3>
-              <h2
-                class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
-              >
-                Feature Name 01
-              </h2>
-              <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">
-                Nunc convallis semper justo quis tempor. Praesent molestie,
-                lorem sed imperdiet tempor, libero urna semper urna, facilisis
-                vulputate velit arcu vitae mi. Donec ac nisi ex.
-              </p>
-              <nuxt-link
-                to="/"
-                class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06"
-                >Button Label
-                <img
-                  class="inline-block ml-2"
-                  src="~/assets/images/svg/arrow-right.svg"
-                  alt="brand-logo"
-              /></nuxt-link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end -->
-
-    <div class="py-20 lg:py-124">
-      <div class="container">
-        <div class="text-center mb-8 lg:mb-12">
-          <h2
-            class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
-          >
-            45+ Beautiful hand-crafted pages
-          </h2>
-        </div>
-        <div class="grid grid-cols-12 gap-6">
-          <div
-            v-for="(item, itemIndex) in linkThumb"
-            :key="itemIndex"
-            class="col-span-12 xl:col-span-3 lg:col-span-6 md:col-span-6"
-          >
-            <LinkThumb :img="item.img" :title="item.title" :url="item.url" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end -->
-
-    <div class="pt-20 lg:pt-124 bg-dark-06">
-      <div class="container">
-        <div class="text-center mb-24">
-          <h2
-            class="text-white text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
-          >
-            Feature Name 01
-          </h2>
-          <p class="text-white text-base sm:text-lg mb-6 lg:mb-12 font-light">
-            Pick a demo and start building your WordPress website today.
-          </p>
-          <nuxt-link
-            to="/"
-            class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-black"
-            >Purchase Now
+          <div class="mb-6 lg:mb-0">
             <img
-              class="inline-block ml-2"
-              src="~/assets/images/svg/arrow-right.svg"
-              alt="brand-logo"
-          /></nuxt-link>
+              class="w-full object-cover rounded-20"
+              src="~@/assets/images/all-img/demo-thumb2.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
-      <div>
-        <swiper class="swiper" :options="swiperOptionOne">
-          <swiper-slide
-            ><img
-              class="w-full h-full border border-white p-3 pb-0"
-              src="~@/assets/images/all-img/slider1.png"
-              alt=""
-          /></swiper-slide>
-          <swiper-slide
-            ><img
-              class="w-full h-full border border-white p-3 pb-0"
-              src="~@/assets/images/all-img/slider2.png"
-              alt=""
-          /></swiper-slide>
-          <swiper-slide
-            ><img
-              class="w-full h-full border border-white p-3 pb-0"
-              src="~@/assets/images/all-img/slider3.png"
-              alt=""
-          /></swiper-slide>
-          <swiper-slide
-            ><img
-              class="w-full h-full border border-white p-3 pb-0"
-              src="~@/assets/images/all-img/slider1.png"
-              alt=""
-          /></swiper-slide>
-          <swiper-slide
-            ><img
-              class="w-full h-full border border-white p-3 pb-0"
-              src="~@/assets/images/all-img/slider2.png"
-              alt=""
-          /></swiper-slide>
-          <swiper-slide
-            ><img
-              class="w-full h-full border border-white p-3 pb-0"
-              src="~@/assets/images/all-img/slider3.png"
-              alt=""
-          /></swiper-slide>
-          <swiper-slide
-            ><img
-              class="w-full h-full border border-white p-3 pb-0"
-              src="~@/assets/images/all-img/slider1.png"
-              alt=""
-          /></swiper-slide>
-          <swiper-slide
-            ><img
-              class="w-full h-full border border-white p-3 pb-0"
-              src="~@/assets/images/all-img/slider2.png"
-              alt=""
-          /></swiper-slide>
-          <swiper-slide
-            ><img
-              class="w-full h-full border border-white p-3 pb-0"
-              src="~@/assets/images/all-img/slider3.png"
-              alt=""
-          /></swiper-slide>
-          <swiper-slide
-            ><img
-              class="w-full h-full border border-white p-3 pb-0"
-              src="~@/assets/images/all-img/slider1.png"
-              alt=""
-          /></swiper-slide>
-        </swiper>
-      </div>
-    </div>
-    <!-- end -->
+      <!-- end -->
 
-    <div class="py-20 lg:py-124">
-      <div class="container">
-        <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
-          <h2
-            class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
-          >
-            Folder Structure
-          </h2>
-          <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9 font-light">
-            Nunc convallis semper justo quis tempor. Praesent molestie, lorem
-            sed imperdiet tempor, libero urna semper urna
-          </p>
+      <div class="py-20 lg:py-124 bg-gray-f0">
+        <div class="container">
+          <div class="lg:grid grid-cols-12 gap-6">
+            <div class="col-span-6">
+              <div class="lg:mr-20 mb-6 lg:mb-0">
+                <img
+                  class="w-full h-full object-cover rounded-20"
+                  src="~@/assets/images/all-img/demo-thumb.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-span-6 flex items-center">
+              <div class="lg:max-w-536">
+                <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">
+                  Explore our Gilio team services.
+                </h3>
+                <h2
+                  class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
+                >
+                  Feature Name 01
+                </h2>
+                <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">
+                  Nunc convallis semper justo quis tempor. Praesent molestie,
+                  lorem sed imperdiet tempor, libero urna semper urna, facilisis
+                  vulputate velit arcu vitae mi. Donec ac nisi ex.
+                </p>
+                <nuxt-link
+                  to="/"
+                  class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06"
+                  >Button Label
+                  <img
+                    class="inline-block ml-2"
+                    src="~/assets/images/svg/arrow-right.svg"
+                    alt="brand-logo"
+                /></nuxt-link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+
+      <div class="py-20 lg:py-124">
+        <div class="container">
+          <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
+            <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">
+              Explore our Gilio team services.
+            </h3>
+            <h2
+              class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
+            >
+              Feature Name 01
+            </h2>
+            <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">
+              Nunc convallis semper justo quis tempor. Praesent molestie, lorem
+              sed imperdiet tempor, libero urna semper urna, facilisis vulputate
+              velit arcu vitae mi. Donec ac nisi ex.
+            </p>
+          </div>
+          <div class="lg:grid grid-cols-12 gap-6">
+            <div class="lg:col-span-8 order-2 lg:ml-6">
+              <div class="mb-6 lg:mb-0">
+                <img
+                  class="w-full object-cover rounded-20"
+                  src="~@/assets/images/all-img/demo-thumb3.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="lg:col-span-4">
+              <div
+                v-for="(item, indexItem) in contentItems"
+                :key="indexItem"
+                class="border border-gray-e6 rounded-2xl overflow-hidden p-6 lg:p-8 mb-6 duration-300 hover:bg-blue-0b hover:border-blue-0b content-wrap"
+              >
+                <h3 class="text-dark-06 text-2xl font-medium mb-4 duration-300">
+                  {{ item.title }}
+                </h3>
+                <p class="text-dark-42 text-base font-light duration-300">
+                  {{ item.text }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+
+      <div class="py-20 lg:py-124 bg-gray-f0">
+        <div class="container">
+          <div class="lg:grid grid-cols-12 gap-6">
+            <div class="col-span-6">
+              <div class="lg:mr-20 mb-6 lg:mb-0">
+                <img
+                  class="w-full h-full object-cover rounded-20"
+                  src="~@/assets/images/all-img/demo-thumb.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-span-6 flex items-center">
+              <div class="lg:max-w-536">
+                <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">
+                  Explore our Gilio team services.
+                </h3>
+                <h2
+                  class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
+                >
+                  Feature Name 01
+                </h2>
+                <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">
+                  Nunc convallis semper justo quis tempor. Praesent molestie,
+                  lorem sed imperdiet tempor, libero urna semper urna, facilisis
+                  vulputate velit arcu vitae mi. Donec ac nisi ex.
+                </p>
+                <nuxt-link
+                  to="/"
+                  class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06"
+                  >Button Label
+                  <img
+                    class="inline-block ml-2"
+                    src="~/assets/images/svg/arrow-right.svg"
+                    alt="brand-logo"
+                /></nuxt-link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+
+      <div class="py-20 lg:py-124">
+        <div class="container">
+          <div class="text-center mb-8 lg:mb-12">
+            <h2
+              class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
+            >
+              45+ Beautiful hand-crafted pages
+            </h2>
+          </div>
+          <div class="grid grid-cols-12 gap-6">
+            <div
+              v-for="(item, itemIndex) in linkThumb"
+              :key="itemIndex"
+              class="col-span-12 xl:col-span-3 lg:col-span-6 md:col-span-6"
+            >
+              <LinkThumb :img="item.img" :title="item.title" :url="item.url" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+
+      <div class="pt-20 lg:pt-124 bg-dark-06">
+        <div class="container">
+          <div class="text-center mb-24">
+            <h2
+              class="text-white text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
+            >
+              Let’s Get Started
+            </h2>
+            <p class="text-white text-base sm:text-lg mb-6 lg:mb-12 font-light">
+              Pick a demo and start building your WordPress website today.
+            </p>
+            <nuxt-link
+              to="/"
+              class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-black"
+              >Purchase Now
+              <img
+                class="inline-block ml-2"
+                src="~/assets/images/svg/arrow-right.svg"
+                alt="brand-logo"
+            /></nuxt-link>
+          </div>
         </div>
         <div>
-          <swiper class="swiper" :options="swiperOptionTwo">
+          <swiper class="swiper" :options="swiperOptionOne">
             <swiper-slide
               ><img
-                class="w-full h-ful"
-                src="~@/assets/images/all-img/slider4.png"
+                class="w-full h-full border border-white p-3 pb-0"
+                src="~@/assets/images/all-img/slider1.png"
                 alt=""
             /></swiper-slide>
             <swiper-slide
               ><img
-                class="w-full h-ful"
-                src="~@/assets/images/all-img/slider4.png"
+                class="w-full h-full border border-white p-3 pb-0"
+                src="~@/assets/images/all-img/slider2.png"
                 alt=""
             /></swiper-slide>
             <swiper-slide
               ><img
-                class="w-full h-ful"
-                src="~@/assets/images/all-img/slider4.png"
+                class="w-full h-full border border-white p-3 pb-0"
+                src="~@/assets/images/all-img/slider3.png"
                 alt=""
             /></swiper-slide>
             <swiper-slide
               ><img
-                class="w-full h-ful"
-                src="~@/assets/images/all-img/slider4.png"
+                class="w-full h-full border border-white p-3 pb-0"
+                src="~@/assets/images/all-img/slider1.png"
                 alt=""
             /></swiper-slide>
             <swiper-slide
               ><img
-                class="w-full h-ful"
-                src="~@/assets/images/all-img/slider4.png"
+                class="w-full h-full border border-white p-3 pb-0"
+                src="~@/assets/images/all-img/slider2.png"
                 alt=""
             /></swiper-slide>
             <swiper-slide
               ><img
-                class="w-full h-ful"
-                src="~@/assets/images/all-img/slider4.png"
+                class="w-full h-full border border-white p-3 pb-0"
+                src="~@/assets/images/all-img/slider3.png"
                 alt=""
             /></swiper-slide>
-            <div class="swiper-pagination" slot="pagination"></div>
-            <div class="swiper-button-prev" slot="button-prev"></div>
-            <div class="swiper-button-next" slot="button-next"></div>
+            <swiper-slide
+              ><img
+                class="w-full h-full border border-white p-3 pb-0"
+                src="~@/assets/images/all-img/slider1.png"
+                alt=""
+            /></swiper-slide>
+            <swiper-slide
+              ><img
+                class="w-full h-full border border-white p-3 pb-0"
+                src="~@/assets/images/all-img/slider2.png"
+                alt=""
+            /></swiper-slide>
+            <swiper-slide
+              ><img
+                class="w-full h-full border border-white p-3 pb-0"
+                src="~@/assets/images/all-img/slider3.png"
+                alt=""
+            /></swiper-slide>
+            <swiper-slide
+              ><img
+                class="w-full h-full border border-white p-3 pb-0"
+                src="~@/assets/images/all-img/slider1.png"
+                alt=""
+            /></swiper-slide>
           </swiper>
         </div>
       </div>
-    </div>
+      <!-- end -->
 
-    <!-- end -->
-
-    <div class="py-20 lg:py-124 bg-gray-f5">
-      <div class="container">
-        <div class="lg:grid grid-cols-12 gap-6">
-          <div class="col-span-6 order-2 mb-6 lg:mb-0">
-            <pre
-              class="border border-gray-e6 p-8 rounded-2xl bg-white text-sm text-dark-06 pb-0"
+      <div class="py-20 lg:py-124">
+        <div class="container">
+          <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
+            <h2
+              class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
             >
+              Folder Structure
+            </h2>
+            <p
+              class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9 font-light"
+            >
+              Nunc convallis semper justo quis tempor. Praesent molestie, lorem
+              sed imperdiet tempor, libero urna semper urna
+            </p>
+          </div>
+          <div>
+            <swiper class="swiper" :options="swiperOptionTwo">
+              <swiper-slide
+                ><img
+                  class="w-full h-ful"
+                  src="~@/assets/images/all-img/slider4.png"
+                  alt=""
+              /></swiper-slide>
+              <swiper-slide
+                ><img
+                  class="w-full h-ful"
+                  src="~@/assets/images/all-img/slider4.png"
+                  alt=""
+              /></swiper-slide>
+              <swiper-slide
+                ><img
+                  class="w-full h-ful"
+                  src="~@/assets/images/all-img/slider4.png"
+                  alt=""
+              /></swiper-slide>
+              <swiper-slide
+                ><img
+                  class="w-full h-ful"
+                  src="~@/assets/images/all-img/slider4.png"
+                  alt=""
+              /></swiper-slide>
+              <swiper-slide
+                ><img
+                  class="w-full h-ful"
+                  src="~@/assets/images/all-img/slider4.png"
+                  alt=""
+              /></swiper-slide>
+              <swiper-slide
+                ><img
+                  class="w-full h-ful"
+                  src="~@/assets/images/all-img/slider4.png"
+                  alt=""
+              /></swiper-slide>
+              <div class="swiper-pagination" slot="pagination"></div>
+              <div class="swiper-button-prev" slot="button-prev"></div>
+              <div class="swiper-button-next" slot="button-next"></div>
+            </swiper>
+          </div>
+        </div>
+      </div>
+
+      <!-- end -->
+
+      <div class="py-20 lg:py-124 bg-gray-f5">
+        <div class="container">
+          <div class="lg:grid grid-cols-12 gap-6">
+            <div class="col-span-6 order-2 mb-6 lg:mb-0">
+              <pre
+                class="border border-gray-e6 p-8 rounded-2xl bg-white text-sm text-dark-06 pb-0"
+              >
     ├── templatecookie
         ├── assets
           ├── css
@@ -508,46 +509,47 @@
         ├── product-list.vue
         ├── billing.vue
                 </pre
-            >
-          </div>
-          <div class="col-span-6 flex items-center">
-            <div class="lg:pr-20">
-              <h2
-                class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
               >
-                Folder Structure
-              </h2>
-              <p class="text-dark-06 text-base sm:text-lg font-light">
-                Nunc convallis semper justo quis tempor. Praesent molestie,
-                lorem sed imperdiet tempor, libero urna semper urna, facilisis
-                vulputate velit arcu vitae mi. Donec ac nisi ex.
-              </p>
+            </div>
+            <div class="col-span-6 flex items-center">
+              <div class="lg:pr-20">
+                <h2
+                  class="text-dark-06 text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
+                >
+                  Folder Structure
+                </h2>
+                <p class="text-dark-06 text-base sm:text-lg font-light">
+                  Nunc convallis semper justo quis tempor. Praesent molestie,
+                  lorem sed imperdiet tempor, libero urna semper urna, facilisis
+                  vulputate velit arcu vitae mi. Donec ac nisi ex.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- end -->
+      <!-- end -->
 
-    <div class="pt-20 lg:pt-124">
-      <div class="container">
-        <div class="grid grid-cols-12 gap-6">
-          <div
-            v-for="(item, itemIndex) in PurchaseItems"
-            :key="itemIndex"
-            class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 purchase-card-wrap"
-          >
-            <PurchaseCard
-              :title="item.title"
-              :text="item.text"
-              :btnUrl="item.url"
-              :btnText="item.btnText"
-            />
+      <div class="pt-20 lg:pt-124 md:pb-0 pb-20">
+        <div class="container">
+          <div class="grid grid-cols-12 gap-6">
+            <div
+              v-for="(item, itemIndex) in PurchaseItems"
+              :key="itemIndex"
+              class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 purchase-card-wrap"
+            >
+              <PurchaseCard
+                :title="item.title"
+                :text="item.text"
+                :btnUrl="item.url"
+                :btnText="item.btnText"
+              />
+            </div>
           </div>
         </div>
       </div>
+      <!-- end -->
     </div>
-    <!-- end -->
   </div>
 </template>
 <script>

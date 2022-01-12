@@ -45,7 +45,31 @@
             </div>
             <!-- end -->
             <div class="pt-6">
-              <div>header menu</div>
+              <div class="border-b border-gray-e6">
+                <ul class="flex">
+                  <li>
+                    <nuxt-link
+                      to="#"
+                      class="text-dark-42 text-base px-5 py-2.5 block duration-300 border-b border-white hover:text-blue-0b hover:border-b hover:border-blue-0b"
+                      >Overview</nuxt-link
+                    >
+                  </li>
+                  <li>
+                    <nuxt-link
+                      to="#folder-structure"
+                      class="text-dark-42 text-base px-5 py-2.5 block duration-300 border-b border-white hover:text-blue-0b hover:border-b hover:border-blue-0b"
+                      >Folder Structure</nuxt-link
+                    >
+                  </li>
+                  <li>
+                    <nuxt-link
+                      to="#change-log"
+                      class="text-dark-42 text-base px-5 py-2.5 block duration-300 border-b border-white hover:text-blue-0b hover:border-b hover:border-blue-0b"
+                      >Change Log</nuxt-link
+                    >
+                  </li>
+                </ul>
+              </div>
               <div class="py-8 border-b border-gray-e6 xl:pr-24">
                 <h4 class="text-dark-06 text-xl mb-5 uppercase">DESCRIPTION</h4>
                 <p class="text-dark-42 text-base font-light mb-5">
@@ -119,7 +143,7 @@
                 </div>
               </div>
               <!-- end -->
-              <div class="py-8 border-b border-gray-e6">
+              <div id="folder-structure" class="py-8 border-b border-gray-e6">
                 <h4 class="text-dark-06 text-xl mb-5 uppercase">
                   FOLDER STRUCTURE
                 </h4>
@@ -131,7 +155,7 @@
                   malesuada ut erat mollis, viverra porta dolor.
                 </p>
                 <pre
-                  class="p-8 rounded-lg bg-gray-f5 text-sm text-dark-06 pb-0"
+                  class="p-8 rounded-lg bg-gray-f5 text-sm text-dark-06 pb-0 h-200 overflow-y-scroll custom-scroll"
                 >
     ├── templatecookie
         ├── assets
@@ -148,7 +172,7 @@
                 </pre>
               </div>
               <!-- end -->
-              <div class="py-8 border-b border-gray-e6">
+              <div id="change-log" class="py-8 border-b border-gray-e6">
                 <h4 class="text-dark-06 text-xl mb-5 uppercase">CHANGELOG</h4>
                 <p class="text-dark-42 text-base font-light mb-5">
                   Donec volutpat risus ac turpis tempor pulvinar. Mauris viverra
@@ -157,70 +181,128 @@
                   varius libero iaculis rutrum rutrum. Nunc augue ipsum,
                   malesuada ut erat mollis, viverra porta dolor.
                 </p>
-
-                <VueFaqAccordion :items="myItems" />
+                <AccordionMenu :contents="contents"></AccordionMenu>
               </div>
               <!-- end -->
             </div>
           </div>
           <div class="col-span-4">
-            <div class="bg-white rounded p-6 mt-6">
-              <h3 class="heading mb-1">Choose how to pay</h3>
-              <p class="mb-2 text-black text-opacity-75 body-text">
-                Please enter the email address where you would like to receive
-                your confirmation
-              </p>
-              <div>
-                <label
-                  for="plan-hobby"
-                  class="relative flex flex-col p-5 rounded cursor-pointer border border-black"
-                >
-                  <div class="flex justify-between">
-                    <h4
-                      class="font-bold text-body14 font-FivoSans text-black text-opacity-90 mb-2"
-                    >
-                      Pay part now, part after accepting your offer
-                    </h4>
-                    <h4
-                      class="font-bold text-body14 font-FivoSans text-black text-opacity-90 mb-2 mr-5"
-                    >
-                      $ 67
-                    </h4>
-                  </div>
-
-                  <p class="body-text text-black text-opacity-90">
-                    Pay $67 now, and the rest ($204) will be automatically
-                    charged when the property accept your offer. If not you will
-                    refund you payment ($67) immediately. No extra fees.
-                  </p>
-
+            <div class="bg-gray-f5 rounded-xl">
+              <div class="select-radio p-4">
+                <div class="mb-4">
                   <input
+                    id="radio1"
                     type="radio"
-                    name="plan"
-                    id="plan-hobby"
-                    value="hobby"
-                    class="absolute h-0 w-0 appearance-none"
+                    name="radio"
+                    class="hidden"
+                    checked
                   />
-                  <span
-                    aria-hidden="true"
-                    class="hidden absolute inset-0 border-1 border-black rounded"
+                  <label
+                    for="radio1"
+                    class="flex items-center cursor-pointer justify-between px-4 py-3 rounded-lg border border-gray-f5"
                   >
-                    <span
-                      class="absolute top-4 right-4 h-6 w-6 inline-flex items-center justify-center"
-                    >
-                    </span>
-                  </span>
-                </label>
+                    <div class="flex items-center">
+                      <span
+                        class="w-5 h-5 rounded-full inline-block mr-4 flex-shrink-0"
+                      ></span>
+                      <div>
+                        <h4 class="text-base text-dark-06 mb-1">
+                          Regular License
+                        </h4>
+                        <p class="text-dark-42 text-sm font-light">
+                          Only for personal use
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <h3
+                        class="text-blue-0b font-semibold text-2xl tracking-ls03"
+                      >
+                        $32
+                      </h3>
+                    </div>
+                  </label>
+                </div>
+                <div class="mb-2">
+                  <input id="radio2" type="radio" name="radio" class="hidden" />
+                  <label
+                    for="radio2"
+                    class="flex items-center cursor-pointer justify-between px-4 py-3 rounded-lg border border-gray-f5"
+                  >
+                    <div class="flex items-center">
+                      <span
+                        class="w-5 h-5 rounded-full inline-block mr-4 flex-shrink-0"
+                      ></span>
+                      <div>
+                        <h4 class="text-base text-dark-06 mb-1">
+                          Commercial License
+                        </h4>
+                        <p class="text-dark-42 text-sm font-light">
+                          Personal & business purpose
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <h3
+                        class="text-blue-0b font-semibold text-2xl tracking-ls03"
+                      >
+                        $32
+                      </h3>
+                    </div>
+                  </label>
+                </div>
               </div>
+              <!-- end -->
+              <div class="pt-0 p-8 pb-4">
+                <div class="border-b border-gray-cd pb-4">
+                  <nuxt-link
+                    to="/"
+                    class="block text-center font-medium bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 mb-4 hover:bg-dark-06"
+                    >Buy now</nuxt-link
+                  >
+                  <nuxt-link
+                    to="/"
+                    class="block text-center font-medium border-1.5 border-dark-06 rounded-7 py-3.5 px-9 text-body-17 text-dark-06 duration-300 mb-4"
+                    ><img
+                      class="inline-block mr-2"
+                      src="~/assets/images/svg/notebook.svg"
+                      alt=""
+                    />
+                    Documentation</nuxt-link
+                  >
+                </div>
+                <div class="pt-6">
+                  <ul>
+                    <li
+                      v-for="(item, indexItem) in myDocumentation"
+                      :key="indexItem"
+                      class="text-gray-6a text-sm mb-4"
+                    >
+                      <img
+                        class="inline mr-2.5"
+                        src="~@/assets/images/svg/icon/arrows-clockwise.svg"
+                        alt=""
+                      />
+                      {{ item.title
+                      }}<span class="float-right text-dark-06">
+                        {{ item.text }}
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- end -->
             </div>
           </div>
         </div>
-        <div class="bg-blue-09 xl:pl-14 xl:p-0 p-10 pb-0 rounded-2xl">
+        <div
+          class="bg-blue-09 xl:pl-14 xl:p-0 p-10 pb-0 rounded-2xl mt-20 lg:mt-124"
+        >
           <div class="xl:grid grid-cols-12">
             <div class="col-span-6 flex items-center">
               <div class="xl:max-w-536 xl:py-16 text-center xl:text-left">
                 <h2
-                  class="text-white text-3xl lg:text-heading-40 font-semibold mb-5 tracking-01"
+                  class="text-white text-3xl lg:text-heading-40 font-semibold mb-5 tracking-ls01"
                 >
                   24/7 Customer Support
                 </h2>
@@ -278,7 +360,7 @@
                   :title="item.title"
                   :text="item.text"
                   :price="item.price"
-                  className="h-296"
+                  className="h-196"
                 />
               </div>
             </div>
@@ -349,16 +431,16 @@
 </template>
 
 <script>
-import VueFaqAccordion from "vue-faq-accordion";
 import ProductCard from "../components/ProductCard.vue";
 import Breadcrumb from "../components/Breadcrumb.vue";
+
 export default {
   name: "ProductDetails",
   components: {
     Breadcrumb,
-    VueFaqAccordion,
     ProductCard,
   },
+
   data() {
     return {
       highlightItemOne: [
@@ -441,6 +523,50 @@ export default {
           price: 13,
         },
       ],
+      myDocumentation: [
+        {
+          title: "Last Update:",
+          text: "1 months ago",
+        },
+        {
+          title: "Released:",
+          text: "2 years ago ",
+        },
+        {
+          title: "Version:",
+          text: "v2.7.4",
+        },
+        {
+          title: "Category:",
+          text: "UI Template",
+        },
+        {
+          title: "File Inlcude:",
+          text: "Fig, Figma",
+        },
+        {
+          title: "Documentation:",
+          text: "Well Documented",
+        },
+      ],
+      contents: [
+        {
+          title: "How are you?",
+          msg: "Test for fun!",
+        },
+        {
+          title: "Who let the dog out?",
+          msg: "I do not know, dude.",
+        },
+        {
+          title: "肚子好餓?",
+          msg: "吃芭樂啦！",
+        },
+        {
+          title: "Find hotels?",
+          msg: "Trivago！",
+        },
+      ],
     };
   },
 };
@@ -457,6 +583,37 @@ export default {
   }
   svg.arrow-icon-right {
     transform: rotate(180deg);
+  }
+}
+.select-radio {
+  input[type="radio"]:checked + label {
+    border: 1px solid #0b63e5;
+  }
+
+  input[type="radio"] + label span {
+    transition: background 0.2s, transform 0.2s;
+  }
+  input[type="radio"]:checked + label span {
+    background-color: #0b63e5; //bg-green-dark
+    box-shadow: 0px 0px 0px 4px white inset;
+  }
+}
+
+// custom scroll
+
+.custom-scroll {
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #061c3d;
   }
 }
 </style>
