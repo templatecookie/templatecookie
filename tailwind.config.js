@@ -66,6 +66,8 @@ module.exports = {
         "body-20": ["20px", "28px"],
         "body-14": ["14px", "14px"],
         "body-10": ["10px", "10px"],
+        "body-18": ["18px", "26px"],
+        "body-32px": ["32px", "46px"],
       },
 
       maxWidth: {
@@ -106,7 +108,7 @@ module.exports = {
         72: "72px",
       },
       letterSpacing: {
-        ls01: " -0.015em",
+        01: " -0.015em",
         ls02: "-0.02em",
         ls03: " -0.012em",
         ls04: " 0.01em",
