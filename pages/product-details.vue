@@ -356,6 +356,26 @@
             </div>
 
             <!-- Features Card  -->
+            <!-- <swiper class="swiper" :options="swiperOptionThree">
+            <swiper-slide>
+              <div
+                v-for="(item, itemIndex) in featuredList"
+                :key="itemIndex"
+                class="flex items-stretch"
+              >
+                <ProductCard
+                  :img="item.img"
+                  :tag="item.tags"
+                  :title="item.title"
+                  :text="item.text"
+                  :price="item.price"
+                  className="h-196"
+                />
+              </div>
+            </swiper-slide>
+      
+
+            </swiper> -->
             <div class="grid xl:grid-cols-3 lg:grid-cols-2 gap-6">
               <div
                 v-for="(item, itemIndex) in featuredList"
@@ -442,6 +462,8 @@
 import ProductCard from "../components/ProductCard.vue";
 import Breadcrumb from "../components/Breadcrumb.vue"
 import Accordion from "../components/Accordion.vue";
+import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+import 'swiper/css/swiper.css'
 
 export default {
   name: "ProductDetails",
@@ -449,6 +471,8 @@ export default {
     Breadcrumb,
     ProductCard,
     Accordion,
+    SwiperSlide,
+    Swiper
   },
   data() {
       return{
@@ -517,19 +541,20 @@ export default {
           price: 13,
         },
         {
-          img: "https://i.imgur.com/IwfwAGA.png",
+          img: "https://i.imgur.com/pFuvaJH.png",
           tags: "Figma",
           title: "Relik - Admin Dashboard",
           text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
           price: 18,
         },
         {
-          img: "https://i.imgur.com/YD6WZwi.png",
+          img: "https://i.imgur.com/76niUXz.png",
           tags: "Figma,Html",
           title: "Onest - Classified Ad Listing ",
           text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
           price: 13,
         },
+     
         ],
         myDocumentation: [
           {
@@ -568,6 +593,41 @@ export default {
           },
           
         ],
+        // swiperOptionThree: {
+        // slidesPerView: 3,
+        // spaceBetween: 0,
+        // centeredSlides: true,
+        // loop: true,
+        // autoplay: {
+        //   delay: 1600,
+        //   disableOnInteraction: false,
+        // },
+        // breakpoints: {
+        //   1199: {
+        //     slidesPerView: 3,
+        //   },
+        //   1024: {
+        //     slidesPerView: 3,
+        //   },
+        //   768: {
+        //     slidesPerView: 2,
+        //   },
+        //   640: {
+        //     slidesPerView: 2,
+        //   },
+        //   320: {
+        //     slidesPerView: 1,
+        //   },
+        // },
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+        // },
       }
     }
   }
