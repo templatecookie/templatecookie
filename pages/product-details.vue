@@ -82,7 +82,55 @@
                 </div>
               </div>
               <div class="col-span-4">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, ex!
+                <div class="bg-gray-f5 rounded-xl">
+                  <div class="select-radio p-4">
+                      <div class="mb-4">
+                        <input id="radio1" type="radio" name="radio" class="hidden" checked />
+                        <label for="radio1" class="flex items-center cursor-pointer justify-between px-4 py-3 rounded-lg border border-gray-f5">
+                          <div class="flex items-center">
+                            <span class="w-5 h-5 rounded-full inline-block mr-4 flex-shrink-0"></span>
+                            <div>
+                              <h4 class="text-base text-dark-06 mb-1">Regular License</h4>
+                              <p class="text-dark-42 text-sm font-light">Only for personal use</p>
+                            </div>
+                          </div>
+                          <div>
+                            <h3 class="text-blue-0b font-semibold text-2xl tracking-ls03">$32</h3>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="mb-2">
+                        <input id="radio2" type="radio" name="radio" class="hidden" />
+                        <label for="radio2" class="flex items-center cursor-pointer justify-between px-4 py-3 rounded-lg border border-gray-f5">
+                          <div class="flex items-center">
+                            <span class="w-5 h-5 rounded-full inline-block mr-4 flex-shrink-0"></span>
+                            <div>
+                              <h4 class="text-base text-dark-06 mb-1">Commercial License</h4>
+                              <p class="text-dark-42 text-sm font-light">Personal & business purpose</p>
+                            </div>
+                          </div>
+                          <div>
+                            <h3 class="text-blue-0b font-semibold text-2xl tracking-ls03">$32</h3>
+                          </div>
+                        </label>
+                      </div>
+                  </div>
+                  <!-- end -->
+                  <div class="pt-0 p-8 pb-4">
+                      <div class="border-b border-gray-cd pb-4">
+                        <nuxt-link to="/" class="block text-center font-medium bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 mb-4 hover:bg-dark-06">Buy now</nuxt-link>
+                        <nuxt-link to="/" class="block text-center font-medium border-1.5 border-dark-06 rounded-7 py-3.5 px-9 text-body-17 text-dark-06 duration-300 mb-4"><img class="inline-block mr-2" src="~/assets/images/svg/notebook.svg" alt="" /> Documentation</nuxt-link>
+                      </div>
+                      <div class="pt-6">
+                        <ul>
+                          <li v-for="(item , indexItem) in myDocumentation" :key="indexItem" class="text-gray-6a text-sm mb-4"><img class="inline mr-2.5" src="~@/assets/images/svg/icon/arrows-clockwise.svg" alt=""> {{item.title}}<span class=" float-right text-dark-06"> {{item.text}} </span></li>
+                        </ul>
+                      </div>
+                  </div>
+                  <!-- end -->
+                  
+                </div>
+                
               </div>
             </div>
             <div class="bg-blue-09 xl:pl-14 xl:p-0 p-10 pb-0 rounded-2xl mt-20 lg:mt-124">
@@ -248,7 +296,33 @@ import Breadcrumb from "../components/Breadcrumb.vue"
           text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
           price: 13,
         },
-      ],
+        ],
+        myDocumentation: [
+          {
+            title: "Last Update:",
+            text: "1 months ago"
+          },
+          {
+            title: "Released:",
+            text: "2 years ago "
+          },
+          {
+            title: "Version:",
+            text: "v2.7.4"
+          },
+          {
+            title: "Category:",
+            text: "UI Template"
+          },
+          {
+            title: "File Inlcude:",
+            text: "Fig, Figma"
+          },
+          {
+            title: "Documentation:",
+            text: "Well Documented"
+          },
+        ]
       }
     }
   }
@@ -268,5 +342,21 @@ import Breadcrumb from "../components/Breadcrumb.vue"
       }
       
     }
+.select-radio{
+     input[type=radio]:checked + label {
+        border: 1px solid #0B63E5;
+  }
+
+input[type="radio"] + label span {
+    transition: background .2s,
+      transform .2s;
+}
+input[type="radio"]:checked + label span {
+  background-color: #0B63E5; //bg-green-dark
+  box-shadow: 0px 0px 0px 4px white inset;
+}
+
+}
+ 
 </style>
    
