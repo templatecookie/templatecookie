@@ -215,6 +215,8 @@
 import ProductCard from "../components/ProductCard.vue";
 import Breadcrumb from "../components/Breadcrumb.vue"
 import Accordion from "../components/Accordion.vue";
+import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+import 'swiper/swiper-bundle.css'
 
 
   export default{
@@ -223,10 +225,25 @@ import Accordion from "../components/Accordion.vue";
       Breadcrumb,
       ProductCard,
       Accordion,
+      Swiper,
+    SwiperSlide
     },
     
     data() {
       return{
+        swiperOption: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          }
+        },
 		    
          highlightItemOne:[
            {
@@ -400,10 +417,4 @@ import Accordion from "../components/Accordion.vue";
 
 }
 
-// faq
-
-
-
- 
 </style>
-   
