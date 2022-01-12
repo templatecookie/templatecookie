@@ -561,6 +561,7 @@ import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/swiper-bundle.css";
 
 export default {
+  layout: "demo",
   name: "ProductDemo",
   components: {
     BusinessCard,
