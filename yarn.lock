@@ -8344,6 +8344,11 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
 
+vue-accordion-menu@^0.1.46:
+  version "0.1.46"
+  resolved "https://registry.yarnpkg.com/vue-accordion-menu/-/vue-accordion-menu-0.1.46.tgz#c73e903037fcf45fc42426aa667fff0a72bb5e93"
+  integrity sha1-xz6QMDf89F/EJCaqZn//CnK7XpM=
+
 vue-awesome-swiper@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/vue-awesome-swiper/-/vue-awesome-swiper-4.1.1.tgz#8f7ab221ad003021d756b86aa618f429924900fe"
@@ -8353,6 +8358,13 @@ vue-client-only@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/vue-client-only/-/vue-client-only-2.1.0.tgz#1a67a47b8ecacfa86d75830173fffee3bf8a4ee3"
   integrity sha512-vKl1skEKn8EK9f8P2ZzhRnuaRHLHrlt1sbRmazlvsx6EiC3A8oWF8YCBrMJzoN+W3OnElwIGbVjsx6/xelY1AA==
+
+vue-faq-accordion@^1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/vue-faq-accordion/-/vue-faq-accordion-1.6.2.tgz#f8f1d68abba88240e8a5b86dc811db4a154ae861"
+  integrity sha512-PXFgeYQiXBe6fYERfIn44bFYUYsP+TiZ+qBH/KQKvXck85neCZvQiJN8IHwMLSC41fDdBnQvBIi6V9oO/wl/zg==
+  dependencies:
+    vue2-transitions "^0.3.0"
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
@@ -8426,6 +8438,11 @@ vue-template-es2015-compiler@^1.9.0:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
+
+vue2-transitions@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/vue2-transitions/-/vue2-transitions-0.3.0.tgz#765fc0d743103fcfe2d10f431697d8873a075c17"
+  integrity sha512-m1ad8K8kufqiEhj5gXHkkqOioI5sW0FaMbRiO0Tv2WFfGbO2eIKrfkFiO3HPQtMJboimaLCN4p/zL81clLbG4w==
 
 vue@^2.6.12, vue@^2.6.14:
   version "2.6.14"

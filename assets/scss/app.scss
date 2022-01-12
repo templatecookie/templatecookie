@@ -275,3 +275,61 @@ input[type="radio"]:checked + label span {
     line-height: 24px;
   }
 }
+
+// Faq
+.faq-wrapper[data-v-5d9392b3] {
+  margin: 0px auto;
+  .accordion {
+    margin: 0px;
+    border: 0px;
+    &__item {
+      overflow: hidden;
+      border-radius: 12px;
+      margin-bottom: 24px;
+      border: 1px solid #e6e8ec;
+    }
+
+    &__title-text {
+      font-size: 20px;
+      line-height: 28px;
+      color: #061c3d;
+      letter-spacing: -0.015em;
+    }
+
+    &__title {
+      padding: 24px;
+      &:hover {
+        .accordion__toggle-button {
+          &::after,
+          &::before {
+            background-color: #0b63e5;
+          }
+        }
+      }
+
+      &_active {
+        background-color: #0b63e5;
+        .accordion__title-text {
+          color: #fff;
+        }
+        .accordion__toggle-button.accordion__toggle-button_active {
+          &::before,
+          &::after {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+
+    &__value {
+      padding: 18px 24px 24px 24px;
+    }
+
+    &__toggle-button {
+      &::after,
+      &::before {
+        background-color: #061c3d;
+      }
+    }
+  }
+}
