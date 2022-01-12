@@ -170,9 +170,19 @@
         ├── product-list.vue
         ├── billing.vue
                 </pre>
-              </div>
-              <!-- end -->
-              <div id="change-log" class="py-8 border-b border-gray-e6">
+                  </div>
+                  <!-- end -->
+                  <div id="change-log" class="py-8">
+                    <h4 class="text-dark-06 text-xl mb-5 uppercase">CHANGELOG</h4>
+                     <p class="text-dark-42 text-base font-light mb-5">Donec volutpat risus ac turpis tempor pulvinar. Mauris viverra varius felis, ut auctor sapien commodo eu. In finibus quis tellus nec auctor. Morbi vehicula suscipit fringilla. Etiam varius libero iaculis rutrum rutrum. Nunc augue ipsum, malesuada ut erat mollis, viverra porta dolor.</p>
+
+                     <Accordion/>
+      	
+                  </div>
+                  <!-- end -->
+            </div>
+            <!-- end -->
+            <div id="change-log" class="py-8 border-b border-gray-e6">
                 <h4 class="text-dark-06 text-xl mb-5 uppercase">CHANGELOG</h4>
                 <p class="text-dark-42 text-base font-light mb-5">
                   Donec volutpat risus ac turpis tempor pulvinar. Mauris viverra
@@ -182,9 +192,8 @@
                   malesuada ut erat mollis, viverra porta dolor.
                 </p>
                 <AccordionMenu :contents="contents"></AccordionMenu>
-              </div>
-              <!-- end -->
             </div>
+            <!-- end -->
           </div>
           <div class="col-span-4">
             <div class="bg-gray-f5 rounded-xl">
@@ -295,9 +304,8 @@
             </div>
           </div>
         </div>
-        <div
-          class="bg-blue-09 xl:pl-14 xl:p-0 p-10 pb-0 rounded-2xl mt-20 lg:mt-124"
-        >
+          
+        <div class="bg-blue-09 xl:pl-14 xl:p-0 p-10 pb-0 rounded-2xl mt-20 lg:mt-124">
           <div class="xl:grid grid-cols-12">
             <div class="col-span-6 flex items-center">
               <div class="xl:max-w-536 xl:py-16 text-center xl:text-left">
@@ -348,6 +356,26 @@
             </div>
 
             <!-- Features Card  -->
+            <!-- <swiper class="swiper" :options="swiperOptionThree">
+            <swiper-slide>
+              <div
+                v-for="(item, itemIndex) in featuredList"
+                :key="itemIndex"
+                class="flex items-stretch"
+              >
+                <ProductCard
+                  :img="item.img"
+                  :tag="item.tags"
+                  :title="item.title"
+                  :text="item.text"
+                  :price="item.price"
+                  className="h-196"
+                />
+              </div>
+            </swiper-slide>
+      
+
+            </swiper> -->
             <div class="grid xl:grid-cols-3 lg:grid-cols-2 gap-6">
               <div
                 v-for="(item, itemIndex) in featuredList"
@@ -432,75 +460,79 @@
 
 <script>
 import ProductCard from "../components/ProductCard.vue";
-import Breadcrumb from "../components/Breadcrumb.vue";
+import Breadcrumb from "../components/Breadcrumb.vue"
+import Accordion from "../components/Accordion.vue";
+import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+import 'swiper/css/swiper.css'
 
 export default {
   name: "ProductDetails",
   components: {
     Breadcrumb,
     ProductCard,
+    Accordion,
+    SwiperSlide,
+    Swiper
   },
-
   data() {
-    return {
-      highlightItemOne: [
-        {
-          text: "150+ Widgets & Components.",
-        },
-        {
-          text: "124+ UI Components & Widgets.",
-        },
-        {
-          text: "Based on Extensive UX Research.",
-        },
-        {
-          text: "All Layers, Groups, and Components are Logically Named Correctly.",
-        },
-        {
-          text: "Designed for Designers & Developers.",
-        },
-        {
-          text: "Full Width 1920px.",
-        },
-        {
-          text: "Free Google Fonts Used. (Public Sans)",
-        },
-        {
-          text: "Icon Provided by phosphoricons. (flat icon)",
-        },
-        {
-          text: "Light, Dark & Navy Blue Left Side Bar.",
-        },
-        {
-          text: "Kanban Board to Manage with Team.",
-        },
-        {
-          text: "Post Comments on Cards.",
-        },
-        {
-          text: "Attach/Upload File.",
-        },
-        {
-          text: "Social Authentication.",
-        },
-      ],
-      myItems: [
-        {
-          title: "How many time zones are there in all?",
-          value:
-            "Given a 24-hour day and 360 degrees of longitude around the Earth",
-        },
-        {
-          title: "How long is a day and year on Venus?",
-          value:
-            "Venus takes 224.7 Earth days to complete one orbit around the Sun.",
-        },
-        {
-          title: "What animal smells like popcorn?",
-          value: "Binturongs smell like popcorn.",
-        },
-      ],
-      featuredList: [
+      return{
+        highlightItemOne:[
+           {
+             text: "150+ Widgets & Components."
+           },
+           {
+             text: "124+ UI Components & Widgets."
+           },
+           {
+             text: "Based on Extensive UX Research."
+           },
+           {
+             text: "All Layers, Groups, and Components are Logically Named Correctly."
+           },
+           {
+             text: "Designed for Designers & Developers."
+           },
+           {
+             text: "Full Width 1920px."
+           },
+           {
+             text: "Free Google Fonts Used. (Public Sans)"
+           },
+           {
+             text: "Icon Provided by phosphoricons. (flat icon)"
+           },
+           {
+             text: "Light, Dark & Navy Blue Left Side Bar."
+           },
+           {
+             text: "Kanban Board to Manage with Team."
+           },
+           {
+             text: "Post Comments on Cards."
+           },
+           {
+             text: "Attach/Upload File."
+           },
+           {
+             text: "Social Authentication."
+           },
+           
+        ],
+        myItems: [
+          {
+            title: 'How many time zones are there in all?',
+            value: 'Given a 24-hour day and 360 degrees of longitude around the Earth',
+          },
+          {
+            title: 'How long is a day and year on Venus?',
+            value: 'Venus takes 224.7 Earth days to complete one orbit around the Sun.',
+          },
+          {
+            title: 'What animal smells like popcorn?',
+            value: 'Binturongs smell like popcorn.',
+          }
+        ],
+        featuredList: [
         {
           img: "https://i.imgur.com/YD6WZwi.png",
           tags: "Figma,Html",
@@ -509,67 +541,97 @@ export default {
           price: 13,
         },
         {
-          img: "https://i.imgur.com/IwfwAGA.png",
+          img: "https://i.imgur.com/pFuvaJH.png",
           tags: "Figma",
           title: "Relik - Admin Dashboard",
           text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
           price: 18,
         },
         {
-          img: "https://i.imgur.com/YD6WZwi.png",
+          img: "https://i.imgur.com/76niUXz.png",
           tags: "Figma,Html",
           title: "Onest - Classified Ad Listing ",
           text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
           price: 13,
         },
-      ],
-      myDocumentation: [
-        {
-          title: "Last Update:",
-          text: "1 months ago",
-        },
-        {
-          title: "Released:",
-          text: "2 years ago ",
-        },
-        {
-          title: "Version:",
-          text: "v2.7.4",
-        },
-        {
-          title: "Category:",
-          text: "UI Template",
-        },
-        {
-          title: "File Inlcude:",
-          text: "Fig, Figma",
-        },
-        {
-          title: "Documentation:",
-          text: "Well Documented",
-        },
-      ],
-      contents: [
-        {
-          title: "How are you?",
-          msg: "Test for fun!",
-        },
-        {
-          title: "Who let the dog out?",
-          msg: "I do not know, dude.",
-        },
-        {
-          title: "肚子好餓?",
-          msg: "吃芭樂啦！",
-        },
-        {
-          title: "Find hotels?",
-          msg: "Trivago！",
-        },
-      ],
-    };
-  },
-};
+     
+        ],
+        myDocumentation: [
+          {
+            title: "Last Update:",
+            text: "1 months ago"
+          },
+          {
+            title: "Released:",
+            text: "2 years ago "
+          },
+          {
+            title: "Version:",
+            text: "v2.7.4"
+          },
+          {
+            title: "Category:",
+            text: "UI Template"
+          },
+          {
+            title: "File Inlcude:",
+            text: "Fig, Figma"
+          },
+          {
+            title: "Documentation:",
+            text: "Well Documented"
+          },
+        ],
+        myContents: [
+          {
+            title: 'How are you?',
+            msg: 'Test for fun!',
+          },
+          {
+            title: 'Who let the dog out?',
+            msg: 'I do not know, dude.',
+          },
+          
+        ],
+        // swiperOptionThree: {
+        // slidesPerView: 3,
+        // spaceBetween: 0,
+        // centeredSlides: true,
+        // loop: true,
+        // autoplay: {
+        //   delay: 1600,
+        //   disableOnInteraction: false,
+        // },
+        // breakpoints: {
+        //   1199: {
+        //     slidesPerView: 3,
+        //   },
+        //   1024: {
+        //     slidesPerView: 3,
+        //   },
+        //   768: {
+        //     slidesPerView: 2,
+        //   },
+        //   640: {
+        //     slidesPerView: 2,
+        //   },
+        //   320: {
+        //     slidesPerView: 1,
+        //   },
+        // },
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+        // },
+      }
+    }
+  }
+
 </script>
 
 <style lang="scss" scoped>
@@ -616,4 +678,5 @@ export default {
     background-color: #061c3d;
   }
 }
+
 </style>

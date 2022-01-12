@@ -558,7 +558,9 @@ import FunFact from "../components/Fun.vue";
 import LinkThumb from "../components/LinkThumb.vue";
 import PurchaseCard from "../components/PurchaseCard.vue";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
-import "swiper/swiper-bundle.css";
+  import 'swiper/css/swiper.css'
+
+
 
 export default {
   layout: "demo",
@@ -779,6 +781,7 @@ export default {
           prevEl: ".swiper-button-prev",
         },
       },
+
       PurchaseItems: [
         {
           url: "https://www.google.com/",
