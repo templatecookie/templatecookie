@@ -23,62 +23,6 @@
 
 // Custom css
 
-// Toggle Button
-.toggle {
-  width: 65px;
-  height: 65px;
-  display: flex;
-  cursor: pointer;
-  background: #fff;
-  overflow: hidden;
-  position: relative;
-  border-radius: 10px;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.1s linear;
-
-  span {
-    width: 40px;
-    height: 4px;
-    position: absolute;
-    border-radius: 4px;
-    background: #1863ff;
-    transition: all 0.3s linear;
-
-    &:nth-child(1) {
-      width: 25px;
-      left: 15px;
-      transform: translateY(-15px);
-    }
-    &:nth-child(2) {
-      width: 15px;
-      left: 15px;
-      transform: translateY(15px);
-    }
-  }
-
-  &.active {
-    transform: translateY(3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-
-    span {
-      &:nth-child(1) {
-        width: 40px;
-        transition-delay: 0.03s;
-        transform: translateY(0px) rotate(45deg);
-      }
-      &:nth-child(2) {
-        width: 40px;
-        transition-delay: 0.06s;
-        transform: translateY(0px) rotate(315deg);
-      }
-      &:nth-child(3) {
-        transform: translateX(60px);
-      }
-    }
-  }
-}
-
 // footer Menu
 .footer-menu {
   li {
@@ -353,19 +297,18 @@ input[type="radio"]:checked + label span {
 }
 
 // swiper slider
-  .custom-pagination{
-    .swiper-pagination-bullet{
-        width: 12px;
-        height: 12px;
-        margin: 0 5px;
-        opacity: 1;
-        transition: all 0.4s;
-        background-color: #CEE0FA;
-        &.swiper-pagination-bullet-active{
-          width: 32px;
-          border-radius: 12px;
-          background-color: #0B63E5;
-        }
+.custom-pagination {
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    opacity: 1;
+    transition: all 0.4s;
+    background-color: #cee0fa;
+    &.swiper-pagination-bullet-active {
+      width: 32px;
+      border-radius: 12px;
+      background-color: #0b63e5;
     }
   }
-  
+}
