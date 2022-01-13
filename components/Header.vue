@@ -106,7 +106,7 @@
     <!-- Sidebar  -->
     <transition name="fade">
       <div
-        class="sidebar absolute left-0 top-full w-full bg-white h-screen max-w-300 block lg:hidden"
+        class="sidebar absolute left-0 top-full w-full bg-white h-screen max-w-300 block lg:hidden z-50"
         v-if="sideBar"
       >
         <!-- menu  -->
@@ -216,6 +216,7 @@ export default {
     openSidebar() {
       this.toggleStatus = !this.toggleStatus;
       this.sideBar = !this.sideBar;
+      document.body.classList.toggle("overlay");
     },
   },
 };

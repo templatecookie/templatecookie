@@ -123,7 +123,7 @@ input[type="radio"]:checked + label span {
   @media (max-width: 1670px) {
     position: relative;
     z-index: 0;
-    &::before{
+    &::before {
       content: "";
       left: 0;
       top: 0;
@@ -134,13 +134,12 @@ input[type="radio"]:checked + label span {
       background-color: rgba(0, 0, 0, 0.6);
     }
   }
-   @media (max-width: 991px) {
-      background-image: none!important;
-      &::before{
-        content: none;
-
-      }
+  @media (max-width: 991px) {
+    background-image: none !important;
+    &::before {
+      content: none;
     }
+  }
   //  @media (max-width: 1400px) {
   //     background-position: 290%!important;
   // }
@@ -327,6 +326,25 @@ input[type="radio"]:checked + label span {
       width: 32px;
       border-radius: 12px;
       background-color: #0b63e5;
+    }
+  }
+}
+
+body {
+  position: relative;
+  &.overlay {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 49;
+      background: rgba(0, 0, 0, 0.75);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
     }
   }
 }
