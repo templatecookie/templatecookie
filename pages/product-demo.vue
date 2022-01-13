@@ -480,14 +480,14 @@
             <div class="single-slider">
                 <div class="swiper-button-prev ml-6" slot="button-prev">
                   <span
-                    class="w-12 h-12 rounded-md flex items-center justify-center flex-shrink-0 bg-white-5 duration-300 hover:bg-blue-0b"
+                    class="w-12 h-12 rounded-md flex items-center justify-center flex-shrink-0 bg-black bg-opacity-50 duration-300 hover:bg-blue-0b"
                   >
                     <img src="~@/assets/images/svg/caret-left.svg" alt="">
                   </span>
                 </div>
                 <div class="swiper-button-next mr-6" slot="button-next">
                   <span
-                    class="w-12 h-12 rounded-md flex items-center justify-center flex-shrink-0 bg-white-5 duration-300 hover:bg-blue-0b arrow-icon"
+                    class="w-12 h-12 rounded-md flex items-center justify-center flex-shrink-0 bg-black bg-opacity-50 duration-300 hover:bg-blue-0b arrow-icon"
                   >
                     <img src="~@/assets/images/svg/caret-right.svg" alt="">
                   </span>

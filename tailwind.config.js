@@ -45,9 +45,7 @@ module.exports = {
         "gray-14": "#00000014",
         "dark-e6": " #E6E8EC",
         "gray-6a": " #6A778B",
-        "white-12": " rgba(255, 255, 255, 0.12)",
-        "white-5": " rgba(0, 0, 0, 0.5)",
-        "gray-9b": "#9BA4B1",
+        "white-12": "#2764C0",
       },
       fontFamily: {
         lexend: ["Lexend", "sans-serif"],
@@ -80,13 +78,6 @@ module.exports = {
         232: "232px",
         200: "200px",
         100: "100px",
-        300: "300px",
-      },
-      width: {
-        76: "76px",
-        84: "84px",
-        200: "200px",
-        300: "300px",
       },
 
       borderWidth: {
@@ -95,7 +86,11 @@ module.exports = {
       spacing: {
         72: "72px",
       },
-
+      width: {
+        76: "76px",
+        84: "84px",
+        200: "200px",
+      },
       height: {
         190: "190px",
         296: "296px",
@@ -103,12 +98,11 @@ module.exports = {
         48: "48px",
         84: "84px",
         200: "200px",
-        250: "250px",
+        250: "250px"
       },
 
       margin: {
         72: "72px",
-        25: "25px",
       },
       padding: {
         124: "124px",
@@ -132,7 +126,6 @@ module.exports = {
         bs08: "0px 16px 72px rgba(6, 28, 61, 0.08)",
         bs12: "0px 0px 24px rgba(6, 28, 61, 0.12)",
         bs012: "0px 16px 88px rgba(0, 0, 0, 0.12)",
-        "6xl": " 0px -1px 0px 0px #E6E8EC inset ",
       },
       gridTemplateColumns: {
         16: "repeat(16, minmax(0,1fr))",
@@ -150,6 +143,12 @@ module.exports = {
         15: "15",
         16: "16",
         17: "17",
+      },
+      screens: {
+        'mobile': '640px',
+        // => @media (min-width: 640px) { ... }
+
+
       },
     },
   },
