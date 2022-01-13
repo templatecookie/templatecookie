@@ -381,21 +381,51 @@
       </div>
     </div>
     <!-- end -->
+
   </div>
 </template>
 <script>
+
 import SolutionCard from "../components/SolutionCard.vue";
 import BusinessCard from "../components/BusinessCard.vue";
 import CounterUp from "../components/CounterUp.vue";
+
+  
+
 export default {
   name: "HireUsPage",
-  component: {
+  components: {
     SolutionCard,
     BusinessCard,
     CounterUp,
+    
   },
   data() {
     return {
+        
+      projectIdea: {
+        backgroundImage: "url(https://i.imgur.com/2HNdUlR.png)",
+      },
+
+      CounterUpItem: [
+        {
+          title: "17+",
+          text: "Awards Rewarded",
+        },
+        {
+          title: "23+",
+          text: "Years of Experience",
+        },
+        {
+          title: "183+",
+          text: "Happy Clients",
+        },
+        {
+          title: "315+",
+          text: "COMPLETED PROJECT",
+        },
+      ],
+
       items: [
         {
           title: "1. Understanding (UX)",
@@ -414,6 +444,7 @@ export default {
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
       ],
+
       BusinessItems: [
         {
           title: "Project Introduction",
@@ -440,28 +471,12 @@ export default {
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
       ],
-      projectIdea: {
-        backgroundImage: "url(https://i.imgur.com/2HNdUlR.png)",
-      },
-      CounterUpItem: [
-        {
-          title: "17+",
-          text: "Awards Rewarded",
-        },
-        {
-          title: "23+",
-          text: "Years of Experience",
-        },
-        {
-          title: "183+",
-          text: "Happy Clients",
-        },
-        {
-          title: "315+",
-          text: "COMPLETED PROJECT",
-        },
-      ],
+      
     };
   },
+  
+  
 };
 </script>
+
+
