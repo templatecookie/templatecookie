@@ -78,6 +78,7 @@ module.exports = {
         232: "232px",
         200: "200px",
         100: "100px",
+        300: "300px",
       },
 
       borderWidth: {
@@ -98,7 +99,7 @@ module.exports = {
         48: "48px",
         84: "84px",
         200: "200px",
-        250: "250px"
+        250: "250px",
       },
 
       margin: {
@@ -145,10 +146,8 @@ module.exports = {
         17: "17",
       },
       screens: {
-        'mobile': '640px',
+        mobile: "640px",
         // => @media (min-width: 640px) { ... }
-
-
       },
     },
   },
