@@ -346,37 +346,116 @@
         </div>
 
         <!-- Featured Card  -->
-        <section class="featured py-14 md:pt-124">
+        <section class="featured py-14 md:pt-124 md:pb-56">
           <div class="container">
             <!-- section title  -->
             <div class="mb-72 text-center">
-              <h2 class="text-title font-semibold capitalize">
+              <h2 class="text-body-32px md:text-4xl xl:text-title font-semibold capitalize">
                 Featured Product
               </h2>
             </div>
 
             <!-- Features Card  -->
-            <!-- <swiper class="swiper" :options="swiperOptionThree">
-            <swiper-slide>
-              <div
-                v-for="(item, itemIndex) in featuredList"
-                :key="itemIndex"
-                class="flex items-stretch"
-              >
-                <ProductCard
-                  :img="item.img"
-                  :tag="item.tags"
-                  :title="item.title"
-                  :text="item.text"
-                  :price="item.price"
-                  className="h-196"
-                />
-              </div>
-            </swiper-slide>
-      
+            <div class="relative">
+                <swiper class="swiper" :options="swiperOptionThree">
+                  <swiper-slide>
+                    <div
+                      v-for="(item, itemIndex) in featuredList"
+                      :key="itemIndex"
+                      class="flex items-stretch"
+                    >
+                      <ProductCard
+                        :img="item.img"
+                        :tag="item.tags"
+                        :title="item.title"
+                        :text="item.text"
+                        :price="item.price"
+                        className="h-196"
+                      />
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <div
+                      v-for="(item, itemIndex) in featuredList"
+                      :key="itemIndex"
+                      class="flex items-stretch"
+                    >
+                      <ProductCard
+                        :img="item.img"
+                        :tag="item.tags"
+                        :title="item.title"
+                        :text="item.text"
+                        :price="item.price"
+                        className="h-196"
+                      />
+                    </div>
+                  </swiper-slide>
+              </swiper>
 
-            </swiper> -->
-            <div class="grid xl:grid-cols-3 lg:grid-cols-2 gap-6">
+              <div class="custom-pagination">
+                  <div class="swiper-button-prev" slot="button-prev">
+                    <span
+                      class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 bg-gray-f0 duration-300 hover:bg-blue-0b arrow-icon"
+                    >
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M27 16H5"
+                          stroke="#0B63E5"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M14 7L5 16L14 25"
+                          stroke="#0B63E5"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="swiper-button-next" slot="button-next">
+                    <span
+                      class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 bg-gray-f0 duration-300 hover:bg-blue-0b arrow-icon"
+                    >
+                      <svg
+                        class="arrow-icon-right"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M27 16H5"
+                          stroke="#0B63E5"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M14 7L5 16L14 25"
+                          stroke="#0B63E5"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+            </div>
+              
+
+            </div>
+            
+            <!-- <div class="grid xl:grid-cols-3 lg:grid-cols-2 gap-6">
               <div
                 v-for="(item, itemIndex) in featuredList"
                 :key="itemIndex"
@@ -450,7 +529,7 @@
                   </svg>
                 </span>
               </nuxt-link>
-            </div>
+            </div> -->
           </div>
         </section>
       </div>
@@ -593,41 +672,41 @@ export default {
           },
           
         ],
-        // swiperOptionThree: {
-        // slidesPerView: 3,
-        // spaceBetween: 0,
-        // centeredSlides: true,
-        // loop: true,
+        swiperOptionThree: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        centeredSlides: true,
+        loop: true,
         // autoplay: {
         //   delay: 1600,
         //   disableOnInteraction: false,
         // },
-        // breakpoints: {
-        //   1199: {
-        //     slidesPerView: 3,
-        //   },
-        //   1024: {
-        //     slidesPerView: 3,
-        //   },
-        //   768: {
-        //     slidesPerView: 2,
-        //   },
-        //   640: {
-        //     slidesPerView: 2,
-        //   },
-        //   320: {
-        //     slidesPerView: 1,
-        //   },
-        // },
-        // pagination: {
-        //   el: ".swiper-pagination",
-        //   clickable: true,
-        // },
-        // navigation: {
-        //   nextEl: ".swiper-button-next",
-        //   prevEl: ".swiper-button-prev",
-        // },
-        // },
+        breakpoints: {
+          1199: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          320: {
+            slidesPerView: 1,
+          },
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        },
       }
     }
   }
@@ -678,5 +757,31 @@ export default {
     background-color: #061c3d;
   }
 }
+
+// slider
+.custom-pagination{
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: -126px;
+    z-index: 999;
+    .swiper-button-prev:after, .swiper-button-next:after{
+      content: none;
+    }
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: -55px;
+    right: auto;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: -55px;
+    left: auto;
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+  
+}
+
 
 </style>
