@@ -69,6 +69,7 @@
 
 <script>
 export default {
+  layout: "sitemap",
   name: "SiteMap",
 };
 </script>
