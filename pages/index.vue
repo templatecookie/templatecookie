@@ -2,7 +2,7 @@
   <div>
     <!-- Banner  -->
     <section
-      class="realtive overflow-hidden py-14 lg:py-124 bg-no-repeat bg-center bg-cover"
+      class="realtive overflow-hidden pb-14 lg:pb-124 pt-216 bg-no-repeat bg-center bg-cover"
       :style="{ backgroundImage: `url(${bannerImg})` }"
     >
       <div class="container">
@@ -61,7 +61,9 @@
       <div class="container">
         <!-- section title  -->
         <div class="mb-72 text-center">
-          <h2 class="text-title font-semibold capitalize">Featured Product</h2>
+          <h2 class="text-4xl md:text-title font-semibold capitalize">
+            Featured Product
+          </h2>
         </div>
 
         <!-- Features Card  -->
@@ -89,7 +91,9 @@
       <div class="container">
         <!-- section title  -->
         <div class="mb-72 text-center">
-          <h2 class="text-title font-semibold capitalize">Latest Product</h2>
+          <h2 class="text-4xl md:text-title font-semibold capitalize">
+            Latest Product
+          </h2>
         </div>
         <!-- Latest Product -->
         <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
@@ -116,7 +120,9 @@
       <div class="container">
         <!-- section title  -->
         <div class="mb-72 text-center">
-          <h2 class="text-title font-semibold capitalize mb-8 max-w-md mx-auto">
+          <h2
+            class="text-4xl md:text-title font-semibold capitalize mb-8 max-w-md mx-auto"
+          >
             Why should you buy our product?
           </h2>
           <p class="text-body-16 font-light max-w-lg mx-auto text-dark-06">
@@ -142,7 +148,7 @@
         <div
           class="lg:col-start-3 lg:col-end-9 lg:py-124 order-2 lg:order-1 pb-14 lg:pb-0"
         >
-          <h1 class="text-title font-semibold capitalize mb-8">
+          <h1 class="text-4xl md:text-title font-semibold capitalize mb-8">
             Why Tempalte Cookie is the Best in the world
           </h1>
           <p class="text-body-16 font-light text-dark-06 mb-10">

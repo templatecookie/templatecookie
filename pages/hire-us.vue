@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bg-gray-f0 py-20 lg:py-124">
+    <div class="bg-gray-f0 pb-20 lg:pb-124 pt-230">
       <div class="container">
         <div class="text-center max-w-4xl m-auto mb-20 lg:mb-28">
           <h1
@@ -27,71 +27,91 @@
         </div>
         <div class="grid grid-cols-12 gap-6">
           <div class="lg:col-span-3 md:col-span-6 sm:col-span-6 col-span-12">
-              <div class="flex">
-                <div class="flex-shrink-0 mr-5">
-                  <img src="~@/assets/images/svg/trophy.svg" alt="">
-                </div>
-                <div>
-                  <h4 class="text-dark-06 text-2xl font-medium tracking-ls03 mb-2">
-                    <ICountUp
+            <div class="flex">
+              <div class="flex-shrink-0 mr-5">
+                <img src="~@/assets/images/svg/trophy.svg" alt="" />
+              </div>
+              <div>
+                <h4
+                  class="text-dark-06 text-2xl font-medium tracking-ls03 mb-2"
+                >
+                  <ICountUp
                     :delay="delay"
                     :endVal="endVal"
                     :options="options"
                   />
-                    +</h4>
-                  <p class="text-dark-42 text-sm tracking-ls04 uppercase">AWARDS REWARDED</p>
-                </div>
+                  +
+                </h4>
+                <p class="text-dark-42 text-sm tracking-ls04 uppercase">
+                  AWARDS REWARDED
+                </p>
+              </div>
             </div>
           </div>
           <div class="lg:col-span-3 md:col-span-6 sm:col-span-6 col-span-12">
-              <div class="flex">
-                <div class="flex-shrink-0 mr-5">
-                  <img src="~@/assets/images/svg/trophy.svg" alt="">
-                </div>
-                <div>
-                  <h4 class="text-dark-06 text-2xl font-medium tracking-ls03 mb-2">
-                    <ICountUp
+            <div class="flex">
+              <div class="flex-shrink-0 mr-5">
+                <img src="~@/assets/images/svg/trophy.svg" alt="" />
+              </div>
+              <div>
+                <h4
+                  class="text-dark-06 text-2xl font-medium tracking-ls03 mb-2"
+                >
+                  <ICountUp
                     :delay="delay"
                     :endVal="endVal"
                     :options="options"
                   />
-                    +</h4>
-                  <p class="text-dark-42 text-sm tracking-ls04 uppercase">AWARDS REWARDED</p>
-                </div>
+                  +
+                </h4>
+                <p class="text-dark-42 text-sm tracking-ls04 uppercase">
+                  AWARDS REWARDED
+                </p>
+              </div>
             </div>
           </div>
           <div class="lg:col-span-3 md:col-span-6 sm:col-span-6 col-span-12">
-              <div class="flex">
-                <div class="flex-shrink-0 mr-5">
-                  <img src="~@/assets/images/svg/trophy.svg" alt="">
-                </div>
-                <div>
-                  <h4 class="text-dark-06 text-2xl font-medium tracking-ls03 mb-2">
-                    <ICountUp
+            <div class="flex">
+              <div class="flex-shrink-0 mr-5">
+                <img src="~@/assets/images/svg/trophy.svg" alt="" />
+              </div>
+              <div>
+                <h4
+                  class="text-dark-06 text-2xl font-medium tracking-ls03 mb-2"
+                >
+                  <ICountUp
                     :delay="delay"
                     :endVal="endVal"
                     :options="options"
                   />
-                    +</h4>
-                  <p class="text-dark-42 text-sm tracking-ls04 uppercase">AWARDS REWARDED</p>
-                </div>
+                  +
+                </h4>
+                <p class="text-dark-42 text-sm tracking-ls04 uppercase">
+                  AWARDS REWARDED
+                </p>
+              </div>
             </div>
           </div>
           <div class="lg:col-span-3 md:col-span-6 sm:col-span-6 col-span-12">
-              <div class="flex">
-                <div class="flex-shrink-0 mr-5">
-                  <img src="~@/assets/images/svg/trophy.svg" alt="">
-                </div>
-                <div>
-                  <h4 class="text-dark-06 text-2xl font-medium tracking-ls03 mb-2">
-                    <ICountUp
+            <div class="flex">
+              <div class="flex-shrink-0 mr-5">
+                <img src="~@/assets/images/svg/trophy.svg" alt="" />
+              </div>
+              <div>
+                <h4
+                  class="text-dark-06 text-2xl font-medium tracking-ls03 mb-2"
+                >
+                  <ICountUp
                     :delay="delay"
                     :endVal="endVal"
                     :options="options"
                   />
-                    +</h4>
-                  <p class="text-dark-42 text-sm tracking-ls04 uppercase">AWARDS REWARDED</p>
-                </div>
+                  +
+                </h4>
+                <p class="text-dark-42 text-sm tracking-ls04 uppercase">
+                  AWARDS REWARDED
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -353,7 +373,12 @@
                 >
               </div>
               <div class="mr-2 sm:mr-6 my-2">
-                <input id="radio2" type="radio" name="radio-group" class="hidden" />
+                <input
+                  id="radio2"
+                  type="radio"
+                  name="radio-group"
+                  class="hidden"
+                />
                 <label
                   for="radio2"
                   class="flex items-center cursor-pointer text-sm text-dark-06 font-light"
@@ -442,36 +467,29 @@
       </div>
     </div>
     <!-- end -->
-
   </div>
 </template>
 <script>
-
 import SolutionCard from "../components/SolutionCard.vue";
 import BusinessCard from "../components/BusinessCard.vue";
-import ICountUp from 'vue-countup-v2';
-
-  
+import ICountUp from "vue-countup-v2";
 
 export default {
   name: "HireUsPage",
   components: {
     SolutionCard,
     BusinessCard,
-    ICountUp
-    
+    ICountUp,
   },
   data() {
     return {
-
       delay: 1000,
-        endVal: 17,
-        options: {
-          useEasing: true,
-          useGrouping: true,
-        },
-   
-        
+      endVal: 17,
+      options: {
+        useEasing: true,
+        useGrouping: true,
+      },
+
       projectIdea: {
         backgroundImage: "url(https://i.imgur.com/2HNdUlR.png)",
       },
@@ -521,12 +539,7 @@ export default {
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
       ],
-      
     };
   },
-  
-  
 };
 </script>
-
-

@@ -2,7 +2,7 @@
   <div>
     <!-- Banner  -->
     <section
-      class="realtive overflow-hidden py-14 lg:py-72 bg-no-repeat bg-center bg-cover"
+      class="realtive overflow-hidden pb-14 lg:pb-72 pt-156 bg-no-repeat bg-center bg-cover"
       :style="{ backgroundImage: `url(${bannerImg})` }"
     >
       <div class="container">
