@@ -307,6 +307,13 @@ export default {
         }
       }
     }
+
+    a {
+      font-size: 14px;
+      line-height: 20px;
+      color: #42526b;
+      text-transform: capitalize;
+    }
   }
 
   &__dropdown {
