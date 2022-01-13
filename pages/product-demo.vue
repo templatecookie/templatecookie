@@ -67,11 +67,11 @@
     <div class="py-20 lg:py-124">
       <div class="container">
         <div class="md:grid grid-cols-12 gap-6 mb-12">
-          <div class="col-span-7 max-w-sm mb-4 md:mb-0">
+          <div class="col-span-7 mb-4 md:mb-0">
             <h2
               class="text-dark-06 text-body-32px md:text-4xl xl:text-title font-semibold tracking-01"
             >
-              Explore Relik Notable Feature
+              Explore Relik<br/> Notable Feature
             </h2>
           </div>
           <div class="col-span-5">
@@ -494,7 +494,7 @@
           <div class="lg:grid grid-cols-12 gap-6">
             <div class="col-span-6 order-2 mb-6 lg:mb-0">
               <pre
-                class="border border-gray-e6 p-8 rounded-2xl bg-white text-sm text-dark-06 pb-0"
+                class="border border-gray-e6 p-8 rounded-2xl bg-white text-sm text-dark-06 pb-0 h-200 overflow-y-scroll custom-scroll"
               >
     ├── templatecookie
         ├── assets

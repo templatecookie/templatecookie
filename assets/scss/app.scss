@@ -176,7 +176,7 @@ input[type="radio"]:checked + label span {
 // product demo
 
 .hero-demo {
-  @media (max-width: 1500px) {
+  @media (max-width: 1279px) {
     background-image: none !important;
   }
   //  @media (max-width: 1400px) {
@@ -331,5 +331,23 @@ input[type="radio"]:checked + label span {
         background-color: #061c3d;
       }
     }
+  }
+}
+
+// custom scroll
+
+.custom-scroll {
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #061c3d;
   }
 }
