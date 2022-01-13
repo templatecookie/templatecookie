@@ -1,10 +1,10 @@
 <template>
-  <div class="shadow-bs12 thumb-link">
+  <div class=" thumb-link">
       <a :href="url" target="_blank">
         <img
           :src="img"
           alt="product-img"
-          class="w-full h-full object-cover overflow-hidden"
+          class="w-full h-250 object-cover overflow-hidden shadow-bs12"
         />
         <h3 class="text-white text-base font-medium absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-300 flex w-full justify-center opacity-0">{{title}} <img class="ml-2" src="~/assets/images/svg/arrow-square-out.svg" alt=""></h3>
       </a>

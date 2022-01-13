@@ -359,64 +359,64 @@
             /></nuxt-link>
           </div>
         </div>
-        <div>
-          <swiper class="swiper" :options="swiperOptionOne">
-            <swiper-slide
-              ><img
+        <div class="">
+          <swiper class="swiper " :options="swiperOptionOne">
+            <swiper-slide class="slider-full">
+              <img
                 class="w-full h-full border border-white p-3 pb-0"
                 src="~@/assets/images/all-img/slider1.png"
                 alt=""
             /></swiper-slide>
-            <swiper-slide
-              ><img
+            <swiper-slide class="slider-full">
+              <img
                 class="w-full h-full border border-white p-3 pb-0"
                 src="~@/assets/images/all-img/slider2.png"
                 alt=""
             /></swiper-slide>
-            <swiper-slide
-              ><img
+            <swiper-slide class="slider-full">
+              <img
                 class="w-full h-full border border-white p-3 pb-0"
                 src="~@/assets/images/all-img/slider3.png"
                 alt=""
             /></swiper-slide>
-            <swiper-slide
-              ><img
+            <swiper-slide class="slider-full">
+              <img
                 class="w-full h-full border border-white p-3 pb-0"
                 src="~@/assets/images/all-img/slider1.png"
                 alt=""
             /></swiper-slide>
-            <swiper-slide
-              ><img
+            <swiper-slide class="slider-full">
+              <img
                 class="w-full h-full border border-white p-3 pb-0"
                 src="~@/assets/images/all-img/slider2.png"
                 alt=""
             /></swiper-slide>
-            <swiper-slide
-              ><img
+            <swiper-slide class="slider-full">
+              <img
                 class="w-full h-full border border-white p-3 pb-0"
                 src="~@/assets/images/all-img/slider3.png"
                 alt=""
             /></swiper-slide>
-            <swiper-slide
-              ><img
+            <swiper-slide class="slider-full">
+              <img
                 class="w-full h-full border border-white p-3 pb-0"
                 src="~@/assets/images/all-img/slider1.png"
                 alt=""
             /></swiper-slide>
-            <swiper-slide
-              ><img
+            <swiper-slide class="slider-full">
+              <img
                 class="w-full h-full border border-white p-3 pb-0"
                 src="~@/assets/images/all-img/slider2.png"
                 alt=""
             /></swiper-slide>
-            <swiper-slide
-              ><img
+            <swiper-slide class="slider-full">
+              <img
                 class="w-full h-full border border-white p-3 pb-0"
                 src="~@/assets/images/all-img/slider3.png"
                 alt=""
             /></swiper-slide>
-            <swiper-slide
-              ><img
+            <swiper-slide class="slider-full">
+              <img
                 class="w-full h-full border border-white p-3 pb-0"
                 src="~@/assets/images/all-img/slider1.png"
                 alt=""
@@ -441,48 +441,58 @@
               sed imperdiet tempor, libero urna semper urna
             </p>
           </div>
-          <div>
-            <swiper class="swiper" :options="swiperOptionTwo">
+          <div class="relative">
+            <swiper class="swiper shadow-bs012 rounded-xl" :options="swiperOptionTwo">
               <swiper-slide
                 ><img
-                  class="w-full h-ful"
+                  class="w-full h-full rounded-xl"
                   src="~@/assets/images/all-img/slider4.png"
                   alt=""
               /></swiper-slide>
               <swiper-slide
                 ><img
-                  class="w-full h-ful"
+                  class="w-full h-full rounded-xl"
                   src="~@/assets/images/all-img/slider4.png"
                   alt=""
               /></swiper-slide>
               <swiper-slide
                 ><img
-                  class="w-full h-ful"
+                  class="w-full h-full rounded-xl"
                   src="~@/assets/images/all-img/slider4.png"
                   alt=""
               /></swiper-slide>
               <swiper-slide
                 ><img
-                  class="w-full h-ful"
+                  class="w-full h-full rounded-xl"
                   src="~@/assets/images/all-img/slider4.png"
                   alt=""
               /></swiper-slide>
               <swiper-slide
                 ><img
-                  class="w-full h-ful"
+                  class="w-full h-full rounded-xl"
                   src="~@/assets/images/all-img/slider4.png"
                   alt=""
               /></swiper-slide>
-              <swiper-slide
-                ><img
-                  class="w-full h-ful"
-                  src="~@/assets/images/all-img/slider4.png"
-                  alt=""
-              /></swiper-slide>
-              <div class="swiper-pagination" slot="pagination"></div>
-              <div class="swiper-button-prev" slot="button-prev"></div>
-              <div class="swiper-button-next" slot="button-next"></div>
             </swiper>
+            <div class="custom-pagination flex justify-center pt-16">
+                <div class="swiper-pagination" slot="pagination"></div>
+            </div>
+            <div class="single-slider">
+                <div class="swiper-button-prev ml-6" slot="button-prev">
+                  <span
+                    class="w-12 h-12 rounded-md flex items-center justify-center flex-shrink-0 bg-white-5 duration-300 hover:bg-blue-0b"
+                  >
+                    <img src="~@/assets/images/svg/caret-left.svg" alt="">
+                  </span>
+                </div>
+                <div class="swiper-button-next mr-6" slot="button-next">
+                  <span
+                    class="w-12 h-12 rounded-md flex items-center justify-center flex-shrink-0 bg-white-5 duration-300 hover:bg-blue-0b arrow-icon"
+                  >
+                    <img src="~@/assets/images/svg/caret-right.svg" alt="">
+                  </span>
+                </div>
+            </div>
           </div>
         </div>
       </div>
@@ -739,12 +749,11 @@ export default {
       swiperOptionOne: {
         slidesPerView: 1,
         spaceBetween: 24,
-        centeredSlides: true,
         loop: true,
-        autoplay: {
-          delay: 1600,
-          disableOnInteraction: false,
-        },
+        // autoplay: {
+        //   delay: 1600,
+        //   disableOnInteraction: false,
+        // },
         breakpoints: {
           1199: {
             slidesPerView: 4,
@@ -768,10 +777,10 @@ export default {
         spaceBetween: 0,
         centeredSlides: true,
         loop: true,
-        autoplay: {
-          delay: 1600,
-          disableOnInteraction: false,
-        },
+        // autoplay: {
+        //   delay: 1600,
+        //   disableOnInteraction: false,
+        // },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -808,22 +817,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.swiper-slide {
-  width: 60%;
-}
-.swiper-slide:nth-child(2n) {
-  width: 40%;
-}
-.swiper-slide:nth-child(3n) {
-  width: 20%;
-}
 
-.swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
-  display: inline-block;
-  border-radius: 100%;
-  background: #000;
-  opacity: 0.2;
-}
+  // animation
+  .slider-full{
+    animation: scroll 40s linear infinite;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  // swiper single silder
+
+
+  .single-slider{
+    .swiper-button-prev:after, .swiper-button-next:after{
+        content: none;
+      }
+  }
 </style>

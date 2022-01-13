@@ -46,6 +46,7 @@ module.exports = {
         "dark-e6": " #E6E8EC",
         "gray-6a": " #6A778B",
         "white-12": " rgba(255, 255, 255, 0.12)",
+        "white-5": " rgba(0, 0, 0, 0.5)",
       },
       fontFamily: {
         lexend: ["Lexend", "sans-serif"],
@@ -98,6 +99,7 @@ module.exports = {
         48: "48px",
         84: "84px",
         200: "200px",
+        250: "250px"
       },
 
       margin: {
@@ -124,7 +126,7 @@ module.exports = {
         bs8: "0px 12px 32px rgba(6, 28, 61, 0.08)",
         bs08: "0px 16px 72px rgba(6, 28, 61, 0.08)",
         bs12: "0px 0px 24px rgba(6, 28, 61, 0.12)",
-        bs12: "0px 0px 24px rgba(6, 28, 61, 0.12)",
+        bs012: "0px 16px 88px rgba(0, 0, 0, 0.12)",
       },
       gridTemplateColumns: {
         16: "repeat(16, minmax(0,1fr))",

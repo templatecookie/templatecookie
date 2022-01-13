@@ -351,3 +351,21 @@ input[type="radio"]:checked + label span {
     background-color: #061c3d;
   }
 }
+
+// swiper slider
+  .custom-pagination{
+    .swiper-pagination-bullet{
+        width: 12px;
+        height: 12px;
+        margin: 0 5px;
+        opacity: 1;
+        transition: all 0.4s;
+        background-color: #CEE0FA;
+        &.swiper-pagination-bullet-active{
+          width: 32px;
+          border-radius: 12px;
+          background-color: #0B63E5;
+        }
+    }
+  }
+  
