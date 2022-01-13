@@ -346,7 +346,7 @@
         </div>
 
         <!-- Featured Card  -->
-        <section class="featured py-14 md:pt-124 md:pb-56">
+        <section class="featured py-14 md:pt-124 ">
           <div class="container">
             <!-- section title  -->
             <div class="mb-72 text-center">
@@ -359,41 +359,179 @@
             <div class="relative">
                 <swiper class="swiper" :options="swiperOptionThree">
                   <swiper-slide>
-                    <div
-                      v-for="(item, itemIndex) in featuredList"
-                      :key="itemIndex"
-                      class="flex items-stretch"
-                    >
-                      <ProductCard
-                        :img="item.img"
-                        :tag="item.tags"
-                        :title="item.title"
-                        :text="item.text"
-                        :price="item.price"
-                        className="h-196"
-                      />
-                    </div>
+                      <div class="relative overflow-hidden p-6 border border-gray-e6 rounded-2xl product-card">
+                        <!-- Product img preview -->
+                        <nuxt-link to="#"  class="relative inline-block overflow-hidden rounded-lg w-full product-card__img-wrapper mb-4 "
+                        >
+                          <img class="w-full h-full object-cover" src="~@/assets/images/cards/img-six.png" alt="">
+                        </nuxt-link>
+                        <!-- Product info  -->
+                        <div>
+                          <!-- Tags  -->
+                          <h6 class="tracking-widest font-normal text-xs text-pink-75 uppercase m-0 mb-1">
+                            Figma, HTML
+                          </h6>
+                          <h2 class="text-lg text-dark-06 mb-3 font-normal">
+                            Onest - Classified Ad Listing 
+                          </h2>
+                          <p class="text-dark-42 text-sm font-light mb-6">
+                            Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.
+                          </p>
+                          <!-- actions content  -->
+                          <div
+                            class="flex flex-col sm:flex-row items-end sm:items-center sm:justify-between"
+                          >
+                            <!-- Purchase  -->
+                            <div
+                              class="flex items-center justify-center w-full sm:w-auto space-x-3 order-2 sm:order-1"
+                            >
+                              <div>
+                                <nuxt-link
+                                  to="#"
+                                  class="flex items-center overflow-hidden px-4 py-2 rounded-5 text-sm font-medium border-1.5 border-blue-0b text-blue-0b  group whitespace-nowrap"
+                                >
+                                  Learn More
+                                  <span class="inline-block ml-3">
+                                    <img src="~/assets/images/svg/arrow.svg" alt="arrow-icon" />
+                                  </span>
+                                </nuxt-link>
+                              </div>
+                              <div class="flex-shrink-0">
+                                <button
+                                  class="inline-block overflow-hidden p-2.5 bg-gray-f5 hover:bg-gray-200 transition-all rounded-7"
+                                >
+                                  <img src="~/assets/images/svg/cart.svg" alt="cart-icon" />
+                                </button>
+                              </div>
+                            </div>
+                            <!-- Price  -->
+                            <div class="mb-4 sm:mb-0 order-1 sm:order-2">
+                              <h5 class="text-xl font-medium uppercase text-pink-75">
+                                $13
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                   </swiper-slide>
+
                   <swiper-slide>
-                    <div
-                      v-for="(item, itemIndex) in featuredList"
-                      :key="itemIndex"
-                      class="flex items-stretch"
-                    >
-                      <ProductCard
-                        :img="item.img"
-                        :tag="item.tags"
-                        :title="item.title"
-                        :text="item.text"
-                        :price="item.price"
-                        className="h-196"
-                      />
-                    </div>
+                      <div class="relative overflow-hidden p-6 border border-gray-e6 rounded-2xl product-card">
+                        <!-- Product img preview -->
+                        <nuxt-link to="#"  class="relative inline-block overflow-hidden rounded-lg w-full product-card__img-wrapper mb-4 "
+                        >
+                          <img class="w-full h-full object-cover" src="~@/assets/images/cards/img-one.png" alt="">
+                        </nuxt-link>
+                        <!-- Product info  -->
+                        <div>
+                          <!-- Tags  -->
+                          <h6 class="tracking-widest font-normal text-xs text-pink-75 uppercase m-0 mb-1">
+                            Figma, HTML
+                          </h6>
+                          <h2 class="text-lg text-dark-06 mb-3 font-normal">
+                            Onest - Classified Ad Listing 
+                          </h2>
+                          <p class="text-dark-42 text-sm font-light mb-6">
+                            Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.
+                          </p>
+                          <!-- actions content  -->
+                          <div
+                            class="flex flex-col sm:flex-row items-end sm:items-center sm:justify-between"
+                          >
+                            <!-- Purchase  -->
+                            <div
+                              class="flex items-center justify-center w-full sm:w-auto space-x-3 order-2 sm:order-1"
+                            >
+                              <div>
+                                <nuxt-link
+                                  to="#"
+                                  class="flex items-center overflow-hidden px-4 py-2 rounded-5 text-sm font-medium border-1.5 border-blue-0b text-blue-0b  group whitespace-nowrap"
+                                >
+                                  Learn More
+                                  <span class="inline-block ml-3">
+                                    <img src="~/assets/images/svg/arrow.svg" alt="arrow-icon" />
+                                  </span>
+                                </nuxt-link>
+                              </div>
+                              <div class="flex-shrink-0">
+                                <button
+                                  class="inline-block overflow-hidden p-2.5 bg-gray-f5 hover:bg-gray-200 transition-all rounded-7"
+                                >
+                                  <img src="~/assets/images/svg/cart.svg" alt="cart-icon" />
+                                </button>
+                              </div>
+                            </div>
+                            <!-- Price  -->
+                            <div class="mb-4 sm:mb-0 order-1 sm:order-2">
+                              <h5 class="text-xl font-medium uppercase text-pink-75">
+                                $13
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </swiper-slide>
+
+                  <swiper-slide>
+                      <div class="relative overflow-hidden p-6 border border-gray-e6 rounded-2xl product-card">
+                        <!-- Product img preview -->
+                        <nuxt-link to="#"  class="relative inline-block overflow-hidden rounded-lg w-full product-card__img-wrapper mb-4 "
+                        >
+                          <img class="w-full h-full object-cover" src="~@/assets/images/cards/img-two.png" alt="">
+                        </nuxt-link>
+                        <!-- Product info  -->
+                        <div>
+                          <!-- Tags  -->
+                          <h6 class="tracking-widest font-normal text-xs text-pink-75 uppercase m-0 mb-1">
+                            Figma, HTML
+                          </h6>
+                          <h2 class="text-lg text-dark-06 mb-3 font-normal">
+                            Onest - Classified Ad Listing 
+                          </h2>
+                          <p class="text-dark-42 text-sm font-light mb-6">
+                            Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.
+                          </p>
+                          <!-- actions content  -->
+                          <div
+                            class="flex flex-col sm:flex-row items-end sm:items-center sm:justify-between"
+                          >
+                            <!-- Purchase  -->
+                            <div
+                              class="flex items-center justify-center w-full sm:w-auto space-x-3 order-2 sm:order-1"
+                            >
+                              <div>
+                                <nuxt-link
+                                  to="#"
+                                  class="flex items-center overflow-hidden px-4 py-2 rounded-5 text-sm font-medium border-1.5 border-blue-0b text-blue-0b  group whitespace-nowrap"
+                                >
+                                  Learn More
+                                  <span class="inline-block ml-3">
+                                    <img src="~/assets/images/svg/arrow.svg" alt="arrow-icon" />
+                                  </span>
+                                </nuxt-link>
+                              </div>
+                              <div class="flex-shrink-0">
+                                <button
+                                  class="inline-block overflow-hidden p-2.5 bg-gray-f5 hover:bg-gray-200 transition-all rounded-7"
+                                >
+                                  <img src="~/assets/images/svg/cart.svg" alt="cart-icon" />
+                                </button>
+                              </div>
+                            </div>
+                            <!-- Price  -->
+                            <div class="mb-4 sm:mb-0 order-1 sm:order-2">
+                              <h5 class="text-xl font-medium uppercase text-pink-75">
+                                $13
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                   </swiper-slide>
               </swiper>
-
-              <div class="custom-pagination">
-                  <div class="swiper-button-prev" slot="button-prev">
+              <!-- end slider -->
+              <div class="custom-pagination flex items-center justify-center pt-24">
+                  <div class="swiper-button-prev mr-8" slot="button-prev">
                     <span
                       class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 bg-gray-f0 duration-300 hover:bg-blue-0b arrow-icon"
                     >
@@ -421,7 +559,7 @@
                       </svg>
                     </span>
                   </div>
-                  <div class="swiper-button-next" slot="button-next">
+                  <div class="swiper-button-next ml-8" slot="button-next">
                     <span
                       class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 bg-gray-f0 duration-300 hover:bg-blue-0b arrow-icon"
                     >
@@ -451,85 +589,8 @@
                     </span>
                   </div>
               </div>
-              
-
+              <!-- end pagination -->
             </div>
-            
-            <!-- <div class="grid xl:grid-cols-3 lg:grid-cols-2 gap-6">
-              <div
-                v-for="(item, itemIndex) in featuredList"
-                :key="itemIndex"
-                class="flex items-stretch"
-              >
-                <ProductCard
-                  :img="item.img"
-                  :tag="item.tags"
-                  :title="item.title"
-                  :text="item.text"
-                  :price="item.price"
-                  className="h-196"
-                />
-              </div>
-            </div>
-            <div class="flex justify-center space-x-4 mt-16">
-              <nuxt-link to="#">
-                <span
-                  class="w-16 h-16 rounded-full flex items-center justify-center bg-gray-f0 duration-300 hover:bg-blue-0b arrow-icon"
-                >
-                  <svg
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M27 16H5"
-                      stroke="#0B63E5"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M14 7L5 16L14 25"
-                      stroke="#0B63E5"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-              </nuxt-link>
-              <nuxt-link to="#">
-                <span
-                  class="w-16 h-16 rounded-full flex items-center justify-center bg-gray-f0 duration-300 hover:bg-blue-0b arrow-icon"
-                >
-                  <svg
-                    class="arrow-icon-right"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M27 16H5"
-                      stroke="#0B63E5"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M14 7L5 16L14 25"
-                      stroke="#0B63E5"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-              </nuxt-link>
-            </div> -->
           </div>
         </section>
       </div>
@@ -538,7 +599,6 @@
 </template>
 
 <script>
-import ProductCard from "../components/ProductCard.vue";
 import Breadcrumb from "../components/Breadcrumb.vue"
 import Accordion from "../components/Accordion.vue";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
@@ -548,7 +608,6 @@ export default {
   name: "ProductDetails",
   components: {
     Breadcrumb,
-    ProductCard,
     Accordion,
     SwiperSlide,
     Swiper
@@ -597,6 +656,7 @@ export default {
            },
            
         ],
+
         myItems: [
           {
             title: 'How many time zones are there in all?',
@@ -611,30 +671,7 @@ export default {
             value: 'Binturongs smell like popcorn.',
           }
         ],
-        featuredList: [
-        {
-          img: "https://i.imgur.com/YD6WZwi.png",
-          tags: "Figma,Html",
-          title: "Onest - Classified Ad Listing ",
-          text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
-          price: 13,
-        },
-        {
-          img: "https://i.imgur.com/pFuvaJH.png",
-          tags: "Figma",
-          title: "Relik - Admin Dashboard",
-          text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
-          price: 18,
-        },
-        {
-          img: "https://i.imgur.com/76niUXz.png",
-          tags: "Figma,Html",
-          title: "Onest - Classified Ad Listing ",
-          text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
-          price: 13,
-        },
-     
-        ],
+
         myDocumentation: [
           {
             title: "Last Update:",
@@ -661,6 +698,7 @@ export default {
             text: "Well Documented"
           },
         ],
+
         myContents: [
           {
             title: 'How are you?',
@@ -674,25 +712,21 @@ export default {
         ],
         swiperOptionThree: {
         slidesPerView: 3,
-        spaceBetween: 0,
-        centeredSlides: true,
+        spaceBetween: 24,
         loop: true,
         // autoplay: {
         //   delay: 1600,
         //   disableOnInteraction: false,
         // },
         breakpoints: {
-          1199: {
+          1300: {
             slidesPerView: 3,
           },
-          1024: {
-            slidesPerView: 3,
-          },
-          768: {
+          900: {
             slidesPerView: 2,
           },
           640: {
-            slidesPerView: 2,
+            slidesPerView: 1,
           },
           320: {
             slidesPerView: 1,
@@ -744,22 +778,12 @@ export default {
 
 // slider
 .custom-pagination{
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
-    bottom: -126px;
-    z-index: 999;
     .swiper-button-prev:after, .swiper-button-next:after{
       content: none;
     }
-    .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-    left: -55px;
-    right: auto;
-}
-  .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-    right: -55px;
-    left: auto;
-}
+    .swiper-button-prev, .swiper-button-next{
+      position: inherit
+    }
 }
 
 

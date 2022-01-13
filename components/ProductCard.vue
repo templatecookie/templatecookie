@@ -1,8 +1,6 @@
 <template>
   <!-- card wrapper  -->
-  <div
-    class="relative overflow-hidden p-6 border border-gray-e6 rounded-2xl product-card"
-  >
+  <div class="relative overflow-hidden p-6 border border-gray-e6 rounded-2xl product-card">
     <!-- Product img preview -->
     <nuxt-link
       to="#"
