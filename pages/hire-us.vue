@@ -278,9 +278,8 @@
                 <input
                   id="radio1"
                   type="radio"
-                  name="radio"
+                  name="radio-group"
                   class="hidden"
-                  checked
                 />
                 <label
                   for="radio1"
@@ -293,7 +292,7 @@
                 >
               </div>
               <div class="mr-2 sm:mr-6 my-2">
-                <input id="radio2" type="radio" name="radio" class="hidden" />
+                <input id="radio2" type="radio" name="radio-group" class="hidden" />
                 <label
                   for="radio2"
                   class="flex items-center cursor-pointer text-sm text-dark-06 font-light"
