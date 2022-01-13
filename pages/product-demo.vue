@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="py-28 lg:py-56 bg-dark-06 bg-content bg-right bg-no-repeat hero-demo"
+      class="py-28 lg:py-52 bg-dark-06 bg-content bg-right bg-no-repeat hero-demo"
       :style="DemoHero"
     >
       <div class="container">
@@ -33,7 +33,7 @@
             >
           </div>
           <div
-            class="shadow-bs8 rounded-xl p-6 bg-white border border-gray-e6 flex items-center absolute -bottom-36 lg:-bottom-64 left-0"
+            class="shadow-bs8 rounded-xl p-6 bg-white border border-gray-e6 flex items-center absolute -bottom-36 lg:-bottom-60 left-0"
           >
             <p class="text-dark-06 text-xs mr-4">Compatible with:</p>
             <ul class="flex space-x-3">

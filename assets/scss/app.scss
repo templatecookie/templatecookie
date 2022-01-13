@@ -120,9 +120,27 @@ input[type="radio"]:checked + label span {
 // product demo
 
 .hero-demo {
-  @media (max-width: 1279px) {
-    background-image: none !important;
+  @media (max-width: 1670px) {
+    position: relative;
+    z-index: 0;
+    &::before{
+      content: "";
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
   }
+   @media (max-width: 991px) {
+      background-image: none!important;
+      &::before{
+        content: none;
+
+      }
+    }
   //  @media (max-width: 1400px) {
   //     background-position: 290%!important;
   // }
