@@ -26,12 +26,73 @@
           /></nuxt-link>
         </div>
         <div class="grid grid-cols-12 gap-6">
-          <div
-            v-for="(item, indexItem) in CounterUpItem"
-            :key="indexItem"
-            class="lg:col-span-3 md:col-span-6 sm:col-span-6 col-span-12"
-          >
-            <CounterUp :title="item.title" :text="item.text" />
+          <div class="lg:col-span-3 md:col-span-6 sm:col-span-6 col-span-12">
+              <div class="flex">
+                <div class="flex-shrink-0 mr-5">
+                  <img src="~@/assets/images/svg/trophy.svg" alt="">
+                </div>
+                <div>
+                  <h4 class="text-dark-06 text-2xl font-medium tracking-ls03 mb-2">
+                    <ICountUp
+                    :delay="delay"
+                    :endVal="endVal"
+                    :options="options"
+                  />
+                    +</h4>
+                  <p class="text-dark-42 text-sm tracking-ls04 uppercase">AWARDS REWARDED</p>
+                </div>
+            </div>
+          </div>
+          <div class="lg:col-span-3 md:col-span-6 sm:col-span-6 col-span-12">
+              <div class="flex">
+                <div class="flex-shrink-0 mr-5">
+                  <img src="~@/assets/images/svg/trophy.svg" alt="">
+                </div>
+                <div>
+                  <h4 class="text-dark-06 text-2xl font-medium tracking-ls03 mb-2">
+                    <ICountUp
+                    :delay="delay"
+                    :endVal="endVal"
+                    :options="options"
+                  />
+                    +</h4>
+                  <p class="text-dark-42 text-sm tracking-ls04 uppercase">AWARDS REWARDED</p>
+                </div>
+            </div>
+          </div>
+          <div class="lg:col-span-3 md:col-span-6 sm:col-span-6 col-span-12">
+              <div class="flex">
+                <div class="flex-shrink-0 mr-5">
+                  <img src="~@/assets/images/svg/trophy.svg" alt="">
+                </div>
+                <div>
+                  <h4 class="text-dark-06 text-2xl font-medium tracking-ls03 mb-2">
+                    <ICountUp
+                    :delay="delay"
+                    :endVal="endVal"
+                    :options="options"
+                  />
+                    +</h4>
+                  <p class="text-dark-42 text-sm tracking-ls04 uppercase">AWARDS REWARDED</p>
+                </div>
+            </div>
+          </div>
+          <div class="lg:col-span-3 md:col-span-6 sm:col-span-6 col-span-12">
+              <div class="flex">
+                <div class="flex-shrink-0 mr-5">
+                  <img src="~@/assets/images/svg/trophy.svg" alt="">
+                </div>
+                <div>
+                  <h4 class="text-dark-06 text-2xl font-medium tracking-ls03 mb-2">
+                    <ICountUp
+                    :delay="delay"
+                    :endVal="endVal"
+                    :options="options"
+                  />
+                    +</h4>
+                  <p class="text-dark-42 text-sm tracking-ls04 uppercase">AWARDS REWARDED</p>
+                </div>
+            </div>
           </div>
         </div>
       </div>
@@ -388,7 +449,7 @@
 
 import SolutionCard from "../components/SolutionCard.vue";
 import BusinessCard from "../components/BusinessCard.vue";
-import CounterUp from "../components/CounterUp.vue";
+import ICountUp from 'vue-countup-v2';
 
   
 
@@ -397,34 +458,23 @@ export default {
   components: {
     SolutionCard,
     BusinessCard,
-    CounterUp,
+    ICountUp
     
   },
   data() {
     return {
+
+      delay: 1000,
+        endVal: 17,
+        options: {
+          useEasing: true,
+          useGrouping: true,
+        },
+   
         
       projectIdea: {
         backgroundImage: "url(https://i.imgur.com/2HNdUlR.png)",
       },
-
-      CounterUpItem: [
-        {
-          title: "17+",
-          text: "Awards Rewarded",
-        },
-        {
-          title: "23+",
-          text: "Years of Experience",
-        },
-        {
-          title: "183+",
-          text: "Happy Clients",
-        },
-        {
-          title: "315+",
-          text: "COMPLETED PROJECT",
-        },
-      ],
 
       items: [
         {
