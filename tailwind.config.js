@@ -46,6 +46,7 @@ module.exports = {
         "dark-e6": " #E6E8EC",
         "gray-6a": " #6A778B",
         "white-12": "#2764C0",
+        "gray-9b": "#9BA4B1",
       },
       fontFamily: {
         lexend: ["Lexend", "sans-serif"],
