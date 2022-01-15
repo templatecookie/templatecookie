@@ -6,6 +6,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer components {
   .button {
     @apply text-button capitalize font-medium bg-blue-0b overflow-hidden rounded  inline-block px-5;
@@ -579,4 +580,8 @@ body {
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   transform: translateX(-300px);
+}
+
+html {
+  scroll-behavior: smooth;
 }

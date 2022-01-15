@@ -48,24 +48,24 @@
               <div class="border-b border-gray-e6">
                 <ul class="flex">
                   <li>
-                    <nuxt-link
-                      to="#"
+                    <a
+                      href="#" v-smooth-scrol
                       class="text-dark-42 text-base px-5 py-2.5 block duration-300 border-b border-white hover:text-blue-0b hover:border-b hover:border-blue-0b"
-                      >Overview</nuxt-link
+                      >Overview</a
                     >
                   </li>
                   <li>
-                    <nuxt-link
-                      to="#folder-structure"
+                    <a
+                      href="#folder-structure" v-smooth-scrol
                       class="text-dark-42 text-base px-5 py-2.5 block duration-300 border-b border-white hover:text-blue-0b hover:border-b hover:border-blue-0b"
-                      >Folder Structure</nuxt-link
+                      >Folder Structure</a
                     >
                   </li>
                   <li>
-                    <nuxt-link
-                      to="#change-log"
+                    <a 
+                      href="#change-log" v-smooth-scrol
                       class="text-dark-42 text-base px-5 py-2.5 block duration-300 border-b border-white hover:text-blue-0b hover:border-b hover:border-blue-0b"
-                      >Change Log</nuxt-link
+                      >Change Log</a 
                     >
                   </li>
                 </ul>
@@ -191,7 +191,6 @@
                   varius libero iaculis rutrum rutrum. Nunc augue ipsum,
                   malesuada ut erat mollis, viverra porta dolor.
                 </p>
-                <AccordionMenu :contents="contents"></AccordionMenu>
             </div>
             <!-- end -->
           </div>
@@ -604,6 +603,8 @@ import Breadcrumb from "../components/Breadcrumb.vue"
 import Accordion from "../components/Accordion.vue";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import 'swiper/css/swiper.css'
+import { createApp } from 'vue'
+
 
 export default {
   name: "ProductDetails",
@@ -611,7 +612,8 @@ export default {
     Breadcrumb,
     Accordion,
     SwiperSlide,
-    Swiper
+    Swiper,
+    createApp,
   },
   data() {
       return{
@@ -742,6 +744,7 @@ export default {
           prevEl: ".swiper-button-prev",
         },
         },
+        
       }
     }
   }
@@ -776,8 +779,6 @@ export default {
   }
 }
 
-
-
 // slider
 .custom-pagination{
     .swiper-button-prev:after, .swiper-button-next:after{
@@ -787,6 +788,7 @@ export default {
       position: inherit
     }
 }
+
 
 
 
