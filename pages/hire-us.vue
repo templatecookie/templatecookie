@@ -29,7 +29,7 @@
           <div
             v-for="(item, itemIndex) in achivementList"
             :key="itemIndex"
-            class="col-span-full ex-small:col-span-2 lg:col-span-1"
+            class="col-span-full ex-small:col-span-2 ex-small:lg:col-span-1"
           >
             <div
               class="flex flex-col ex-small:flex-row items-center text-center ex-small:text-left"
