@@ -16,7 +16,7 @@
               </div>
               <div class="sm:flex justify-between">
                 <nuxt-link
-                  to="#"
+                  to="/screenshort"
                   class="block sm:mb-0 mb-3 text-center sm:inline-block bg-blue-0b rounded-5 text-sm py-2.5 px-5 text-white duration-300 hover:bg-black"
                 >
                   <img
