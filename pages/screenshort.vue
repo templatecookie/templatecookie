@@ -1,5 +1,5 @@
 <template>
-  <div id="tabs" class="py-40 flex">
+  <div id="tabs" class="flex">
     <div class="tabs w-40 bg-gray-f5 p-3 flex-shrink-0">
       <p class="text-dark-06 text-opacity-60 uppercase mb-2 text-xs">
         SCREENSHOT
@@ -264,6 +264,7 @@
 
 <script>
 export default {
+  layout: "screenshot",
   name: "Screenshort",
 
   data() {
