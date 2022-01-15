@@ -169,7 +169,8 @@
                 :title="item.title"
                 :text="item.text"
                 :price="item.price"
-                className=" h-190  lg:h-296"
+                className=" h-190 lg:h-296"
+                buttonClass=" text-button-17 px-9  "
               />
             </div>
           </div>
@@ -189,6 +190,7 @@
                 :text="item.text"
                 :price="item.price"
                 className=" h-190  lg:h-296"
+                buttonClass=" text-button-17 px-9  "
               />
             </div>
           </div>
@@ -208,6 +210,7 @@
                 :text="item.text"
                 :price="item.price"
                 className=" h-190  lg:h-296"
+                buttonClass=" text-button-17 px-9  "
               />
             </div>
           </div>
@@ -227,6 +230,7 @@
                 :text="item.text"
                 :price="item.price"
                 className=" h-190  lg:h-296"
+                buttonClass=" text-button-17 px-9  "
               />
             </div>
           </div>
@@ -246,6 +250,7 @@
                 :text="item.text"
                 :price="item.price"
                 className=" h-190  lg:h-296"
+                buttonClass=" text-button-17 px-9  "
               />
             </div>
           </div>

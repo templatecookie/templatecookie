@@ -79,7 +79,8 @@
               :title="item.title"
               :text="item.text"
               :price="item.price"
-              className="h-296"
+              className="h-296 "
+              buttonClass=" text-button-17 px-9  "
             />
           </div>
         </div>
@@ -108,7 +109,8 @@
               :title="item.title"
               :text="item.text"
               :price="item.price"
-              className="h-190"
+              className="h-190 "
+              buttonClass=" text-button px-6  "
             />
           </div>
         </div>
