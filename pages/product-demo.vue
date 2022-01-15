@@ -70,8 +70,12 @@
           <div class="col-span-7 mb-4 md:mb-0">
             <h2
               class="text-dark-06 text-body-32px md:text-4xl xl:text-title font-semibold tracking-ls01"
+              data-aos="fade-up"
+              data-aos-delay="350"
+              data-aos-easing="ease-in"
             >
-              Explore Relik<br/> Notable Feature
+              Explore Relik<br />
+              Notable Feature
             </h2>
           </div>
           <div class="col-span-5">
@@ -132,6 +136,9 @@
               </h3>
               <h2
                 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
+                data-aos="fade-up"
+                data-aos-delay="350"
+                data-aos-easing="ease-in"
               >
                 Feature Name 01
               </h2>
@@ -163,6 +170,9 @@
             </h3>
             <h2
               class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
+              data-aos="fade-up"
+              data-aos-delay="350"
+              data-aos-easing="ease-in"
             >
               Feature Name 01
             </h2>
@@ -202,6 +212,9 @@
                 </h3>
                 <h2
                   class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
+                  data-aos="fade-up"
+                  data-aos-delay="350"
+                  data-aos-easing="ease-in"
                 >
                   Feature Name 01
                 </h2>
@@ -234,6 +247,9 @@
             </h3>
             <h2
               class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
+              data-aos="fade-up"
+              data-aos-delay="350"
+              data-aos-easing="ease-in"
             >
               Feature Name 01
             </h2>
@@ -245,38 +261,86 @@
           </div>
           <div id="tabs" class="lg:grid grid-cols-12 gap-6">
             <div class="col-span-8 order-2">
-                <div class="content lg:pl-6 mb-6">
-                  <div v-if="activetab ==='1'" class="tabcontent">
-                      <div class="h-600">
-                        <img class="w-full h-full object-cover rounded-20 overflow-hidden" src="~@/assets/images/all-img/one.jpg" alt="">
-                      </div>
+              <div class="content lg:pl-6 mb-6">
+                <div v-if="activetab === '1'" class="tabcontent">
+                  <div class="h-600">
+                    <img
+                      class="w-full h-full object-cover rounded-20 overflow-hidden"
+                      src="~@/assets/images/all-img/one.jpg"
+                      alt=""
+                    />
                   </div>
-                  <div v-if="activetab ==='2'" class="tabcontent">
-                      <div class="h-600">
-                        <img class="w-full h-full object-cover rounded-20 overflow-hidden" src="~@/assets/images/all-img/two.jpg" alt="">
-                    </div>
+                </div>
+                <div v-if="activetab === '2'" class="tabcontent">
+                  <div class="h-600">
+                    <img
+                      class="w-full h-full object-cover rounded-20 overflow-hidden"
+                      src="~@/assets/images/all-img/two.jpg"
+                      alt=""
+                    />
                   </div>
-                  <div v-if="activetab ==='3'" class="tabcontent">
-                      <div class="h-600">
-                        <img class="w-full h-full object-cover rounded-20 overflow-hidden" src="~@/assets/images/all-img/three.jpg" alt="">
-                    </div>
+                </div>
+                <div v-if="activetab === '3'" class="tabcontent">
+                  <div class="h-600">
+                    <img
+                      class="w-full h-full object-cover rounded-20 overflow-hidden"
+                      src="~@/assets/images/all-img/three.jpg"
+                      alt=""
+                    />
                   </div>
+                </div>
               </div>
             </div>
             <div class="col-span-4">
-                <div class="tabs">
-                  <a class="block mb-6 tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300" v-on:click="activetab='1'" v-bind:class="[ activetab === '1' ? 'active' : '' ]">
-                    <h3 class="text-dark-06 font-medium text-2xl mb-4 duration-300">Back-end Development</h3>
-                    <p class="text-dark-42 test-base font-light duration-300">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut.</p>
-                  </a>
-                  <a class="block mb-6 tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300" v-on:click="activetab='2'" v-bind:class="[ activetab === '2' ? 'active' : '' ]">
-                    <h3 class="text-dark-06 font-medium text-2xl mb-4 duration-300">Back-end Development</h3>
-                    <p class="text-dark-42 test-base font-light duration-300">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut.</p>
-                  </a>
-                  <a class="block tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300" v-on:click="activetab='3'" v-bind:class="[ activetab === '3' ? 'active' : '' ]">
-                    <h3 class="text-dark-06 font-medium text-2xl mb-4 duration-300">Back-end Development</h3>
-                    <p class="text-dark-42 test-base font-light duration-300">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut.</p>
-                  </a>
+              <div class="tabs">
+                <a
+                  class="block mb-6 tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300"
+                  v-on:click="activetab = '1'"
+                  v-bind:class="[activetab === '1' ? 'active' : '']"
+                >
+                  <h3
+                    class="text-dark-06 font-medium text-2xl mb-4 duration-300"
+                  >
+                    Back-end Development
+                  </h3>
+                  <p class="text-dark-42 test-base font-light duration-300">
+                    Vestibulum ante ipsum primis in faucibus orci luctus et
+                    ultrices posuere cubilia curae; Sed nec diam gravida,
+                    convallis lectus ut.
+                  </p>
+                </a>
+                <a
+                  class="block mb-6 tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300"
+                  v-on:click="activetab = '2'"
+                  v-bind:class="[activetab === '2' ? 'active' : '']"
+                >
+                  <h3
+                    class="text-dark-06 font-medium text-2xl mb-4 duration-300"
+                  >
+                    Back-end Development
+                  </h3>
+                  <p class="text-dark-42 test-base font-light duration-300">
+                    Vestibulum ante ipsum primis in faucibus orci luctus et
+                    ultrices posuere cubilia curae; Sed nec diam gravida,
+                    convallis lectus ut.
+                  </p>
+                </a>
+                <a
+                  class="block tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300"
+                  v-on:click="activetab = '3'"
+                  v-bind:class="[activetab === '3' ? 'active' : '']"
+                >
+                  <h3
+                    class="text-dark-06 font-medium text-2xl mb-4 duration-300"
+                  >
+                    Back-end Development
+                  </h3>
+                  <p class="text-dark-42 test-base font-light duration-300">
+                    Vestibulum ante ipsum primis in faucibus orci luctus et
+                    ultrices posuere cubilia curae; Sed nec diam gravida,
+                    convallis lectus ut.
+                  </p>
+                </a>
               </div>
             </div>
           </div>
@@ -303,6 +367,9 @@
                 </h3>
                 <h2
                   class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
+                  data-aos="fade-up"
+                  data-aos-delay="350"
+                  data-aos-easing="ease-in"
                 >
                   Feature Name 01
                 </h2>
@@ -332,6 +399,9 @@
           <div class="text-center mb-8 lg:mb-12">
             <h2
               class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
+              data-aos="fade-up"
+              data-aos-delay="350"
+              data-aos-easing="ease-in"
             >
               45+ Beautiful hand-crafted pages
             </h2>
@@ -354,6 +424,9 @@
           <div class="text-center mb-24">
             <h2
               class="text-white text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
+              data-aos="fade-up"
+              data-aos-delay="350"
+              data-aos-easing="ease-in"
             >
               Let’s Get Started
             </h2>
@@ -372,7 +445,7 @@
           </div>
         </div>
         <div class="">
-          <swiper class="swiper " :options="swiperOptionOne">
+          <swiper class="swiper" :options="swiperOptionOne">
             <swiper-slide class="slider-full">
               <img
                 class="w-full h-full border border-white p-3 pb-0"
@@ -443,6 +516,9 @@
           <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
             <h2
               class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
+              data-aos="fade-up"
+              data-aos-delay="350"
+              data-aos-easing="ease-in"
             >
               Folder Structure
             </h2>
@@ -454,7 +530,10 @@
             </p>
           </div>
           <div class="relative">
-            <swiper class="swiper shadow-bs012 rounded-xl" :options="swiperOptionTwo">
+            <swiper
+              class="swiper shadow-bs012 rounded-xl"
+              :options="swiperOptionTwo"
+            >
               <swiper-slide
                 ><img
                   class="w-full h-full rounded-xl"
@@ -487,23 +566,23 @@
               /></swiper-slide>
             </swiper>
             <div class="custom-pagination flex justify-center pt-16">
-                <div class="swiper-pagination" slot="pagination"></div>
+              <div class="swiper-pagination" slot="pagination"></div>
             </div>
             <div class="single-slider">
-                <div class="swiper-button-prev ml-6" slot="button-prev">
-                  <span
-                    class="w-12 h-12 rounded-md flex items-center justify-center flex-shrink-0 bg-black bg-opacity-50 duration-300 hover:bg-blue-0b"
-                  >
-                    <img src="~@/assets/images/svg/caret-left.svg" alt="">
-                  </span>
-                </div>
-                <div class="swiper-button-next mr-6" slot="button-next">
-                  <span
-                    class="w-12 h-12 rounded-md flex items-center justify-center flex-shrink-0 bg-black bg-opacity-50 duration-300 hover:bg-blue-0b arrow-icon"
-                  >
-                    <img src="~@/assets/images/svg/caret-right.svg" alt="">
-                  </span>
-                </div>
+              <div class="swiper-button-prev ml-6" slot="button-prev">
+                <span
+                  class="w-12 h-12 rounded-md flex items-center justify-center flex-shrink-0 bg-black bg-opacity-50 duration-300 hover:bg-blue-0b"
+                >
+                  <img src="~@/assets/images/svg/caret-left.svg" alt="" />
+                </span>
+              </div>
+              <div class="swiper-button-next mr-6" slot="button-next">
+                <span
+                  class="w-12 h-12 rounded-md flex items-center justify-center flex-shrink-0 bg-black bg-opacity-50 duration-300 hover:bg-blue-0b arrow-icon"
+                >
+                  <img src="~@/assets/images/svg/caret-right.svg" alt="" />
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -580,9 +659,7 @@ import FunFact from "../components/Fun.vue";
 import LinkThumb from "../components/LinkThumb.vue";
 import PurchaseCard from "../components/PurchaseCard.vue";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
-  import 'swiper/css/swiper.css'
-
-
+import "swiper/css/swiper.css";
 
 export default {
   layout: "demo",
@@ -598,7 +675,7 @@ export default {
 
   data() {
     return {
-      activetab: '1',
+      activetab: "1",
       DemoHero: {
         backgroundImage: "url(https://i.imgur.com/aBzS4DP.png)",
       },
@@ -830,35 +907,33 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-  // animation
-  .slider-full{
-    animation: scroll 20s linear infinite;
+// animation
+.slider-full {
+  animation: scroll 20s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-250px * 7));
-    }
-  }
-  // swiper single silder
-
-
-  .single-slider{
-    .swiper-button-prev:after, .swiper-button-next:after{
-        content: none;
-      }
-  }
-.tab-content-wrap{
-  &.active{
-    background-color: #0B63E5;
-    h3, p{
-      color: white;
-    }
-
+  100% {
+    transform: translateX(calc(-250px * 7));
   }
 }
+// swiper single silder
 
+.single-slider {
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    content: none;
+  }
+}
+.tab-content-wrap {
+  &.active {
+    background-color: #0b63e5;
+    h3,
+    p {
+      color: white;
+    }
+  }
+}
 </style>

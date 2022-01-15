@@ -77,6 +77,9 @@
             <div class="lg:max-w-536">
               <h2
                 class="text-dark-06 text-body-32px sm:text-4xl md:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-ls01"
+                data-aos="fade-up"
+                data-aos-delay="350"
+                data-aos-easing="ease-in"
               >
                 We design & build your solution.
               </h2>
@@ -106,6 +109,9 @@
         <div class="lg:max-w-680 m-auto text-center mb-16">
           <h2
             class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-ls02"
+            data-aos="fade-up"
+            data-aos-delay="350"
+            data-aos-easing="ease-in"
           >
             Beautiful UI kit designed to grow your business.
           </h2>
@@ -137,6 +143,9 @@
         <div class="lg:max-w-3xl m-auto text-center mb-16">
           <h2
             class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-ls02"
+            data-aos="fade-up"
+            data-aos-delay="350"
+            data-aos-easing="ease-in"
           >
             Your development plan, our development team.
           </h2>
@@ -228,6 +237,9 @@
         <div class="lg:max-w-680 m-auto text-center mb-16">
           <h2
             class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-ls02"
+            data-aos="fade-up"
+            data-aos-delay="350"
+            data-aos-easing="ease-in"
           >
             Have a project idea! Write down a quote.
           </h2>
