@@ -844,8 +844,6 @@ export default {
     }
   }
   // swiper single silder
-
-
   .single-slider{
     .swiper-button-prev:after, .swiper-button-next:after{
         content: none;

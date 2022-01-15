@@ -132,18 +132,9 @@ input[type="radio"]:checked + label span {
       height: 100%;
       z-index: -1;
       position: absolute;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.7);
     }
   }
-  @media (max-width: 991px) {
-    background-image: none !important;
-    &::before {
-      content: none;
-    }
-  }
-  //  @media (max-width: 1400px) {
-  //     background-position: 290%!important;
-  // }
 }
 
 .fun-column {
