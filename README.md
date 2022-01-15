@@ -1,34 +1,7 @@
 
-# Bankist Web Application
+# Template Cookie v.2.0.0
 
-It's A Demo Web Application that represents bank curriculum. this Application builded by 
-Jonas Schmedtmann and I used this for my practice project and improved  User experience. 
-
-
-## Projects View
-
-![App Screenshot](https://i.ibb.co/xjhgT65/Screenshot-6.png)
-
-## FlowChart
-
-![FlowChart](https://i.ibb.co/ft4dYyc/Bankist-Flow-Chart-2x.png)
-
-
-## How to Login ? 
-There you will get 4 accounts and they have all unique login username and passwords. you have to fill that requirement or you will can't login  into application 
-- Logins Account js, jd, stw, ss and passwords are 1111, 2222, 3333, 4444
-
-## Features
-
-- User Can Transfer Balance to Other account 
-- User can Request Loan (in sort of terms )
-- User can delete current Account If He Wants to 
-- User can sort of Movements 
-- After current session expires user will be logout automaticaly 
-
-
-## Authors
-- [@jonasschmedtman](https://mobile.twitter.com/jonasschmedtman?lang=en)
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea autem odio culpa quidem eligendi error magni, reprehenderit dicta atque dignissimos itaque voluptates a libero repellat iste labore doloremque aliquid vel consequuntur vero repellendus fugiat rem aperiam! Deserunt perferendis reprehenderit vel ratione consectetur, omnis numquam architecto necessitatibus voluptates, reiciendis doloremque repudiandae est consequuntur nisi incidunt quidem amet nulla hic aut rem.
 
 
 ## Run Locally
@@ -36,30 +9,33 @@ There you will get 4 accounts and they have all unique login username and passwo
 Clone the project
 
 ```bash
-  git clone https://github.com/SheikhRashed/Bankist--js.git
+  git clone https://github.com/zakirsoft/templatecookie-v2.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd Bankist--js
+  cd templatecookie-v2
 ```
 
 Install dependencies
 
 ```bash
-  npm install / yarn
+  npm install / yarn 
 ```
 
-Start development Server 
+Start the server
 
 ```bash
-  npm run dev / yarn dev 
+  yarn dev
 ```
 
-Start Production Server 
 
-```bash
-  npm run build / yarn build 
-```
+## Technology
+
+ - [Tailwind CSS ](https://tailwindcss.com/)
+ - [Nuxt JS](https://nuxtjs.org/)
+ - [Vue Js](https://vuejs.org/)
+ - [Vue Select ](https://vue-select.org/)
+ - [Animate on Scroll](https://michalsnik.github.io/aos/)
 
