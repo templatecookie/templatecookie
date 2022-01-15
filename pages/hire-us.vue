@@ -5,6 +5,8 @@
         <div class="text-center max-w-4xl m-auto mb-20 lg:mb-28">
           <h1
             class="text-dark-06 text-4xl md:text-5xl lg:text-6xl xl:text-heading-80 font-semibold mb-6 lg:mb-9 tracking-ls02"
+            data-aos="fade-up"
+            data-aos-duration="1200"
           >
             The easiest way to create your website.
           </h1>
@@ -30,6 +32,9 @@
             v-for="(item, itemIndex) in achivementList"
             :key="itemIndex"
             class="col-span-full ex-small:col-span-2 ex-small:lg:col-span-1"
+            data-aos="fade-up"
+            :data-aos-delay="item.aosDelay"
+            data-aos-duration="1200"
           >
             <div
               class="flex flex-col ex-small:flex-row items-center text-center ex-small:text-left"
@@ -68,6 +73,8 @@
                 v-for="(item, itemIndex) in items"
                 :key="itemIndex"
                 class="sm:col-span-6 col-span-12 build-solution"
+                :data-aos="item.aos"
+                data-aos-duration="1200"
               >
                 <SolutionCard :title="item.title" :text="item.text" />
               </div>
@@ -125,6 +132,8 @@
             v-for="(item, itemIndex) in BusinessItems"
             :key="itemIndex"
             class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6"
+            data-aos="fade-up"
+            data-aos-duration="1600"
           >
             <BusinessCard
               className="text-center"
@@ -157,7 +166,11 @@
           </p>
         </div>
         <div class="max-w-872 m-auto grid grid-cols-12 gap-6">
-          <div class="col-span-12 lg:col-span-6 md:col-span-6 sm:col-span-6">
+          <div
+            class="col-span-12 lg:col-span-6 md:col-span-6 sm:col-span-6"
+            data-aos="fade-up-right"
+            data-aos-duration="1200"
+          >
             <div class="rounded-xl p-6 md:p-8 shadow-bs8 border border-gray-e6">
               <div class="mb-8">
                 <img
@@ -189,7 +202,11 @@
               </div>
             </div>
           </div>
-          <div class="col-span-12 lg:col-span-6 md:col-span-6 sm:col-span-6">
+          <div
+            class="col-span-12 lg:col-span-6 md:col-span-6 sm:col-span-6"
+            data-aos="fade-up-left"
+            data-aos-duration="1200"
+          >
             <div class="rounded-xl p-6 md:p-8 shadow-bs8 border border-gray-e6">
               <div class="mb-8">
                 <img
@@ -254,8 +271,11 @@
         >
           <h2
             class="text-dark-06 font-semibold tracking-ls01 text-2xl md:text-4xl mb-8 md:mb-12 text-center"
+            data-aos="flip-up"
+            data-aos-duration="1200"
           >
-            Request a quote to <span class="text-blue-0b">Templatecookie</span>
+            Request a quote to
+            <span class="text-blue-0b">Templatecookie</span>
           </h2>
           <div class="mb-6">
             <div class="lg:grid grid-cols-12 gap-6">
@@ -444,24 +464,28 @@ export default {
         {
           value: 17,
           delay: 1000,
+          aosDelay: 300,
           designation: "Awards Rewarded",
           icon: "https://i.imgur.com/XHzKgiy.png",
         },
         {
           value: 23,
           delay: 1200,
+          aosDelay: 450,
           designation: "Years of Experience",
           icon: "https://i.imgur.com/RHw1fUb.png",
         },
         {
           value: 23,
           delay: 1600,
+          aosDelay: 550,
           designation: "Happy Clients",
           icon: "https://i.imgur.com/ddKeF4B.png",
         },
         {
           value: 315,
           delay: 2400,
+          aosDelay: 650,
           designation: "COMPLETED PROJECT",
           icon: "https://i.imgur.com/h8K5qbt.png",
         },
@@ -473,18 +497,22 @@ export default {
 
       items: [
         {
+          aos: "fade-up-right",
           title: "1. Understanding (UX)",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          aos: "fade-up-left",
           title: "2. Stage of Design (UI)",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          aos: "fade-up-right",
           title: "3. Development",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          aos: "fade-up-left",
           title: "4. Project Delivery",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
@@ -492,18 +520,22 @@ export default {
 
       BusinessItems: [
         {
+          aosDelay: 0,
           title: "Project Introduction",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          aosDelay: 300,
           title: "User Experience Design",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          aosDelay: 600,
           title: "User Interface Design",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          aosDelay: 900,
           title: "Front-end Development",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
