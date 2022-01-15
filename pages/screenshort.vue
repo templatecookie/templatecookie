@@ -1,6 +1,6 @@
 <template>
   <div id="tabs" class="lg:flex">
-    <div class="tabs w-full lg:w-40 bg-gray-f5 p-3 flex-shrink-0 h-850 lg:h-full overflow-y-scroll screenshort-scroll">
+    <div class="tabs w-full lg:w-40 bg-gray-f5 p-3 flex-shrink-0">
       <p class="text-dark-06 text-opacity-60 uppercase mb-2 text-xs">
         SCREENSHOT
       </p>
