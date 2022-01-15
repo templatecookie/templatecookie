@@ -130,7 +130,12 @@
       <div class="container">
         <div class="lg:grid grid-cols-12 gap-6">
           <div class="col-span-6 lg:order-2">
-            <div class="mb-6 lg:mb-0">
+            <div
+              class="mb-6 lg:mb-0"
+              data-aos="fade-up-left"
+              data-aos-delay="300"
+              data-aos-duration="1200"
+            >
               <img
                 class="w-full h-full object-cover rounded-20"
                 src="~@/assets/images/all-img/demo-thumb.png"
@@ -191,7 +196,12 @@
               velit arcu vitae mi. Donec ac nisi ex.
             </p>
           </div>
-          <div class="mb-6 lg:mb-0">
+          <div
+            class="mb-6 lg:mb-0"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="350"
+          >
             <img
               class="w-full object-cover rounded-20"
               src="~@/assets/images/all-img/demo-thumb2.png"
@@ -206,7 +216,12 @@
         <div class="container">
           <div class="lg:grid grid-cols-12 gap-6">
             <div class="col-span-6">
-              <div class="lg:mr-20 mb-6 lg:mb-0">
+              <div
+                class="lg:mr-20 mb-6 lg:mb-0"
+                data-aos="fade-up-right"
+                data-aos-duration="1200"
+                data-aos-delay="300"
+              >
                 <img
                   class="w-full h-full object-cover rounded-20"
                   src="~@/assets/images/all-img/demo-thumb.png"
@@ -271,7 +286,14 @@
           <div id="tabs" class="lg:grid grid-cols-12 gap-6">
             <div class="col-span-8 order-2">
               <div class="content lg:pl-6 mb-6">
-                <div v-if="activetab === '1'" class="tabcontent">
+                <div
+                  v-if="activetab === '1'"
+                  class="tabcontent"
+                  data-aos="fade-up-left"
+                  data-aos-duration="1600"
+                  data-aos-delay="300"
+                  data-aos-offset="200"
+                >
                   <div class="h-600">
                     <img
                       class="w-full h-full object-cover rounded-20 overflow-hidden"
@@ -280,7 +302,14 @@
                     />
                   </div>
                 </div>
-                <div v-if="activetab === '2'" class="tabcontent">
+                <div
+                  v-if="activetab === '2'"
+                  class="tabcontent"
+                  data-aos="fade-up-left"
+                  data-aos-duration="1600"
+                  data-aos-delay="300"
+                  data-aos-offset="200"
+                >
                   <div class="h-600">
                     <img
                       class="w-full h-full object-cover rounded-20 overflow-hidden"
@@ -289,7 +318,14 @@
                     />
                   </div>
                 </div>
-                <div v-if="activetab === '3'" class="tabcontent">
+                <div
+                  v-if="activetab === '3'"
+                  class="tabcontent"
+                  data-aos="fade-up-left"
+                  data-aos-duration="1600"
+                  data-aos-delay="300"
+                  data-aos-offset="200"
+                >
                   <div class="h-600">
                     <img
                       class="w-full h-full object-cover rounded-20 overflow-hidden"
@@ -302,7 +338,7 @@
             </div>
             <div class="col-span-4">
               <div class="tabs">
-                <a
+                <div
                   class="block mb-6 tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300"
                   v-on:click="activetab = '1'"
                   v-bind:class="[activetab === '1' ? 'active' : '']"
@@ -317,8 +353,8 @@
                     ultrices posuere cubilia curae; Sed nec diam gravida,
                     convallis lectus ut.
                   </p>
-                </a>
-                <a
+                </div>
+                <div
                   class="block mb-6 tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300"
                   v-on:click="activetab = '2'"
                   v-bind:class="[activetab === '2' ? 'active' : '']"
@@ -333,8 +369,8 @@
                     ultrices posuere cubilia curae; Sed nec diam gravida,
                     convallis lectus ut.
                   </p>
-                </a>
-                <a
+                </div>
+                <div
                   class="block tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300"
                   v-on:click="activetab = '3'"
                   v-bind:class="[activetab === '3' ? 'active' : '']"
@@ -349,7 +385,7 @@
                     ultrices posuere cubilia curae; Sed nec diam gravida,
                     convallis lectus ut.
                   </p>
-                </a>
+                </div>
               </div>
             </div>
           </div>
@@ -361,7 +397,13 @@
         <div class="container">
           <div class="lg:grid grid-cols-12 gap-6">
             <div class="col-span-6">
-              <div class="lg:mr-20 mb-6 lg:mb-0">
+              <div
+                class="lg:mr-20 mb-6 lg:mb-0"
+                data-aos="fade-up-right"
+                data-aos-duration="1600"
+                data-aos-delay="300"
+                data-aos-offset="200"
+              >
                 <img
                   class="w-full h-full object-cover rounded-20"
                   src="~@/assets/images/all-img/demo-thumb.png"
@@ -420,6 +462,9 @@
               v-for="(item, itemIndex) in linkThumb"
               :key="itemIndex"
               class="col-span-12 xl:col-span-3 lg:col-span-6 md:col-span-6"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              :data-aos-delay="item.aosDelay"
             >
               <LinkThumb :img="item.img" :title="item.title" :url="item.url" />
             </div>
@@ -526,8 +571,7 @@
             <h2
               class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
               data-aos="fade-up"
-              data-aos-delay="350"
-              data-aos-easing="ease-in"
+              data-aos-duration="1200"
             >
               Folder Structure
             </h2>
@@ -647,6 +691,9 @@
               v-for="(item, itemIndex) in PurchaseItems"
               :key="itemIndex"
               class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 purchase-card-wrap"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              :data-aos-delay="item.aosDelay"
             >
               <PurchaseCard
                 :title="item.title"
@@ -754,98 +801,101 @@ export default {
           text: "Well-Organize & Easy-to-use File",
         },
       ],
-      // contentItems: [
-      //   {
-      //     title: "Back-end Development",
-      //     text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut.",
-      //   },
-      //   {
-      //     title: "Back-end Development",
-      //     text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut.",
-      //   },
-      //   {
-      //     title: "Back-end Development",
-      //     text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut.",
-      //   },
-      // ],
       linkThumb: [
         {
+          aosDelay: 0,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/z3lpl2i.png",
         },
         {
+          aosDelay: 150,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/btnaKPg.png",
         },
         {
+          aosDelay: 180,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/WeNt6qZ.png",
         },
         {
+          aosDelay: 210,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/aXNiPxi.png",
         },
         {
+          aosDelay: 240,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/LrX4y5U.png",
         },
 
         {
+          aosDelay: 270,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/7A80zMR.png",
         },
         {
+          aosDelay: 300,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/nnXHQ9w.png",
         },
         {
+          aosDelay: 330,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/OkWf1Gj.png",
         },
         {
+          aosDelay: 360,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/BRCMvYp.png",
         },
         {
+          aosDelay: 390,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/Z3NJCTN.png",
         },
         {
+          aosDelay: 420,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/2kaiEQa.png",
         },
         {
+          aosDelay: 450,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/HLreajz.png",
         },
         {
+          aosDelay: 480,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/mbarwY4.png",
         },
         {
+          aosDelay: 510,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/8g0dDml.png",
         },
         {
+          aosDelay: 540,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/YMm1zRS.png",
         },
+
         {
+          aosDelay: 570,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/gE2RT42.png",
@@ -898,18 +948,21 @@ export default {
 
       PurchaseItems: [
         {
+          aosDelay: 0,
           url: "https://www.google.com/",
           title: "Let’s Purchase This Product",
           text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
           btnText: "Purchase Now",
         },
         {
+          aosDelay: 160,
           url: "https://www.google.com/",
           title: "Well-Organize Documentation",
           text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
           btnText: "Documentation",
         },
         {
+          aosDelay: 260,
           url: "https://www.google.com/",
           title: "24/7 Customer Support",
           text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
