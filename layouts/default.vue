@@ -72,8 +72,8 @@
   </div>
 </template>
 <script>
-import Header from "../components/Header.vue";
-import Footer from "../components/Footer.vue";
+import Header from "../components/Header/Header.vue";
+import Footer from "../components/Footer/Footer.vue";
 import SocialLink from "../components/SocialLink.vue";
 export default { components: { Header, Footer, SocialLink } };
 </script>

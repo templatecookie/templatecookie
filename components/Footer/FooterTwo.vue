@@ -145,7 +145,8 @@
       <!-- footer copyright content  -->
       <div class="py-4 md:py-8 text-center border-t border-gray-24">
         <p class="text-body-16 text-white font-light capitalize">
-          &copy; 2021 All Rights Reserved - Templatecookie
+          &copy; {{ new Date().getFullYear() }} All Rights Reserved -
+          Templatecookie
         </p>
       </div>
     </div>
@@ -156,4 +157,3 @@ export default {
   name: "FooterTwo",
 };
 </script>
-<style lang=""></style>
