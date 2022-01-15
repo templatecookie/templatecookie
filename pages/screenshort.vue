@@ -1,6 +1,5 @@
 <template>
-  <div  id="tabs" class=" py-40 flex">
-  
+  <div id="tabs" class=" py-40 flex">
     <div class="tabs w-40 bg-gray-f5 p-3 flex-shrink-0">
         <p class="text-dark-06 text-opacity-60 uppercase mb-2 text-xs">SCREENSHOT</p>
         <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab='1'" v-bind:class="[ activetab === '1' ? 'active' : '' ]"><img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt=""></a>
@@ -18,7 +17,6 @@
         <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab='13'" v-bind:class="[ activetab === '13' ? 'active' : '' ]"><img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt=""></a>
         <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab='14'" v-bind:class="[ activetab === '14' ? 'active' : '' ]"><img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt=""></a>
     </div>
-
     <div class="content bg-dark-06 p-6 md:p-12 w-full">
         <div v-if="activetab ==='1'" class="tabcontent">
             <div>
@@ -91,19 +89,13 @@
             </div>
         </div>
     </div>
-  
 </div>
 </template>
+
 <script>
 
-
-  
-
 export default {
-  name: "HireUsPage",
-  components: {
-    
-  },
+  name: "Screenshort",
 
  data() {
    return{
