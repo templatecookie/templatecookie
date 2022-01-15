@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="py-28 lg:py-52 bg-dark-06 bg-content bg-right bg-no-repeat hero-demo"
+      class="pb-36 pt-56 lg:pb-222 lg:pt-310 bg-dark-06 bg-content bg-right-bottom bg-no-repeat hero-demo"
       :style="DemoHero"
     >
       <div class="container">
@@ -33,7 +33,7 @@
             >
           </div>
           <div
-            class="shadow-bs8 rounded-xl p-6 bg-white border border-gray-e6 flex items-center absolute -bottom-36 lg:-bottom-60 left-0"
+            class="shadow-bs8 rounded-xl p-6 bg-white border border-gray-e6 flex items-center absolute -bottom-44 lg:-bottom-64 left-0"
           >
             <p class="text-dark-06 text-xs mr-4">Compatible with:</p>
             <ul class="flex space-x-3">
@@ -66,16 +66,16 @@
 
     <div class="py-20 lg:py-124">
       <div class="container">
-        <div class="md:grid grid-cols-12 gap-6 mb-12">
+        <div class="md:grid grid-cols-12 gap-6 mb-12 items-center">
           <div class="col-span-7 mb-4 md:mb-0">
             <h2
-              class="text-dark-06 text-body-32px md:text-4xl xl:text-title font-semibold tracking-01"
+              class="text-dark-06 text-body-32px md:text-4xl xl:text-title font-semibold tracking-ls01"
             >
               Explore Relik<br/> Notable Feature
             </h2>
           </div>
           <div class="col-span-5">
-            <p class="text-dark-06 text-lg sm:text-xl lg:mb-9 font-light">
+            <p class="text-dark-06 text-lg sm:text-xl font-light">
               You get all Bootstrap components fully customized. Besides, you
               receive numerous plugins out of the box and ready to use
             </p>
@@ -100,11 +100,11 @@
 
     <div>
       <div class="container">
-        <div class="grid grid-cols-12">
+        <div class="mobile:grid grid-cols-12">
           <div
             v-for="(item, indexItem) in FunItems"
             :key="indexItem"
-            class="col-span-6 lg:col-span-3 fun-column"
+            class="col-span-6 lg:col-span-3 fun-column duration-300 hover:shadow-bs8"
           >
             <FunFact :title="item.title" :text="item.text" />
           </div>
@@ -131,7 +131,7 @@
                 Explore our Gilio team services.
               </h3>
               <h2
-                class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
+                class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
               >
                 Feature Name 01
               </h2>
@@ -162,7 +162,7 @@
               Explore our Gilio team services.
             </h3>
             <h2
-              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
+              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
             >
               Feature Name 01
             </h2>
@@ -201,7 +201,7 @@
                   Explore our Gilio team services.
                 </h3>
                 <h2
-                  class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
+                  class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
                 >
                   Feature Name 01
                 </h2>
@@ -233,7 +233,7 @@
               Explore our Gilio team services.
             </h3>
             <h2
-              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
+              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
             >
               Feature Name 01
             </h2>
@@ -302,7 +302,7 @@
                   Explore our Gilio team services.
                 </h3>
                 <h2
-                  class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
+                  class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
                 >
                   Feature Name 01
                 </h2>
@@ -331,7 +331,7 @@
         <div class="container">
           <div class="text-center mb-8 lg:mb-12">
             <h2
-              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
+              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
             >
               45+ Beautiful hand-crafted pages
             </h2>
@@ -442,7 +442,7 @@
         <div class="container">
           <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
             <h2
-              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
+              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
             >
               Folder Structure
             </h2>
@@ -536,7 +536,7 @@
             <div class="col-span-6 flex items-center">
               <div class="lg:pr-20">
                 <h2
-                  class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
+                  class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
                 >
                   Folder Structure
                 </h2>
@@ -790,10 +790,10 @@ export default {
         spaceBetween: 0,
         centeredSlides: true,
         loop: true,
-        // autoplay: {
-        //   delay: 1600,
-        //   disableOnInteraction: false,
-        // },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -833,7 +833,7 @@ export default {
 
   // animation
   .slider-full{
-    animation: scroll 40s linear infinite;
+    animation: scroll 20s linear infinite;
   }
   @keyframes scroll {
     0% {

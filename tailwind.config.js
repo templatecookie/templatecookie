@@ -116,9 +116,11 @@ module.exports = {
         200: "200px",
         216: "216px",
         230: "230px",
+        222: "222px",
+        310: "310px",
       },
       letterSpacing: {
-        01: " -0.015em",
+        ls01: " -0.015em",
         ls02: "-0.02em",
         ls03: " -0.012em",
         ls04: " 0.01em",
@@ -152,7 +154,7 @@ module.exports = {
         17: "17",
       },
       screens: {
-        mobile: "640px",
+        mobile: "575px",
         // => @media (min-width: 640px) { ... }
       },
     },

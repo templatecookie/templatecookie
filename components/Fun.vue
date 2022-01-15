@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center border-r border-b border-gray-e6 px-8 py-10 fun-wrap">
+  <div class="text-center border-r border-b border-gray-e6 px-6 py-7 md:px-8 md:py-10 fun-wrap">
     <h3 class="text-blue-0b text-3xl lg:text-heading-40 tracking-01 mb-2">
       {{ title }}
     </h3>

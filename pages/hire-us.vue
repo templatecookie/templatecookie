@@ -281,7 +281,7 @@
     <!-- end -->
 
     <div
-      class="pt-20 md:pb-0 pb-20 lg:pt-124 bg-content bg-center-top bg-no-repeat"
+      class="pt-20 md:pb-0 pb-20 lg:pt-124 bg-content bg-center-top bg-no-repeat relative responsive-overly"
       :style="projectIdea"
     >
       <div class="container">
@@ -543,3 +543,26 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.responsive-overly{
+  z-index: 0;
+  &::before{
+    content: "";
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    @media (max-width: 1250px) {
+       opacity: 1;
+    }
+  
+  }
+}
+  
+    
+</style>
