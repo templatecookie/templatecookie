@@ -100,7 +100,7 @@
 
     <div>
       <div class="container">
-        <div class="mobile:grid grid-cols-12">
+        <div class="ex-small:grid grid-cols-12">
           <div
             v-for="(item, indexItem) in FunItems"
             :key="indexItem"

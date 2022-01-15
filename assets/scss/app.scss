@@ -174,7 +174,7 @@ input[type="radio"]:checked + label span {
   &:nth-child(8) .fun-wrap {
     border: none;
   }
-  @media (max-width: 575px) {
+  @media (max-width: 480px) {
     .fun-wrap {
       border-right: none;
     }
