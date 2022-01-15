@@ -8,6 +8,8 @@
         <div class="max-w-2xl relative">
           <h1
             class="tracking-ls01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8"
+            data-aos="flip-up"
+            data-aos-duration="1200"
           >
             Relik - Admin Dashboard Figma Template
           </h1>
@@ -20,6 +22,8 @@
             <nuxt-link
               to="/"
               class="block text-center sm:inline-block border-1.5 border-blue-0b bg-blue-0b font-medium rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 mb-3 sm:mb-0 sm:mr-3"
+              data-aos="fade-up-right"
+              data-aos-duration="1200"
               >Buy Now
               <img
                 class="inline-block ml-2"
@@ -29,6 +33,8 @@
             <nuxt-link
               to="/"
               class="block text-center sm:inline-block font-medium border-1.5 border-white rounded-7 py-3.5 px-8 text-body-17 text-white duration-300"
+              data-aos="fade-up-left"
+              data-aos-duration="1200"
               >Live Preview</nuxt-link
             >
           </div>
@@ -87,9 +93,12 @@
         </div>
         <div class="grid grid-cols-12 gap-6">
           <div
-            v-for="(item, itemIndex) in BusinessItems"
+            v-for="(item, itemIndex) in buisnessCard"
             :key="itemIndex"
             class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            :data-aos-delay="item.aosDelay"
           >
             <BusinessCard
               className="shadow-bs8 border border-gray-e6"
@@ -679,28 +688,34 @@ export default {
       DemoHero: {
         backgroundImage: "url(https://i.imgur.com/aBzS4DP.png)",
       },
-      BusinessItems: [
+      buisnessCard: [
         {
+          aosDelay: 0,
           title: "Project Introduction",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          aosDelay: 300,
           title: "User Experience Design",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          aosDelay: 600,
           title: "User Interface Design",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          aosDelay: 900,
           title: "Front-end Development",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          aosDelay: 1200,
           title: "Back-end Development",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          aosDelay: 1500,
           title: "Delivery & Client Feedback",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
