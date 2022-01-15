@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-10 pt-140 bg-cover bg-center" :style="BreadcrumbBg">
+  <div class="pb-10 pt-36 bg-cover bg-center" :style="BreadcrumbBg">
     <div class="container">
       <ul class="flex text-gray-6a text-sm space-x-2 mb-3">
         <li class="leading-3"><nuxt-link to="/">Home</nuxt-link></li>

@@ -109,8 +109,8 @@
               <!-- end -->
               <div class="py-8 border-b border-gray-e6">
                 <h4 class="text-dark-06 text-xl mb-5 uppercase">HIGHLIGHTS</h4>
-                <div class="grid grid-cols-12 gap-6">
-                  <div class="col-span-12 md:col-span-6">
+                <div class="md:grid grid-cols-12 gap-6">
+                  <div class="md:col-span-6">
                     <ul>
                       <li
                         v-for="(item, indexItem) in highlightItemOne"
@@ -125,7 +125,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="col-span-12 md:col-span-6">
+                  <div class="md:col-span-6">
                     <ul>
                       <li
                         v-for="(item, indexItem) in highlightItemOne"
@@ -182,9 +182,9 @@
                   <!-- end -->
             </div>
             <!-- end -->
-            <div id="change-log" class="py-8 border-b border-gray-e6">
+            <div id="change-log" class="py-8">
                 <h4 class="text-dark-06 text-xl mb-5 uppercase">CHANGELOG</h4>
-                <p class="text-dark-42 text-base font-light mb-5">
+                <p class="text-dark-42 text-base font-light">
                   Donec volutpat risus ac turpis tempor pulvinar. Mauris viverra
                   varius felis, ut auctor sapien commodo eu. In finibus quis
                   tellus nec auctor. Morbi vehicula suscipit fringilla. Etiam
@@ -208,11 +208,11 @@
                   />
                   <label
                     for="radio1"
-                    class="flex items-center cursor-pointer justify-between px-4 py-3 rounded-lg border border-gray-f5"
+                    class="flex items-center cursor-pointer justify-between px-4 py-3 rounded-lg border border-gray-f5 duration-300"
                   >
                     <div class="flex items-center">
                       <span
-                        class="w-5 h-5 rounded-full inline-block mr-4 flex-shrink-0"
+                        class="w-5 h-5 rounded-full inline-block mr-4 flex-shrink-0 border-1.5 border-gray-cd bg-white duration-300"
                       ></span>
                       <div>
                         <h4 class="text-base text-dark-06 mb-1">
@@ -236,11 +236,11 @@
                   <input id="radio2" type="radio" name="radio" class="hidden" />
                   <label
                     for="radio2"
-                    class="flex items-center cursor-pointer justify-between px-4 py-3 rounded-lg border border-gray-f5"
+                    class="flex items-center cursor-pointer justify-between px-4 py-3 rounded-lg border border-gray-f5 duration-300"
                   >
                     <div class="flex items-center">
                       <span
-                        class="w-5 h-5 rounded-full inline-block mr-4 flex-shrink-0"
+                        class="w-5 h-5 rounded-full inline-block mr-4 flex-shrink-0 border-1.5 border-gray-cd bg-white duration-300"
                       ></span>
                       <div>
                         <h4 class="text-base text-dark-06 mb-1">
@@ -304,6 +304,7 @@
             </div>
           </div>
         </div>
+        <!-- end -->
           
         <div class="bg-blue-09 xl:pl-14 xl:p-0 p-10 pb-0 rounded-2xl mt-20 lg:mt-124">
           <div class="xl:grid grid-cols-12">
@@ -346,7 +347,7 @@
         </div>
 
         <!-- Featured Card  -->
-        <section class="featured py-14 md:pt-124 ">
+        <section class="featured py-14 md:pt-124 md:pb-0">
           <div class="container">
             <!-- section title  -->
             <div class="mb-72 text-center">
@@ -714,10 +715,10 @@ export default {
         slidesPerView: 3,
         spaceBetween: 24,
         loop: true,
-        // autoplay: {
-        //   delay: 1600,
-        //   disableOnInteraction: false,
-        // },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
         breakpoints: {
           1300: {
             slidesPerView: 3,
@@ -763,6 +764,7 @@ export default {
 .select-radio {
   input[type="radio"]:checked + label {
     border: 1px solid #0b63e5;
+    background-color: white;
   }
 
   input[type="radio"] + label span {
