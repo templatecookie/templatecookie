@@ -7,9 +7,9 @@
         <div class="lg:grid grid-cols-12 gap-6">
           <div class="col-span-8">
             <div class="border border-gray-e6 rounded-2xl p-6">
-              <div class="mb-6">
+              <div class="mb-6 overflow-hidden">
                 <img
-                  class="w-full h-full"
+                  class="w-full h-full duration-500 hover:scale-110	"
                   src="~@/assets/images/all-img/product-details-thumb.png"
                   alt=""
                 />
