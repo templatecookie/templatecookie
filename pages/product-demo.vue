@@ -1,176 +1,180 @@
 <template>
   <div>
-      <div
-        class="pb-36 pt-56 lg:pb-222 lg:pt-310 bg-dark-06 bg-content bg-right-bottom bg-no-repeat hero-demo"
-        :style="DemoHero"
-      >
-        <div class="container">
-          <div class="max-w-2xl relative">
-            <h1
-              class="tracking-ls01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8"
-              data-aos="flip-up"
+    <div
+      class="pb-36 pt-56 lg:pb-222 lg:pt-310 bg-dark-06 bg-content bg-right-bottom bg-no-repeat hero-demo"
+      :style="DemoHero"
+    >
+      <div class="container">
+        <div class="max-w-2xl relative">
+          <h1
+            class="tracking-ls01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8"
+            data-aos="flip-up"
+            data-aos-duration="1200"
+          >
+            Relik - Admin Dashboard Figma Template
+          </h1>
+          <p class="text-white font-light text-lg md:text-xl max-w-536">
+            👉 Relik is a beautiful, simple, developer-friendly, highly
+            customizable admin dashboard template with a 💎 high-quality UI &
+            well-organized Figma file 🔥.
+          </p>
+          <div class="mt-8">
+            <nuxt-link
+              to="/"
+              class="block text-center sm:inline-block border-1.5 border-blue-0b bg-blue-0b font-medium rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 mb-3 sm:mb-0 sm:mr-3"
+              data-aos="fade-up-right"
               data-aos-duration="1200"
+              >Buy Now
+              <img
+                class="inline-block ml-2"
+                src="~/assets/images/svg/arrow-right.svg"
+                alt=""
+            /></nuxt-link>
+            <nuxt-link
+              to="/"
+              class="block text-center sm:inline-block font-medium border-1.5 border-white rounded-7 py-3.5 px-8 text-body-17 text-white duration-300"
+              data-aos="fade-up-left"
+              data-aos-duration="1200"
+              >Live Preview</nuxt-link
             >
-              Relik - Admin Dashboard Figma Template
-            </h1>
-            <p class="text-white font-light text-lg md:text-xl max-w-536">
-              👉 Relik is a beautiful, simple, developer-friendly, highly
-              customizable admin dashboard template with a 💎 high-quality UI &
-              well-organized Figma file 🔥.
-            </p>
-            <div class="mt-8">
-              <nuxt-link
-                to="/"
-                class="block text-center sm:inline-block border-1.5 border-blue-0b bg-blue-0b font-medium rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 mb-3 sm:mb-0 sm:mr-3"
-                data-aos="fade-up-right"
-                data-aos-duration="1200"
-                >Buy Now
-                <img
-                  class="inline-block ml-2"
-                  src="~/assets/images/svg/arrow-right.svg"
-                  alt=""
-              /></nuxt-link>
-              <nuxt-link
-                to="/"
-                class="block text-center sm:inline-block font-medium border-1.5 border-white rounded-7 py-3.5 px-8 text-body-17 text-white duration-300"
-                data-aos="fade-up-left"
-                data-aos-duration="1200"
-                >Live Preview</nuxt-link
-              >
-            </div>
-            <div
-              class="shadow-bs8 rounded-xl p-6 bg-white border border-gray-e6 flex items-center absolute -bottom-44 lg:-bottom-64 left-0"
-            >
-              <p class="text-dark-06 text-xs mr-4">Compatible with:</p>
-              <ul class="flex space-x-3">
-                <li>
-                  <nuxt-link to="#"
-                    ><img src="~@/assets/images/svg/icon1.svg" alt=""
-                  /></nuxt-link>
-                </li>
-                <li>
-                  <nuxt-link to="#"
-                    ><img src="~@/assets/images/svg/icon2.svg" alt=""
-                  /></nuxt-link>
-                </li>
-                <li>
-                  <nuxt-link to="#"
-                    ><img src="~@/assets/images/svg/icon3.svg" alt=""
-                  /></nuxt-link>
-                </li>
-                <li>
-                  <nuxt-link to="#"
-                    ><img src="~@/assets/images/svg/icon4.svg" alt=""
-                  /></nuxt-link>
-                </li>
-              </ul>
-            </div>
+          </div>
+          <div
+            class="shadow-bs8 rounded-xl p-6 bg-white border border-gray-e6 flex items-center absolute -bottom-44 lg:-bottom-64 left-0"
+          >
+            <p class="text-dark-06 text-xs mr-4">Compatible with:</p>
+            <ul class="flex space-x-3">
+              <li>
+                <nuxt-link to="#"
+                  ><img src="~@/assets/images/svg/icon1.svg" alt=""
+                /></nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="#"
+                  ><img src="~@/assets/images/svg/icon2.svg" alt=""
+                /></nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="#"
+                  ><img src="~@/assets/images/svg/icon3.svg" alt=""
+                /></nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="#"
+                  ><img src="~@/assets/images/svg/icon4.svg" alt=""
+                /></nuxt-link>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <!-- end -->
+    </div>
+    <!-- end -->
 
-      <div class="py-20 lg:py-124">
-        <div class="container">
-          <div class="md:grid grid-cols-12 gap-6 mb-12 items-center">
-            <div class="col-span-7 mb-4 md:mb-0">
+    <div class="py-20 lg:py-124">
+      <div class="container">
+        <div class="md:grid grid-cols-12 gap-6 mb-12 items-center">
+          <div class="col-span-7 mb-4 md:mb-0">
+            <h2
+              class="text-dark-06 text-body-32px md:text-4xl xl:text-title font-semibold tracking-ls01"
+              data-aos="fade-up"
+              data-aos-delay="350"
+              data-aos-easing="ease-in"
+            >
+              Explore Relik<br />
+              Notable Feature
+            </h2>
+          </div>
+          <div class="col-span-5">
+            <p class="text-dark-06 text-lg sm:text-xl font-light">
+              You get all Bootstrap components fully customized. Besides, you
+              receive numerous plugins out of the box and ready to use
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-12 gap-6">
+          <div
+            v-for="(item, itemIndex) in buisnessCard"
+            :key="itemIndex"
+            class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            :data-aos-delay="item.aosDelay"
+          >
+            <BusinessCard
+              className="shadow-bs8 border border-gray-e6"
+              :title="item.title"
+              :text="item.text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+
+    <div>
+      <div class="container">
+        <div class="ex-small:grid grid-cols-12">
+          <div
+            v-for="(item, indexItem) in FunItems"
+            :key="indexItem"
+            class="col-span-6 lg:col-span-3 fun-column duration-300 hover:shadow-bs8"
+          >
+            <FunFact :title="item.title" :text="item.text" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end  -->
+
+    <div class="py-20 lg:py-124">
+      <div class="container">
+        <div class="lg:grid grid-cols-12 gap-6">
+          <div class="col-span-6 lg:order-2">
+            <div
+              class="mb-6 lg:mb-0 h-340 md:h-470"
+              data-aos="fade-up-left"
+              data-aos-delay="300"
+              data-aos-duration="1200"
+            >
+              <img
+                class="w-full h-full object-cover rounded-20"
+                src="~@/assets/images/all-img/demo-thumb.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-span-6 flex items-center">
+            <div class="lg:max-w-536">
+              <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">
+                Explore our Gilio team services.
+              </h3>
               <h2
-                class="text-dark-06 text-body-32px md:text-4xl xl:text-title font-semibold tracking-ls01"
+                class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
                 data-aos="fade-up"
                 data-aos-delay="350"
                 data-aos-easing="ease-in"
               >
-                Explore Relik<br />
-                Notable Feature
+                Feature Name 01
               </h2>
-            </div>
-            <div class="col-span-5">
-              <p class="text-dark-06 text-lg sm:text-xl font-light">
-                You get all Bootstrap components fully customized. Besides, you
-                receive numerous plugins out of the box and ready to use
+              <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">
+                Nunc convallis semper justo quis tempor. Praesent molestie,
+                lorem sed imperdiet tempor, libero urna semper urna, facilisis
+                vulputate velit arcu vitae mi. Donec ac nisi ex.
               </p>
-            </div>
-          </div>
-          <div class="grid grid-cols-12 gap-6">
-            <div
-              v-for="(item, itemIndex) in buisnessCard"
-              :key="itemIndex"
-              class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-              :data-aos-delay="item.aosDelay"
-            >
-              <BusinessCard
-                className="shadow-bs8 border border-gray-e6"
-                :title="item.title"
-                :text="item.text"
-              />
+              <nuxt-link
+                to="/"
+                class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06"
+                >Button Label
+                <img
+                  class="inline-block ml-2"
+                  src="~/assets/images/svg/arrow-right.svg"
+                  alt="brand-logo"
+              /></nuxt-link>
             </div>
           </div>
         </div>
       </div>
       <!-- end -->
-
-      <div>
-        <div class="container">
-          <div class="ex-small:grid grid-cols-12">
-            <div
-              v-for="(item, indexItem) in FunItems"
-              :key="indexItem"
-              class="col-span-6 lg:col-span-3 fun-column duration-300 hover:shadow-bs8"
-            >
-              <FunFact :title="item.title" :text="item.text" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end  -->
-
-      <div class="py-20 lg:py-124">
-        <div class="container">
-          <div class="lg:grid grid-cols-12 gap-6">
-            <div class="col-span-6 lg:order-2">
-              <div class="mb-6 lg:mb-0 h-340 sm:h-470">
-                <img
-                  class="w-full h-full object-cover rounded-20"
-                  src="~@/assets/images/all-img/demo-thumb.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="col-span-6 flex items-center">
-              <div class="lg:max-w-536">
-                <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">
-                  Explore our Gilio team services.
-                </h3>
-                <h2
-                  class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
-                  data-aos="fade-up"
-                  data-aos-delay="350"
-                  data-aos-easing="ease-in"
-                >
-                  Feature Name 01
-                </h2>
-                <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">
-                  Nunc convallis semper justo quis tempor. Praesent molestie,
-                  lorem sed imperdiet tempor, libero urna semper urna, facilisis
-                  vulputate velit arcu vitae mi. Donec ac nisi ex.
-                </p>
-                <nuxt-link
-                  to="/"
-                  class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06"
-                  >Button Label
-                  <img
-                    class="inline-block ml-2"
-                    src="~/assets/images/svg/arrow-right.svg"
-                    alt="brand-logo"
-                /></nuxt-link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-        <!-- end -->
 
       <div class="py-20 lg:py-124">
         <div class="container">
@@ -192,9 +196,14 @@
               velit arcu vitae mi. Donec ac nisi ex.
             </p>
           </div>
-          <div class="mb-6 lg:mb-0 h-340 md:h-650">
+          <div
+            class="mb-6 lg:mb-0 h-350 md:h-650"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="350"
+          >
             <img
-              class="w-full h-full object-cover rounded-20"
+              class="w-full object-cover rounded-20"
               src="~@/assets/images/all-img/demo-thumb2.png"
               alt=""
             />
@@ -207,7 +216,12 @@
         <div class="container">
           <div class="lg:grid grid-cols-12 gap-6">
             <div class="col-span-6">
-              <div class="lg:mr-20 mb-6 lg:mb-0 h-340 sm:h-470">
+              <div
+                class="lg:mr-20 mb-6 lg:mb-0 h-340 md:h-470"
+                data-aos="fade-up-right"
+                data-aos-duration="1200"
+                data-aos-delay="300"
+              >
                 <img
                   class="w-full h-full object-cover rounded-20"
                   src="~@/assets/images/all-img/demo-thumb.png"
@@ -271,27 +285,60 @@
           </div>
           <div id="tabs" class="lg:grid grid-cols-12 gap-6">
             <div class="col-span-8 order-2">
-                <div class="content lg:pl-6 mb-6">
-                  <div v-if="activetab ==='1'" class="tabcontent">
-                      <div class="h-340 sm:h-600">
-                        <img class="w-full h-full object-cover rounded-20 overflow-hidden" src="~@/assets/images/all-img/one.jpg" alt="">
-                      </div>
-                  </div>
-                  <div v-if="activetab ==='2'" class="tabcontent">
-                      <div class="h-340 sm:h-600">
-                        <img class="w-full h-full object-cover rounded-20 overflow-hidden" src="~@/assets/images/all-img/two.jpg" alt="">
-                    </div>
-                  </div>
-                  <div v-if="activetab ==='3'" class="tabcontent">
-                      <div class="h-340 sm:h-600">
-                        <img class="w-full h-full object-cover rounded-20 overflow-hidden" src="~@/assets/images/all-img/three.jpg" alt="">
-                    </div>
+              <div class="content lg:pl-6 mb-6">
+                <div
+                  v-if="activetab === '1'"
+                  class="tabcontent"
+                  data-aos="fade-up-left"
+                  data-aos-duration="1600"
+                  data-aos-delay="300"
+                  data-aos-offset="200"
+                >
+                  <div class="h-340 md:h-600">
+                    <img
+                      class="w-full h-full object-cover rounded-20 overflow-hidden"
+                      src="~@/assets/images/all-img/one.jpg"
+                      alt=""
+                    />
                   </div>
                 </div>
-           </div>
+                <div
+                  v-if="activetab === '2'"
+                  class="tabcontent"
+                  data-aos="fade-up-left"
+                  data-aos-duration="1600"
+                  data-aos-delay="300"
+                  data-aos-offset="200"
+                >
+                  <div class="h-340 md:h-600">
+                    <img
+                      class="w-full h-full object-cover rounded-20 overflow-hidden"
+                      src="~@/assets/images/all-img/two.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div
+                  v-if="activetab === '3'"
+                  class="tabcontent"
+                  data-aos="fade-up-left"
+                  data-aos-duration="1600"
+                  data-aos-delay="300"
+                  data-aos-offset="200"
+                >
+                  <div class="h-340 md:h-600">
+                    <img
+                      class="w-full h-full object-cover rounded-20 overflow-hidden"
+                      src="~@/assets/images/all-img/three.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="col-span-4">
               <div class="tabs">
-                <a
+                <div
                   class="block mb-6 tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300"
                   v-on:click="activetab = '1'"
                   v-bind:class="[activetab === '1' ? 'active' : '']"
@@ -306,8 +353,8 @@
                     ultrices posuere cubilia curae; Sed nec diam gravida,
                     convallis lectus ut.
                   </p>
-                </a>
-                <a
+                </div>
+                <div
                   class="block mb-6 tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300"
                   v-on:click="activetab = '2'"
                   v-bind:class="[activetab === '2' ? 'active' : '']"
@@ -322,8 +369,8 @@
                     ultrices posuere cubilia curae; Sed nec diam gravida,
                     convallis lectus ut.
                   </p>
-                </a>
-                <a
+                </div>
+                <div
                   class="block tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300"
                   v-on:click="activetab = '3'"
                   v-bind:class="[activetab === '3' ? 'active' : '']"
@@ -338,7 +385,7 @@
                     ultrices posuere cubilia curae; Sed nec diam gravida,
                     convallis lectus ut.
                   </p>
-                </a>
+                </div>
               </div>
             </div>
           </div>
@@ -350,7 +397,13 @@
         <div class="container">
           <div class="lg:grid grid-cols-12 gap-6">
             <div class="col-span-6">
-              <div class="lg:mr-20 mb-6 lg:mb-0 h-340 sm:h-470">
+              <div
+                class="lg:mr-20 mb-6 lg:mb-0 h-340 md:h-470"
+                data-aos="fade-up-right"
+                data-aos-duration="1600"
+                data-aos-delay="300"
+                data-aos-offset="200"
+              >
                 <img
                   class="w-full h-full object-cover rounded-20"
                   src="~@/assets/images/all-img/demo-thumb.png"
@@ -409,6 +462,9 @@
               v-for="(item, itemIndex) in linkThumb"
               :key="itemIndex"
               class="col-span-12 xl:col-span-3 lg:col-span-6 md:col-span-6"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              :data-aos-delay="item.aosDelay"
             >
               <LinkThumb :img="item.img" :title="item.title" :url="item.url" />
             </div>
@@ -515,8 +571,7 @@
             <h2
               class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
               data-aos="fade-up"
-              data-aos-delay="350"
-              data-aos-easing="ease-in"
+              data-aos-duration="1200"
             >
               Folder Structure
             </h2>
@@ -585,6 +640,7 @@
           </div>
         </div>
       </div>
+
       <!-- end -->
 
       <div class="py-20 lg:py-124 bg-gray-f5">
@@ -628,13 +684,16 @@
       </div>
       <!-- end -->
 
-      <div class="py-20 lg:py-124">
+      <div class="pt-20 lg:pt-124 md:pb-0 pb-20">
         <div class="container">
           <div class="grid grid-cols-12 gap-6">
             <div
               v-for="(item, itemIndex) in PurchaseItems"
               :key="itemIndex"
               class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 purchase-card-wrap"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              :data-aos-delay="item.aosDelay"
             >
               <PurchaseCard
                 :title="item.title"
@@ -647,6 +706,7 @@
         </div>
       </div>
       <!-- end -->
+    </div>
   </div>
 </template>
 <script>
@@ -741,98 +801,101 @@ export default {
           text: "Well-Organize & Easy-to-use File",
         },
       ],
-      // contentItems: [
-      //   {
-      //     title: "Back-end Development",
-      //     text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut.",
-      //   },
-      //   {
-      //     title: "Back-end Development",
-      //     text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut.",
-      //   },
-      //   {
-      //     title: "Back-end Development",
-      //     text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut.",
-      //   },
-      // ],
       linkThumb: [
         {
+          aosDelay: 0,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/z3lpl2i.png",
         },
         {
+          aosDelay: 150,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/btnaKPg.png",
         },
         {
+          aosDelay: 180,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/WeNt6qZ.png",
         },
         {
+          aosDelay: 210,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/aXNiPxi.png",
         },
         {
+          aosDelay: 240,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/LrX4y5U.png",
         },
 
         {
+          aosDelay: 270,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/7A80zMR.png",
         },
         {
+          aosDelay: 300,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/nnXHQ9w.png",
         },
         {
+          aosDelay: 330,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/OkWf1Gj.png",
         },
         {
+          aosDelay: 360,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/BRCMvYp.png",
         },
         {
+          aosDelay: 390,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/Z3NJCTN.png",
         },
         {
+          aosDelay: 420,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/2kaiEQa.png",
         },
         {
+          aosDelay: 450,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/HLreajz.png",
         },
         {
+          aosDelay: 480,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/mbarwY4.png",
         },
         {
+          aosDelay: 510,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/8g0dDml.png",
         },
         {
+          aosDelay: 540,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/YMm1zRS.png",
         },
+
         {
+          aosDelay: 570,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/gE2RT42.png",
@@ -885,18 +948,21 @@ export default {
 
       PurchaseItems: [
         {
+          aosDelay: 0,
           url: "https://www.google.com/",
           title: "Let’s Purchase This Product",
           text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
           btnText: "Purchase Now",
         },
         {
+          aosDelay: 160,
           url: "https://www.google.com/",
           title: "Well-Organize Documentation",
           text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
           btnText: "Documentation",
         },
         {
+          aosDelay: 260,
           url: "https://www.google.com/",
           title: "24/7 Customer Support",
           text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",

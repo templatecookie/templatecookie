@@ -2,7 +2,7 @@
   <div>
     <!-- social link -->
     <ul class="flex items-center space-x-3">
-      <li>
+      <li data-aos="zoom-out-up" data-aos-duration="1600">
         <nuxt-link
           to="#"
           class="flex items-center justify-center px-4 py-3 rounded-md bg-blue-18 hover:bg-facebook w-11 h-11 group"
@@ -22,7 +22,7 @@
           </svg>
         </nuxt-link>
       </li>
-      <li>
+      <li data-aos="fade-up-right" data-aos-duration="1600">
         <nuxt-link
           to="#"
           class="flex items-center justify-center px-4 py-3 rounded-md bg-green-0e hover:bg-linkedin w-11 h-11 group"
@@ -58,7 +58,7 @@
         </nuxt-link>
       </li>
       <!-- Dribble -->
-      <li>
+      <li data-aos="fade-up-right" data-aos-duration="1600">
         <nuxt-link
           to="#"
           class="flex items-center justify-center px-4 py-3 rounded-md bg-pink-ea hover:bg-dribble w-11 h-11 group"
@@ -86,7 +86,7 @@
         </nuxt-link>
       </li>
       <!-- Behance -->
-      <li>
+      <li data-aos="fade-up-right" data-aos-duration="1600">
         <nuxt-link
           to="#"
           class="flex items-center justify-center px-4 py-3 rounded-md bg-blue-05 hover:bg-behance w-11 h-11 group"
@@ -122,7 +122,7 @@
         </nuxt-link>
       </li>
       <!-- github -->
-      <li>
+      <li data-aos="fade-up-right" data-aos-duration="1600">
         <nuxt-link
           to="#"
           class="flex items-center justify-center px-4 py-3 rounded-md bg-gray-14 hover:bg-black w-11 h-11 group"

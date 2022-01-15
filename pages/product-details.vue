@@ -29,12 +29,16 @@
                 <div class="flex items-center justify-center sm:justify-end">
                   <p class="text-dark-06 text-base mr-4">Compatible with:</p>
                   <ul class="flex space-x-3">
-                    <li>
+                    <li data-aos="fade-up" data-aos-duration="1200">
                       <nuxt-link to="#"
                         ><img src="~@/assets/images/svg/icon2.svg" alt=""
                       /></nuxt-link>
                     </li>
-                    <li>
+                    <li
+                      data-aos="fade-up"
+                      data-aos-duration="1200"
+                      data-aos-delay="300"
+                    >
                       <nuxt-link to="#"
                         ><img src="~@/assets/images/svg/icon3.svg" alt=""
                       /></nuxt-link>
@@ -52,6 +56,8 @@
                       href="#"
                       v-smooth-scrol
                       class="text-dark-42 text-base px-5 py-2.5 block duration-300 border-b border-white hover:text-blue-0b hover:border-b hover:border-blue-0b"
+                      data-aos="flip-up"
+                      data-aos-duration="1200"
                       >Overview</a
                     >
                   </li>
@@ -60,6 +66,8 @@
                       href="#folder-structure"
                       v-smooth-scrol
                       class="text-dark-42 text-base px-5 py-2.5 block duration-300 border-b border-white hover:text-blue-0b hover:border-b hover:border-blue-0b"
+                      data-aos="flip-up"
+                      data-aos-duration="1200"
                       >Folder Structure</a
                     >
                   </li>
@@ -68,14 +76,27 @@
                       href="#change-log"
                       v-smooth-scrol
                       class="text-dark-42 text-base px-5 py-2.5 block duration-300 border-b border-white hover:text-blue-0b hover:border-b hover:border-blue-0b"
+                      data-aos="flip-up"
+                      data-aos-duration="1200"
                       >Change Log</a
                     >
                   </li>
                 </ul>
               </div>
               <div class="py-8 border-b border-gray-e6 xl:pr-24">
-                <h4 class="text-dark-06 text-xl mb-5 uppercase">DESCRIPTION</h4>
-                <p class="text-dark-42 text-base font-light mb-5">
+                <h4
+                  class="text-dark-06 text-xl mb-5 uppercase"
+                  data-aos="fade-up"
+                  data-aos-duration="1600"
+                >
+                  DESCRIPTION
+                </h4>
+                <p
+                  class="text-dark-42 text-base font-light mb-5"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   Relik is a beautiful, simple, developer-friendly, highly
                   customizable admin dashboard template with a high-quality UI &
                   well-organized Figma file. This Admin Dashboard helps the
@@ -87,7 +108,12 @@
                   between buyers & sellers. And we surely say that “You’ll love
                   it”.
                 </p>
-                <p class="text-dark-42 text-base font-light mb-5">
+                <p
+                  class="text-dark-42 text-base font-light mb-5"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                  data-aos-duration="1200"
+                >
                   Every company, startup, and agency has a personal site. And
                   the Companies want an analytics admin dashboard where they can
                   see: Live active users, user clicks, website bounce &
@@ -111,14 +137,23 @@
               </div>
               <!-- end -->
               <div class="py-8 border-b border-gray-e6">
-                <h4 class="text-dark-06 text-xl mb-5 uppercase">HIGHLIGHTS</h4>
+                <h4
+                  class="text-dark-06 text-xl mb-5 uppercase"
+                  data-aos="fade-up"
+                  data-aos-duration="1600"
+                >
+                  HIGHLIGHTS
+                </h4>
                 <div class="md:grid grid-cols-12 gap-6">
                   <div class="md:col-span-6">
                     <ul>
                       <li
-                        v-for="(item, indexItem) in highlightItemOne"
+                        v-for="(item, indexItem) in highlightText"
                         :key="indexItem"
                         class="relative pl-8 text-dark-06 text-base font-light py-2"
+                        data-aos="fade-up"
+                        data-aos-duration="1200"
+                        :data-aos-delay="item.aosDelay"
                       >
                         <img
                           class="absolute left-0"
@@ -131,9 +166,12 @@
                   <div class="md:col-span-6">
                     <ul>
                       <li
-                        v-for="(item, indexItem) in highlightItemOne"
+                        v-for="(item, indexItem) in highlightText"
                         :key="indexItem"
                         class="relative pl-8 text-dark-06 text-base font-light py-2"
+                        data-aos="fade-up"
+                        data-aos-duration="1200"
+                        :data-aos-delay="item.aosDelay"
                       >
                         <img
                           class="absolute left-0"
@@ -147,7 +185,11 @@
               </div>
               <!-- end -->
               <div id="folder-structure" class="py-8 border-b border-gray-e6">
-                <h4 class="text-dark-06 text-xl mb-5 uppercase">
+                <h4
+                  class="text-dark-06 text-xl mb-5 uppercase"
+                  data-aos="fade-up"
+                  data-aos-duration="1600"
+                >
                   FOLDER STRUCTURE
                 </h4>
                 <p class="text-dark-42 text-base font-light mb-5">
@@ -176,7 +218,13 @@
               </div>
               <!-- end -->
               <div id="change-log" class="py-8">
-                <h4 class="text-dark-06 text-xl mb-5 uppercase">CHANGELOG</h4>
+                <h4
+                  class="text-dark-06 text-xl mb-5 uppercase"
+                  data-aos="fade-up"
+                  data-aos-duration="1600"
+                >
+                  CHANGELOG
+                </h4>
                 <p class="text-dark-42 text-base font-light mb-5">
                   Donec volutpat risus ac turpis tempor pulvinar. Mauris viverra
                   varius felis, ut auctor sapien commodo eu. In finibus quis
@@ -190,17 +238,7 @@
               <!-- end -->
             </div>
             <!-- end -->
-            <div id="change-log" class="py-8">
-              <h4 class="text-dark-06 text-xl mb-5 uppercase">CHANGELOG</h4>
-              <p class="text-dark-42 text-base font-light">
-                Donec volutpat risus ac turpis tempor pulvinar. Mauris viverra
-                varius felis, ut auctor sapien commodo eu. In finibus quis
-                tellus nec auctor. Morbi vehicula suscipit fringilla. Etiam
-                varius libero iaculis rutrum rutrum. Nunc augue ipsum, malesuada
-                ut erat mollis, viverra porta dolor.
-              </p>
-              <AccordionMenu :contents="contents"></AccordionMenu>
-            </div>
+
             <!-- end -->
           </div>
           <div class="col-span-4">
@@ -322,6 +360,8 @@
               <div class="xl:max-w-536 xl:py-16 text-center xl:text-left">
                 <h2
                   class="text-white text-3xl lg:text-heading-40 font-semibold mb-5 tracking-ls01"
+                  data-aos="fade-up"
+                  data-aos-duration="1600"
                 >
                   24/7 Customer Support
                 </h2>
@@ -336,11 +376,15 @@
                   <nuxt-link
                     to="/"
                     class="block text-center sm:inline-block bg-white-12 rounded-7 py-4 px-9 text-body-17 text-white duration-300 sm:mb-0 mb-3 sm:mr-3 hover:bg-dark-06"
+                    data-aos="fade-up-right"
+                    data-aos-duration="1600"
                     >Buy Now</nuxt-link
                   >
                   <nuxt-link
                     to="/"
                     class="block text-center sm:inline-block bg-white rounded-7 py-4 px-9 text-body-17 text-blue-0b duration-300 hover:bg-dark-06 hover:text-white"
+                    data-aos="fade-up-left"
+                    data-aos-duration="1600"
                     >Customer Support</nuxt-link
                   >
                 </div>
@@ -694,44 +738,57 @@ export default {
   },
   data() {
     return {
-      highlightItemOne: [
+      highlightText: [
         {
+          aosDelay: 0,
           text: "150+ Widgets & Components.",
         },
         {
+          aosDelay: 30,
           text: "124+ UI Components & Widgets.",
         },
         {
+          aosDelay: 60,
           text: "Based on Extensive UX Research.",
         },
         {
+          aosDelay: 90,
           text: "All Layers, Groups, and Components are Logically Named Correctly.",
         },
         {
+          aosDelay: 120,
           text: "Designed for Designers & Developers.",
         },
         {
+          aosDelay: 150,
           text: "Full Width 1920px.",
         },
         {
+          aosDelay: 180,
           text: "Free Google Fonts Used. (Public Sans)",
         },
         {
+          aosDelay: 210,
           text: "Icon Provided by phosphoricons. (flat icon)",
         },
         {
+          aosDelay: 240,
           text: "Light, Dark & Navy Blue Left Side Bar.",
         },
         {
+          aosDelay: 270,
           text: "Kanban Board to Manage with Team.",
         },
         {
+          aosDelay: 300,
           text: "Post Comments on Cards.",
         },
         {
+          aosDelay: 330,
           text: "Attach/Upload File.",
         },
         {
+          aosDelay: 360,
           text: "Social Authentication.",
         },
       ],
