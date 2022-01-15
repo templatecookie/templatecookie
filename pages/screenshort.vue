@@ -131,7 +131,6 @@
           alt=""
       /></a>
     </div>
-
     <div class="content bg-dark-06 p-6 md:p-12 w-full">
       <div v-if="activetab === '1'" class="tabcontent">
         <div>
@@ -262,10 +261,10 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
-  name: "HireUsPage",
-  components: {},
+  name: "Screenshort",
 
   data() {
     return {

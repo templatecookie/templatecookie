@@ -243,28 +243,40 @@
               velit arcu vitae mi. Donec ac nisi ex.
             </p>
           </div>
-          <div class="lg:grid grid-cols-12 gap-6">
-            <div class="lg:col-span-8 order-2 lg:ml-6">
-              <div class="mb-6 lg:mb-0">
-                <img
-                  class="w-full object-cover rounded-20"
-                  src="~@/assets/images/all-img/demo-thumb3.png"
-                  alt=""
-                />
+          <div id="tabs" class="lg:grid grid-cols-12 gap-6">
+            <div class="col-span-8 order-2">
+                <div class="content lg:pl-6 mb-6">
+                  <div v-if="activetab ==='1'" class="tabcontent">
+                      <div class="h-600">
+                        <img class="w-full h-full object-cover rounded-20 overflow-hidden" src="~@/assets/images/all-img/one.jpg" alt="">
+                      </div>
+                  </div>
+                  <div v-if="activetab ==='2'" class="tabcontent">
+                      <div class="h-600">
+                        <img class="w-full h-full object-cover rounded-20 overflow-hidden" src="~@/assets/images/all-img/two.jpg" alt="">
+                    </div>
+                  </div>
+                  <div v-if="activetab ==='3'" class="tabcontent">
+                      <div class="h-600">
+                        <img class="w-full h-full object-cover rounded-20 overflow-hidden" src="~@/assets/images/all-img/three.jpg" alt="">
+                    </div>
+                  </div>
               </div>
             </div>
-            <div class="lg:col-span-4">
-              <div
-                v-for="(item, indexItem) in contentItems"
-                :key="indexItem"
-                class="border border-gray-e6 rounded-2xl overflow-hidden p-6 lg:p-8 mb-6 duration-300 hover:bg-blue-0b hover:border-blue-0b content-wrap"
-              >
-                <h3 class="text-dark-06 text-2xl font-medium mb-4 duration-300">
-                  {{ item.title }}
-                </h3>
-                <p class="text-dark-42 text-base font-light duration-300">
-                  {{ item.text }}
-                </p>
+            <div class="col-span-4">
+                <div class="tabs">
+                  <a class="block mb-6 tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300" v-on:click="activetab='1'" v-bind:class="[ activetab === '1' ? 'active' : '' ]">
+                    <h3 class="text-dark-06 font-medium text-2xl mb-4 duration-300">Back-end Development</h3>
+                    <p class="text-dark-42 test-base font-light duration-300">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut.</p>
+                  </a>
+                  <a class="block mb-6 tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300" v-on:click="activetab='2'" v-bind:class="[ activetab === '2' ? 'active' : '' ]">
+                    <h3 class="text-dark-06 font-medium text-2xl mb-4 duration-300">Back-end Development</h3>
+                    <p class="text-dark-42 test-base font-light duration-300">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut.</p>
+                  </a>
+                  <a class="block tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300" v-on:click="activetab='3'" v-bind:class="[ activetab === '3' ? 'active' : '' ]">
+                    <h3 class="text-dark-06 font-medium text-2xl mb-4 duration-300">Back-end Development</h3>
+                    <p class="text-dark-42 test-base font-light duration-300">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut.</p>
+                  </a>
               </div>
             </div>
           </div>
@@ -586,6 +598,7 @@ export default {
 
   data() {
     return {
+      activetab: '1',
       DemoHero: {
         backgroundImage: "url(https://i.imgur.com/aBzS4DP.png)",
       },
@@ -649,20 +662,20 @@ export default {
           text: "Well-Organize & Easy-to-use File",
         },
       ],
-      contentItems: [
-        {
-          title: "Back-end Development",
-          text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut.",
-        },
-        {
-          title: "Back-end Development",
-          text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut.",
-        },
-        {
-          title: "Back-end Development",
-          text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut.",
-        },
-      ],
+      // contentItems: [
+      //   {
+      //     title: "Back-end Development",
+      //     text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut.",
+      //   },
+      //   {
+      //     title: "Back-end Development",
+      //     text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut.",
+      //   },
+      //   {
+      //     title: "Back-end Development",
+      //     text: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed nec diam gravida, convallis lectus ut.",
+      //   },
+      // ],
       linkThumb: [
         {
           url: "https://www.google.com/",
@@ -838,4 +851,14 @@ export default {
         content: none;
       }
   }
+.tab-content-wrap{
+  &.active{
+    background-color: #0B63E5;
+    h3, p{
+      color: white;
+    }
+
+  }
+}
+
 </style>
