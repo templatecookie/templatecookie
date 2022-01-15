@@ -135,6 +135,7 @@ module.exports = {
         bs08: "0px 16px 72px rgba(6, 28, 61, 0.08)",
         bs12: "0px 0px 24px rgba(6, 28, 61, 0.12)",
         bs012: "0px 16px 88px rgba(0, 0, 0, 0.12)",
+        bs013: "0px -1px 0px 0px #E6E8EC inset",
       },
       gridTemplateColumns: {
         16: "repeat(16, minmax(0,1fr))",
