@@ -117,7 +117,7 @@
       <div class="container">
         <div class="lg:grid grid-cols-12 gap-6">
           <div class="col-span-6 lg:order-2">
-            <div class="mb-6 lg:mb-0">
+            <div class="mb-6 lg:mb-0 h-340 sm:h-470">
               <img
                 class="w-full h-full object-cover rounded-20"
                 src="~@/assets/images/all-img/demo-thumb.png"
@@ -172,9 +172,9 @@
               velit arcu vitae mi. Donec ac nisi ex.
             </p>
           </div>
-          <div class="mb-6 lg:mb-0">
+          <div class="mb-6 lg:mb-0 h-340 md:h-650">
             <img
-              class="w-full object-cover rounded-20"
+              class="w-full h-full object-cover rounded-20"
               src="~@/assets/images/all-img/demo-thumb2.png"
               alt=""
             />
@@ -187,7 +187,7 @@
         <div class="container">
           <div class="lg:grid grid-cols-12 gap-6">
             <div class="col-span-6">
-              <div class="lg:mr-20 mb-6 lg:mb-0">
+              <div class="lg:mr-20 mb-6 lg:mb-0 h-340 sm:h-470">
                 <img
                   class="w-full h-full object-cover rounded-20"
                   src="~@/assets/images/all-img/demo-thumb.png"
@@ -247,17 +247,17 @@
             <div class="col-span-8 order-2">
                 <div class="content lg:pl-6 mb-6">
                   <div v-if="activetab ==='1'" class="tabcontent">
-                      <div class="h-600">
+                      <div class="h-340 sm:h-600">
                         <img class="w-full h-full object-cover rounded-20 overflow-hidden" src="~@/assets/images/all-img/one.jpg" alt="">
                       </div>
                   </div>
                   <div v-if="activetab ==='2'" class="tabcontent">
-                      <div class="h-600">
+                      <div class="h-340 sm:h-600">
                         <img class="w-full h-full object-cover rounded-20 overflow-hidden" src="~@/assets/images/all-img/two.jpg" alt="">
                     </div>
                   </div>
                   <div v-if="activetab ==='3'" class="tabcontent">
-                      <div class="h-600">
+                      <div class="h-340 sm:h-600">
                         <img class="w-full h-full object-cover rounded-20 overflow-hidden" src="~@/assets/images/all-img/three.jpg" alt="">
                     </div>
                   </div>
@@ -288,7 +288,7 @@
         <div class="container">
           <div class="lg:grid grid-cols-12 gap-6">
             <div class="col-span-6">
-              <div class="lg:mr-20 mb-6 lg:mb-0">
+              <div class="lg:mr-20 mb-6 lg:mb-0 h-340 sm:h-470">
                 <img
                   class="w-full h-full object-cover rounded-20"
                   src="~@/assets/images/all-img/demo-thumb.png"

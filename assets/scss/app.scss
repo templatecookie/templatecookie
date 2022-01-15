@@ -168,9 +168,21 @@ input[type="radio"]:checked + label span {
   @media (max-width: 480px) {
     .fun-wrap {
       border-right: none;
+      border-bottom: 1px solid #E6E8EC!important;
     }
   }
 }
+
+@media (max-width: 480px) {
+  .fun-column {
+    &:last-child .fun-wrap {
+      &:last-child{
+        border-bottom: none!important;
+      }
+    }
+  }
+    
+  }
 
 .content-wrap {
   &:last-child {
