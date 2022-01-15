@@ -121,6 +121,8 @@
             v-for="(item, itemIndex) in latestProduct"
             :key="itemIndex"
             class="flex items-stretch"
+            data-aos="fade-up"
+            :data-aos-delay="item.aosDelay"
           >
             <ProductCard
               :img="item.img"
@@ -129,8 +131,6 @@
               :text="item.text"
               :price="item.price"
               className="h-190 "
-              data-aos="fade-up"
-              data-aos-delay="350"
               buttonClass="text-button px-6"
             />
           </div>
@@ -158,13 +158,14 @@
         </div>
         <!-- Project services -->
         <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-          <div v-for="(item, itemIndex) in productList" :key="itemIndex">
+          <div
+            v-for="(item, itemIndex) in productList"
+            :key="itemIndex"
+            data-aos="fade-up"
+            :data-aos-delay="item.aosDelay"
+          >
             <!-- Service card  -->
-            <BusinessCard
-              :title="item.title"
-              :text="item.text"
-              data-aos="fade-up"
-            />
+            <BusinessCard :title="item.title" :text="item.text" />
           </div>
         </div>
       </div>
@@ -447,13 +448,15 @@ export default {
       ],
       latestProduct: [
         {
+          price: 13,
+          aosDelay: 0,
           img: "https://i.imgur.com/0F0qE3V.png",
           tags: "Figma,Html",
           title: "Onest - Classified Ad Listing ",
           text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
-          price: 13,
         },
         {
+          aosDelay: 150,
           img: "https://i.imgur.com/pFuvaJH.png",
           tags: "Figma",
           title: "Relik - Admin Dashboard",
@@ -461,6 +464,7 @@ export default {
           price: 18,
         },
         {
+          aosDelay: 300,
           img: "https://i.imgur.com/76niUXz.png",
           tags: "Figma,Html",
           title: "Onest - Classified Ad Listing ",
@@ -468,6 +472,7 @@ export default {
           price: 13,
         },
         {
+          aosDelay: 450,
           img: "https://i.imgur.com/YD6WZwi.png",
           tags: "Figma",
           title: "Relik - Admin Dashboard",
@@ -475,6 +480,7 @@ export default {
           price: 18,
         },
         {
+          aosDelay: 500,
           img: "https://i.imgur.com/IwfwAGA.png",
           tags: "Figma,Html",
           title: "Onest - Classified Ad Listing ",
@@ -482,6 +488,7 @@ export default {
           price: 13,
         },
         {
+          aosDelay: 650,
           img: "https://i.imgur.com/wGOemD7.png",
           tags: "Figma",
           title: "Relik - Admin Dashboard",
@@ -491,26 +498,32 @@ export default {
       ],
       productList: [
         {
+          aosDelay: 0,
           title: "Project Information",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          aosDelay: 150,
           title: "User Experience Design",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          aosDelay: 300,
           title: "Project Introduction",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          aosDelay: 450,
           title: "Front-end Development",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          aosDelay: 600,
           title: "Project Information",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          aosDelay: 750,
           title: "Delivery & Client Feedback",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
