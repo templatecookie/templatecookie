@@ -1,6 +1,8 @@
 <template>
   <!-- card wrapper  -->
-  <div class="relative overflow-hidden p-6 border border-gray-e6 rounded-2xl product-card">
+  <div
+    class="relative overflow-hidden p-6 border border-gray-e6 rounded-2xl product-card"
+  >
     <!-- Product img preview -->
     <nuxt-link
       to="#"
@@ -35,7 +37,7 @@
           <div>
             <nuxt-link
               to="#"
-              class="flex items-center overflow-hidden px-8 text-button-17 border-1.5 border-blue-0b text-blue-0b rounded-lg group whitespace-nowrap"
+              :class="`flex items-center overflow-hidden border border-blue-0b text-blue-0b rounded-lg group whitespace-nowrap ${buttonClass} `"
             >
               Learn More
               <span class="inline-block ml-3">
@@ -66,6 +68,10 @@ export default {
   name: "ProductCard",
   props: {
     className: {
+      type: String,
+      required: true,
+    },
+    buttonClass: {
       type: String,
       required: true,
     },

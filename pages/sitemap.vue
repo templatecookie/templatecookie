@@ -62,6 +62,17 @@
             ></nuxt-link
           >
         </li>
+        <li class="mb-1">
+          <nuxt-link
+            to="/screenshort"
+            class="text-body-16 capitalize text-dark-42"
+            >Product Screenshort
+            <span
+              class="text-body-10 rounded leading-none bg-blue-500 text-white p-1"
+              >jihad</span
+            ></nuxt-link
+          >
+        </li>
       </ul>
     </div>
   </div>
