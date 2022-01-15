@@ -19,7 +19,7 @@
           <div class="mt-8">
             <nuxt-link
               to="/"
-              class="block text-center sm:inline-block border-1.5 border-blue-0b bg-blue-0b font-medium rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 mb-3 sm:mb-0 sm:mr-3"
+              class="block text-center sm:inline-block border-1.5 border-blue-0b bg-blue-0b font-medium rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 hover:bg-transparent hover:border-white mb-3 sm:mb-0 sm:mr-3"
               >Buy Now
               <img
                 class="inline-block ml-2"
@@ -28,7 +28,7 @@
             /></nuxt-link>
             <nuxt-link
               to="/"
-              class="block text-center sm:inline-block font-medium border-1.5 border-white rounded-7 py-3.5 px-8 text-body-17 text-white duration-300"
+              class="block text-center sm:inline-block font-medium border-1.5 border-white rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 hover:bg-blue-0b hover:border-blue-0b"
               >Live Preview</nuxt-link
             >
           </div>
