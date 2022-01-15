@@ -7,7 +7,6 @@ export default {
     title: "template-cookie",
     htmlAttrs: {
       lang: "en",
-
     },
     meta: [
       { charset: "utf-8" },
@@ -28,6 +27,7 @@ export default {
   plugins: [
     // { src: '~/plugins/plugin-name', mode: 'client' },
     { src: "~/plugins/dropdown.js", mode: "client" },
+    { src: "~/plugins/aos.js", mode: "client" },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

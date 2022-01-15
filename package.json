@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "core-js": "^3.19.3",
     "countup.js": "^2.0.8",
     "nuxt": "^2.15.8",

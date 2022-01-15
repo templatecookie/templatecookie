@@ -10,6 +10,8 @@
         <div class="text-center">
           <h1
             class="text-4xl md:text-heading text-dark-06 mb-8 max-w-680 mx-auto font-semibold"
+            data-aos="zoom-in"
+            data-aos-duration="1200"
           >
             Premium UI & Html Template.
           </h1>
@@ -23,6 +25,8 @@
             <nuxt-link
               to="/"
               class="flex items-center bg-blue-0b hover:bg-dark-06 transition-all w-auto max-w-232 justify-center text-button-17 text-white rounded-lg overflow-hidden mx-auto"
+              data-aos="zoom-out-up"
+              data-aos-delay="680"
             >
               Browse Product
               <!-- arrow toggle icon -->
@@ -61,7 +65,12 @@
       <div class="container">
         <!-- section title  -->
         <div class="mb-72 text-center">
-          <h2 class="text-4xl md:text-title font-semibold capitalize">
+          <h2
+            class="text-4xl md:text-title font-semibold capitalize"
+            data-aos="fade-up"
+            data-aos-delay="350"
+            data-aos-easing="ease-in"
+          >
             Featured Product
           </h2>
         </div>
@@ -80,6 +89,11 @@
               :text="item.text"
               :price="item.price"
               className="h-296 "
+              :data-aos="item.aos"
+              data-aos-delay="160"
+              data-aos-offset="260"
+              ata-aos-duration="3000"
+              data-aos-easing="ease-in"
               buttonClass=" text-button-17 px-9  "
             />
           </div>
@@ -92,7 +106,12 @@
       <div class="container">
         <!-- section title  -->
         <div class="mb-72 text-center">
-          <h2 class="text-4xl md:text-title font-semibold capitalize">
+          <h2
+            class="text-4xl md:text-title font-semibold capitalize"
+            data-aos="fade-up"
+            data-aos-delay="350"
+            data-aos-easing="ease-in"
+          >
             Latest Product
           </h2>
         </div>
@@ -110,7 +129,9 @@
               :text="item.text"
               :price="item.price"
               className="h-190 "
-              buttonClass=" text-button px-6  "
+              data-aos="fade-up"
+              data-aos-delay="350"
+              buttonClass="text-button px-6"
             />
           </div>
         </div>
@@ -124,6 +145,9 @@
         <div class="mb-72 text-center">
           <h2
             class="text-4xl md:text-title font-semibold capitalize mb-8 max-w-md mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="350"
+            data-aos-easing="ease-in"
           >
             Why should you buy our product?
           </h2>
@@ -136,7 +160,11 @@
         <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
           <div v-for="(item, itemIndex) in productList" :key="itemIndex">
             <!-- Service card  -->
-            <BusinessCard :title="item.title" :text="item.text" />
+            <BusinessCard
+              :title="item.title"
+              :text="item.text"
+              data-aos="fade-up"
+            />
           </div>
         </div>
       </div>
@@ -150,7 +178,12 @@
         <div
           class="lg:col-start-3 lg:col-end-9 lg:py-124 order-2 lg:order-1 pb-14 lg:pb-0"
         >
-          <h1 class="text-4xl md:text-title font-semibold capitalize mb-8">
+          <h1
+            class="text-4xl md:text-title font-semibold capitalize mb-8"
+            data-aos="fade-up"
+            data-aos-delay="350"
+            data-aos-easing="ease-in"
+          >
             Why Tempalte Cookie is the Best in the world
           </h1>
           <p class="text-body-16 font-light text-dark-06 mb-10">
@@ -164,6 +197,9 @@
               v-for="(item, itemIndex) in achivementList"
               :key="itemIndex"
               :class="`flex flex-col sm:flex-row items-center justify-center sm:justify-start sm:space-x-3 p-6 ${item.bgColor}  rounded-xl overflow-hidden`"
+              :data-aos="item.aos"
+              data-aos-easing="ease-in"
+              data-aos-duration="3500"
             >
               <!-- icons -->
               <div>
@@ -398,6 +434,7 @@ export default {
           title: "Onest - Classified Ad Listing ",
           text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
           price: 13,
+          aos: "fade-right",
         },
         {
           img: "https://i.imgur.com/IwfwAGA.png",
@@ -405,6 +442,7 @@ export default {
           title: "Relik - Admin Dashboard",
           text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
           price: 18,
+          aos: "fade-left",
         },
       ],
       latestProduct: [
@@ -482,6 +520,7 @@ export default {
         {
           value: 17,
           delay: 1000,
+          aos: "fade-right",
           bgColor: "bg-pink-f1",
           designation: "Awards Rewarded",
           icon: "https://i.imgur.com/XHzKgiy.png",
@@ -489,6 +528,7 @@ export default {
         {
           value: 23,
           delay: 1200,
+          aos: "fade-left",
           bgColor: " bg-green-e7",
           designation: "Years of Experience",
           icon: "https://i.imgur.com/RHw1fUb.png",
@@ -496,6 +536,7 @@ export default {
         {
           value: 23,
           delay: 1600,
+          aos: "fade-right",
           bgColor: "bg-yellow-ff",
           designation: "Happy Clients",
           icon: "https://i.imgur.com/ddKeF4B.png",
@@ -503,6 +544,7 @@ export default {
         {
           value: 315,
           delay: 2400,
+          aos: "fade-left",
           bgColor: "bg-pink-fe",
           designation: "COMPLETED PROJECT",
           icon: "https://i.imgur.com/h8K5qbt.png",

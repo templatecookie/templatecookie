@@ -5,6 +5,8 @@
       <div class="text-center pb-72">
         <h2
           class="text-body-32px sm:text-title tracking-01 text-dark-06 font-semibold mb-6"
+          data-aos="fade-up"
+          data-aos-duration="1200"
         >
           Frequently asked questions
         </h2>
