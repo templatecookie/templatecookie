@@ -155,8 +155,7 @@ module.exports = {
         17: "17",
       },
       screens: {
-        mobile: "575px",
-        // => @media (min-width: 640px) { ... }
+        "ex-small": "480px",
       },
     },
   },

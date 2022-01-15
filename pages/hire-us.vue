@@ -25,91 +25,31 @@
               alt="brand-logo"
           /></nuxt-link>
         </div>
-        <div class="grid grid-cols-12 gap-6">
-          <div class="lg:col-span-3 md:col-span-6 sm:col-span-6 col-span-12">
-            <div class="flex">
-              <div class="flex-shrink-0 mr-5">
-                <img src="~@/assets/images/svg/trophy.svg" alt="" />
+        <div class="grid grid-cols-4 gap-6">
+          <div
+            v-for="(item, itemIndex) in achivementList"
+            :key="itemIndex"
+            class="col-span-full ex-small:col-span-2 lg:col-span-1"
+          >
+            <div
+              class="flex flex-col ex-small:flex-row items-center text-center ex-small:text-left"
+            >
+              <div class="flex-shrink-0 mb-3 ex-small:mr-5">
+                <img :src="item.icon" alt="icon" />
               </div>
               <div>
                 <h4
                   class="text-dark-06 text-2xl font-medium tracking-ls03 mb-2"
                 >
                   <ICountUp
-                    :delay="delay"
-                    :endVal="endVal"
+                    :delay="item.delay"
+                    :endVal="item.value"
                     :options="options"
                   />
                   +
                 </h4>
                 <p class="text-dark-42 text-sm tracking-ls04 uppercase">
-                  AWARDS REWARDED
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="lg:col-span-3 md:col-span-6 sm:col-span-6 col-span-12">
-            <div class="flex">
-              <div class="flex-shrink-0 mr-5">
-                <img src="~@/assets/images/svg/trophy.svg" alt="" />
-              </div>
-              <div>
-                <h4
-                  class="text-dark-06 text-2xl font-medium tracking-ls03 mb-2"
-                >
-                  <ICountUp
-                    :delay="delay"
-                    :endVal="endVal"
-                    :options="options"
-                  />
-                  +
-                </h4>
-                <p class="text-dark-42 text-sm tracking-ls04 uppercase">
-                  AWARDS REWARDED
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="lg:col-span-3 md:col-span-6 sm:col-span-6 col-span-12">
-            <div class="flex">
-              <div class="flex-shrink-0 mr-5">
-                <img src="~@/assets/images/svg/trophy.svg" alt="" />
-              </div>
-              <div>
-                <h4
-                  class="text-dark-06 text-2xl font-medium tracking-ls03 mb-2"
-                >
-                  <ICountUp
-                    :delay="delay"
-                    :endVal="endVal"
-                    :options="options"
-                  />
-                  +
-                </h4>
-                <p class="text-dark-42 text-sm tracking-ls04 uppercase">
-                  AWARDS REWARDED
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="lg:col-span-3 md:col-span-6 sm:col-span-6 col-span-12">
-            <div class="flex">
-              <div class="flex-shrink-0 mr-5">
-                <img src="~@/assets/images/svg/trophy.svg" alt="" />
-              </div>
-              <div>
-                <h4
-                  class="text-dark-06 text-2xl font-medium tracking-ls03 mb-2"
-                >
-                  <ICountUp
-                    :delay="delay"
-                    :endVal="endVal"
-                    :options="options"
-                  />
-                  +
-                </h4>
-                <p class="text-dark-42 text-sm tracking-ls04 uppercase">
-                  AWARDS REWARDED
+                  {{ item.designation }}
                 </p>
               </div>
             </div>
@@ -483,12 +423,37 @@ export default {
   },
   data() {
     return {
-      delay: 1000,
-      endVal: 17,
       options: {
         useEasing: true,
         useGrouping: true,
       },
+
+      achivementList: [
+        {
+          value: 17,
+          delay: 1000,
+          designation: "Awards Rewarded",
+          icon: "https://i.imgur.com/XHzKgiy.png",
+        },
+        {
+          value: 23,
+          delay: 1200,
+          designation: "Years of Experience",
+          icon: "https://i.imgur.com/RHw1fUb.png",
+        },
+        {
+          value: 23,
+          delay: 1600,
+          designation: "Happy Clients",
+          icon: "https://i.imgur.com/ddKeF4B.png",
+        },
+        {
+          value: 315,
+          delay: 2400,
+          designation: "COMPLETED PROJECT",
+          icon: "https://i.imgur.com/h8K5qbt.png",
+        },
+      ],
 
       projectIdea: {
         backgroundImage: "url(https://i.imgur.com/2HNdUlR.png)",
@@ -545,9 +510,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.responsive-overly{
+.responsive-overly {
   z-index: 0;
-  &::before{
+  &::before {
     content: "";
     left: 0;
     top: 0;
@@ -558,11 +523,8 @@ export default {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.5);
     @media (max-width: 1250px) {
-       opacity: 1;
+      opacity: 1;
     }
-  
   }
 }
-  
-    
 </style>
