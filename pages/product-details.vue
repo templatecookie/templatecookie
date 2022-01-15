@@ -16,7 +16,7 @@
               </div>
               <div class="sm:flex justify-between">
                 <nuxt-link
-                  to="#"
+                  to="/screenshort"
                   class="block sm:mb-0 mb-3 text-center sm:inline-block bg-blue-0b rounded-5 text-sm py-2.5 px-5 text-white duration-300 hover:bg-black"
                 >
                   <img
@@ -48,24 +48,27 @@
               <div class="border-b border-gray-e6">
                 <ul class="flex">
                   <li>
-                    <nuxt-link
-                      to="#"
+                    <a
+                      href="#"
+                      v-smooth-scrol
                       class="text-dark-42 text-base px-5 py-2.5 block duration-300 border-b border-white hover:text-blue-0b hover:border-b hover:border-blue-0b"
-                      >Overview</nuxt-link
+                      >Overview</a
                     >
                   </li>
                   <li>
-                    <nuxt-link
-                      to="#folder-structure"
+                    <a
+                      href="#folder-structure"
+                      v-smooth-scrol
                       class="text-dark-42 text-base px-5 py-2.5 block duration-300 border-b border-white hover:text-blue-0b hover:border-b hover:border-blue-0b"
-                      >Folder Structure</nuxt-link
+                      >Folder Structure</a
                     >
                   </li>
                   <li>
-                    <nuxt-link
-                      to="#change-log"
+                    <a
+                      href="#change-log"
+                      v-smooth-scrol
                       class="text-dark-42 text-base px-5 py-2.5 block duration-300 border-b border-white hover:text-blue-0b hover:border-b hover:border-blue-0b"
-                      >Change Log</nuxt-link
+                      >Change Log</a
                     >
                   </li>
                 </ul>
@@ -678,6 +681,7 @@ import Breadcrumb from "../components/Breadcrumb.vue";
 import Accordion from "../components/Accordion.vue";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/css/swiper.css";
+import { createApp } from "vue";
 
 export default {
   name: "ProductDetails",
@@ -686,6 +690,7 @@ export default {
     Accordion,
     SwiperSlide,
     Swiper,
+    createApp,
   },
   data() {
     return {

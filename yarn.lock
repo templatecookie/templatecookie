@@ -8473,6 +8473,11 @@ vue2-transitions@^0.3.0:
   resolved "https://registry.yarnpkg.com/vue2-transitions/-/vue2-transitions-0.3.0.tgz#765fc0d743103fcfe2d10f431697d8873a075c17"
   integrity sha512-m1ad8K8kufqiEhj5gXHkkqOioI5sW0FaMbRiO0Tv2WFfGbO2eIKrfkFiO3HPQtMJboimaLCN4p/zL81clLbG4w==
 
+vue3-smooth-scroll@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/vue3-smooth-scroll/-/vue3-smooth-scroll-0.8.1.tgz#c2de7dc33c0da8f195bbd70ac27b02c9cb1bd44c"
+  integrity sha512-9EN1aiBT2RtkIe1MoGiyGjUoLmqmlJ96R9/QVCylaiurHQ7oGu1SPzEoGJyxdhCa1q3qyMcX/pne1oTAn1UaoQ==
+
 vue@^2.6.12, vue@^2.6.14:
   version "2.6.14"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.14.tgz#e51aa5250250d569a3fbad3a8a5a687d6036e235"

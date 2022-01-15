@@ -1,6 +1,6 @@
 <template>
-  <div id="tabs" class="flex">
-    <div class="tabs w-40 bg-gray-f5 p-3 flex-shrink-0">
+  <div id="tabs" class="lg:flex">
+    <div class="tabs w-full lg:w-40 bg-gray-f5 p-3 flex-shrink-0">
       <p class="text-dark-06 text-opacity-60 uppercase mb-2 text-xs">
         SCREENSHOT
       </p>
@@ -131,7 +131,7 @@
           alt=""
       /></a>
     </div>
-    <div class="content bg-dark-06 p-6 md:p-12 w-full">
+    <div class="content bg-dark-06 p-6 md:p-12 w-full hidden lg:block">
       <div v-if="activetab === '1'" class="tabcontent">
         <div>
           <img

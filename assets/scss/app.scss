@@ -6,6 +6,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer components {
   .button {
     @apply text-button capitalize font-medium bg-blue-0b overflow-hidden rounded  inline-block px-5;
@@ -131,18 +132,9 @@ input[type="radio"]:checked + label span {
       height: 100%;
       z-index: -1;
       position: absolute;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.7);
     }
   }
-  @media (max-width: 991px) {
-    background-image: none !important;
-    &::before {
-      content: none;
-    }
-  }
-  //  @media (max-width: 1400px) {
-  //     background-position: 290%!important;
-  // }
 }
 
 .fun-column {
@@ -173,7 +165,7 @@ input[type="radio"]:checked + label span {
   &:nth-child(8) .fun-wrap {
     border: none;
   }
-  @media (max-width: 575px) {
+  @media (max-width: 480px) {
     .fun-wrap {
       border-right: none;
     }
@@ -319,6 +311,26 @@ input[type="radio"]:checked + label span {
     background-color: #061c3d;
   }
 }
+
+.screenshort-scroll{
+  @media (max-width: 1024px) {
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #f5f5f5;
+      }
+
+      &::-webkit-scrollbar {
+        width: 6px;
+        background-color: #f5f5f5;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #061c3d;
+      }
+  }
+  
+}
+
 
 // swiper slider
 .custom-pagination {
@@ -579,4 +591,8 @@ body {
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   transform: translateX(-300px);
+}
+
+html {
+  scroll-behavior: smooth;
 }
