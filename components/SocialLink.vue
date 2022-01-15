@@ -8,9 +8,9 @@
           class="flex items-center justify-center px-4 py-3 rounded-md bg-blue-18 hover:bg-facebook w-11 h-11 group"
         >
           <svg
-            width="12"
-            height="20"
-            viewBox="0 0 12 20"
+            width="8"
+            height="16"
+            viewBox="0 0 12 16"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
             class="text-facebook group-hover:text-white transition-all"
