@@ -1,5 +1,5 @@
 <template lang="">
-  <header class="fixed w-full py-3 lg:py-6 z-50 bg-white shadow-6xl">
+  <header class="fixed w-full bg-white shadow-6xl">
     <div class="container relative">
       <!-- header inner content  -->
       <div class="flex items-center justify-between">
@@ -82,7 +82,7 @@
             <li>
               <nuxt-link
                 to="/"
-                class="text-white hover:text-white text-button capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded inline-block px-5"
+                class="text-white hover:text-white text-sm capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded inline-block px-5"
               >
                 envato profile
               </nuxt-link>

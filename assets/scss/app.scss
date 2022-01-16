@@ -467,13 +467,15 @@ body {
       font-size: 16px;
       line-height: 24px;
       color: #42526b;
+      padding: 16px 0;
+      display: block;
       text-transform: capitalize;
     }
   }
 
   &__dropdown {
     position: absolute;
-    top: calc(100% + 20px);
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
     padding: 12px 0px;
