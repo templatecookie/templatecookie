@@ -1,11 +1,11 @@
 <template>
   <div>
     <div
-      class="pb-36 pt-56 lg:pb-222 lg:pt-310 bg-dark-06 bg-content bg-right-bottom bg-no-repeat hero-demo"
+      class="pb-36 pt-56 lg:pb-222 lg:pt-300 bg-dark-06 bg-content bg-right-bottom bg-no-repeat hero-demo"
       :style="DemoHero"
     >
       <div class="container">
-        <div class="max-w-2xl relative">
+        <div class="max-w-2xl sm:text-left text-center relative">
           <h1
             class="tracking-ls01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8"
             data-aos="flip-up"
@@ -39,9 +39,9 @@
             >
           </div>
           <div
-            class="shadow-bs8 rounded-xl p-6 bg-white border border-gray-e6 flex items-center absolute -bottom-44 lg:-bottom-64 left-0"
+            class="shadow-bs8 rounded-xl p-6 bg-white border border-gray-e6 flex items-center justify-center sm:justify-start absolute -bottom-44 lg:-bottom-64 sm:left-0 sm:transform-none transform -translate-x-1/2 left-1/2 sm:w-auto w-full"
           >
-            <p class="text-dark-06 text-xs mr-4">Compatible with:</p>
+            <p class="text-dark-06 text-xs mr-4 text-left">Compatible with:</p>
             <ul class="flex space-x-3">
               <li>
                 <nuxt-link to="#"

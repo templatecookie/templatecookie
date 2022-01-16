@@ -122,7 +122,7 @@ module.exports = {
         216: "216px",
         230: "230px",
         222: "222px",
-        310: "310px",
+        300: "300px",
       },
       letterSpacing: {
         ls01: " -0.015em",
