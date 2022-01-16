@@ -290,7 +290,7 @@
                   v-if="activetab === '1'"
                   class="tabcontent"
                   data-aos="fade-up-left"
-                  data-aos-duration="1600"
+                  data-aos-duration="1200"
                   data-aos-delay="300"
                   data-aos-offset="200"
                 >
@@ -306,7 +306,7 @@
                   v-if="activetab === '2'"
                   class="tabcontent"
                   data-aos="fade-up-left"
-                  data-aos-duration="1600"
+                  data-aos-duration="1200"
                   data-aos-delay="300"
                   data-aos-offset="200"
                 >
@@ -322,7 +322,7 @@
                   v-if="activetab === '3'"
                   class="tabcontent"
                   data-aos="fade-up-left"
-                  data-aos-duration="1600"
+                  data-aos-duration="1200"
                   data-aos-delay="300"
                   data-aos-offset="200"
                 >
@@ -400,7 +400,7 @@
               <div
                 class="lg:mr-20 mb-6 lg:mb-0 h-340 md:h-470"
                 data-aos="fade-up-right"
-                data-aos-duration="1600"
+                data-aos-duration="1200"
                 data-aos-delay="300"
                 data-aos-offset="200"
               >

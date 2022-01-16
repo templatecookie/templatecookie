@@ -133,7 +133,7 @@
             :key="itemIndex"
             class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6"
             data-aos="fade-up"
-            data-aos-duration="1600"
+            data-aos-duration="1200"
           >
             <BusinessCard
               className="text-center"
