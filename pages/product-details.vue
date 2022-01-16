@@ -9,7 +9,7 @@
             <div class="border border-gray-e6 rounded-2xl p-6">
               <div class="mb-6 overflow-hidden">
                 <img
-                  class="w-full h-full duration-500 hover:scale-110	"
+                  class="w-full h-full duration-500 hover:scale-110"
                   src="~@/assets/images/all-img/product-details-thumb.png"
                   alt=""
                 />
@@ -87,7 +87,7 @@
                 <h4
                   class="text-dark-06 text-xl mb-5 uppercase"
                   data-aos="fade-up"
-                  data-aos-duration="1600"
+                  data-aos-duration="1200"
                 >
                   DESCRIPTION
                 </h4>
@@ -140,7 +140,7 @@
                 <h4
                   class="text-dark-06 text-xl mb-5 uppercase"
                   data-aos="fade-up"
-                  data-aos-duration="1600"
+                  data-aos-duration="1200"
                 >
                   HIGHLIGHTS
                 </h4>
@@ -188,7 +188,7 @@
                 <h4
                   class="text-dark-06 text-xl mb-5 uppercase"
                   data-aos="fade-up"
-                  data-aos-duration="1600"
+                  data-aos-duration="1200"
                 >
                   FOLDER STRUCTURE
                 </h4>
@@ -221,7 +221,7 @@
                 <h4
                   class="text-dark-06 text-xl mb-5 uppercase"
                   data-aos="fade-up"
-                  data-aos-duration="1600"
+                  data-aos-duration="1200"
                 >
                   CHANGELOG
                 </h4>
@@ -361,7 +361,7 @@
                 <h2
                   class="text-white text-3xl lg:text-heading-40 font-semibold mb-5 tracking-ls01"
                   data-aos="fade-up"
-                  data-aos-duration="1600"
+                  data-aos-duration="1200"
                 >
                   24/7 Customer Support
                 </h2>
@@ -377,14 +377,14 @@
                     to="/"
                     class="block text-center sm:inline-block bg-white-12 rounded-7 py-4 px-9 text-body-17 text-white duration-300 sm:mb-0 mb-3 sm:mr-3 hover:bg-dark-06"
                     data-aos="fade-up-right"
-                    data-aos-duration="1600"
+                    data-aos-duration="1200"
                     >Buy Now</nuxt-link
                   >
                   <nuxt-link
                     to="/"
                     class="block text-center sm:inline-block bg-white rounded-7 py-4 px-9 text-body-17 text-blue-0b duration-300 hover:bg-dark-06 hover:text-white"
                     data-aos="fade-up-left"
-                    data-aos-duration="1600"
+                    data-aos-duration="1200"
                     >Customer Support</nuxt-link
                   >
                 </div>

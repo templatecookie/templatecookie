@@ -6,7 +6,7 @@
         <!-- Brand info -->
         <div class="mb-12">
           <!-- logo -->
-          <div class="mb-6" data-aos="flip-up" data-aos-duration="1600">
+          <div class="mb-6" data-aos="flip-up" data-aos-duration="1200">
             <img src="~/assets/images/logo-white.svg" alt="brand-logo" />
           </div>
           <p class="text-body-16 text-gray-b4 max-w-sm font-light">

@@ -11,7 +11,7 @@
           <h1
             class="text-4xl md:text-heading-40 text-dark-06 mb-6 max-w-680 mx-auto font-semibold"
             data-aos="fade-up"
-            data-aos-duration="1600"
+            data-aos-duration="1200"
           >
             UI, HTLM & Laravel Templates
           </h1>
