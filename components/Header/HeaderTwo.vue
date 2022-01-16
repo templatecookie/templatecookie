@@ -1,5 +1,5 @@
 <template lang="">
-  <header class="fixed w-full py-6 z-50 bg-white shadow-6xl">
+  <header class="fixed w-full py-3 z-50 bg-white shadow-6xl">
     <div class="container relative">
       <!-- header inner content  -->
       <div class="flex items-center justify-between">
@@ -482,6 +482,7 @@ export default {
     openSidebar() {
       this.toggleStatus = !this.toggleStatus;
       this.sideBar = !this.sideBar;
+      document.body.classList.toggle("overlay");
     },
   },
 };
