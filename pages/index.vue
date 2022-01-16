@@ -399,7 +399,7 @@
           </div>
         </div>
         <div
-          class="lg:col-start-10 lg:col-end-17 h-full order-1 lg:order-2 mb-6 lg:mb-0"
+          class="lg:col-start-10 lg:col-end-17  order-1 lg:order-2 mb-6 lg:mb-0 h-680 clip-thumb"
         >
           <img
             src="~assets/images/all-img/img-four.png"
