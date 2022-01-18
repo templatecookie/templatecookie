@@ -170,8 +170,6 @@
                 :text="item.text"
                 :price="item.price"
                 :data-aos-delay="item.aosDelay"
-                className=" h-190 lg:h-296"
-                buttonClass=" text-button-17 px-9  "
                 :data-aos="item.aos"
                 data-aos-once="true"
                 data-aos-duration="800"
@@ -188,8 +186,6 @@
               class="flex items-stretch"
               :data-aos="item.aos"
               data-aos-once="true"
-              
-              
             >
               <ProductCard
                 :img="item.img"
@@ -198,8 +194,6 @@
                 :text="item.text"
                 :price="item.price"
                 :data-aos-delay="item.aosDelay"
-                className=" h-190  lg:h-296"
-                buttonClass=" text-button-17 px-9  "
               />
             </div>
           </div>
@@ -222,8 +216,6 @@
                 :text="item.text"
                 :price="item.price"
                 :data-aos-delay="item.aosDelay"
-                className=" h-190  lg:h-296"
-                buttonClass=" text-button-17 px-9  "
               />
             </div>
           </div>
@@ -246,8 +238,6 @@
                 :text="item.text"
                 :price="item.price"
                 :data-aos-delay="item.aosDelay"
-                className=" h-190  lg:h-296"
-                buttonClass=" text-button-17 px-9  "
               />
             </div>
           </div>
@@ -270,8 +260,6 @@
                 :text="item.text"
                 :price="item.price"
                 :data-aos-delay="item.aosDelay"
-                className=" h-190  lg:h-296"
-                buttonClass=" text-button-17 px-9  "
               />
             </div>
           </div>

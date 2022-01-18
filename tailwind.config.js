@@ -69,6 +69,8 @@ module.exports = {
         "body-10": ["10px", "10px"],
         "body-18": ["18px", "26px"],
         "body-32px": ["32px", "46px"],
+        "body-14/20": ["14px", "20px"],
+        "body-12/12": ["12px", "12px"],
       },
 
       maxWidth: {

@@ -66,9 +66,7 @@
       <div class="container">
         <!-- section title  -->
         <div class="mb-72 text-center">
-          <h2
-            class="text-4xl md:text-title font-semibold capitalize"
-          >
+          <h2 class="text-4xl md:text-title font-semibold capitalize">
             Featured Product
           </h2>
         </div>
@@ -86,13 +84,12 @@
               :title="item.title"
               :text="item.text"
               :price="item.price"
-              className="h-296 "
               :data-aos="item.aos"
               :data-aos-delay="item.aosDelay"
               data-aos-offset="260"
               data-aos-duration="800"
               data-aos-once="true"
-              buttonClass=" text-button-17 px-9  "
+              className="product-card--lg"
             />
           </div>
         </div>
@@ -104,8 +101,7 @@
       <div class="container">
         <!-- section title  -->
         <div class="mb-72 text-center">
-          <h2
-            class="text-4xl md:text-title font-semibold capitalize">
+          <h2 class="text-4xl md:text-title font-semibold capitalize">
             Latest Product
           </h2>
         </div>
@@ -126,8 +122,7 @@
               :title="item.title"
               :text="item.text"
               :price="item.price"
-              className="h-190 "
-              buttonClass="text-button px-6"
+              className="product-card--sm"
             />
           </div>
         </div>
@@ -174,9 +169,7 @@
         <div
           class="lg:col-start-3 lg:col-end-9 lg:py-124 order-2 lg:order-1 pb-14 lg:pb-0"
         >
-          <h1
-            class="text-4xl md:text-title font-semibold capitalize mb-8"
-          >
+          <h1 class="text-4xl md:text-title font-semibold capitalize mb-8">
             Why Tempalte Cookie is the Best in the world
           </h1>
           <p class="text-body-16 font-light text-dark-06 mb-10">
@@ -391,7 +384,7 @@
           </div>
         </div>
         <div
-          class="lg:col-start-10 lg:col-end-17  order-1 lg:order-2 mb-6 lg:mb-0 h-680 clip-thumb"
+          class="lg:col-start-10 lg:col-end-17 order-1 lg:order-2 mb-6 lg:mb-0 h-680 clip-thumb"
         >
           <img
             src="~assets/images/all-img/img-four.png"
@@ -428,7 +421,6 @@ export default {
           text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
           price: 13,
           aos: "fade-up",
-
         },
         {
           img: "https://i.imgur.com/IwfwAGA.png",
@@ -437,7 +429,7 @@ export default {
           text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
           price: 18,
           aos: "fade-up",
-          aosDelay: 150
+          aosDelay: 150,
         },
       ],
       latestProduct: [
