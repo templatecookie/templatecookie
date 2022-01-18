@@ -27,6 +27,7 @@
               class="flex items-center bg-blue-0b hover:bg-dark-06 transition-all w-auto max-w-232 justify-center text-button-17 text-white rounded-lg overflow-hidden mx-auto"
               data-aos="zoom-out-up"
               data-aos-delay="680"
+              data-aos-duration="1000"
             >
               Browse Product
               <!-- arrow toggle icon -->
@@ -67,9 +68,6 @@
         <div class="mb-72 text-center">
           <h2
             class="text-4xl md:text-title font-semibold capitalize"
-            data-aos="fade-up"
-            data-aos-delay="350"
-            data-aos-easing="ease-in"
           >
             Featured Product
           </h2>
@@ -90,10 +88,10 @@
               :price="item.price"
               className="h-296 "
               :data-aos="item.aos"
-              data-aos-delay="160"
+              :data-aos-delay="item.aosDelay"
               data-aos-offset="260"
-              ata-aos-duration="3000"
-              data-aos-easing="ease-in"
+              data-aos-duration="800"
+              data-aos-once="true"
               buttonClass=" text-button-17 px-9  "
             />
           </div>
@@ -107,11 +105,7 @@
         <!-- section title  -->
         <div class="mb-72 text-center">
           <h2
-            class="text-4xl md:text-title font-semibold capitalize"
-            data-aos="fade-up"
-            data-aos-delay="350"
-            data-aos-easing="ease-in"
-          >
+            class="text-4xl md:text-title font-semibold capitalize">
             Latest Product
           </h2>
         </div>
@@ -122,6 +116,8 @@
             :key="itemIndex"
             class="flex items-stretch"
             data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-once="true"
             :data-aos-delay="item.aosDelay"
           >
             <ProductCard
@@ -145,9 +141,6 @@
         <div class="mb-72 text-center">
           <h2
             class="text-4xl md:text-title font-semibold capitalize mb-8 max-w-md mx-auto"
-            data-aos="fade-up"
-            data-aos-delay="350"
-            data-aos-easing="ease-in"
           >
             Why should you buy our product?
           </h2>
@@ -162,6 +155,8 @@
             v-for="(item, itemIndex) in productList"
             :key="itemIndex"
             data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-once="true"
             :data-aos-delay="item.aosDelay"
           >
             <!-- Service card  -->
@@ -181,9 +176,6 @@
         >
           <h1
             class="text-4xl md:text-title font-semibold capitalize mb-8"
-            data-aos="fade-up"
-            data-aos-delay="350"
-            data-aos-easing="ease-in"
           >
             Why Tempalte Cookie is the Best in the world
           </h1>
@@ -435,7 +427,8 @@ export default {
           title: "Onest - Classified Ad Listing ",
           text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
           price: 13,
-          aos: "fade-right",
+          aos: "fade-up",
+
         },
         {
           img: "https://i.imgur.com/IwfwAGA.png",
@@ -443,7 +436,8 @@ export default {
           title: "Relik - Admin Dashboard",
           text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
           price: 18,
-          aos: "fade-left",
+          aos: "fade-up",
+          aosDelay: 150
         },
       ],
       latestProduct: [
