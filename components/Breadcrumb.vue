@@ -29,8 +29,6 @@
 
       <h2
         class="text-dark-06 text-2xl md:text-3xl lg:text-heading-40 font-semibold tracking-01"
-        data-aos="fade-up"
-        data-aos-duration="1200"
       >
         Relik - Admin Dashboard Figma Template
       </h2>
