@@ -10,8 +10,6 @@
         <div class="text-center">
           <h1
             class="text-4xl md:text-heading-40 text-dark-06 mb-6 max-w-680 mx-auto font-semibold"
-            data-aos="fade-up"
-            data-aos-duration="1200"
           >
             UI, HTLM & Laravel Templates
           </h1>
@@ -171,10 +169,12 @@
                 :title="item.title"
                 :text="item.text"
                 :price="item.price"
+                :data-aos-delay="item.aosDelay"
                 className=" h-190 lg:h-296"
                 buttonClass=" text-button-17 px-9  "
                 :data-aos="item.aos"
-                data-aos-duration="1200"
+                data-aos-once="true"
+                data-aos-duration="800"
               />
             </div>
           </div>
@@ -187,7 +187,9 @@
               :key="itemIndex"
               class="flex items-stretch"
               :data-aos="item.aos"
-              data-aos-duration="1200"
+              data-aos-once="true"
+              
+              
             >
               <ProductCard
                 :img="item.img"
@@ -195,6 +197,7 @@
                 :title="item.title"
                 :text="item.text"
                 :price="item.price"
+                :data-aos-delay="item.aosDelay"
                 className=" h-190  lg:h-296"
                 buttonClass=" text-button-17 px-9  "
               />
@@ -209,7 +212,8 @@
               :key="itemIndex"
               class="flex items-stretch"
               :data-aos="item.aos"
-              data-aos-duration="1200"
+              data-aos-duration="1000"
+              data-aos-once="true"
             >
               <ProductCard
                 :img="item.img"
@@ -217,6 +221,7 @@
                 :title="item.title"
                 :text="item.text"
                 :price="item.price"
+                :data-aos-delay="item.aosDelay"
                 className=" h-190  lg:h-296"
                 buttonClass=" text-button-17 px-9  "
               />
@@ -231,7 +236,8 @@
               :key="itemIndex"
               class="flex items-stretch"
               :data-aos="item.aos"
-              data-aos-duration="1200"
+              data-aos-duration="1000"
+              data-aos-once="true"
             >
               <ProductCard
                 :img="item.img"
@@ -239,6 +245,7 @@
                 :title="item.title"
                 :text="item.text"
                 :price="item.price"
+                :data-aos-delay="item.aosDelay"
                 className=" h-190  lg:h-296"
                 buttonClass=" text-button-17 px-9  "
               />
@@ -253,7 +260,8 @@
               :key="itemIndex"
               class="flex items-stretch"
               :data-aos="item.aos"
-              data-aos-duration="1200"
+              data-aos-duration="1000"
+              data-aos-once="true"
             >
               <ProductCard
                 :img="item.img"
@@ -261,6 +269,7 @@
                 :title="item.title"
                 :text="item.text"
                 :price="item.price"
+                :data-aos-delay="item.aosDelay"
                 className=" h-190  lg:h-296"
                 buttonClass=" text-button-17 px-9  "
               />
@@ -295,15 +304,16 @@ export default {
         {
           price: 13,
           tags: "Figma,Html",
-          aos: "fade-left",
+          aos: "fade-up",
           img: "https://i.imgur.com/0F0qE3V.png",
           title: "Onest - Classified Ad Listing ",
           text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
         },
         {
           price: 18,
+          aosDelay: 150,
           tags: "Figma",
-          aos: "fade-right",
+          aos: "fade-up",
           img: "https://i.imgur.com/pFuvaJH.png",
           title: "Relik - Admin Dashboard",
           text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
@@ -311,22 +321,23 @@ export default {
         {
           price: 13,
           tags: "Figma,Html",
-          aos: "fade-left",
+          aos: "fade-up",
           img: "https://i.imgur.com/76niUXz.png",
           title: "Onest - Classified Ad Listing ",
           text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
         },
         {
           price: 18,
+          aosDelay: 150,
           tags: "Figma",
-          aos: "fade-right",
+          aos: "fade-up",
           img: "https://i.imgur.com/YD6WZwi.png",
           title: "Relik - Admin Dashboard",
           text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
         },
         {
           price: 13,
-          aos: "fade-left",
+          aos: "fade-up",
           tags: "Figma,Html",
           img: "https://i.imgur.com/IwfwAGA.png",
           title: "Onest - Classified Ad Listing ",
@@ -334,8 +345,9 @@ export default {
         },
         {
           price: 18,
+          aosDelay: 150,
           tags: "Figma",
-          aos: "fade-right",
+          aos: "fade-up",
           img: "https://i.imgur.com/wGOemD7.png",
           title: "Relik - Admin Dashboard",
           text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
@@ -345,7 +357,7 @@ export default {
         {
           price: 13,
           tags: "Figma,Html",
-          aos: "fade-left",
+          aos: "fade-up",
           img: "https://i.imgur.com/76niUXz.png",
           title: "Onest - Classified Ad Listing ",
           text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
@@ -355,7 +367,7 @@ export default {
         {
           price: 13,
           tags: "Figma,Html",
-          aos: "fade-left",
+          aos: "fade-up",
           img: "https://i.imgur.com/0F0qE3V.png",
           title: "Onest - Classified Ad Listing ",
           text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
@@ -364,14 +376,14 @@ export default {
           price: 18,
           tags: "Figma",
           title: "Relik - Admin Dashboard",
-          aos: "fade-right",
+          aos: "fade-up",
           img: "https://i.imgur.com/pFuvaJH.png",
           text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
         },
         {
           price: 13,
           tags: "Figma,Html",
-          aos: "fade-right",
+          aos: "fade-up",
           img: "https://i.imgur.com/76niUXz.png",
           title: "Onest - Classified Ad Listing ",
           text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
@@ -381,15 +393,16 @@ export default {
         {
           price: 18,
           tags: "Figma",
-          aos: "fade-left",
+          aos: "fade-up",
           title: "Relik - Admin Dashboard",
           img: "https://i.imgur.com/pFuvaJH.png",
           text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
         },
         {
           price: 13,
+          aosDelay: 150,
           tags: "Figma,Html",
-          aos: "fade-right",
+          aos: "fade-up",
           img: "https://i.imgur.com/76niUXz.png",
           title: "Onest - Classified Ad Listing ",
           text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
@@ -397,14 +410,15 @@ export default {
         {
           price: 18,
           tags: "Figma",
-          aos: "fade-left",
+          aos: "fade-up",
           img: "https://i.imgur.com/YD6WZwi.png",
           title: "Relik - Admin Dashboard",
           text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
         },
         {
           price: 13,
-          aos: "fade-right",
+          aosDelay: 150,
+          aos: "fade-up",
           tags: "Figma,Html",
           img: "https://i.imgur.com/IwfwAGA.png",
           title: "Onest - Classified Ad Listing ",
@@ -413,7 +427,7 @@ export default {
         {
           price: 18,
           tags: "Figma",
-          aos: "fade-left",
+          aos: "fade-up",
           img: "https://i.imgur.com/wGOemD7.png",
           title: "Relik - Admin Dashboard",
           text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
@@ -422,7 +436,7 @@ export default {
       adobeProduct: [
         {
           price: 13,
-          aos: "fade-left",
+          aos: "fade-up",
           tags: "Figma,Html",
           img: "https://i.imgur.com/0F0qE3V.png",
           title: "Onest - Classified Ad Listing ",
@@ -430,8 +444,9 @@ export default {
         },
         {
           price: 18,
+          aosDelay: 150,
           tags: "Figma",
-          aos: "fade-right",
+          aos: "fade-up",
           title: "Relik - Admin Dashboard",
           img: "https://i.imgur.com/pFuvaJH.png",
           text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
