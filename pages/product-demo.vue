@@ -9,7 +9,7 @@
           <h1
             class="tracking-ls01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8"
             data-aos="flip-up"
-            data-aos-duration="1200"
+            data-aos-duration="800"
           >
             Relik - Admin Dashboard Figma Template
           </h1>
@@ -23,7 +23,7 @@
               to="/"
               class="block text-center sm:inline-block border-1.5 border-blue-0b bg-blue-0b font-medium rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 mb-3 sm:mb-0 sm:mr-3"
               data-aos="fade-up-right"
-              data-aos-duration="1200"
+              data-aos-duration="800"
               >Buy Now
               <img
                 class="inline-block ml-2"
@@ -34,7 +34,7 @@
               to="/"
               class="block text-center sm:inline-block font-medium border-1.5 border-white rounded-7 py-3.5 px-8 text-body-17 text-white duration-300"
               data-aos="fade-up-left"
-              data-aos-duration="1200"
+              data-aos-duration="800"
               >Live Preview</nuxt-link
             >
           </div>
@@ -76,9 +76,6 @@
           <div class="col-span-7 mb-4 md:mb-0">
             <h2
               class="text-dark-06 text-body-32px md:text-4xl xl:text-title font-semibold tracking-ls01"
-              data-aos="fade-up"
-              data-aos-delay="350"
-              data-aos-easing="ease-in"
             >
               Explore Relik<br />
               Notable Feature
@@ -97,8 +94,10 @@
             :key="itemIndex"
             class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6"
             data-aos="fade-up"
-            data-aos-duration="1200"
+            data-aos-duration="800"
+            data-aos-once="true"
             :data-aos-delay="item.aosDelay"
+            
           >
             <BusinessCard
               className="shadow-bs8 border border-gray-e6"
@@ -134,7 +133,8 @@
               class="mb-6 lg:mb-0 h-340 md:h-470"
               data-aos="fade-up-left"
               data-aos-delay="300"
-              data-aos-duration="1200"
+              data-aos-duration="800"
+              data-aos-once="true"
             >
               <img
                 class="w-full h-full object-cover rounded-20"
@@ -150,9 +150,6 @@
               </h3>
               <h2
                 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
-                data-aos="fade-up"
-                data-aos-delay="350"
-                data-aos-easing="ease-in"
               >
                 Feature Name 01
               </h2>
@@ -184,9 +181,6 @@
             </h3>
             <h2
               class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
-              data-aos="fade-up"
-              data-aos-delay="350"
-              data-aos-easing="ease-in"
             >
               Feature Name 01
             </h2>
@@ -199,8 +193,9 @@
           <div
             class="mb-6 lg:mb-0 h-350 md:h-650"
             data-aos="fade-up"
-            data-aos-duration="1200"
+            data-aos-duration="800"
             data-aos-delay="350"
+            data-aos-once="true"
           >
             <img
               class="w-full object-cover rounded-20"
@@ -219,8 +214,9 @@
               <div
                 class="lg:mr-20 mb-6 lg:mb-0 h-340 md:h-470"
                 data-aos="fade-up-right"
-                data-aos-duration="1200"
+                data-aos-duration="800"
                 data-aos-delay="300"
+                data-aos-once="true"
               >
                 <img
                   class="w-full h-full object-cover rounded-20"
@@ -236,9 +232,6 @@
                 </h3>
                 <h2
                   class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
-                  data-aos="fade-up"
-                  data-aos-delay="350"
-                  data-aos-easing="ease-in"
                 >
                   Feature Name 01
                 </h2>
@@ -271,9 +264,6 @@
             </h3>
             <h2
               class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
-              data-aos="fade-up"
-              data-aos-delay="350"
-              data-aos-easing="ease-in"
             >
               Feature Name 01
             </h2>
@@ -290,9 +280,10 @@
                   v-if="activetab === '1'"
                   class="tabcontent"
                   data-aos="fade-up-left"
-                  data-aos-duration="1200"
+                  data-aos-duration="800"
                   data-aos-delay="300"
                   data-aos-offset="200"
+                  data-aos-once="true"
                 >
                   <div class="h-340 md:h-600">
                     <img
@@ -306,9 +297,10 @@
                   v-if="activetab === '2'"
                   class="tabcontent"
                   data-aos="fade-up-left"
-                  data-aos-duration="1200"
+                  data-aos-duration="800"
                   data-aos-delay="300"
                   data-aos-offset="200"
+                  data-aos-once="true"
                 >
                   <div class="h-340 md:h-600">
                     <img
@@ -322,9 +314,10 @@
                   v-if="activetab === '3'"
                   class="tabcontent"
                   data-aos="fade-up-left"
-                  data-aos-duration="1200"
+                  data-aos-duration="800"
                   data-aos-delay="300"
                   data-aos-offset="200"
+                  data-aos-once="true"
                 >
                   <div class="h-340 md:h-600">
                     <img
@@ -400,9 +393,10 @@
               <div
                 class="lg:mr-20 mb-6 lg:mb-0 h-340 md:h-470"
                 data-aos="fade-up-right"
-                data-aos-duration="1200"
+                data-aos-duration="800"
                 data-aos-delay="300"
                 data-aos-offset="200"
+                data-aos-once="true"
               >
                 <img
                   class="w-full h-full object-cover rounded-20"
@@ -418,9 +412,7 @@
                 </h3>
                 <h2
                   class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
-                  data-aos="fade-up"
-                  data-aos-delay="350"
-                  data-aos-easing="ease-in"
+                 
                 >
                   Feature Name 01
                 </h2>
@@ -450,9 +442,7 @@
           <div class="text-center mb-8 lg:mb-12">
             <h2
               class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
-              data-aos="fade-up"
-              data-aos-delay="350"
-              data-aos-easing="ease-in"
+             
             >
               45+ Beautiful hand-crafted pages
             </h2>
@@ -463,8 +453,9 @@
               :key="itemIndex"
               class="col-span-12 xl:col-span-3 lg:col-span-6 md:col-span-6"
               data-aos="fade-up"
-              data-aos-duration="1200"
+              data-aos-duration="800"
               :data-aos-delay="item.aosDelay"
+              data-aos-once="true"
             >
               <LinkThumb :img="item.img" :title="item.title" :url="item.url" />
             </div>
@@ -478,9 +469,6 @@
           <div class="text-center mb-24">
             <h2
               class="text-white text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
-              data-aos="fade-up"
-              data-aos-delay="350"
-              data-aos-easing="ease-in"
             >
               Let’s Get Started
             </h2>
@@ -570,8 +558,6 @@
           <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
             <h2
               class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
-              data-aos="fade-up"
-              data-aos-duration="1200"
             >
               Folder Structure
             </h2>
@@ -691,15 +677,17 @@
               v-for="(item, itemIndex) in PurchaseItems"
               :key="itemIndex"
               class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 purchase-card-wrap"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-              :data-aos-delay="item.aosDelay"
+              
             >
               <PurchaseCard
                 :title="item.title"
                 :text="item.text"
                 :btnUrl="item.url"
                 :btnText="item.btnText"
+                :data-aos-delay="item.aosDelay"
+                :data-aos="item.dataAos"
+                data-aos-duration="800"
+
               />
             </div>
           </div>
@@ -949,20 +937,23 @@ export default {
       PurchaseItems: [
         {
           aosDelay: 0,
+          dataAos: "fade-up",
           url: "https://www.google.com/",
           title: "Let’s Purchase This Product",
           text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
           btnText: "Purchase Now",
         },
         {
-          aosDelay: 160,
+          aosDelay: 150,
+          dataAos: "fade-up",
           url: "https://www.google.com/",
           title: "Well-Organize Documentation",
           text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
           btnText: "Documentation",
         },
         {
-          aosDelay: 260,
+          aosDelay: 250,
+          dataAos: "fade-up",
           url: "https://www.google.com/",
           title: "24/7 Customer Support",
           text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",

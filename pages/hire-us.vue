@@ -2,11 +2,11 @@
   <div>
     <div class="bg-gray-f0 pb-20 lg:pb-124 pt-230">
       <div class="container">
-        <div class="text-center max-w-4xl m-auto mb-20 lg:mb-28">
+        <div class="text-center max-w-4xl m-auto mb-20 lg:mb-28" data-aos="zoom-in"
+            data-aos-duration="1200">
           <h1
             class="text-dark-06 text-4xl md:text-5xl lg:text-6xl xl:text-heading-80 font-semibold mb-6 lg:mb-9 tracking-ls02"
-            data-aos="fade-up"
-            data-aos-duration="1200"
+            
           >
             The easiest way to create your website.
           </h1>
@@ -34,7 +34,7 @@
             class="col-span-full ex-small:col-span-2 ex-small:lg:col-span-1"
             data-aos="fade-up"
             :data-aos-delay="item.aosDelay"
-            data-aos-duration="1200"
+            data-aos-duration="800"
           >
             <div
               class="flex flex-col ex-small:flex-row items-center text-center ex-small:text-left"
@@ -74,7 +74,8 @@
                 :key="itemIndex"
                 class="sm:col-span-6 col-span-12 build-solution"
                 :data-aos="item.aos"
-                data-aos-duration="1200"
+                data-aos-duration="800"
+                data-aos-once="true"
               >
                 <SolutionCard :title="item.title" :text="item.text" />
               </div>
@@ -84,9 +85,7 @@
             <div class="lg:max-w-536">
               <h2
                 class="text-dark-06 text-body-32px sm:text-4xl md:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-ls01"
-                data-aos="fade-up"
-                data-aos-delay="350"
-                data-aos-easing="ease-in"
+            
               >
                 We design & build your solution.
               </h2>
@@ -116,9 +115,6 @@
         <div class="lg:max-w-680 m-auto text-center mb-16">
           <h2
             class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-ls02"
-            data-aos="fade-up"
-            data-aos-delay="350"
-            data-aos-easing="ease-in"
           >
             Beautiful UI kit designed to grow your business.
           </h2>
@@ -132,14 +128,16 @@
             v-for="(item, itemIndex) in BusinessItems"
             :key="itemIndex"
             class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6"
-            data-aos="fade-up"
-            data-aos-duration="1200"
           >
             <BusinessCard
               className="text-center"
               classNameIcon="m-auto"
               :title="item.title"
               :text="item.text"
+              :data-aos="item.dataAos"
+              :data-aos-delay="item.aosDelay"
+              data-aos-duration="800"
+              data-aos-once="true"
             />
           </div>
         </div>
@@ -152,9 +150,6 @@
         <div class="lg:max-w-3xl m-auto text-center mb-16">
           <h2
             class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-ls02"
-            data-aos="fade-up"
-            data-aos-delay="350"
-            data-aos-easing="ease-in"
           >
             Your development plan, our development team.
           </h2>
@@ -170,6 +165,7 @@
             class="col-span-12 lg:col-span-6 md:col-span-6 sm:col-span-6"
             data-aos="fade-up-right"
             data-aos-duration="1200"
+            data-aos-once="true"
           >
             <div class="rounded-xl p-6 md:p-8 shadow-bs8 border border-gray-e6">
               <div class="mb-8">
@@ -206,6 +202,7 @@
             class="col-span-12 lg:col-span-6 md:col-span-6 sm:col-span-6"
             data-aos="fade-up-left"
             data-aos-duration="1200"
+            data-aos-once="true"
           >
             <div class="rounded-xl p-6 md:p-8 shadow-bs8 border border-gray-e6">
               <div class="mb-8">
@@ -254,9 +251,6 @@
         <div class="lg:max-w-680 m-auto text-center mb-16">
           <h2
             class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-ls02"
-            data-aos="fade-up"
-            data-aos-delay="350"
-            data-aos-easing="ease-in"
           >
             Have a project idea! Write down a quote.
           </h2>
@@ -521,29 +515,37 @@ export default {
       BusinessItems: [
         {
           aosDelay: 0,
+          dataAos: "fade-up",
           title: "Project Introduction",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
-          aosDelay: 300,
+          aosDelay: 150,
+          dataAos: "fade-up",
           title: "User Experience Design",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
-          aosDelay: 600,
+          aosDelay: 250,
+          dataAos: "fade-up",
           title: "User Interface Design",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
-          aosDelay: 900,
+          aosDelay: 0,
+          dataAos: "fade-up",
           title: "Front-end Development",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          aosDelay: 150,
+          dataAos: "fade-up",
           title: "Back-end Development",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          aosDelay: 250,
+          dataAos: "fade-up",
           title: "Delivery & Client Feedback",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
