@@ -7,7 +7,7 @@
       <div class="container">
         <div class="max-w-2xl sm:text-left text-center relative">
           <h1
-            class="tracking-ls01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8"
+            class="tracking-01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8"
             data-aos="flip-up"
             data-aos-duration="800"
           >
@@ -77,7 +77,7 @@
         <div class="md:grid grid-cols-12 gap-6 mb-12 items-center">
           <div class="col-span-7 mb-4 md:mb-0">
             <h2
-              class="text-dark-06 text-body-32px md:text-4xl xl:text-title font-semibold tracking-ls01"
+              class="text-dark-06 text-body-32px md:text-4xl xl:text-title font-semibold tracking-01"
             >
               Explore Relik<br />
               Notable Feature
@@ -150,7 +150,7 @@
                 Explore our Gilio team services.
               </h3>
               <h2
-                class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
+                class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
               >
                 Feature Name 01
               </h2>
@@ -183,7 +183,7 @@
               Explore our Gilio team services.
             </h3>
             <h2
-              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
+              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
             >
               Feature Name 01
             </h2>
@@ -236,7 +236,7 @@
                   Explore our Gilio team services.
                 </h3>
                 <h2
-                  class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
+                  class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
                 >
                   Feature Name 01
                 </h2>
@@ -270,7 +270,7 @@
               Explore our Gilio team services.
             </h3>
             <h2
-              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
+              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
             >
               Feature Name 01
             </h2>
@@ -420,7 +420,7 @@
                   Explore our Gilio team services.
                 </h3>
                 <h2
-                  class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
+                  class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
                 >
                   Feature Name 01
                 </h2>
@@ -451,7 +451,7 @@
         <div class="container">
           <div class="text-center mb-8 lg:mb-12">
             <h2
-              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
+              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
             >
               45+ Beautiful hand-crafted pages
             </h2>
@@ -477,7 +477,7 @@
         <div class="container">
           <div class="text-center mb-24">
             <h2
-              class="text-white text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
+              class="text-white text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
             >
               Let’s Get Started
             </h2>
@@ -566,7 +566,7 @@
         <div class="container">
           <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
             <h2
-              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
+              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
             >
               Folder Structure
             </h2>
@@ -644,7 +644,7 @@
             <div class="flex items-center mb-6 lg:mb-0">
               <div class="lg:pr-20 text-center lg:text-left">
                 <h2
-                  class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
+                  class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
                 >
                   Folder Structure
                 </h2>

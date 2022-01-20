@@ -410,7 +410,7 @@
             <div class="col-span-6 flex items-center">
               <div class="xl:max-w-536 xl:py-16 text-center xl:text-left">
                 <h2
-                  class="text-white text-3xl lg:text-heading-40 font-semibold mb-5 tracking-ls01"
+                  class="text-white text-3xl lg:text-heading-40 font-semibold mb-5 tracking-01"
                   data-aos="fade-up"
                   data-aos-duration="1200"
                 >

@@ -66,7 +66,9 @@
       <div class="container">
         <!-- section title  -->
         <div class="mb-72 text-center">
-          <h2 class="text-4xl md:text-title font-semibold capitalize">
+          <h2
+            class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1"
+          >
             Featured Product
           </h2>
         </div>
@@ -101,7 +103,9 @@
       <div class="container">
         <!-- section title  -->
         <div class="mb-72 text-center">
-          <h2 class="text-4xl md:text-title font-semibold capitalize">
+          <h2
+            class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1"
+          >
             Latest Product
           </h2>
         </div>
@@ -135,7 +139,7 @@
         <!-- section title  -->
         <div class="mb-72 text-center">
           <h2
-            class="text-4xl md:text-title font-semibold capitalize mb-8 max-w-md mx-auto"
+            class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1 mb-8 max-w-md mx-auto"
           >
             Why should you buy our product?
           </h2>
@@ -169,7 +173,9 @@
         <div
           class="lg:col-start-3 lg:col-end-9 lg:py-124 order-2 lg:order-1 pb-14 lg:pb-0"
         >
-          <h1 class="text-4xl md:text-title font-semibold capitalize mb-8">
+          <h1
+            class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1 mb-8"
+          >
             Why Tempalte Cookie is the Best in the world
           </h1>
           <p class="text-body-16 font-light text-dark-06 mb-10">

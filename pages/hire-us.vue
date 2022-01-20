@@ -72,7 +72,7 @@
           <div class="flex items-center lg:mb-0 mb-9 text-center lg:text-left">
             <div class="lg:max-w-536">
               <h2
-                class="text-dark-06 text-body-32px sm:text-4xl md:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-ls01"
+                class="text-dark-06 text-body-32px sm:text-4xl md:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-01"
               >
                 We design & build your solution.
               </h2>
@@ -265,7 +265,7 @@
           class="shadow-bs08 rounded-3xl p-8 sm:p-12 bg-white max-w-872 m-auto"
         >
           <h2
-            class="text-dark-06 font-semibold tracking-ls01 text-2xl md:text-4xl mb-8 md:mb-12 text-center"
+            class="text-dark-06 font-semibold tracking-01 text-2xl md:text-4xl mb-8 md:mb-12 text-center"
             data-aos="flip-up"
             data-aos-duration="1200"
           >

@@ -130,9 +130,9 @@ module.exports = {
         300: "300px",
       },
       letterSpacing: {
-        ls01: " -0.015em",
-        ls02: "-0.02em",
-        ls03: " -0.012em",
+        01: " 0.015em",
+        ls02: "0.02em",
+        ls03: " 0.012em",
         ls04: " 0.01em",
       },
       borderRadius: {
