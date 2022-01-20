@@ -328,19 +328,70 @@
                 </div>
                 <div class="pt-6">
                   <ul>
-                    <li
-                      v-for="(item, indexItem) in myDocumentation"
-                      :key="indexItem"
-                      class="text-gray-6a text-sm mb-4"
-                    >
+                    <li class="text-gray-6a text-sm mb-4">
                       <img
                         class="inline mr-2.5"
                         src="~@/assets/images/svg/icon/arrows-clockwise.svg"
                         alt=""
-                      />
-                      {{ item.title
-                      }}<span class="float-right text-dark-06">
-                        {{ item.text }}
+                      />Last Update
+                      <span class="float-right text-dark-06">
+                        1 monts ago
+                      </span>
+                    </li>
+                    <li class="text-gray-6a text-sm mb-4">
+                      <img
+                        class="inline mr-2.5"
+                        src="~@/assets/images/svg/icon/megaphone.svg"
+                        alt=""
+                      />Released:
+                      <span class="float-right text-dark-06">
+                        2 years ago
+                      </span>
+                    </li>
+                    <li class="text-gray-6a text-sm mb-4">
+                      <img
+                        class="inline mr-2.5"
+                        src="~@/assets/images/svg/icon/diff.svg"
+                        alt=""
+                      />Version:
+                      <span class="float-right text-dark-06"> v2.7.4 </span>
+                    </li>
+                    <li class="text-gray-6a text-sm mb-4">
+                      <img
+                        class="inline mr-2.5"
+                        src="~@/assets/images/svg/icon/category.svg"
+                        alt=""
+                      />Category:
+                      <span class="float-right text-dark-06">
+                        UI Template
+                      </span>
+                    </li>
+                    <li class="text-gray-6a text-sm mb-4">
+                      <img
+                        class="inline mr-2.5"
+                        src="~@/assets/images/svg/icon/file.svg"
+                        alt=""
+                      />File Inlcude:
+                      <span class="float-right text-dark-06"> Fig, Figma </span>
+                    </li>
+                    <li class="text-gray-6a text-sm mb-4">
+                      <img
+                        class="inline mr-2.5"
+                        src="~@/assets/images/svg/icon/notebook.svg"
+                        alt=""
+                      />Documentation:
+                      <span class="float-right text-dark-06">
+                        Well Documented
+                      </span>
+                    </li>
+                    <li class="text-gray-6a text-sm mb-4">
+                      <img
+                        class="inline mr-2.5"
+                        src="~@/assets/images/svg/icon/hand.svg"
+                        alt=""
+                      />Customer Support:
+                      <span class="float-right text-dark-06">
+                        3 Month Support
                       </span>
                     </li>
                   </ul>
@@ -812,26 +863,33 @@ export default {
 
       myDocumentation: [
         {
+          icon: "arrows-clockwise.svg",
           title: "Last Update:",
           text: "1 months ago",
         },
         {
+          icon: "arrows-clockwise.svg",
           title: "Released:",
           text: "2 years ago ",
         },
         {
+          icon: "arrows-clockwise.svg",
           title: "Version:",
           text: "v2.7.4",
         },
+
         {
+          icon: "arrows-clockwise.svg",
           title: "Category:",
           text: "UI Template",
         },
         {
+          icon: "arrows-clockwise.svg",
           title: "File Inlcude:",
           text: "Fig, Figma",
         },
         {
+          icon: "arrows-clockwise.svg",
           title: "Documentation:",
           text: "Well Documented",
         },
