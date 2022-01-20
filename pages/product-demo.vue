@@ -628,28 +628,9 @@
 
       <div class="py-20 lg:py-124 bg-gray-f5">
         <div class="container">
-          <div class="lg:grid grid-cols-12 gap-6">
-            <div class="col-span-6 order-2 mb-6 lg:mb-0">
-              <pre
-                class="border border-gray-e6 p-8 rounded-2xl bg-white text-sm text-dark-06 pb-0 h-200 overflow-y-scroll custom-scroll"
-              >
-    ├── templatecookie
-        ├── assets
-          ├── css
-          ├── fonts 
-          ├── images
-          ├── js
-        ├── index.vue
-        ├── hire-us.vue
-        ├── product-demo.vue
-        ├── product-details.vue
-        ├── product-list.vue
-        ├── billing.vue
-                </pre
-              >
-            </div>
-            <div class="col-span-6 flex items-center">
-              <div class="lg:pr-20">
+          <div class="lg:grid grid-cols-2 gap-6">
+            <div class="flex items-center mb-6 lg:mb-0">
+              <div class="lg:pr-20 text-center lg:text-left">
                 <h2
                   class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
                 >
@@ -661,6 +642,29 @@
                   vulputate velit arcu vitae mi. Donec ac nisi ex.
                 </p>
               </div>
+            </div>
+            <div class="">
+              <pre
+                class="border border-gray-e6 p-8 rounded-2xl bg-white text-sm text-dark-06 pb-0 h-364 overflow-y-scroll custom-scroll"
+              >
+    ├── templatecookie
+        ├── assets
+          ├── css
+          ├── fonts 
+          ├── images
+          ├── js
+        ├── components
+        ├── pages
+          ├── index.vue
+          ├── hire-us.vue
+          ├── product-demo.vue
+          ├── product-details.vue
+          ├── product-list.vue
+          ├── billing.vue
+          ├── billing.vue
+
+                </pre
+              >
             </div>
           </div>
         </div>
