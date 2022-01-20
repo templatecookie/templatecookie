@@ -423,17 +423,17 @@
                   lorem sed imperdiet tempor, libero urna semper urna, facilisis
                   vulputate velit arcu vitae mi. Donec ac nisi ex.
                 </p>
-                <div>
+                <div class="flex flex-col sm:flex-row items-center">
                   <nuxt-link
                     to="/"
-                    class="block text-center sm:inline-block bg-white-12 rounded-7 py-4 px-9 text-body-17 text-white duration-300 sm:mb-0 mb-3 sm:mr-3 hover:bg-dark-06"
+                    class="order-2 sm:order-1 w-full sm:w-auto inline-block text-center bg-white-12 rounded-7 py-4 px-9 text-body-17 text-white duration-300 mr-0 sm:mr-3 hover:bg-dark-06 whitespace-nowrap overflow-hidden overflow-ellipsis"
                     data-aos="fade-up-right"
                     data-aos-duration="1200"
                     >Buy Now</nuxt-link
                   >
                   <nuxt-link
                     to="/"
-                    class="block text-center sm:inline-block bg-white rounded-7 py-4 px-9 text-body-17 text-blue-0b duration-300 hover:bg-dark-06 hover:text-white"
+                    class="order-1 sm:order-2 w-full sm:w-auto inline-block text-center bg-white rounded-7 py-4 px-9 text-body-17 text-blue-0b duration-300 hover:bg-dark-06 hover:text-white mb-4 sm:mb-0 whitespace-nowrap overflow-hidden overflow-ellipsis"
                     data-aos="fade-up-left"
                     data-aos-duration="1200"
                     >Customer Support</nuxt-link
