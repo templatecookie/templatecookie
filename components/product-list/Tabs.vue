@@ -14,7 +14,7 @@
             UI, HTLM & Laravel Templates
           </h1>
           <p
-            class="text-lg md:text-body-20 text-dark-06 mb-8 max-w-680 mx-auto"
+            class="text-lg md:text-body-18 text-dark-06 mb-8 max-w-full md:max-w-536 mx-auto font-light"
           >
             Quisque sed est condimentum, placerat tellus a, dictum diam.
             Praesent volutpat nisl ac ligula lobortis imperdiet.
