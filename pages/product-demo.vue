@@ -678,7 +678,8 @@
               <PurchaseCard
                 :title="item.title"
                 :text="item.text"
-                :btnUrl="item.url"
+                btnUrl="#"
+                :icon="item.icon"
                 :btnText="item.btnText"
                 :data-aos-delay="item.aosDelay"
                 :data-aos="item.dataAos"
@@ -933,7 +934,7 @@ export default {
         {
           aosDelay: 0,
           dataAos: "fade-up",
-          url: "https://www.google.com/",
+          icon: "https://i.imgur.com/xSZYYEg.png",
           title: "Let’s Purchase This Product",
           text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
           btnText: "Purchase Now",
@@ -941,7 +942,7 @@ export default {
         {
           aosDelay: 150,
           dataAos: "fade-up",
-          url: "https://www.google.com/",
+          icon: "https://i.imgur.com/OALz67a.png",
           title: "Well-Organize Documentation",
           text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
           btnText: "Documentation",
@@ -949,7 +950,7 @@ export default {
         {
           aosDelay: 250,
           dataAos: "fade-up",
-          url: "https://www.google.com/",
+          icon: "https://i.imgur.com/sbCT8wF.png",
           title: "24/7 Customer Support",
           text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
           btnText: "Get Support",
