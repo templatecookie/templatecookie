@@ -71,6 +71,7 @@ module.exports = {
         "body-32px": ["32px", "46px"],
         "body-14/20": ["14px", "20px"],
         "body-12/12": ["12px", "12px"],
+        "body-14/24": ["14px", "24px"],
       },
 
       maxWidth: {
