@@ -123,7 +123,7 @@
           >
             Beautiful UI kit designed to grow your business.
           </h2>
-          <p class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9">
+          <p class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9 font-light">
             Phasellus interdum sagittis magna. Donec varius ultricies diam sed
             lacinia. Mauris porttitor. quis risus eget mattis Ut auctor.
           </p>
@@ -426,7 +426,7 @@
           <div>
             <nuxt-link
               to="/"
-              class="w-full text-center inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06"
+              class="w-full text-center inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06 capitalize"
               >Request a quote
               <img
                 class="inline-block ml-2"
