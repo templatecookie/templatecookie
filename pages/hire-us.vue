@@ -2,11 +2,13 @@
   <div>
     <div class="bg-gray-f0 pb-20 lg:pb-124 pt-230">
       <div class="container">
-        <div class="text-center max-w-4xl m-auto mb-20 lg:mb-28" data-aos="zoom-in"
-            data-aos-duration="1200">
+        <div
+          class="text-center max-w-4xl m-auto mb-20 lg:mb-28"
+          data-aos="zoom-in"
+          data-aos-duration="1200"
+        >
           <h1
             class="text-dark-06 text-4xl md:text-5xl lg:text-6xl xl:text-heading-80 font-semibold mb-6 lg:mb-9 tracking-ls02"
-            
           >
             The easiest way to create your website.
           </h1>
@@ -66,26 +68,11 @@
 
     <div class="py-20 lg:py-124">
       <div class="container">
-        <div class="lg:grid grid-cols-12 gap-7">
-          <div class="col-span-6 lg:order-2 lg:mb-0 mb-8">
-            <div class="grid grid-cols-12 gap-6">
-              <div
-                v-for="(item, itemIndex) in items"
-                :key="itemIndex"
-                class="sm:col-span-6 col-span-12 build-solution"
-                :data-aos="item.aos"
-                data-aos-duration="800"
-                data-aos-once="true"
-              >
-                <SolutionCard :title="item.title" :text="item.text" />
-              </div>
-            </div>
-          </div>
-          <div class="col-span-6 flex items-center">
+        <div class="lg:grid grid-cols-2 gap-7">
+          <div class="flex items-center lg:mb-0 mb-9 text-center lg:text-left">
             <div class="lg:max-w-536">
               <h2
                 class="text-dark-06 text-body-32px sm:text-4xl md:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-ls01"
-            
               >
                 We design & build your solution.
               </h2>
@@ -103,6 +90,20 @@
                   src="~/assets/images/svg/arrow-right.svg"
                   alt="brand-logo"
               /></nuxt-link>
+            </div>
+          </div>
+          <div>
+            <div class="grid grid-cols-12 gap-6">
+              <div
+                v-for="(item, itemIndex) in items"
+                :key="itemIndex"
+                class="sm:col-span-6 col-span-12 build-solution"
+                :data-aos="item.aos"
+                data-aos-duration="800"
+                data-aos-once="true"
+              >
+                <SolutionCard :title="item.title" :text="item.text" />
+              </div>
             </div>
           </div>
         </div>
