@@ -97,7 +97,6 @@
             data-aos-duration="800"
             data-aos-once="true"
             :data-aos-delay="item.aosDelay"
-            
           >
             <BusinessCard
               className="shadow-bs8 border border-gray-e6"
@@ -412,7 +411,6 @@
                 </h3>
                 <h2
                   class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
-                 
                 >
                   Feature Name 01
                 </h2>
@@ -442,7 +440,6 @@
           <div class="text-center mb-8 lg:mb-12">
             <h2
               class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-ls01"
-             
             >
               45+ Beautiful hand-crafted pages
             </h2>
@@ -677,7 +674,6 @@
               v-for="(item, itemIndex) in PurchaseItems"
               :key="itemIndex"
               class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 purchase-card-wrap"
-              
             >
               <PurchaseCard
                 :title="item.title"
@@ -687,7 +683,6 @@
                 :data-aos-delay="item.aosDelay"
                 :data-aos="item.dataAos"
                 data-aos-duration="800"
-
               />
             </div>
           </div>
@@ -981,6 +976,11 @@ export default {
 // swiper single silder
 
 .single-slider {
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: calc(50% - 15px);
+    transform: translateY(-50%);
+  }
   .swiper-button-prev:after,
   .swiper-button-next:after {
     content: none;
