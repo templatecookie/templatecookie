@@ -76,7 +76,9 @@
               >
                 We design & build your solution.
               </h2>
-              <p class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9">
+              <p
+                class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9 font-light"
+              >
                 Nunc convallis semper justo quis tempor. Praesent molestie,
                 lorem sed imperdiet tempor, libero urna semper urna, facilisis
                 vulputate velit arcu vitae mi. Donec ac nisi ex.
@@ -158,7 +160,7 @@
           >
             Your development plan, our development team.
           </h2>
-          <p class="text-dark-06 text-lg sm:text-lg mb-6 lg:mb-9">
+          <p class="text-dark-06 text-lg sm:text-lg mb-6 lg:mb-9 font-light">
             You want to build a web app from scratch or just add some new
             features on a theme. We’ll give you an entire team of professional
             developers. Or just one. Pick what works best for you, and we’ll

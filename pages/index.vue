@@ -159,7 +159,12 @@
             :data-aos-delay="item.aosDelay"
           >
             <!-- Service card  -->
-            <BusinessCard :title="item.title" :text="item.text" />
+            <BusinessCard
+              className="text-center"
+              classNameIcon="m-auto"
+              :title="item.title"
+              :text="item.text"
+            />
           </div>
         </div>
       </div>
