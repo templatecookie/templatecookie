@@ -106,7 +106,7 @@
           </div>
           <div class="col-span-full lg:col-span-2 mt-8 lg:mt-0">
             <!-- subscribe to newsletter  -->
-            <div class="">
+            <div>
               <h2 class="text-body-20 text-white uppercase mb-3">
                 Subscribe to our newsletter
               </h2>

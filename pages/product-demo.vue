@@ -483,7 +483,7 @@
             /></nuxt-link>
           </div>
         </div>
-        <div class="">
+        <div>
           <swiper class="swiper" :options="swiperOptionOne">
             <swiper-slide class="slider-full">
               <img
@@ -964,7 +964,7 @@ export default {
 <style lang="scss" scoped>
 // animation
 .slider-full {
-  animation: scroll 20s linear infinite;
+  animation: scroll 26s linear infinite;
 }
 @keyframes scroll {
   0% {
