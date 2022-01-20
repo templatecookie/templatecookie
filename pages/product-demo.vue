@@ -154,7 +154,9 @@
               >
                 Feature Name 01
               </h2>
-              <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">
+              <p
+                class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light"
+              >
                 Nunc convallis semper justo quis tempor. Praesent molestie,
                 lorem sed imperdiet tempor, libero urna semper urna, facilisis
                 vulputate velit arcu vitae mi. Donec ac nisi ex.
@@ -185,7 +187,9 @@
             >
               Feature Name 01
             </h2>
-            <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">
+            <p
+              class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light"
+            >
               Nunc convallis semper justo quis tempor. Praesent molestie, lorem
               sed imperdiet tempor, libero urna semper urna, facilisis vulputate
               velit arcu vitae mi. Donec ac nisi ex.
@@ -236,7 +240,9 @@
                 >
                   Feature Name 01
                 </h2>
-                <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">
+                <p
+                  class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light"
+                >
                   Nunc convallis semper justo quis tempor. Praesent molestie,
                   lorem sed imperdiet tempor, libero urna semper urna, facilisis
                   vulputate velit arcu vitae mi. Donec ac nisi ex.
@@ -268,7 +274,9 @@
             >
               Feature Name 01
             </h2>
-            <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">
+            <p
+              class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light"
+            >
               Nunc convallis semper justo quis tempor. Praesent molestie, lorem
               sed imperdiet tempor, libero urna semper urna, facilisis vulputate
               velit arcu vitae mi. Donec ac nisi ex.
@@ -416,7 +424,9 @@
                 >
                   Feature Name 01
                 </h2>
-                <p class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9">
+                <p
+                  class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light"
+                >
                   Nunc convallis semper justo quis tempor. Praesent molestie,
                   lorem sed imperdiet tempor, libero urna semper urna, facilisis
                   vulputate velit arcu vitae mi. Donec ac nisi ex.
@@ -561,7 +571,7 @@
               Folder Structure
             </h2>
             <p
-              class="text-dark-06 text-base sm:text-lg mb-6 lg:mb-9 font-light"
+              class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light font-light"
             >
               Nunc convallis semper justo quis tempor. Praesent molestie, lorem
               sed imperdiet tempor, libero urna semper urna
