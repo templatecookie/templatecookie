@@ -192,7 +192,7 @@
                 </p>
                 <nuxt-link to="/"
                   ><span
-                    class="mt-7 w-full font-medium rounded-7 text-body-17 text-white p-3 bg-blue-0b block text-center duration-300 hover:bg-dark-06"
+                    class="mt-7 w-full font-medium rounded-7 text-body-17/56px text-white inline-block bg-blue-0b text-center duration-300 hover:bg-dark-06"
                     >I Want This</span
                   ></nuxt-link
                 >
@@ -232,7 +232,7 @@
                 </ul>
                 <nuxt-link to="/"
                   ><span
-                    class="mt-7 w-full font-medium rounded-7 text-body-17 text-white p-3 bg-blue-0b block text-center duration-300 hover:bg-dark-06"
+                    class="mt-7 w-full font-medium rounded-7 text-body-17/56px text-white inline-block bg-blue-0b text-center duration-300 hover:bg-dark-06"
                     >I Want This</span
                   ></nuxt-link
                 >
