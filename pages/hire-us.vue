@@ -13,7 +13,7 @@
             The easiest way to create your website.
           </h1>
           <p
-            class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9 max-w-xl m-auto"
+            class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9 max-w-xl m-auto font-light"
           >
             Golio gives you everything you need to create your website in
             minutes. Bootstrap code with a well-organized Figma file to design &
@@ -95,14 +95,18 @@
           <div>
             <div class="grid grid-cols-12 gap-6">
               <div
-                v-for="(item, itemIndex) in items"
+                v-for="(item, itemIndex) in featureList"
                 :key="itemIndex"
                 class="sm:col-span-6 col-span-12 build-solution"
                 :data-aos="item.aos"
                 data-aos-duration="800"
                 data-aos-once="true"
               >
-                <SolutionCard :title="item.title" :text="item.text" />
+                <SolutionCard
+                  :title="item.title"
+                  :text="item.text"
+                  :icon="item.icon"
+                />
               </div>
             </div>
           </div>
@@ -490,23 +494,27 @@ export default {
         backgroundImage: "url(https://i.imgur.com/2HNdUlR.png)",
       },
 
-      items: [
+      featureList: [
         {
+          icon: "https://i.imgur.com/UhqXDIG.png",
           aos: "fade-up-right",
           title: "1. Understanding (UX)",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          icon: "https://i.imgur.com/bniudjt.png",
           aos: "fade-up-left",
           title: "2. Stage of Design (UI)",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          icon: "https://i.imgur.com/iGXELjX.png",
           aos: "fade-up-right",
           title: "3. Development",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
+          icon: "https://i.imgur.com/eWkTzLc.png",
           aos: "fade-up-left",
           title: "4. Project Delivery",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
