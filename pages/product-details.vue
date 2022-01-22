@@ -86,16 +86,11 @@
               <div class="py-8 border-b border-gray-e6 xl:pr-24">
                 <h4
                   class="text-dark-06 text-xl mb-5 uppercase"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
                 >
                   DESCRIPTION
                 </h4>
                 <p
                   class="text-dark-42 text-base font-light mb-5"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-duration="1200"
                 >
                   Relik is a beautiful, simple, developer-friendly, highly
                   customizable admin dashboard template with a high-quality UI &
@@ -110,9 +105,6 @@
                 </p>
                 <p
                   class="text-dark-42 text-base font-light mb-5"
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                  data-aos-duration="1200"
                 >
                   Every company, startup, and agency has a personal site. And
                   the Companies want an analytics admin dashboard where they can
@@ -139,8 +131,6 @@
               <div class="py-8 border-b border-gray-e6">
                 <h4
                   class="text-dark-06 text-xl mb-5 uppercase"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
                 >
                   HIGHLIGHTS
                 </h4>
@@ -151,9 +141,6 @@
                         v-for="(item, indexItem) in highlightText"
                         :key="indexItem"
                         class="relative pl-8 text-dark-06 text-base font-light py-2"
-                        data-aos="fade-up"
-                        data-aos-duration="1200"
-                        :data-aos-delay="item.aosDelay"
                       >
                         <img
                           class="absolute left-0"
@@ -169,9 +156,6 @@
                         v-for="(item, indexItem) in highlightText"
                         :key="indexItem"
                         class="relative pl-8 text-dark-06 text-base font-light py-2"
-                        data-aos="fade-up"
-                        data-aos-duration="1200"
-                        :data-aos-delay="item.aosDelay"
                       >
                         <img
                           class="absolute left-0"
@@ -187,8 +171,6 @@
               <div id="folder-structure" class="py-8 border-b border-gray-e6">
                 <h4
                   class="text-dark-06 text-xl mb-5 uppercase"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
                 >
                   FOLDER STRUCTURE
                 </h4>
@@ -220,8 +202,6 @@
               <div id="change-log" class="py-8">
                 <h4
                   class="text-dark-06 text-xl mb-5 uppercase"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
                 >
                   CHANGELOG
                 </h4>
@@ -411,8 +391,6 @@
               <div class="xl:max-w-536 xl:py-16 text-center xl:text-left">
                 <h2
                   class="text-white text-3xl lg:text-heading-40 font-semibold mb-5 tracking-01"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
                 >
                   24/7 Customer Support
                 </h2>
@@ -427,15 +405,12 @@
                   <nuxt-link
                     to="/"
                     class="order-2 sm:order-1 w-full sm:w-auto inline-block text-center bg-white-12 rounded-7 py-4 px-9 text-body-17 text-white duration-300 mr-0 sm:mr-3 hover:bg-dark-06 whitespace-nowrap overflow-hidden overflow-ellipsis"
-                    data-aos="fade-up-right"
-                    data-aos-duration="1200"
                     >Buy Now</nuxt-link
                   >
                   <nuxt-link
                     to="/"
                     class="order-1 sm:order-2 w-full sm:w-auto inline-block text-center bg-white rounded-7 py-4 px-9 text-body-17 text-blue-0b duration-300 hover:bg-dark-06 hover:text-white mb-4 sm:mb-0 whitespace-nowrap overflow-hidden overflow-ellipsis"
-                    data-aos="fade-up-left"
-                    data-aos-duration="1200"
+     
                     >Customer Support</nuxt-link
                   >
                 </div>
@@ -458,9 +433,6 @@
             <div class="mb-72 text-center">
               <h2
                 class="text-body-32px md:text-4xl xl:text-title font-semibold capitalize"
-                data-aos="fade-up"
-                data-aos-delay="350"
-                data-aos-easing="ease-in"
               >
                 Featured Product
               </h2>
@@ -791,55 +763,42 @@ export default {
     return {
       highlightText: [
         {
-          aosDelay: 0,
           text: "150+ Widgets & Components.",
         },
         {
-          aosDelay: 30,
           text: "124+ UI Components & Widgets.",
         },
         {
-          aosDelay: 60,
           text: "Based on Extensive UX Research.",
         },
         {
-          aosDelay: 90,
           text: "All Layers, Groups, and Components are Logically Named Correctly.",
         },
         {
-          aosDelay: 120,
           text: "Designed for Designers & Developers.",
         },
         {
-          aosDelay: 150,
           text: "Full Width 1920px.",
         },
         {
-          aosDelay: 180,
           text: "Free Google Fonts Used. (Public Sans)",
         },
         {
-          aosDelay: 210,
           text: "Icon Provided by phosphoricons. (flat icon)",
         },
         {
-          aosDelay: 240,
           text: "Light, Dark & Navy Blue Left Side Bar.",
         },
         {
-          aosDelay: 270,
           text: "Kanban Board to Manage with Team.",
         },
         {
-          aosDelay: 300,
           text: "Post Comments on Cards.",
         },
         {
-          aosDelay: 330,
           text: "Attach/Upload File.",
         },
         {
-          aosDelay: 360,
           text: "Social Authentication.",
         },
       ],

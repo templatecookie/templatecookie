@@ -10,8 +10,6 @@
         <div class="text-center">
           <h1
             class="text-4xl md:text-heading text-dark-06 mb-8 max-w-680 mx-auto font-semibold"
-            data-aos="zoom-in"
-            data-aos-duration="1200"
           >
             Premium UI & Html Template.
           </h1>
@@ -25,9 +23,6 @@
             <nuxt-link
               to="/"
               class="flex items-center bg-blue-0b hover:bg-dark-06 transition-all w-auto max-w-232 justify-center text-button-17 text-white rounded-lg overflow-hidden mx-auto"
-              data-aos="zoom-out-up"
-              data-aos-delay="680"
-              data-aos-duration="1000"
             >
               Browse Product
               <!-- arrow toggle icon -->
@@ -86,11 +81,6 @@
               :title="item.title"
               :text="item.text"
               :price="item.price"
-              :data-aos="item.aos"
-              :data-aos-delay="item.aosDelay"
-              data-aos-offset="260"
-              data-aos-duration="800"
-              data-aos-once="true"
               className="product-card--lg"
             />
           </div>
@@ -115,10 +105,6 @@
             v-for="(item, itemIndex) in latestProduct"
             :key="itemIndex"
             class="flex items-stretch"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-once="true"
-            :data-aos-delay="item.aosDelay"
           >
             <ProductCard
               :img="item.img"
@@ -153,10 +139,6 @@
           <div
             v-for="(item, itemIndex) in productList"
             :key="itemIndex"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-once="true"
-            :data-aos-delay="item.aosDelay"
           >
             <!-- Service card  -->
             <BusinessCard
@@ -194,9 +176,6 @@
               v-for="(item, itemIndex) in achivementList"
               :key="itemIndex"
               :class="`flex flex-col sm:flex-row items-center justify-center sm:justify-start sm:space-x-3 p-6 ${item.bgColor}  rounded-xl overflow-hidden`"
-              :data-aos="item.aos"
-              data-aos-easing="ease-in"
-              data-aos-duration="3500"
             >
               <!-- icons -->
               <div>
@@ -431,7 +410,6 @@ export default {
           title: "Onest - Classified Ad Listing ",
           text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
           price: 13,
-          aos: "fade-up",
         },
         {
           img: "https://i.imgur.com/IwfwAGA.png",
@@ -439,21 +417,17 @@ export default {
           title: "Relik - Admin Dashboard",
           text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
           price: 18,
-          aos: "fade-up",
-          aosDelay: 150,
         },
       ],
       latestProduct: [
         {
           price: 13,
-          aosDelay: 0,
           img: "https://i.imgur.com/0F0qE3V.png",
           tags: "Figma,Html",
           title: "Onest - Classified Ad Listing ",
           text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
         },
         {
-          aosDelay: 150,
           img: "https://i.imgur.com/pFuvaJH.png",
           tags: "Figma",
           title: "Relik - Admin Dashboard",
@@ -461,7 +435,6 @@ export default {
           price: 18,
         },
         {
-          aosDelay: 300,
           img: "https://i.imgur.com/76niUXz.png",
           tags: "Figma,Html",
           title: "Onest - Classified Ad Listing ",
@@ -469,7 +442,6 @@ export default {
           price: 13,
         },
         {
-          aosDelay: 450,
           img: "https://i.imgur.com/YD6WZwi.png",
           tags: "Figma",
           title: "Relik - Admin Dashboard",
@@ -477,7 +449,6 @@ export default {
           price: 18,
         },
         {
-          aosDelay: 500,
           img: "https://i.imgur.com/IwfwAGA.png",
           tags: "Figma,Html",
           title: "Onest - Classified Ad Listing ",
@@ -485,7 +456,6 @@ export default {
           price: 13,
         },
         {
-          aosDelay: 650,
           img: "https://i.imgur.com/wGOemD7.png",
           tags: "Figma",
           title: "Relik - Admin Dashboard",
@@ -495,32 +465,26 @@ export default {
       ],
       productList: [
         {
-          aosDelay: 0,
           title: "Project Information",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
-          aosDelay: 150,
           title: "User Experience Design",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
-          aosDelay: 300,
           title: "Project Introduction",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
-          aosDelay: 450,
           title: "Front-end Development",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
-          aosDelay: 600,
           title: "Project Information",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
-          aosDelay: 750,
           title: "Delivery & Client Feedback",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
@@ -530,31 +494,24 @@ export default {
         {
           value: 17,
           delay: 1000,
-          aos: "fade-right",
           bgColor: "bg-pink-f1",
           designation: "Awards Rewarded",
           icon: "https://i.imgur.com/XHzKgiy.png",
         },
         {
           value: 23,
-          delay: 1200,
-          aos: "fade-left",
           bgColor: " bg-green-e7",
           designation: "Years of Experience",
           icon: "https://i.imgur.com/RHw1fUb.png",
         },
         {
           value: 23,
-          delay: 1600,
-          aos: "fade-right",
           bgColor: "bg-yellow-ff",
           designation: "Happy Clients",
           icon: "https://i.imgur.com/ddKeF4B.png",
         },
         {
           value: 315,
-          delay: 2400,
-          aos: "fade-left",
           bgColor: "bg-pink-fe",
           designation: "COMPLETED PROJECT",
           icon: "https://i.imgur.com/h8K5qbt.png",

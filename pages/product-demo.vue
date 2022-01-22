@@ -7,10 +7,7 @@
       <div class="container">
         <div class="max-w-2xl sm:text-left text-center relative">
           <h1
-            class="tracking-01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8"
-            data-aos="flip-up"
-            data-aos-duration="800"
-          >
+            class="tracking-01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8">
             Relik - Admin Dashboard Figma Template
           </h1>
           <p class="text-white font-light text-lg md:text-xl max-w-536">
@@ -22,8 +19,6 @@
             <nuxt-link
               to="/"
               class="block text-center sm:inline-block border-1.5 border-blue-0b bg-blue-0b font-medium rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 mb-3 sm:mb-0 sm:mr-3"
-              data-aos="fade-up-right"
-              data-aos-duration="800"
               >Buy Now
               <img
                 class="inline-block ml-2"
@@ -33,8 +28,6 @@
             <nuxt-link
               to="/"
               class="block text-center sm:inline-block font-medium border-1.5 border-white rounded-7 py-3.5 px-8 text-body-17 text-white duration-300"
-              data-aos="fade-up-left"
-              data-aos-duration="800"
               >Live Preview</nuxt-link
             >
           </div>
@@ -95,10 +88,6 @@
             v-for="(item, itemIndex) in buisnessCard"
             :key="itemIndex"
             class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-once="true"
-            :data-aos-delay="item.aosDelay"
           >
             <BusinessCard
               className="shadow-bs8 border border-gray-e6"
@@ -132,10 +121,6 @@
           <div class="col-span-6 lg:order-2">
             <div
               class="mb-6 lg:mb-0 h-340 md:h-470"
-              data-aos="fade-up-left"
-              data-aos-delay="300"
-              data-aos-duration="800"
-              data-aos-once="true"
             >
               <img
                 class="w-full h-full object-cover rounded-20"
@@ -197,10 +182,6 @@
           </div>
           <div
             class="mb-6 lg:mb-0 h-350 md:h-650"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="350"
-            data-aos-once="true"
           >
             <img
               class="w-full object-cover rounded-20"
@@ -218,10 +199,6 @@
             <div class="col-span-6">
               <div
                 class="lg:mr-20 mb-6 lg:mb-0 h-340 md:h-470"
-                data-aos="fade-up-right"
-                data-aos-duration="800"
-                data-aos-delay="300"
-                data-aos-once="true"
               >
                 <img
                   class="w-full h-full object-cover rounded-20"
@@ -288,11 +265,6 @@
                 <div
                   v-if="activetab === '1'"
                   class="tabcontent"
-                  data-aos="fade-up-left"
-                  data-aos-duration="800"
-                  data-aos-delay="300"
-                  data-aos-offset="200"
-                  data-aos-once="true"
                 >
                   <div class="h-340 md:h-600">
                     <img
@@ -305,11 +277,6 @@
                 <div
                   v-if="activetab === '2'"
                   class="tabcontent"
-                  data-aos="fade-up-left"
-                  data-aos-duration="800"
-                  data-aos-delay="300"
-                  data-aos-offset="200"
-                  data-aos-once="true"
                 >
                   <div class="h-340 md:h-600">
                     <img
@@ -322,11 +289,6 @@
                 <div
                   v-if="activetab === '3'"
                   class="tabcontent"
-                  data-aos="fade-up-left"
-                  data-aos-duration="800"
-                  data-aos-delay="300"
-                  data-aos-offset="200"
-                  data-aos-once="true"
                 >
                   <div class="h-340 md:h-600">
                     <img
@@ -401,11 +363,6 @@
             <div class="col-span-6">
               <div
                 class="lg:mr-20 mb-6 lg:mb-0 h-340 md:h-470"
-                data-aos="fade-up-right"
-                data-aos-duration="800"
-                data-aos-delay="300"
-                data-aos-offset="200"
-                data-aos-once="true"
               >
                 <img
                   class="w-full h-full object-cover rounded-20"
@@ -461,10 +418,6 @@
               v-for="(item, itemIndex) in linkThumb"
               :key="itemIndex"
               class="col-span-12 xl:col-span-3 lg:col-span-6 md:col-span-6"
-              data-aos="fade-up"
-              data-aos-duration="800"
-              :data-aos-delay="item.aosDelay"
-              data-aos-once="true"
             >
               <LinkThumb :img="item.img" :title="item.title" :url="item.url" />
             </div>
@@ -697,9 +650,6 @@
                 btnUrl="#"
                 :icon="item.icon"
                 :btnText="item.btnText"
-                :data-aos-delay="item.aosDelay"
-                :data-aos="item.dataAos"
-                data-aos-duration="800"
               />
             </div>
           </div>
@@ -737,32 +687,26 @@ export default {
       },
       buisnessCard: [
         {
-          aosDelay: 0,
           title: "Project Introduction",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
-          aosDelay: 300,
           title: "User Experience Design",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
-          aosDelay: 600,
           title: "User Interface Design",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
-          aosDelay: 900,
           title: "Front-end Development",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
-          aosDelay: 1200,
           title: "Back-end Development",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
         {
-          aosDelay: 1500,
           title: "Delivery & Client Feedback",
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
@@ -803,99 +747,83 @@ export default {
       ],
       linkThumb: [
         {
-          aosDelay: 0,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/z3lpl2i.png",
         },
         {
-          aosDelay: 150,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/btnaKPg.png",
         },
         {
-          aosDelay: 180,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/WeNt6qZ.png",
         },
         {
-          aosDelay: 210,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/aXNiPxi.png",
         },
         {
-          aosDelay: 240,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/LrX4y5U.png",
         },
 
         {
-          aosDelay: 270,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/7A80zMR.png",
         },
         {
-          aosDelay: 300,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/nnXHQ9w.png",
         },
         {
-          aosDelay: 330,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/OkWf1Gj.png",
         },
         {
-          aosDelay: 360,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/BRCMvYp.png",
         },
         {
-          aosDelay: 390,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/Z3NJCTN.png",
         },
         {
-          aosDelay: 420,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/2kaiEQa.png",
         },
         {
-          aosDelay: 450,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/HLreajz.png",
         },
         {
-          aosDelay: 480,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/mbarwY4.png",
         },
         {
-          aosDelay: 510,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/8g0dDml.png",
         },
         {
-          aosDelay: 540,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/YMm1zRS.png",
         },
 
         {
-          aosDelay: 570,
           url: "https://www.google.com/",
           title: "Admin Dashboard",
           img: "https://i.imgur.com/gE2RT42.png",
@@ -948,24 +876,18 @@ export default {
 
       PurchaseItems: [
         {
-          aosDelay: 0,
-          dataAos: "fade-up",
           icon: "https://i.imgur.com/xSZYYEg.png",
           title: "Let’s Purchase This Product",
           text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
           btnText: "Purchase Now",
         },
         {
-          aosDelay: 150,
-          dataAos: "fade-up",
           icon: "https://i.imgur.com/OALz67a.png",
           title: "Well-Organize Documentation",
           text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
           btnText: "Documentation",
         },
         {
-          aosDelay: 250,
-          dataAos: "fade-up",
           icon: "https://i.imgur.com/sbCT8wF.png",
           title: "24/7 Customer Support",
           text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",

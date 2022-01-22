@@ -2,7 +2,7 @@
   <div>
     <!-- social link -->
     <ul class="flex items-center space-x-3">
-      <li data-aos="zoom-out-up" data-aos-duration="1200">
+      <li>
         <nuxt-link
           to="#"
           class="flex items-center justify-center p-3 duration-300 rounded-md bg-blue-18 hover:bg-facebook  group"
@@ -23,7 +23,7 @@
           
         </nuxt-link>
       </li>
-      <li data-aos="fade-up-right" data-aos-duration="1200">
+      <li>
         <nuxt-link
           to="#"
           class="flex items-center justify-center p-3 duration-300 rounded-md bg-green-0e hover:bg-linkedin  group"
@@ -59,7 +59,7 @@
         </nuxt-link>
       </li>
       <!-- Dribble -->
-      <li data-aos="fade-up-right" data-aos-duration="1200">
+      <li>
         <nuxt-link
           to="#"
           class="flex items-center justify-center p-3 duration-300 rounded-md bg-pink-ea hover:bg-dribble  group"
@@ -87,7 +87,7 @@
         </nuxt-link>
       </li>
       <!-- Behance -->
-      <li data-aos="fade-up-right" data-aos-duration="1200">
+      <li>
         <nuxt-link
           to="#"
           class="flex items-center justify-center p-3 duration-300 rounded-md bg-blue-05 hover:bg-behance  group"
@@ -123,7 +123,7 @@
         </nuxt-link>
       </li>
       <!-- github -->
-      <li data-aos="fade-up-right" data-aos-duration="1200">
+      <li>
         <nuxt-link
           to="#"
           class="flex items-center justify-center p-3 duration-300 rounded-md bg-gray-14 hover:bg-black  group"
