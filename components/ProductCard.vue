@@ -201,9 +201,9 @@ export default {
 
 
   &__img {
-    @media (max-width: 767px) {
-      height: 160px !important;
-    }
+    // @media (max-width: 767px) {
+    //   height: 160px !important;
+    // }
     img {
       transform: scale(1);
       transition: all 0.4s linear;

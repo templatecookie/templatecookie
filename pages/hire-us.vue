@@ -528,20 +528,9 @@ export default {
 
 <style lang="scss" scoped>
 .responsive-overly {
-  z-index: 0;
-  &::before {
-    content: "";
-    left: 0;
-    top: 0;
-    opacity: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.5);
-    @media (max-width: 1250px) {
-      opacity: 1;
+    @media (max-width: 1199px) {
+      background-position: center!important;
+      background-size: cover!important;
     }
-  }
 }
 </style>
