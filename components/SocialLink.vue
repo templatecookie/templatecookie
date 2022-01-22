@@ -5,12 +5,12 @@
       <li data-aos="zoom-out-up" data-aos-duration="1200">
         <nuxt-link
           to="#"
-          class="flex items-center justify-center px-4 py-3 rounded-md bg-blue-18 hover:bg-facebook w-11 h-11 group"
+          class="flex items-center justify-center p-3 duration-300 rounded-md bg-blue-18 hover:bg-facebook  group"
         >
           <svg
-            width="8"
-            height="16"
-            viewBox="0 0 12 16"
+            width="20"
+            height="20"
+            viewBox="0 0 12 20"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
             class="text-facebook group-hover:text-white transition-all"
@@ -20,12 +20,13 @@
               fill="currentColor"
             />
           </svg>
+          
         </nuxt-link>
       </li>
       <li data-aos="fade-up-right" data-aos-duration="1200">
         <nuxt-link
           to="#"
-          class="flex items-center justify-center px-4 py-3 rounded-md bg-green-0e hover:bg-linkedin w-11 h-11 group"
+          class="flex items-center justify-center p-3 duration-300 rounded-md bg-green-0e hover:bg-linkedin  group"
         >
           <svg
             width="20"
@@ -61,11 +62,11 @@
       <li data-aos="fade-up-right" data-aos-duration="1200">
         <nuxt-link
           to="#"
-          class="flex items-center justify-center px-4 py-3 rounded-md bg-pink-ea hover:bg-dribble w-11 h-11 group"
+          class="flex items-center justify-center p-3 duration-300 rounded-md bg-pink-ea hover:bg-dribble  group"
         >
           <svg
-            width="12"
-            height="12"
+            width="20"
+            height="20"
             viewBox="0 0 20 20"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +90,7 @@
       <li data-aos="fade-up-right" data-aos-duration="1200">
         <nuxt-link
           to="#"
-          class="flex items-center justify-center px-4 py-3 rounded-md bg-blue-05 hover:bg-behance w-11 h-11 group"
+          class="flex items-center justify-center p-3 duration-300 rounded-md bg-blue-05 hover:bg-behance  group"
         >
           <svg
             width="20"
@@ -125,7 +126,7 @@
       <li data-aos="fade-up-right" data-aos-duration="1200">
         <nuxt-link
           to="#"
-          class="flex items-center justify-center px-4 py-3 rounded-md bg-gray-14 hover:bg-black w-11 h-11 group"
+          class="flex items-center justify-center p-3 duration-300 rounded-md bg-gray-14 hover:bg-black  group"
         >
           <svg
             width="20"
@@ -157,4 +158,3 @@ export default {
   name: "SocialLink",
 };
 </script>
-<style lang=""></style>
