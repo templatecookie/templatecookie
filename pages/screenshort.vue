@@ -1,6 +1,6 @@
 <template>
   <div id="tabs" class="lg:flex">
-    <div class="tabs w-full lg:w-40 bg-gray-f5 p-3 flex-shrink-0">
+    <div class="tabs w-full lg:w-40 bg-gray-f5 p-3 flex-shrink-0 sticky top-0 h-900 lg:overflow-y-scroll custom-scroll">
       <p class="text-dark-06 text-opacity-60 uppercase mb-2 text-xs">
         SCREENSHOT
       </p>
@@ -277,9 +277,16 @@ export default {
 
 <style lang="scss" scoped>
 .tab-left-thumb {
+  @media (max-width: 1024px) {
+      height: 600px;
+    }
   border: 2px solid #e6e8ec;
+
   &.active {
     border: 2px solid #0b63e5;
+    @media (max-width: 1024px) {
+      border: 2px solid #e6e8ec;
+    }
   }
 }
 </style>
