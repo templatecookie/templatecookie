@@ -9,7 +9,7 @@
             <div class="border border-gray-e6 rounded-2xl p-6">
               <div class="mb-6 overflow-hidden">
                 <img
-                  class="w-full h-full duration-500 hover:scale-110"
+                  class="w-full h-full duration-500"
                   src="~@/assets/images/all-img/product-details-thumb.png"
                   alt=""
                 />

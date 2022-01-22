@@ -198,13 +198,7 @@ export default {
     }
   }
 
-  &:hover {
-    .product-card__img-wrapper {
-      img {
-        transform: scale(1.1);
-      }
-    }
-  }
+
 
   &__img {
     @media (max-width: 767px) {
