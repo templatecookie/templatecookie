@@ -279,7 +279,7 @@ export default {
 .tab-left-thumb {
   @media (max-width: 1024px) {
       height: 600px;
-    }
+  }
   border: 2px solid #e6e8ec;
 
   &.active {

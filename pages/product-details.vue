@@ -918,13 +918,19 @@ export default {
     border: 1px solid #0b63e5;
     background-color: white;
   }
+  input[type="radio"]:checked + span {
+    border: 1px solid #0b63e5;
+    background-color: red;
+  }
 
   input[type="radio"] + label span {
     transition: background 0.2s, transform 0.2s;
   }
   input[type="radio"]:checked + label span {
-    background-color: #0b63e5; //bg-green-dark
-    box-shadow: 0px 0px 0px 4px white inset;
+    background-color: white; //bg-green-dark
+    box-shadow: 0px 0px 0px 5px #0b63e5 inset;
+    border: 1.5px solid transparent;
+   
   }
 }
 
