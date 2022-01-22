@@ -391,45 +391,45 @@ body {
   align-items: center;
   justify-content: center;
   transition: all 0.1s linear;
-
-  span {
-    width: 40px;
-    height: 2.8px;
-    position: absolute;
-    border-radius: 4px;
-    background: #1863ff;
-    transition: all 0.3s linear;
-
-    &:nth-child(1) {
-      width: 25px;
-      left: 15px;
-      transform: translateY(-12px);
-    }
-    &:nth-child(2) {
-      width: 15px;
-      left: 15px;
-      transform: translateY(12px);
-    }
+   span, 
+   span:before, 
+   span:after {
+      width: 35px;
+      height: 3px;
+      background-color: #0B63E5;
+      display: block;
+      transition: .3s;
+  }
+  span:before {
+    content: '';
+      transform: translateY(-11px);
+  }
+  span:after {
+      content: '';
+      transform: translateY(7px);
   }
 
-  &.active {
-    span {
-      &:nth-child(1) {
-        width: 40px;
-        transition-delay: 0.03s;
-        transform: translateY(0px) rotate(45deg);
-      }
-      &:nth-child(2) {
-        width: 40px;
-        transition-delay: 0.06s;
-        transform: translateY(0px) rotate(315deg);
-      }
-      &:nth-child(3) {
-        transform: translateX(60px);
+  &.active{
+    span{
+      background-color: transparent;
+      &:before {
+      transform: translateY(0px) rotate(
+    45deg
+    );
+    }
+    &:after {
+          transform: translateY(-3px) rotate(
+      -45deg
+      );
       }
     }
   }
 }
+
+
+
+
+
 
 .nav-menu {
   &__item {

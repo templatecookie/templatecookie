@@ -96,8 +96,6 @@
             :class="`toggle ${toggleStatus === true ? 'active' : ''} `"
           >
             <span></span>
-            <span></span>
-            <span></span>
           </div>
         </div>
       </div>
