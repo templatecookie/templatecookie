@@ -497,24 +497,27 @@ body {
       top: auto;
       left: auto;
     }
+    &::before, 
     &::after {
-      content: "";
-      position: absolute;
-      top: -18px;
-      left: 50%;
-      width: 32px;
-      height: 24px;
-      transform: translateX(-50%);
-      // border-left: 18px solid transparent;
-      // border-right: 18px solid transparent;
-      // border-bottom: 24px solid #fff;
-      background-repeat: no-repeat;
-    z-index: -5;
-    background-size: cover;
-      background-image: url(../images/all-img/test.png);
+        content: ' ';
+        display: block;
+        border-style: solid;
+        border-width: 0 10px 12px 10px;
+        border-color: transparent;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
       @media (max-width: 1024px) {
         display: none;
       }
+    }
+    &::before{
+      top: -0.8em;
+      border-bottom-color: #e6e8ec;
+    }
+    &::after{
+      top: -0.7em;
+      border-bottom-color: #fff;
     }
     li {
       &:hover {
