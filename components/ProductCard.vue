@@ -51,10 +51,10 @@
           <div>
             <nuxt-link
               to="#"
-              class="flex items-center overflow-hidden border border-blue-0b text-blue-0b rounded-lg group whitespace-nowrap product-card__button"
+              class="flex items-center overflow-hidden border border-blue-0b text-blue-0b rounded-lg group py-3.5 px-9 whitespace-nowrap product-card__button"
             >
               Learn More
-              <span class="inline-block">
+              <span class="inline-block ml-2">
                 <svg
                   width="24"
                   height="24"
@@ -82,7 +82,7 @@
           </div>
           <div class="flex-shrink-0">
             <button
-              class="product-card__button-cart inline-block overflow-hidden bg-gray-f5 hover:bg-gray-200 transition-all rounded-lg"
+              class="product-card__button-cart inline-block overflow-hidden bg-gray-f5 hover:bg-gray-200 p-4 transition-all rounded-lg"
             >
               <img src="~/assets/images/svg/cart.svg" alt="cart-icon" />
             </button>

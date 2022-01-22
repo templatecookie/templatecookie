@@ -4,7 +4,7 @@
       <li>
         <nuxt-link
           to="#"
-          class="flex items-center text-button font-medium text-blue-0b capitalize bg-gray-f0 rounded-md px-3 sm:px-5"
+          class="flex items-center text-sm font-medium text-blue-0b capitalize bg-gray-f0 rounded-md p-3 sm:px-5"
         >
           <span class="icon mr-2 inline-block">
             <svg
@@ -36,11 +36,11 @@
       <!-- pagination list  -->
       <li>
         <ul
-          class="flex items-center space-x-2 max-w-100 sm:max-w-full overflow-hidden overflow-x-scroll sm:overflow-x-hidden"
+          class="flex items-center max-w-100 sm:max-w-full overflow-hidden overflow-x-scroll sm:overflow-x-hidden"
         >
           <li>
             <nuxt-link
-              class="inline-block text-button text-dark-42 hover:text-blue-0b font-normal px-3 overflow-hidden rounded-md hover:bg-gray-f0"
+              class="inline-block text-sm text-dark-42 hover:text-blue-0b font-normal px-3.5 p-3 overflow-hidden rounded-md hover:bg-gray-f0"
               to="#"
             >
               01
@@ -48,7 +48,7 @@
           </li>
           <li>
             <nuxt-link
-              class="inline-block text-button text-dark-42 hover:text-blue-0b font-normal px-3 overflow-hidden rounded-md hover:bg-gray-f0 active"
+              class="inline-block text-sm text-dark-42 hover:text-blue-0b font-normal px-3.5 p-3 overflow-hidden rounded-md hover:bg-gray-f0 active"
               to="#"
             >
               02
@@ -56,7 +56,7 @@
           </li>
           <li>
             <nuxt-link
-              class="inline-block text-button text-dark-42 hover:text-blue-0b font-normal px-3 overflow-hidden rounded-md hover:bg-gray-f0"
+              class="inline-block text-sm text-dark-42 hover:text-blue-0b font-normal px-3.5 p-3 overflow-hidden rounded-md hover:bg-gray-f0"
               to="#"
             >
               03
@@ -64,7 +64,7 @@
           </li>
           <li>
             <nuxt-link
-              class="inline-block text-button text-dark-42 hover:text-blue-0b font-normal px-3 overflow-hidden rounded-md hover:bg-gray-f0"
+              class="inline-block text-sm text-dark-42 hover:text-blue-0b font-normal px-3.5 p-3 overflow-hidden rounded-md hover:bg-gray-f0"
               to="#"
             >
               04
@@ -72,7 +72,7 @@
           </li>
           <li>
             <nuxt-link
-              class="inline-block text-button text-dark-42 hover:text-blue-0b font-normal px-3 overflow-hidden rounded-md hover:bg-gray-f0"
+              class="inline-block text-sm text-dark-42 hover:text-blue-0b font-normal px-3.5 p-3 overflow-hidden rounded-md hover:bg-gray-f0"
               to="#"
             >
               05
@@ -83,7 +83,7 @@
       <li>
         <nuxt-link
           to="#"
-          class="flex items-center text-button font-medium text-blue-0b capitalize bg-gray-f0 rounded-md px-3 sm:px-5"
+          class="flex items-center text-sm font-medium text-blue-0b capitalize bg-gray-f0 rounded-md  p-2.5 sm:px-5"
         >
           Next
           <span class="icon ml-2 inline-block">
