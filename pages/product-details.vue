@@ -49,177 +49,184 @@
             </div>
             <!-- end -->
             <div class="pt-6">
-              <div class="border-b border-gray-e6">
-                <ul class="flex">
-                  <li>
-                    <a
-                      href="#"
-                      v-smooth-scrol
-                      class="text-dark-42 text-base px-5 py-2.5 block duration-300 border-b border-white hover:text-blue-0b hover:border-b hover:border-blue-0b"
-                      data-aos="flip-up"
-                      data-aos-duration="1200"
-                      >Overview</a
+                <div id="tabs">
+                  <div class="tabs border-b border-gray-e6 text-center sm:flex">
+                    <div
+                      class="text-dark-42 text-base cursor-pointer py-2.5 px-4 tab-overview"
+                      v-on:click="activetab = '1'"
+                      v-bind:class="[activetab === '1' ? 'active' : '']"
                     >
-                  </li>
-                  <li>
-                    <a
-                      href="#folder-structure"
-                      v-smooth-scrol
-                      class="text-dark-42 text-base px-5 py-2.5 block duration-300 border-b border-white hover:text-blue-0b hover:border-b hover:border-blue-0b"
-                      data-aos="flip-up"
-                      data-aos-duration="1200"
-                      >Folder Structure</a
+                      Overview
+                    </div>
+                    <div
+                      class="text-dark-42 text-base cursor-pointer py-2.5 px-4 tab-overview"
+                      v-on:click="activetab = '2'"
+                      v-bind:class="[activetab === '2' ? 'active' : '']"
                     >
-                  </li>
-                  <li>
-                    <a
-                      href="#change-log"
-                      v-smooth-scrol
-                      class="text-dark-42 text-base px-5 py-2.5 block duration-300 border-b border-white hover:text-blue-0b hover:border-b hover:border-blue-0b"
-                      data-aos="flip-up"
-                      data-aos-duration="1200"
-                      >Change Log</a
+                      Folder Structure
+                    </div>
+                    <div
+                      class="text-dark-42 text-base cursor-pointer py-2.5 px-4 tab-overview"
+                      v-on:click="activetab = '3'"
+                      v-bind:class="[activetab === '3' ? 'active' : '']"
                     >
-                  </li>
-                </ul>
-              </div>
-              <div class="py-8 border-b border-gray-e6 xl:pr-24">
-                <h4
-                  class="text-dark-06 text-xl mb-5 uppercase"
-                >
-                  DESCRIPTION
-                </h4>
-                <p
-                  class="text-dark-42 text-base font-light mb-5"
-                >
-                  Relik is a beautiful, simple, developer-friendly, highly
-                  customizable admin dashboard template with a high-quality UI &
-                  well-organized Figma file. This Admin Dashboard helps the
-                  users to build their dashboard design with the format you like
-                  by components on Figma that are fully customizable and
-                  dragging & dropping widgets and components. This website is
-                  designed based on extensive UX Research to provide the best
-                  experience to buy & sell products with better communication
-                  between buyers & sellers. And we surely say that “You’ll love
-                  it”.
-                </p>
-                <p
-                  class="text-dark-42 text-base font-light mb-5"
-                >
-                  Every company, startup, and agency has a personal site. And
-                  the Companies want an analytics admin dashboard where they can
-                  see: Live active users, user clicks, website bounce &
-                  conversation rate, where the users are from, most visited
-                  page, social media traffic, etc. That’s why we created Relik –
-                  Analytics Admin Dashboard Templates for Startups, Companies,
-                  Agencies, and also for landing pages. Our main goal is to
-                  build an analytics admin dashboard that helps the user to see
-                  Live active users, the user clicks, website bounce &
-                  conversation rate, where the users are from, most visited
-                  page, social media traffic, etc. You can edit this Figma
-                  Template easily, it’s 100% customizable. All layers, groups,
-                  and components are logically named. All shapes are resizable
-                  and editable with no quality loss. It’s based on Bootstrap 5
-                  Grid System (1320px).
-                </p>
-                <p class="text-dark-42 text-base font-light">
-                  This HTML Template is perfect for converting into WordPress,
-                  Joomla, and other computer languages.
-                </p>
-              </div>
-              <!-- end -->
-              <div class="py-8 border-b border-gray-e6">
-                <h4
-                  class="text-dark-06 text-xl mb-5 uppercase"
-                >
-                  HIGHLIGHTS
-                </h4>
-                <div class="md:grid grid-cols-12 gap-6">
-                  <div class="md:col-span-6">
-                    <ul>
-                      <li
-                        v-for="(item, indexItem) in highlightText"
-                        :key="indexItem"
-                        class="relative pl-8 text-dark-06 text-base font-light py-2"
-                      >
-                        <img
-                          class="absolute left-0"
-                          src="~@/assets/images/svg/check-circle.svg"
-                          alt=""
-                        />{{ item.text }}
-                      </li>
-                    </ul>
+                      Change Log
+                    </div>
                   </div>
-                  <div class="md:col-span-6">
-                    <ul>
-                      <li
-                        v-for="(item, indexItem) in highlightText"
-                        :key="indexItem"
-                        class="relative pl-8 text-dark-06 text-base font-light py-2"
+                  <div class="content">
+                    <div
+                      v-if="activetab === '1'"
+                      class="tabcontent"
+                    >
+                    <div class="py-8 border-b border-gray-e6 xl:pr-24">
+                      <h4
+                        class="text-dark-06 text-xl mb-5 uppercase"
                       >
-                        <img
-                          class="absolute left-0"
-                          src="~@/assets/images/svg/check-circle.svg"
-                          alt=""
-                        />{{ item.text }}
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- end -->
-              <div id="folder-structure" class="py-8 border-b border-gray-e6">
-                <h4
-                  class="text-dark-06 text-xl mb-5 uppercase"
-                >
-                  FOLDER STRUCTURE
-                </h4>
-                <p class="text-dark-42 text-base font-light mb-5">
-                  Donec volutpat risus ac turpis tempor pulvinar. Mauris viverra
-                  varius felis, ut auctor sapien commodo eu. In finibus quis
-                  tellus nec auctor. Morbi vehicula suscipit fringilla. Etiam
-                  varius libero iaculis rutrum rutrum. Nunc augue ipsum,
-                  malesuada ut erat mollis, viverra porta dolor.
-                </p>
-                <pre
-                  class="p-8 rounded-lg bg-gray-f5 text-sm text-dark-06 pb-0 h-200 overflow-y-scroll custom-scroll"
-                >
-    ├── templatecookie
-        ├── assets
-          ├── css
-          ├── fonts 
-          ├── images
-          ├── js
-        ├── index.vue
-        ├── hire-us.vue
-        ├── product-demo.vue
-        ├── product-details.vue
-        ├── product-list.vue
-        ├── billing.vue
-                </pre>
-              </div>
-              <!-- end -->
-              <div id="change-log" class="py-8">
-                <h4
-                  class="text-dark-06 text-xl mb-5 uppercase"
-                >
-                  CHANGELOG
-                </h4>
-                <p class="text-dark-42 text-base font-light mb-5">
-                  Donec volutpat risus ac turpis tempor pulvinar. Mauris viverra
-                  varius felis, ut auctor sapien commodo eu. In finibus quis
-                  tellus nec auctor. Morbi vehicula suscipit fringilla. Etiam
-                  varius libero iaculis rutrum rutrum. Nunc augue ipsum,
-                  malesuada ut erat mollis, viverra porta dolor.
-                </p>
+                        DESCRIPTION
+                      </h4>
+                      <p
+                        class="text-dark-42 text-base font-light mb-5"
+                      >
+                        Relik is a beautiful, simple, developer-friendly, highly
+                        customizable admin dashboard template with a high-quality UI &
+                        well-organized Figma file. This Admin Dashboard helps the
+                        users to build their dashboard design with the format you like
+                        by components on Figma that are fully customizable and
+                        dragging & dropping widgets and components. This website is
+                        designed based on extensive UX Research to provide the best
+                        experience to buy & sell products with better communication
+                        between buyers & sellers. And we surely say that “You’ll love
+                        it”.
+                      </p>
+                      <p
+                        class="text-dark-42 text-base font-light mb-5"
+                      >
+                        Every company, startup, and agency has a personal site. And
+                        the Companies want an analytics admin dashboard where they can
+                        see: Live active users, user clicks, website bounce &
+                        conversation rate, where the users are from, most visited
+                        page, social media traffic, etc. That’s why we created Relik –
+                        Analytics Admin Dashboard Templates for Startups, Companies,
+                        Agencies, and also for landing pages. Our main goal is to
+                        build an analytics admin dashboard that helps the user to see
+                        Live active users, the user clicks, website bounce &
+                        conversation rate, where the users are from, most visited
+                        page, social media traffic, etc. You can edit this Figma
+                        Template easily, it’s 100% customizable. All layers, groups,
+                        and components are logically named. All shapes are resizable
+                        and editable with no quality loss. It’s based on Bootstrap 5
+                        Grid System (1320px).
+                      </p>
+                      <p class="text-dark-42 text-base font-light">
+                        This HTML Template is perfect for converting into WordPress,
+                        Joomla, and other computer languages.
+                      </p>
+                    </div>
+                    <!-- end -->
+                    <div class="py-8 border-b border-gray-e6">
+                      <h4
+                        class="text-dark-06 text-xl mb-5 uppercase"
+                      >
+                        HIGHLIGHTS
+                      </h4>
+                      <div class="md:grid grid-cols-12 gap-6">
+                        <div class="md:col-span-6">
+                          <ul>
+                            <li
+                              v-for="(item, indexItem) in highlightText"
+                              :key="indexItem"
+                              class="relative pl-8 text-dark-06 text-base font-light py-2"
+                            >
+                              <img
+                                class="absolute left-0"
+                                src="~@/assets/images/svg/check-circle.svg"
+                                alt=""
+                              />{{ item.text }}
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="md:col-span-6">
+                          <ul>
+                            <li
+                              v-for="(item, indexItem) in highlightText"
+                              :key="indexItem"
+                              class="relative pl-8 text-dark-06 text-base font-light py-2"
+                            >
+                              <img
+                                class="absolute left-0"
+                                src="~@/assets/images/svg/check-circle.svg"
+                                alt=""
+                              />{{ item.text }}
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end -->
+                    </div>
+                    <div
+                      v-if="activetab === '2'"
+                      class="tabcontent"
+                    >
+                      <div class="py-8 border-b border-gray-e6">
+                          <h4
+                            class="text-dark-06 text-xl mb-5 uppercase"
+                          >
+                            FOLDER STRUCTURE
+                          </h4>
+                          <p class="text-dark-42 text-base font-light mb-5">
+                            Donec volutpat risus ac turpis tempor pulvinar. Mauris viverra
+                            varius felis, ut auctor sapien commodo eu. In finibus quis
+                            tellus nec auctor. Morbi vehicula suscipit fringilla. Etiam
+                            varius libero iaculis rutrum rutrum. Nunc augue ipsum,
+                            malesuada ut erat mollis, viverra porta dolor.
+                          </p>
+                          <pre
+                            class="p-8 rounded-lg bg-gray-f5 text-sm text-dark-06 pb-0 h-200 overflow-y-scroll custom-scroll"
+                          >
+              ├── templatecookie
+                  ├── assets
+                    ├── css
+                    ├── fonts 
+                    ├── images
+                    ├── js
+                  ├── index.vue
+                  ├── hire-us.vue
+                  ├── product-demo.vue
+                  ├── product-details.vue
+                  ├── product-list.vue
+                  ├── billing.vue
+                          </pre>
+                      </div>
+                        <!-- end -->
+                    </div>
+                    <div
+                      v-if="activetab === '3'"
+                      class="tabcontent"
+                    >
+                      <div class="py-8">
+                        <h4
+                          class="text-dark-06 text-xl mb-5 uppercase"
+                        >
+                          CHANGELOG
+                        </h4>
+                        <p class="text-dark-42 text-base font-light mb-5">
+                          Donec volutpat risus ac turpis tempor pulvinar. Mauris viverra
+                          varius felis, ut auctor sapien commodo eu. In finibus quis
+                          tellus nec auctor. Morbi vehicula suscipit fringilla. Etiam
+                          varius libero iaculis rutrum rutrum. Nunc augue ipsum,
+                          malesuada ut erat mollis, viverra porta dolor.
+                        </p>
 
-                <Accordion />
+                        <Accordion />
+                      </div>
+                      <!-- end -->
+                    </div>
+                  </div>
               </div>
-              <!-- end -->
             </div>
             <!-- end -->
 
-            <!-- end -->
           </div>
           <div class="col-span-4">
             <div class="bg-gray-f5 rounded-xl">
@@ -761,6 +768,7 @@ export default {
   },
   data() {
     return {
+      activetab: "1",
       highlightText: [
         {
           text: "150+ Widgets & Components.",
@@ -901,6 +909,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.tab-overview{
+  &.active{
+    color: #0B63E5;
+    border-bottom: 1px solid #0B63E5;
+  }
+}
 .arrow-icon {
   path {
     stroke: #0b63e5;
