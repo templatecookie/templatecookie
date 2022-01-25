@@ -112,7 +112,7 @@ export default {
     },
     buttonClass: {
       type: String,
-      required: true,
+      required: false,
     },
     tag: {
       type: String,

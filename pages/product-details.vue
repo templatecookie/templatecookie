@@ -755,7 +755,6 @@ import Breadcrumb from "../components/Breadcrumb.vue";
 import Accordion from "../components/Accordion.vue";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/css/swiper.css";
-import { createApp } from "vue";
 
 export default {
   name: "ProductDetails",
@@ -764,7 +763,6 @@ export default {
     Accordion,
     SwiperSlide,
     Swiper,
-    createApp,
   },
   data() {
     return {

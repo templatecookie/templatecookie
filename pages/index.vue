@@ -391,10 +391,28 @@
 import bannerImg from "~/assets/images/all-img/img-five.png";
 import ProductCard from "../components/ProductCard.vue";
 import ICountUp from "vue-countup-v2";
+import HOMEPAGE_QUERY from '~/graphql/homepage'
 
 export default {
   name: "IndexPage",
   components: { ProductCard, ICountUp },
+  async asyncData({ app }) {
+    const client = app.apolloProvider.defaultClient;
+
+    const res = await client.query({
+      query: HOMEPAGE_QUERY,
+    })
+    const homepage = res;
+    
+    return {homepage}
+  },
+
+  // apollo: {
+  //   homepage: {
+  //     query: HOMEPAGE_QUERY,
+  //     prefetch: true,
+  //   },
+  // },
   data() {
     return {
       options: {
