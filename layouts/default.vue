@@ -75,5 +75,36 @@
 import Header from "../components/Header/Header.vue";
 import Footer from "../components/Footer/Footer.vue";
 import SocialLink from "../components/SocialLink.vue";
-export default { components: { Header, Footer, SocialLink } };
+import GLOBAL_QUERY from '~/graphql/global'
+
+export default { 
+  components: { Header, Footer, SocialLink },
+  // apollo: {
+  //   global: {
+  //     query: GLOBAL_QUERY,
+  //     prefetch: true,
+  //   },
+  // },
+  data () {
+    return {
+      global: null,
+    }
+  },
+  methods: {
+    async loadData(){
+      // console.log(this.$nuxt.$apolloProvider.defaultClient)
+      // console.log(this.$apolloProvider.defaultClient);
+      const client = this.$nuxt.$apolloProvider.defaultClient;
+
+      const { data } = await client.query({
+        query: GLOBAL_QUERY,
+      })
+      
+      console.log(data.global.data.attributes)
+    }
+  },
+  mounted (){
+    this.loadData();
+  }
+};
 </script>

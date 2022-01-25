@@ -399,20 +399,13 @@ export default {
   async asyncData({ app }) {
     const client = app.apolloProvider.defaultClient;
 
-    const res = await client.query({
+    const { data } = await client.query({
       query: HOMEPAGE_QUERY,
     })
-    const homepage = res;
+    const homepage = data.homepage.data.attributes;
     
-    return {homepage}
+    return { homepage }
   },
-
-  // apollo: {
-  //   homepage: {
-  //     query: HOMEPAGE_QUERY,
-  //     prefetch: true,
-  //   },
-  // },
   data() {
     return {
       options: {
