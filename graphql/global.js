@@ -54,6 +54,7 @@ query {
               attributes {
                 name
                 url
+                theme
                 icon {
                   data {
                     attributes {
