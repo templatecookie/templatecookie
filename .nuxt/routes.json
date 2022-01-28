@@ -3,49 +3,42 @@
     "name": "hire-us",
     "path": "/hire-us",
     "component": "/Users/devzakir/Dev/templatecookie/frontend/pages/hire-us.vue",
-    "chunkName": "pages/hire-us",
-    "_name": "_bd89e132"
+    "chunkName": "pages/hire-us"
   },
   {
     "name": "product-demo",
     "path": "/product-demo",
     "component": "/Users/devzakir/Dev/templatecookie/frontend/pages/product-demo.vue",
-    "chunkName": "pages/product-demo",
-    "_name": "_5eca80e1"
+    "chunkName": "pages/product-demo"
   },
   {
     "name": "product-details",
     "path": "/product-details",
     "component": "/Users/devzakir/Dev/templatecookie/frontend/pages/product-details.vue",
-    "chunkName": "pages/product-details",
-    "_name": "_6ee62834"
+    "chunkName": "pages/product-details"
   },
   {
     "name": "product-list",
     "path": "/product-list",
     "component": "/Users/devzakir/Dev/templatecookie/frontend/pages/product-list.vue",
-    "chunkName": "pages/product-list",
-    "_name": "_7bf05e1c"
+    "chunkName": "pages/product-list"
   },
   {
     "name": "screenshort",
     "path": "/screenshort",
     "component": "/Users/devzakir/Dev/templatecookie/frontend/pages/screenshort.vue",
-    "chunkName": "pages/screenshort",
-    "_name": "_26ea1b40"
+    "chunkName": "pages/screenshort"
   },
   {
     "name": "sitemap",
     "path": "/sitemap",
     "component": "/Users/devzakir/Dev/templatecookie/frontend/pages/sitemap.vue",
-    "chunkName": "pages/sitemap",
-    "_name": "_46db3905"
+    "chunkName": "pages/sitemap"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/devzakir/Dev/templatecookie/frontend/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_07f70ca2"
+    "chunkName": "pages/index"
   }
 ]

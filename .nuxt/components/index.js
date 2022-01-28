@@ -15,10 +15,10 @@ export const FooterTwo = () => import('../../components/Footer/FooterTwo.vue' /*
 export const Header = () => import('../../components/Header/Header.vue' /* webpackChunkName: "components/header" */).then(c => wrapFunctional(c.default || c))
 export const HeaderThree = () => import('../../components/Header/HeaderThree.vue' /* webpackChunkName: "components/header-three" */).then(c => wrapFunctional(c.default || c))
 export const HeaderTwo = () => import('../../components/Header/HeaderTwo.vue' /* webpackChunkName: "components/header-two" */).then(c => wrapFunctional(c.default || c))
-export const HomeHeroSection = () => import('../../components/Home/HeroSection.vue' /* webpackChunkName: "components/home-hero-section" */).then(c => wrapFunctional(c.default || c))
-export const HomeWhyUs = () => import('../../components/Home/WhyUs.vue' /* webpackChunkName: "components/home-why-us" */).then(c => wrapFunctional(c.default || c))
 export const ProductListTab = () => import('../../components/product-list/Tab.vue' /* webpackChunkName: "components/product-list-tab" */).then(c => wrapFunctional(c.default || c))
 export const ProductListTabs = () => import('../../components/product-list/Tabs.vue' /* webpackChunkName: "components/product-list-tabs" */).then(c => wrapFunctional(c.default || c))
+export const HomeHeroSection = () => import('../../components/Home/HeroSection.vue' /* webpackChunkName: "components/home-hero-section" */).then(c => wrapFunctional(c.default || c))
+export const HomeWhyUs = () => import('../../components/Home/WhyUs.vue' /* webpackChunkName: "components/home-why-us" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

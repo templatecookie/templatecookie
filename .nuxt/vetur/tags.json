@@ -50,16 +50,16 @@
   "HeaderTwo": {
     "description": "Auto imported from components/Header/HeaderTwo.vue"
   },
-  "HomeHeroSection": {
-    "description": "Auto imported from components/Home/HeroSection.vue"
-  },
-  "HomeWhyUs": {
-    "description": "Auto imported from components/Home/WhyUs.vue"
-  },
   "ProductListTab": {
     "description": "Auto imported from components/product-list/Tab.vue"
   },
   "ProductListTabs": {
     "description": "Auto imported from components/product-list/Tabs.vue"
+  },
+  "HomeHeroSection": {
+    "description": "Auto imported from components/Home/HeroSection.vue"
+  },
+  "HomeWhyUs": {
+    "description": "Auto imported from components/Home/WhyUs.vue"
   }
 }

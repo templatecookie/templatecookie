@@ -246,7 +246,7 @@ module.exports = require("ufo");
 
   methods: {
     fixUrl(file) {
-      return `https://api.templatecookie.com/${file}`;
+      return `https://api.templatecookie.com${file}`;
     }
 
   }
@@ -2208,10 +2208,10 @@ __webpack_require__.d(components_namespaceObject, "FooterTwo", function() { retu
 __webpack_require__.d(components_namespaceObject, "Header", function() { return components_Header; });
 __webpack_require__.d(components_namespaceObject, "HeaderThree", function() { return components_HeaderThree; });
 __webpack_require__.d(components_namespaceObject, "HeaderTwo", function() { return components_HeaderTwo; });
-__webpack_require__.d(components_namespaceObject, "HomeHeroSection", function() { return HomeHeroSection; });
-__webpack_require__.d(components_namespaceObject, "HomeWhyUs", function() { return HomeWhyUs; });
 __webpack_require__.d(components_namespaceObject, "ProductListTab", function() { return ProductListTab; });
 __webpack_require__.d(components_namespaceObject, "ProductListTabs", function() { return ProductListTabs; });
+__webpack_require__.d(components_namespaceObject, "HomeHeroSection", function() { return HomeHeroSection; });
+__webpack_require__.d(components_namespaceObject, "HomeWhyUs", function() { return HomeWhyUs; });
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -4115,10 +4115,10 @@ const components_FooterTwo = () => Promise.resolve(/* import() */).then(__webpac
 const components_Header = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 4)).then(c => wrapFunctional(c.default || c));
 const components_HeaderThree = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 16)).then(c => wrapFunctional(c.default || c));
 const components_HeaderTwo = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 14)).then(c => wrapFunctional(c.default || c));
-const HomeHeroSection = () => __webpack_require__.e(/* import() | components/home-hero-section */ 6).then(__webpack_require__.bind(null, 107)).then(c => wrapFunctional(c.default || c));
-const HomeWhyUs = () => __webpack_require__.e(/* import() | components/home-why-us */ 7).then(__webpack_require__.bind(null, 108)).then(c => wrapFunctional(c.default || c));
 const ProductListTab = () => __webpack_require__.e(/* import() | components/product-list-tab */ 11).then(__webpack_require__.bind(null, 150)).then(c => wrapFunctional(c.default || c));
-const ProductListTabs = () => __webpack_require__.e(/* import() | components/product-list-tabs */ 12).then(__webpack_require__.bind(null, 106)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
+const ProductListTabs = () => __webpack_require__.e(/* import() | components/product-list-tabs */ 12).then(__webpack_require__.bind(null, 106)).then(c => wrapFunctional(c.default || c));
+const HomeHeroSection = () => __webpack_require__.e(/* import() | components/home-hero-section */ 6).then(__webpack_require__.bind(null, 107)).then(c => wrapFunctional(c.default || c));
+const HomeWhyUs = () => __webpack_require__.e(/* import() | components/home-why-us */ 7).then(__webpack_require__.bind(null, 108)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
 
 function wrapFunctional(options) {
   if (!options || !options.functional) {
