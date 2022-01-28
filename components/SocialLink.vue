@@ -2,7 +2,7 @@
   <div>
     <!-- social link -->
     <ul class="flex items-center space-x-3" v-if="social && social.data">
-      <li v-for="item in social.data" :key="item">
+      <li v-for="item in social.data" :key="item.attributes.name">
         <a :href="item.attributes.name"
           class="flex items-center justify-center p-3 duration-300 rounded-md bg-blue-18  group" :class="setThemeColor(item.attributes.theme)">
           <img :src="fixUrl(item.attributes.icon.data.attributes.url)" />
