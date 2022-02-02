@@ -7,11 +7,10 @@
         <!-- banner content  -->
         <div class="text-center">
           <h1 class="text-4xl md:text-heading-40 text-dark-06 mb-6 max-w-680 mx-auto font-semibold">
-            UI, HTLM & Laravel Templates
+            {{ productListing.info.title }}
           </h1>
           <p class="text-lg md:text-body-18 text-dark-06 mb-8 max-w-full md:max-w-536 mx-auto font-light">
-            Quisque sed est condimentum, placerat tellus a, dictum diam.
-            Praesent volutpat nisl ac ligula lobortis imperdiet.
+            {{ productListing.info.description }}
           </p>
 
           <!-- Templates Tabs Menu  -->
@@ -19,68 +18,14 @@
             <!-- Tab menu  -->
             <div class="col-span-full lg:col-span-2">
               <ul class="flex items-center justify-center lg:justify-start feature relative">
-                <li>
-                  <div class="flex flex-col items-center feature-box group"
-                    :class="{ 'is-active': activeTab === 'bootstrapTab' }" @click="activeTab = 'bootstrapTab'">
+                <li v-for="(item, index) in productListing.technologies.data" :key="index">
+                  <div class="flex flex-col items-center feature-box group" :class="{ 'is-active': activeTab === 'bootstrapTab' }" @click="activeTab = 'bootstrapTab'">
                     <!-- icon  -->
                     <span class="feature-box__icon inline-block mb-3">
-                      <img src="~assets/images/versions/bootstrap.png" alt="version" />
+                      <img :src="fixImageUrl(item.attributes.icon)" alt="version" />
                     </span>
-                    <h6
-                      class="feature-box__title text-body-16 capitalize text-gray-61 text-gray-6a group-hover:text-dark-06">
-                      Bootstrap
-                    </h6>
-                  </div>
-                </li>
-                <li>
-                  <div class="flex flex-col items-center feature-box group"
-                    :class="{ 'is-active': activeTab === 'vuejsTab' }" @click="activeTab = 'vuejsTab'">
-                    <!-- icon  -->
-                    <span class="feature-box__icon inline-block mb-3">
-                      <img src="~assets/images/versions/vue.png" alt="version" />
-                    </span>
-                    <h6
-                      class="feature-box__title text-body-16 capitalize text-gray-61 text-gray-6a group-hover:text-dark-06">
-                      Vue JS
-                    </h6>
-                  </div>
-                </li>
-                <li>
-                  <div class="flex flex-col items-center feature-box group"
-                    :class="{ 'is-active': activeTab === 'htmlTab' }" @click="activeTab = 'htmlTab'">
-                    <!-- icon  -->
-                    <span class="feature-box__icon inline-block mb-3">
-                      <img src="~assets/images/versions/html.png" alt="version" />
-                    </span>
-                    <h6
-                      class="feature-box__title text-body-16 capitalize text-gray-61 text-gray-6a group-hover:text-dark-06">
-                      Html
-                    </h6>
-                  </div>
-                </li>
-                <li>
-                  <div class="flex flex-col items-center feature-box group"
-                    :class="{ 'is-active': activeTab === 'figmaTab' }" @click="activeTab = 'figmaTab'">
-                    <!-- icon  -->
-                    <span class="feature-box__icon inline-block mb-3">
-                      <img src="~assets/images/versions/figma.png" alt="version" />
-                    </span>
-                    <h6
-                      class="feature-box__title text-body-16 capitalize text-gray-61 text-gray-6a group-hover:text-dark-06">
-                      Figma
-                    </h6>
-                  </div>
-                </li>
-                <li>
-                  <div class="flex flex-col items-center feature-box group"
-                    :class="{ 'is-active': activeTab === 'adobeTab' }" @click="activeTab = 'adobeTab'">
-                    <!-- icon  -->
-                    <span class="feature-box__icon inline-block mb-3">
-                      <img src="~assets/images/versions/xd.png" alt="version" />
-                    </span>
-                    <h6
-                      class="feature-box__title text-body-16 capitalize text-gray-61 text-gray-6a group-hover:text-dark-06">
-                      Adobe XD
+                    <h6 class="feature-box__title text-body-16 capitalize text-gray-61 text-gray-6a group-hover:text-dark-06">
+                      {{ item.attributes.name }}
                     </h6>
                   </div>
                 </li>
@@ -106,47 +51,12 @@
     <!-- Filter Item content -->
     <section>
       <div class="container">
-        <div v-if="activeTab === 'bootstrapTab'">
-          <!-- filter content  -->
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 my-8">
-            <div v-for="(item, itemIndex) in bootstrapProduct" :key="itemIndex" class="flex items-stretch">
-              <ProductCard :img="item.img" :tag="item.tags" :title="item.title" :text="item.text" :price="item.price" />
-            </div>
+        <!-- filter content  -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 my-8">
+          <div v-for="(item, itemIndex) in allProducts" :key="itemIndex" class="flex items-stretch">
+            <ProductCard :product="item.attributes" :large="true" />
           </div>
         </div>
-        <div v-if="activeTab === 'vuejsTab'">
-          <!-- filter content  -->
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 my-8">
-            <div v-for="(item, itemIndex) in vueProduct" :key="itemIndex" class="flex items-stretch">
-              <ProductCard :img="item.img" :tag="item.tags" :title="item.title" :text="item.text" :price="item.price" />
-            </div>
-          </div>
-        </div>
-        <div v-if="activeTab === 'htmlTab'">
-          <!-- filter content  -->
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 my-8">
-            <div v-for="(item, itemIndex) in htmlProduct" :key="itemIndex" class="flex items-stretch">
-              <ProductCard :img="item.img" :tag="item.tags" :title="item.title" :text="item.text" :price="item.price" />
-            </div>
-          </div>
-        </div>
-        <div v-if="activeTab === 'figmaTab'">
-          <!-- filter content  -->
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 my-8">
-            <div v-for="(item, itemIndex) in figmaProduct" :key="itemIndex" class="flex items-stretch">
-              <ProductCard :img="item.img" :tag="item.tags" :title="item.title" :text="item.text" :price="item.price" />
-            </div>
-          </div>
-        </div>
-        <div v-if="activeTab === 'adobeTab'">
-          <!-- filter content  -->
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 my-8">
-            <div v-for="(item, itemIndex) in adobeProduct" :key="itemIndex" class="flex items-stretch">
-              <ProductCard :img="item.img" :tag="item.tags" :title="item.title" :text="item.text" :price="item.price" />
-            </div>
-          </div>
-        </div>
-
         <!-- pagination   -->
         <div class="flex items-center justify-center py-7">
           <Pagination />
@@ -156,13 +66,35 @@
   </div>
 </template>
 <script>
+
 import bannerImg from "~/assets/images/all-img/img-five.png";
-import Pagination from "../Pagination.vue";
-import ProductCard from "../ProductCard.vue";
+import Pagination from "~/components/Pagination.vue";
+import ProductCard from "~/components/ProductCard.vue";
+import PRODUCT_LISTING from '../../graphql/productListing'
+import ALL_PRODUCTS from '../../graphql/allProducts'
+import global from '~/mixin/global'
+
 export default {
   components: {
     Pagination,
     ProductCard,
+  },
+  mixins: [global],
+  async asyncData({ app }) {
+    const client = app.apolloProvider.defaultClient;
+
+    const { data } = await client.query({
+      query: PRODUCT_LISTING,
+    })
+
+    let products = await client.query({
+      query: ALL_PRODUCTS,
+    })
+    
+    const allProducts = products.data.products.data;
+    const productListing = data.productListing.data?.attributes;
+    
+    return { productListing, allProducts }
   },
   data() {
     return {
@@ -302,14 +234,10 @@ export default {
     };
   },
   methods: {
-    selectTab(selectedTab) {
-      this.tabs.forEach((tab) => {
-        tab.isActive = tab.name === selectedTab.name;
-      });
-    },
+    
   },
   created() {
-    this.tabs = this.$children;
+    
   },
 };
 </script>
