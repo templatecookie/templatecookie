@@ -18,8 +18,8 @@
             <!-- Tab menu  -->
             <div class="col-span-full lg:col-span-2">
               <ul class="flex items-center justify-center lg:justify-start feature relative">
-                <li v-for="(item, index) in productListing.technologies.data" :key="index">
-                  <div class="flex flex-col items-center feature-box group" :class="{ 'is-active': activeTab === 'bootstrapTab' }" @click="activeTab = 'bootstrapTab'">
+                <li v-for="(item, index) in productListing.technologies.data" :key="index" @click="activeTab = item.attributes.slug">
+                  <div class="flex flex-col items-center feature-box group" :class="{ 'is-active': activeTab === item.attributes.slug }" @click="activeTab = 'bootstrapTab'">
                     <!-- icon  -->
                     <span class="feature-box__icon inline-block mb-3">
                       <img :src="fixImageUrl(item.attributes.icon)" alt="version" />
@@ -99,7 +99,7 @@ export default {
   data() {
     return {
       tabs: [],
-      activeTab: "bootstrapTab",
+      activeTab: "all",
       bannerImg,
       sortList: ["Popular", "Mosit Viewed"],
       bootstrapProduct: [
