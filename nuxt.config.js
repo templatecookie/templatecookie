@@ -47,7 +47,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: 'https://api.templatecookie.com/graphql',
+        httpEndpoint: 'http://localhost:1337/graphql',
         getAuth: () => `Bearer fa8423d78cd2ef9b0e946ca7eda3d32e900ccac15269be72fae8228bd0cfaf8ba1447f3a906d99ee764279e55ff098bd39325dbbf2638e9e40f7092e5ffd658f9337dcb5b24a90babe1abf2ecbe35b382c85ff8feea3ab95db44903767e41b6d87f1beb8fb19a979bfb2a04678e5a02a9e82e29395a7859ca84ff0e685d69661`,
       }
     }

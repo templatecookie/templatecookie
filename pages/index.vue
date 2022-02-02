@@ -2,63 +2,41 @@
   <div>
     <HeroSection :bannerImg="bannerImg" :data="homepage.heroSection" v-if="homepage && homepage.heroSection"/>
     <!-- Featured Card  -->
-    <section class="featured pt-14 md:pt-124">
+    <section class="featured pt-14 md:pt-124" v-if="homepage && homepage.featuredProductSection">
       <div class="container">
         <!-- section title  -->
         <div class="mb-72 text-center">
-          <h2
-            class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1"
-          >
-            Featured Product
+          <h2 class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1">
+            {{ homepage.featuredProductSection.title }}
           </h2>
         </div>
 
         <!-- Features Card  -->
-        <div class="grid lg:grid-cols-2 gap-6">
-          <div
-            v-for="(item, itemIndex) in featuredList"
-            :key="itemIndex"
-            class="flex items-stretch"
-          >
-            <ProductCard
-              :img="item.img"
-              :tag="item.tags"
-              :title="item.title"
-              :text="item.text"
-              :price="item.price"
-              className="product-card--lg"
-            />
+        <div class="grid lg:grid-cols-2 gap-6" v-if="homepage.featuredProductSection.products.data">
+          <div v-for="(item, itemIndex) in homepage.featuredProductSection.products.data" :key="itemIndex" class="flex items-stretch">
+            <ProductCard :product="item.attributes" :large="true"/>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Latest Product -->
-    <section class="latest py-14 md:py-124">
+    <section class="latest py-14 md:py-124" v-if="homepage && homepage.latestProductsSection">
       <div class="container">
         <!-- section title  -->
         <div class="mb-72 text-center">
-          <h2
-            class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1"
-          >
-            Latest Product
+          <h2 class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1">
+            {{ homepage.latestProductsSection.title }}
           </h2>
         </div>
         <!-- Latest Product -->
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           <div
-            v-for="(item, itemIndex) in latestProduct"
+            v-for="(item, itemIndex) in latestProducts"
             :key="itemIndex"
             class="flex items-stretch"
           >
-            <ProductCard
-              :img="item.img"
-              :tag="item.tags"
-              :title="item.title"
-              :text="item.text"
-              :price="item.price"
-              className="product-card--sm"
-            />
+            <ProductCard :product="item.attributes" :large="true" />
           </div>
         </div>
       </div>
@@ -104,6 +82,7 @@
 import bannerImg from "~/assets/images/all-img/img-five.png";
 import ProductCard from "../components/ProductCard.vue";
 import HOMEPAGE_QUERY from '~/graphql/homepage'
+import LATEST_PRODUCTS from '~/graphql/latestProducts'
 import HeroSection from "../components/Home/HeroSection.vue";
 import WhyUs from "../components/Home/WhyUs.vue";
 
@@ -116,9 +95,15 @@ export default {
     const { data } = await client.query({
       query: HOMEPAGE_QUERY,
     })
-    const homepage = data.homepage.data.attributes;
+    let products = await client.query({
+      query: LATEST_PRODUCTS,
+    })
     
-    return { homepage }
+    const homepage = data.homepage.data.attributes;
+    const latestProducts = products.data.products.data;
+    
+    return { homepage, latestProducts }
+    // return { homepage }
   },
   data() {
     return {
@@ -128,22 +113,6 @@ export default {
       },
 
       bannerImg,
-      featuredList: [
-        {
-          img: "https://i.imgur.com/YD6WZwi.png",
-          tags: "Figma,Html",
-          title: "Onest - Classified Ad Listing ",
-          text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
-          price: 13,
-        },
-        {
-          img: "https://i.imgur.com/IwfwAGA.png",
-          tags: "Figma",
-          title: "Relik - Admin Dashboard",
-          text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
-          price: 18,
-        },
-      ],
       latestProduct: [
         {
           price: 13,

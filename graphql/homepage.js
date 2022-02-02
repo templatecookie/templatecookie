@@ -6,16 +6,16 @@ query {
   homepage {
     data {
       attributes {
-        title,
+        title
         meta_data {
-          title, 
+          title
           description
           og_image {
             data {
               attributes {
-                url, 
-                previewUrl, 
-                ext, 
+                url
+                previewUrl
+                ext
                 name
               }
             }
@@ -29,10 +29,10 @@ query {
           banner {
             data {
               attributes {
-                name,
-                url, 
-                previewUrl, 
-                ext, 
+                name
+                url
+                previewUrl
+                ext
                 formats
               }
             }
@@ -52,9 +52,37 @@ query {
           id
           title
           description
+          products {
+            data {
+              attributes {
+                name
+                slug
+                price
+                short_description
+                banner {
+                  data {
+                    attributes {
+                      name,
+                      alternativeText,
+                      previewUrl
+                      url
+                    }
+                  }
+                }
+                category {
+                  data {
+                    attributes {
+                      name
+                      slug
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
         latestProductsSection {
-          title,
+          title
           id
           description
           subTitle
@@ -63,30 +91,30 @@ query {
           background {
             data {
               attributes {
-                name,
-                url, 
-                previewUrl, 
-                ext, 
+                name
+                url
+                previewUrl
+                ext
                 formats
               }
             }
           }
-        } 
+        }
         topFeaturesSection {
           id
           info {
             title
-            description 
+            description
             subTitle
             theme
-            alignment 
-            background{
+            alignment
+            background {
               data {
                 attributes {
-                  name,
-                  url, 
-                  previewUrl, 
-                  ext, 
+                  name
+                  url
+                  previewUrl
+                  ext
                   formats
                 }
               }
@@ -94,13 +122,13 @@ query {
           }
         }
         whyUsSection {
-          id,
-          info  {
+          id
+          info {
             id
             title
-            description 
+            description
             subTitle
-            theme 
+            theme
           }
           counterNumbers {
             id
@@ -110,10 +138,10 @@ query {
             icon {
               data {
                 attributes {
-                  name,
-                  url, 
-                  previewUrl, 
-                  ext, 
+                  name
+                  url
+                  previewUrl
+                  ext
                   formats
                 }
               }
@@ -124,4 +152,5 @@ query {
     }
   }
 }
+
 `

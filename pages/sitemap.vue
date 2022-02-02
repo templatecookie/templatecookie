@@ -44,7 +44,7 @@
         </li>
         <li class="mb-1">
           <nuxt-link
-            to="/product-details"
+            to="/products/testing"
             class="text-body-16 capitalize text-dark-42"
             >Product Details
             <span
