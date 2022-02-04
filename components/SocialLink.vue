@@ -97,7 +97,7 @@ import global from '~/mixin/global'
 export default {
   name: "SocialLink",
   props: ['social'],
-  mixins: [global],
+  // mixins: [global],
   methods: {
     setThemeColor(theme){
       switch (theme) {

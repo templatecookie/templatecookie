@@ -10,27 +10,27 @@
             <img src="~@/assets/images/svg/arrow-gray.svg" alt="" />
           </li>
           <li class="leading-3 whitespace-nowrap">
-            <nuxt-link to="#">Product</nuxt-link>
+            <nuxt-link :to="{ name: 'products'}">Products</nuxt-link>
           </li>
           <li class="leading-3 whitespace-nowrap">
             <img src="~@/assets/images/svg/arrow-gray.svg" alt="" />
           </li>
           <li class="leading-3 whitespace-nowrap">
-            <nuxt-link to="#">UI Template</nuxt-link>
+            <nuxt-link to="#">{{ category.name }}</nuxt-link>
           </li>
-          <li class="leading-3 whitespace-nowrap">
+          <!-- <li class="leading-3 whitespace-nowrap">
             <img src="~@/assets/images/svg/arrow-gray.svg" alt="" />
           </li>
           <li class="leading-3 whitespace-nowrap">
             <nuxt-link to="#">Figma</nuxt-link>
-          </li>
+          </li> -->
         </ul>
       </div>
 
       <h2
         class="text-dark-06 text-2xl md:text-3xl lg:text-heading-40 font-semibold tracking-01"
       >
-        Relik - Admin Dashboard Figma Template
+        {{ name }}
       </h2>
     </div>
   </div>
@@ -39,6 +39,16 @@
 <script>
 export default {
   name: "Breadcrumb",
+  props: {
+    name: {
+      type: String,
+      required: true,
+    },
+    category: {
+      type: Object,
+      required: true,
+    },
+  },
   data() {
     return {
       BreadcrumbBg: {

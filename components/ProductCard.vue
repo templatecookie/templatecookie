@@ -1,7 +1,7 @@
 <template>
     <!-- card wrapper  -->
     <div class="relative overflow-hidden p-8 border border-gray-e6 rounded-2xl product-card w-full" :class="large ? 'product-card--lg ' : 'product-card--sm'">
-      <nuxt-link :to="{ name: 'products-slug', params: {slug: product.slug}}" class="product-card__img relative inline-block overflow-hidden rounded-lg w-full product-card__img-wrapper mb-4">
+      <nuxt-link :to="{ name: 'products-slug', params: {slug: id}}" class="product-card__img relative inline-block overflow-hidden rounded-lg w-full product-card__img-wrapper mb-4">
         <img :src="fixImageUrl(product.banner)" alt="product-img" class="w-full h-full object-cover overflow-hidden" />
       </nuxt-link>
 
@@ -25,7 +25,7 @@
           <!-- Purchase  -->
           <div class="flex items-center space-x-3 order-2 sm:order-1">
             <div>
-              <nuxt-link :to="{name: 'products-slug', params: {slug: product.slug}}" class="flex items-center overflow-hidden border border-blue-0b text-blue-0b rounded-lg group py-3.5 px-9 whitespace-nowrap product-card__button">
+              <nuxt-link :to="{name: 'products-slug', params: {slug: id}}" class="flex items-center overflow-hidden border border-blue-0b text-blue-0b rounded-lg group py-3.5 px-9 whitespace-nowrap product-card__button">
                 Learn More
                 <span class="inline-block ml-2">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -109,12 +109,16 @@ import global from '~/mixin/global'
 
 export default {
   name: "ProductCard",
-  mixins: [global],
+  // mixins: [global],
   props: {
     large: {
       type: Boolean,
       required: false,
       default: false,
+    },
+    id: {
+      type: Number,
+      required: true,
     },
     product: {
       type: Object,

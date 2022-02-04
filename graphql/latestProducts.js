@@ -5,6 +5,7 @@ export default gql`
 query {
   products(sort: "publishedAt:desc", pagination: { page: 1, pageSize: 6 }) {
     data {
+      id
       attributes {
         name
         slug

@@ -54,7 +54,7 @@
         <!-- filter content  -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 my-8">
           <div v-for="(item, itemIndex) in allProducts" :key="itemIndex" class="flex items-stretch">
-            <ProductCard :product="item.attributes" :large="true" />
+            <ProductCard :product="item.attributes" :id="item.id" :large="true" />
           </div>
         </div>
         <!-- pagination   -->
@@ -79,7 +79,7 @@ export default {
     Pagination,
     ProductCard,
   },
-  mixins: [global],
+  // mixins: [global],
   async asyncData({ app }) {
     const client = app.apolloProvider.defaultClient;
 

@@ -14,7 +14,7 @@
         <!-- Features Card  -->
         <div class="grid lg:grid-cols-2 gap-6" v-if="homepage.featuredProductSection.products.data">
           <div v-for="(item, itemIndex) in homepage.featuredProductSection.products.data" :key="itemIndex" class="flex items-stretch">
-            <ProductCard :product="item.attributes" :large="true"/>
+            <ProductCard :product="item.attributes" :id="item.id" :large="true"/>
           </div>
         </div>
       </div>
@@ -36,7 +36,7 @@
             :key="itemIndex"
             class="flex items-stretch"
           >
-            <ProductCard :product="item.attributes" :large="true" />
+            <ProductCard :product="item.attributes" :id="item.id" :large="true" />
           </div>
         </div>
 

@@ -124,7 +124,7 @@ import global from '~/mixin/global'
 export default {
   name: "Header",
   props: ['data'],
-  mixins: [global],
+  // mixins: [global],
   data() {
     return {
       toggleStatus: false,

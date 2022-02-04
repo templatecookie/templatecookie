@@ -37,6 +37,8 @@ export default {
       })
       
       this.global = data?.global?.data?.attributes
+
+      this.$store.commit('SET_GLOBAL_DATA', this.global)
     }
   },
   mounted (){

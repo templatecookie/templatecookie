@@ -48,6 +48,6 @@ import global from '~/mixin/global'
 export default {
   name: "Footer",
   props: ['data'],
-  mixins: [global],
+  // mixins: [global],
 };
 </script>

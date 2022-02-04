@@ -1,5 +1,6 @@
-export default {
-  head() {},
+import Vue from 'vue'
+
+let mixin = {
   methods: {
     fixUrl(file){
       return `http://localhost:1337${file}`
@@ -9,3 +10,5 @@ export default {
     }
   }
 };
+
+Vue.mixin(mixin)

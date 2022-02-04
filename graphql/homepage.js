@@ -54,6 +54,7 @@ query {
           description
           products {
             data {
+              id
               attributes {
                 name
                 slug
