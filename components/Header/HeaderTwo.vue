@@ -5,7 +5,7 @@
       <div class="flex items-center justify-between">
         <!-- brand Logo -->
         <div>
-          <nuxt-link to="#">
+          <nuxt-link to="/">
             <img src="~/assets/images/logo.svg" alt="brand-logo" />
           </nuxt-link>
         </div>

@@ -474,243 +474,255 @@ import "swiper/css/swiper.css";
 
 export default {
   layout: "demo",
-    name: "ProductDemo",
-    async asyncData({ app, params }) {
-      const client = app.apolloProvider.defaultClient;
-      const { slug } = params;
+  name: "ProductDemo",
+  head: {
+    title: 'Product Demo Page',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'my website description'
+      }
+    ],
+  },
+  async asyncData({ app, params }) {
+    const client = app.apolloProvider.defaultClient;
+    const { slug } = params;
 
-      const { data } = await client.query({
-        query: PRODUCT_DEMO,
-        variables: {
-          slug
-        }
-      })
-      
-      const product = data.product.data.attributes;
-      return { product }
-    },
-    components: {
-      BusinessCard,
-      FunFact,
-      LinkThumb,
-      PurchaseCard,
-      Swiper,
-      SwiperSlide,
-    },
+    const { data } = await client.query({
+      query: PRODUCT_DEMO,
+      variables: {
+        slug
+      }
+    })
+    
+    const product = data.product.data.attributes;
+    return { product }
+  },
+  components: {
+    BusinessCard,
+    FunFact,
+    LinkThumb,
+    PurchaseCard,
+    Swiper,
+    SwiperSlide,
+  },
 
-    data() {
-      return {
-        activetab: "1",
-        DemoHero: {
-          backgroundImage: "url(https://i.imgur.com/aBzS4DP.png)",
+  data() {
+    return {
+      activetab: "1",
+      DemoHero: {
+        backgroundImage: "url(https://i.imgur.com/aBzS4DP.png)",
+      },
+      buisnessCard: [{
+          title: "Project Introduction",
+          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
-        buisnessCard: [{
-            title: "Project Introduction",
-            text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-          },
-          {
-            title: "User Experience Design",
-            text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-          },
-          {
-            title: "User Interface Design",
-            text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-          },
-          {
-            title: "Front-end Development",
-            text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-          },
-          {
-            title: "Back-end Development",
-            text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-          },
-          {
-            title: "Delivery & Client Feedback",
-            text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-          },
-        ],
-        FunItems: [{
-            title: "55+",
-            text: "High-Quality Pages",
-          },
-          {
-            title: "55+",
-            text: "Figma UI Components",
-          },
-          {
-            title: "24/7",
-            text: "Dedicated Support all",
-          },
-          {
-            title: "100%",
-            text: "Money-Back Guarantee",
-          },
-          {
-            title: "Doc",
-            text: "Detailed Documentation",
-          },
-          {
-            title: "Global",
-            text: "Auto-Updatedable Style Guide",
-          },
-          {
-            title: "Inter",
-            text: "Free Google Font Used",
-          },
-          {
-            title: "Fig",
-            text: "Well-Organize & Easy-to-use File",
-          },
-        ],
-        linkThumb: [{
-            url: "https://www.google.com/",
-            title: "Admin Dashboard",
-            img: "https://i.imgur.com/z3lpl2i.png",
-          },
-          {
-            url: "https://www.google.com/",
-            title: "Admin Dashboard",
-            img: "https://i.imgur.com/btnaKPg.png",
-          },
-          {
-            url: "https://www.google.com/",
-            title: "Admin Dashboard",
-            img: "https://i.imgur.com/WeNt6qZ.png",
-          },
-          {
-            url: "https://www.google.com/",
-            title: "Admin Dashboard",
-            img: "https://i.imgur.com/aXNiPxi.png",
-          },
-          {
-            url: "https://www.google.com/",
-            title: "Admin Dashboard",
-            img: "https://i.imgur.com/LrX4y5U.png",
-          },
-
-          {
-            url: "https://www.google.com/",
-            title: "Admin Dashboard",
-            img: "https://i.imgur.com/7A80zMR.png",
-          },
-          {
-            url: "https://www.google.com/",
-            title: "Admin Dashboard",
-            img: "https://i.imgur.com/nnXHQ9w.png",
-          },
-          {
-            url: "https://www.google.com/",
-            title: "Admin Dashboard",
-            img: "https://i.imgur.com/OkWf1Gj.png",
-          },
-          {
-            url: "https://www.google.com/",
-            title: "Admin Dashboard",
-            img: "https://i.imgur.com/BRCMvYp.png",
-          },
-          {
-            url: "https://www.google.com/",
-            title: "Admin Dashboard",
-            img: "https://i.imgur.com/Z3NJCTN.png",
-          },
-          {
-            url: "https://www.google.com/",
-            title: "Admin Dashboard",
-            img: "https://i.imgur.com/2kaiEQa.png",
-          },
-          {
-            url: "https://www.google.com/",
-            title: "Admin Dashboard",
-            img: "https://i.imgur.com/HLreajz.png",
-          },
-          {
-            url: "https://www.google.com/",
-            title: "Admin Dashboard",
-            img: "https://i.imgur.com/mbarwY4.png",
-          },
-          {
-            url: "https://www.google.com/",
-            title: "Admin Dashboard",
-            img: "https://i.imgur.com/8g0dDml.png",
-          },
-          {
-            url: "https://www.google.com/",
-            title: "Admin Dashboard",
-            img: "https://i.imgur.com/YMm1zRS.png",
-          },
-
-          {
-            url: "https://www.google.com/",
-            title: "Admin Dashboard",
-            img: "https://i.imgur.com/gE2RT42.png",
-          },
-        ],
-        swiperOptionOne: {
-          slidesPerView: 1,
-          spaceBetween: 24,
-          loop: true,
-          // autoplay: {
-          //   delay: 1600,
-          //   disableOnInteraction: false,
-          // },
-          breakpoints: {
-            1199: {
-              slidesPerView: 4,
-            },
-            1024: {
-              slidesPerView: 3,
-            },
-            768: {
-              slidesPerView: 2,
-            },
-            640: {
-              slidesPerView: 2,
-            },
-            320: {
-              slidesPerView: 1,
-            },
-          },
+        {
+          title: "User Experience Design",
+          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
-        swiperOptionTwo: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-          centeredSlides: true,
-          loop: true,
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
+        {
+          title: "User Interface Design",
+          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
+        },
+        {
+          title: "Front-end Development",
+          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
+        },
+        {
+          title: "Back-end Development",
+          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
+        },
+        {
+          title: "Delivery & Client Feedback",
+          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
+        },
+      ],
+      FunItems: [{
+          title: "55+",
+          text: "High-Quality Pages",
+        },
+        {
+          title: "55+",
+          text: "Figma UI Components",
+        },
+        {
+          title: "24/7",
+          text: "Dedicated Support all",
+        },
+        {
+          title: "100%",
+          text: "Money-Back Guarantee",
+        },
+        {
+          title: "Doc",
+          text: "Detailed Documentation",
+        },
+        {
+          title: "Global",
+          text: "Auto-Updatedable Style Guide",
+        },
+        {
+          title: "Inter",
+          text: "Free Google Font Used",
+        },
+        {
+          title: "Fig",
+          text: "Well-Organize & Easy-to-use File",
+        },
+      ],
+      linkThumb: [{
+          url: "https://www.google.com/",
+          title: "Admin Dashboard",
+          img: "https://i.imgur.com/z3lpl2i.png",
+        },
+        {
+          url: "https://www.google.com/",
+          title: "Admin Dashboard",
+          img: "https://i.imgur.com/btnaKPg.png",
+        },
+        {
+          url: "https://www.google.com/",
+          title: "Admin Dashboard",
+          img: "https://i.imgur.com/WeNt6qZ.png",
+        },
+        {
+          url: "https://www.google.com/",
+          title: "Admin Dashboard",
+          img: "https://i.imgur.com/aXNiPxi.png",
+        },
+        {
+          url: "https://www.google.com/",
+          title: "Admin Dashboard",
+          img: "https://i.imgur.com/LrX4y5U.png",
         },
 
-        PurchaseItems: [{
-            icon: "https://i.imgur.com/xSZYYEg.png",
-            title: "Let’s Purchase This Product",
-            text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
-            btnText: "Purchase Now",
+        {
+          url: "https://www.google.com/",
+          title: "Admin Dashboard",
+          img: "https://i.imgur.com/7A80zMR.png",
+        },
+        {
+          url: "https://www.google.com/",
+          title: "Admin Dashboard",
+          img: "https://i.imgur.com/nnXHQ9w.png",
+        },
+        {
+          url: "https://www.google.com/",
+          title: "Admin Dashboard",
+          img: "https://i.imgur.com/OkWf1Gj.png",
+        },
+        {
+          url: "https://www.google.com/",
+          title: "Admin Dashboard",
+          img: "https://i.imgur.com/BRCMvYp.png",
+        },
+        {
+          url: "https://www.google.com/",
+          title: "Admin Dashboard",
+          img: "https://i.imgur.com/Z3NJCTN.png",
+        },
+        {
+          url: "https://www.google.com/",
+          title: "Admin Dashboard",
+          img: "https://i.imgur.com/2kaiEQa.png",
+        },
+        {
+          url: "https://www.google.com/",
+          title: "Admin Dashboard",
+          img: "https://i.imgur.com/HLreajz.png",
+        },
+        {
+          url: "https://www.google.com/",
+          title: "Admin Dashboard",
+          img: "https://i.imgur.com/mbarwY4.png",
+        },
+        {
+          url: "https://www.google.com/",
+          title: "Admin Dashboard",
+          img: "https://i.imgur.com/8g0dDml.png",
+        },
+        {
+          url: "https://www.google.com/",
+          title: "Admin Dashboard",
+          img: "https://i.imgur.com/YMm1zRS.png",
+        },
+
+        {
+          url: "https://www.google.com/",
+          title: "Admin Dashboard",
+          img: "https://i.imgur.com/gE2RT42.png",
+        },
+      ],
+      swiperOptionOne: {
+        slidesPerView: 1,
+        spaceBetween: 24,
+        loop: true,
+        // autoplay: {
+        //   delay: 1600,
+        //   disableOnInteraction: false,
+        // },
+        breakpoints: {
+          1199: {
+            slidesPerView: 4,
           },
-          {
-            icon: "https://i.imgur.com/OALz67a.png",
-            title: "Well-Organize Documentation",
-            text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
-            btnText: "Documentation",
+          1024: {
+            slidesPerView: 3,
           },
-          {
-            icon: "https://i.imgur.com/sbCT8wF.png",
-            title: "24/7 Customer Support",
-            text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
-            btnText: "Get Support",
+          768: {
+            slidesPerView: 2,
           },
-        ],
-      };
-    },
+          640: {
+            slidesPerView: 2,
+          },
+          320: {
+            slidesPerView: 1,
+          },
+        },
+      },
+      swiperOptionTwo: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      },
+
+      PurchaseItems: [{
+          icon: "https://i.imgur.com/xSZYYEg.png",
+          title: "Let’s Purchase This Product",
+          text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
+          btnText: "Purchase Now",
+        },
+        {
+          icon: "https://i.imgur.com/OALz67a.png",
+          title: "Well-Organize Documentation",
+          text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
+          btnText: "Documentation",
+        },
+        {
+          icon: "https://i.imgur.com/sbCT8wF.png",
+          title: "24/7 Customer Support",
+          text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
+          btnText: "Get Support",
+        },
+      ],
+    };
+  },
 };
 </script>
 

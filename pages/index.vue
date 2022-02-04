@@ -105,6 +105,18 @@ import WhyUs from "../components/Home/WhyUs.vue";
 export default {
   name: "IndexPage",
   components: { ProductCard, HeroSection, WhyUs },
+  head: {
+    title: 'Homepage | Templatecookie',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'my website description'
+      }
+    ],
+  },
   async asyncData({ app }) {
     const client = app.apolloProvider.defaultClient;
 

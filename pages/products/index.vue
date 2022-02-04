@@ -72,14 +72,24 @@ import Pagination from "~/components/Pagination.vue";
 import ProductCard from "~/components/ProductCard.vue";
 import PRODUCT_LISTING from '../../graphql/productListing'
 import ALL_PRODUCTS from '../../graphql/allProducts'
-import global from '~/mixin/global'
 
 export default {
   components: {
     Pagination,
     ProductCard,
   },
-  // mixins: [global],
+  head: {
+    title: 'All Products Listing',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'my website description'
+      }
+    ],
+  },
   async asyncData({ app }) {
     const client = app.apolloProvider.defaultClient;
 

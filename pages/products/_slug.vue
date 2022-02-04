@@ -492,6 +492,18 @@ export default {
     SwiperSlide,
     Swiper,
   },
+  head: {
+    title: 'Product Details Page',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'my website description'
+      }
+    ],
+  },
   async asyncData({ app, params }) {
     const client = app.apolloProvider.defaultClient;
     const { slug } = params;

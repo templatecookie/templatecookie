@@ -119,12 +119,9 @@
   </header>
 </template>
 <script>
-import global from '~/mixin/global'
-
 export default {
   name: "Header",
   props: ['data'],
-  // mixins: [global],
   data() {
     return {
       toggleStatus: false,
