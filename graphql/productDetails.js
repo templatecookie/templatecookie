@@ -5,6 +5,7 @@ export default gql`
 query product($slug: ID!){
   product(id: $slug) {
     data {
+      id
       attributes {
         name
         slug

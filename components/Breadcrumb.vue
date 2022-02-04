@@ -15,8 +15,8 @@
           <li class="leading-3 whitespace-nowrap">
             <img src="~@/assets/images/svg/arrow-gray.svg" alt="" />
           </li>
-          <li class="leading-3 whitespace-nowrap">
-            <nuxt-link to="#">{{ category.name }}</nuxt-link>
+          <li class="leading-3 whitespace-nowrap" v-if="category && category.attributes">
+            <nuxt-link to="#">{{ category.attributes.name }}</nuxt-link>
           </li>
           <!-- <li class="leading-3 whitespace-nowrap">
             <img src="~@/assets/images/svg/arrow-gray.svg" alt="" />
@@ -27,9 +27,7 @@
         </ul>
       </div>
 
-      <h2
-        class="text-dark-06 text-2xl md:text-3xl lg:text-heading-40 font-semibold tracking-01"
-      >
+      <h2 class="text-dark-06 text-2xl md:text-3xl lg:text-heading-40 font-semibold tracking-01">
         {{ name }}
       </h2>
     </div>
@@ -45,7 +43,7 @@ export default {
       required: true,
     },
     category: {
-      type: Object,
+      type: [Object, null],
       required: true,
     },
   },

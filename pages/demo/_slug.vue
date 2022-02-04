@@ -5,21 +5,20 @@
       <div class="container">
         <div class="max-w-2xl sm:text-left text-center relative">
           <h1 class="tracking-01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8">
-            Relik - Admin Dashboard Figma Template
+            {{ product.name }}
           </h1>
           <p class="text-white font-light text-lg md:text-xl max-w-536">
-            👉 Relik is a beautiful, simple, developer-friendly, highly
-            customizable admin dashboard template with a 💎 high-quality UI &
-            well-organized Figma file 🔥.
+            {{ product.short_description }}
           </p>
           <div class="mt-8">
-            <nuxt-link to="/"
-              class="block text-center sm:inline-block border-1.5 border-blue-0b bg-blue-0b font-medium rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 mb-3 sm:mb-0 sm:mr-3">
+            <a :href="product.buy_url" target="_blank" class="block text-center sm:inline-block border-1.5 border-blue-0b bg-blue-0b font-medium rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 mb-3 sm:mb-0 sm:mr-3">
               Buy Now
-              <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="" /></nuxt-link>
-            <nuxt-link to="/"
+              <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="" />
+            </a>
+            <a :href="product.preview_url" target="_blank"
               class="block text-center sm:inline-block font-medium border-1.5 border-white rounded-7 py-3.5 px-8 text-body-17 text-white duration-300">
-              Live Preview</nuxt-link>
+              Live Preview
+              </a>
           </div>
           <div
             class="shadow-bs8 rounded-xl p-6 bg-white border border-gray-e6 flex items-center justify-center sm:justify-start absolute -bottom-44 lg:-bottom-64 sm:left-0 sm:transform-none transform -translate-x-1/2 left-1/2 sm:w-auto w-full">
@@ -45,6 +44,10 @@
       </div>
     </div>
     <!-- end -->
+
+      <pre>
+        {{ product}}
+      </pre>
 
     <div class="py-20 lg:py-124">
       <div class="container">
@@ -136,6 +139,7 @@
         </div>
       </div>
       <!-- end -->
+
 
       <div class="py-20 lg:py-124 bg-gray-f0">
         <div class="container">
@@ -460,16 +464,31 @@
   </div>
 </template>
 <script>
-import BusinessCard from "../components/BusinessCard.vue";
-import FunFact from "../components/Fun.vue";
-import LinkThumb from "../components/LinkThumb.vue";
-import PurchaseCard from "../components/PurchaseCard.vue";
+import BusinessCard from "~/components/BusinessCard.vue";
+import FunFact from "~/components/Fun.vue";
+import LinkThumb from "~/components/LinkThumb.vue";
+import PurchaseCard from "~/components/PurchaseCard.vue";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+import PRODUCT_DEMO from '~/graphql/productDemo'
 import "swiper/css/swiper.css";
 
 export default {
   layout: "demo",
     name: "ProductDemo",
+    async asyncData({ app, params }) {
+      const client = app.apolloProvider.defaultClient;
+      const { slug } = params;
+
+      const { data } = await client.query({
+        query: PRODUCT_DEMO,
+        variables: {
+          slug
+        }
+      })
+      
+      const product = data.product.data.attributes;
+      return { product }
+    },
     components: {
       BusinessCard,
       FunFact,

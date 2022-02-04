@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Breadcrumb :category="product.category.data.attributes" :name="product.name" />
+    <Breadcrumb :category="product.category.data" :name="product.name" />
     <!-- end -->
     <div class="pt-12">
       <div class="container">
@@ -181,13 +181,14 @@
               <!-- end -->
               <div class="pt-0 p-8 pb-4">
                 <div class="border-b border-gray-cd pb-4">
-                  <nuxt-link :to="product.buy_url" v-if="product.buy_url"
-                    class="block text-center font-medium bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 mb-4 hover:bg-dark-06">
-                    Buy now</nuxt-link>
-                  <nuxt-link :to="product.documentation_url" v-if="product.documentation_url"
+                  <nuxt-link :to="product.buy_url" v-if="product.buy_url" class="block text-center font-medium bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 mb-4 hover:bg-dark-06">
+                    Buy now
+                  </nuxt-link>
+                  <nuxt-link :to="{ name: 'demo-slug', params: {slug: productId} }" v-if="product.documentation_url"
                     class="block text-center font-medium border-1.5 border-dark-06 rounded-7 py-3.5 px-9 text-body-17 text-dark-06 duration-300 mb-4">
-                    <img class="inline-block mr-2" src="~/assets/images/svg/notebook.svg" alt="" />
-                    Documentation</nuxt-link>
+                      <img class="inline-block mr-2" src="~/assets/images/svg/notebook.svg" alt="" />
+                      View Demo
+                  </nuxt-link>
                 </div>
                 <div class="pt-6">
                   <ul>
@@ -503,8 +504,9 @@ export default {
     })
     
     const product = data.product.data.attributes;
+    const productId = data.product.data.id;
     const relatedProducts = data.products.data;
-    return { product, relatedProducts }
+    return { product, relatedProducts, productId }
   },
   data() {
     return {
