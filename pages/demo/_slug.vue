@@ -1,5 +1,6 @@
 <template>
   <div>
+    <HeaderTwo />
     <div class="pb-36 pt-56 lg:pb-222 lg:pt-300 bg-dark-06 bg-content bg-right-bottom bg-no-repeat hero-demo"
       :style="DemoHero">
       <div class="container">
@@ -45,9 +46,9 @@
     </div>
     <!-- end -->
 
-      <pre>
-        {{ product}}
-      </pre>
+    <pre>
+      {{ product}}
+    </pre>
 
     <div class="py-20 lg:py-124">
       <div class="container">
@@ -75,13 +76,11 @@
     </div>
     <!-- end -->
 
-    <div>
-      <div class="container">
-        <div class="ex-small:grid grid-cols-12">
-          <div v-for="(item, indexItem) in FunItems" :key="indexItem"
-            class="col-span-6 lg:col-span-3 fun-column duration-300 hover:shadow-bs8">
-            <FunFact :title="item.title" :text="item.text" />
-          </div>
+    <div class="container">
+      <div class="ex-small:grid grid-cols-12">
+        <div v-for="(item, indexItem) in FunItems" :key="indexItem"
+          class="col-span-6 lg:col-span-3 fun-column duration-300 hover:shadow-bs8">
+          <FunFact :title="item.title" :text="item.text" />
         </div>
       </div>
     </div>
@@ -461,8 +460,10 @@
       </div>
       <!-- end -->
     </div>
+    <FooterTwo />
   </div>
 </template>
+
 <script>
 import BusinessCard from "~/components/BusinessCard.vue";
 import FunFact from "~/components/Fun.vue";
@@ -471,10 +472,13 @@ import PurchaseCard from "~/components/PurchaseCard.vue";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import PRODUCT_DEMO from '~/graphql/productDemo'
 import "swiper/css/swiper.css";
+import HeaderTwo from "~/components/Header/HeaderTwo.vue";
+import FooterTwo from "~/components/Footer/FooterTwo.vue";
 
 export default {
-  layout: "demo",
+  layout: "empty",
   name: "ProductDemo",
+  components: { HeaderTwo, FooterTwo },
   head: {
     title: 'Product Demo Page',
     meta: [

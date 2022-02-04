@@ -27,48 +27,48 @@
         <p class="text-dark-06 text-opacity-60 uppercase mb-2 text-xs">
           SCREENSHOT
         </p>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '1'"
-          v-bind:class="[activetab === '1' ? 'active' : '']"><img class="w-full h-full object-cover"
-            src="~@/assets/images/all-img/tab1.png" alt="" /></a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '2'"
-          v-bind:class="[activetab === '2' ? 'active' : '']"><img class="w-full h-full object-cover"
-            src="~@/assets/images/all-img/2.png" alt="" /></a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '3'"
-          v-bind:class="[activetab === '3' ? 'active' : '']"><img class="w-full h-full object-cover"
-            src="~@/assets/images/all-img/3.png" alt="" /></a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '4'"
-          v-bind:class="[activetab === '4' ? 'active' : '']"><img class="w-full h-full object-cover"
-            src="~@/assets/images/all-img/tab1.png" alt="" /></a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '5'"
-          v-bind:class="[activetab === '5' ? 'active' : '']"><img class="w-full h-full object-cover"
-            src="~@/assets/images/all-img/tab1.png" alt="" /></a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '6'"
-          v-bind:class="[activetab === '6' ? 'active' : '']"><img class="w-full h-full object-cover"
-            src="~@/assets/images/all-img/tab1.png" alt="" /></a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '7'"
-          v-bind:class="[activetab === '7' ? 'active' : '']"><img class="w-full h-full object-cover"
-            src="~@/assets/images/all-img/tab1.png" alt="" /></a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '8'"
-          v-bind:class="[activetab === '8' ? 'active' : '']"><img class="w-full h-full object-cover"
-            src="~@/assets/images/all-img/tab1.png" alt="" /></a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '9'"
-          v-bind:class="[activetab === '9' ? 'active' : '']"><img class="w-full h-full object-cover"
-            src="~@/assets/images/all-img/tab1.png" alt="" /></a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '10'"
-          v-bind:class="[activetab === '10' ? 'active' : '']"><img class="w-full h-full object-cover"
-            src="~@/assets/images/all-img/tab1.png" alt="" /></a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '11'"
-          v-bind:class="[activetab === '11' ? 'active' : '']"><img class="w-full h-full object-cover"
-            src="~@/assets/images/all-img/tab1.png" alt="" /></a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '12'"
-          v-bind:class="[activetab === '12' ? 'active' : '']"><img class="w-full h-full object-cover"
-            src="~@/assets/images/all-img/tab1.png" alt="" /></a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '13'"
-          v-bind:class="[activetab === '13' ? 'active' : '']"><img class="w-full h-full object-cover"
-            src="~@/assets/images/all-img/tab1.png" alt="" /></a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '14'"
-          v-bind:class="[activetab === '14' ? 'active' : '']"><img class="w-full h-full object-cover"
-            src="~@/assets/images/all-img/tab1.png" alt="" /></a>
+        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '1'">
+          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
+        </a>
+        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '2'">
+          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/2.png" alt="" />
+        </a>
+        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '3'">
+          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/3.png" alt="" />
+        </a>
+        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '4'">
+          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
+        </a>
+        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '5'">
+          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
+        </a>
+        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '6'">
+          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
+        </a>
+        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '7'">
+          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
+        </a>
+        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '8'">
+          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
+        </a>
+        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '9'">
+          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
+        </a>
+        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '10'">
+          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
+        </a>
+        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '11'">
+          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
+        </a>
+        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '12'">
+          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
+        </a>
+        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '13'">
+          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
+        </a>
+        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '14'">
+          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
+        </a>
       </div>
       <div class="content bg-dark-06 p-6 md:p-12 w-full hidden lg:block">
         <div v-if="activetab === '1'" class="tabcontent">
