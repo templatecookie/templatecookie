@@ -46,45 +46,14 @@
     </div>
     <!-- end -->
 
-    <pre>
+    <!-- <pre>
       {{ product}}
-    </pre>
+    </pre> -->
 
-    <div class="py-20 lg:py-124">
-      <div class="container">
-        <div class="md:grid grid-cols-12 gap-6 mb-12 items-center">
-          <div class="col-span-7 mb-4 md:mb-0">
-            <h2 class="text-dark-06 text-body-32px md:text-4xl xl:text-title font-semibold tracking-01">
-              Explore Relik<br />
-              Notable Feature
-            </h2>
-          </div>
-          <div class="col-span-5">
-            <p class="text-dark-06 text-lg sm:text-xl font-light">
-              You get all Bootstrap components fully customized. Besides, you
-              receive numerous plugins out of the box and ready to use
-            </p>
-          </div>
-        </div>
-        <div class="grid grid-cols-12 gap-6">
-          <div v-for="(item, itemIndex) in buisnessCard" :key="itemIndex"
-            class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6">
-            <BusinessCard className="shadow-bs8 border border-gray-e6" :title="item.title" :text="item.text" />
-          </div>
-        </div>
-      </div>
-    </div>
+    <product-top-features />
     <!-- end -->
 
-    <div class="container">
-      <div class="ex-small:grid grid-cols-12">
-        <div v-for="(item, indexItem) in FunItems" :key="indexItem"
-          class="col-span-6 lg:col-span-3 fun-column duration-300 hover:shadow-bs8">
-          <FunFact :title="item.title" :text="item.text" />
-        </div>
-      </div>
-    </div>
-    <!-- end  -->
+    <fun-fact />
 
     <div class="py-20 lg:py-124">
       <div class="container">
@@ -174,86 +143,7 @@
       </div>
       <!-- end -->
 
-      <div class="py-20 lg:py-124">
-        <div class="container">
-          <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
-            <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">
-              Explore our Gilio team services.
-            </h3>
-            <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
-              Feature Name 01
-            </h2>
-            <p class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light">
-              Nunc convallis semper justo quis tempor. Praesent molestie, lorem
-              sed imperdiet tempor, libero urna semper urna, facilisis vulputate
-              velit arcu vitae mi. Donec ac nisi ex.
-            </p>
-          </div>
-          <div id="tabs" class="lg:grid grid-cols-12 gap-6">
-            <div class="col-span-8 order-2">
-              <div class="content lg:pl-6 mb-6">
-                <div v-if="activetab === '1'" class="tabcontent">
-                  <div class="h-340 md:h-600">
-                    <img class="w-full h-full object-cover rounded-20 overflow-hidden"
-                      src="~@/assets/images/all-img/one.jpg" alt="" />
-                  </div>
-                </div>
-                <div v-if="activetab === '2'" class="tabcontent">
-                  <div class="h-340 md:h-600">
-                    <img class="w-full h-full object-cover rounded-20 overflow-hidden"
-                      src="~@/assets/images/all-img/two.jpg" alt="" />
-                  </div>
-                </div>
-                <div v-if="activetab === '3'" class="tabcontent">
-                  <div class="h-340 md:h-600">
-                    <img class="w-full h-full object-cover rounded-20 overflow-hidden"
-                      src="~@/assets/images/all-img/three.jpg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-span-4">
-              <div class="tabs">
-                <div
-                  class="block mb-6 tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300"
-                  v-on:click="activetab = '1'" v-bind:class="[activetab === '1' ? 'active' : '']">
-                  <h3 class="text-dark-06 font-medium text-2xl mb-4 duration-300">
-                    Back-end Development
-                  </h3>
-                  <p class="text-dark-42 test-base font-light duration-300">
-                    Vestibulum ante ipsum primis in faucibus orci luctus et
-                    ultrices posuere cubilia curae; Sed nec diam gravida,
-                    convallis lectus ut.
-                  </p>
-                </div>
-                <div
-                  class="block mb-6 tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300"
-                  v-on:click="activetab = '2'" v-bind:class="[activetab === '2' ? 'active' : '']">
-                  <h3 class="text-dark-06 font-medium text-2xl mb-4 duration-300">
-                    Back-end Development
-                  </h3>
-                  <p class="text-dark-42 test-base font-light duration-300">
-                    Vestibulum ante ipsum primis in faucibus orci luctus et
-                    ultrices posuere cubilia curae; Sed nec diam gravida,
-                    convallis lectus ut.
-                  </p>
-                </div>
-                <div class="block tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300"
-                  v-on:click="activetab = '3'" v-bind:class="[activetab === '3' ? 'active' : '']">
-                  <h3 class="text-dark-06 font-medium text-2xl mb-4 duration-300">
-                    Back-end Development
-                  </h3>
-                  <p class="text-dark-42 test-base font-light duration-300">
-                    Vestibulum ante ipsum primis in faucibus orci luctus et
-                    ultrices posuere cubilia curae; Sed nec diam gravida,
-                    convallis lectus ut.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <product-feature-screenshots />
       <!-- end -->
 
       <div class="py-20 lg:py-124 bg-gray-f0">
@@ -290,21 +180,7 @@
       </div>
       <!-- end -->
 
-      <div class="py-20 lg:py-124">
-        <div class="container">
-          <div class="text-center mb-8 lg:mb-12">
-            <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
-              45+ Beautiful hand-crafted pages
-            </h2>
-          </div>
-          <div class="grid grid-cols-12 gap-6">
-            <div v-for="(item, itemIndex) in linkThumb" :key="itemIndex"
-              class="col-span-12 xl:col-span-3 lg:col-span-6 md:col-span-6">
-              <LinkThumb :img="item.img" :title="item.title" :url="item.url" />
-            </div>
-          </div>
-        </div>
-      </div>
+      <product-pages />
       <!-- end -->
 
       <div class="pt-20 lg:pt-124 bg-dark-06">
@@ -359,92 +235,10 @@
       </div>
       <!-- end -->
 
-      <div class="py-20 lg:py-124">
-        <div class="container">
-          <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
-            <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
-              Folder Structure
-            </h2>
-            <p class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light font-light">
-              Nunc convallis semper justo quis tempor. Praesent molestie, lorem
-              sed imperdiet tempor, libero urna semper urna
-            </p>
-          </div>
-          <div class="relative">
-            <swiper class="swiper shadow-bs012 rounded-xl" :options="swiperOptionTwo">
-              <swiper-slide><img class="w-full h-full rounded-xl" src="~@/assets/images/all-img/slider4.png" alt="" />
-              </swiper-slide>
-              <swiper-slide><img class="w-full h-full rounded-xl" src="~@/assets/images/all-img/slider4.png" alt="" />
-              </swiper-slide>
-              <swiper-slide><img class="w-full h-full rounded-xl" src="~@/assets/images/all-img/slider4.png" alt="" />
-              </swiper-slide>
-              <swiper-slide><img class="w-full h-full rounded-xl" src="~@/assets/images/all-img/slider4.png" alt="" />
-              </swiper-slide>
-              <swiper-slide><img class="w-full h-full rounded-xl" src="~@/assets/images/all-img/slider4.png" alt="" />
-              </swiper-slide>
-            </swiper>
-            <div class="custom-pagination flex justify-center pt-16">
-              <div class="swiper-pagination" slot="pagination"></div>
-            </div>
-            <div class="single-slider">
-              <div class="swiper-button-prev ml-6" slot="button-prev">
-                <span
-                  class="w-12 h-12 rounded-md flex items-center justify-center flex-shrink-0 bg-black bg-opacity-50 duration-300 hover:bg-blue-0b">
-                  <img src="~@/assets/images/svg/caret-left.svg" alt="" />
-                </span>
-              </div>
-              <div class="swiper-button-next mr-6" slot="button-next">
-                <span
-                  class="w-12 h-12 rounded-md flex items-center justify-center flex-shrink-0 bg-black bg-opacity-50 duration-300 hover:bg-blue-0b arrow-icon">
-                  <img src="~@/assets/images/svg/caret-right.svg" alt="" />
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <screenshots />
       <!-- end -->
 
-      <div class="py-20 lg:py-124 bg-gray-f5">
-        <div class="container">
-          <div class="lg:grid grid-cols-2 gap-6">
-            <div class="flex items-center mb-6 lg:mb-0">
-              <div class="lg:pr-20 text-center lg:text-left">
-                <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
-                  Folder Structure
-                </h2>
-                <p class="text-dark-06 text-base sm:text-lg font-light">
-                  Nunc convallis semper justo quis tempor. Praesent molestie,
-                  lorem sed imperdiet tempor, libero urna semper urna, facilisis
-                  vulputate velit arcu vitae mi. Donec ac nisi ex.
-                </p>
-              </div>
-            </div>
-            <div class="">
-              <pre
-                class="border border-gray-e6 p-8 rounded-2xl bg-white text-sm text-dark-06 pb-0 h-364 overflow-y-scroll custom-scroll">
-    ├── templatecookie
-        ├── assets
-          ├── css
-          ├── fonts 
-          ├── images
-          ├── js
-        ├── components
-        ├── pages
-          ├── index.vue
-          ├── hire-us.vue
-          ├── product-demo.vue
-          ├── product-details.vue
-          ├── product-list.vue
-          ├── billing.vue
-          ├── billing.vue
-
-                </pre>
-            </div>
-          </div>
-        </div>
-      </div>
+      <folder-structure />
       <!-- end -->
 
       <div class="pt-20 lg:pt-124 md:pb-0 pb-20">
@@ -466,19 +260,23 @@
 
 <script>
 import BusinessCard from "~/components/BusinessCard.vue";
-import FunFact from "~/components/Fun.vue";
-import LinkThumb from "~/components/LinkThumb.vue";
 import PurchaseCard from "~/components/PurchaseCard.vue";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
-import PRODUCT_DEMO from '~/graphql/productDemo'
 import "swiper/css/swiper.css";
+import PRODUCT_DEMO from '~/graphql/productDemo'
 import HeaderTwo from "~/components/Header/HeaderTwo.vue";
 import FooterTwo from "~/components/Footer/FooterTwo.vue";
+import ProductTopFeatures from '~/components/Demo/ProductTopFeatures.vue';
+
+import ProductFeatureScreenshots from '../../components/Demo/ProductFeatureScreenshots.vue';
+import FolderStructure from '../../components/Demo/FolderStructure.vue';
+import Screenshots from '../../components/Demo/Screenshots.vue';
+import ProductPages from '../../components/Demo/ProductPages.vue';
+import FunFact from '../../components/Demo/FunFact.vue';
 
 export default {
   layout: "empty",
   name: "ProductDemo",
-  components: { HeaderTwo, FooterTwo },
   head: {
     title: 'Product Demo Page',
     meta: [
@@ -507,160 +305,24 @@ export default {
   },
   components: {
     BusinessCard,
-    FunFact,
-    LinkThumb,
     PurchaseCard,
     Swiper,
     SwiperSlide,
+    ProductTopFeatures,
+    HeaderTwo,
+    FooterTwo,
+    ProductFeatureScreenshots,
+    FolderStructure,
+    Screenshots,
+    ProductPages,
+    FunFact,
   },
 
   data() {
     return {
-      activetab: "1",
       DemoHero: {
         backgroundImage: "url(https://i.imgur.com/aBzS4DP.png)",
       },
-      buisnessCard: [{
-          title: "Project Introduction",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "User Experience Design",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "User Interface Design",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "Front-end Development",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "Back-end Development",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "Delivery & Client Feedback",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-      ],
-      FunItems: [{
-          title: "55+",
-          text: "High-Quality Pages",
-        },
-        {
-          title: "55+",
-          text: "Figma UI Components",
-        },
-        {
-          title: "24/7",
-          text: "Dedicated Support all",
-        },
-        {
-          title: "100%",
-          text: "Money-Back Guarantee",
-        },
-        {
-          title: "Doc",
-          text: "Detailed Documentation",
-        },
-        {
-          title: "Global",
-          text: "Auto-Updatedable Style Guide",
-        },
-        {
-          title: "Inter",
-          text: "Free Google Font Used",
-        },
-        {
-          title: "Fig",
-          text: "Well-Organize & Easy-to-use File",
-        },
-      ],
-      linkThumb: [{
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/z3lpl2i.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/btnaKPg.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/WeNt6qZ.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/aXNiPxi.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/LrX4y5U.png",
-        },
-
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/7A80zMR.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/nnXHQ9w.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/OkWf1Gj.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/BRCMvYp.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/Z3NJCTN.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/2kaiEQa.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/HLreajz.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/mbarwY4.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/8g0dDml.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/YMm1zRS.png",
-        },
-
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/gE2RT42.png",
-        },
-      ],
       swiperOptionOne: {
         slidesPerView: 1,
         spaceBetween: 24,
@@ -687,24 +349,7 @@ export default {
           },
         },
       },
-      swiperOptionTwo: {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        centeredSlides: true,
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      },
+      
 
       PurchaseItems: [{
           icon: "https://i.imgur.com/xSZYYEg.png",
