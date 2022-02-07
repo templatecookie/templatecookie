@@ -12,7 +12,7 @@
                   alt="" />
               </div>
               <div class="sm:flex justify-between">
-                <nuxt-link to="/screenshort" _target="blank" class="block sm:mb-0 mb-3 text-center sm:inline-block bg-blue-0b rounded-5 text-sm py-2.5 px-5 text-white duration-300 hover:bg-black">
+                <nuxt-link :to="{ name: 'products-slug-screenshots', params: {slug: productId} }" _target="blank" class="block sm:mb-0 mb-3 text-center sm:inline-block bg-blue-0b rounded-5 text-sm py-2.5 px-5 text-white duration-300 hover:bg-black">
                   <img class="inline-block mr-1.5 duration-300" src="~/assets/images/svg/image-square.svg" alt="" />
                   Screenshots
                 </nuxt-link>
@@ -383,7 +383,7 @@ import Accordion from "~/components/Accordion.vue";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/css/swiper.css";
 import PRODUCT_DETAILS from '~/graphql/productDetails'
-import ProductCard from '../../components/ProductCard.vue';
+import ProductCard from '~/components/ProductCard.vue';
 
 export default {
   name: "ProductDetails",
