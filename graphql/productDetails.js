@@ -76,6 +76,14 @@ query product($slug: ID!){
             }
           }
         }
+        category {
+          data {
+            attributes {
+              name
+              slug
+            }
+          }
+        }
       }
     }
   }

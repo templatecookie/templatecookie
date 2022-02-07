@@ -282,20 +282,24 @@
                 Featured Product
               </h2>
             </div>
+            <!-- <div v-for="product in relatedProducts" :key="product.id">
+              <pre>
+                {{ product.id }}
+                {{ product.id }}
+                {{ product }}
+              </pre>
+            </div> -->
 
             <!-- Features Card  -->
-            <div class="relative">
+            <div class="relative" v-if="relatedProducts">
               <swiper class="swiper" :options="swiperOptionThree">
-                <swiper-slide>
+                <!-- <swiper-slide>
                   <div class="relative overflow-hidden p-6 border border-gray-e6 rounded-2xl product-card">
-                    <!-- Product img preview -->
                     <nuxt-link to="#"
                       class="relative inline-block overflow-hidden rounded-lg w-full product-card__img-wrapper mb-4">
                       <img class="w-full h-full object-cover" src="~@/assets/images/cards/img-six.png" alt="" />
                     </nuxt-link>
-                    <!-- Product info  -->
                     <div>
-                      <!-- Tags  -->
                       <h6 class="tracking-widest font-normal text-xs text-pink-75 uppercase m-0 mb-1">
                         Figma, HTML
                       </h6>
@@ -307,9 +311,7 @@
                         classifieds ads listing Figma template designed for who
                         want to start selling a product online.
                       </p>
-                      <!-- actions content  -->
                       <div class="flex flex-col sm:flex-row items-end sm:items-center sm:justify-between">
-                        <!-- Purchase  -->
                         <div class="flex items-center justify-center w-full sm:w-auto space-x-3 order-2 sm:order-1">
                           <div>
                             <nuxt-link to="#"
@@ -327,7 +329,6 @@
                             </button>
                           </div>
                         </div>
-                        <!-- Price  -->
                         <div class="mb-4 sm:mb-0 order-1 sm:order-2">
                           <h5 class="text-xl font-medium uppercase text-pink-75">
                             $13
@@ -336,111 +337,10 @@
                       </div>
                     </div>
                   </div>
-                </swiper-slide>
-
-                <swiper-slide>
-                  <div class="relative overflow-hidden p-6 border border-gray-e6 rounded-2xl product-card">
-                    <!-- Product img preview -->
-                    <nuxt-link to="#"
-                      class="relative inline-block overflow-hidden rounded-lg w-full product-card__img-wrapper mb-4">
-                      <img class="w-full h-full object-cover" src="~@/assets/images/cards/img-one.png" alt="" />
-                    </nuxt-link>
-                    <!-- Product info  -->
-                    <div>
-                      <!-- Tags  -->
-                      <h6 class="tracking-widest font-normal text-xs text-pink-75 uppercase m-0 mb-1">
-                        Figma, HTML
-                      </h6>
-                      <h2 class="text-lg text-dark-06 mb-3 font-normal">
-                        Onest - Classified Ad Listing
-                      </h2>
-                      <p class="text-dark-42 text-sm font-light mb-6">
-                        Onest is a creatively crafted, clean, modern, and classy
-                        classifieds ads listing Figma template designed for who
-                        want to start selling a product online.
-                      </p>
-                      <!-- actions content  -->
-                      <div class="flex flex-col sm:flex-row items-end sm:items-center sm:justify-between">
-                        <!-- Purchase  -->
-                        <div class="flex items-center justify-center w-full sm:w-auto space-x-3 order-2 sm:order-1">
-                          <div>
-                            <nuxt-link to="#"
-                              class="flex items-center overflow-hidden px-4 py-2 rounded-5 text-sm font-medium border-1.5 border-blue-0b text-blue-0b group whitespace-nowrap">
-                              Learn More
-                              <span class="inline-block ml-3">
-                                <img src="~/assets/images/svg/arrow.svg" alt="arrow-icon" />
-                              </span>
-                            </nuxt-link>
-                          </div>
-                          <div class="flex-shrink-0">
-                            <button
-                              class="inline-block overflow-hidden p-2.5 bg-gray-f5 hover:bg-gray-200 transition-all rounded-7">
-                              <img src="~/assets/images/svg/cart.svg" alt="cart-icon" />
-                            </button>
-                          </div>
-                        </div>
-                        <!-- Price  -->
-                        <div class="mb-4 sm:mb-0 order-1 sm:order-2">
-                          <h5 class="text-xl font-medium uppercase text-pink-75">
-                            $13
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </swiper-slide>
-
-                <swiper-slide>
-                  <div class="relative overflow-hidden p-6 border border-gray-e6 rounded-2xl product-card">
-                    <!-- Product img preview -->
-                    <nuxt-link to="#"
-                      class="relative inline-block overflow-hidden rounded-lg w-full product-card__img-wrapper mb-4">
-                      <img class="w-full h-full object-cover" src="~@/assets/images/cards/img-two.png" alt="" />
-                    </nuxt-link>
-                    <!-- Product info  -->
-                    <div>
-                      <!-- Tags  -->
-                      <h6 class="tracking-widest font-normal text-xs text-pink-75 uppercase m-0 mb-1">
-                        Figma, HTML
-                      </h6>
-                      <h2 class="text-lg text-dark-06 mb-3 font-normal">
-                        Onest - Classified Ad Listing
-                      </h2>
-                      <p class="text-dark-42 text-sm font-light mb-6">
-                        Onest is a creatively crafted, clean, modern, and classy
-                        classifieds ads listing Figma template designed for who
-                        want to start selling a product online.
-                      </p>
-                      <!-- actions content  -->
-                      <div class="flex flex-col sm:flex-row items-end sm:items-center sm:justify-between">
-                        <!-- Purchase  -->
-                        <div class="flex items-center justify-center w-full sm:w-auto space-x-3 order-2 sm:order-1">
-                          <div>
-                            <nuxt-link to="#"
-                              class="flex items-center overflow-hidden px-4 py-2 rounded-5 text-sm font-medium border-1.5 border-blue-0b text-blue-0b group whitespace-nowrap">
-                              Learn More
-                              <span class="inline-block ml-3">
-                                <img src="~/assets/images/svg/arrow.svg" alt="arrow-icon" />
-                              </span>
-                            </nuxt-link>
-                          </div>
-                          <div class="flex-shrink-0">
-                            <button
-                              class="inline-block overflow-hidden p-2.5 bg-gray-f5 hover:bg-gray-200 transition-all rounded-7">
-                              <img src="~/assets/images/svg/cart.svg" alt="cart-icon" />
-                            </button>
-                          </div>
-                        </div>
-                        <!-- Price  -->
-                        <div class="mb-4 sm:mb-0 order-1 sm:order-2">
-                          <h5 class="text-xl font-medium uppercase text-pink-75">
-                            $13
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </swiper-slide>
+                </swiper-slide> -->
+                <client-only>
+                  <product-card v-for="product in relatedProducts" :product="product.attributes" :key="product.id" :id="product.id"></product-card>
+                </client-only>
               </swiper>
               <!-- end slider -->
               <div class="custom-pagination flex items-center justify-center pt-24">
@@ -483,6 +383,7 @@ import Accordion from "~/components/Accordion.vue";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/css/swiper.css";
 import PRODUCT_DETAILS from '~/graphql/productDetails'
+import ProductCard from '../../components/ProductCard.vue';
 
 export default {
   name: "ProductDetails",
@@ -491,6 +392,7 @@ export default {
     Accordion,
     SwiperSlide,
     Swiper,
+    ProductCard,
   },
   head: {
     title: 'Product Details Page',
