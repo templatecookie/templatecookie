@@ -1,61 +1,20 @@
 <template>
   <div>
     <HeaderTwo />
-    <div class="pb-36 pt-56 lg:pb-222 lg:pt-300 bg-dark-06 bg-content bg-right-bottom bg-no-repeat hero-demo"
-      :style="DemoHero">
-      <div class="container">
-        <div class="max-w-2xl sm:text-left text-center relative">
-          <h1 class="tracking-01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8">
-            {{ product.name }}
-          </h1>
-          <p class="text-white font-light text-lg md:text-xl max-w-536">
-            {{ product.short_description }}
-          </p>
-          <div class="mt-8">
-            <a :href="product.buy_url" target="_blank" class="block text-center sm:inline-block border-1.5 border-blue-0b bg-blue-0b font-medium rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 mb-3 sm:mb-0 sm:mr-3">
-              Buy Now
-              <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="" />
-            </a>
-            <a :href="product.preview_url" target="_blank"
-              class="block text-center sm:inline-block font-medium border-1.5 border-white rounded-7 py-3.5 px-8 text-body-17 text-white duration-300">
-              Live Preview
-              </a>
-          </div>
-          <div
-            class="shadow-bs8 rounded-xl p-6 bg-white border border-gray-e6 flex items-center justify-center sm:justify-start absolute -bottom-44 lg:-bottom-64 sm:left-0 sm:transform-none transform -translate-x-1/2 left-1/2 sm:w-auto w-full">
-            <p class="text-dark-06 text-body-14/24 mr-4 text-left">
-              Compatible with:
-            </p>
-            <ul class="flex space-x-3">
-              <li>
-                <nuxt-link to="#"><img src="~@/assets/images/svg/icon1.svg" alt="" /></nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="#"><img src="~@/assets/images/svg/icon2.svg" alt="" /></nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="#"><img src="~@/assets/images/svg/icon3.svg" alt="" /></nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="#"><img src="~@/assets/images/svg/icon4.svg" alt="" /></nuxt-link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end -->
-
-    <!-- <pre>
-      {{ product}}
-    </pre> -->
-
+    <product-hero :product="product" />
+    <product-fun-fact />
     <product-top-features />
-    <!-- end -->
-
-    <fun-fact />
 
     <div class="py-20 lg:py-124">
+      <product-screenshots />
+      <product-feature-screenshots />
+      <product-pages />
+      <product-folder-structure />
+      <product-support />
+      <call-to-action />
+    </div>
+
+    <!-- <div class="py-20 lg:py-124">
       <div class="container">
         <div class="lg:grid grid-cols-12 gap-6">
           <div class="col-span-6 lg:order-2">
@@ -84,8 +43,6 @@
           </div>
         </div>
       </div>
-      <!-- end -->
-
       <div class="py-20 lg:py-124">
         <div class="container">
           <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
@@ -106,9 +63,6 @@
           </div>
         </div>
       </div>
-      <!-- end -->
-
-
       <div class="py-20 lg:py-124 bg-gray-f0">
         <div class="container">
           <div class="lg:grid grid-cols-12 gap-6">
@@ -141,11 +95,6 @@
           </div>
         </div>
       </div>
-      <!-- end -->
-
-      <product-feature-screenshots />
-      <!-- end -->
-
       <div class="py-20 lg:py-124 bg-gray-f0">
         <div class="container">
           <div class="lg:grid grid-cols-12 gap-6">
@@ -178,101 +127,25 @@
           </div>
         </div>
       </div>
-      <!-- end -->
-
-      <product-pages />
-      <!-- end -->
-
-      <div class="pt-20 lg:pt-124 bg-dark-06">
-        <div class="container">
-          <div class="text-center mb-24">
-            <h2 class="text-white text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
-              Let’s Get Started
-            </h2>
-            <p class="text-white text-base sm:text-lg mb-6 lg:mb-12 font-light">
-              Pick a demo and start building your WordPress website today.
-            </p>
-            <nuxt-link to="/"
-              class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-black">
-              Purchase Now
-              <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></nuxt-link>
-          </div>
-        </div>
-        <div>
-          <swiper class="swiper" :options="swiperOptionOne">
-            <swiper-slide class="slider-full">
-              <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png"
-                alt="" /></swiper-slide>
-            <swiper-slide class="slider-full">
-              <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png"
-                alt="" /></swiper-slide>
-            <swiper-slide class="slider-full">
-              <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png"
-                alt="" /></swiper-slide>
-            <swiper-slide class="slider-full">
-              <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png"
-                alt="" /></swiper-slide>
-            <swiper-slide class="slider-full">
-              <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png"
-                alt="" /></swiper-slide>
-            <swiper-slide class="slider-full">
-              <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png"
-                alt="" /></swiper-slide>
-            <swiper-slide class="slider-full">
-              <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png"
-                alt="" /></swiper-slide>
-            <swiper-slide class="slider-full">
-              <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png"
-                alt="" /></swiper-slide>
-            <swiper-slide class="slider-full">
-              <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png"
-                alt="" /></swiper-slide>
-            <swiper-slide class="slider-full">
-              <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png"
-                alt="" /></swiper-slide>
-          </swiper>
-        </div>
-      </div>
-      <!-- end -->
-
-      <screenshots />
-      <!-- end -->
-
-      <folder-structure />
-      <!-- end -->
-
-      <div class="pt-20 lg:pt-124 md:pb-0 pb-20">
-        <div class="container">
-          <div class="grid grid-cols-12 gap-6">
-            <div v-for="(item, itemIndex) in PurchaseItems" :key="itemIndex"
-              class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 purchase-card-wrap">
-              <PurchaseCard :title="item.title" :text="item.text" btnUrl="#" :icon="item.icon"
-                :btnText="item.btnText" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end -->
-    </div>
-    <FooterTwo />
+    </div> -->
   </div>
 </template>
 
 <script>
 import BusinessCard from "~/components/BusinessCard.vue";
 import PurchaseCard from "~/components/PurchaseCard.vue";
-import { Swiper, SwiperSlide } from "vue-awesome-swiper";
-import "swiper/css/swiper.css";
 import PRODUCT_DEMO from '~/graphql/productDemo'
 import HeaderTwo from "~/components/Header/HeaderTwo.vue";
-import FooterTwo from "~/components/Footer/FooterTwo.vue";
-import ProductTopFeatures from '~/components/Demo/ProductTopFeatures.vue';
 
+import ProductTopFeatures from '~/components/Demo/ProductTopFeatures.vue';
 import ProductFeatureScreenshots from '../../components/Demo/ProductFeatureScreenshots.vue';
-import FolderStructure from '../../components/Demo/FolderStructure.vue';
-import Screenshots from '../../components/Demo/Screenshots.vue';
+import ProductFolderStructure from '../../components/Demo/ProductFolderStructure.vue';
+import ProductScreenshots from '../../components/Demo/ProductScreenshots.vue';
 import ProductPages from '../../components/Demo/ProductPages.vue';
-import FunFact from '../../components/Demo/FunFact.vue';
+import ProductFunFact from '../../components/Demo/ProductFunFact.vue';
+import ProductHero from "../../components/Demo/ProductHero.vue";
+import ProductSupport from '../../components/Demo/ProductSupport.vue';
+import CallToAction from '../../components/Demo/CallToAction.vue';
 
 export default {
   layout: "empty",
@@ -306,71 +179,16 @@ export default {
   components: {
     BusinessCard,
     PurchaseCard,
-    Swiper,
-    SwiperSlide,
     ProductTopFeatures,
     HeaderTwo,
-    FooterTwo,
     ProductFeatureScreenshots,
-    FolderStructure,
-    Screenshots,
+    ProductFolderStructure,
+    ProductScreenshots,
     ProductPages,
-    FunFact,
-  },
-
-  data() {
-    return {
-      DemoHero: {
-        backgroundImage: "url(https://i.imgur.com/aBzS4DP.png)",
-      },
-      swiperOptionOne: {
-        slidesPerView: 1,
-        spaceBetween: 24,
-        loop: true,
-        // autoplay: {
-        //   delay: 1600,
-        //   disableOnInteraction: false,
-        // },
-        breakpoints: {
-          1199: {
-            slidesPerView: 4,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-          640: {
-            slidesPerView: 2,
-          },
-          320: {
-            slidesPerView: 1,
-          },
-        },
-      },
-      
-
-      PurchaseItems: [{
-          icon: "https://i.imgur.com/xSZYYEg.png",
-          title: "Let’s Purchase This Product",
-          text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
-          btnText: "Purchase Now",
-        },
-        {
-          icon: "https://i.imgur.com/OALz67a.png",
-          title: "Well-Organize Documentation",
-          text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
-          btnText: "Documentation",
-        },
-        {
-          icon: "https://i.imgur.com/sbCT8wF.png",
-          title: "24/7 Customer Support",
-          text: "Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes.",
-          btnText: "Get Support",
-        },
-      ],
-    };
+    ProductFunFact,
+    ProductHero,
+    ProductSupport,
+    CallToAction
   },
 };
 </script>
@@ -392,7 +210,6 @@ export default {
 }
 
 // swiper single silder
-
 .single-slider {
 
   .swiper-button-prev,
