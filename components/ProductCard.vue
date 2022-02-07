@@ -1,6 +1,6 @@
 <template>
     <!-- card wrapper  -->
-    <div class="relative overflow-hidden p-8 border border-gray-e6 rounded-2xl product-card w-full" :class="large ? 'product-card--lg ' : 'product-card--sm'">
+    <div class="relative overflow-hidden p-8 border border-gray-e6 rounded-2xl product-card w-full" :class="large ? 'p-8 product-card--lg' : 'p-6  product-card--sm'">
       <nuxt-link :to="{ name: 'products-slug', params: {slug: id}}" class="product-card__img relative inline-block overflow-hidden rounded-lg w-full product-card__img-wrapper mb-4">
         <img :src="fixImageUrl(product.banner)" alt="product-img" class="w-full h-full object-cover overflow-hidden" />
       </nuxt-link>
