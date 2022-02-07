@@ -3,14 +3,13 @@
     <div class="flex flex-col sm:flex-row items-center justify-between p-8 shadow-bs013 bg-gray-f5">
       <!-- text content -->
       <div class="mb-6 sm:mb-0">
-        <p class="text-body-18 capitalize text-dark-06">
-          Relik - Admin Dashboard Figma Template
-        </p>
+        <nuxt-link :to="{ name: 'products-slug', params: {slug: productId}}" class="text-body-18 capitalize text-dark-06">
+          {{ product.name }}
+        </nuxt-link>
       </div>
       <!-- action  -->
       <div>
-        <nuxt-link to="#"
-          class="flex items-center justify-center text-white hover:text-white text-button capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded px-5 w-full whitespace-nowrap text-center">
+        <a :href="product.buy_url" target="_blank" class="flex items-center justify-center text-white hover:text-white text-button capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded px-5 w-full whitespace-nowrap text-center">
           Buy Now
           <span class="inline-block ml-2">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -19,7 +18,7 @@
                 stroke-linejoin="round" />
             </svg>
           </span>
-        </nuxt-link>
+        </a>
       </div>
     </div>
     <div id="tabs" class="lg:flex">
@@ -27,118 +26,17 @@
         <p class="text-dark-06 text-opacity-60 uppercase mb-2 text-xs">
           SCREENSHOT
         </p>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '1'">
-          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
-        </a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '2'">
-          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/2.png" alt="" />
-        </a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '3'">
-          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/3.png" alt="" />
-        </a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '4'">
-          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
-        </a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '5'">
-          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
-        </a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '6'">
-          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
-        </a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '7'">
-          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
-        </a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '8'">
-          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
-        </a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '9'">
-          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
-        </a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '10'">
-          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
-        </a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '11'">
-          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
-        </a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '12'">
-          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
-        </a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '13'">
-          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
-        </a>
-        <a class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="activetab = '14'">
-          <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
+        <a href="#" class="block mb-2 tab-left-thumb cursor-pointer" v-on:click="defaultImg = item.attributes.url" v-for="item in product.gallery.data" :key="item.id">
+          <img class="w-full h-full object-cover" :src="fixImageUrl(item.attributes.url, true)" alt="" />
         </a>
       </div>
       <div class="content bg-dark-06 p-6 md:p-12 w-full hidden lg:block">
-        <div v-if="activetab === '1'" class="tabcontent">
-          <div>
-            <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
+        <div class="tabcontent">
+          <div v-if="defaultImg">
+            <img class="w-full h-full" :src="fixImageUrl(defaultImg, true)" alt="" />
           </div>
-        </div>
-        <div v-if="activetab === '2'" class="tabcontent">
-          <div>
-            <img class="w-full h-full object-cover" src="~@/assets/images/all-img/2.png" alt="" />
-          </div>
-        </div>
-        <div v-if="activetab === '3'" class="tabcontent">
-          <div>
-            <img class="w-full h-full object-cover" src="~@/assets/images/all-img/3.png" alt="" />
-          </div>
-        </div>
-        <div v-if="activetab === '4'" class="tabcontent">
-          <div>
-            <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
-          </div>
-        </div>
-        <div v-if="activetab === '5'" class="tabcontent">
-          <div>
-            <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
-          </div>
-        </div>
-        <div v-if="activetab === '6'" class="tabcontent">
-          <div>
-            <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
-          </div>
-        </div>
-        <div v-if="activetab === '7'" class="tabcontent">
-          <div>
-            <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
-          </div>
-        </div>
-        <div v-if="activetab === '8'" class="tabcontent">
-          <div>
-            <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
-          </div>
-        </div>
-        <div v-if="activetab === '9'" class="tabcontent">
-          <div>
-            <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
-          </div>
-        </div>
-        <div v-if="activetab === '10'" class="tabcontent">
-          <div>
-            <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
-          </div>
-        </div>
-        <div v-if="activetab === '11'" class="tabcontent">
-          <div>
-            <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
-          </div>
-        </div>
-        <div v-if="activetab === '12'" class="tabcontent">
-          <div>
-            <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
-          </div>
-        </div>
-        <div v-if="activetab === '13'" class="tabcontent">
-          <div>
-            <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
-          </div>
-        </div>
-        <div v-if="activetab === '14'" class="tabcontent">
-          <div>
-            <img class="w-full h-full object-cover" src="~@/assets/images/all-img/tab1.png" alt="" />
+          <div v-else class="flex justify-center items-center">
+            <h3 class="text-white">Please click on image to preview </h3>
           </div>
         </div>
       </div>
@@ -147,6 +45,8 @@
 </template>
 
 <script>
+import PRODUCT_SCREENSHOTS from '~/graphql/productScreenshots'
+
 export default {
   layout: "empty",
   name: "Screenshort",
@@ -162,9 +62,25 @@ export default {
       }
     ],
   },
+
+  async asyncData({ app, params }) {
+    const client = app.apolloProvider.defaultClient;
+    const { slug } = params;
+
+    const { data } = await client.query({
+      query: PRODUCT_SCREENSHOTS,
+      variables: {
+        slug
+      }
+    })
+    
+    const product = data.product.data.attributes;
+    const productId = data.product.data.id;
+    return { product, productId }
+  },
   data() {
     return {
-      activetab: "1",
+      defaultImg: null,
     };
   },
 };

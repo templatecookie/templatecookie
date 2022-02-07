@@ -5,8 +5,12 @@ let mixin = {
     fixUrl(file){
       return `http://localhost:1337${file}`
     },
-    fixImageUrl(image){
-      return `http://localhost:1337${image?.data?.attributes?.url}`
+    fixImageUrl(image, imageUrl = false){
+      if (imageUrl) {
+        return `http://localhost:1337${image}`
+      } else {
+        return `http://localhost:1337${image?.data?.attributes?.url}`
+      }
     }
   }
 };
