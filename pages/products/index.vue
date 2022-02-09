@@ -36,10 +36,10 @@
               <!-- dropdown wrapper  -->
               <div class="flex items-center justify-center lg:justify-end space-x-3 sort-filter">
                 <h5 class="whitespace-nowrap text-body-14 leading-5">
-                  Sort by :
+                  Category :
                 </h5>
                 <div class="w-200">
-                  <v-select label="name" :clearable="false" placeholder="Select Sort" :options="sortList" />
+                  <v-select label="name" :clearable="false" placeholder="Select Sort" :options="categoryList" />
                 </div>
               </div>
             </div>
@@ -118,17 +118,29 @@ export default {
       tabs: [],
       activeTab: "all",
       bannerImg,
-      sortList: ["Popular", "Mosit Viewed"],
+      categoryList: ["All Categories",],
     };
   },
   methods: {
     handleGoToPage(event){
       // console.log(event);
       this.$router.push({ query: { page: event } })
+    },
+  },
+  computed: {
+    categories() {
+      return this.$store.getters.getGlobalData;
     }
   },
-  created() {
-    
+  watch: {
+    categories(newValue) {
+      console.log(newValue);
+    }
+  },
+  mounted() {
+    // this.$nextTick(() => {
+    //   this.loadCategories();
+    // });
   },
 };
 </script>
