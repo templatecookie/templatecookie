@@ -44,10 +44,8 @@
   </footer>
 </template>
 <script>
-import global from '~/mixin/global'
 export default {
   name: "Footer",
   props: ['data'],
-  // mixins: [global],
 };
 </script>

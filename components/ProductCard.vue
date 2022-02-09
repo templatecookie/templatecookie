@@ -54,62 +54,11 @@
         </div>
       </div>
     </div>
-
-    <!-- product card small wrapper  -->
-    <!-- <div class="relative overflow-hidden p-6 border border-gray-e6 rounded-2xl product-card product-card--sm">
-      <nuxt-link to="#"
-        class="product-card__img relative inline-block overflow-hidden rounded-lg w-full product-card__img-wrapper mb-4">
-        <img :src="img" alt="product-img" class="w-full h-full object-cover overflow-hidden" />
-      </nuxt-link>
-       <div class="product-card__text">
-        <h6 class="text-body-12/12  tracking-widest font-normal text-pink-75 uppercase m-0 mb-1">
-          {{ tag }}
-        </h6>
-        <h2 class="text-body-18  text-dark-06 mb-3 font-normal">
-          {{ title }}
-        </h2>
-        <p class="text-body-14/20 text-dark-42 font-light mb-6">
-          {{ text }}
-        </p>
-        <div class="flex justify-between items-center sm:mt-0 mt-6  product-card__actions">
-          <div class="flex items-center space-x-3 order-2 sm:order-1">
-            <div>
-              <nuxt-link to="#"
-                class="flex items-center overflow-hidden border border-blue-0b text-blue-0b rounded-lg group py-3.5 px-9 whitespace-nowrap product-card__button">
-                Learn More
-                <span class="inline-block ml-2">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.75 12H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="currentColor" stroke-width="1.5"
-                      stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </nuxt-link>
-            </div>
-            <div class="flex-shrink-0">
-              <button
-                class="product-card__button-cart inline-block overflow-hidden bg-gray-f5 hover:bg-gray-200 transition-all rounded-lg">
-                <img src="~/assets/images/svg/cart.svg" alt="cart-icon" />
-              </button>
-            </div>
-          </div>
-          <div class=" order-2">
-            <h5 class="text-body-20 font-normal uppercase text-pink-75">
-              ${{ price }}
-            </h5>
-          </div>
-        </div>
-      </div>
-    </div> -->
 </template>
 
 <script>
-import global from '~/mixin/global'
-
 export default {
   name: "ProductCard",
-  // mixins: [global],
   props: {
     large: {
       type: Boolean,
