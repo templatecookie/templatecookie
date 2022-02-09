@@ -2,8 +2,8 @@ import gql from 'graphql-tag';
 
 // export const global = gql`
 export default gql`
-query {
-  products(sort: "publishedAt:desc", pagination: { page: 1, pageSize: 6 }) {
+query products($page: Int!, $pageSize: Int!) {
+  products(sort: "publishedAt:desc", pagination: { page: $page, pageSize: $pageSize }) {
     data {
       id,
       attributes {

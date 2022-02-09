@@ -59,7 +59,7 @@
         </div>
         <!-- pagination   -->
         <div class="flex items-center justify-center py-7">
-          <Pagination />
+          <Pagination :data="pagination" v-on:goToPage="handleGoToPage"/>
         </div>
       </div>
     </section>
@@ -90,8 +90,10 @@ export default {
       }
     ],
   },
-  async asyncData({ app }) {
+  watchQuery: ["page"],
+  async asyncData({ app, query }) {
     const client = app.apolloProvider.defaultClient;
+    const page = parseInt(query.page || 1);
 
     const { data } = await client.query({
       query: PRODUCT_LISTING,
@@ -99,12 +101,17 @@ export default {
 
     let products = await client.query({
       query: ALL_PRODUCTS,
+      variables: {
+        page,
+        pageSize: 2,
+      }
     })
     
     const allProducts = products.data.products.data;
     const productListing = data.productListing.data?.attributes;
+    const pagination = products.data.products?.meta?.pagination;
     
-    return { productListing, allProducts }
+    return { productListing, allProducts, pagination }
   },
   data() {
     return {
@@ -112,139 +119,13 @@ export default {
       activeTab: "all",
       bannerImg,
       sortList: ["Popular", "Mosit Viewed"],
-      bootstrapProduct: [
-        {
-          price: 13,
-          tags: "Figma,Html",
-          img: "https://i.imgur.com/0F0qE3V.png",
-          title: "Onest - Classified Ad Listing ",
-          text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
-        },
-        {
-          price: 18,
-          tags: "Figma",
-          img: "https://i.imgur.com/pFuvaJH.png",
-          title: "Relik - Admin Dashboard",
-          text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
-        },
-        {
-          price: 13,
-          tags: "Figma,Html",
-          img: "https://i.imgur.com/76niUXz.png",
-          title: "Onest - Classified Ad Listing ",
-          text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
-        },
-        {
-          price: 18,
-          tags: "Figma",
-          img: "https://i.imgur.com/YD6WZwi.png",
-          title: "Relik - Admin Dashboard",
-          text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
-        },
-        {
-          price: 13,
-          tags: "Figma,Html",
-          img: "https://i.imgur.com/IwfwAGA.png",
-          title: "Onest - Classified Ad Listing ",
-          text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
-        },
-        {
-          price: 18,
-          tags: "Figma",
-          img: "https://i.imgur.com/wGOemD7.png",
-          title: "Relik - Admin Dashboard",
-          text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
-        },
-      ],
-      vueProduct: [
-        {
-          price: 13,
-          tags: "Figma,Html",
-          img: "https://i.imgur.com/76niUXz.png",
-          title: "Onest - Classified Ad Listing ",
-          text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
-        },
-      ],
-      htmlProduct: [
-        {
-          price: 13,
-          tags: "Figma,Html",
-          img: "https://i.imgur.com/0F0qE3V.png",
-          title: "Onest - Classified Ad Listing ",
-          text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
-        },
-        {
-          price: 18,
-          tags: "Figma",
-          title: "Relik - Admin Dashboard",
-          img: "https://i.imgur.com/pFuvaJH.png",
-          text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
-        },
-        {
-          price: 13,
-          tags: "Figma,Html",
-          img: "https://i.imgur.com/76niUXz.png",
-          title: "Onest - Classified Ad Listing ",
-          text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
-        },
-      ],
-      figmaProduct: [
-        {
-          price: 18,
-          tags: "Figma",
-          title: "Relik - Admin Dashboard",
-          img: "https://i.imgur.com/pFuvaJH.png",
-          text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
-        },
-        {
-          price: 13,
-          tags: "Figma,Html",
-          img: "https://i.imgur.com/76niUXz.png",
-          title: "Onest - Classified Ad Listing ",
-          text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
-        },
-        {
-          price: 18,
-          tags: "Figma",
-          img: "https://i.imgur.com/YD6WZwi.png",
-          title: "Relik - Admin Dashboard",
-          text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
-        },
-        {
-          price: 13,
-          tags: "Figma,Html",
-          img: "https://i.imgur.com/IwfwAGA.png",
-          title: "Onest - Classified Ad Listing ",
-          text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
-        },
-        {
-          price: 18,
-          tags: "Figma",
-          img: "https://i.imgur.com/wGOemD7.png",
-          title: "Relik - Admin Dashboard",
-          text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
-        },
-      ],
-      adobeProduct: [
-        {
-          price: 13,
-          tags: "Figma,Html",
-          img: "https://i.imgur.com/0F0qE3V.png",
-          title: "Onest - Classified Ad Listing ",
-          text: "Onest is a creatively crafted, clean, modern, and classy classifieds ads listing Figma template designed for who want to start selling a product online.",
-        },
-        {
-          price: 18,
-          tags: "Figma",
-          title: "Relik - Admin Dashboard",
-          img: "https://i.imgur.com/pFuvaJH.png",
-          text: "Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a high-quality UI & well-organized Figma file.",
-        },
-      ],
     };
   },
   methods: {
-    
+    handleGoToPage(event){
+      // console.log(event);
+      this.$router.push({ query: { page: event } })
+    }
   },
   created() {
     
