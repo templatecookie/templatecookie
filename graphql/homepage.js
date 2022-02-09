@@ -121,6 +121,22 @@ query {
               }
             }
           }
+          features {
+            id,
+            title
+            description
+            theme
+            icon {
+              data {
+                attributes {
+                  name,
+                  ext,
+                  alternativeText
+                  url
+                }
+              }
+            }
+          }
         }
         whyUsSection {
           id

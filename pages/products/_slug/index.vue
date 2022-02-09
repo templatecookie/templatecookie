@@ -149,7 +149,7 @@
                     </div>
                     <div>
                       <h3 class="text-blue-0b font-semibold text-2xl tracking-ls03">
-                        $32
+                        ${{ product.price }}
                       </h3>
                     </div>
                   </label>
@@ -172,7 +172,7 @@
                     </div>
                     <div>
                       <h3 class="text-blue-0b font-semibold text-2xl tracking-ls03">
-                        $32
+                        ${{ product.price}}
                       </h3>
                     </div>
                   </label>
@@ -181,9 +181,9 @@
               <!-- end -->
               <div class="pt-0 p-8 pb-4">
                 <div class="border-b border-gray-cd pb-4">
-                  <nuxt-link :to="product.buy_url" v-if="product.buy_url" class="block text-center font-medium bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 mb-4 hover:bg-dark-06">
+                  <a :href="product.buy_url" target="_blank" v-if="product.buy_url" class="block text-center font-medium bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 mb-4 hover:bg-dark-06">
                     Buy now
-                  </nuxt-link>
+                  </a>
                   <nuxt-link :to="{ name: 'demo-slug', params: {slug: productId} }" v-if="product.documentation_url"
                     class="block text-center font-medium border-1.5 border-dark-06 rounded-7 py-3.5 px-9 text-body-17 text-dark-06 duration-300 mb-4">
                       <img class="inline-block mr-2" src="~/assets/images/svg/notebook.svg" alt="" />
@@ -258,9 +258,9 @@
                   {{ global.customerSupport.description }}
                 </p>
                 <div class="flex flex-col sm:flex-row items-center">
-                  <nuxt-link target="_blank" v-if="product.buy_url" :to="product.buy_url" class="order-2 sm:order-1 w-full sm:w-auto inline-block text-center bg-white-12 rounded-7 py-4 px-9 text-body-17 text-white duration-300 mr-0 sm:mr-3 hover:bg-dark-06 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                  <a target="_blank" v-if="product.buy_url" :href="product.buy_url" class="order-2 sm:order-1 w-full sm:w-auto inline-block text-center bg-white-12 rounded-7 py-4 px-9 text-body-17 text-white duration-300 mr-0 sm:mr-3 hover:bg-dark-06 whitespace-nowrap overflow-hidden overflow-ellipsis">
                     Buy Now
-                  </nuxt-link>
+                  </a>
                   <nuxt-link target="_blank" v-if="product.support_url" :to="product.support_url" class="order-1 sm:order-2 w-full sm:w-auto inline-block text-center bg-white rounded-7 py-4 px-9 text-body-17 text-blue-0b duration-300 hover:bg-dark-06 hover:text-white mb-4 sm:mb-0 whitespace-nowrap overflow-hidden overflow-ellipsis"> 
                     Customer Support
                   </nuxt-link>
@@ -279,96 +279,13 @@
             <!-- section title  -->
             <div class="mb-72 text-center">
               <h2 class="text-body-32px md:text-4xl xl:text-title font-semibold capitalize">
-                Featured Product
+                Related Products
               </h2>
             </div>
-            <!-- <div v-for="product in relatedProducts" :key="product.id">
-              <pre>
-                {{ product.id }}
-                {{ product.id }}
-                {{ product }}
-              </pre>
-            </div> -->
-
-            <!-- Features Card  -->
-            <div class="relative" v-if="relatedProducts">
-              <swiper class="swiper" :options="swiperOptionThree">
-                <!-- <swiper-slide>
-                  <div class="relative overflow-hidden p-6 border border-gray-e6 rounded-2xl product-card">
-                    <nuxt-link to="#"
-                      class="relative inline-block overflow-hidden rounded-lg w-full product-card__img-wrapper mb-4">
-                      <img class="w-full h-full object-cover" src="~@/assets/images/cards/img-six.png" alt="" />
-                    </nuxt-link>
-                    <div>
-                      <h6 class="tracking-widest font-normal text-xs text-pink-75 uppercase m-0 mb-1">
-                        Figma, HTML
-                      </h6>
-                      <h2 class="text-lg text-dark-06 mb-3 font-normal">
-                        Onest - Classified Ad Listing
-                      </h2>
-                      <p class="text-dark-42 text-sm font-light mb-6">
-                        Onest is a creatively crafted, clean, modern, and classy
-                        classifieds ads listing Figma template designed for who
-                        want to start selling a product online.
-                      </p>
-                      <div class="flex flex-col sm:flex-row items-end sm:items-center sm:justify-between">
-                        <div class="flex items-center justify-center w-full sm:w-auto space-x-3 order-2 sm:order-1">
-                          <div>
-                            <nuxt-link to="#"
-                              class="flex items-center overflow-hidden px-4 py-2 rounded-5 text-sm font-medium border-1.5 border-blue-0b text-blue-0b group whitespace-nowrap">
-                              Learn More
-                              <span class="inline-block ml-3">
-                                <img src="~/assets/images/svg/arrow.svg" alt="arrow-icon" />
-                              </span>
-                            </nuxt-link>
-                          </div>
-                          <div class="flex-shrink-0">
-                            <button
-                              class="inline-block overflow-hidden p-2.5 bg-gray-f5 hover:bg-gray-200 transition-all rounded-7">
-                              <img src="~/assets/images/svg/cart.svg" alt="cart-icon" />
-                            </button>
-                          </div>
-                        </div>
-                        <div class="mb-4 sm:mb-0 order-1 sm:order-2">
-                          <h5 class="text-xl font-medium uppercase text-pink-75">
-                            $13
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </swiper-slide> -->
-                <client-only>
-                  <product-card v-for="product in relatedProducts" :product="product.attributes" :key="product.id" :id="product.id"></product-card>
-                </client-only>
-              </swiper>
-              <!-- end slider -->
-              <div class="custom-pagination flex items-center justify-center pt-24">
-                <div class="swiper-button-prev mr-8" slot="button-prev">
-                  <span
-                    class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 bg-gray-f0 duration-300 hover:bg-blue-0b arrow-icon">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M27 16H5" stroke="#0B63E5" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                      <path d="M14 7L5 16L14 25" stroke="#0B63E5" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    </svg>
-                  </span>
-                </div>
-                <div class="swiper-button-next ml-8" slot="button-next">
-                  <span
-                    class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 bg-gray-f0 duration-300 hover:bg-blue-0b arrow-icon">
-                    <svg class="arrow-icon-right" width="32" height="32" viewBox="0 0 32 32" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M27 16H5" stroke="#0B63E5" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                      <path d="M14 7L5 16L14 25" stroke="#0B63E5" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    </svg>
-                  </span>
-                </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6" v-if="relatedProducts">
+              <div class="flex items-stretch" v-for="product in relatedProducts" :key="product.id">
+                <product-card :product="product.attributes" :id="product.id"></product-card>
               </div>
-              <!-- end pagination -->
             </div>
           </div>
         </section>
