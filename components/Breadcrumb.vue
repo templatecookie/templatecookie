@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-10 pt-36 bg-cover bg-center" :style="BreadcrumbBg">
+  <div class="pb-10 pt-36 bg-cover bg-center" :style="{ backgroundImage: 'url(' + bgimage + ')' }">
     <div class="container">
       <div class="ex-small:overflow-auto overflow-x-scroll">
         <ul class="flex text-gray-6a text-sm space-x-2 mb-3">
@@ -49,9 +49,7 @@ export default {
   },
   data() {
     return {
-      BreadcrumbBg: {
-        backgroundImage: "url(https://i.imgur.com/YjAciyt.png)",
-      },
+      bgimage: require('../assets/images/all-img/breadcrumb.png'),
     };
   },
 };
