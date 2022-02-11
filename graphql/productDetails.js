@@ -30,6 +30,7 @@ query product($slug: ID!){
         }
         category {
           data {
+            id
             attributes {
               name
               slug
