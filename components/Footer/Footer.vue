@@ -35,7 +35,7 @@
       </div>
       <!-- footer copyright content  -->
       <div class="py-4 md:py-8 text-center border-t border-gray-24">
-        <p class="text-body-16 text-white font-light capitalize">
+        <p class="text-body-16 text-gray-500 font-light capitalize">
           &copy; {{ new Date().getFullYear() }} All Rights Reserved -
           Templatecookie
         </p>
