@@ -1,24 +1,31 @@
-export const Accordion = () => import('../../components/Accordion.vue' /* webpackChunkName: "components/accordion" */).then(c => wrapFunctional(c.default || c))
-export const Breadcrumb = () => import('../../components/Breadcrumb.vue' /* webpackChunkName: "components/breadcrumb" */).then(c => wrapFunctional(c.default || c))
-export const BusinessCard = () => import('../../components/BusinessCard.vue' /* webpackChunkName: "components/business-card" */).then(c => wrapFunctional(c.default || c))
-export const CounterUp = () => import('../../components/CounterUp.vue' /* webpackChunkName: "components/counter-up" */).then(c => wrapFunctional(c.default || c))
-export const Fun = () => import('../../components/Fun.vue' /* webpackChunkName: "components/fun" */).then(c => wrapFunctional(c.default || c))
-export const LinkThumb = () => import('../../components/LinkThumb.vue' /* webpackChunkName: "components/link-thumb" */).then(c => wrapFunctional(c.default || c))
-export const Newsletter = () => import('../../components/Newsletter.vue' /* webpackChunkName: "components/newsletter" */).then(c => wrapFunctional(c.default || c))
-export const Pagination = () => import('../../components/Pagination.vue' /* webpackChunkName: "components/pagination" */).then(c => wrapFunctional(c.default || c))
-export const ProductCard = () => import('../../components/ProductCard.vue' /* webpackChunkName: "components/product-card" */).then(c => wrapFunctional(c.default || c))
-export const PurchaseCard = () => import('../../components/PurchaseCard.vue' /* webpackChunkName: "components/purchase-card" */).then(c => wrapFunctional(c.default || c))
-export const SocialLink = () => import('../../components/SocialLink.vue' /* webpackChunkName: "components/social-link" */).then(c => wrapFunctional(c.default || c))
-export const SolutionCard = () => import('../../components/SolutionCard.vue' /* webpackChunkName: "components/solution-card" */).then(c => wrapFunctional(c.default || c))
-export const Footer = () => import('../../components/Footer/Footer.vue' /* webpackChunkName: "components/footer" */).then(c => wrapFunctional(c.default || c))
-export const FooterTwo = () => import('../../components/Footer/FooterTwo.vue' /* webpackChunkName: "components/footer-two" */).then(c => wrapFunctional(c.default || c))
-export const Header = () => import('../../components/Header/Header.vue' /* webpackChunkName: "components/header" */).then(c => wrapFunctional(c.default || c))
-export const HeaderThree = () => import('../../components/Header/HeaderThree.vue' /* webpackChunkName: "components/header-three" */).then(c => wrapFunctional(c.default || c))
-export const HeaderTwo = () => import('../../components/Header/HeaderTwo.vue' /* webpackChunkName: "components/header-two" */).then(c => wrapFunctional(c.default || c))
-export const ProductListTab = () => import('../../components/product-list/Tab.vue' /* webpackChunkName: "components/product-list-tab" */).then(c => wrapFunctional(c.default || c))
-export const ProductListTabs = () => import('../../components/product-list/Tabs.vue' /* webpackChunkName: "components/product-list-tabs" */).then(c => wrapFunctional(c.default || c))
-export const HomeHeroSection = () => import('../../components/Home/HeroSection.vue' /* webpackChunkName: "components/home-hero-section" */).then(c => wrapFunctional(c.default || c))
-export const HomeWhyUs = () => import('../../components/Home/WhyUs.vue' /* webpackChunkName: "components/home-why-us" */).then(c => wrapFunctional(c.default || c))
+export { default as Accordion } from '../../components/Accordion.vue'
+export { default as Breadcrumb } from '../../components/Breadcrumb.vue'
+export { default as BusinessCard } from '../../components/BusinessCard.vue'
+export { default as CounterUp } from '../../components/CounterUp.vue'
+export { default as LinkThumb } from '../../components/LinkThumb.vue'
+export { default as Newsletter } from '../../components/Newsletter.vue'
+export { default as Pagination } from '../../components/Pagination.vue'
+export { default as ProductCard } from '../../components/ProductCard.vue'
+export { default as PurchaseCard } from '../../components/PurchaseCard.vue'
+export { default as SocialLink } from '../../components/SocialLink.vue'
+export { default as SolutionCard } from '../../components/SolutionCard.vue'
+export { default as DemoCallToAction } from '../../components/Demo/CallToAction.vue'
+export { default as DemoProductFeatureScreenshots } from '../../components/Demo/ProductFeatureScreenshots.vue'
+export { default as DemoProductFolderStructure } from '../../components/Demo/ProductFolderStructure.vue'
+export { default as DemoProductFunFact } from '../../components/Demo/ProductFunFact.vue'
+export { default as DemoProductHero } from '../../components/Demo/ProductHero.vue'
+export { default as DemoProductPages } from '../../components/Demo/ProductPages.vue'
+export { default as DemoProductScreenshots } from '../../components/Demo/ProductScreenshots.vue'
+export { default as DemoProductSupport } from '../../components/Demo/ProductSupport.vue'
+export { default as DemoProductTopFeatures } from '../../components/Demo/ProductTopFeatures.vue'
+export { default as Footer } from '../../components/Footer/Footer.vue'
+export { default as FooterTwo } from '../../components/Footer/FooterTwo.vue'
+export { default as Header } from '../../components/Header/Header.vue'
+export { default as HeaderTwo } from '../../components/Header/HeaderTwo.vue'
+export { default as ProductListTab } from '../../components/product-list/Tab.vue'
+export { default as HomeHeroSection } from '../../components/Home/HeroSection.vue'
+export { default as HomeTopFeaturesSection } from '../../components/Home/TopFeaturesSection.vue'
+export { default as HomeWhyUs } from '../../components/Home/WhyUs.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

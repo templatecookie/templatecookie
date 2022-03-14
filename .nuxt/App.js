@@ -2,19 +2,18 @@ import Vue from 'vue'
 import { decode, parsePath, withoutBase, withoutTrailingSlash, normalizeURL } from 'ufo'
 
 import { getMatchedComponentsInstances, getChildrenComponentInstancesUsingFetch, promisify, globalHandleError, urlJoin, sanitizeComponent } from './utils'
-import NuxtError from './components/nuxt-error.vue'
+import NuxtError from '../layouts/error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
+import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
 import '../node_modules/@nuxtjs/tailwindcss/dist/runtime/tailwind.css'
 
 import '../assets/scss/app.scss'
 
 import _6f6c098b from '../layouts/default.vue'
-import _2d229ed9 from '../layouts/demo.vue'
-import _0c2615dc from '../layouts/screenshot.vue'
-import _def84002 from '../layouts/sitemap.vue'
+import _77430317 from '../layouts/empty.vue'
 
-const layouts = { "_default": sanitizeComponent(_6f6c098b),"_demo": sanitizeComponent(_2d229ed9),"_screenshot": sanitizeComponent(_0c2615dc),"_sitemap": sanitizeComponent(_def84002) }
+const layouts = { "_default": sanitizeComponent(_6f6c098b),"_empty": sanitizeComponent(_77430317) }
 
 export default {
   render (h, props) {
@@ -49,7 +48,7 @@ export default {
       }
     }, [
       loadingEl,
-
+      h(NuxtBuildIndicator),
       transitionEl
     ])
   },
@@ -185,6 +184,10 @@ export default {
     },
 
     setLayout (layout) {
+      if(layout && typeof layout !== 'string') {
+        throw new Error('[nuxt] Avoid using non-string value as layout property.')
+      }
+
       if (!layout || !layouts['_' + layout]) {
         layout = 'default'
       }

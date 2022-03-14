@@ -5,11 +5,11 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _bd89e132 = () => interopDefault(import('../pages/hire-us.vue' /* webpackChunkName: "pages/hire-us" */))
-const _5eca80e1 = () => interopDefault(import('../pages/product-demo.vue' /* webpackChunkName: "pages/product-demo" */))
-const _6ee62834 = () => interopDefault(import('../pages/product-details.vue' /* webpackChunkName: "pages/product-details" */))
-const _7bf05e1c = () => interopDefault(import('../pages/product-list.vue' /* webpackChunkName: "pages/product-list" */))
-const _26ea1b40 = () => interopDefault(import('../pages/screenshort.vue' /* webpackChunkName: "pages/screenshort" */))
-const _46db3905 = () => interopDefault(import('../pages/sitemap.vue' /* webpackChunkName: "pages/sitemap" */))
+const _6b313f72 = () => interopDefault(import('../pages/products/index.vue' /* webpackChunkName: "pages/products/index" */))
+const _75b17219 = () => interopDefault(import('../pages/category/_slug.vue' /* webpackChunkName: "pages/category/_slug" */))
+const _0e898684 = () => interopDefault(import('../pages/demo/_slug.vue' /* webpackChunkName: "pages/demo/_slug" */))
+const _29cbca42 = () => interopDefault(import('../pages/products/_slug/index.vue' /* webpackChunkName: "pages/products/_slug/index" */))
+const _6c5e91bd = () => interopDefault(import('../pages/products/_slug/screenshots.vue' /* webpackChunkName: "pages/products/_slug/screenshots" */))
 const _07f70ca2 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -28,25 +28,25 @@ export const routerOptions = {
     component: _bd89e132,
     name: "hire-us"
   }, {
-    path: "/product-demo",
-    component: _5eca80e1,
-    name: "product-demo"
+    path: "/products",
+    component: _6b313f72,
+    name: "products"
   }, {
-    path: "/product-details",
-    component: _6ee62834,
-    name: "product-details"
+    path: "/category/:slug?",
+    component: _75b17219,
+    name: "category-slug"
   }, {
-    path: "/product-list",
-    component: _7bf05e1c,
-    name: "product-list"
+    path: "/demo/:slug?",
+    component: _0e898684,
+    name: "demo-slug"
   }, {
-    path: "/screenshort",
-    component: _26ea1b40,
-    name: "screenshort"
+    path: "/products/:slug",
+    component: _29cbca42,
+    name: "products-slug"
   }, {
-    path: "/sitemap",
-    component: _46db3905,
-    name: "sitemap"
+    path: "/products/:slug/screenshots",
+    component: _6c5e91bd,
+    name: "products-slug-screenshots"
   }, {
     path: "/",
     component: _07f70ca2,

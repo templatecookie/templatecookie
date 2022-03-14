@@ -11,9 +11,6 @@
   "CounterUp": {
     "description": "Auto imported from components/CounterUp.vue"
   },
-  "Fun": {
-    "description": "Auto imported from components/Fun.vue"
-  },
   "LinkThumb": {
     "description": "Auto imported from components/LinkThumb.vue"
   },
@@ -35,6 +32,33 @@
   "SolutionCard": {
     "description": "Auto imported from components/SolutionCard.vue"
   },
+  "DemoCallToAction": {
+    "description": "Auto imported from components/Demo/CallToAction.vue"
+  },
+  "DemoProductFeatureScreenshots": {
+    "description": "Auto imported from components/Demo/ProductFeatureScreenshots.vue"
+  },
+  "DemoProductFolderStructure": {
+    "description": "Auto imported from components/Demo/ProductFolderStructure.vue"
+  },
+  "DemoProductFunFact": {
+    "description": "Auto imported from components/Demo/ProductFunFact.vue"
+  },
+  "DemoProductHero": {
+    "description": "Auto imported from components/Demo/ProductHero.vue"
+  },
+  "DemoProductPages": {
+    "description": "Auto imported from components/Demo/ProductPages.vue"
+  },
+  "DemoProductScreenshots": {
+    "description": "Auto imported from components/Demo/ProductScreenshots.vue"
+  },
+  "DemoProductSupport": {
+    "description": "Auto imported from components/Demo/ProductSupport.vue"
+  },
+  "DemoProductTopFeatures": {
+    "description": "Auto imported from components/Demo/ProductTopFeatures.vue"
+  },
   "Footer": {
     "description": "Auto imported from components/Footer/Footer.vue"
   },
@@ -44,20 +68,17 @@
   "Header": {
     "description": "Auto imported from components/Header/Header.vue"
   },
-  "HeaderThree": {
-    "description": "Auto imported from components/Header/HeaderThree.vue"
-  },
   "HeaderTwo": {
     "description": "Auto imported from components/Header/HeaderTwo.vue"
   },
   "ProductListTab": {
     "description": "Auto imported from components/product-list/Tab.vue"
   },
-  "ProductListTabs": {
-    "description": "Auto imported from components/product-list/Tabs.vue"
-  },
   "HomeHeroSection": {
     "description": "Auto imported from components/Home/HeroSection.vue"
+  },
+  "HomeTopFeaturesSection": {
+    "description": "Auto imported from components/Home/TopFeaturesSection.vue"
   },
   "HomeWhyUs": {
     "description": "Auto imported from components/Home/WhyUs.vue"
