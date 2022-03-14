@@ -276,7 +276,6 @@
         <!-- Featured Card  -->
         <section class="featured py-14 md:pt-124 md:pb-0">
           <div class="container">
-            <!-- section title  -->
             <div class="mb-72 text-center">
               <h2 class="text-body-32px md:text-4xl xl:text-title font-semibold capitalize">
                 Related Products
@@ -333,11 +332,11 @@ export default {
         slug
       }
     })
-    
-    const product = data.product.data.attributes;
-    const productId = data.product.data.id;
-    const relatedProducts = data.products.data;
-    return { product, relatedProducts, productId }
+
+    const product = data.products.data[0]?.attributes;
+    const productId = data.products.data[0]?.id;
+    const relatedProducts = data.relatedProducts.data;
+    return { product, productId, relatedProducts }
   },
   data() {
     return {

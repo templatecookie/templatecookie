@@ -1,59 +1,59 @@
 <template>
-    <!-- card wrapper  -->
-    <div class="relative overflow-hidden p-8 border border-gray-e6 rounded-2xl product-card w-full" :class="large ? 'p-8 product-card--lg' : 'p-6  product-card--sm'">
-      <nuxt-link :to="{ name: 'products-slug', params: {slug: id}}" class="product-card__img relative inline-block overflow-hidden rounded-lg w-full product-card__img-wrapper mb-4">
-        <img :src="fixImageUrl(product.banner)" alt="product-img" class="w-full h-full object-cover overflow-hidden" />
-      </nuxt-link>
+  <!-- card wrapper  -->
+  <div class="relative overflow-hidden p-8 border border-gray-e6 rounded-2xl product-card w-full" :class="large ? 'p-8 product-card--lg' : 'p-6  product-card--sm'">
+    <nuxt-link :to="{ name: 'products-slug', params: {slug: product.slug}}" class="product-card__img relative inline-block overflow-hidden rounded-lg w-full product-card__img-wrapper mb-4">
+      <img :src="fixImageUrl(product.banner)" alt="product-img" class="w-full h-full object-cover overflow-hidden" />
+    </nuxt-link>
 
-      <!-- Product info  -->
-      <div class="product-card__text">
-        <!-- Tags  -->
-        <h6 class="tracking-widest font-normal text-pink-75 uppercase m-0 mb-1" :class=" large ? 'text-body-14' : 'text-body-12/12'" v-if="product.category.data" >
-          {{ product.category.data.attributes.name }}
-        </h6>
+    <!-- Product info  -->
+    <div class="product-card__text">
+      <!-- Tags  -->
+      <h6 class="tracking-widest font-normal text-pink-75 uppercase m-0 mb-1" :class=" large ? 'text-body-14' : 'text-body-12/12'" v-if="product.category.data" >
+        {{ product.category.data.attributes.name }}
+      </h6>
 
-        <h2 class="text-dark-06 mb-3 font-normal" :class="large ? 'text-body-24' : 'text-body-18'">
-          {{ product.name }}
-        </h2>
+      <h2 class="text-dark-06 mb-3 font-normal" :class="large ? 'text-body-24' : 'text-body-18'">
+        {{ product.name }}
+      </h2>
 
-        <p class="text-body-16 text-dark-42 font-light mb-6" :class="large ? 'text-body-16' : 'text-body-14/20'">
-          {{ product.short_description }}
-        </p>
+      <p class="text-body-16 text-dark-42 font-light mb-6" :class="large ? 'text-body-16' : 'text-body-14/20'">
+        {{ product.short_description }}
+      </p>
 
-        <!-- actions content  -->
-        <div class="flex justify-between items-center sm:mt-0 mt-6  product-card__actions">
-          <!-- Purchase  -->
-          <div class="flex items-center space-x-3 order-2 sm:order-1">
-            <div>
-              <nuxt-link :to="{name: 'products-slug', params: {slug: id}}" class="flex items-center overflow-hidden border border-blue-0b text-blue-0b rounded-lg group py-3.5 px-9 whitespace-nowrap product-card__button">
-                Learn More
-                <span class="inline-block ml-2">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.75 12H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="currentColor" stroke-width="1.5"
-                      stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </nuxt-link>
-            </div>
-            <div class="flex-shrink-0">
-              <button
-                class="product-card__button-cart inline-block overflow-hidden bg-gray-f5 hover:bg-gray-200 transition-all rounded-lg">
-                <img src="~/assets/images/svg/cart.svg" alt="cart-icon" />
-              </button>
-            </div>
+      <!-- actions content  -->
+      <div class="flex justify-between items-center sm:mt-0 mt-6  product-card__actions">
+        <!-- Purchase  -->
+        <div class="flex items-center space-x-3 order-2 sm:order-1">
+          <div>
+            <nuxt-link :to="{name: 'products-slug', params: {slug: product.slug}}" class="flex items-center overflow-hidden border border-blue-0b text-blue-0b rounded-lg group py-3.5 px-9 whitespace-nowrap product-card__button">
+              Learn More
+              <span class="inline-block ml-2">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.75 12H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="currentColor" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </nuxt-link>
           </div>
-
-          <!-- Price  -->
-          <div class=" order-2">
-            <h5 class="text-body-24 font-normal uppercase text-pink-75" :class="large ? 'text-body-24' : 'text-body-20'">
-              ${{ product.price }}
-            </h5>
+          <div class="flex-shrink-0">
+            <button
+              class="product-card__button-cart inline-block overflow-hidden bg-gray-f5 hover:bg-gray-200 transition-all rounded-lg">
+              <img src="~/assets/images/svg/cart.svg" alt="cart-icon" />
+            </button>
           </div>
+        </div>
+
+        <!-- Price  -->
+        <div class=" order-2">
+          <h5 class="text-body-24 font-normal uppercase text-pink-75" :class="large ? 'text-body-24' : 'text-body-20'">
+            ${{ product.price }}
+          </h5>
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -158,13 +158,7 @@ export default {
     }
   }
 
-
-
   &__img {
-
-    // @media (max-width: 767px) {
-    //   height: 160px !important;
-    // }
     img {
       transform: scale(1);
       transition: all 0.4s linear;
