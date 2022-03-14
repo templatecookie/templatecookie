@@ -19,19 +19,18 @@ query {
             }
           }
           menuItems {
-            id
             label
-            href
-            target
-            menuSubItems {
-              id
-              label
-              href
-              target
+            category {
+              data{
+                id
+                attributes {
+                  name
+                  slug
+                }
+              }
             }
           }
           profile {
-            label
             theme
             width
             link {
@@ -83,14 +82,14 @@ query {
           }
           description
           menuItems {
-            label
-            href
-            target
-            menuSubItems {
-              id
-              label
-              href
-              target
+            name 
+            products {
+              data {
+                attributes {
+                  slug
+                  name
+                }
+              }
             }
           }
         }
@@ -114,5 +113,4 @@ query {
     }
   }
 }
-
 `

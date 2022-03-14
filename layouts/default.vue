@@ -6,6 +6,7 @@
     <Footer :data="global.footer" v-if="global && global.footer"/>
   </div>
 </template>
+
 <script>
 import Header from "../components/Header/Header.vue";
 import Footer from "../components/Footer/Footer.vue";
@@ -15,12 +16,6 @@ import Newsletter from "../components/Newsletter.vue";
 
 export default { 
   components: { Header, Footer, SocialLink, Newsletter },
-  // apollo: {
-  //   global: {
-  //     query: GLOBAL_QUERY,
-  //     prefetch: true,
-  //   },
-  // },
   data () {
     return {
       global: null,
@@ -28,16 +23,14 @@ export default {
   },
   methods: {
     async loadData(){
-      // console.log(this.$nuxt.$apolloProvider.defaultClient)
-      // console.log(this.$apolloProvider.defaultClient);
       const client = this.$nuxt.$apolloProvider.defaultClient;
 
       const { data } = await client.query({
         query: GLOBAL_QUERY,
       })
+      console.log(data);
       
       this.global = data?.global?.data?.attributes
-
       this.$store.commit('SET_GLOBAL_DATA', this.global)
     }
   },

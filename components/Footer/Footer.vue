@@ -19,13 +19,13 @@
           <!-- Menu column  -->
           <div v-for="item in data.menuItems" :key="item.id">
             <h2 class="mb-7 text-body-16 leading-none tracking-widest uppercase text-white">
-              {{ item.label }}
+              {{ item.name }}
             </h2>
             <div>
-              <ul class="space-y-2 footer-menu" v-if="item.menuSubItems.length">
-                <li v-for="dropdownItem in item.menuSubItems" :key="dropdownItem.id">
-                  <nuxt-link class="text-body-16 capitalize text-gray-83" :to="dropdownItem.href">
-                    {{ dropdownItem.label }}
+              <ul class="space-y-2 footer-menu" v-if="item.products.data">
+                <li v-for="(subItem, index) in item.products.data" :key="index">
+                  <nuxt-link class="text-body-16 capitalize text-gray-83" :to="{ name: 'products-slug', params: {slug: subItem.attributes.slug} }">
+                    {{ subItem.attributes.name }}
                   </nuxt-link>
                 </li>
               </ul>

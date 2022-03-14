@@ -76,7 +76,7 @@ query product($slug: ID!){
               attributes {
                 name
                 alternativeText
-                ext
+                url
               }
             }
           }

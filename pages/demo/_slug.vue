@@ -2,13 +2,13 @@
   <div>
     <HeaderTwo />
     <product-hero :product="product" />
-    <product-fun-fact />
-    <product-top-features />
+    <product-fun-fact :data="product.product_funfacts" />
+    <product-top-features :data="product.productFeatures" />
 
     <div class="py-20 lg:py-124">
       <product-screenshots />
       <product-feature-screenshots />
-      <product-pages />
+      <product-pages :data="product.productPages" />
       <product-folder-structure />
       <product-support />
       <call-to-action />
