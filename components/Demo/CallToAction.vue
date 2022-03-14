@@ -1,0 +1,93 @@
+<template>
+  <div class="pt-20 lg:pt-124 bg-dark-06">
+    <div class="container">
+      <div class="text-center mb-24">
+        <h2 class="text-white text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
+          Let’s Get Started
+        </h2>
+        <p class="text-white text-base sm:text-lg mb-6 lg:mb-12 font-light">
+          Pick a demo and start building your WordPress website today.
+        </p>
+        <nuxt-link to="/"
+          class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-black">
+          Purchase Now
+          <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></nuxt-link>
+      </div>
+    </div>
+    <div>
+      <swiper class="swiper" :options="swiperOptionOne">
+        <swiper-slide class="slider-full">
+          <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
+        </swiper-slide>
+        <swiper-slide class="slider-full">
+          <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
+        </swiper-slide>
+        <swiper-slide class="slider-full">
+          <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
+        </swiper-slide>
+        <swiper-slide class="slider-full">
+          <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
+        </swiper-slide>
+        <swiper-slide class="slider-full">
+          <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
+        </swiper-slide>
+        <swiper-slide class="slider-full">
+          <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
+        </swiper-slide>
+        <swiper-slide class="slider-full">
+          <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
+        </swiper-slide>
+        <swiper-slide class="slider-full">
+          <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
+        </swiper-slide>
+        <swiper-slide class="slider-full">
+          <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
+        </swiper-slide>
+        <swiper-slide class="slider-full">
+          <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
+        </swiper-slide>
+      </swiper>
+    </div>
+  </div>
+</template>
+
+<script>
+import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+import "swiper/css/swiper.css";
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  data () {
+    return {
+      swiperOptionOne: {
+        slidesPerView: 1,
+        spaceBetween: 24,
+        loop: true,
+        breakpoints: {
+          1199: {
+            slidesPerView: 4,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          320: {
+            slidesPerView: 1,
+          },
+        },
+      },
+    }
+  }
+}
+</script>
+
+<style>
+
+</style>

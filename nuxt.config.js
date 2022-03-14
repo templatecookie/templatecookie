@@ -4,17 +4,26 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "template-cookie",
+    title: 'Homepage | Templatecookie',
     htmlAttrs: {
       lang: "en",
     },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'my website description'
+      },
       { name: "format-detection", content: "telephone=no" },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+  },
+
+  loading: {
+    color: '#0B63E5',
+    height: '5px'
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -25,6 +34,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    "~/mixin/global.js",
     // { src: '~/plugins/plugin-name', mode: 'client' },
     { src: "~/plugins/dropdown.js", mode: "client" },
     { src: "~/plugins/aos.js", mode: "client" },
@@ -47,7 +57,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: 'https://api.templatecookie.com/graphql',
+        httpEndpoint: 'http://localhost:1337/graphql',
         getAuth: () => `Bearer fa8423d78cd2ef9b0e946ca7eda3d32e900ccac15269be72fae8228bd0cfaf8ba1447f3a906d99ee764279e55ff098bd39325dbbf2638e9e40f7092e5ffd658f9337dcb5b24a90babe1abf2ecbe35b382c85ff8feea3ab95db44903767e41b6d87f1beb8fb19a979bfb2a04678e5a02a9e82e29395a7859ca84ff0e685d69661`,
       }
     }

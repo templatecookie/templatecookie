@@ -2,7 +2,6 @@ import gql from 'graphql-tag';
 
 // export const global = gql`
 export default gql`
-# Write your query or mutation here
 query {
   global {
     data {
@@ -20,19 +19,18 @@ query {
             }
           }
           menuItems {
-            id
             label
-            href
-            target
-            menuSubItems {
-              id
-              label
-              href
-              target
+            category {
+              data{
+                id
+                attributes {
+                  name
+                  slug
+                }
+              }
             }
           }
           profile {
-            label
             theme
             width
             link {
@@ -70,28 +68,44 @@ query {
           }
         }
         footer {
-          id,
+          id
           logo {
             data {
               attributes {
-                name,
-                ext,
-                formats, 
-                url, 
+                name
+                ext
+                formats
+                url
                 previewUrl
               }
             }
           }
-          description,
+          description
           menuItems {
-            label,
-            href 
-            target
-            menuSubItems {
-              id
-              label
-              href
-              target
+            name 
+            products {
+              data {
+                attributes {
+                  slug
+                  name
+                }
+              }
+            }
+          }
+        }
+        customerSupport {
+          id
+          title
+          description
+          theme
+          image {
+            data {
+              attributes {
+                name
+                alternativeText
+                ext
+                url
+              }
             }
           }
         }
