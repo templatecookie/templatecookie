@@ -2,8 +2,8 @@ import gql from 'graphql-tag';
 
 // export const global = gql`
 export default gql`
-query product($slug: ID!){
-  product(id: $slug) {
+query product($slug: String!){
+  products (filters: { slug: { eq: $slug }}){
     data {
       id
       attributes {

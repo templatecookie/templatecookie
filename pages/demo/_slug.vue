@@ -173,7 +173,7 @@ export default {
       }
     })
     
-    const product = data.product.data.attributes;
+    const product = data.products.data[0]?.attributes;
     return { product }
   },
   components: {

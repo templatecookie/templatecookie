@@ -12,7 +12,7 @@
                   alt="" />
               </div>
               <div class="sm:flex justify-between">
-                <nuxt-link :to="{ name: 'products-slug-screenshots', params: {slug: productId} }" _target="blank" class="block sm:mb-0 mb-3 text-center sm:inline-block bg-blue-0b rounded-5 text-sm py-2.5 px-5 text-white duration-300 hover:bg-black">
+                <nuxt-link :to="{ name: 'products-slug-screenshots', params: {slug: product.slug} }" _target="blank" class="block sm:mb-0 mb-3 text-center sm:inline-block bg-blue-0b rounded-5 text-sm py-2.5 px-5 text-white duration-300 hover:bg-black">
                   <img class="inline-block mr-1.5 duration-300" src="~/assets/images/svg/image-square.svg" alt="" />
                   Screenshots
                 </nuxt-link>
@@ -184,7 +184,7 @@
                   <a :href="product.buy_url" target="_blank" v-if="product.buy_url" class="block text-center font-medium bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 mb-4 hover:bg-dark-06">
                     Buy now
                   </a>
-                  <nuxt-link :to="{ name: 'demo-slug', params: {slug: productId} }" v-if="product.documentation_url"
+                  <nuxt-link :to="{ name: 'demo-slug', params: {slug: product.slug} }" v-if="product.documentation_url"
                     class="block text-center font-medium border-1.5 border-dark-06 rounded-7 py-3.5 px-9 text-body-17 text-dark-06 duration-300 mb-4">
                       <img class="inline-block mr-2" src="~/assets/images/svg/notebook.svg" alt="" />
                       View Demo
@@ -334,9 +334,8 @@ export default {
     })
 
     const product = data.products.data[0]?.attributes;
-    const productId = data.products.data[0]?.id;
     const relatedProducts = data.relatedProducts.data;
-    return { product, productId, relatedProducts }
+    return { product, relatedProducts }
   },
   data() {
     return {

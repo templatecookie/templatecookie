@@ -3,7 +3,7 @@
     <div class="flex flex-col sm:flex-row items-center justify-between p-8 shadow-bs013 bg-gray-f5">
       <!-- text content -->
       <div class="mb-6 sm:mb-0">
-        <nuxt-link :to="{ name: 'products-slug', params: {slug: productId}}" class="text-body-18 capitalize text-dark-06">
+        <nuxt-link :to="{ name: 'products-slug', params: {slug: product.slug}}" class="text-body-18 capitalize text-dark-06">
           {{ product.name }}
         </nuxt-link>
       </div>
@@ -74,9 +74,8 @@ export default {
       }
     })
     
-    const product = data.product.data.attributes;
-    const productId = data.product.data.id;
-    return { product, productId }
+    const product = data.products.data[0]?.attributes;
+    return { product }
   },
   data() {
     return {
