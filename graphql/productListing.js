@@ -39,24 +39,33 @@ query {
             }
           }
         }
-        technologies {
+      }
+    }
+  }
+
+  technologies(pagination: { pageSize: 5 }) {
+    data {
+      attributes {
+        name
+        slug
+        icon {
           data {
             attributes {
               name
-              slug
-              icon {
-                data {
-                  attributes {
-                    name
-                    alternativeText
-                    ext
-                    url
-                  }
-                }
-              }
+              alternativeText
+              ext
+              url
             }
           }
         }
+      }
+    }
+  }
+  categories(sort: "name:asc") {
+    data {
+      attributes {
+        name
+        slug
       }
     }
   }
