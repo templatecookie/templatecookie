@@ -98,7 +98,7 @@ export default {
       }
     ],
   },
-  watchQuery: ["page", "category"],
+  watchQuery: true,
   async asyncData({ app, query }) {
     const client = app.apolloProvider.defaultClient;
 
@@ -143,7 +143,6 @@ export default {
       this.$router.push({ query: { page: event } })
     },
     setTechnology(technology) {
-      console.log('setting tech to => ', technology)
       this.activeTechnology = technology;
 
       const query = {
@@ -161,21 +160,26 @@ export default {
 
       this.$router.push({ query: query })
     },
+    setQueries(){
+      this.categories.forEach(element => {
+        this.categoryList.push(element.attributes);
+      });
+      
+      this.activeTechnology = this.$route.query.technology || "";
+  
+      let category = this.categories.find(element  => element.attributes.slug === this.$route.query.category);
+      this.selectedCategory = category ? category.attributes : this.categoryList[0];
+    }
   },
   watch: {
-    activeTechnology (newValue){
-      console.log(newValue);
+    '$route.query': function () {
+      this.setQueries();
     }
   },
   mounted() {
-    this.categories.forEach(element => {
-      this.categoryList.push(element.attributes);
-    });
+    
 
-    this.activeTechnology = this.$route.query.technology || "";
-
-    let category = this.categories.find(element  => element.attributes.slug === this.$route.query.category);
-    category ? this.selectedCategory = category.attributes : this.selectedCategory = this.categoryList[0];
+    this.setQueries();
   },
 };
 </script>
