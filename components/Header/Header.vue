@@ -16,7 +16,7 @@
               <nuxt-link :to="{ name: 'category-slug', params: {slug: item.category.data.attributes.slug} }">{{ item.label }}</nuxt-link>
             </li>
             
-            <li>
+            <li v-if="data.profile && data.profile.link">
               <a :href="data.profile.link.href" :target="data.profile.link.target" class="text-white hover:text-white text-sm capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded inline-block px-5 py-4">
                 {{ data.profile.link.label }}
               </a>
@@ -55,7 +55,7 @@
               </div>
             </li> -->
             
-            <li class="sidebar-menu__button" v-if="data.profile">
+            <li class="sidebar-menu__button" v-if="data.profile && data.profile.link">
               <a :href="data.profile.link.label" :target="data.profile.link.target"
                 class="text-white hover:text-white text-button capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded inline-block px-5 w-full text-center">
                 {{ data.profile.link.label}}

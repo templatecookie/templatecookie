@@ -1,44 +1,55 @@
 import gql from 'graphql-tag';
 
 export default gql`
-query category($slug: ID!){
-  category(id: $slug) {
+query categoryProducts($slug: String!, $page: Int!, $pageSize: Int!) {
+  categories(filters: { slug: { eq: $slug } }) {
     data {
-      id
       attributes {
         name
         slug
-        products(sort: "publishedAt:desc") {
+      }
+    }
+  }
+
+  products(
+    filters: { category: { slug: { eq: $slug } } }
+    sort: "publishedAt:desc",
+    pagination: { page: $page, pageSize: $pageSize }
+  ) {
+    data {
+      attributes {
+        name
+        slug
+        publishedAt
+        short_description
+        price
+        category {
           data {
-            id
             attributes {
               name
               slug
-              publishedAt
-              short_description
-              price
-              category {
-                data {
-                  attributes {
-                    name
-                    slug
-                  }
-                }
-              }
-              banner {
-                data {
-                  attributes {
-                    name
-                    previewUrl
-                    url
-                    alternativeText
-                    ext
-                  }
-                }
-              }
             }
           }
-        }   
+        }
+        banner {
+          data {
+            attributes {
+              name
+              previewUrl
+              url
+              alternativeText
+              ext
+            }
+          }
+        }
+      }
+    }
+    meta {
+      pagination{
+        total
+        page
+        pageSize
+        pageCount
       }
     }
   }

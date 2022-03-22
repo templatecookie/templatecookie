@@ -15,7 +15,6 @@
       </div>
     </section>
 
-    <!-- Filter Item content -->
     <section>
       <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 my-8">
@@ -23,9 +22,9 @@
             <ProductCard :product="item.attributes" :id="item.id" :large="true" />
           </div>
         </div>
-        <!-- <div class="flex items-center justify-center py-7">
+        <div class="flex items-center justify-center py-7">
           <Pagination :data="pagination" v-on:goToPage="handleGoToPage"/>
-        </div> -->
+        </div>
       </div>
     </section>
   </div>
@@ -52,25 +51,36 @@ export default {
       }
     ],
   },
-  async asyncData({ app, params }) {
+  watchQuery: ["page"],
+  async asyncData({ app, params, query }) {
     const client = app.apolloProvider.defaultClient;
     const { slug } = params;
+    const page = parseInt(query.page || 1);
 
     const { data } = await client.query({
       query: CATEGORY_PRODUCTS,
       variables: {
+        page,
+        pageSize: 2,
         slug
       }
     })
-    const category = data.category.data.attributes
-    const products = category.products.data
+
+    const category = data.categories.data[0]?.attributes
+    const products = data?.products?.data;
+    const pagination = data?.products?.meta?.pagination;
     
-    return { category, products }
+    return { category, products, pagination }
   },
   data() {
     return {
       bannerImg,
     };
   },
+  methods: {
+    handleGoToPage(event){
+      this.$router.push({ query: { page: event } })
+    },
+  }
 };
 </script>

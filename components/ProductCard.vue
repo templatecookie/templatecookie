@@ -65,10 +65,10 @@ export default {
       required: false,
       default: false,
     },
-    id: {
-      type: [Number, String],
-      required: true,
-    },
+    // id: {
+    //   type: [Number, String],
+    //   required: true,
+    // },
     product: {
       type: Object,
       required: true,

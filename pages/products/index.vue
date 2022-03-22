@@ -123,7 +123,6 @@ export default {
   },
   methods: {
     handleGoToPage(event){
-      // console.log(event);
       this.$router.push({ query: { page: event } })
     },
   },
@@ -134,13 +133,10 @@ export default {
   },
   watch: {
     categories(newValue) {
-      console.log(newValue);
+      // console.log(newValue);
     }
   },
   mounted() {
-    // this.$nextTick(() => {
-    //   this.loadCategories();
-    // });
   },
 };
 </script>
