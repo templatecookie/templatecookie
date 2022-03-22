@@ -57,10 +57,10 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: 'http://localhost:1337/graphql',
-        getAuth: () => `Bearer fa8423d78cd2ef9b0e946ca7eda3d32e900ccac15269be72fae8228bd0cfaf8ba1447f3a906d99ee764279e55ff098bd39325dbbf2638e9e40f7092e5ffd658f9337dcb5b24a90babe1abf2ecbe35b382c85ff8feea3ab95db44903767e41b6d87f1beb8fb19a979bfb2a04678e5a02a9e82e29395a7859ca84ff0e685d69661`,
-        // httpEndpoint: 'https://api.templatecookie.com/graphql',
-        // getAuth: () => `Bearer b3b23d4cb736c209cdbaa9186f82ee653734ac798cea1345cdd69c5b2bba0c0e79d87f3c80918eb3e95fe199a47d7d6e5ecfeefbf352800a654cc270face8d36a6b4f23dc74afdd28590e2a72b153d8a0a75ef73011cda4f989f4bf02a4ec96117fb6c8dcc8bd14879d877758762a23aabd0bff325e0b3ce769901c3e2f4a9a6`,
+        // httpEndpoint: 'http://localhost:1337/graphql',
+        // getAuth: () => `Bearer fa8423d78cd2ef9b0e946ca7eda3d32e900ccac15269be72fae8228bd0cfaf8ba1447f3a906d99ee764279e55ff098bd39325dbbf2638e9e40f7092e5ffd658f9337dcb5b24a90babe1abf2ecbe35b382c85ff8feea3ab95db44903767e41b6d87f1beb8fb19a979bfb2a04678e5a02a9e82e29395a7859ca84ff0e685d69661`,
+        httpEndpoint: 'https://api.templatecookie.com/graphql',
+        getAuth: () => `Bearer b3b23d4cb736c209cdbaa9186f82ee653734ac798cea1345cdd69c5b2bba0c0e79d87f3c80918eb3e95fe199a47d7d6e5ecfeefbf352800a654cc270face8d36a6b4f23dc74afdd28590e2a72b153d8a0a75ef73011cda4f989f4bf02a4ec96117fb6c8dcc8bd14879d877758762a23aabd0bff325e0b3ce769901c3e2f4a9a6`,
       }
     }
   },
