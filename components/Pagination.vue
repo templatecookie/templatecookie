@@ -81,11 +81,7 @@ export default {
       return value < 10 ? '0' + value : value;
     },
     goToPage(page){
-      // const pageCount = this.data.pageCount;
-      // if(page > 1 && page < pageCount) {
-        // go to page
-        this.$emit('goToPage', page);
-      // }
+      this.$emit('goToPage', page);
     },
     goToPreviousPage(){
       const currentPage = this.data.page;

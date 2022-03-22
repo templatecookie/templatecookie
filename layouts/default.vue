@@ -28,7 +28,6 @@ export default {
       const { data } = await client.query({
         query: GLOBAL_QUERY,
       })
-      console.log(data);
       
       this.global = data?.global?.data?.attributes
       this.$store.commit('SET_GLOBAL_DATA', this.global)

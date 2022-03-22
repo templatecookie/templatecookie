@@ -18,9 +18,18 @@
             <!-- Tab menu  -->
             <div class="col-span-full lg:col-span-2">
               <ul class="flex items-center justify-center lg:justify-start feature relative">
-                <li v-for="(item, index) in productListing.technologies.data" :key="index" @click="activeTab = item.attributes.slug">
-                  <div class="flex flex-col items-center feature-box group" :class="{ 'is-active': activeTab === item.attributes.slug }" @click="activeTab = 'bootstrapTab'">
-                    <!-- icon  -->
+                <li @click="setTechnology('')">
+                  <div class="flex flex-col items-center feature-box group" :class="activeTechnology == '' ? 'is-active' : ''">
+                    <span class="feature-box__icon inline-block mb-3">
+                      <img src="../../assets/images/versions/html.png" alt="version" />
+                    </span>
+                    <h6 class="feature-box__title text-body-16 capitalize text-gray-61 text-gray-6a group-hover:text-dark-06">
+                      All
+                    </h6>
+                  </div>
+                </li>
+                <li v-for="(item, index) in technologies" :key="index" @click="setTechnology(item.attributes.slug)">
+                  <div class="flex flex-col items-center feature-box group" :class="activeTechnology == item.attributes.slug ? 'is-active' : ''">
                     <span class="feature-box__icon inline-block mb-3">
                       <img :src="fixImageUrl(item.attributes.icon)" alt="version" />
                     </span>
@@ -33,13 +42,12 @@
             </div>
             <!-- Sort List  -->
             <div class="col-span-full lg:col-span-1 py-4 lg:py-0">
-              <!-- dropdown wrapper  -->
               <div class="flex items-center justify-center lg:justify-end space-x-3 sort-filter">
                 <h5 class="whitespace-nowrap text-body-14 leading-5">
                   Category :
                 </h5>
                 <div class="w-200">
-                  <v-select label="name" :clearable="false" placeholder="Select Sort" :options="categoryList" />
+                  <v-select label="name" :clearable="false" placeholder="Select Category" v-model="selectedCategory" :options="categoryList" @input="setCategory" />
                 </div>
               </div>
             </div>
@@ -90,10 +98,9 @@ export default {
       }
     ],
   },
-  watchQuery: ["page"],
+  watchQuery: true,
   async asyncData({ app, query }) {
     const client = app.apolloProvider.defaultClient;
-    const page = parseInt(query.page || 1);
 
     const { data } = await client.query({
       query: PRODUCT_LISTING,
@@ -102,45 +109,77 @@ export default {
     let products = await client.query({
       query: ALL_PRODUCTS,
       variables: {
-        page,
+        page: parseInt(query.page || 1),
         pageSize: 2,
+        technology: query.technology || "",
+        category: query.category || "",
       }
     })
     
     const allProducts = products.data.products.data;
     const productListing = data.productListing.data?.attributes;
+    const technologies = data.technologies.data;
     const pagination = products.data.products?.meta?.pagination;
+    const categories = data.categories.data;
     
-    return { productListing, allProducts, pagination }
+    return { productListing, allProducts, pagination, technologies, categories }
   },
   data() {
     return {
       tabs: [],
-      activeTab: "all",
+      activeTechnology: "",
       bannerImg,
-      categoryList: ["All Categories",],
+      selectedCategory: {},
+      categoryList: [
+        {
+          name: "All Categories",
+          slug: "",
+        }
+      ],
     };
   },
   methods: {
     handleGoToPage(event){
-      // console.log(event);
       this.$router.push({ query: { page: event } })
     },
-  },
-  computed: {
-    categories() {
-      return this.$store.getters.getGlobalData;
+    setTechnology(technology) {
+      this.activeTechnology = technology;
+
+      const query = {
+        ...this.$route.query,
+        technology: technology,
+      }
+
+      this.$router.push({ query: query })
+    },
+    setCategory(category) {
+      const query = {
+        ...this.$route.query,
+        category: category.slug,
+      }
+
+      this.$router.push({ query: query })
+    },
+    setQueries(){
+      this.categories.forEach(element => {
+        this.categoryList.push(element.attributes);
+      });
+      
+      this.activeTechnology = this.$route.query.technology || "";
+  
+      let category = this.categories.find(element  => element.attributes.slug === this.$route.query.category);
+      this.selectedCategory = category ? category.attributes : this.categoryList[0];
     }
   },
   watch: {
-    categories(newValue) {
-      console.log(newValue);
+    '$route.query': function () {
+      this.setQueries();
     }
   },
   mounted() {
-    // this.$nextTick(() => {
-    //   this.loadCategories();
-    // });
+    
+
+    this.setQueries();
   },
 };
 </script>

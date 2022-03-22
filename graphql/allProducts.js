@@ -2,8 +2,15 @@ import gql from 'graphql-tag';
 
 // export const global = gql`
 export default gql`
-query products($page: Int!, $pageSize: Int!) {
-  products(sort: "publishedAt:desc", pagination: { page: $page, pageSize: $pageSize }) {
+query products($page: Int!, $pageSize: Int!, $technology: String!, $category: String! ) {
+  products(
+      sort: "publishedAt:desc",
+      pagination: { page: $page, pageSize: $pageSize }
+      filters: {
+        technology: { slug: { contains: $technology } }
+        category: { slug: { contains: $category } }
+      }
+    ) {
     data {
       id,
       attributes {

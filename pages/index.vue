@@ -58,9 +58,9 @@
     </section>
 
     <!-- Why Should  -->
-    <top-features-section :data="homepage.topFeaturesSection" />
+    <TopFeaturesSection v-if="homepage && homepage.topFeaturesSection" :data="homepage.topFeaturesSection" />
     
-    <WhyUs :data="homepage.whyUsSection" />
+    <WhyUs v-if="homepage && homepage.whyUsSection" :data="homepage.whyUsSection" />
   </div>
 </template>
 
@@ -98,11 +98,10 @@ export default {
       query: LATEST_PRODUCTS,
     })
     
-    const homepage = data.homepage.data.attributes;
+    const homepage = data.homepage.data?.attributes;
     const latestProducts = products.data.products.data;
     
     return { homepage, latestProducts }
-    // return { homepage }
   },
   data() {
     return {
