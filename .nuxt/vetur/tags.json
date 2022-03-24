@@ -32,6 +32,12 @@
   "SolutionCard": {
     "description": "Auto imported from components/SolutionCard.vue"
   },
+  "Footer": {
+    "description": "Auto imported from components/Footer/Footer.vue"
+  },
+  "FooterTwo": {
+    "description": "Auto imported from components/Footer/FooterTwo.vue"
+  },
   "DemoCallToAction": {
     "description": "Auto imported from components/Demo/CallToAction.vue"
   },
@@ -59,6 +65,12 @@
   "DemoProductTopFeatures": {
     "description": "Auto imported from components/Demo/ProductTopFeatures.vue"
   },
+  "Header": {
+    "description": "Auto imported from components/Header/Header.vue"
+  },
+  "HeaderTwo": {
+    "description": "Auto imported from components/Header/HeaderTwo.vue"
+  },
   "HomeHeroSection": {
     "description": "Auto imported from components/Home/HeroSection.vue"
   },
@@ -67,18 +79,6 @@
   },
   "HomeWhyUs": {
     "description": "Auto imported from components/Home/WhyUs.vue"
-  },
-  "Footer": {
-    "description": "Auto imported from components/Footer/Footer.vue"
-  },
-  "FooterTwo": {
-    "description": "Auto imported from components/Footer/FooterTwo.vue"
-  },
-  "Header": {
-    "description": "Auto imported from components/Header/Header.vue"
-  },
-  "HeaderTwo": {
-    "description": "Auto imported from components/Header/HeaderTwo.vue"
   },
   "ProductListTab": {
     "description": "Auto imported from components/product-list/Tab.vue"
