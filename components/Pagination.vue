@@ -2,7 +2,7 @@
   <div>
     <ul class="flex items-center space-x-4">
       <li>
-        <a href="#" v-if="prevDisabled()" @click.prevent :disabled="prevDisabled()" class="bg-gray-200 text-gray-600 flex items-center text-sm font-medium capitalize rounded-md p-3 sm:px-5">
+        <a href="#" v-if="prevDisabled() || data.pageCount < data.page" @click.prevent :disabled="prevDisabled()" class="bg-gray-200 text-gray-600 flex items-center text-sm font-medium capitalize rounded-md p-3 sm:px-5">
           <span class="icon mr-2 inline-block">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M16.875 10H3.125" stroke="#525252" stroke-width="1.5" stroke-linecap="round"
@@ -39,7 +39,7 @@
         </ul>
       </li>
       <li>
-        <a href="#" v-if="nextDisabled()" @click.prevent :disabled="nextDisabled()" class="bg-gray-200 text-gray-600 flex items-center text-sm font-medium capitalize rounded-md  p-2.5 sm:px-5">
+        <a href="#" v-if="nextDisabled() || data.pageCount < data.page" @click.prevent :disabled="nextDisabled()" class="bg-gray-200 text-gray-600 flex items-center text-sm font-medium capitalize rounded-md  p-2.5 sm:px-5">
           Next
           <span class="icon ml-2 inline-block">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
