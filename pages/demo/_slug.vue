@@ -1,14 +1,14 @@
 <template>
   <div>
     <HeaderTwo />
-    <product-hero :product="product" />
-    <product-fun-fact :data="product.product_funfacts" />
-    <product-top-features :data="product.productFeatures" />
+    <product-hero :product="product" v-if="product"  />
+    <product-fun-fact :data="product.product_funfacts" v-if="product.product_funfacts"  />
+    <product-top-features :data="product.productFeatures" v-if="product.productFeatures" />
 
     <div class="py-20 lg:py-124">
       <product-screenshots />
       <product-feature-screenshots />
-      <product-pages :data="product.productPages" />
+      <product-pages :data="product.productPages" v-if="product.productPages"  />
       <product-folder-structure />
       <product-support />
       <call-to-action />

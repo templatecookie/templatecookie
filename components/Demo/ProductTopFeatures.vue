@@ -1,7 +1,7 @@
 <template>
   <div class="py-20 lg:py-124">
       <div class="container">
-        <div class="md:grid grid-cols-12 gap-6 mb-12 items-center">
+        <div class="md:grid grid-cols-12 gap-6 mb-12 items-center" v-if="data && data.info">
           <div class="col-span-7 mb-4 md:mb-0">
             <h2 class="text-dark-06 text-body-32px md:text-4xl xl:text-title font-semibold tracking-01">
               {{ data.info.title }}
