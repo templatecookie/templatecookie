@@ -2,6 +2,10 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: true,
 
+  publicRuntimeConfig: {
+    dataPerPage: 6,
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Homepage | Templatecookie',
@@ -47,12 +51,25 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
+    '@nuxtjs/google-fonts'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/apollo',
   ],
+  googleFonts: {
+    display: 'swap',
+    families: {
+      Roboto: true,
+      'Josefin+Sans': true,
+      Lexend: [300, 400, 500, 600, 700, 800],
+      Raleway: {
+        wght: [100, 400],
+        ital: [100]
+      },
+    }
+  },
 
   apollo: {
     clientConfigs: {

@@ -4,7 +4,6 @@
     <div class="container">
       <!-- call to action card  -->
       <div class="relative overflow-hidden bg-white border-gray-e6 border rounded-3xl p-6 md:p-12 -mb-16">
-        <!-- inner content wrapper  -->
         <div class="flex flex-col lg:flex-row lg:space-x-8">
           <!-- Join community  -->
           <div
@@ -29,9 +28,7 @@
               {{ data.newsletter_description }}
             </p>
             <form action="#">
-              <!-- email field  -->
               <div class="relative overflow-hidden rounded-md border border-gray-e6 py-3 px-18 mb-3">
-                <!-- icon  -->
                 <span class="absolute top-1/2 left-[18px] transform -translate-y-1/2">
                   <img src="~/assets/images/svg/envelop.svg" alt="icon" />
                 </span>
@@ -51,13 +48,13 @@
 </template>
 
 <script>
+import SocialLink from "./SocialLink.vue"
 export default {
-  props: ['data'],
-  data (){
-    return {
-
-    }
-  },
+    props: ["data"],
+    data() {
+        return {};
+    },
+    components: { SocialLink }
 }
 </script>
 

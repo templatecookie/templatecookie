@@ -21,7 +21,7 @@
                 <li @click="setTechnology('')">
                   <div class="flex flex-col items-center feature-box group" :class="activeTechnology == '' ? 'is-active' : ''">
                     <span class="feature-box__icon inline-block mb-3">
-                      <img src="../../assets/images/versions/html.png" alt="version" />
+                      <img src="../../assets/images/svg/all.svg" alt="version" />
                     </span>
                     <h6 class="feature-box__title text-body-16 capitalize text-gray-61 text-gray-6a group-hover:text-dark-06">
                       All
@@ -58,7 +58,7 @@
 
     <!-- Filter Item content -->
     <section>
-      <div class="container">
+      <div class="container" v-if="allProducts.length">
         <!-- filter content  -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 my-8">
           <div v-for="(item, itemIndex) in allProducts" :key="itemIndex" class="flex items-stretch">
@@ -69,6 +69,24 @@
         <div class="flex items-center justify-center py-7">
           <Pagination :data="pagination" v-on:goToPage="handleGoToPage"/>
         </div>
+      </div>
+
+      <div class="container py-12" v-else>
+        <div class="text-center text-2xl pb-6 text-red-400">
+          No products available, come back later!
+        </div>
+        <nuxt-link :to="{ name: 'products'}" class="flex items-center bg-blue-0b hover:bg-dark-06 transition-all w-auto max-w-232 justify-center text-button-17 text-white rounded-lg overflow-hidden mx-auto">
+            Browse Products
+            <!-- arrow toggle icon -->
+            <span class="inline-block ml-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.75 12H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+          </nuxt-link>
       </div>
     </section>
   </div>
@@ -99,7 +117,7 @@ export default {
     ],
   },
   watchQuery: true,
-  async asyncData({ app, query }) {
+  async asyncData({ app, query, $config }) {
     const client = app.apolloProvider.defaultClient;
 
     const { data } = await client.query({
@@ -110,7 +128,7 @@ export default {
       query: ALL_PRODUCTS,
       variables: {
         page: parseInt(query.page || 1),
-        pageSize: 2,
+        pageSize: $config.dataPerPage,
         technology: query.technology || "",
         category: query.category || "",
       }
