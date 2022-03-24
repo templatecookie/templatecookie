@@ -145,7 +145,15 @@ query {
             title
             description
             subTitle
-            theme
+            theme,
+            background{
+              data {
+                attributes {
+                  url,
+                  alternativeText
+                }
+              }
+            }
           }
           counterNumbers {
             id

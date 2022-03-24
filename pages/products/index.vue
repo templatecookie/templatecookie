@@ -21,7 +21,7 @@
                 <li @click="setTechnology('')">
                   <div class="flex flex-col items-center feature-box group" :class="activeTechnology == '' ? 'is-active' : ''">
                     <span class="feature-box__icon inline-block mb-3">
-                      <img src="../../assets/images/versions/html.png" alt="version" />
+                      <img src="../../assets/images/svg/all.svg" alt="version" />
                     </span>
                     <h6 class="feature-box__title text-body-16 capitalize text-gray-61 text-gray-6a group-hover:text-dark-06">
                       All

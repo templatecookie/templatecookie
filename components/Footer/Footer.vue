@@ -16,7 +16,6 @@
         </div>
         <!-- Navigation Menu -->
         <div class="grid sm:grid-cols-2 gap-7 sm:gap-0 col-span-2" v-if="data && data.menuItems">
-          <!-- Menu column  -->
           <div v-for="item in data.menuItems" :key="item.id">
             <h2 class="mb-7 text-body-16 leading-none tracking-widest uppercase text-white">
               {{ item.name }}
