@@ -1,7 +1,7 @@
 <template>
-  <div class="pt-20 lg:pt-124 bg-dark-06">
+  <div class="pt-28 lg:pt-40 bg-dark-06">
     <div class="container">
-      <div class="text-center mb-24">
+      <div class="text-center mb-40">
         <h2 class="text-white text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
           Let’s Get Started
         </h2>

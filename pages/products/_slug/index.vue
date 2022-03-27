@@ -194,8 +194,7 @@
                   <ul>
                     <li class="text-gray-6a text-sm mb-4">
                       <img class="inline mr-2.5" src="~@/assets/images/svg/icon/arrows-clockwise.svg" alt="" />
-                      Last
-                      Update
+                      Last Updated
                       <span class="float-right text-dark-06">
                         1 monts ago
                       </span>

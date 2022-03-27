@@ -1,16 +1,16 @@
 <template>
   <div>
     <!-- Banner  -->
-    <section class="realtive overflow-hidden pb-14 lg:pb-72 pt-156 bg-no-repeat bg-center bg-cover"
+    <section class="realtive pb-14 lg:pb-72 pt-156 bg-no-repeat bg-center bg-cover"
       :style="{ backgroundImage: `url(${bannerImg})` }">
       <div class="container">
         <!-- banner content  -->
         <div class="text-center">
           <h1 class="text-4xl md:text-heading-40 text-dark-06 mb-6 max-w-680 mx-auto font-semibold">
-            {{ productListing.info.title }}
+            {{ page.info.title }}
           </h1>
           <p class="text-lg md:text-body-18 text-dark-06 mb-8 max-w-full md:max-w-536 mx-auto font-light">
-            {{ productListing.info.description }}
+            {{ page.info.description }}
           </p>
 
           <!-- Templates Tabs Menu  -->
@@ -58,10 +58,10 @@
 
     <!-- Filter Item content -->
     <section>
-      <div class="container" v-if="allProducts.length">
+      <div class="container" v-if="products.length">
         <!-- filter content  -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 my-8">
-          <div v-for="(item, itemIndex) in allProducts" :key="itemIndex" class="flex items-stretch">
+          <div v-for="(item, itemIndex) in products" :key="itemIndex" class="flex items-stretch">
             <ProductCard :product="item.attributes" :id="item.id" :large="true" />
           </div>
         </div>
@@ -71,22 +71,10 @@
         </div>
       </div>
 
-      <div class="container py-12" v-else>
+      <div class="container py-16" v-else>
         <div class="text-center text-2xl pb-6 text-red-400">
-          No products available, come back later!
+          No products available, try with different filter!
         </div>
-        <nuxt-link :to="{ name: 'products'}" class="flex items-center bg-blue-0b hover:bg-dark-06 transition-all w-auto max-w-232 justify-center text-button-17 text-white rounded-lg overflow-hidden mx-auto">
-            Browse Products
-            <!-- arrow toggle icon -->
-            <span class="inline-block ml-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.75 12H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </span>
-          </nuxt-link>
       </div>
     </section>
   </div>
@@ -116,7 +104,6 @@ export default {
       }
     ],
   },
-  watchQuery: true,
   async asyncData({ app, query, $config }) {
     const client = app.apolloProvider.defaultClient;
 
@@ -124,7 +111,7 @@ export default {
       query: PRODUCT_LISTING,
     })
 
-    let products = await client.query({
+    let productData = await client.query({
       query: ALL_PRODUCTS,
       variables: {
         page: parseInt(query.page || 1),
@@ -134,13 +121,13 @@ export default {
       }
     })
     
-    const allProducts = products.data.products.data;
-    const productListing = data.productListing.data?.attributes;
+    const products = productData.data.products.data;
+    const pagination = productData.data.products?.meta?.pagination;
+    const page = data.productListing.data?.attributes;
     const technologies = data.technologies.data;
-    const pagination = products.data.products?.meta?.pagination;
     const categories = data.categories.data;
     
-    return { productListing, allProducts, pagination, technologies, categories }
+    return { page, products, pagination, technologies, categories }
   },
   data() {
     return {
@@ -187,16 +174,35 @@ export default {
   
       let category = this.categories.find(element  => element.attributes.slug === this.$route.query.category);
       this.selectedCategory = category ? category.attributes : this.categoryList[0];
+    },
+    async filterProducts(){
+      const client = this.$nuxt.$apolloProvider.defaultClient;
+      const query = this.$route.query
+
+      const { data } = await client.query({
+        query: ALL_PRODUCTS,
+        variables: {
+          page: parseInt(query.page || 1),
+          pageSize: this.$config.dataPerPage,
+          technology: query.technology || "",
+          category: query.category || "",
+        }
+      })
+      
+      this.products = data.products.data;
+      this.pagination = data.products?.meta?.pagination;
     }
   },
   watch: {
-    '$route.query': function () {
-      this.setQueries();
-    }
+    '$route.query': {
+      handler(query) {
+        this.filterProducts();
+      },
+      // deep: true,
+      // immediate: true
+    },
   },
   mounted() {
-    
-
     this.setQueries();
   },
 };
