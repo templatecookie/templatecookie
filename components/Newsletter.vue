@@ -27,15 +27,15 @@
             <p class="font-light text-body-16 text-dark-42 mb-6 max-w-536">
               {{ data.newsletter_description }}
             </p>
-            <form action="#">
+            <form action="https://www.getrevue.co/profile/templatecookie/add_subscriber" method="post" target="_blank" name="revue-form">
               <div class="relative overflow-hidden rounded-md border border-gray-e6 py-3 px-18 mb-3">
                 <span class="absolute top-1/2 left-[18px] transform -translate-y-1/2">
                   <img src="~/assets/images/svg/envelop.svg" alt="icon" />
                 </span>
-                <input type="email" placeholder="Email Address"
+                <input type="email" placeholder="Email Address" name="member[email]"
                   class="outline-none focus:outline-none text-body-16 font-light placeholder-gray-83 text-dark-06 pl-9 w-full" />
               </div>
-              <button type="submit"
+              <button type="submit" name="member[subscribe]"
                 class="inline-block text-center text-button bg-blue-0b hover:bg-dark-06 transition-all w-full rounded-md text-white font-medium">
                 Subscribe
               </button>

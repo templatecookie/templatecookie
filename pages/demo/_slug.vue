@@ -11,8 +11,8 @@
       <product-pages :data="product.productPages" v-if="product.productPages"  />
       <product-folder-structure />
       <product-support />
-      <call-to-action />
     </div>
+    <call-to-action />
 
     <!-- <div class="py-20 lg:py-124">
       <div class="container">
