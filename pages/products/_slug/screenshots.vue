@@ -8,7 +8,16 @@
         </nuxt-link>
       </div>
       <!-- action  -->
-      <div>
+      <div class="flex items-center">
+        <nuxt-link :to="{ name: 'products-slug', params: {slug: product.slug}}" class="mr-4 flex items-center justify-center text-gray-500 text-button capitalize font-medium border-[1px] border-gray-500 overflow-hidden rounded px-5 w-full whitespace-nowrap text-center">
+          Go Back
+          <span class="inline-block ml-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.25 12H3.75" stroke="#6b7280" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10.5 5.25L3.75 12L10.5 18.75" stroke="#6b7280" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </nuxt-link>
         <a :href="product.buy_url" target="_blank" class="flex items-center justify-center text-white hover:text-white text-button capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded px-5 w-full whitespace-nowrap text-center">
           Buy Now
           <span class="inline-block ml-2">
@@ -19,6 +28,7 @@
             </svg>
           </span>
         </a>
+
       </div>
     </div>
     <div id="tabs" class="lg:flex">
@@ -82,6 +92,9 @@ export default {
       defaultImg: null,
     };
   },
+  mounted(){
+    this.defaultImg = this.product.gallery.data[0].attributes.url;
+  }
 };
 </script>
 

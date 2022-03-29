@@ -16,7 +16,7 @@
                   <img class="inline-block mr-1.5 duration-300" src="~/assets/images/svg/image-square.svg" alt="" />
                   Screenshots
                 </nuxt-link>
-                <div class="flex items-center justify-center sm:justify-end">
+                <!-- <div class="flex items-center justify-center sm:justify-end">
                   <p class="text-dark-06 text-base mr-4">Compatible with:</p>
                   <ul class="flex space-x-3">
                     <li data-aos="fade-up" data-aos-duration="1200">
@@ -26,7 +26,7 @@
                       <nuxt-link to="#"><img src="~@/assets/images/svg/icon3.svg" alt="" /></nuxt-link>
                     </li>
                   </ul>
-                </div>
+                </div> -->
               </div>
             </div>
             <!-- end -->
@@ -126,30 +126,48 @@
               </div>
             </div>
             <!-- end -->
-
           </div>
           <div class="col-span-4">
             <div class="bg-gray-f5 rounded-xl">
+
               <div class="select-radio p-4">
-                <div class="mb-4">
-                  <input id="radio1" type="radio" name="radio" class="hidden" checked />
+                <!-- <div class="mb-4 mx-4 mt-6">
                   <label for="radio1"
-                    class="flex items-center cursor-pointer justify-between px-4 py-3 rounded-lg border border-gray-f5 duration-300">
+                    class="bg-white flex items-center cursor-pointer justify-between px-4 py-3 rounded-lg border border-blue-600 duration-300">
                     <div class="flex items-center">
-                      <span
-                        class="w-5 h-5 rounded-full inline-block mr-4 flex-shrink-0 border-1.5 border-gray-cd bg-white duration-300"></span>
                       <div>
                         <h4 class="text-base text-dark-06 mb-1">
                           Regular License
                         </h4>
                         <p class="text-dark-42 text-sm font-light">
-                          Only for personal use
+                          Use, by you or one client, in a single end product which end users are not  charged for. The total price includes the item price and a buyer fee.
                         </p>
                       </div>
                     </div>
                     <div>
                       <h3 class="text-blue-0b font-semibold text-2xl tracking-ls03">
-                        ${{ product.price }}
+                        ${{ product.regular_price }}
+                      </h3>
+                    </div>
+                  </label>
+                </div> -->
+                <div class="mb-4">
+                  <input id="radio1" type="radio" name="radio" class="hidden" checked />
+                  <label for="radio1" class="flex items-center cursor-pointer justify-between px-4 py-3 rounded-lg border border-gray-f5 duration-300">
+                    <div class="flex items-center">
+                      <span class="w-5 h-5 rounded-full inline-block mr-4 flex-shrink-0 border-1.5 border-gray-cd bg-white duration-300"></span>
+                      <div>
+                        <h4 class="text-base text-dark-06 mb-1">
+                          Regular License
+                        </h4>
+                        <p class="text-dark-42 text-sm font-light mr-4">
+                          Use, by you or one client, in a single end product which end users are not charged for.
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <h3 class="text-blue-0b font-semibold text-2xl tracking-ls03">
+                        ${{ product.regular_price }}
                       </h3>
                     </div>
                   </label>
@@ -163,16 +181,16 @@
                         class="w-5 h-5 rounded-full inline-block mr-4 flex-shrink-0 border-1.5 border-gray-cd bg-white duration-300"></span>
                       <div>
                         <h4 class="text-base text-dark-06 mb-1">
-                          Commercial License
+                          Extended License
                         </h4>
-                        <p class="text-dark-42 text-sm font-light">
-                          Personal & business purpose
+                        <p class="text-dark-42 text-sm font-light mr-4">
+                          Use, by you or one client, in a single end product which end users can be charged for.
                         </p>
                       </div>
                     </div>
                     <div>
                       <h3 class="text-blue-0b font-semibold text-2xl tracking-ls03">
-                        ${{ product.price}}
+                        ${{ product.extended_price}}
                       </h3>
                     </div>
                   </label>
@@ -223,20 +241,13 @@
                       File Inlcude:
                       <span class="float-right text-dark-06"> Fig, Figma </span>
                     </li>
-                    <li class="text-gray-6a text-sm mb-4">
-                      <img class="inline mr-2.5" src="~@/assets/images/svg/icon/notebook.svg" alt="" />
-                        Documentation:
-                      <span class="float-right text-dark-06">
-                        Well Documented
-                      </span>
-                    </li>
-                    <li class="text-gray-6a text-sm mb-4">
+                    <!-- <li class="text-gray-6a text-sm mb-4">
                       <img class="inline mr-2.5" src="~@/assets/images/svg/icon/hand.svg" alt="" />
                       Customer Support:
                       <span class="float-right text-dark-06">
                         {{ product.customer_support }}
                       </span>
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
               </div>
