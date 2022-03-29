@@ -48,7 +48,7 @@
         <!-- Price  -->
         <div class=" order-2">
           <h5 class="text-body-24 font-normal uppercase text-pink-75" :class="large ? 'text-body-24' : 'text-body-20'">
-            ${{ product.price }}
+            ${{ product.regular_price }}
           </h5>
         </div>
       </div>

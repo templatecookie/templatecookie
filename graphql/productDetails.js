@@ -9,8 +9,8 @@ query product($slug: String!){
       attributes {
         name
         slug
-        sale_price
-        price
+        extended_price
+        regular_price
         short_description
         buy_url
         preview_url
@@ -66,7 +66,7 @@ query product($slug: String!){
         slug
         description
         short_description
-        price
+        regular_price
         banner {
           data {
             attributes {
