@@ -11,7 +11,7 @@ query {
         slug
         publishedAt
         short_description
-        price
+        regular_price
         category {
           data {
             attributes {

@@ -18,7 +18,7 @@ query products($page: Int!, $pageSize: Int!, $technology: String!, $category: St
         slug
         publishedAt
         short_description
-        price
+        regular_price
         category {
           data {
             attributes {

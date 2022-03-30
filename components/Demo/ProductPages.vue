@@ -1,15 +1,14 @@
 <template>
-  <div class="py-20 lg:py-124">
+  <div class="py-20 lg:py-124" id="pages">
     <div class="container">
       <div class="text-center mb-8 lg:mb-12">
         <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
-          45+ Beautiful hand-crafted pages
+          {{data.length}}+ Beautiful hand-crafted pages
         </h2>
       </div>
       <div class="grid grid-cols-12 gap-6">
         <div v-for="(item, itemIndex) in data" :key="itemIndex"
           class="col-span-12 xl:col-span-3 lg:col-span-6 md:col-span-6">
-          <!-- <LinkThumb :img="item.img" :title="item.title" :url="item.url" /> -->
           <div class="thumb-link">
             <a :href="item.url" target="_blank">
               <img :src="fixImageUrl(item.image)" alt="product-img" class="w-full h-250 object-cover overflow-hidden shadow-bs12" />

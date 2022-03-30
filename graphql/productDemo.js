@@ -57,7 +57,7 @@ query product($slug: String!){
         product_funfacts {
           id
           title
-          number
+          value
           icon {
             data {
               attributes {
@@ -83,29 +83,19 @@ query product($slug: String!){
         }
         displayFeatures {
           id
-          name
+          title
           subtitle
           description
-          image {
-            data {
-              attributes {
-                name
-                alternativeText
-                ext
-              }
-            }
-          }
-          alignment
-          action {
+          features{
             id
-            label
-            theme
-            width
-            link {
-              id
-              label
-              href
-              target
+            name
+            description 
+            image {
+              data {
+                attributes {
+                  url
+                }
+              }
             }
           }
         }
@@ -138,6 +128,22 @@ query product($slug: String!){
                   alternativeText
                   url
                 }
+              }
+            }
+          }
+        }
+        folder_structure {
+          title
+          description
+          structure
+        }
+        cta_section {
+          title
+          description
+          screenshots {
+            data {
+              attributes {
+                url
               }
             }
           }

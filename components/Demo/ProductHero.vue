@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-36 pt-56 lg:pb-222 lg:pt-300 bg-dark-06 bg-content bg-right-bottom bg-no-repeat hero-demo" :style="hero">
+  <div class="pb-36 pt-56 lg:pb-222 lg:pt-300 bg-dark-06 bg-content bg-right-bottom bg-no-repeat hero-demo" :style="{ backgroundImage: 'url(' + bgImage + ')' }">
     <div class="container">
       <div class="max-w-2xl sm:text-left text-center relative">
         <h1 class="tracking-01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8">
@@ -18,26 +18,6 @@
             Live Preview
           </a>
         </div>
-        <div
-          class="shadow-bs8 rounded-xl p-6 bg-white border border-gray-e6 flex items-center justify-center sm:justify-start absolute -bottom-44 lg:-bottom-64 sm:left-0 sm:transform-none transform -translate-x-1/2 left-1/2 sm:w-auto w-full">
-          <p class="text-dark-06 text-body-14/24 mr-4 text-left">
-            Compatible with:
-          </p>
-          <ul class="flex space-x-3">
-            <li>
-              <nuxt-link to="#"><img src="~@/assets/images/svg/icon1.svg" alt="" /></nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="#"><img src="~@/assets/images/svg/icon2.svg" alt="" /></nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="#"><img src="~@/assets/images/svg/icon3.svg" alt="" /></nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="#"><img src="~@/assets/images/svg/icon4.svg" alt="" /></nuxt-link>
-            </li>
-          </ul>
-        </div>
       </div>
     </div>
   </div>
@@ -53,9 +33,7 @@ export default {
   },
   data() {
     return {
-      hero: {
-        backgroundImage: "url(https://i.imgur.com/aBzS4DP.png)",
-      }
+      bgImage: require('../../assets/images/all-img/img-two.png')
     }
   }
 }

@@ -58,7 +58,7 @@ query {
               attributes {
                 name
                 slug
-                price
+                regular_price
                 short_description
                 banner {
                   data {

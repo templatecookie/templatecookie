@@ -22,7 +22,7 @@ query categoryProducts($slug: String!, $page: Int!, $pageSize: Int!) {
         slug
         publishedAt
         short_description
-        price
+        regular_price
         category {
           data {
             attributes {

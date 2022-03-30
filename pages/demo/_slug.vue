@@ -1,133 +1,18 @@
 <template>
   <div>
-    <HeaderTwo />
+    <ProductDemoHeader :product="product" v-if="product" />
     <product-hero :product="product" v-if="product"  />
     <product-fun-fact :data="product.product_funfacts" v-if="product.product_funfacts"  />
     <product-top-features :data="product.productFeatures" v-if="product.productFeatures" />
 
-    <div class="py-20 lg:py-124">
-      <product-screenshots />
-      <product-feature-screenshots />
+    <div class="">
+      <product-screenshots :data="product.productFeatureScreenshots" v-if="product.productFeatureScreenshots" />
+      <product-feature-screenshots :data="product.displayFeatures" v-if="product.displayFeatures"/>
       <product-pages :data="product.productPages" v-if="product.productPages"  />
-      <product-folder-structure />
-      <product-support />
+      <product-folder-structure :data="product.folder_structure" v-if="product.folder_structure" />
+      <product-support  />
     </div>
-    <call-to-action />
-
-    <!-- <div class="py-20 lg:py-124">
-      <div class="container">
-        <div class="lg:grid grid-cols-12 gap-6">
-          <div class="col-span-6 lg:order-2">
-            <div class="mb-6 lg:mb-0 h-340 md:h-470">
-              <img class="w-full h-full object-cover rounded-20" src="~@/assets/images/all-img/demo-thumb.png" alt="" />
-            </div>
-          </div>
-          <div class="col-span-6 flex items-center">
-            <div class="lg:max-w-536">
-              <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">
-                Explore our Gilio team services.
-              </h3>
-              <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
-                Feature Name 01
-              </h2>
-              <p class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light">
-                Nunc convallis semper justo quis tempor. Praesent molestie,
-                lorem sed imperdiet tempor, libero urna semper urna, facilisis
-                vulputate velit arcu vitae mi. Donec ac nisi ex.
-              </p>
-              <nuxt-link to="/"
-                class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06">
-                Button Label
-                <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></nuxt-link>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="py-20 lg:py-124">
-        <div class="container">
-          <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
-            <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">
-              Explore our Gilio team services.
-            </h3>
-            <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
-              Feature Name 01
-            </h2>
-            <p class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light">
-              Nunc convallis semper justo quis tempor. Praesent molestie, lorem
-              sed imperdiet tempor, libero urna semper urna, facilisis vulputate
-              velit arcu vitae mi. Donec ac nisi ex.
-            </p>
-          </div>
-          <div class="mb-6 lg:mb-0 h-350 md:h-650">
-            <img class="w-full object-cover rounded-20" src="~@/assets/images/all-img/demo-thumb2.png" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="py-20 lg:py-124 bg-gray-f0">
-        <div class="container">
-          <div class="lg:grid grid-cols-12 gap-6">
-            <div class="col-span-6">
-              <div class="lg:mr-20 mb-6 lg:mb-0 h-340 md:h-470">
-                <img class="w-full h-full object-cover rounded-20" src="~@/assets/images/all-img/demo-thumb.png"
-                  alt="" />
-              </div>
-            </div>
-            <div class="col-span-6 flex items-center">
-              <div class="lg:max-w-536">
-                <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">
-                  Explore our Gilio team services.
-                </h3>
-                <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
-                  Feature Name 01
-                </h2>
-                <p class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light">
-                  Nunc convallis semper justo quis tempor. Praesent molestie,
-                  lorem sed imperdiet tempor, libero urna semper urna, facilisis
-                  vulputate velit arcu vitae mi. Donec ac nisi ex.
-                </p>
-                <nuxt-link to="/"
-                  class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06">
-                  Button Label
-                  <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" />
-                </nuxt-link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="py-20 lg:py-124 bg-gray-f0">
-        <div class="container">
-          <div class="lg:grid grid-cols-12 gap-6">
-            <div class="col-span-6">
-              <div class="lg:mr-20 mb-6 lg:mb-0 h-340 md:h-470">
-                <img class="w-full h-full object-cover rounded-20" src="~@/assets/images/all-img/demo-thumb.png"
-                  alt="" />
-              </div>
-            </div>
-            <div class="col-span-6 flex items-center">
-              <div class="lg:max-w-536">
-                <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">
-                  Explore our Gilio team services.
-                </h3>
-                <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
-                  Feature Name 01
-                </h2>
-                <p class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light">
-                  Nunc convallis semper justo quis tempor. Praesent molestie,
-                  lorem sed imperdiet tempor, libero urna semper urna, facilisis
-                  vulputate velit arcu vitae mi. Donec ac nisi ex.
-                </p>
-                <nuxt-link to="/"
-                  class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06">
-                  Button Label
-                  <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" />
-                </nuxt-link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
+    <call-to-action :product="product" v-if="product" />
   </div>
 </template>
 
@@ -135,7 +20,7 @@
 import BusinessCard from "~/components/BusinessCard.vue";
 import PurchaseCard from "~/components/PurchaseCard.vue";
 import PRODUCT_DEMO from '~/graphql/productDemo'
-import HeaderTwo from "~/components/Header/HeaderTwo.vue";
+import ProductDemoHeader from "~/components/Header/ProductDemoHeader.vue";
 
 import ProductTopFeatures from '~/components/Demo/ProductTopFeatures.vue';
 import ProductFeatureScreenshots from '../../components/Demo/ProductFeatureScreenshots.vue';
@@ -180,7 +65,7 @@ export default {
     BusinessCard,
     PurchaseCard,
     ProductTopFeatures,
-    HeaderTwo,
+    ProductDemoHeader,
     ProductFeatureScreenshots,
     ProductFolderStructure,
     ProductScreenshots,

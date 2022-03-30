@@ -5,18 +5,9 @@
         class="col-span-6 lg:col-span-3 fun-column duration-300 hover:shadow-bs8">
         <div class="text-center border-r border-b border-gray-e6 px-1 py-7 md:px-8 md:py-10 fun-wrap">
           <h3 class="text-blue-0b text-3xl lg:text-heading-40 tracking-01 mb-2">
-            {{ item.number }}
+            {{ item.value }}
           </h3>
           <p class="text-dark-42 text-body-14 sm:text-base">{{ item.title }}</p>
-        </div>
-      </div>
-      <div v-for="(item, indexItem) in FunItems" :key="indexItem"
-        class="col-span-6 lg:col-span-3 fun-column duration-300 hover:shadow-bs8">
-        <div class="text-center border-r border-b border-gray-e6 px-1 py-7 md:px-8 md:py-10 fun-wrap">
-          <h3 class="text-blue-0b text-3xl lg:text-heading-40 tracking-01 mb-2">
-            {{ item.title }}
-          </h3>
-          <p class="text-dark-42 text-body-14 sm:text-base">{{ item.text }}</p>
         </div>
       </div>
     </div>
@@ -24,45 +15,8 @@
 </template>
 
 <script>
-
 export default {
   props: ['data'],
-  data: () => ({
-    FunItems: [
-      {
-        title: "55+",
-        text: "High-Quality Pages",
-      },
-      {
-        title: "55+",
-        text: "Figma UI Components",
-      },
-      {
-        title: "24/7",
-        text: "Dedicated Support all",
-      },
-      {
-        title: "100%",
-        text: "Money-Back Guarantee",
-      },
-      {
-        title: "Doc",
-        text: "Detailed Documentation",
-      },
-      {
-        title: "Global",
-        text: "Auto-Updatedable Style Guide",
-      },
-      {
-        title: "Inter",
-        text: "Free Google Font Used",
-      },
-      {
-        title: "Fig",
-        text: "Well-Organize & Easy-to-use File",
-      },
-    ],
-  })
 }
 </script>
 
