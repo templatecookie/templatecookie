@@ -1,6 +1,5 @@
 import gql from 'graphql-tag';
 
-// export const global = gql`
 export default gql`
 query product($slug: String!){
   products (filters: { slug: { eq: $slug }}){
@@ -57,7 +56,7 @@ query product($slug: String!){
         product_funfacts {
           id
           title
-          value
+          description
           icon {
             data {
               attributes {

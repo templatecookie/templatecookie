@@ -37,7 +37,6 @@ query product($slug: String!){
             }
           }
         }
-        documentation
         gallery {
           data {
             id
