@@ -189,7 +189,7 @@
                   </a>
                   <nuxt-link :to="{ name: 'demo-slug', params: {slug: product.slug} }" v-if="product.documentation_url"
                     class="block text-center font-medium border-1.5 border-dark-06 rounded-7 py-3.5 px-9 text-body-17 text-dark-06 duration-300 mb-4">
-                      <img class="inline-block mr-2" src="~/assets/images/svg/notebook.svg" alt="" />
+                      <img class="inline-block mr-2" src="~/assets/images/svg/icon/notebook.svg" alt="" />
                       View Demo
                   </nuxt-link>
                 </div>

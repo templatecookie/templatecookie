@@ -158,7 +158,7 @@ query {
           counterNumbers {
             id
             title
-            number
+            description
             theme
             icon {
               data {
