@@ -1,5 +1,5 @@
 <template>
-  <div class="py-20 lg:py-124">
+  <div class="py-20 lg:py-124" id="screenshot-gallery">
     <div class="container">
       <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
         <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">

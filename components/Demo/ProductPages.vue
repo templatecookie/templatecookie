@@ -1,5 +1,5 @@
 <template>
-  <div class="py-20 lg:py-124">
+  <div class="py-20 lg:py-124" id="pages">
     <div class="container">
       <div class="text-center mb-8 lg:mb-12">
         <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">

@@ -163,26 +163,6 @@
               Live Preview
             </a>
           </div>
-          <div
-            class="shadow-bs8 rounded-xl p-6 bg-white border border-gray-e6 flex items-center justify-center sm:justify-start absolute -bottom-44 lg:-bottom-64 sm:left-0 sm:transform-none transform -translate-x-1/2 left-1/2 sm:w-auto w-full">
-            <p class="text-dark-06 text-body-14/24 mr-4 text-left">
-              Compatible with:
-            </p>
-            <ul class="flex space-x-3">
-              <li>
-                <nuxt-link to="#"><img src="~@/assets/images/svg/icon1.svg" alt="" /></nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="#"><img src="~@/assets/images/svg/icon2.svg" alt="" /></nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="#"><img src="~@/assets/images/svg/icon3.svg" alt="" /></nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="#"><img src="~@/assets/images/svg/icon4.svg" alt="" /></nuxt-link>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
@@ -205,7 +185,7 @@
         <div class="md:grid grid-cols-12 gap-6 mb-12 items-center">
           <div class="col-span-7 mb-4 md:mb-0">
             <h2 class="text-dark-06 text-body-32px md:text-4xl xl:text-title font-semibold tracking-01">
-              Explore Relik <br />
+             productFeatures - Explore Relik <br />
               Notable Feature
             </h2>
           </div>
@@ -233,8 +213,7 @@
       </div>
     </div>
 
-    <div class="py-20 lg:py-124">
-
+    <div class="">
       <div class="py-20 lg:py-124">
         <div class="container">
           <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
@@ -425,16 +404,16 @@
           </div>
         </div>
       </div>
-      <div class="pt-20 lg:pt-124 md:pb-0 pb-20">
+      <div class="py-20 lg:py-124 md:pb-0 pb-20">
         <div class="container">
           <div class="grid grid-cols-12 gap-6">
             <div class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 purchase-card-wrap">
               <div class="purchase-card p-10 bg-gray-f0 text-center rounded-2xl">
                 <div class="icon w-84 h-84 m-auto bg-blue-0b rounded-full flex items-center justify-center mb-7">
-                  <img src="https://i.imgur.com/xSZYYEg.png" alt="icon" />
+                  <img src="../../assets/images/svg/handshake.svg" alt="icon" />
                 </div>
                 <div>
-                  <h3 class="text-dark-06 text-lg mb-3 font-medium"> Let’s Purchase This Product </h3>
+                  <h3 class="text-dark-06 text-lg mb-3 font-medium"> Life time free updates </h3>
                   <p class="text-dark-06 text-sm font-light mb-7"> Cras condimentum tincidunt dolor quis imperdiet.
                     Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes. </p>
                   <a href="#"
@@ -446,16 +425,16 @@
               </div>
             </div>
             <div class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 purchase-card-wrap">
-              <div class="purchase-card p-10 bg-gray-f0 text-center rounded-2xl">
-                <div class="icon w-84 h-84 m-auto bg-blue-0b rounded-full flex items-center justify-center mb-7">
-                  <img src="https://i.imgur.com/OALz67a.png" alt="icon" />
+              <div class="purchase-card p-10 bg-purple-e3 text-center rounded-2xl">
+                <div class="icon w-84 h-84 m-auto bg-purple-600 rounded-full flex items-center justify-center mb-7">
+                  <img src="../../assets/images/svg/notebook.svg" alt="icon" />
                 </div>
                 <div>
                   <h3 class="text-dark-06 text-lg mb-3 font-medium"> Well-Organize Documentation </h3>
                   <p class="text-dark-06 text-sm font-light mb-7"> Cras condimentum tincidunt dolor quis imperdiet.
                     Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes. </p>
                   <a href="#"
-                    class="btn inline-block bg-blue-0b rounded-5 text-sm py-2.5 px-5 text-white duration-300 hover:bg-black">
+                    class="btn inline-block bg-purple-600 rounded-5 text-sm py-2.5 px-5 text-white duration-300 hover:bg-black">
                     Documentation
                     <img class="inline-block ml-2 duration-300" src="~/assets/images/svg/arrow-right.svg"
                       alt="brand-logo" /></a>
@@ -463,16 +442,16 @@
               </div>
             </div>
             <div class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 purchase-card-wrap">
-              <div class="purchase-card p-10 bg-gray-f0 text-center rounded-2xl">
-                <div class="icon w-84 h-84 m-auto bg-blue-0b rounded-full flex items-center justify-center mb-7">
-                  <img src="https://i.imgur.com/sbCT8wF.png" alt="icon" />
+              <div class="purchase-card p-10 bg-green-e7 text-center rounded-2xl">
+                <div class="icon w-84 h-84 m-auto bg-green-of rounded-full flex items-center justify-center mb-7">
+                  <img src="../../assets/images/svg/headset.svg" alt="icon" />
                 </div>
                 <div>
                   <h3 class="text-dark-06 text-lg mb-3 font-medium"> 24/7 Customer Support </h3>
                   <p class="text-dark-06 text-sm font-light mb-7"> Cras condimentum tincidunt dolor quis imperdiet.
                     Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes. </p>
                   <a href="#"
-                    class="btn inline-block bg-blue-0b rounded-5 text-sm py-2.5 px-5 text-white duration-300 hover:bg-black">
+                    class="btn inline-block bg-green-of rounded-5 text-sm py-2.5 px-5 text-white duration-300 hover:bg-black">
                     Get Support
                     <img class="inline-block ml-2 duration-300" src="~/assets/images/svg/arrow-right.svg"
                       alt="brand-logo" /></a>

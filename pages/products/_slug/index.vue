@@ -16,17 +16,6 @@
                   <img class="inline-block mr-1.5 duration-300" src="~/assets/images/svg/image-square.svg" alt="" />
                   Screenshots
                 </nuxt-link>
-                <!-- <div class="flex items-center justify-center sm:justify-end">
-                  <p class="text-dark-06 text-base mr-4">Compatible with:</p>
-                  <ul class="flex space-x-3">
-                    <li data-aos="fade-up" data-aos-duration="1200">
-                      <nuxt-link to="#"><img src="~@/assets/images/svg/icon2.svg" alt="" /></nuxt-link>
-                    </li>
-                    <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-                      <nuxt-link to="#"><img src="~@/assets/images/svg/icon3.svg" alt="" /></nuxt-link>
-                    </li>
-                  </ul>
-                </div> -->
               </div>
             </div>
             <!-- end -->
@@ -61,17 +50,13 @@
                       <h4 class="text-dark-06 text-xl mb-5 uppercase">
                         HIGHLIGHTS
                       </h4>
-                      <div class="md:grid grid-cols-12 gap-6">
-                        <div class="md:col-span-6">
-                          <ul>
-                            <li v-for="(item, indexItem) in product.highlights" :key="indexItem"
-                              class="relative pl-8 text-dark-06 text-base font-light py-2">
-                              <img class="absolute left-0" src="~@/assets/images/svg/check-circle.svg"
-                                alt="" />{{ item.feature }}
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                      <ul class="flex justify-start">
+                        <li v-for="(item, indexItem) in product.highlights" :key="indexItem"
+                          class="relative pl-8 text-dark-06 text-base font-light py-2 w-1/2 ">
+                          <img class="absolute left-0" src="~@/assets/images/svg/check-circle.svg"
+                            alt="" />{{ item.feature }}
+                        </li>
+                      </ul>
                     </div>
                     <!-- end -->
                   </div>
