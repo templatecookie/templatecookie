@@ -5,35 +5,16 @@
         <div class="flex items-center mb-6 lg:mb-0">
           <div class="lg:pr-20 text-center lg:text-left">
             <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
-              Folder Structure
+              {{ data.title }}
             </h2>
             <p class="text-dark-06 text-base sm:text-lg font-light">
-              Nunc convallis semper justo quis tempor. Praesent molestie,
-              lorem sed imperdiet tempor, libero urna semper urna, facilisis
-              vulputate velit arcu vitae mi. Donec ac nisi ex.
+              {{ data.description }}
             </p>
           </div>
         </div>
         <div class="">
-          <pre
-            class="border border-gray-e6 p-8 rounded-2xl bg-white text-sm text-dark-06 pb-0 h-364 overflow-y-scroll custom-scroll">
-    ├── templatecookie
-        ├── assets
-          ├── css
-          ├── fonts 
-          ├── images
-          ├── js
-        ├── components
-        ├── pages
-          ├── index.vue
-          ├── hire-us.vue
-          ├── product-demo.vue
-          ├── product-details.vue
-          ├── product-list.vue
-          ├── billing.vue
-          ├── billing.vue
-
-                </pre>
+          <pre class="border border-gray-e6 p-8 rounded-2xl bg-white text-sm text-dark-06 pb-0 h-364 overflow-y-scroll custom-scroll" v-html="data.structure">
+          </pre>
         </div>
       </div>
     </div>
@@ -42,7 +23,7 @@
 
 <script>
 export default {
-
+  props: ['data']
 }
 </script>
 

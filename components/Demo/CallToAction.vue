@@ -3,10 +3,10 @@
     <div class="container">
       <div class="text-center mb-40">
         <h2 class="text-white text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
-          Let’s Get Started
+          {{ product.cta_section.title }}
         </h2>
         <p class="text-white text-base sm:text-lg mb-6 lg:mb-12 font-light">
-          Pick a demo and start building your WordPress website today.
+          {{ product.cta_section.description }}
         </p>
         <a :href="product.buy_url" target="_blank"
           class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-black">
@@ -17,35 +17,8 @@
     </div>
     <div>
       <swiper class="swiper" :options="swiperOptionOne">
-        <swiper-slide class="slider-full">
-          <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
-        </swiper-slide>
-        <swiper-slide class="slider-full">
-          <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
-        </swiper-slide>
-        <swiper-slide class="slider-full">
-          <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
-        </swiper-slide>
-        <swiper-slide class="slider-full">
-          <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
-        </swiper-slide>
-        <swiper-slide class="slider-full">
-          <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
-        </swiper-slide>
-        <swiper-slide class="slider-full">
-          <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
-        </swiper-slide>
-        <swiper-slide class="slider-full">
-          <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
-        </swiper-slide>
-        <swiper-slide class="slider-full">
-          <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
-        </swiper-slide>
-        <swiper-slide class="slider-full">
-          <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
-        </swiper-slide>
-        <swiper-slide class="slider-full">
-          <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
+        <swiper-slide class="slider-full" v-for="(item, index) in product.cta_section.screenshots.data" :key="index">
+          <img class="w-full h-full border border-white p-3 pb-0" :src="fixImageUrl(item.attributes.url, true)" alt="" />
         </swiper-slide>
       </swiper>
     </div>

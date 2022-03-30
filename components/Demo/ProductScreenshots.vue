@@ -1,26 +1,18 @@
 <template>
-  <div class="py-20 lg:py-124" id="screenshot-gallery">
+  <div class="pt-20 lg:pt-124" id="screenshot-gallery">
     <div class="container">
       <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
         <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
-          Folder Structure
+          {{ data.info.title }}
         </h2>
-        <p class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light font-light">
-          Nunc convallis semper justo quis tempor. Praesent molestie, lorem
-          sed imperdiet tempor, libero urna semper urna
+        <p class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light">
+          {{ data.info.description }}
         </p>
       </div>
       <div class="relative">
         <swiper class="swiper shadow-bs012 rounded-xl" :options="swiperOptionTwo">
-          <swiper-slide><img class="w-full h-full rounded-xl" src="~@/assets/images/all-img/slider4.png" alt="" />
-          </swiper-slide>
-          <swiper-slide><img class="w-full h-full rounded-xl" src="~@/assets/images/all-img/slider4.png" alt="" />
-          </swiper-slide>
-          <swiper-slide><img class="w-full h-full rounded-xl" src="~@/assets/images/all-img/slider4.png" alt="" />
-          </swiper-slide>
-          <swiper-slide><img class="w-full h-full rounded-xl" src="~@/assets/images/all-img/slider4.png" alt="" />
-          </swiper-slide>
-          <swiper-slide><img class="w-full h-full rounded-xl" src="~@/assets/images/all-img/slider4.png" alt="" />
+          <swiper-slide v-for="(item, index) in data.features" :key="index">
+            <img class="w-full h-full rounded-xl" :src="fixImageUrl(item.screenshot)" alt="" />
           </swiper-slide>
         </swiper>
         <div class="custom-pagination flex justify-center pt-16">
@@ -50,6 +42,7 @@ import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/css/swiper.css";
 
 export default {
+  props: ['data'],
   components: {
     Swiper,
     SwiperSlide

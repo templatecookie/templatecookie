@@ -6,11 +6,11 @@
     <product-top-features :data="product.productFeatures" v-if="product.productFeatures" />
 
     <div class="">
-      <product-screenshots />
-      <product-feature-screenshots />
+      <product-screenshots :data="product.productFeatureScreenshots" v-if="product.productFeatureScreenshots" />
+      <product-feature-screenshots :data="product.displayFeatures" v-if="product.displayFeatures"/>
       <product-pages :data="product.productPages" v-if="product.productPages"  />
-      <product-folder-structure />
-      <product-support />
+      <product-folder-structure :data="product.folder_structure" v-if="product.folder_structure" />
+      <product-support  />
     </div>
     <call-to-action :product="product" v-if="product" />
   </div>

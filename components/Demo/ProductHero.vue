@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-36 pt-56 lg:pb-222 lg:pt-300 bg-dark-06 bg-content bg-right-bottom bg-no-repeat hero-demo" :style="hero">
+  <div class="pb-36 pt-56 lg:pb-222 lg:pt-300 bg-dark-06 bg-content bg-right-bottom bg-no-repeat hero-demo" :style="{ backgroundImage: 'url(' + bgImage + ')' }">
     <div class="container">
       <div class="max-w-2xl sm:text-left text-center relative">
         <h1 class="tracking-01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8">
@@ -33,9 +33,7 @@ export default {
   },
   data() {
     return {
-      hero: {
-        backgroundImage: "url(https://i.imgur.com/aBzS4DP.png)",
-      }
+      bgImage: require('../../assets/images/all-img/img-two.png')
     }
   }
 }
