@@ -37,8 +37,7 @@ p<template>
         </div>
       </div>
       <div class="lg:col-start-10 lg:col-end-17 order-1 lg:order-2 mb-6 lg:mb-0 h-680 clip-thumb">
-        <img v-if="data.info.background.data" :src="fixImageUrl(data.info.background)" alt="" class="w-full h-full object-cover lg:object-fill" />
-        <img v-else src="~assets/images/all-img/img-four.png" alt="" class="w-full h-full object-cover lg:object-fill" />
+        <img v-if="data.info.background.data" :src="fixImageUrl(data.info.background)" alt="" class="w-full h-full object-cover object-left" />
       </div>
     </div>
   </section>

@@ -142,15 +142,16 @@
       </div>
     </header>
 
-    <div class="pb-36 pt-56 lg:pb-222 lg:pt-300 bg-dark-06 bg-content bg-right-bottom bg-no-repeat hero-demo"
+    <div class="min-h-600 sm:min-h-840 pb-20 pt-40 flex items-center bg-dark-06 bg-cover xl:bg-contain bg-right-bottom bg-no-repeat hero-demo"
       :style="hero">
       <div class="container">
-        <div class="max-w-2xl sm:text-left text-center relative">
+        <div class="lg:max-w-2xl sm:text-left text-center relative">
           <h1 class="tracking-01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8">
-            Adlisting Demo Product
+            Relik - Admin Dashboard Figma Template
           </h1>
-          <p class="text-white font-light text-lg md:text-xl max-w-536">
-            Adlisting - Buy Sell Classified Ads Marketplace Laravel Script
+          <p class="text-white font-light text-lg md:text-xl lg:max-w-536">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci fugiat nisi incidunt reiciendis voluptatum provident corrupti voluptates. Est cum ab vitae dolorem libero rerum adipisci, iste voluptatem nisi nesciunt eligendi magnam tempora suscipit odit minus recusandae aspernatur veniam possimus deserunt labore praesentium repellendus dolores assumenda. Tempora repellat distinctio dolorem officiis.
+   
           </p>
           <div class="mt-8">
             <a href="#" target="_blank"
@@ -278,21 +279,18 @@
             <div class="col-span-8 order-2">
               <div class="content lg:pl-6 mb-6">
                 <div v-if="activetab === '1'" class="tabcontent">
-                  <div class="h-340 md:h-600">
-                    <img class="w-full h-full object-cover rounded-20 overflow-hidden"
-                      src="~@/assets/images/all-img/one.jpg" alt="" />
+                  <div class="h-340 md:h-600 overflow-hidden rounded-20">
+                    <img class="rounded-20" src="~@/assets/images/all-img/one.jpg" alt="" />
                   </div>
                 </div>
                 <div v-if="activetab === '2'" class="tabcontent">
-                  <div class="h-340 md:h-600">
-                    <img class="w-full h-full object-cover rounded-20 overflow-hidden"
-                      src="~@/assets/images/all-img/two.jpg" alt="" />
+                  <div class="h-340 md:h-600 overflow-hidden rounded-20">
+                    <img class="rounded-20" src="~@/assets/images/all-img/two.jpg" alt="" />
                   </div>
                 </div>
                 <div v-if="activetab === '3'" class="tabcontent">
-                  <div class="h-340 md:h-600">
-                    <img class="w-full h-full object-cover rounded-20 overflow-hidden"
-                      src="~@/assets/images/all-img/three.jpg" alt="" />
+                  <div class="h-340 md:h-600 overflow-hidden rounded-20">
+                    <img class="rounded-20" src="~@/assets/images/svg/info.svg" alt="" />
                   </div>
                 </div>
               </div>
@@ -355,8 +353,7 @@
                     class="w-full h-250 object-cover overflow-hidden shadow-bs12" />
                   <h3
                     class="text-white text-base font-medium absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-300 flex w-full justify-center opacity-0">
-                    {{ item.title }}
-                    <img class="ml-2" :src="item.img" alt="">
+                    {{ item.title }} <img class="ml-2" src="~assets/images/svg/ArrowSquareOut.svg" alt="">
                   </h3>
                 </a>
               </div>
@@ -482,34 +479,34 @@
       <div>
         <swiper class="swiper" :options="swiperOptionOne">
           <swiper-slide class="slider-full">
-            <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
+            <img class="w-full h-60 object-cover border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
+            <img class="w-full h-60 object-cover border border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
+            <img class="w-full h-60 object-cover border border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
+            <img class="w-full h-60 object-cover border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
+            <img class="w-full h-60 object-cover border border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
+            <img class="w-full h-60 object-cover border border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
+            <img class="w-full h-60 object-cover border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
+            <img class="w-full h-60 object-cover border border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
+            <img class="w-full h-60 object-cover border border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-full border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
+            <img class="w-full h-60 object-cover border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
           </swiper-slide>
         </swiper>
       </div>
