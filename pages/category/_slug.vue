@@ -56,17 +56,20 @@ export default {
   components: {
     ProductCard,
   },
-  head: {
-    title: 'Category Page | Templatecookie',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'my website description'
-      }
-    ],
+  head() {
+    const category = this.category;
+    return {
+      title: category.name + ' | Templatecookie',
+      meta: [ 
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'my website description'
+        }
+      ],
+    }
   },
   watchQuery: ["page"],
   async asyncData({ app, params, query, $config }) {

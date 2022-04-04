@@ -50,7 +50,7 @@
                       <h4 class="text-dark-06 text-xl mb-5 uppercase">
                         HIGHLIGHTS
                       </h4>
-                      <ul class="flex justify-start">
+                      <ul class="flex justify-start flex-wrap">
                         <li v-for="(item, indexItem) in product.highlights" :key="indexItem"
                           class="relative pl-8 text-dark-06 text-base font-light py-2 w-1/2 ">
                           <img class="absolute left-0" src="~@/assets/images/svg/check-circle.svg"
@@ -305,17 +305,20 @@ export default {
     Swiper,
     ProductCard,
   },
-  head: {
-    title: 'Product Details Page',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'my website description'
-      }
-    ],
+  head() {
+    const product = this.product;
+    return {
+      title: product.name + " | Templatecookie.com",
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'my website description'
+        }
+      ],
+    }
   },
   async asyncData({ app, params }) {
     const client = app.apolloProvider.defaultClient;
