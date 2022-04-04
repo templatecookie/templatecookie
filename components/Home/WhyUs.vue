@@ -26,11 +26,11 @@ p<template>
             </div>
             <div class="text-center sm:text-left">
               <h2 class="text-body-24 font-medium text-dark-06 mb-2">
-                <ICountUp :delay="item.delay" :endVal="item.number" :options="options" />
+                <ICountUp :delay="item.delay" :endVal="item.title" :options="options" />
                 +
               </h2>
               <p class="text-body-14 text-dark-42 uppercase whitespace-nowrap overflow-ellipsis">
-                {{ item.title }}
+                {{ item.description }}
               </p>
             </div>
           </div>
