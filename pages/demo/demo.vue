@@ -279,21 +279,18 @@
             <div class="col-span-8 order-2">
               <div class="content lg:pl-6 mb-6">
                 <div v-if="activetab === '1'" class="tabcontent">
-                  <div class="h-340 md:h-600">
-                    <img class="w-full h-full object-cover rounded-20 overflow-hidden"
-                      src="~@/assets/images/all-img/one.jpg" alt="" />
+                  <div class="h-340 md:h-600 overflow-hidden rounded-20">
+                    <img class="rounded-20" src="~@/assets/images/all-img/one.jpg" alt="" />
                   </div>
                 </div>
                 <div v-if="activetab === '2'" class="tabcontent">
-                  <div class="h-340 md:h-600">
-                    <img class="w-full h-full object-cover rounded-20 overflow-hidden"
-                      src="~@/assets/images/all-img/two.jpg" alt="" />
+                  <div class="h-340 md:h-600 overflow-hidden rounded-20">
+                    <img class="rounded-20" src="~@/assets/images/all-img/two.jpg" alt="" />
                   </div>
                 </div>
                 <div v-if="activetab === '3'" class="tabcontent">
-                  <div class="h-340 md:h-600">
-                    <img class="w-full h-full object-cover rounded-20 overflow-hidden"
-                      src="~@/assets/images/all-img/three.jpg" alt="" />
+                  <div class="h-340 md:h-600 overflow-hidden rounded-20">
+                    <img class="rounded-20" src="~@/assets/images/svg/info.svg" alt="" />
                   </div>
                 </div>
               </div>
