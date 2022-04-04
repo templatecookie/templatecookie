@@ -18,7 +18,7 @@
     <div>
       <swiper class="swiper" :options="swiperOptionOne">
         <swiper-slide class="slider-full" v-for="(item, index) in product.cta_section.screenshots.data" :key="index">
-          <img class="w-full h-full border border-white p-3 pb-0" :src="fixImageUrl(item.attributes.url, true)" alt="" />
+          <img class="w-full h-60 object-cover border border-white p-3 pb-0 border-b-0" :src="fixImageUrl(item.attributes.url, true)" alt="" />
         </swiper-slide>
       </swiper>
     </div>

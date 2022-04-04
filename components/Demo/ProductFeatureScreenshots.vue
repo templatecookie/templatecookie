@@ -16,8 +16,8 @@
         <div class="col-span-8 order-2">
           <div class="content lg:pl-6 mb-6">
             <div class="tabcontent">
-              <div class="h-340 md:h-600">
-                <img class="w-full h-full object-cover rounded-20 overflow-hidden"
+              <div class="h-340 md:h-600 overflow-hidden rounded-20">
+                <img class="rounded-20"
                   :src="fixImageUrl(activeItem.image)" alt="" />
               </div>
             </div>

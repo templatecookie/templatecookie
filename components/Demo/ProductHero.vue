@@ -1,11 +1,11 @@
 <template>
-  <div class="pb-36 pt-56 lg:pb-222 lg:pt-300 bg-dark-06 bg-content bg-right-bottom bg-no-repeat hero-demo" :style="{ backgroundImage: 'url(' + bgImage + ')' }">
+  <div class="min-h-600 sm:min-h-840 pb-20 pt-40 flex items-center bg-dark-06 bg-cover xl:bg-contain bg-right-bottom bg-no-repeat hero-demo" :style="{ backgroundImage: 'url(' + bgImage + ')' }">
     <div class="container">
       <div class="max-w-2xl sm:text-left text-center relative">
         <h1 class="tracking-01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8">
           {{ product.name }}
         </h1>
-        <p class="text-white font-light text-lg md:text-xl max-w-536">
+        <p class="text-white font-light text-lg md:text-xl lg:max-w-536">
           {{ product.short_description }}
         </p>
         <div class="mt-8">
