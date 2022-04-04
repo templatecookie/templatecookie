@@ -114,7 +114,10 @@ module.exports = {
         680: "680px",
         900: "900px",
       },
-
+      minHeight: {
+        840: "750px",
+        600: "600px",
+      },
       margin: {
         72: "72px",
       },
