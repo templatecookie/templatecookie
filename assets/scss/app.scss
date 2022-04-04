@@ -354,6 +354,13 @@ body {
   }
 }
 
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after, 
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after{
+  display: none;
+}
+
+
+
 // Navbar & sidebar
 // Toggle Button
 .toggle {
