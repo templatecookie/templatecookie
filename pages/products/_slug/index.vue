@@ -50,7 +50,7 @@
                       <h4 class="text-dark-06 text-xl mb-5 uppercase">
                         HIGHLIGHTS
                       </h4>
-                      <ul class="flex justify-start">
+                      <ul class="flex justify-start flex-wrap">
                         <li v-for="(item, indexItem) in product.highlights" :key="indexItem"
                           class="relative pl-8 text-dark-06 text-base font-light py-2 w-1/2 ">
                           <img class="absolute left-0" src="~@/assets/images/svg/check-circle.svg"
