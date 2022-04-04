@@ -43,7 +43,7 @@
       <div class="content bg-dark-06 p-6 md:p-12 w-full hidden lg:block">
         <div class="tabcontent">
           <div v-if="defaultImg">
-            <img :src="fixImageUrl(defaultImg, true)" alt="" />
+            <img class="m-auto" :src="fixImageUrl(defaultImg, true)" alt="" />
           </div>
           <div v-else class="flex justify-center items-center">
             <h3 class="text-white">Please click on image to preview </h3>
