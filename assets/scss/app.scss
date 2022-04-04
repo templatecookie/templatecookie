@@ -83,22 +83,7 @@
   }
 }
 
-.business-card {
-  &:hover {
-    .icon {
-      background-color: #0b63e5;
-    }
 
-    path {
-      stroke: white;
-    }
-  }
-  .icon {
-    svg path {
-      transition: all 0.4s;
-    }
-  }
-}
 
 // radio
 input[type="radio"] + label span {
