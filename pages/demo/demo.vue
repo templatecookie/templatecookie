@@ -479,34 +479,34 @@
       <div>
         <swiper class="swiper" :options="swiperOptionOne">
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
+            <img class="" src="~@/assets/images/all-img/slider1.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
           </swiper-slide>
         </swiper>
       </div>
