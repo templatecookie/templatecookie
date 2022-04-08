@@ -1,25 +1,45 @@
 <template>
-  <section class="pt-36">
-    <div class="container py-20">
-      <h1 class="mb-2">Product Docs Page</h1>
-      <hr />
-      <div class="flex">
-        <ul class="w-2/12">
-          <li v-for="(item, index) in products" :key="index">
-            <a :href="item.path"> {{ item.title }} </a>
-          </li>
-        </ul>
-        <div class="w-10/12">
-        
-          <NuxtChild />
+  <div>
+    <section class="realtive pb-14 lg:pb-72 pt-156 bg-no-repeat bg-center bg-cover"
+      :style="{ backgroundImage: `url(${bannerImg})` }">
+      <div class="container">
+        <div class="text-left">
+          <h1 class="text-4xl md:text-heading-40 text-dark-06 mb-6 mx-auto font-semibold">
+            Adlisting Product
+          </h1>
+          <p class="text-lg md:text-body-18 text-dark-06 mb-8 font-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, expedita illo! Velit delectus  
+          </p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <section>
+      <div class="container">
+        <div class="flex">
+          <ul class="w-3/12 h-full border-r-[1px] border-gray-100 py-8">
+            <li class="uppercase text-xs text-gray-500 mb-4"> getting started </li>
+            <li v-for="(item, index) in products" :key="index">
+              <nuxt-link :to="item.path" class="px-4 py-2 inline-block w-full bg-blue-50 text-gray-700 font-light text-sm"> {{ item.title }} </nuxt-link>
+            </li>
+          </ul>
+          <div class="w-9/12 h-full">
+            <NuxtChild />
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
+import bannerImg from "~/assets/images/all-img/img-five.png";
 export default {
+  layout: 'documentation',
+  data() {
+    return {
+      bannerImg,
+    };
+  },
   async asyncData ({ $content, params }) {
     console.log(params.slug)
     const products = await $content(`docs/${ params.slug }`, { deep: true })

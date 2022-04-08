@@ -9,7 +9,7 @@ Learn how to use @nuxt/content.
 
 <!--more-->
 
-# Hello World
+# Adlisting Installation
 
 
 title: Installation

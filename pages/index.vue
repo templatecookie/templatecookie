@@ -35,7 +35,7 @@
             v-for="(item, itemIndex) in latestProducts"
             :key="itemIndex"
             class="flex items-stretch">
-            <ProductCard :product="item.attributes" :id="item.id" :large="true" />
+            <ProductCard :product="item.attributes" :id="item.id" :large="false" />
           </div>
         </div>
 

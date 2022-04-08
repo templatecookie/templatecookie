@@ -1,14 +1,12 @@
 <template>
-  <section class="py-12 px-4">
-    <div class="flex flex-wrap -mx-2">
-      <h2> Product Docs Inner Page </h2>
-      <nuxt-content class="markdown-body" :document="page" />
-    </div>
-  </section>
+  <div class="px-8 py-8">
+    <nuxt-content class="markdown-body" :document="page" />
+  </div>
 </template>
 
 <script>
 export default {
+  layout: 'documentation',
   async asyncData ({ $content, params }) {
     const page = await $content(`docs/${ params.slug }/${params.chapter}`)
     .sortBy('position', 'asc')

@@ -91,7 +91,6 @@ export default {
         @media (max-width: 640px) {
           height: 200px;
         }
-
       }
 
       &__button {
