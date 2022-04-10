@@ -7,7 +7,7 @@
       <h2 class="text-dark-06 mb-3 font-normal text-body-18">
         {{ product.title }}
       </h2>
-      <p class="text-body-16 text-dark-42 font-light mb-6 text-body-14/20">
+      <p class="text-dark-42 font-light mb-0 text-body-14/20">
         {{ product.description }}
       </p>
     </div>

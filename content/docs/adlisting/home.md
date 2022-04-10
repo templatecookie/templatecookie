@@ -1,8 +1,8 @@
 ---
 title: Adlisting
 description: Learn how to use Adlisting.
-position: 2
 index: true
+category: "Getting Started"
 ---
 
 Learn how to use @nuxt/content.

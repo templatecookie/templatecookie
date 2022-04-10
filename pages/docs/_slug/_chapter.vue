@@ -7,6 +7,23 @@
 <script>
 export default {
   layout: 'documentation',
+  props: ['productName'],
+  head() {
+    const title = this.page.title + ` - ${this.productName}`;
+    const description = this.page.description;
+    return {
+      title: title,
+      meta: [
+        { hid: 'description', name: 'description', content: description },
+        // Open Graph
+        { hid: 'og:title', property: 'og:title', content: title },
+        { hid: 'og:description', property: 'og:description', content: description },
+        // Twitter Card
+        { hid: 'twitter:title', name: 'twitter:title', content: title },
+        { hid: 'twitter:description', name: 'twitter:description', content: description }
+      ]
+    }
+  },
   async asyncData ({ $content, params }) {
     const page = await $content(`docs/${ params.slug }/${params.chapter}`)
     .sortBy('position', 'asc')
@@ -15,7 +32,7 @@ export default {
     return {
       page
     }
-  }
+  },
 }
 </script>
 
