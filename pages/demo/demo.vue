@@ -4,7 +4,6 @@
       <div class="container relative">
         <!-- header inner content  -->
         <div class="flex items-center justify-between">
-          <!-- brand Logo -->
           <div>
             <nuxt-link to="/">
               <img src="~/assets/images/logo.svg" alt="brand-logo" />
@@ -15,7 +14,6 @@
             <ul class="flex items-center space-x-5 nav-menu">
               <li class="nav-menu__item">
                 <nuxt-link to="#">Demo</nuxt-link>
-                <!-- dropdown icon  -->
                 <span class="dropdown-icon">
                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.625 6.75L9 12.375L3.375 6.75" stroke="currentColor" stroke-width="1.5"
@@ -36,7 +34,6 @@
               </li>
               <li class="nav-menu__item">
                 <nuxt-link to="#">Pages</nuxt-link>
-                <!-- dropdown icon  -->
                 <span class="dropdown-icon">
                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.625 6.75L9 12.375L3.375 6.75" stroke="currentColor" stroke-width="1.5"
@@ -57,7 +54,6 @@
               </li>
               <li class="nav-menu__item">
                 <nuxt-link to="#">Components</nuxt-link>
-                <!-- dropdown icon  -->
                 <span class="dropdown-icon">
                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.625 6.75L9 12.375L3.375 6.75" stroke="currentColor" stroke-width="1.5"
@@ -78,7 +74,6 @@
               </li>
               <li class="nav-menu__item">
                 <nuxt-link to="#">Support</nuxt-link>
-                <!-- dropdown icon  -->
                 <span class="dropdown-icon">
                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.625 6.75L9 12.375L3.375 6.75" stroke="currentColor" stroke-width="1.5"
@@ -380,23 +375,22 @@
             <div class="">
               <pre
                 class="border border-gray-e6 p-8 rounded-2xl bg-white text-sm text-dark-06 pb-0 h-364 overflow-y-scroll custom-scroll">
-      ├── templatecookie
-          ├── assets
-            ├── css
-            ├── fonts 
-            ├── images
-            ├── js
-          ├── components
-          ├── pages
-            ├── index.vue
-            ├── hire-us.vue
-            ├── product-demo.vue
-            ├── product-details.vue
-            ├── product-list.vue
-            ├── billing.vue
-            ├── billing.vue
-
-                  </pre>
+                ├── templatecookie
+                    ├── assets
+                      ├── css
+                      ├── fonts 
+                      ├── images
+                      ├── js
+                    ├── components
+                    ├── pages
+                      ├── index.vue
+                      ├── hire-us.vue
+                      ├── product-demo.vue
+                      ├── product-details.vue
+                      ├── product-list.vue
+                      ├── billing.vue
+                      ├── billing.vue
+              </pre>
             </div>
           </div>
         </div>

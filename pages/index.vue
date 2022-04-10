@@ -4,7 +4,6 @@
     <!-- Featured Card  -->
     <section class="featured pt-14 md:pt-124" v-if="homepage && homepage.featuredProductSection">
       <div class="container">
-        <!-- section title  -->
         <div class="mb-72 text-center">
           <h2 class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1">
             {{ homepage.featuredProductSection.title }}
@@ -23,7 +22,6 @@
     <!-- Latest Product -->
     <section class="latest py-14 md:py-124" v-if="homepage && homepage.latestProductsSection">
       <div class="container">
-        <!-- section title  -->
         <div class="mb-72 text-center">
           <h2 class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1">
             {{ homepage.latestProductsSection.title }}
@@ -43,7 +41,6 @@
           <nuxt-link :to="{ name: 'products' }"
             class="mt-12 flex items-center bg-blue-0b hover:bg-dark-06 transition-all w-auto max-w-232 justify-center text-button-17 text-white rounded-lg overflow-hidden mx-auto">
             Browse Products
-            <!-- arrow toggle icon -->
             <span class="inline-block ml-3">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3.75 12H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
@@ -74,7 +71,6 @@ import WhyUs from "../components/Home/WhyUs.vue";
 import TopFeaturesSection from "../components/Home/TopFeaturesSection.vue";
 
 export default {
-  name: "IndexPage",
   components: { ProductCard, HeroSection, WhyUs, TopFeaturesSection },
   head: {
     title: 'Homepage | Templatecookie',
