@@ -7,7 +7,7 @@
 <script>
 export default {
   layout: 'documentation',
-  props: ['productName'],
+  props: ['productName', 'categories'],
   head() {
     const title = this.page.title + ` - ${this.productName}`;
     const description = this.page.description;
@@ -25,7 +25,8 @@ export default {
     }
   },
   async asyncData ({ $content, params }) {
-    const page = await $content(`docs/${ params.slug }/${params.chapter}`)
+    const url = params.chapter ? `docs/${params.slug}/${params.chapter}` : `docs/${params.slug}`;
+    const page = await $content(url)
     .sortBy('position', 'asc')
     .fetch()
 

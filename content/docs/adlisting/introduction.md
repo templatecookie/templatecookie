@@ -1,7 +1,7 @@
 ---
 title: Introduction to Adlisting
 description: Learn how to use Adlisting docs.
-position: 1
+position: 3
 category: "Advance"
 ---
 

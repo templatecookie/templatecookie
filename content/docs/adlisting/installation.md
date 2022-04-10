@@ -1,7 +1,7 @@
 ---
 title: Installation
 description: Installation documentation
-position: 2
+position: 1
 category: "Getting Started"
 ---
 

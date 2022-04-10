@@ -54,7 +54,7 @@ export default {
   },
   async asyncData({ $content }) {
       const products = await $content("docs", {deep: true})
-        .where({index: {$eq: true}})
+        .where({slug: {$eq: "index"}})
         .sortBy("position", "asc")
         .fetch();
       return {

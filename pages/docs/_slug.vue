@@ -13,20 +13,19 @@
         </div>
       </div>
     </section>
-    <code>
-      {{ pages }}
-    </code>
     <section>
       <div class="container">
         <div class="flex py-8">
-          <ul class="w-3/12 h-full border-r-[1px] border-gray-100 mb-4">
-            <li class="uppercase text-xs text-gray-500 mb-4"> getting started </li>
-            <li v-for="(item, index) in pages" :key="index">
-              <nuxt-link :to="item.path" class="px-4 py-2 inline-block w-full text-gray-700 font-light text-sm"> {{ item.title }} </nuxt-link>
-            </li>
-          </ul>
+          <div class="w-3/12 h-full border-r-[1px] border-gray-100 ">
+            <ul class="mb-6" v-for="(items, index) in categories" :key="index">
+              <li class="uppercase text-xs text-gray-500 mb-4"> {{ index }} </li>
+              <li v-for="(item, index) in items" :key="index">
+                <nuxt-link :to="item.path" class="px-4 py-2 inline-block w-full text-gray-700 font-light text-sm"> {{ item.title }} </nuxt-link>
+              </li>
+            </ul>
+          </div>
           <div class="w-9/12 h-full">
-            <NuxtChild :productName="product.title + ' Documentation'"/>
+            <NuxtChild :productName="product.title + ' Documentation'" :categories="categories"/>
           </div>
         </div>
       </div>
@@ -36,6 +35,8 @@
 
 <script>
 import bannerImg from "~/assets/images/all-img/img-five.png";
+import groupBy from 'lodash.groupby'
+
 export default {
   layout: 'documentation',
   head() {
@@ -61,23 +62,30 @@ export default {
   },
   async asyncData ({ $content, params }) {
     const pages = await $content(`docs/${ params.slug }`, { deep: true })
-    .sortBy('category', 'asc')
-    .sortBy('index', 'asc')
+    .where({slug: {$ne: "index"}})
     .sortBy('position', 'asc')
-    // .only(['title', 'path', 'slug', 'description', 'toc', 'dir', 'position'])
+    .only(['title', 'path', 'description', 'category',])
     .fetch()
-    console.log(pages);
+
+    const categories = groupBy(pages, 'category')
 
     let productData = await $content(`docs/${ params.slug }`, { deep: true })
-      .where({index: {$eq: true}})
-      .only(['title', 'path', 'slug', 'description','dir'])
+      .where({slug: {$eq: 'index'}})
+      .only(['title', 'path', 'description'])
       .fetch()
     const product = productData[0]
 
     return {
       pages,
-      product
+      product,
+      categories,
     }
+  },
+  created(){
+    const keys = Object.keys(this.categories);
+    const url = this.categories[keys[0]][0].path;
+
+    this.$router.push(url)
   }
 }
 </script>
