@@ -2,10 +2,8 @@
   <footer class="relative bg-dark-06 pt-40 lg:pt-200">
     <div class="container">
       <!-- footer top content  -->
-      <div class="grid xl:grid-cols-3 pb-12 md:pb-72">
-        <!-- Brand info -->
-        <div class="mb-12">
-          <!-- logo -->
+      <div class="grid xl:grid-cols-3 pb-10 md:pb-16">
+        <div class="mb-8">
           <div class="mb-6">
             <img v-if="data.logo.data.attributes.url" :src="fixUrl(data.logo.data.attributes.url)" alt="Templatecookie" />
             <img v-else src="~/assets/images/logo.svg" alt="Templatecookie " />
@@ -32,9 +30,15 @@
           </div>
         </div>
       </div>
+      <ul class="flex items-center justify-center pb-6 pt-6 border-t border-gray-24">
+        <li><nuxt-link to="/docs" class="mr-4 text-base font-light text-gray-83">Docs</nuxt-link></li>
+        <li><a href="https://themeforest.net/user/templatecookie" target="_blank" class="mr-4 text-base font-light text-gray-83">Themeforest Profile</a></li>
+        <li><a href="https://codecanyon.net/user/templatecookie" target="_blank" class="mr-4 text-base font-light text-gray-83">Codecanyon Profile</a></li>
+        <li><nuxt-link to="/refund-policy" class="mr-4 text-base font-light text-gray-83">Refund Policy</nuxt-link></li>
+      </ul>
       <!-- footer copyright content  -->
-      <div class="py-4 md:py-8 text-center border-t border-gray-24">
-        <p class="text-body-16 text-gray-500 font-light capitalize">
+      <div class="py-4 text-center border-t border-gray-24">
+        <p class="text-sm text-gray-500 font-light capitalize">
           &copy; {{ new Date().getFullYear() }} All Rights Reserved -
           Templatecookie
         </p>

@@ -9,11 +9,13 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxt/content": "^1.15.1",
     "@nuxtjs/apollo": "^4.0.1-rc.5",
     "aos": "^2.3.4",
     "core-js": "^3.19.3",
     "countup.js": "^2.0.8",
     "graphql-tag": "^2.12.6",
+    "lodash.groupby": "^4.6.0",
     "nuxt": "^2.15.8",
     "swiper": "5.x",
     "vue": "^2.6.14",

@@ -3,7 +3,6 @@ p<template>
   <section class="relative overflow-hidden">
     <!-- content wrapper   -->
     <div class="flex flex-col lg:grid lg:grid-cols-16 px-3 lg:px-0">
-      <!-- textcontent  -->
       <div class="lg:col-start-3 lg:col-end-9 lg:py-124 order-2 lg:order-1 pb-14 lg:pb-0">
         <h1 class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1 mb-8">
           {{ data.info.title }}
@@ -15,11 +14,7 @@ p<template>
         <div class="grid sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6">
           <div v-for="(item, itemIndex) in data.counterNumbers" :key="itemIndex"
             class="flex flex-col sm:flex-row items-center justify-center sm:justify-start sm:space-x-3 p-6 rounded-xl overflow-hidden" :class="cardTheme(item.theme)">
-            <!-- icons -->
             <div>
-              <!-- <pre>
-                {{ item.icon }}
-              </pre> -->
               <span class="inline-block">
                 <img :src="fixImageUrl(item.icon)" alt="" />
               </span>

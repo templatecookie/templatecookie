@@ -74,19 +74,19 @@
                       </p>
                       <pre
                         class="p-8 rounded-lg bg-gray-f5 text-sm text-dark-06 pb-0 h-200 overflow-y-scroll custom-scroll">
-              ├── templatecookie
-                  ├── assets
-                    ├── css
-                    ├── fonts 
-                    ├── images
-                    ├── js
-                  ├── index.vue
-                  ├── hire-us.vue
-                  ├── product-demo.vue
-                  ├── product-details.vue
-                  ├── product-list.vue
-                  ├── billing.vue
-                          </pre>
+                        ├── templatecookie
+                            ├── assets
+                              ├── css
+                              ├── fonts 
+                              ├── images
+                              ├── js
+                            ├── index.vue
+                            ├── hire-us.vue
+                            ├── product-demo.vue
+                            ├── product-details.vue
+                            ├── product-list.vue
+                            ├── billing.vue
+                      </pre>
                     </div>
                     <!-- end -->
                   </div>

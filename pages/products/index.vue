@@ -59,7 +59,6 @@
     <!-- Filter Item content -->
     <section>
       <div class="container" v-if="products.length">
-        <!-- filter content  -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 my-8">
           <div v-for="(item, itemIndex) in products" :key="itemIndex" class="flex items-stretch">
             <ProductCard :product="item.attributes" :id="item.id" :large="true" />
