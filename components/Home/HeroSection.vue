@@ -1,6 +1,6 @@
 <template>
   <!-- Banner  -->
-  <section class="realtive overflow-hidden pb-14 lg:pb-124 pt-216 bg-no-repeat bg-center bg-cover"
+  <section class="realtive overflow-hidden py-20 lg:py-28 md:py-24 bg-no-repeat bg-center bg-cover"
     :style="{ backgroundImage: `url(${bannerImg})` }">
     <div class="container">
       <!-- banner content  -->

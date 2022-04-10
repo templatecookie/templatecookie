@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div class="text-center py-3 text-base bg-red-300">
+      Templatecookie.com is under construction, please check back later!
+    </div>
     <Header :data="global.header" v-if="global && global.header"/>
     <nuxt />
     <Newsletter :data="global.newsletter" v-if="global && global.newsletter"/>
