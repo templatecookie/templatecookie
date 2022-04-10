@@ -26,7 +26,7 @@
     a {
       position: relative;
       padding-left: 0px;
-      transition: all 0.2s linear;
+      transition: all 0.3s ease-in-out;
       &::before {
         content: "";
         width: 16px;
@@ -45,9 +45,9 @@
 
       &:hover {
         padding-left: 28px;
-
         &::before {
           opacity: 1;
+          transition: all 0.3s ease-in-out;
         }
       }
     }
@@ -353,6 +353,13 @@ body {
     }
   }
 }
+
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after, 
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after{
+  display: none;
+}
+
+
 
 // Navbar & sidebar
 // Toggle Button

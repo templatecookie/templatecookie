@@ -6,7 +6,6 @@
         <div>
           <nuxt-link to="/">
             <img :src="fixImageUrl(data.logo)" alt="Templatecookie" />
-            <!-- <img v-else src="~/assets/images/logo.svg" alt="Templatecookie " /> -->
           </nuxt-link>
         </div>
         <!-- menu  -->

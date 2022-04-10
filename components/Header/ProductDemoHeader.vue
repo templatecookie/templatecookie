@@ -57,7 +57,7 @@
                   </svg>
                 </span>
               </a>
-              <!-- <nuxt-link to="#"
+              <nuxt-link :to="product.documentation_url" v-if="product.documentation_url"
                 class="flex items-center justify-center text-dark-06 hover:text-white text-button capitalize font-medium bg-gray-e6 hover:bg-dark-06 overflow-hidden rounded px-5 w-full text-center whitespace-nowrap">
                 <span class="inline-block mr-2">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -72,8 +72,8 @@
                       stroke-linejoin="round" />
                   </svg>
                 </span>
-                Docs v.5.0
-              </nuxt-link> -->
+                Documentation
+              </nuxt-link>
             </li>
           </ul>
         </div>

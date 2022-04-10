@@ -3,9 +3,7 @@
     <div class="container">
       <!-- footer top content  -->
       <div class="grid xl:grid-cols-3 pb-12 md:pb-72">
-        <!-- Brand info -->
         <div class="mb-12 col-span-2 xl:col-span-1">
-          <!-- logo -->
           <div class="mb-6">
             <img src="~/assets/images/logo-white.svg" alt="brand-logo" />
           </div>
@@ -16,7 +14,6 @@
         </div>
         <!-- Navigation Menu -->
         <div class="grid sm:grid-cols-4 gap-7 sm:gap-0 col-span-2">
-          <!-- Menu column  -->
           <div class="col-span-2 lg:col-span-1">
             <h2
               class="mb-7 text-body-20 leading-none tracking-widest uppercase text-white"
@@ -119,7 +116,6 @@
                 <div
                   class="relative overflow-hidden rounded-md py-3 px-18 mb-3 bg-white"
                 >
-                  <!-- icon  -->
                   <span
                     class="absolute top-1/2 left-[18px] transform -translate-y-1/2"
                   >
