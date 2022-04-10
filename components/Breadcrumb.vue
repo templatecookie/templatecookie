@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-10 pt-36 bg-cover bg-center" :style="{ backgroundImage: 'url(' + bgimage + ')' }">
+  <div class="py-10 bg-cover bg-center" :style="{ backgroundImage: 'url(' + bgimage + ')' }">
     <div class="container">
       <div class="ex-small:overflow-auto overflow-x-scroll">
         <ul class="flex text-gray-6a text-sm space-x-2 mb-3">

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="realtive pb-14 lg:pb-72 pt-156 bg-no-repeat bg-center bg-cover"
+    <section class="realtive py-12 lg:py-20 bg-no-repeat bg-center bg-cover"
       :style="{ backgroundImage: `url(${bannerImg})` }">
       <div class="container">
         <div class="text-center">

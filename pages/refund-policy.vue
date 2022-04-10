@@ -2,7 +2,7 @@
   <div>
     <section class="bg-gray-100">
       <div class="container markdown-body">
-        <div class="py-8 pt-36">
+        <div class="py-12">
           <h1>Refund Policy</h1>
           <p>
             We have trust in our products quality and performance. We believe that you will definitely love our product. Also we are offering you refund within 15 days from the day of your first payment. Please, check our policies when we grant refund and when we do not issue refund :
