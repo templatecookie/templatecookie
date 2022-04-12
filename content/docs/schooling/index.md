@@ -1,6 +1,6 @@
 ---
-title: Adlisting
-description: "Empower your NuxtJS application with the @nuxt/content module: write in a content/ directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB-like API, acting as a Git-based Headless CMS."
+title: Schooling - School Management System SPA
+description: "Welcome to Schooling Documentation. This page documented with quick start guide, installation docs and required information for you get started. If you need any help, do not hesitate to reach out."
 position: 1
 category: Getting Started
 image: img-one.png

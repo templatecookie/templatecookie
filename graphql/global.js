@@ -93,6 +93,39 @@ query {
             }
           }
         }
+        website_notice {
+          id
+          notice_text
+          bg
+          notice_link {
+            id
+            label
+            href
+            target
+          }
+        }
+        productDefaultFeatures{
+          id
+          title
+          description
+          icon {
+            data {
+              id
+              attributes {
+                name
+                alternativeText
+                url
+              }
+            }
+          }
+          theme
+          button {
+            id
+            label
+            href
+            target
+          }
+        }
         customerSupport {
           id
           title
