@@ -37,7 +37,9 @@ export default {
     }
   },
   mounted (){
-    this.loadData();
+    if(!this.$store.getters.getGlobalData){
+      this.loadData();
+    }
   }
 };
 </script>
