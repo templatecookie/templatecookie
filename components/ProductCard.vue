@@ -37,12 +37,12 @@
               </span>
             </nuxt-link>
           </div>
-          <div class="flex-shrink-0">
+          <!-- <div class="flex-shrink-0">
             <button
               class="product-card__button-cart inline-block overflow-hidden bg-gray-f5 hover:bg-gray-200 transition-all rounded-lg">
               <img src="~/assets/images/svg/cart.svg" alt="cart-icon" />
             </button>
-          </div>
+          </div> -->
         </div>
 
         <!-- Price  -->

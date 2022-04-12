@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="text-center py-3 text-base bg-red-300">
-      Templatecookie.com is under construction, please check back later!
+    <div class="text-center py-3 text-base bg-red-300" v-if="notice">
+      {{ notice.notice_text }} 
     </div>
     <Header :data="global.header" v-if="global && global.header"/>
     <nuxt />
@@ -40,6 +40,12 @@ export default {
     if(!this.$store.getters.getGlobalData){
       this.loadData();
     }
-  }
+  },
+  computed: {
+    notice() {
+      const global = this.$store.getters.getGlobalData;
+      return global?.website_notice
+    }
+  },
 };
 </script>
