@@ -8,6 +8,7 @@
 export default {
   layout: 'documentation',
   props: ['productName', 'categories'],
+  scrollToTop: true,
   head() {
     const title = this.page.title + ` - ${this.productName}`;
     const description = this.page.description;
