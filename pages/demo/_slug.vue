@@ -9,6 +9,7 @@
       <product-screenshots :data="product.productFeatureScreenshots" v-if="product.productFeatureScreenshots" />
       <product-feature-screenshots :data="product.displayFeatures" v-if="product.displayFeatures"/>
       <product-pages :data="product.productPages" v-if="product.productPages"  />
+      <support-pricing />
       <product-folder-structure :data="product.folder_structure" v-if="product.folder_structure" />
       <product-support  />
     </div>
@@ -32,6 +33,7 @@ import ProductHero from "../../components/Demo/ProductHero.vue";
 import ProductSupport from '../../components/Demo/ProductSupport.vue';
 import CallToAction from '../../components/Demo/CallToAction.vue';
 import GLOBAL_QUERY from '~/graphql/global'
+import SupportPricing from '../../components/Demo/SupportPricing.vue';
 
 export default {
   layout: "empty",
@@ -86,7 +88,8 @@ export default {
     ProductFunFact,
     ProductHero,
     ProductSupport,
-    CallToAction
+    CallToAction,
+    SupportPricing
   },
 };
 </script>
