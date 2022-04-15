@@ -91,9 +91,10 @@ export default {
   created(){
     this.redirectToDocs();
   },
+  
   watch:{
     $route (to, from){
-      this.redirectToDocs();
+      // this.redirectToDocs();
     }
 } 
 }
