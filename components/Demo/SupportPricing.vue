@@ -1,5 +1,5 @@
 <template>
-  <div class="py-20 lg:py-124 bg-gray-100 support-pricing" id="support-pricing">
+  <div class="pt-20 lg:pt-124 bg-gray-100 support-pricing" id="support-pricing">
     <div class="container">
       <div class="lg:max-w-872 m-auto text-center mb-10 lg:mb-16">
         <h2 class="text-6xl font-semibold mb-8">Explore our pricing plans</h2>
@@ -23,7 +23,7 @@
             <h3 class="text-2xl mb-2">Standard</h3>
             <p class="font-light">Upgrade your social portfolio with a stunning profile & enhanced shots.</p>
             <nuxt-link to="#" class="mt-8 flex items-center transition-all w-max justify-center text-button-17 rounded-lg overflow-hidden px-8 border-[1px] border-pink-600 hover:text-white hover:bg-pink-600 text-pink-600 bg-transparent">
-            Get started
+              Get support now
               <!-- arrow toggle icon -->
               <span class="inline-block ml-3">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -110,7 +110,7 @@
             <h3 class="text-2xl mb-2">Standard</h3>
             <p class="font-light">Upgrade your social portfolio with a stunning profile & enhanced shots.</p>
             <nuxt-link to="#" class="mt-8 flex items-center border-[1px] border-blue-600 bg-blue-600 hover:bg-dark-06 transition-all w-max justify-center text-button-17 text-white rounded-lg overflow-hidden px-8">
-            Get started
+              Get support now
               <!-- arrow toggle icon -->
               <span class="inline-block ml-3">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -198,7 +198,7 @@
             <h3 class="text-2xl mb-2">Standard</h3>
             <p class="font-light">Upgrade your social portfolio with a stunning profile & enhanced shots.</p>
             <nuxt-link to="#" class="mt-8 flex items-center transition-all w-max justify-center text-button-17 border-[1px] border-green-600 hover:text-white hover:bg-green-600 text-green-600 bg-transparent rounded-lg overflow-hidden px-8">
-            Get started
+              Get support now
               <!-- arrow toggle icon -->
               <span class="inline-block ml-3">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

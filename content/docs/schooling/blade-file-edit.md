@@ -14,4 +14,4 @@ Application core views code located in blade files. If you want to change someth
 
 ## 1. Screenshot
 
-[Screenshot name](blade.png)
+![Blade File Edit](/docs/schooling/blade.png)

@@ -13,4 +13,4 @@ You might want to change the vue file as well. You can find all vue component an
 
 ## 1. Screenshot
 
-[Screenshot](vue.png)
+![Vue File Edit](/docs/schooling/vue.png)

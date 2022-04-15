@@ -3,7 +3,6 @@ title: Schooling - School Management System SPA
 description: "Welcome to Schooling Documentation. This page documented with quick start guide, installation docs and required information for you get started. If you need any help, do not hesitate to reach out."
 position: 1
 category: Getting Started
-image: img-one.png
 features:
   - Blazing fast hot reload in development
   - Vue components in Markdown

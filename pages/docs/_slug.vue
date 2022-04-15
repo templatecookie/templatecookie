@@ -80,12 +80,22 @@ export default {
       categories,
     }
   },
-  created(){
-    const keys = Object.keys(this.categories);
-    const url = this.categories[keys[0]][0].path;
+  methods: {
+    redirectToDocs(){
+      const keys = Object.keys(this.categories);
+      const url = this.categories[keys[0]][0].path;
 
-    this.$router.push(url)
-  }
+      this.$router.push(url)
+    }
+  },
+  created(){
+    this.redirectToDocs();
+  },
+  watch:{
+    $route (to, from){
+      this.redirectToDocs();
+    }
+} 
 }
 </script>
 
