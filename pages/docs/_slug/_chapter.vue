@@ -39,13 +39,13 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../../assets/scss/markdown/index.scss';
+// @import '../../../assets/scss/markdown/index.scss';
 
-.markdown-content {
+.markdown-body {
   body {
     margin: 0 auto;
     font-family: Georgia, Palatino, serif;
-    color: #444444;
+    color: #4e4e54;
     line-height: 1;
     max-width: 960px;
     padding: 30px;
@@ -55,7 +55,7 @@ export default {
   h2,
   h3,
   h4 {
-    color: #111111;
+    color: #232427;
     font-weight: 400;
   }
 
@@ -65,29 +65,37 @@ export default {
   h4,
   h5,
   p {
-    margin-bottom: 24px;
+    margin-bottom: 15px;
     padding: 0;
   }
 
+  b, strong {
+    font-weight: bold;
+  }
+
   h1 {
-    font-size: 48px;
+    font-size: 44px;
   }
 
   h2 {
-    font-size: 36px;
+    font-size: 32px;
     margin: 24px 0 6px;
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   h4 {
-    font-size: 21px;
+    font-size: 24px;
   }
 
   h5 {
-    font-size: 18px;
+    font-size: 20px;
+  }
+
+  h6 {
+    font-size: 16px;
   }
 
   a {
@@ -101,15 +109,18 @@ export default {
   ol {
     padding: 0;
     margin: 0;
+    margin-bottom: 1.5rem;
+    // padding-left: 30px;
   }
 
   li {
     line-height: 24px;
   }
 
-  li ul,
-  li ul {
+  ul li ,
+  ol li {
     margin-left: 24px;
+    margin-bottom: 5px;
   }
 
   p,
@@ -120,16 +131,30 @@ export default {
     max-width: 540px;
   }
 
+  ul {
+    list-style-type: disclosure-closed;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
   pre {
-    padding: 0px 24px;
+    padding: 10px 24px;
     max-width: 800px;
     white-space: pre-wrap;
+    code {
+      background-color: transparent;
+      padding: 0;
+    }
   }
 
   code {
     font-family: Consolas, Monaco, Andale Mono, monospace;
     line-height: 1.5;
     font-size: 13px;
+    background-color: rgba(#0099ff, 0.1);
+    padding: 2px 4px;
   }
 
   aside {
@@ -139,8 +164,10 @@ export default {
   }
 
   blockquote {
-    margin: 1em 2em;
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
     max-width: 476px;
+    border-left: 4px solid #0099ff;
   }
 
   blockquote p {
@@ -153,6 +180,7 @@ export default {
     text-align: left;
     margin: 0 auto 0 0;
     color: #999;
+    margin-bottom: 20px;
   }
 
   table {
@@ -165,9 +193,9 @@ export default {
     background-color: #EEE;
   }
 
-  table thead td {
-    color: #666;
-  }
+  // table thead td {
+  //   color: #666;
+  // }
 
   table td {
     padding: 0.5em 1em;

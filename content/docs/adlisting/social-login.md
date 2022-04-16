@@ -17,4 +17,4 @@ position: 2title: Installation
 description: Installation documentation
 position: 2
 
-| Go to [ About Page](/docs/adlisting/about)
+| Go to [ Developer Guide](/docs/adlisting/developer-guide)

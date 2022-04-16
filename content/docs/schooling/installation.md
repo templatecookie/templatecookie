@@ -25,13 +25,13 @@ Before you install <strong> Schooling </strong> make sure your server meets the 
 
 # How To Setup In Liveserver (CPanel)
 
-> > ## Setup Laravel on Cpanel:
-> >
-> > If you want to host laravel application on shared hosting, you can headover to this article or watch the video above. [Setup laravel on Shared Hosting](https://medium.com/backenders-club/how-to-host-a-laravel-project-on-a-shared-hosting-via-cpanel-d955d32c528e)
+> ### Setup Laravel on Cpanel:
+>
+> If you want to host laravel application on shared hosting, you can headover to this article or watch the video above. [Setup laravel on Shared Hosting](https://medium.com/backenders-club/how-to-host-a-laravel-project-on-a-shared-hosting-via-cpanel-d955d32c528e)
 
-> > ## Setup on Laravel on Cloud?
-> >
-> > If you want to host laravel application on cloud, you can headover to this article. [Setup laravel on Cloud](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-laravel-with-nginx-on-ubuntu-20-04)
+> ### Setup on Laravel on Cloud?
+>
+> If you want to host laravel application on cloud, you can headover to this article. [Setup laravel on Cloud](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-laravel-with-nginx-on-ubuntu-20-04)
 
 ## Step 1:
 

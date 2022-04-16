@@ -1,15 +1,15 @@
 ---
 title: Installation
 description: Installation documentation
-position: 1
-category: "Getting Started"
+position: 2
+category: Getting Started
 ---
 
 # Installation
 
 ### Server Requirements
 
-Before you install **Adlisting** make sure your server meets the following requirements:
+Before you install **Hasaal** make sure your server meets the following requirements:
 
 - Server Type: Linux (Shared / VPS / Dedicated)
 - PHP >= 7.3
@@ -23,6 +23,12 @@ Before you install **Adlisting** make sure your server meets the following requi
 - Tokenizer PHP Extension
 - XML PHP Extension
 
+How To Setup In Liveserver (CPanel)
+
+---
+
+---
+
 #### Setup Laravel on Cpanel:
 
 If you want to host laravel application on shared hosting, you can headover to this article or watch the video above. [Setup laravel on Shared Hosting](https://medium.com/backenders-club/how-to-host-a-laravel-project-on-a-shared-hosting-via-cpanel-d955d32c528e)
@@ -31,9 +37,7 @@ If you want to host laravel application on shared hosting, you can headover to t
 
 If you want to host laravel application on cloud, you can headover to this article. [Setup laravel on Cloud](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-laravel-with-nginx-on-ubuntu-20-04)
 
-How To Setup In Liveserver (CPanel)
-
----
+#### Watch the installation video instead
 
 ---
 
@@ -55,7 +59,7 @@ go to `public_html` Folder and click on upload button.
 
 #### Step 3:
 
-click on "Select File" and choose app.zip file.
+click on "Select File" and choose hasaal.zip file.
 
 ---
 
@@ -157,7 +161,7 @@ Choose the backup database from your computer and click on "Go" Button.
 
 ---
 
-![](assets/images/install/s19.png)
+![](assets/images/install/s19.png) ![](assets/images/install/s20.png)
 
 #### Step 16:
 
@@ -171,27 +175,31 @@ Now we need to setup database credentails in our app config. Go to your applicat
 
 Carefully, Set necessery details marked in the screenshot. .
 
-`Notice: You must fill the red mark field.` .
-
 ---
 
-![](assets/images/install/s17.png) ![](assets/images/install/s20.png)
+![](assets/images/install/s17.png)
+
+# Attention!
+
+To avoid error, Please set the `SESSION_DOMAIN` & `SANCTUM_STATEFUL_DOMAINS` property value properly by following the example below!
+
+![](assets/images/localserver-demo.png) ![](assets/images/domain-demo.png)
 
 #### Step 18:
 
-Congratulations 🎉🎉🎉 You have installed the application successfully. Go to your domain and view the app.
+Congratulations 🎉🎉🎉 You have installed the application successfully. Go to your domain and view the app. You can use the demo credentails to login
 
 ---
+
+![](assets/images/install/s21.png)
 
 #### Wait a Minute!
 
 Use the credentials listed below to login to the app.
 
-# Account Credentials
+# User Accounts
 
 Admin Login
-
-**URL:** `https://yoururl.com/admin/callback`
 
 **Email:** `admin@mail.com`
 
@@ -201,7 +209,7 @@ Admin Login
 
 # Hosting Recommendation
 
-We recommend you to setup this application on cloud server. Cloud server is great for application, in terms of speed, security and scalibitly.
+We recommend you to setup this application on cloud server. Cloud server is great for SPA, in terms of speed, security and scalibitly.
 
 We recommend Digitalocean, Vultr, Linode and AWS
 

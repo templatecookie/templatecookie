@@ -13,6 +13,9 @@
       list-style-type: none;
     }
   }
+  ul {
+    list-style-type: disclosure-closed;
+  }
 
   ol[type='1'] {
     list-style-type: decimal;
