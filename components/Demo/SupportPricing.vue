@@ -2,8 +2,8 @@
   <div class="pt-20 lg:pt-124 bg-gray-100 support-pricing" id="support-pricing">
     <div class="container">
       <div class="lg:max-w-872 m-auto text-center mb-10 lg:mb-16">
-        <h2 class="text-6xl font-semibold mb-8">Explore our pricing plans</h2>
-        <p class="text-lg font-light">Donec ligula ligula, porta at urna non, faucibus congue urna. Nullam nulla purus, facilisis vitae odio ac, tempus aliquet dolor.</p>
+        <h2 class="text-6xl font-semibold mb-8">Our Support Plan</h2>
+        <p class="text-lg font-light"> We offer premium quality support plan for you. </p>
       </div>
       <div class="flex space-between gap-6 flex-wrap xl:flex-nowrap">
         <div class="rounded-2xl overflow-hidden border-[1px] border-gray-100 bg-white">
@@ -18,9 +18,9 @@
                   <path d="M20.1486 20.8999L20.002 37.5907" stroke="#F249C8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </div>
-              <h3 class="text-5xl font-semibold text-pink-600"> $21 </h3>
+              <h3 class="text-5xl font-semibold text-pink-600"> $119 </h3>
             </div>
-            <h3 class="text-2xl mb-2">Standard</h3>
+            <h3 class="text-2xl mb-2">Basic</h3>
             <p class="font-light">Upgrade your social portfolio with a stunning profile & enhanced shots.</p>
             <nuxt-link to="#" class="mt-8 flex items-center transition-all w-max justify-center text-button-17 rounded-lg overflow-hidden px-8 border-[1px] border-pink-600 hover:text-white hover:bg-pink-600 text-pink-600 bg-transparent">
               Get support now
@@ -37,60 +37,28 @@
           </div>
           <ul class="p-8 pb-3">
             <li class="flex font-light mb-5"> 
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              User Dashboard
+              <img src="~/assets/images/svg/check.svg" alt="" class="mr-3" >
+              Install on your hosting
             </li>
             <li class="flex font-light mb-5"> 
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              Post 3 Ads per week
+              <img src="~/assets/images/svg/check.svg" alt="" class="mr-3" >
+              Configure Queue
             </li>
             <li class="flex font-light mb-5"> 
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              Multiple images & videos
+              <img src="~/assets/images/svg/check.svg" alt="" class="mr-3" >
+              Setup app with dummy content
             </li>
-            <li class="flex font-light mb-5 opacity-30 text-gray-500">
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <s>Special ads badge</s>
+            <li class="flex font-light mb-5">
+              <img src="~/assets/images/svg/check.svg" alt="" class="mr-3" >
+              Setup smtp mail credentials 
             </li>
-            <li class="flex font-light mb-5 opacity-30 text-gray-500">
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <s>Basic customer support</s>
+            <li class="flex font-light mb-5">
+              <img src="~/assets/images/svg/check.svg" alt="" class="mr-3" >
+              Customize (app name, logo, colors ader
             </li>
-            <li class="flex font-light mb-5 opacity-30 text-gray-500">
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <s>Featured ads</s>
-            </li>
-            <li class="flex font-light mb-5 opacity-30 text-gray-500">
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <s>Special ads badge</s>
-            </li>
-            <li class="flex font-light mb-5 opacity-30 text-gray-500">
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <s>Call to Action in Every Ads</s>
+            <li class="flex font-light mb-5">
+              <img src="~/assets/images/svg/check.svg" alt="" class="mr-3" >
+              Google analytics 
             </li>
           </ul>
         </div>
@@ -105,7 +73,7 @@
 <path d="M5 13.3999L20 22.1499L35 13.3999L20 4.6499L5 13.3999Z" stroke="#0B63E5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </div>
-              <h3 class="text-5xl font-semibold text-blue-600"> $21 </h3>
+              <h3 class="text-5xl font-semibold text-blue-600"> $199 </h3>
             </div>
             <h3 class="text-2xl mb-2">Standard</h3>
             <p class="font-light">Upgrade your social portfolio with a stunning profile & enhanced shots.</p>
@@ -124,60 +92,24 @@
           </div>
           <ul class="p-8 pb-3">
             <li class="flex font-light mb-5"> 
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              User Dashboard
+              <img src="~/assets/images/svg/check.svg" alt="" class="mr-3" >
+              Configure app with admin panel
             </li>
             <li class="flex font-light mb-5"> 
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              Post 3 Ads per week
+              <img src="~/assets/images/svg/check.svg" alt="" class="mr-3" >
+              Third party api setup (Firebase, Payment Method Configure)
             </li>
             <li class="flex font-light mb-5"> 
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <img src="~/assets/images/svg/check.svg" alt="" class="mr-3" >
               Multiple images & videos
             </li>
-            <li class="flex font-light mb-5 opacity-30 text-gray-500">
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <s>Special ads badge</s>
+            <li class="flex font-light mb-5">
+              <img src="~/assets/images/svg/check.svg" alt="" class="mr-3" >
+              Setup payment gateways 
             </li>
-            <li class="flex font-light mb-5 opacity-30 text-gray-500">
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <s>Basic customer support</s>
-            </li>
-            <li class="flex font-light mb-5 opacity-30 text-gray-500">
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <s>Featured ads</s>
-            </li>
-            <li class="flex font-light mb-5 opacity-30 text-gray-500">
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <s>Special ads badge</s>
-            </li>
-            <li class="flex font-light mb-5 opacity-30 text-gray-500">
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <s>Call to Action in Every Ads</s>
+            <li class="flex font-light mb-5">
+              <img src="~/assets/images/svg/check.svg" alt="" class="mr-3" >
+              Configure push notification 
             </li>
           </ul>
         </div>
@@ -193,9 +125,9 @@
                   <path d="M20.1486 20.8999L20.002 37.5907" class="stroke-green-600" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </div>
-              <h3 class="text-5xl font-semibold text-green-600"> $21 </h3>
+              <h3 class="text-5xl font-semibold text-green-600"> $299 </h3>
             </div>
-            <h3 class="text-2xl mb-2">Standard</h3>
+            <h3 class="text-2xl mb-2">Special</h3>
             <p class="font-light">Upgrade your social portfolio with a stunning profile & enhanced shots.</p>
             <nuxt-link to="#" class="mt-8 flex items-center transition-all w-max justify-center text-button-17 border-[1px] border-green-600 hover:text-white hover:bg-green-600 text-green-600 bg-transparent rounded-lg overflow-hidden px-8">
               Get support now
@@ -212,60 +144,16 @@
           </div>
           <ul class="p-8 pb-3">
             <li class="flex font-light mb-5"> 
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              User Dashboard
+              <img src="~/assets/images/svg/check.svg" alt="" class="mr-3" >
+              All Previous plan features
             </li>
             <li class="flex font-light mb-5"> 
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              Post 3 Ads per week
+              <img src="~/assets/images/svg/check.svg" alt="" class="mr-3" >
+              Translate all contents to your local language
             </li>
             <li class="flex font-light mb-5"> 
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              Multiple images & videos
-            </li>
-            <li class="flex font-light mb-5 opacity-30 text-gray-500">
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <s>Special ads badge</s>
-            </li>
-            <li class="flex font-light mb-5 opacity-30 text-gray-500">
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <s>Basic customer support</s>
-            </li>
-            <li class="flex font-light mb-5 opacity-30 text-gray-500">
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <s>Featured ads</s>
-            </li>
-            <li class="flex font-light mb-5 opacity-30 text-gray-500">
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <s>Special ads badge</s>
-            </li>
-            <li class="flex font-light mb-5 opacity-30 text-gray-500">
-              <svg class="mr-3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 12.8999C0 6.27249 5.37258 0.899902 12 0.899902V0.899902C18.6274 0.899902 24 6.27249 24 12.8999V12.8999C24 19.5273 18.6274 24.8999 12 24.8999V24.8999C5.37258 24.8999 0 19.5273 0 12.8999V12.8999Z" fill="#E7F5E8"/>
-                <path d="M16.8125 9.83789L10.6875 15.9626L7.625 12.9004" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <s>Call to Action in Every Ads</s>
+              <img src="~/assets/images/svg/check.svg" alt="" class="mr-3" >
+              Upload Mobile Apps to Google Play
             </li>
           </ul>
         </div>
