@@ -5,7 +5,7 @@
     <product-fun-fact :data="product.product_funfacts" v-if="product.product_funfacts"  />
     <product-top-features :data="product.productFeatures" v-if="product.productFeatures" />
 
-    <div class="">
+    <div>
       <product-screenshots :data="product.productFeatureScreenshots" v-if="product.productFeatureScreenshots" />
       <product-feature-screenshots :data="product.displayFeatures" v-if="product.displayFeatures"/>
       <product-pages :data="product.productPages" v-if="product.productPages"  />
