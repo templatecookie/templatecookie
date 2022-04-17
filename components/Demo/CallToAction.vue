@@ -40,6 +40,13 @@ export default {
         slidesPerView: 1,
         spaceBetween: 24,
         loop: true,
+        autoplay: {
+          delay: 1, 
+          disableOnInteraction: false
+        }, 
+        freeMode: true, 
+        speed: 10000,
+        
         breakpoints: {
           1199: {
             slidesPerView: 4,

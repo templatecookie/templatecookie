@@ -40,6 +40,6 @@
 </template>
 
 <style lang="scss">
-@import '../assets/scss/markdown/index.scss';
+// @import '../assets/scss/markdown/index.scss';
 
 </style>

@@ -9,6 +9,7 @@
       <product-screenshots :data="product.productFeatureScreenshots" v-if="product.productFeatureScreenshots" />
       <product-feature-screenshots :data="product.displayFeatures" v-if="product.displayFeatures"/>
       <product-pages :data="product.productPages" v-if="product.productPages"  />
+      <support-pricing />
       <product-folder-structure :data="product.folder_structure" v-if="product.folder_structure" />
       <product-support  />
     </div>
@@ -31,6 +32,8 @@ import ProductFunFact from '../../components/Demo/ProductFunFact.vue';
 import ProductHero from "../../components/Demo/ProductHero.vue";
 import ProductSupport from '../../components/Demo/ProductSupport.vue';
 import CallToAction from '../../components/Demo/CallToAction.vue';
+import GLOBAL_QUERY from '~/graphql/global'
+import SupportPricing from '../../components/Demo/SupportPricing.vue';
 
 export default {
   layout: "empty",
@@ -50,7 +53,7 @@ export default {
       ],
     }
   },
-  async asyncData({ app, params }) {
+  async asyncData({ app, params, store }) {
     const client = app.apolloProvider.defaultClient;
     const { slug } = params;
 
@@ -60,6 +63,15 @@ export default {
         slug
       }
     })
+
+    if(!store.getters.getGlobalData){
+      const global = await client.query({
+        query: GLOBAL_QUERY,
+      })
+        
+      const globalData = global.data?.global?.data?.attributes
+      store.commit('SET_GLOBAL_DATA', globalData)
+    }
     
     const product = data.products.data[0]?.attributes;
     return { product }
@@ -76,7 +88,8 @@ export default {
     ProductFunFact,
     ProductHero,
     ProductSupport,
-    CallToAction
+    CallToAction,
+    SupportPricing
   },
 };
 </script>
