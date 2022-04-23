@@ -13,7 +13,7 @@
       <product-folder-structure :data="product.folder_structure" v-if="product.folder_structure" />
       <product-support  />
     </div>
-    <call-to-action :product="product" v-if="product" />
+    <call-to-action :product="product" v-if="product && product.cta_section" />
   </div>
 </template>
 
