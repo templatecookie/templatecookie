@@ -9,7 +9,7 @@
       <product-screenshots :data="product.productFeatureScreenshots" v-if="product.productFeatureScreenshots" />
       <product-feature-screenshots :data="product.displayFeatures" v-if="product.displayFeatures"/>
       <product-pages :data="product.productPages" v-if="product.productPages"  />
-      <support-pricing />
+      <!-- <support-pricing /> -->
       <product-folder-structure :data="product.folder_structure" v-if="product.folder_structure" />
       <product-support  />
     </div>
