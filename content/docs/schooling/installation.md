@@ -25,13 +25,23 @@ Before you install <strong> Schooling </strong> make sure your server meets the 
 
 # How To Setup In Liveserver (CPanel)
 
-> ### Setup Laravel on Cpanel:
->
-> If you want to host laravel application on shared hosting, you can headover to this article or watch the video above. [Setup laravel on Shared Hosting](https://medium.com/backenders-club/how-to-host-a-laravel-project-on-a-shared-hosting-via-cpanel-d955d32c528e)
+<call-out-block type="info">
+<template>
 
-> ### Setup on Laravel on Cloud?
->
-> If you want to host laravel application on cloud, you can headover to this article. [Setup laravel on Cloud](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-laravel-with-nginx-on-ubuntu-20-04)
+### Setup Laravel on Cpanel:
+
+If you want to host laravel application on shared hosting, you can headover to this article or watch the video above. [Setup laravel on Shared Hosting](https://medium.com/backenders-club/how-to-host-a-laravel-project-on-a-shared-hosting-via-cpanel-d955d32c528e)
+</template>
+</call-out-block>
+
+<call-out-block type="success">
+<template>
+
+### Setup on Laravel on Cloud?
+
+If you want to host laravel application on cloud, you can headover to this article. [Setup laravel on Cloud](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-laravel-with-nginx-on-ubuntu-20-04)
+</template>
+</call-out-block>
 
 ## Step 1:
 
@@ -127,12 +137,18 @@ Now we need to setup database credentails in our app config. Go to your applicat
 Carefully, Set necessery details marked in the screenshot. .
 ![Step 17](/docs/schooling/s17.png)
 
-# Attention!
+<call-out-block type="warning">
+<template>
 
-## To avoid error, Please set the `SESSION_DOMAIN` & `SANCTUM_STATEFUL_DOMAINS` property value properly by following the example below!
+## Attention!
+
+To avoid error, Please set the `SESSION_DOMAIN` & `SANCTUM_STATEFUL_DOMAINS` property value properly by following the example below!
 
 ![local server](/docs/schooling/localserver-demo.png)
 ![Domain Demo](/docs/schooling/localserver-demo.png)
+</template>
+
+</call-out-block>
 
 ## Step 18:
 
@@ -156,6 +172,9 @@ After the login you need to hit below url.Then go back to your main domain.
 ![Step 18](/docs/schooling/s22.png)
 ![Step 18](/docs/schooling/s23.png)
 
+<hightlight-block>
+<template>
+
 # Hosting Recommendation
 
 We recommend you to setup this application on cloud server. Cloud server is great for SPA, in terms of speed, security and scalibitly.
@@ -164,3 +183,6 @@ We recommend Digitalocean, Vultr, Linode and AWS
 
 [Bluehost Shared Hosting](https://www.bluehost.com/track/webzakir/)
 [Digitalocean Cloud Hosting](https://m.do.co/c/44ed55706f71)
+
+</template>
+</hightlight-block>
