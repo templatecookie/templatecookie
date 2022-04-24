@@ -14,9 +14,9 @@ category: Getting Started
 
 You'll redirect to the https://yourdomain.com/admin/dashboard URL.
 
-[![screenshot](assets/screenshots/admin-login.png)](assets/screenshots/admin-login.png)[](assets/screenshots/admin-login.png)
+[![screenshot](/docs/adlisting/screenshots/admin-login.png)](/docs/adlisting/screenshots/admin-login.png)[](/docs/adlisting/screenshots/admin-login.png)
 
-[![screenshot](assets/screenshots/dashboard.png)](assets/screenshots/dashboard.png)[](assets/screenshots/dashboard.png)
+[![screenshot](/docs/adlisting/screenshots/dashboard.png)](/docs/adlisting/screenshots/dashboard.png)[](/docs/adlisting/screenshots/dashboard.png)
 
 ## Ads Management
 
@@ -32,9 +32,9 @@ You'll redirect to the https://yourdomain.com/admin/dashboard URL.
 
 **Sort:** Click the marked icon, drag vertically to move where you want to set.
 
-[![screenshot](assets/screenshots/category.png)](assets/screenshots/category.png)[](assets/screenshots/category.png)
+[![screenshot](/docs/adlisting/screenshots/category.png)](/docs/adlisting/screenshots/category.png)[](/docs/adlisting/screenshots/category.png)
 
-[![screenshot](assets/screenshots/category2.png)](assets/screenshots/category2.png)[](assets/screenshots/category2.png)
+[![screenshot](/docs/adlisting/screenshots/category2.png)](/docs/adlisting/screenshots/category2.png)[](/docs/adlisting/screenshots/category2.png)
 
 ##### **Subcategory**
 
@@ -47,7 +47,7 @@ You'll redirect to the https://yourdomain.com/admin/dashboard URL.
 
 **Delete:** Delete subcategory by clicking on the delete icon.
 
-[![screenshot](assets/screenshots/subcategory.png)](assets/screenshots/subcategory.png)[](assets/screenshots/subcategory.png)
+[![screenshot](/docs/adlisting/screenshots/subcategory.png)](/docs/adlisting/screenshots/subcategory.png)[](/docs/adlisting/screenshots/subcategory.png)
 
 ##### **City**
 
@@ -59,7 +59,7 @@ You'll redirect to the https://yourdomain.com/admin/dashboard URL.
 
 **Delete:** Delete city by clicking on the delete icon.
 
-[![screenshot](assets/screenshots/city.png)](assets/screenshots/city.png)[](assets/screenshots/city.png)
+[![screenshot](/docs/adlisting/screenshots/city.png)](/docs/adlisting/screenshots/city.png)[](/docs/adlisting/screenshots/city.png)
 
 ##### **Town**
 
@@ -72,7 +72,7 @@ You'll redirect to the https://yourdomain.com/admin/dashboard URL.
 
 **Delete:** Delete town by clicking on the delete icon.
 
-[![screenshot](assets/screenshots/town.png)](assets/screenshots/town.png)[](assets/screenshots/town.png)
+[![screenshot](/docs/adlisting/screenshots/town.png)](/docs/adlisting/screenshots/town.png)[](/docs/adlisting/screenshots/town.png)
 
 ##### **Brand**
 
@@ -84,7 +84,7 @@ You'll redirect to the https://yourdomain.com/admin/dashboard URL.
 
 **Delete:** Delete brand by clicking on the delete icon.
 
-[![screenshot](assets/screenshots/brand.png)](assets/screenshots/brand.png)[](assets/screenshots/brand.png)
+[![screenshot](/docs/adlisting/screenshots/brand.png)](/docs/adlisting/screenshots/brand.png)[](/docs/adlisting/screenshots/brand.png)
 
 ##### **Ad**
 
@@ -96,11 +96,11 @@ You'll redirect to the https://yourdomain.com/admin/dashboard URL.
 
 **Ad Gallery:** Navigate to Ad from the sidebar. Select Ad Gallery from options. Add new or delete unnecessary images.
 
-[![screenshot](assets/screenshots/adcreate.png)](assets/screenshots/adcreate.png)[](assets/screenshots/adcreate.png)
+[![screenshot](/docs/adlisting/screenshots/adcreate.png)](/docs/adlisting/screenshots/adcreate.png)[](/docs/adlisting/screenshots/adcreate.png)
 
-[![screenshot](assets/screenshots/gallery.png)](assets/screenshots/gallery.png)[](assets/screenshots/gallery.png)
+[![screenshot](/docs/adlisting/screenshots/gallery.png)](/docs/adlisting/screenshots/gallery.png)[](/docs/adlisting/screenshots/gallery.png)
 
-[![screenshot](assets/screenshots/gallery2.png)](assets/screenshots/gallery2.png)[](assets/screenshots/gallery2.png)
+[![screenshot](/docs/adlisting/screenshots/gallery2.png)](/docs/adlisting/screenshots/gallery2.png)[](/docs/adlisting/screenshots/gallery2.png)
 
 ## Pricing Plan
 
@@ -112,11 +112,11 @@ You'll redirect to the https://yourdomain.com/admin/dashboard URL.
 
 **Set Recommended Package:** You can set the Recommended badge only one package. Select the package you want to set as recommended and click on the Save button
 
-[![screenshot](assets/screenshots/plan.png)](assets/screenshots/plan.png)[](assets/screenshots/plan.png)
+[![screenshot](/docs/adlisting/screenshots/plan.png)](/docs/adlisting/screenshots/plan.png)[](/docs/adlisting/screenshots/plan.png)
 
-[![screenshot](assets/screenshots/plan2.png)](assets/screenshots/plan2.png)[](assets/screenshots/plan2.png)
+[![screenshot](/docs/adlisting/screenshots/plan2.png)](/docs/adlisting/screenshots/plan2.png)[](/docs/adlisting/screenshots/plan2.png)
 
-[![screenshot](assets/screenshots/plan3.png)](assets/screenshots/plan3.png)[](assets/screenshots/plan3.png)
+[![screenshot](/docs/adlisting/screenshots/plan3.png)](/docs/adlisting/screenshots/plan3.png)[](/docs/adlisting/screenshots/plan3.png)
 
 ## Blog Management
 
@@ -128,9 +128,9 @@ You'll redirect to the https://yourdomain.com/admin/dashboard URL.
 
 **Delete:** Delete tag by clicking on the delete icon.
 
-[![screenshot](assets/screenshots/tag.png)](assets/screenshots/tag.png)[](assets/screenshots/tag.png)
+[![screenshot](/docs/adlisting/screenshots/tag.png)](/docs/adlisting/screenshots/tag.png)[](/docs/adlisting/screenshots/tag.png)
 
-[![screenshot](assets/screenshots/tag2.png)](assets/screenshots/tag2.png)[](assets/screenshots/tag2.png)
+[![screenshot](/docs/adlisting/screenshots/tag2.png)](/docs/adlisting/screenshots/tag2.png)[](/docs/adlisting/screenshots/tag2.png)
 
 ##### **Post**
 
@@ -142,9 +142,9 @@ You'll redirect to the https://yourdomain.com/admin/dashboard URL.
 
 **Delete:** Delete post by clicking on the delete icon.
 
-[![screenshot](assets/screenshots/post.png)](assets/screenshots/post.png)[](assets/screenshots/post.png)
+[![screenshot](/docs/adlisting/screenshots/post.png)](/docs/adlisting/screenshots/post.png)[](/docs/adlisting/screenshots/post.png)
 
-[![screenshot](assets/screenshots/post2.png)](assets/screenshots/post2.png)[](assets/screenshots/post2.png)
+[![screenshot](/docs/adlisting/screenshots/post2.png)](/docs/adlisting/screenshots/post2.png)[](/docs/adlisting/screenshots/post2.png)
 
 ## User & Role Management
 
@@ -158,9 +158,9 @@ You'll redirect to the https://yourdomain.com/admin/dashboard URL.
 
 **Delete:** Delete role by clicking on the delete icon.
 
-[![screenshot](assets/screenshots/role.png)](assets/screenshots/role.png)[](assets/screenshots/role.png)
+[![screenshot](/docs/adlisting/screenshots/role.png)](/docs/adlisting/screenshots/role.png)[](/docs/adlisting/screenshots/role.png)
 
-[![screenshot](assets/screenshots/role2.png)](assets/screenshots/role2.png)[](assets/screenshots/role2.png)
+[![screenshot](/docs/adlisting/screenshots/role2.png)](/docs/adlisting/screenshots/role2.png)[](/docs/adlisting/screenshots/role2.png)
 
 ##### **User**
 
@@ -173,7 +173,7 @@ You'll redirect to the https://yourdomain.com/admin/dashboard URL.
 
 **Delete:** Delete user by clicking on the delete icon.
 
-[![screenshot](assets/screenshots/user.png)](assets/screenshots/user.png)[](assets/screenshots/user.png)
+[![screenshot](/docs/adlisting/screenshots/user.png)](/docs/adlisting/screenshots/user.png)[](/docs/adlisting/screenshots/user.png)
 
 ## Newsletter
 
@@ -184,9 +184,9 @@ You'll redirect to the https://yourdomain.com/admin/dashboard URL.
 **Send Mail:** Navigate to the Email List from the Newsletter option. Or click on the Send Mail button from the email list page.  
 Fill the form as you want and send the mail to as many people as you like.
 
-[![screenshot](assets/screenshots/emails.png)](assets/screenshots/emails.png)[](assets/screenshots/emails.png)
+[![screenshot](/docs/adlisting/screenshots/emails.png)](/docs/adlisting/screenshots/emails.png)[](/docs/adlisting/screenshots/emails.png)
 
-[![screenshot](assets/screenshots/emails2.png)](assets/screenshots/emails2.png)[](assets/screenshots/emails2.png)
+[![screenshot](/docs/adlisting/screenshots/emails2.png)](/docs/adlisting/screenshots/emails2.png)[](/docs/adlisting/screenshots/emails2.png)
 
 ## Language
 
@@ -203,13 +203,13 @@ Fill the form as you want and send the mail to as many people as you like.
 **Switch Language:** Click on the marked icon and choose the language you wish to translate into. The whole admin panel will be translated into your selected language.  
 The switching language feature will work only on your current device. If you login with other device, you will need to switch language again.
 
-[![screenshot](assets/screenshots/language.png)](assets/screenshots/language.png)[](assets/screenshots/language.png)
+[![screenshot](/docs/adlisting/screenshots/language.png)](/docs/adlisting/screenshots/language.png)[](/docs/adlisting/screenshots/language.png)
 
-[![screenshot](assets/screenshots/language2.png)](assets/screenshots/language2.png)[](assets/screenshots/language2.png)
+[![screenshot](/docs/adlisting/screenshots/language2.png)](/docs/adlisting/screenshots/language2.png)[](/docs/adlisting/screenshots/language2.png)
 
-[![screenshot](assets/screenshots/language3.png)](assets/screenshots/language3.png)[](assets/screenshots/language3.png)
+[![screenshot](/docs/adlisting/screenshots/language3.png)](/docs/adlisting/screenshots/language3.png)[](/docs/adlisting/screenshots/language3.png)
 
-[![screenshot](assets/screenshots/language4.png)](assets/screenshots/language4.png)[](assets/screenshots/language4.png)
+[![screenshot](/docs/adlisting/screenshots/language4.png)](/docs/adlisting/screenshots/language4.png)[](/docs/adlisting/screenshots/language4.png)
 
 ## Dark or Light Dashboard
 
@@ -231,7 +231,7 @@ Click on the marked icon to toggle between dark and light dashboard.
 
 **Delete:** From the currency tab, click on the delete icon of which item you want to remove.
 
-[![screenshot](assets/screenshots/currency.png)](assets/screenshots/currency.png)[](assets/screenshots/currency.png)
+[![screenshot](/docs/adlisting/screenshots/currency.png)](/docs/adlisting/screenshots/currency.png)[](/docs/adlisting/screenshots/currency.png)
 
 ## How To
 
@@ -329,9 +329,9 @@ First, [View your profile](#view-profile). Then click on the Go to settings butt
 You can change your name, email, or image. Don’t forget to click on the Update Profile button before leaving this page.  
 Remember your email because you’ll need this email when you’ll log in again.
 
-[![screenshot](assets/screenshots/update-profile1.png)](assets/screenshots/update-profile1.png)[](assets/screenshots/update-profile1.png)
+[![screenshot](/docs/adlisting/screenshots/update-profile1.png)](/docs/adlisting/screenshots/update-profile1.png)[](/docs/adlisting/screenshots/update-profile1.png)
 
-[![screenshot](assets/screenshots/update-profile2.png)](assets/screenshots/update-profile2.png)[](assets/screenshots/update-profile2.png)
+[![screenshot](/docs/adlisting/screenshots/update-profile2.png)](/docs/adlisting/screenshots/update-profile2.png)[](/docs/adlisting/screenshots/update-profile2.png)
 
 #### **How to change password**
 
@@ -340,40 +340,40 @@ Remember your email because you’ll need this email when you’ll log in again.
 3.  Click on the **Change Password** checkbox
 4.  Click on the Update Profile button before leaving the page
 
-[![screenshot](assets/screenshots/update-profile1.png)](assets/screenshots/update-profile1.png)[](assets/screenshots/update-profile1.png)
+[![screenshot](/docs/adlisting/screenshots/update-profile1.png)](/docs/adlisting/screenshots/update-profile1.png)[](/docs/adlisting/screenshots/update-profile1.png)
 
-[![screenshot](assets/screenshots/change-password.png)](assets/screenshots/change-password.png)[](assets/screenshots/change-password.png)
+[![screenshot](/docs/adlisting/screenshots/change-password.png)](/docs/adlisting/screenshots/change-password.png)[](/docs/adlisting/screenshots/change-password.png)
 
 #### **How to On/Off Email Verification Feature**
 
 Navigate to the Settings page, select the System tab. At the bottom, you will see some switches including Customer Email Verification. Turn on the switch if you want customers will verify their email after registration. Similarly, turn off the switch if you don’t need the feature.
 
-[![screenshot](assets/screenshots/email-ver.png)](assets/screenshots/email-ver.png)[](assets/screenshots/email-ver.png)
+[![screenshot](/docs/adlisting/screenshots/email-ver.png)](/docs/adlisting/screenshots/email-ver.png)[](/docs/adlisting/screenshots/email-ver.png)
 
 #### **How to Ads Auto Publish**
 
 Navigate to the Settings page, select the System tab. At the bottom, you will see some switches including **Ads Admin Approval**. Turn on the switch if you want customers can post ads instantly. Similarly, turn off the switch if you want those ads will be approved by the administrator.
 
-[![screenshot](assets/screenshots/auto-publish-ad.png)](assets/screenshots/auto-publish-ad.png)[](assets/screenshots/auto-publish-ad.png)
+[![screenshot](/docs/adlisting/screenshots/auto-publish-ad.png)](/docs/adlisting/screenshots/auto-publish-ad.png)[](/docs/adlisting/screenshots/auto-publish-ad.png)
 
 #### **How to create Active/Inactive Category & Subcategory of Ads**
 
 If you want to disable any category or subcategory, go to the list navigating from Ads to Category or Subcategory on the sidebar. Then simply turn the status off. This action will hide all the internal ads of the disabled category or subcategory.
 
-[![screenshot](assets/screenshots/disable-category.png)](assets/screenshots/disable-category.png)[](assets/screenshots/disable-category.png)
+[![screenshot](/docs/adlisting/screenshots/disable-category.png)](/docs/adlisting/screenshots/disable-category.png)[](/docs/adlisting/screenshots/disable-category.png)
 
 #### **How to Manage App & Database Configuration**
 
 Go to the Settings page, select the System tab, fill out the App Configuration form for adding App Name, Timezone, and App URL. Or fill out the Database Configuration form for setting up database credentials. Click on the update settings button before leaving the page.  
 **Don’t turn on the App Debug when your site is live.**
 
-[![screenshot](assets/screenshots/app-database-config.png)](assets/screenshots/app-database-config.png)[](assets/screenshots/app-database-config.png)
+[![screenshot](/docs/adlisting/screenshots/app-database-config.png)](/docs/adlisting/screenshots/app-database-config.png)[](/docs/adlisting/screenshots/app-database-config.png)
 
 #### **How to Display/Hide Home Page Sections**
 
 Navigate to the Settings page, select the System tab. At the bottom, you will see some switches including **Show Featured Ads on Homepage** & **Show Regular Ads on Homepage**. Turn on the specific switch if you want to show it on the homepage. Similarly, turn off the switch if you want to hide the specific section.
 
-[![screenshot](assets/screenshots/toggle-home-sections.png)](assets/screenshots/toggle-home-sections.png)[](assets/screenshots/toggle-home-sections.png)
+[![screenshot](/docs/adlisting/screenshots/toggle-home-sections.png)](/docs/adlisting/screenshots/toggle-home-sections.png)[](/docs/adlisting/screenshots/toggle-home-sections.png)
 
 #### **How to do website setting**
 
@@ -387,11 +387,11 @@ Navigate to settings from the settings option. Select the Website and you’ll s
 
 **Logo:** Add your favorite logos, favicon, and loader from this part.
 
-[![screenshot](assets/screenshots/website-setting.png)](assets/screenshots/website-setting.png)[](assets/screenshots/website-setting.png)
+[![screenshot](/docs/adlisting/screenshots/website-setting.png)](/docs/adlisting/screenshots/website-setting.png)[](/docs/adlisting/screenshots/website-setting.png)
 
-[![screenshot](assets/screenshots/website-setting2.png)](assets/screenshots/website-setting2.png)[](assets/screenshots/website-setting2.png)
+[![screenshot](/docs/adlisting/screenshots/website-setting2.png)](/docs/adlisting/screenshots/website-setting2.png)[](/docs/adlisting/screenshots/website-setting2.png)
 
-[![screenshot](assets/screenshots/website-setting3.png)](assets/screenshots/website-setting3.png)[](assets/screenshots/website-setting3.png)
+[![screenshot](/docs/adlisting/screenshots/website-setting3.png)](/docs/adlisting/screenshots/website-setting3.png)[](/docs/adlisting/screenshots/website-setting3.png)
 
 #### **How to do layout setting**
 
@@ -399,7 +399,7 @@ Navigate to settings from the settings option. Select the Website and you’ll s
 
 - You can change your Admin Panel's layout from here.
 
-[![screenshot](assets/screenshots/layout-setting.png)](assets/screenshots/layout-setting.png)[](assets/screenshots/layout-setting.png)
+[![screenshot](/docs/adlisting/screenshots/layout-setting.png)](/docs/adlisting/screenshots/layout-setting.png)[](/docs/adlisting/screenshots/layout-setting.png)
 
 #### **How to Custom CSS & JS**
 
@@ -407,7 +407,7 @@ Navigate to settings from the settings option. Select the Website and you’ll s
 
 If you want to some custom changes, then add the appropiate codes here and save the form before leaving the page.
 
-[![screenshot](assets/screenshots/custom-css-js.png)](assets/screenshots/custom-css-js.png)[](assets/screenshots/custom-css-js.png)
+[![screenshot](/docs/adlisting/screenshots/custom-css-js.png)](/docs/adlisting/screenshots/custom-css-js.png)[](/docs/adlisting/screenshots/custom-css-js.png)
 
 #### **How to do payment setting**
 
@@ -423,24 +423,24 @@ If you want to some custom changes, then add the appropiate codes here and save 
 
 - Click on the Update button payment will be done.
 
-[![screenshot](assets/screenshots/payment-setting.png)](assets/screenshots/payment-setting.png)[](assets/screenshots/payment-setting.png)
+[![screenshot](/docs/adlisting/screenshots/payment-setting.png)](/docs/adlisting/screenshots/payment-setting.png)[](/docs/adlisting/screenshots/payment-setting.png)
 
 #### **How to do Module setting**
 
 Your application is divided into some main features. We call those modules. You can use all of those or disable any of those. The disabled features will be hidden from your visitors or users. Don’t forget to click the save button before leaving the page.
 
-[![screenshot](assets/screenshots/module-setting.png)](assets/screenshots/module-setting.png)[](assets/screenshots/module-setting.png)
+[![screenshot](/docs/adlisting/screenshots/module-setting.png)](/docs/adlisting/screenshots/module-setting.png)[](/docs/adlisting/screenshots/module-setting.png)
 
 #### **How to do SEO setting**
 
 Make your website SEO friendly and get more visitors. Fill out the form with a title, description, and some keywords. Then click on the update button.
 
-[![screenshot](assets/screenshots/seo-setting.png)](assets/screenshots/seo-setting.png)[](assets/screenshots/seo-setting.png)
+[![screenshot](/docs/adlisting/screenshots/seo-setting.png)](/docs/adlisting/screenshots/seo-setting.png)[](/docs/adlisting/screenshots/seo-setting.png)
 
 ## Logout
 
 Click on your profile name in the top right corner. Then click on the Sign out button. After login out, you'll redirect to your main domain.
 
-[![screenshot](assets/screenshots/logout1.png)](assets/screenshots/logout1.png)[](assets/screenshots/logout1.png)
+[![screenshot](/docs/adlisting/screenshots/logout1.png)](/docs/adlisting/screenshots/logout1.png)[](/docs/adlisting/screenshots/logout1.png)
 
-[![screenshot](assets/screenshots/logout2.png)](assets/screenshots/logout2.png)[](assets/screenshots/logout2.png)
+[![screenshot](/docs/adlisting/screenshots/logout2.png)](/docs/adlisting/screenshots/logout2.png)[](/docs/adlisting/screenshots/logout2.png)

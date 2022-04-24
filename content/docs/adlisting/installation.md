@@ -1,7 +1,7 @@
 ---
 title: Installation
 description: Installation documentation
-position: 1
+position: 2
 category: "Getting Started"
 ---
 
@@ -23,43 +23,49 @@ Before you install **Adlisting** make sure your server meets the following requi
 - Tokenizer PHP Extension
 - XML PHP Extension
 
-#### Setup Laravel on Cpanel:
+<call-out-block type="info">
+<template>
+
+### Setup Laravel on Cpanel:
 
 If you want to host laravel application on shared hosting, you can headover to this article or watch the video above. [Setup laravel on Shared Hosting](https://medium.com/backenders-club/how-to-host-a-laravel-project-on-a-shared-hosting-via-cpanel-d955d32c528e)
+</template>
+</call-out-block>
 
-#### Setup on Laravel on Cloud?
+<call-out-block type="success">
+<template>
+
+### Setup on Laravel on Cloud?
 
 If you want to host laravel application on cloud, you can headover to this article. [Setup laravel on Cloud](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-laravel-with-nginx-on-ubuntu-20-04)
-
-How To Setup In Liveserver (CPanel)
-
----
+</template>
+</call-out-block>
 
 ---
 
-#### Step 1:
+### Step 1:
 
 Login to your shared hosting and go to file manager.
 
 ---
 
-![](assets/images/install/s1.png)
+![](/docs/adlisting/install/s1.png)
 
-#### Step 2:
+### Step 2:
 
 go to `public_html` Folder and click on upload button.
 
 ---
 
-![](assets/images/install/s2.png)
+![](/docs/adlisting/install/s2.png)
 
-#### Step 3:
+### Step 3:
 
 click on "Select File" and choose app.zip file.
 
 ---
 
-![](assets/images/install/s3.png)
+![](/docs/adlisting/install/s3.png)
 
 #### Step 4:
 
@@ -67,7 +73,7 @@ Wait for the completation and close the tab once it is finished.
 
 ---
 
-![](assets/images/install/s4.png)
+![](/docs/adlisting/install/s4.png)
 
 #### Step 5:
 
@@ -75,7 +81,7 @@ Reload the file manager and extract the file following the screenshot.
 
 ---
 
-![](assets/images/install/s5.png) ![](assets/images/install/s5_2.png)
+![](/docs/adlisting/install/s5.png) ![](/docs/adlisting/install/s5_2.png)
 
 #### Step 6:
 
@@ -93,7 +99,7 @@ Select the storage folder and follow the screenshot.
 
 ---
 
-![](assets/images/install/s7.png)
+![](/docs/adlisting/install/s7.png)
 
 #### Step 8:
 
@@ -101,7 +107,7 @@ Go to bootstrap folder & select cache folder and folow the same process.
 
 ---
 
-![](assets/images/install/s8.png)
+![](/docs/adlisting/install/s8.png)
 
 #### Step 9:
 
@@ -109,7 +115,7 @@ Got to the storage folder and follow the same process as below.
 
 ---
 
-![](assets/images/install/s9.png)
+![](/docs/adlisting/install/s9.png)
 
 #### Step 10:
 
@@ -117,7 +123,7 @@ We need a database for the next step. Let's create a database by clicking on "MY
 
 ---
 
-![](assets/images/install/s11.png)
+![](/docs/adlisting/install/s11.png)
 
 #### Step 11:
 
@@ -125,7 +131,7 @@ Enter the database and click `Next Step`.
 
 ---
 
-![](assets/images/install/s12.png)
+![](/docs/adlisting/install/s12.png)
 
 #### Step 12:
 
@@ -133,7 +139,7 @@ Enter the database user name & password. Click on `Create User`.
 
 ---
 
-![](assets/images/install/s13.png)
+![](/docs/adlisting/install/s13.png)
 
 #### Step 13:
 
@@ -141,7 +147,7 @@ Save database name and database user name. Select All Permission and Click on `N
 
 ---
 
-![](assets/images/install/s14.png)
+![](/docs/adlisting/install/s14.png)
 
 #### Step 14:
 
@@ -149,7 +155,7 @@ We are going to import demo database. From cpanel open `phpmyadmin` app. Then se
 
 ---
 
-![](assets/images/install/s18.png)
+![](/docs/adlisting/install/s18.png)
 
 #### Step 15:
 
@@ -157,7 +163,7 @@ Choose the backup database from your computer and click on "Go" Button.
 
 ---
 
-![](assets/images/install/s19.png)
+![](/docs/adlisting/install/s19.png)
 
 #### Step 16:
 
@@ -165,7 +171,7 @@ Now we need to setup database credentails in our app config. Go to your applicat
 
 ---
 
-![](assets/images/install/s15.png) ![](assets/images/install/s16.png)
+![](/docs/adlisting/install/s15.png) ![](/docs/adlisting/install/s16.png)
 
 #### Step 17:
 
@@ -175,7 +181,7 @@ Carefully, Set necessery details marked in the screenshot. .
 
 ---
 
-![](assets/images/install/s17.png) ![](assets/images/install/s20.png)
+![](/docs/adlisting/install/s17.png) ![](/docs/adlisting/install/s20.png)
 
 #### Step 18:
 
@@ -191,19 +197,23 @@ Use the credentials listed below to login to the app.
 
 Admin Login
 
-**URL:** `https://yoururl.com/admin/callback`
+**URL:** [https://yoururl.com/admin/callback](https://yoururl.com/admin/callback)
 
 **Email:** `admin@mail.com`
 
 **Password:** `password`
 
-# Recommendation
+<hightlight-block>
+<template>
 
 # Hosting Recommendation
 
-We recommend you to setup this application on cloud server. Cloud server is great for application, in terms of speed, security and scalibitly.
+We recommend you to setup this application on cloud server. Cloud server is great for SPA, in terms of speed, security and scalibitly.
 
 We recommend Digitalocean, Vultr, Linode and AWS
 
-- [Bluehost Shared Hosting](https://www.bluehost.com/track/webzakir/)
-- [Digitalocean Cloud Hosting](https://m.do.co/c/44ed55706f71)
+[Bluehost Shared Hosting](https://www.bluehost.com/track/webzakir/)
+[Digitalocean Cloud Hosting](https://m.do.co/c/44ed55706f71)
+
+</template>
+</hightlight-block>
