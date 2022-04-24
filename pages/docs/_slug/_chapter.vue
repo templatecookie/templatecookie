@@ -1,5 +1,5 @@
 <template>
-  <div class="px-8 py-8">
+  <div class="px-8 pb-8">
     <nuxt-content class="markdown-body" :document="page" />
   </div>
 </template>
@@ -50,6 +50,10 @@ export default {
     max-width: 960px;
     padding: 30px;
   }
+  & h1:first-of-type,
+  & h2:first-of-type {
+    margin-top: 0 !important;
+  }
 
   h1,
   h2,
@@ -75,27 +79,32 @@ export default {
 
   h1 {
     font-size: 44px;
+    margin: 24px 0 6px;
   }
 
   h2 {
     font-size: 32px;
-    margin: 24px 0 6px;
+    margin: 20px 0 6px;
   }
 
   h3 {
     font-size: 28px;
+    margin: 18px 0 6px;
   }
 
   h4 {
     font-size: 24px;
+    margin: 16px 0 6px;
   }
 
   h5 {
     font-size: 20px;
+    margin: 12px 0 6px;
   }
 
   h6 {
     font-size: 16px;
+    margin: 10px 0 6px;
   }
 
   a {

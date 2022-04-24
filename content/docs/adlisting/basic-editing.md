@@ -50,11 +50,11 @@ Application core routes located in route files. If you want to change something.
 
 ### 1\. Screenshot
 
-![screenshot](assets/images/screenshot/editcode/route.png)
+![screenshot](/docs/adlisting/screenshot/editcode/route.png)
 
 ### 2\. Screenshot
 
-![screenshot](assets/images/screenshot/editcode/route2.png)
+![screenshot](/docs/adlisting/screenshot/editcode/route2.png)
 
 ## Blade File Edit
 
@@ -64,11 +64,11 @@ Application core views code located in blade files. If you want to change someth
 
 ### 1\. Screenshot
 
-![screenshot](assets/images/screenshot/editcode/blade.png)
+![screenshot](/docs/adlisting/screenshot/editcode/blade.png)
 
 ### 2\. Screenshot
 
-![screenshot](assets/images/screenshot/editcode/blade2.png)
+![screenshot](/docs/adlisting/screenshot/editcode/blade2.png)
 
 ## Controller File Edit
 
@@ -76,11 +76,11 @@ You will find all the controller files under `app/Http/Controllers & Modules/*/H
 
 ### 1\. Screenshot
 
-![screenshot](assets/images/screenshot/editcode/controller.png)
+![screenshot](/docs/adlisting/screenshot/editcode/controller.png)
 
 ### 2\. Screenshot
 
-![screenshot](assets/images/screenshot/editcode/controller2.png)
+![screenshot](/docs/adlisting/screenshot/editcode/controller2.png)
 
 ## Website Content Change
 
@@ -90,12 +90,12 @@ You will find all the translated line under `resources/lang/en/website.php` Fold
 
 ### 1\. Screenshot
 
-![screenshot](assets/images/screenshot/editcode/content.png)
+![screenshot](/docs/adlisting/screenshot/editcode/content.png)
 
 ### 2\. Screenshot
 
-![screenshot](assets/images/screenshot/editcode/content2.png)
+![screenshot](/docs/adlisting/screenshot/editcode/content2.png)
 
 ### 3\. Screenshot
 
-![screenshot](assets/images/screenshot/editcode/content3.png)
+![screenshot](/docs/adlisting/screenshot/editcode/content3.png)

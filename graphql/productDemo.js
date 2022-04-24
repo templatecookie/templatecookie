@@ -11,6 +11,14 @@ query product($slug: String!){
         description
         buy_url
         preview_url
+        demo_page_banner {
+          data {
+            attributes{
+              url
+              name
+            }
+          }
+        }
         technology {
           data {
             attributes {

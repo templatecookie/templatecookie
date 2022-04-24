@@ -21,7 +21,6 @@ export default {
   components: { Header, Footer, SocialLink, Newsletter },
   data () {
     return {
-      global: null,
     }
   },
   methods: {
@@ -32,8 +31,8 @@ export default {
         query: GLOBAL_QUERY,
       })
       
-      this.global = data?.global?.data?.attributes
-      this.$store.commit('SET_GLOBAL_DATA', this.global)
+      const global = data?.global?.data?.attributes
+      this.$store.commit('SET_GLOBAL_DATA', global)
     }
   },
   mounted (){
@@ -42,6 +41,9 @@ export default {
     }
   },
   computed: {
+    global() {
+      return this.$store.getters.getGlobalData
+    },
     notice() {
       const global = this.$store.getters.getGlobalData;
       return global?.website_notice

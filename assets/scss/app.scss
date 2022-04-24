@@ -3,6 +3,17 @@
 @tailwind components;
 @tailwind utilities;
 
+$primary: #0B63E5;
+$secondary: #7534FF;
+$accent: #061C3D;
+
+
+:root {
+  --primary: #0B63E5;
+  --secondary: #7534FF;
+  --accent: #061C3D;
+}
+
 @layer components {
   .button {
     @apply text-button capitalize font-medium bg-blue-0b overflow-hidden rounded  inline-block px-5;

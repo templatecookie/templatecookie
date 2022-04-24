@@ -7,9 +7,6 @@ category: Others
 
 # [Adlisting](index.html)
 
-1.  [Home](index.html)
-2.  Changelog
-
 [Purchase Now](https://codecanyon.net/item/adlisting-laravel-classified-ads/34961310?s_rank=1)
 
 # Changelog
@@ -18,7 +15,7 @@ Last updated: April 2nd, 2022
 
 #### Version 1.23 - 2 April, 2022
 
-`
+```
 
 ### Features
 
@@ -34,22 +31,22 @@ Last updated: April 2nd, 2022
 - Ad details seo issue
 - and many more
 
-`
+```
 
 #### Version 1.21.20 - 24 March, 2022
 
-`
+```
 
 ### Features
 
 - Change default language
 - Change default currency
 
-`
+```
 
 #### Version 1.17.25 - 14 March, 2022
 
-`
+```
 
 ### Features
 
@@ -83,11 +80,11 @@ Last updated: April 2nd, 2022
 - Website redirect to customer dashboard after login
 - and many more
 
-`
+```
 
 #### Version 1.10.10 - 19 February, 2022
 
-`
+```
 
 ### Features
 
@@ -104,11 +101,11 @@ Last updated: April 2nd, 2022
 - Login page hardcode
 - and many more
 
-`
+```
 
 #### Version 1.7.20 – 22 December, 2021
 
-`
+```
 
 ### Features
 
@@ -117,8 +114,7 @@ Last updated: April 2nd, 2022
 - Email Subscription
 - SEO friendly
 - User email notification
-
-`
+  ```
 
 ## General
 

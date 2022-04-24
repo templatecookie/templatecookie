@@ -35,7 +35,7 @@
         <li><nuxt-link to="/docs" class="mr-4 text-base font-light text-gray-83">Documentation</nuxt-link></li>
         <li><a href="https://themeforest.net/user/templatecookie" target="_blank" class="mr-4 text-base font-light text-gray-83">Themeforest Profile</a></li>
         <li><a href="https://codecanyon.net/user/templatecookie" target="_blank" class="mr-4 text-base font-light text-gray-83">Codecanyon Profile</a></li>
-        <li><nuxt-link to="/refund-policy" class="mr-4 text-base font-light text-gray-83">Refund Policy</nuxt-link></li>
+        <!-- <li><nuxt-link to="/refund-policy" class="mr-4 text-base font-light text-gray-83">Refund Policy</nuxt-link></li> -->
       </ul>
       <!-- footer copyright content  -->
       <div class="py-4 text-center border-t border-gray-24">
