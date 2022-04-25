@@ -14,17 +14,16 @@ p<template>
         <div class="grid sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6">
           <div v-for="(item, itemIndex) in data.counterNumbers" :key="itemIndex"
             class="flex flex-col sm:flex-row items-center justify-center sm:justify-start sm:space-x-3 p-6 rounded-xl overflow-hidden" :class="cardTheme(item.theme)">
-            <div>
+            <div class="text-center sm:text-left">
+
               <span class="inline-block">
                 <img :src="fixImageUrl(item.icon)" alt="" />
               </span>
-            </div>
-            <div class="text-center sm:text-left">
-              <h2 class="text-body-24 font-medium text-dark-06 mb-2">
-                <ICountUp :delay="item.delay" :endVal="item.title" :options="options" />
-                +
+              <h2 class="text-xl font-medium text-dark-06 mb-2 mt-4">
+                <!-- <ICountUp :delay="item.delay" :endVal="item.title" :options="options" /> -->
+                {{ item.title }}
               </h2>
-              <p class="text-body-14 text-dark-42 uppercase whitespace-nowrap overflow-ellipsis">
+              <p class="text-body-14 text-dark-42 leading-normal font-light">
                 {{ item.description }}
               </p>
             </div>
