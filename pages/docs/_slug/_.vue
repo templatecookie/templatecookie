@@ -25,9 +25,9 @@ export default {
       ]
     }
   },
-  async asyncData ({ $content, params }) {
-    const url = params.chapter ? `docs/${params.slug}/${params.chapter}` : `docs/${params.slug}`;
-    const page = await $content(url)
+  async asyncData ({ $content, route }) {
+    // const url = params.chapter ? `docs/${params.slug}/${params.chapter}` : `docs/${params.slug}`;
+    const page = await $content(route.path)
     .sortBy('position', 'asc')
     .fetch()
 
@@ -39,8 +39,6 @@ export default {
 </script>
 
 <style lang="scss">
-// @import '../../../assets/scss/markdown/index.scss';
-
 .markdown-body {
   body {
     margin: 0 auto;
