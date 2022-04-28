@@ -57,8 +57,13 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/apollo',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/gtm'
   ],
+  
+  gtm: {
+    id: 'GTM-NZ5TXGP'
+  },
   googleFonts: {
     display: 'swap',
     families: {
