@@ -197,7 +197,7 @@ Use the credentials listed below to login to the app.
 
 Admin Login
 
-**URL:** [https://yoururl.com/admin/callback](https://yoururl.com/admin/callback)
+**URL:** [https://yoururl.com/admin](https://yoururl.com/admin)
 
 **Email:** `admin@mail.com`
 
