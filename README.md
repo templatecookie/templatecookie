@@ -1,27 +1,29 @@
+# Templatecookie - Online Product Documentation
 
-# Template Cookie v.2.0.0
+All [Product Documentation](https://templatecookie.com/docs) source code lives here. Watch the video below and get started!
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea autem odio culpa quidem eligendi error magni, reprehenderit dicta atque dignissimos itaque voluptates a libero repellat iste labore doloremque aliquid vel consequuntur vero repellendus fugiat rem aperiam! Deserunt perferendis reprehenderit vel ratione consectetur, omnis numquam architecto necessitatibus voluptates, reiciendis doloremque repudiandae est consequuntur nisi incidunt quidem amet nulla hic aut rem.
+## How to add & Update Docs in this project? Watch this Tutorial.
 
+[![HOW TO UPLOAD DOCS IN MARKDOWN FORMAT?](/static/help.png)](https://www.loom.com/share/6029afdc336043c29efab7ad67cf65dc)
 
 ## Run Locally
 
-Clone the project
+Fork the repository and clone the project
 
 ```bash
-  git clone https://github.com/zakirsoft/templatecookie-v2.git
+  git clone --single-branch git@github.com:[YOUR_GITHUB_USERNAME]/product-docs.git templatecookie-docs --branch docs
 ```
 
 Go to the project directory
 
 ```bash
-  cd templatecookie-v2
+  cd templatecookie-docs
 ```
 
 Install dependencies
 
 ```bash
-  npm install / yarn 
+  yarn /npm install
 ```
 
 Start the server
@@ -30,12 +32,10 @@ Start the server
   yarn dev
 ```
 
-
 ## Technology
 
- - [Tailwind CSS ](https://tailwindcss.com/)
- - [Nuxt JS](https://nuxtjs.org/)
- - [Vue Js](https://vuejs.org/)
- - [Vue Select ](https://vue-select.org/)
- - [Animate on Scroll](https://michalsnik.github.io/aos/)
-
+- [Tailwind CSS ](https://tailwindcss.com/)
+- [Nuxt JS](https://nuxtjs.org/)
+- [Vue Js](https://vuejs.org/)
+- [Vue Select ](https://vue-select.org/)
+- [Animate on Scroll](https://michalsnik.github.io/aos/)
