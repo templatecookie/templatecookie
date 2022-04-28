@@ -1,7 +1,7 @@
 ---
 title: Changealog
 description: Installation documentation
-position: 8
+position: 23
 category: Others
 ---
 
