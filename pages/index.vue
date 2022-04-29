@@ -107,9 +107,6 @@ export default {
       },
       bannerImg,
     };
-  },
-  created(){
-    this.$router.push({ name: 'docs'})
   }
 };
 </script>
