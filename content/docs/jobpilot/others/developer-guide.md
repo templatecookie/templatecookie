@@ -1,7 +1,7 @@
 ---
 title: Developer Guide
 description: Installation documentation
-position: 6
+position: 40
 category: Others
 ---
 
