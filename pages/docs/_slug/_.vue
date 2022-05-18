@@ -1,10 +1,15 @@
 <template>
-  <div class="px-8 pb-8">
+  <div class="px-8 pb-0">
     <nuxt-content class="markdown-body" :document="page" />
+
+    <div class="pt-8 w-full text-left text-gray-500">
+        <i> Updated at {{ formatDate }}</i>
+    </div>
   </div>
 </template>
 
 <script>
+import dayjs from 'dayjs'
 export default {
   layout: 'documentation',
   props: ['productName', 'categories'],
@@ -30,11 +35,16 @@ export default {
     const page = await $content(route.path)
     .sortBy('position', 'asc')
     .fetch()
-
+    console.log(page.updatedAt);
     return {
       page
     }
   },
+  computed: {
+    formatDate(){
+      return this.page ? dayjs(this.page.updatedAt).format('dddd, MMMM DD YYYY') : '';
+    }
+  }
 }
 </script>
 
@@ -135,7 +145,7 @@ export default {
   ol {
     font-size: 16px;
     line-height: 24px;
-    max-width: 540px;
+    max-width: 600px;
   }
 
   ul {
@@ -173,17 +183,17 @@ export default {
   blockquote {
     padding: 1rem 2rem;
     margin-bottom: 1.5rem;
-    max-width: 476px;
+    max-width: 500px;
     border-left: 4px solid #0099ff;
   }
 
   blockquote p {
     color: #666;
-    max-width: 460px;
+    max-width: 100%;
   }
 
   hr {
-    width: 540px;
+    width: 600px;
     text-align: left;
     margin: 0 auto 0 0;
     color: #999;
