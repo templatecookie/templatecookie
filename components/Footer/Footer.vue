@@ -21,7 +21,7 @@
             <div>
               <ul class="space-y-2 footer-menu" v-if="item.products.data">
                 <li v-for="(subItem, index) in item.products.data" :key="index">
-                  <nuxt-link class="text-body-16 capitalize text-gray-83" :to="{ name: 'products-slug', params: {slug: subItem.attributes.slug} }">
+                  <nuxt-link class="text-body-16 capitalize text-gray-83" :to="{ name: 'demo-slug', params: {slug: subItem.attributes.slug} }">
                     {{ subItem.attributes.name }}
                   </nuxt-link>
                 </li>

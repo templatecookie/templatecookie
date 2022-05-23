@@ -3,13 +3,13 @@
     <div class="flex flex-col sm:flex-row items-center justify-between p-8 shadow-bs013 bg-gray-f5">
       <!-- text content -->
       <div class="mb-6 sm:mb-0">
-        <nuxt-link :to="{ name: 'products-slug', params: {slug: product.slug}}" class="text-body-18 capitalize text-dark-06">
+        <nuxt-link :to="{ name: 'demo-slug', params: {slug: product.slug} }" class="text-body-18 capitalize text-dark-06">
           {{ product.name }}
         </nuxt-link>
       </div>
       <!-- action  -->
       <div class="flex items-center">
-        <nuxt-link :to="{ name: 'products-slug', params: {slug: product.slug}}" class="mr-4 flex items-center justify-center text-gray-500 text-button capitalize font-medium border-[1px] border-gray-500 overflow-hidden rounded px-5 w-full whitespace-nowrap text-center">
+        <nuxt-link :to="{ name: 'demo-slug', params: {slug: product.slug} }" class="mr-4 flex items-center justify-center text-gray-500 text-button capitalize font-medium border-[1px] border-gray-500 overflow-hidden rounded px-5 w-full whitespace-nowrap text-center">
           Go Back
           <span class="inline-block ml-2">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
