@@ -8,7 +8,7 @@
         <p class="text-white text-base sm:text-lg mb-6 lg:mb-12 font-light">
           {{ product.cta_section.description }}
         </p>
-        <a :href="product.buy_url" target="_blank"
+        <a href="#pricing" target="_blank"
           class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-black">
           Purchase Now
           <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" />
