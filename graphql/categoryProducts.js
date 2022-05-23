@@ -31,7 +31,7 @@ query categoryProducts($slug: String!, $page: Int!, $pageSize: Int!) {
             }
           }
         }
-        banner {
+        demo_banner {
           data {
             attributes {
               name

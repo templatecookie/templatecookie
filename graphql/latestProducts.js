@@ -20,7 +20,7 @@ query {
             }
           }
         }
-        banner {
+        demo_banner {
           data {
             attributes {
               name

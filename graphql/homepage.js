@@ -3,7 +3,7 @@ import gql from 'graphql-tag';
 // export const global = gql`
 export default gql`
 query {
-  homepage {
+    homepage {
     data {
       attributes {
         title
@@ -60,7 +60,7 @@ query {
                 slug
                 regular_price
                 short_description
-                banner {
+                demo_banner {
                   data {
                     attributes {
                       name,

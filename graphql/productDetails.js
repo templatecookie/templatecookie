@@ -18,7 +18,7 @@ query product($slug: String!){
         documentation_url
         customer_support
         version
-        banner {
+        demo_banner {
           data {
             attributes {
               name

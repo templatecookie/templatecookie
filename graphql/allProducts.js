@@ -27,7 +27,7 @@ query products($page: Int!, $pageSize: Int!, $technology: String!, $category: St
             }
           }
         }
-        banner {
+        demo_banner {
           data {
             attributes {
               name
