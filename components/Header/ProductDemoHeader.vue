@@ -45,7 +45,7 @@
               <nuxt-link to="#support">Support</nuxt-link>
             </li>
             <li class="flex items-center space-x-3">
-              <a :href="product.buy_url" target="_blank"
+              <a href="#pricing" target="_blank"
                 class="flex items-center justify-center text-white hover:text-white text-button capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded px-5 w-full text-center">
                 Buy Now
                 <span class="inline-block ml-2">
@@ -138,7 +138,7 @@
             </li>
 
             <li class="sidebar-menu__button">
-              <a :href="product.buy_url" target="_blank"
+              <a href="#pricing" target="_blank"
                 class="flex items-center justify-center text-white hover:text-white text-button capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded px-5 w-full text-center">
                 Buy Now
                 <span class="inline-block ml-2">

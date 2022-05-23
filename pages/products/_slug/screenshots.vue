@@ -18,7 +18,7 @@
             </svg>
           </span>
         </nuxt-link>
-        <a :href="product.buy_url" target="_blank" class="flex items-center justify-center text-white hover:text-white text-button capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded px-5 w-full whitespace-nowrap text-center">
+        <a :href="product.buy_regular_license" target="_blank" class="flex items-center justify-center text-white hover:text-white text-button capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded px-5 w-full whitespace-nowrap text-center">
           Buy Now
           <span class="inline-block ml-2">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

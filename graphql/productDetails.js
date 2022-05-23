@@ -12,9 +12,9 @@ query product($slug: String!){
         extended_price
         regular_price
         short_description
-        buy_url
+        buy_regular_license
+        buy_extended_license
         preview_url
-        support_url
         documentation_url
         customer_support
         version

@@ -9,7 +9,7 @@
           {{ product.short_description }}
         </p>
         <div class="mt-8">
-          <a :href="product.buy_url" target="_blank" class="block text-center sm:inline-block border-1.5 border-blue-0b bg-blue-0b font-medium rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 mb-3 sm:mb-0 sm:mr-3">
+          <a href="#pricing" target="_blank" class="block text-center sm:inline-block border-1.5 border-blue-0b bg-blue-0b font-medium rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 mb-3 sm:mb-0 sm:mr-3">
             Buy Now
             <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="" />
           </a>

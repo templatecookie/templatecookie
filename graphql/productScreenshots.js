@@ -11,7 +11,8 @@ query product($slug: String!){
         slug
         short_description
         description
-        buy_url
+        buy_regular_license
+        buy_extended_license
         preview_url
         gallery {
           data {

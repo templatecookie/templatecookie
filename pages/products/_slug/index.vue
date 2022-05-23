@@ -184,7 +184,7 @@
               <!-- end -->
               <div class="pt-0 p-8 pb-4">
                 <div class="border-b border-gray-cd pb-4">
-                  <a :href="product.buy_url" target="_blank" v-if="product.buy_url" class="block text-center font-medium bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 mb-4 hover:bg-dark-06">
+                  <a :href="product.buy_regular_license" target="_blank" v-if="product.buy_regular_license" class="block text-center font-medium bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 mb-4 hover:bg-dark-06">
                     Buy now
                   </a>
                   <nuxt-link :to="{ name: 'demo-slug', params: {slug: product.slug} }" v-if="product.documentation_url"
@@ -226,13 +226,6 @@
                       File Inlcude:
                       <span class="float-right text-dark-06"> Fig, Figma </span>
                     </li>
-                    <!-- <li class="text-gray-6a text-sm mb-4">
-                      <img class="inline mr-2.5" src="~@/assets/images/svg/icon/hand.svg" alt="" />
-                      Customer Support:
-                      <span class="float-right text-dark-06">
-                        {{ product.customer_support }}
-                      </span>
-                    </li> -->
                   </ul>
                 </div>
               </div>
@@ -253,12 +246,12 @@
                   {{ global.customerSupport.description }}
                 </p>
                 <div class="flex flex-col sm:flex-row items-center">
-                  <a target="_blank" v-if="product.buy_url" :href="product.buy_url" class="order-2 sm:order-1 w-full sm:w-auto inline-block text-center bg-white-12 rounded-7 py-4 px-9 text-body-17 text-white duration-300 mr-0 sm:mr-3 hover:bg-dark-06 whitespace-nowrap overflow-hidden overflow-ellipsis">
+                  <a href="#pricing" class="order-2 sm:order-1 w-full sm:w-auto inline-block text-center bg-white-12 rounded-7 py-4 px-9 text-body-17 text-white duration-300 mr-0 sm:mr-3 hover:bg-dark-06 whitespace-nowrap overflow-hidden overflow-ellipsis">
                     Buy Now
                   </a>
-                  <nuxt-link target="_blank" v-if="product.support_url" :to="product.support_url" class="order-1 sm:order-2 w-full sm:w-auto inline-block text-center bg-white rounded-7 py-4 px-9 text-body-17 text-blue-0b duration-300 hover:bg-dark-06 hover:text-white mb-4 sm:mb-0 whitespace-nowrap overflow-hidden overflow-ellipsis"> 
+                  <a target="_blank" href="https://support.templatecookie.com" class="order-1 sm:order-2 w-full sm:w-auto inline-block text-center bg-white rounded-7 py-4 px-9 text-body-17 text-blue-0b duration-300 hover:bg-dark-06 hover:text-white mb-4 sm:mb-0 whitespace-nowrap overflow-hidden overflow-ellipsis"> 
                     Customer Support
-                  </nuxt-link>
+                  </a>
                 </div>
               </div>
             </div>
