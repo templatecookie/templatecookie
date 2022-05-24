@@ -1,3 +1,19 @@
+<style>
+  .pricing-section {
+    z-index: -100;
+  }
+
+  .box:after {
+    content: ' ';
+    border-bottom: 300px solid #FFFFFF;
+    border-left: 100vw solid transparent;
+    margin-top: -200px;
+    bottom: 0;
+    z-index: -10;
+    position: absolute;
+  }
+
+</style>
 <template>
   <div>
     <header class="fixed w-full py-3 z-50 bg-white shadow-6xl">
@@ -460,7 +476,7 @@
     </div>
 
     <!-- Pricing Section Start -->
-    <section class="bg-gray-50 py-20 lg:py-124">
+    <section class="pricing-section bg-gray-50 py-20 lg:py-124 relative">
       <div class="container">
         <div class="text-center">
           <h2
@@ -475,7 +491,7 @@
         <div class="card-area lg:w-3/5 m-auto justify-center flex gap-6">
           <div class="card bg-white p-8 rounded-2xl border border-gray-50 w-96">
             <div class="top-area flex justify-between items-center mb-8">
-              <div class="card-icon inline-block p-5 rounded-lg" style="background: #FEEDFA;">
+              <div class="card-icon inline-block p-5 rounded-lg bg-pink-50">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.2"
                     d="M5.1731 11.6592C5.05973 11.8515 4.99996 12.0706 5 12.2938V27.7067C5 27.9285 5.05902 28.1463 5.17099 28.3378C5.28296 28.5292 5.44386 28.6874 5.63717 28.7962L19.3872 36.5306C19.5743 36.6358 19.7853 36.6911 20 36.6911L20.0016 36.6911L20.1483 20.0003L5.17313 11.6592L5.1731 11.6592Z"
@@ -498,10 +514,12 @@
               </div>
             </div>
             <div class="details-area">
-              <h2 class="mb-2">Standard</h2>
-              <p class="mb-8">Upgrade your social portfolio with a stunning profile & enhanced shots.
+              <h2 class="mb-2 text-gray-900 text-2xl">Standard</h2>
+              <p class="mb-8 text-base text-gray-700">Upgrade your social portfolio with a stunning profile & enhanced
+                shots.
               </p>
-              <a href="" class="inline-block text-base px-8 py-4 border border-blue-500 border-solid rounded-lg">
+              <a href="#"
+                class="btn inline-block bg-transparent border border-blue-500 rounded-5 text-sm py-2.5 px-5 text-blue-500 duration-300 hover:bg-black">
                 <div class="flex gap-4">
                   <span>Get Started</span>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -511,7 +529,6 @@
                       stroke-linejoin="round" />
                   </svg>
                 </div>
-
               </a>
             </div>
             <div class="divider bg-gray-100 h-px my-8"></div>
@@ -582,43 +599,40 @@
           </div>
           <div class="card bg-white p-8 rounded-2xl border border-gray-50 w-96">
             <div class="top-area flex justify-between items-center mb-8">
-              <div class="card-icon inline-block p-5 rounded-lg" style="background: #FEEDFA;">
+              <div class="card-icon inline-block p-5 rounded-lg bg-blue-50">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path opacity="0.2"
-                    d="M5.1731 11.6592C5.05973 11.8515 4.99996 12.0706 5 12.2938V27.7067C5 27.9285 5.05902 28.1463 5.17099 28.3378C5.28296 28.5292 5.44386 28.6874 5.63717 28.7962L19.3872 36.5306C19.5743 36.6358 19.7853 36.6911 20 36.6911L20.0016 36.6911L20.1483 20.0003L5.17313 11.6592L5.1731 11.6592Z"
-                    fill="#F249C8" />
-                  <path
-                    d="M35 27.7068V12.2939C35 12.0721 34.941 11.8543 34.829 11.6629C34.717 11.4714 34.5561 11.3132 34.3628 11.2045L20.6128 3.4701C20.4257 3.36486 20.2147 3.30957 20 3.30957C19.7853 3.30957 19.5743 3.36486 19.3872 3.4701L5.63717 11.2045C5.44386 11.3132 5.28296 11.4714 5.17099 11.6629C5.05902 11.8543 5 12.0721 5 12.2939V27.7068C5 27.9286 5.05902 28.1464 5.17099 28.3379C5.28296 28.5293 5.44386 28.6876 5.63717 28.7963L19.3872 36.5307C19.5743 36.6359 19.7853 36.6912 20 36.6912C20.2147 36.6912 20.4257 36.6359 20.6128 36.5307L34.3628 28.7963C34.5561 28.6876 34.717 28.5293 34.829 28.3379C34.941 28.1464 35 27.9286 35 27.7068Z"
-                    stroke="#F249C8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M27.6597 23.8298V15.7048L12.5 7.34375" stroke="#F249C8" stroke-width="2.5"
-                    stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M34.8274 11.6607L20.148 20.0003L5.17285 11.6592" stroke="#F249C8" stroke-width="2.5"
-                    stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M20.1486 20L20.002 36.6908" stroke="#F249C8" stroke-width="2.5" stroke-linecap="round"
+                  <path opacity="0.2" d="M5 12.5L20 21.25L35 12.5L20 3.75L5 12.5Z" fill="#0B63E5" />
+                  <path d="M5 27.5L20 36.25L35 27.5" stroke="#0B63E5" stroke-width="2.5" stroke-linecap="round"
                     stroke-linejoin="round" />
+                  <path d="M5 20L20 28.75L35 20" stroke="#0B63E5" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M5 12.5L20 21.25L35 12.5L20 3.75L5 12.5Z" stroke="#0B63E5" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
+
               </div>
               <div class="price">
-                <h2 class="text-5xl text-pink-500">$21
+                <h2 class="text-5xl text-blue-500">$49
                   <span class="text-base text-gray-700">/Per Month</span></h2>
 
               </div>
             </div>
             <div class="details-area">
-              <h2 class="mb-2">Standard</h2>
-              <p class="mb-8">Upgrade your social portfolio with a stunning profile & enhanced shots.
+              <h2 class="mb-2 text-gray-900 text-2xl">Premium</h2>
+              <p class="mb-8 text-base text-gray-700">Quisque auctor erat velit, quis ultrices nisi vestibulum at. Donec
+                vitae purus lorem.
               </p>
-              <a href="" class="inline-block text-base px-8 py-4 border border-blue-500 border-solid rounded-lg">
+              <a href="#"
+                class="btn inline-block bg-blue-500 border border-blue-500 rounded-5 text-sm py-2.5 px-5 text-blue-500 duration-300 hover:bg-black">
                 <div class="flex gap-4">
-                  <span>Get Started</span>
+                  <span class="text-white">Get Started</span>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.75 12H20.25" stroke="#0B63E5" stroke-width="1.5" stroke-linecap="round"
+                    <path d="M3.75 12H20.25" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
                       stroke-linejoin="round" />
-                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#0B63E5" stroke-width="1.5" stroke-linecap="round"
+                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
                       stroke-linejoin="round" />
                   </svg>
                 </div>
-
               </a>
             </div>
             <div class="divider bg-gray-100 h-px my-8"></div>
@@ -688,7 +702,9 @@
             </div>
           </div>
         </div>
-        
+        <div class="box">
+
+        </div>
       </div>
     </section>
     <!-- Pricing Section End -->
