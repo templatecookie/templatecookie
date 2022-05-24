@@ -175,7 +175,7 @@
         </div>
       </div>
     </div>
-
+  
     <div class="py-20 lg:py-124">
       <div class="container">
         <div class="md:grid grid-cols-12 gap-6 mb-12 items-center">
@@ -216,7 +216,7 @@
             <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
               ProductFeatureScreenshots - Folder Structure
             </h2>
-            <p class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light font-light">
+            <p class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light">
               Nunc convallis semper justo quis tempor. Praesent molestie, lorem
               sed imperdiet tempor, libero urna semper urna
             </p>
@@ -453,6 +453,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Pricing Section -->
 
     <div class="pt-28 lg:pt-40 bg-dark-06">
       <div class="container">
