@@ -137,7 +137,8 @@
       </div>
     </header>
 
-    <div class="min-h-600 sm:min-h-840 pb-20 pt-40 flex items-center bg-dark-06 bg-cover xl:bg-contain bg-right-bottom bg-no-repeat hero-demo"
+    <div
+      class="min-h-600 sm:min-h-840 pb-20 pt-40 flex items-center bg-dark-06 bg-cover xl:bg-contain bg-right-bottom bg-no-repeat hero-demo"
       :style="hero">
       <div class="container">
         <div class="lg:max-w-2xl sm:text-left text-center relative">
@@ -145,8 +146,11 @@
             Relik - Admin Dashboard Figma Template
           </h1>
           <p class="text-white font-light text-lg md:text-xl lg:max-w-536">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci fugiat nisi incidunt reiciendis voluptatum provident corrupti voluptates. Est cum ab vitae dolorem libero rerum adipisci, iste voluptatem nisi nesciunt eligendi magnam tempora suscipit odit minus recusandae aspernatur veniam possimus deserunt labore praesentium repellendus dolores assumenda. Tempora repellat distinctio dolorem officiis.
-   
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci fugiat nisi incidunt reiciendis
+            voluptatum provident corrupti voluptates. Est cum ab vitae dolorem libero rerum adipisci, iste voluptatem
+            nisi nesciunt eligendi magnam tempora suscipit odit minus recusandae aspernatur veniam possimus deserunt
+            labore praesentium repellendus dolores assumenda. Tempora repellat distinctio dolorem officiis.
+
           </p>
           <div class="mt-8">
             <a href="#" target="_blank"
@@ -175,13 +179,13 @@
         </div>
       </div>
     </div>
-  
+
     <div class="py-20 lg:py-124">
       <div class="container">
         <div class="md:grid grid-cols-12 gap-6 mb-12 items-center">
           <div class="col-span-7 mb-4 md:mb-0">
             <h2 class="text-dark-06 text-body-32px md:text-4xl xl:text-title font-semibold tracking-01">
-             productFeatures - Explore Relik <br />
+              productFeatures - Explore Relik <br />
               Notable Feature
             </h2>
           </div>
@@ -212,14 +216,15 @@
     <div class="">
       <div class="py-20 lg:py-124">
         <div class="container">
+          <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
+            ProductFeatureScreenshots - Folder Structure
+          </h2>
+          <p class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light">
+            Nunc convallis semper justo quis tempor. Praesent molestie, lorem
+            sed imperdiet tempor, libero urna semper urna
+          </p>
           <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
-            <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
-              ProductFeatureScreenshots - Folder Structure
-            </h2>
-            <p class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light">
-              Nunc convallis semper justo quis tempor. Praesent molestie, lorem
-              sed imperdiet tempor, libero urna semper urna
-            </p>
+
           </div>
           <div class="relative">
             <swiper class="swiper shadow-bs012 rounded-xl" :options="swiperOptionTwo">
@@ -454,7 +459,239 @@
       </div>
     </div>
 
-    <!-- Pricing Section -->
+    <!-- Pricing Section Start -->
+    <section class="bg-gray-50 py-20 lg:py-124">
+      <div class="container">
+        <div class="text-center">
+          <h2
+            class="text-dark-06 lg:w-3/5 m-auto  text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
+            Explore our pricing plans
+          </h2>
+          <p class="text-dark-06 lg:w-3/5 m-auto  text-base sm:text-body-18 mb-8 lg:mb-20 font-light">
+            Donec ligula ligula, porta at urna non, faucibus congue urna. Nullam nulla purus, facilisis vitae odio ac,
+            tempus aliquet dolor.
+          </p>
+        </div>
+        <div class="card-area lg:w-3/5 m-auto justify-center flex gap-6">
+          <div class="card bg-white p-8 rounded-2xl border border-gray-50 w-96">
+            <div class="top-area flex justify-between items-center mb-8">
+              <div class="card-icon inline-block p-5 rounded-lg" style="background: #FEEDFA;">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.2"
+                    d="M5.1731 11.6592C5.05973 11.8515 4.99996 12.0706 5 12.2938V27.7067C5 27.9285 5.05902 28.1463 5.17099 28.3378C5.28296 28.5292 5.44386 28.6874 5.63717 28.7962L19.3872 36.5306C19.5743 36.6358 19.7853 36.6911 20 36.6911L20.0016 36.6911L20.1483 20.0003L5.17313 11.6592L5.1731 11.6592Z"
+                    fill="#F249C8" />
+                  <path
+                    d="M35 27.7068V12.2939C35 12.0721 34.941 11.8543 34.829 11.6629C34.717 11.4714 34.5561 11.3132 34.3628 11.2045L20.6128 3.4701C20.4257 3.36486 20.2147 3.30957 20 3.30957C19.7853 3.30957 19.5743 3.36486 19.3872 3.4701L5.63717 11.2045C5.44386 11.3132 5.28296 11.4714 5.17099 11.6629C5.05902 11.8543 5 12.0721 5 12.2939V27.7068C5 27.9286 5.05902 28.1464 5.17099 28.3379C5.28296 28.5293 5.44386 28.6876 5.63717 28.7963L19.3872 36.5307C19.5743 36.6359 19.7853 36.6912 20 36.6912C20.2147 36.6912 20.4257 36.6359 20.6128 36.5307L34.3628 28.7963C34.5561 28.6876 34.717 28.5293 34.829 28.3379C34.941 28.1464 35 27.9286 35 27.7068Z"
+                    stroke="#F249C8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M27.6597 23.8298V15.7048L12.5 7.34375" stroke="#F249C8" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M34.8274 11.6607L20.148 20.0003L5.17285 11.6592" stroke="#F249C8" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M20.1486 20L20.002 36.6908" stroke="#F249C8" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="price">
+                <h2 class="text-5xl text-pink-500">$21
+                  <span class="text-base text-gray-700">/Per Month</span></h2>
+
+              </div>
+            </div>
+            <div class="details-area">
+              <h2 class="mb-2">Standard</h2>
+              <p class="mb-8">Upgrade your social portfolio with a stunning profile & enhanced shots.
+              </p>
+              <a href="" class="inline-block text-base px-8 py-4 border border-blue-500 border-solid rounded-lg">
+                <div class="flex gap-4">
+                  <span>Get Started</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.75 12H20.25" stroke="#0B63E5" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#0B63E5" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+
+              </a>
+            </div>
+            <div class="divider bg-gray-100 h-px my-8"></div>
+            <div class="list-area">
+              <ul>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon bg-blue-200 inline-block p-2 rounded-full">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                  <p class="text-gray-700">User Dashboard</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon bg-blue-200 inline-block p-2 rounded-full">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                  <p class="text-gray-700">Post 3 Ads per week</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon bg-blue-200 inline-block p-2 rounded-full">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                  <p class="text-gray-700">Multiple images & videos</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon bg-blue-50 inline-block p-2 rounded-full">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                  <p class="text-gray-300">Basic customer support</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon bg-blue-50 inline-block p-2 rounded-full">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                  <p class="text-gray-300">Featured ads</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon bg-blue-50 inline-block p-2 rounded-full">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                  <p class="text-gray-300">Special ads badge</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card bg-white p-8 rounded-2xl border border-gray-50 w-96">
+            <div class="top-area flex justify-between items-center mb-8">
+              <div class="card-icon inline-block p-5 rounded-lg" style="background: #FEEDFA;">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.2"
+                    d="M5.1731 11.6592C5.05973 11.8515 4.99996 12.0706 5 12.2938V27.7067C5 27.9285 5.05902 28.1463 5.17099 28.3378C5.28296 28.5292 5.44386 28.6874 5.63717 28.7962L19.3872 36.5306C19.5743 36.6358 19.7853 36.6911 20 36.6911L20.0016 36.6911L20.1483 20.0003L5.17313 11.6592L5.1731 11.6592Z"
+                    fill="#F249C8" />
+                  <path
+                    d="M35 27.7068V12.2939C35 12.0721 34.941 11.8543 34.829 11.6629C34.717 11.4714 34.5561 11.3132 34.3628 11.2045L20.6128 3.4701C20.4257 3.36486 20.2147 3.30957 20 3.30957C19.7853 3.30957 19.5743 3.36486 19.3872 3.4701L5.63717 11.2045C5.44386 11.3132 5.28296 11.4714 5.17099 11.6629C5.05902 11.8543 5 12.0721 5 12.2939V27.7068C5 27.9286 5.05902 28.1464 5.17099 28.3379C5.28296 28.5293 5.44386 28.6876 5.63717 28.7963L19.3872 36.5307C19.5743 36.6359 19.7853 36.6912 20 36.6912C20.2147 36.6912 20.4257 36.6359 20.6128 36.5307L34.3628 28.7963C34.5561 28.6876 34.717 28.5293 34.829 28.3379C34.941 28.1464 35 27.9286 35 27.7068Z"
+                    stroke="#F249C8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M27.6597 23.8298V15.7048L12.5 7.34375" stroke="#F249C8" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M34.8274 11.6607L20.148 20.0003L5.17285 11.6592" stroke="#F249C8" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M20.1486 20L20.002 36.6908" stroke="#F249C8" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="price">
+                <h2 class="text-5xl text-pink-500">$21
+                  <span class="text-base text-gray-700">/Per Month</span></h2>
+
+              </div>
+            </div>
+            <div class="details-area">
+              <h2 class="mb-2">Standard</h2>
+              <p class="mb-8">Upgrade your social portfolio with a stunning profile & enhanced shots.
+              </p>
+              <a href="" class="inline-block text-base px-8 py-4 border border-blue-500 border-solid rounded-lg">
+                <div class="flex gap-4">
+                  <span>Get Started</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.75 12H20.25" stroke="#0B63E5" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#0B63E5" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+
+              </a>
+            </div>
+            <div class="divider bg-gray-100 h-px my-8"></div>
+            <div class="list-area">
+              <ul>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon bg-blue-200 inline-block p-2 rounded-full">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                  <p class="text-gray-700">User Dashboard</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon bg-blue-200 inline-block p-2 rounded-full">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                  <p class="text-gray-700">Post 3 Ads per week</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon bg-blue-200 inline-block p-2 rounded-full">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                  <p class="text-gray-700">Multiple images & videos</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon bg-blue-200 inline-block p-2 rounded-full">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                  <p class="text-gray-700">Basic customer support</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon bg-blue-200 inline-block p-2 rounded-full">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                  <p class="text-gray-700">Featured ads</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon bg-blue-200 inline-block p-2 rounded-full">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                  <p class="text-gray-700">Special ads badge</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- Pricing Section End -->
 
     <div class="pt-28 lg:pt-40 bg-dark-06">
       <div class="container">
@@ -478,31 +715,40 @@
             <img class="" src="~@/assets/images/all-img/slider1.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0"
+              src="~@/assets/images/all-img/slider2.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0"
+              src="~@/assets/images/all-img/slider3.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0"
+              src="~@/assets/images/all-img/slider1.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0"
+              src="~@/assets/images/all-img/slider2.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0"
+              src="~@/assets/images/all-img/slider3.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0"
+              src="~@/assets/images/all-img/slider1.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0"
+              src="~@/assets/images/all-img/slider2.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0"
+              src="~@/assets/images/all-img/slider3.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0"
+              src="~@/assets/images/all-img/slider1.png" alt="" />
           </swiper-slide>
         </swiper>
       </div>
@@ -511,270 +757,278 @@
 </template>
 
 <script>
-import { Swiper, SwiperSlide } from "vue-awesome-swiper";
-import "swiper/css/swiper.css";
-
-export default {
-  layout: "empty",
-  components: {
+  import {
     Swiper,
     SwiperSlide
-  },
-  name: "ProductDemo",
-  head: {
-    title: 'Product Demo Page',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'my website description'
-      }
-    ],
-  },
-  methods: {
-    openSidebar() {
-      this.toggleStatus = !this.toggleStatus;
-      this.sideBar = !this.sideBar;
-      document.body.classList.toggle("overlay");
+  } from "vue-awesome-swiper";
+  import "swiper/css/swiper.css";
+
+  export default {
+    layout: "empty",
+    components: {
+      Swiper,
+      SwiperSlide
     },
-  },
-  data() {
-    return {
-      toggleStatus: false,
-      sideBar: false,
-      activetab: '1',
-      swiperOptionOne: {
-        slidesPerView: 1,
-        spaceBetween: 24,
-        loop: true,
-        breakpoints: {
-          1199: {
-            slidesPerView: 4,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-          640: {
-            slidesPerView: 2,
-          },
-          320: {
-            slidesPerView: 1,
+    name: "ProductDemo",
+    head: {
+      title: 'Product Demo Page',
+      meta: [{
+          charset: 'utf-8'
+        },
+        {
+          name: 'viewport',
+          content: 'width=device-width, initial-scale=1'
+        },
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'my website description'
+        }
+      ],
+    },
+    methods: {
+      openSidebar() {
+        this.toggleStatus = !this.toggleStatus;
+        this.sideBar = !this.sideBar;
+        document.body.classList.toggle("overlay");
+      },
+    },
+    data() {
+      return {
+        toggleStatus: false,
+        sideBar: false,
+        activetab: '1',
+        swiperOptionOne: {
+          slidesPerView: 1,
+          spaceBetween: 24,
+          loop: true,
+          breakpoints: {
+            1199: {
+              slidesPerView: 4,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            640: {
+              slidesPerView: 2,
+            },
+            320: {
+              slidesPerView: 1,
+            },
           },
         },
-      },
         linkThumb: [{
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/z3lpl2i.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/btnaKPg.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/WeNt6qZ.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/aXNiPxi.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/LrX4y5U.png",
-        },
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/z3lpl2i.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/btnaKPg.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/WeNt6qZ.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/aXNiPxi.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/LrX4y5U.png",
+          },
 
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/7A80zMR.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/nnXHQ9w.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/OkWf1Gj.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/BRCMvYp.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/Z3NJCTN.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/2kaiEQa.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/HLreajz.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/mbarwY4.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/8g0dDml.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/YMm1zRS.png",
-        },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/7A80zMR.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/nnXHQ9w.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/OkWf1Gj.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/BRCMvYp.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/Z3NJCTN.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/2kaiEQa.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/HLreajz.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/mbarwY4.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/8g0dDml.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/YMm1zRS.png",
+          },
 
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/gE2RT42.png",
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/gE2RT42.png",
+          },
+        ],
+        swiperOptionTwo: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          centeredSlides: true,
+          loop: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
         },
-      ],
-      swiperOptionTwo: {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        centeredSlides: true,
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      },
-      buisnessCard: [{
-          title: "Project Introduction",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "User Experience Design",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "User Interface Design",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "Front-end Development",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "Back-end Development",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "Delivery & Client Feedback",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-      ],
+        buisnessCard: [{
+            title: "Project Introduction",
+            text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
+          },
+          {
+            title: "User Experience Design",
+            text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
+          },
+          {
+            title: "User Interface Design",
+            text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
+          },
+          {
+            title: "Front-end Development",
+            text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
+          },
+          {
+            title: "Back-end Development",
+            text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
+          },
+          {
+            title: "Delivery & Client Feedback",
+            text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
+          },
+        ],
 
-      hero: {
-        backgroundImage: "url(https://i.imgur.com/aBzS4DP.png)",
-      },
-      FunItems: [
-      {
-        title: "55+",
-        text: "High-Quality Pages",
-      },
-      {
-        title: "55+",
-        text: "Figma UI Components",
-      },
-      {
-        title: "24/7",
-        text: "Dedicated Support all",
-      },
-      {
-        title: "100%",
-        text: "Money-Back Guarantee",
-      },
-      {
-        title: "Doc",
-        text: "Detailed Documentation",
-      },
-      {
-        title: "Global",
-        text: "Auto-Updatedable Style Guide",
-      },
-      {
-        title: "Inter",
-        text: "Free Google Font Used",
-      },
-      {
-        title: "Fig",
-        text: "Well-Organize & Easy-to-use File",
-      },
-      ],
-    }
-  },
-};
+        hero: {
+          backgroundImage: "url(https://i.imgur.com/aBzS4DP.png)",
+        },
+        FunItems: [{
+            title: "55+",
+            text: "High-Quality Pages",
+          },
+          {
+            title: "55+",
+            text: "Figma UI Components",
+          },
+          {
+            title: "24/7",
+            text: "Dedicated Support all",
+          },
+          {
+            title: "100%",
+            text: "Money-Back Guarantee",
+          },
+          {
+            title: "Doc",
+            text: "Detailed Documentation",
+          },
+          {
+            title: "Global",
+            text: "Auto-Updatedable Style Guide",
+          },
+          {
+            title: "Inter",
+            text: "Free Google Font Used",
+          },
+          {
+            title: "Fig",
+            text: "Well-Organize & Easy-to-use File",
+          },
+        ],
+      }
+    },
+  };
+
 </script>
 
 <style lang="scss" scoped>
-// animation
-.slider-full {
-  animation: scroll 26s linear infinite;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
+  // animation
+  .slider-full {
+    animation: scroll 26s linear infinite;
   }
 
-  100% {
-    transform: translateX(calc(-250px * 7));
-  }
-}
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
 
-// swiper single silder
-.single-slider {
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    top: calc(50% - 15px);
-    transform: translateY(-50%);
-  }
-
-  .swiper-button-prev:after,
-  .swiper-button-next:after {
-    content: none;
-  }
-}
-
-.tab-content-wrap {
-  &.active {
-    background-color: #0b63e5;
-
-    h3,
-    p {
-      color: white;
+    100% {
+      transform: translateX(calc(-250px * 7));
     }
   }
-}
+
+  // swiper single silder
+  .single-slider {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      top: calc(50% - 15px);
+      transform: translateY(-50%);
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+      content: none;
+    }
+  }
+
+  .tab-content-wrap {
+    &.active {
+      background-color: #0b63e5;
+
+      h3,
+      p {
+        color: white;
+      }
+    }
+  }
+
 </style>
