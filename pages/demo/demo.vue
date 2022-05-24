@@ -488,7 +488,7 @@
             tempus aliquet dolor.
           </p>
         </div>
-        <div class="card-area lg:w-3/5 m-auto justify-center flex gap-6">
+        <div class="card-area lg:w-3/5 m-auto justify-center lg:flex-row flex-col flex lg:gap-6">
           <div class="card bg-white p-8 rounded-2xl border border-gray-50 w-96">
             <div class="top-area flex justify-between items-center mb-8">
               <div class="card-icon inline-block p-5 rounded-lg bg-pink-50">
