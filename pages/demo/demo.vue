@@ -1,19 +1,3 @@
-<style>
-  .pricing-section {
-    z-index: -100;
-  }
-
-  .box:after {
-    content: ' ';
-    border-bottom: 300px solid #FFFFFF;
-    border-left: 100vw solid transparent;
-    margin-top: -200px;
-    bottom: 0;
-    z-index: -10;
-    position: absolute;
-  }
-
-</style>
 <template>
   <div>
     <header class="fixed w-full py-3 z-50 bg-white shadow-6xl">
@@ -476,7 +460,8 @@
     </div>
 
     <!-- Pricing Section Start -->
-    <section class="pricing-section bg-gray-50 py-20 lg:py-124 relative">
+    <section class="pricing-section bg-white py-20 lg:py-124 relative">
+    <div class="pricing-section-bg"></div>
       <div class="container">
         <div class="text-center">
           <h2
@@ -488,8 +473,8 @@
             tempus aliquet dolor.
           </p>
         </div>
-        <div class="card-area lg:w-3/5 m-auto justify-center lg:flex-row flex-col flex lg:gap-6">
-          <div class="card bg-white p-8 rounded-2xl border border-gray-50 w-96">
+        <div class="card-area m-auto justify-center lg:flex-row flex-col flex lg:gap-6">
+          <div class="card bg-white p-8 rounded-2xl border border-gray-100 min-w-96 w-4/12">
             <div class="top-area flex justify-between items-center mb-8">
               <div class="card-icon inline-block p-5 rounded-lg bg-pink-50">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -509,8 +494,7 @@
               </div>
               <div class="price">
                 <h2 class="text-5xl text-pink-500">$21
-                  <span class="text-base text-gray-700">/Per Month</span></h2>
-
+                  <span class="text-base text-gray-700">/One Time</span></h2>
               </div>
             </div>
             <div class="details-area">
@@ -535,69 +519,63 @@
             <div class="list-area">
               <ul>
                 <li class="flex gap-3 mb-5">
-                  <div class="list-icon bg-blue-200 inline-block p-2 rounded-full">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#E7F5E8"/>
+                    <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-
                   </div>
-                  <p class="text-gray-700">User Dashboard</p>
+                  <p class="text-gray-700 font-light">User Dashboard</p>
                 </li>
                 <li class="flex gap-3 mb-5">
-                  <div class="list-icon bg-blue-200 inline-block p-2 rounded-full">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#E7F5E8"/>
+                    <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-
                   </div>
-                  <p class="text-gray-700">Post 3 Ads per week</p>
+                  <p class="text-gray-700 font-light">Post 3 Ads per week</p>
                 </li>
                 <li class="flex gap-3 mb-5">
-                  <div class="list-icon bg-blue-200 inline-block p-2 rounded-full">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#E7F5E8"/>
+                        <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                   </div>
-                  <p class="text-gray-700">Multiple images & videos</p>
+                  <p class="text-gray-700 font-light">Multiple images & videos</p>
                 </li>
-                <li class="flex gap-3 mb-5">
-                  <div class="list-icon bg-blue-50 inline-block p-2 rounded-full">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
+                <li class="flex gap-3 mb-5 opacity-30">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 12C0 5.37258 5.37258 0 12 0V0C18.6274 0 24 5.37258 24 12V12C24 18.6274 18.6274 24 12 24V24C5.37258 24 0 18.6274 0 12V12Z" fill="#E7F5E8"/>
+                        <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-
                   </div>
-                  <p class="text-gray-300">Basic customer support</p>
+                  <p class="line-through font-light">Basic customer support</p>
                 </li>
-                <li class="flex gap-3 mb-5">
-                  <div class="list-icon bg-blue-50 inline-block p-2 rounded-full">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
+                <li class="flex gap-3 mb-5 opacity-30">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 12C0 5.37258 5.37258 0 12 0V0C18.6274 0 24 5.37258 24 12V12C24 18.6274 18.6274 24 12 24V24C5.37258 24 0 18.6274 0 12V12Z" fill="#E7F5E8"/>
+                        <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-
                   </div>
-                  <p class="text-gray-300">Featured ads</p>
+                  <p class="line-through font-light">Featured ads</p>
                 </li>
-                <li class="flex gap-3 mb-5">
-                  <div class="list-icon bg-blue-50 inline-block p-2 rounded-full">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
+                <li class="flex gap-3 mb-5 opacity-30">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 12C0 5.37258 5.37258 0 12 0V0C18.6274 0 24 5.37258 24 12V12C24 18.6274 18.6274 24 12 24V24C5.37258 24 0 18.6274 0 12V12Z" fill="#E7F5E8"/>
+                        <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-
                   </div>
-                  <p class="text-gray-300">Special ads badge</p>
+                  <p class="line-through font-light">Special ads badge</p>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="card bg-white p-8 rounded-2xl border border-gray-50 w-96">
+          <div class="card bg-white p-8 rounded-2xl border border-gray-100 min-w-96 w-4/12">
             <div class="top-area flex justify-between items-center mb-8">
               <div class="card-icon inline-block p-5 rounded-lg bg-blue-50">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -609,12 +587,10 @@
                   <path d="M5 12.5L20 21.25L35 12.5L20 3.75L5 12.5Z" stroke="#0B63E5" stroke-width="2.5"
                     stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-
               </div>
               <div class="price">
                 <h2 class="text-5xl text-blue-500">$49
-                  <span class="text-base text-gray-700">/Per Month</span></h2>
-
+                  <span class="text-base text-gray-700">/One Time</span></h2>
               </div>
             </div>
             <div class="details-area">
@@ -639,64 +615,58 @@
             <div class="list-area">
               <ul>
                 <li class="flex gap-3 mb-5">
-                  <div class="list-icon bg-blue-200 inline-block p-2 rounded-full">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#E7F5E8"/>
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-
                   </div>
-                  <p class="text-gray-700">User Dashboard</p>
+                  <p class="text-gray-700 font-light">User Dashboard</p>
                 </li>
                 <li class="flex gap-3 mb-5">
-                  <div class="list-icon bg-blue-200 inline-block p-2 rounded-full">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#E7F5E8"/>
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-
                   </div>
-                  <p class="text-gray-700">Post 3 Ads per week</p>
+                  <p class="text-gray-700 font-light">Post 3 Ads per week</p>
                 </li>
                 <li class="flex gap-3 mb-5">
-                  <div class="list-icon bg-blue-200 inline-block p-2 rounded-full">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#E7F5E8"/>
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-
                   </div>
-                  <p class="text-gray-700">Multiple images & videos</p>
+                  <p class="text-gray-700 font-light">Multiple images & videos</p>
                 </li>
                 <li class="flex gap-3 mb-5">
-                  <div class="list-icon bg-blue-200 inline-block p-2 rounded-full">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#E7F5E8"/>
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-
                   </div>
-                  <p class="text-gray-700">Basic customer support</p>
+                  <p class="text-gray-700 font-light">Basic customer support</p>
                 </li>
                 <li class="flex gap-3 mb-5">
-                  <div class="list-icon bg-blue-200 inline-block p-2 rounded-full">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#E7F5E8"/>
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-
                   </div>
-                  <p class="text-gray-700">Featured ads</p>
+                  <p class="text-gray-700 font-light">Featured ads</p>
                 </li>
                 <li class="flex gap-3 mb-5">
-                  <div class="list-icon bg-blue-200 inline-block p-2 rounded-full">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.8125 3.9375L5.6875 10.0622L2.625 7" stroke="#0F9918" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#E7F5E8"/>
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-
                   </div>
-                  <p class="text-gray-700">Special ads badge</p>
+                  <p class="text-gray-700 font-light">Special ads badge</p>
                 </li>
               </ul>
             </div>
@@ -708,6 +678,9 @@
       </div>
     </section>
     <!-- Pricing Section End -->
+    <pricing-plan />
+    <exclusive-feature-left-image />
+    <exclusive-feature-right-image />
 
     <div class="pt-28 lg:pt-40 bg-dark-06">
       <div class="container">
@@ -778,13 +751,19 @@
     SwiperSlide
   } from "vue-awesome-swiper";
   import "swiper/css/swiper.css";
+import PricingPlan from "../../components/Demo/PricingPlanSection.vue";
+import ExclusiveFeatureLeftImage from "../../components/Demo/ExclusiveFeatureLeftImage.vue";
+import ExclusiveFeatureRightImage from "../../components/Demo/ExclusiveFeatureRightImage.vue";
 
   export default {
     layout: "empty",
     components: {
-      Swiper,
-      SwiperSlide
-    },
+    Swiper,
+    SwiperSlide,
+    PricingPlan,
+    ExclusiveFeatureLeftImage,
+    ExclusiveFeatureRightImage
+},
     name: "ProductDemo",
     head: {
       title: 'Product Demo Page',
@@ -1005,8 +984,7 @@
 
 </script>
 
-<style lang="scss" scoped>
-  // animation
+<style lang="scss">
   .slider-full {
     animation: scroll 26s linear infinite;
   }
@@ -1046,5 +1024,23 @@
       }
     }
   }
-
+  .pricing-section {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    &-bg{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: calc( 100% - 200px) ;
+      background-color: #F5F6F7;
+      transform: skewY(-11deg);
+      transform-origin: top left;
+      z-index: -1;
+    }
+  }
 </style>

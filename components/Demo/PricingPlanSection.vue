@@ -1,13 +1,14 @@
 <template>
-  <div class="pt-20 lg:pt-124 bg-gray-100 support-pricing" id="support-pricing">
+  <div class="pt-20 lg:pt-124 bg-white pricing-section pb-32" id="support-pricing">
+  <div class="pricing-section-bg !bg-gray-100"></div>
     <div class="container">
-      <div class="lg:max-w-872 m-auto text-center mb-10 lg:mb-16">
+      <div class="lg:w-3/5 m-auto text-center mb-10 lg:mb-16">
         <h2 class="text-6xl font-semibold mb-8">Our Support Plan</h2>
-        <p class="text-lg font-light"> We offer premium quality support plan for you. </p>
+        <p class="text-lg font-light"> Donec ligula ligula, porta at urna non, faucibus congue urna. Nullam nulla purus, facilisis vitae odio ac, tempus aliquet dolor. </p>
       </div>
-      <div class="flex space-between gap-6 flex-wrap xl:flex-nowrap">
+      <div class="flex space-between gap-6 flex-wrap xl:flex-nowrap justify-center">
         <div class="rounded-2xl overflow-hidden border-[1px] border-gray-100 bg-white">
-          <div class="border-b-[1px] p-8 border-t-4 border-pink-400 border-b-gray-300">
+          <div class="border-b-[1px] p-8 border-t-4 border-pink-400 border-b-gray-200">
             <div class="mb-8 price flex justify-between items-center">
               <div class="w-20 h-20 rounded-lg bg-pink-200 flex justify-center items-center">
                 <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,7 +19,8 @@
                   <path d="M20.1486 20.8999L20.002 37.5907" stroke="#F249C8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </div>
-              <h3 class="text-5xl font-semibold text-pink-600"> $119 </h3>
+              <h3 class="text-5xl font-semibold text-pink-600"> $119 
+                  <span class="text-base text-gray-700">/One Time</span></h3>
             </div>
             <h3 class="text-2xl mb-2">Basic</h3>
             <p class="font-light">Upgrade your social portfolio with a stunning profile & enhanced shots.</p>
@@ -63,7 +65,7 @@
           </ul>
         </div>
         <div class="rounded-2xl overflow-hidden border-[1px] border-gray-100 bg-white">
-          <div class="border-b-[1px] p-8 border-t-4 border-blue-600 border-b-gray-300">
+          <div class="border-b-[1px] p-8 border-t-4 border-blue-600 border-b-gray-200">
             <div class="mb-8 price flex justify-between items-center">
               <div class="w-20 h-20 rounded-lg bg-blue-200 flex justify-center items-center">
                 <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -114,7 +116,7 @@
           </ul>
         </div>
         <div class="rounded-2xl overflow-hidden border-[1px] border-gray-100 bg-white">
-          <div class="border-b-[1px] p-8 border-t-4 border-green-600 border-b-gray-300">
+          <div class="border-b-[1px] p-8 border-t-4 border-green-600 border-b-gray-200">
             <div class="mb-8 price flex justify-between items-center">
               <div class="w-20 h-20 rounded-lg bg-green-100 flex justify-center items-center text-green-600">
                 <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -155,6 +157,10 @@
               <img src="~/assets/images/svg/check.svg" alt="" class="mr-3" >
               Upload Mobile Apps to Google Play
             </li>
+            <li class="flex font-light mb-5 opacity-30"> 
+              <img src="~/assets/images/svg/check.svg" alt="" class="mr-3" >
+              <p class="line-through">Multiple images & videos</p>
+            </li>
           </ul>
         </div>
       </div>
@@ -169,32 +175,4 @@ export default {
 </script>
 
 <style lang="scss">
-.support-pricing {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  &::after {
-  //   content: "";
-  //   display: block;
-  //   position: absolute;
-  //   background-color: #7157F9;
-  //   width: 400vw;
-  //   height: 100vh;
-  //   top: 0;
-  //   left: 50%;
-  //   z-index: -1;
-  //   transform: skewX(-45deg) translateX(-100%) scaleX(0);
-  //   will-change: transform;
-    content: "";
-    display: block;
-    position: absolute;
-    background-color: #ffffff;
-    width: 400vw;
-    height: 60%;
-    bottom: 50px;
-    left: -200px;
-    z-index: -11;
-    transform: rotate(173deg);
-  }
-}
 </style>
