@@ -1,6 +1,6 @@
 <template>
   <div class="pt-20 lg:pt-124 bg-white pricing-section pb-32" id="support-pricing">
-  <div class="pricing-section-bg !bg-gray-100"></div>
+    <div class="pricing-section-bg !bg-gray-100"></div>
     <div class="container">
       <div class="lg:w-3/5 m-auto text-center mb-10 lg:mb-16">
         <h2 class="text-6xl font-semibold mb-8">Our Support Plan</h2>
@@ -170,7 +170,7 @@
 
 <script>
 export default {
-
+  props: ['data']
 }
 </script>
 

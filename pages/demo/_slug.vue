@@ -16,10 +16,10 @@
 
     <div v-for="(section, index) in product.contents" :key="index">
       <div v-if="section.__typename == 'DisplayfeatureRecord'">
-        <product-feature-screenshots :data="section"/>
+        <product-feature-screenshots :data="section" />
       </div>
       <div v-if="section.__typename == 'ExclusivefeatureRecord'">
-        <exclusive-feature :data="section"/>
+        <exclusive-feature :data="section" />
       </div>
       <div v-if="section.__typename == 'FeaturescreenshotRecord'">
         <product-screenshots :data="section" />
@@ -31,13 +31,16 @@
         <call-to-action :product="section" />
       </div>
       <div v-if="section.__typename == 'ProductPageRecord'">
-        <product-pages :data="section"  />
+        <product-pages :data="section" />
       </div>
       <div v-if="section.__typename == 'PriceplanRecord'">
-        <pricing-plan />
+        <pricing-plan :data="section" />
+      </div>
+      <div v-if="section.__typename == 'CustomerSupportRecord'">
+        <product-support  />
       </div>
       <div v-if="section.__typename == 'FunFactRecord'">
-        <product-fun-fact :data="section"  />
+        <product-fun-fact :data="section" />
       </div>
 
       <!-- <div v-if="section.__typename == 'HerosectionRecord'">
@@ -45,10 +48,6 @@
       </div> -->
       <!-- <div v-if="section.__typename == 'FolderstructureRecord'">
         <product-folder-structure :data="section" />
-      </div> -->
-      <!-- 
-      <div v-if="section.__typename == 'CustomerSupportRecord'">
-        <product-support  />
       </div> -->
     </div>
   </div>
@@ -59,7 +58,7 @@ import BusinessCard from "~/components/BusinessCard.vue";
 import PurchaseCard from "~/components/PurchaseCard.vue";
 import PRODUCT_DEMO from '~/graphql/productDemo'
 import ProductDemoHeader from "~/components/Header/ProductDemoHeader.vue";
-
+import GLOBAL_QUERY from '~/graphql/global'
 import ProductTopFeatures from '~/components/Demo/ProductTopFeatures.vue';
 import ProductFeatureScreenshots from '../../components/Demo/ProductFeatureScreenshots.vue';
 import ProductFolderStructure from '../../components/Demo/ProductFolderStructure.vue';
@@ -101,14 +100,15 @@ export default {
       }
     })
 
-    // if(!store.getters.getGlobalData){
-    //   const global = await client.query({
-    //     query: GLOBAL_QUERY,
-    //   })
+    if(!store.getters.getGlobalData){
+      const global = await client.query({
+        query: GLOBAL_QUERY,
+      })
         
-    //   const globalData = global.data?.global?.data?.attributes
-    //   store.commit('SET_GLOBAL_DATA', globalData)
-    // }
+      const globalData = global.data?.global?.data?.attributes
+      store.commit('SET_GLOBAL_DATA', globalData)
+    }
+
     const product = data.product;
     return { product }
   },
