@@ -29,9 +29,6 @@
                 </li>
               </ul>
             </li> -->
-            <!-- <li class="nav-menu__item">
-              <nuxt-link to="#">Preview</nuxt-link>
-            </li> -->
             <li class="nav-menu__item">
               <nuxt-link to="#top-features">Top Features</nuxt-link>
             </li>
@@ -57,7 +54,7 @@
                   </svg>
                 </span>
               </a>
-              <nuxt-link :to="product.documentation_url" v-if="product.documentation_url"
+              <nuxt-link :to="product.docsUrl" v-if="product.docsUrl"
                 class="flex items-center justify-center text-dark-06 hover:text-white text-button capitalize font-medium bg-gray-e6 hover:bg-dark-06 overflow-hidden rounded px-5 w-full text-center whitespace-nowrap">
                 <span class="inline-block mr-2">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="text-center py-3 text-base bg-red-300" v-if="notice">
-      {{ notice.notice_text }} 
+      {{ notice.noticeText }} 
     </div>
-    <Header :data="global.header" v-if="global && global.header"/>
+    <Header :data="global.logo" v-if="global && global.logo"/>
     <nuxt />
     <Newsletter :data="global.newsletter" v-if="global && global.newsletter"/>
     <Footer :data="global.footer" v-if="global && global.footer"/>
@@ -19,10 +19,6 @@ import Newsletter from "../components/Newsletter.vue";
 
 export default { 
   components: { Header, Footer, SocialLink, Newsletter },
-  data () {
-    return {
-    }
-  },
   methods: {
     async loadData(){
       const client = this.$nuxt.$apolloProvider.defaultClient;
@@ -31,7 +27,7 @@ export default {
         query: GLOBAL_QUERY,
       })
       
-      const global = data?.global?.data?.attributes
+      const global = data?.global
       this.$store.commit('SET_GLOBAL_DATA', global)
     }
   },
@@ -46,7 +42,7 @@ export default {
     },
     notice() {
       const global = this.$store.getters.getGlobalData;
-      return global?.website_notice
+      return global?.notice[0]
     }
   },
 };

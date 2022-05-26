@@ -3,10 +3,10 @@
     <div class="container">
       <div class="text-center mb-40">
         <h2 class="text-white text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
-          {{ product.cta_section.title }}
+          {{ product.title }}
         </h2>
         <p class="text-white text-base sm:text-lg mb-6 lg:mb-12 font-light">
-          {{ product.cta_section.description }}
+          {{ product.description }}
         </p>
         <a href="#pricing" target="_blank"
           class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-black">
@@ -17,8 +17,8 @@
     </div>
     <div>
       <swiper class="swiper" :options="swiperOptionOne">
-        <swiper-slide class="slider-full" v-for="(item, index) in product.cta_section.screenshots.data" :key="index">
-          <img class="w-full h-60 object-cover border border-white p-3 pb-0 border-b-0" :src="fixImageUrl(item.attributes.url, true)" alt="" />
+        <swiper-slide class="slider-full" v-for="(item, index) in product.screenshots" :key="index">
+          <img class="w-full h-60 object-cover border border-white p-3 pb-0 border-b-0" :src="item.url" alt="" />
         </swiper-slide>
       </swiper>
     </div>

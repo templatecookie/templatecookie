@@ -5,12 +5,12 @@
       <div class="flex items-center justify-between">
         <div>
           <nuxt-link to="/">
-            <img :src="fixImageUrl(data.logo)" alt="Templatecookie" />
+            <img :src="data.url" alt="Templatecookie" />
           </nuxt-link>
         </div>
         <!-- menu  -->
         <div class="hidden lg:block">
-          <ul class="flex items-center space-x-5 nav-menu" v-if="data && data.menuItems">
+          <ul class="flex items-center space-x-5 nav-menu">
             <li class="nav-menu__item">
               <nuxt-link :to="{ name: 'products'}"> All Products </nuxt-link>
             </li>
@@ -18,15 +18,11 @@
               <nuxt-link :to="{ name: 'docs'}"> Documentation </nuxt-link>
             </li>
             <li class="nav-menu__item">
-              <nuxt-link to="#"> Support </nuxt-link>
+              <nuxt-link to="https://support.templatecookie.com" target="_blank"> Support </nuxt-link>
             </li>
-            <!-- <li class="nav-menu__item " v-for="(item, index) in data.menuItems" :key="index">
-              <nuxt-link :to="{ name: 'category-slug', params: {slug: item.category.data.attributes.slug} }">{{ item.label }}</nuxt-link>
-            </li> -->
-            
-            <li v-if="data.profile && data.profile.link">
-              <a :href="data.profile.link.href" :target="data.profile.link.target" class="text-white hover:text-white text-sm capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded inline-block px-5 py-4">
-                {{ data.profile.link.label }}
+            <li >
+              <a href="https://codecanyon.net/user/templatecookie" target="_blank" class="text-white hover:text-white text-sm capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded inline-block px-5 py-4">
+                Codecanyon Profile
               </a>
             </li>
           </ul>
@@ -58,18 +54,13 @@
             </li>
             <li class="sidebar-menu__item">
               <div class="sidebar-menu__content">
-                <nuxt-link to="#"> Support </nuxt-link>
+                <nuxt-link to="https://support.templatecookie.com"> Support </nuxt-link>
               </div>
             </li>
-            <!-- <li class="sidebar-menu__item" v-for="(item, index) in data.menuItems" :key="index">
-              <div class="sidebar-menu__content">
-                <nuxt-link :to="{ name: 'category-slug', params: {slug: item.category.data.attributes.slug} }">{{ item.label }}</nuxt-link>
-              </div>
-            </li> -->
-            <li class="sidebar-menu__button" v-if="data.profile && data.profile.link">
-              <a :href="data.profile.link.label" :target="data.profile.link.target"
+            <li class="sidebar-menu__button">
+              <a href="https://codecanyon.net/user/templatecookie" target="_blank"
                 class="text-white hover:text-white text-button capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded inline-block px-5 w-full text-center">
-                {{ data.profile.link.label}}
+                Codecanyon Profile
               </a>
             </li>
           </ul>

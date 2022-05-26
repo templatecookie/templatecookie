@@ -3,144 +3,77 @@ import gql from 'graphql-tag';
 // export const global = gql`
 export default gql`
 query {
-  global {
-    data {
-      attributes {
-        header {
-          id
-          logo {
-            data {
-              attributes {
-                name
-                url
-                previewUrl
-                formats
-              }
-            }
-          }
-          menuItems {
-            label
-            category {
-              data{
-                id
-                attributes {
-                  name
-                  slug
-                }
-              }
-            }
-          }
-          profile {
-            theme
-            width
-            link {
-              id
-              label
-              href
-              target
-            }
-          }
+  global{
+		logo {
+      url
+      filename
+      title
+    }
+    favicon {
+      url
+      filename
+      title
+    }
+    notice {
+      noticeText
+      cssClass
+      link {
+        label
+        href
+        target
+      }
+    }
+    newsletter {
+      newsletterTitle
+      newsletterDescription
+      socialTitle
+      socialDescription
+      socials {
+        name
+        url
+        icon {
+          url
         }
-        newsletter {
+      }
+    }
+    
+    defaultFeatures{
+      title
+      description
+      cssClass
+      action{
+        label
+        href
+        target
+      }
+      icon {
+        filename
+        url
+      } 
+    }
+    
+    customerSupport {
+      title
+      description
+      cssClass
+      image {
+        filename
+        url
+      }
+    }
+    
+    footer {
+      logo {
+        url
+        filename
+      }
+      description
+      menuitems {
+        label
+        products {
           id
-          newsletter_title
-          newsletter_description
-          social_title
-          social_description
-          social_medias {
-            data {
-              attributes {
-                name
-                url
-                theme
-                icon {
-                  data {
-                    attributes {
-                      name
-                      url
-                      previewUrl
-                      formats
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-        footer {
-          id
-          logo {
-            data {
-              attributes {
-                name
-                ext
-                formats
-                url
-                previewUrl
-              }
-            }
-          }
-          description
-          menuItems {
-            name 
-            products {
-              data {
-                attributes {
-                  slug
-                  name
-                }
-              }
-            }
-          }
-        }
-        website_notice {
-          id
-          notice_text
-          bg
-          notice_link {
-            id
-            label
-            href
-            target
-          }
-        }
-        productDefaultFeatures{
-          id
-          title
-          description
-          icon {
-            data {
-              id
-              attributes {
-                name
-                alternativeText
-                url
-              }
-            }
-          }
-          theme
-          button {
-            id
-            label
-            href
-            target
-          }
-        }
-        customerSupport {
-          id
-          title
-          description
-          theme
-          image {
-            data {
-              attributes {
-                name
-                alternativeText
-                ext
-                url
-              }
-            }
-          }
+          slug
+          name
         }
       }
     }

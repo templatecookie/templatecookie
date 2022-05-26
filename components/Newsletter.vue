@@ -9,23 +9,23 @@
           <div
             class="border-t lg:border-t-0 lg:border-r border-dark-e6 w-full lg:w-1/2 order-2 lg:order-1 text-center lg:text-left pt-6 lg:pt-0">
             <h2 class="text-body-24 text-dark-06 capitalize mb-3">
-              {{ data.social_title }}
+              {{ newsletter.socialTitle }}
             </h2>
             <p class="font-light text-body-16 text-dark-42 mb-6 max-w-full lg:max-w-536">
-              {{ data.social_description }}
+              {{ newsletter.socialDescription }}
             </p>
             <div class="flex justify-center lg:justify-start">
-              <SocialLink :social="data.social_medias" v-if="data && data.social_medias"/>
+              <SocialLink :social="newsletter.socials" v-if="data && newsletter.socials"/>
             </div>
           </div>
           
           <!-- subscribe to newsletter  -->
           <div class="w-full lg:w-1/2 order-1 lg:order-2 mb-6 lg:mb-0 text-center lg:text-left">
             <h2 class="text-body-24 text-dark-06 capitalize mb-3">
-              {{ data.newsletter_title }}
+              {{ newsletter.newsletterTitle }}
             </h2>
             <p class="font-light text-body-16 text-dark-42 mb-6 max-w-536">
-              {{ data.newsletter_description }}
+              {{ newsletter.newsletterDescription }}
             </p>
             <form action="https://www.getrevue.co/profile/templatecookie/add_subscriber" method="post" target="_blank" name="revue-form">
               <div class="relative overflow-hidden rounded-md border border-gray-e6 py-3 px-18 mb-3">
@@ -50,11 +50,19 @@
 <script>
 import SocialLink from "./SocialLink.vue"
 export default {
-    props: ["data"],
-    data() {
-        return {};
-    },
-    components: { SocialLink }
+  props: ["data"],
+  data() {
+      return {};
+  },
+  components: { 
+    SocialLink
+  },
+
+  computed: {
+    newsletter() {
+      return this.data[0]
+    }
+  }
 }
 </script>
 

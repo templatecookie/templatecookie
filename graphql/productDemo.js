@@ -2,159 +2,192 @@ import gql from 'graphql-tag';
 
 export default gql`
 query product($slug: String!){
-  products (filters: { slug: { eq: $slug }}){
-    data {
-      attributes {
-        name
-        slug
-        short_description
+  product(filter: {slug: {eq: $slug}}) {
+    id
+    name
+    description
+    docsUrl
+    previewUrl
+    banner {
+      url
+    }
+    demoBanner {
+      url
+    }
+    contents {
+      ... on CustomerSupportRecord {
+        __typename
         description
-        buy_regular_license
-        buy_extended_license
-        preview_url
-        demo_page_banner {
-          data {
-            attributes{
-              url
-              name
-            }
-          }
+        cssClass
+        id
+        title
+        image {
+          url
         }
-        technology {
-          data {
-            attributes {
-              name
-              slug
-              icon {
-                data {
-                  attributes {
-                    name
-                    alternativeText
-                    ext
-                    url
-                  }
-                }
-              }
-            }
-          }
-        }
-        productFeatures {
-          info {
-            title
-            subTitle
-            description
-            theme
-            alignment
-          }
-          features {
-            id
-            title
-            description
-            icon {
-              data {
-                attributes {
-                  url
-                  name
-                  alternativeText
-                  ext
-                }
-              }
-            }
-          }
-        }
-        product_funfacts {
-          id
+      }
+      ... on DisplayfeatureRecord {
+        __typename
+        title
+        subtitle
+        bgClass
+        description
+        features {
+          createdAt
           title
           description
-          icon {
-            data {
-              attributes {
-                url
-                name
-                alternativeText
-              }
-            }
+          cssClass
+          image {
+            url
           }
         }
-        productPages {
+      }
+      ... on ExclusivefeatureRecord {
+        __typename
+        id
+        title
+        subtitle
+        description
+        cssClass
+        alignment
+        image {
+          url
+        }
+        action {
+          label
+          target
+          href
+          id
+        }
+      }
+      ... on FeaturescreenshotRecord {
+        __typename
+        id
+        info {
+          title
+          updatedAt
+          description
+          bgClass
+          background {
+            url
+          }
+        }
+        screenshots {
+          url
+        }
+      }
+      ... on TopfeatureRecord {
+        __typename
+        id
+        info {
+          title
+          description
+          bgClass
+          background {
+            url
+          }
+        }
+        features {
+          title
+          description
+          cssClass
+          id
+          image {
+            url
+          }
+        }
+        cssClass
+      }
+      ... on ProductctaRecord {
+        __typename
+        id
+        title
+        description
+        cssClass
+        screenshots {
+          url
+        }
+      }
+      ... on ProductPageRecord {
+        __typename
+        id
+        title
+        cssClass
+        pages {
           name
           url
+          cssClass
           image {
-            data {
-              attributes {
-                name
-                alternativeText
-                url
-              }
-            }
+            url
           }
         }
-        displayFeatures {
-          id
+      }
+      ... on PriceplanRecord {
+        __typename
+        id
+        info {
           title
-          subtitle
           description
-          features{
-            id
-            name
-            description 
-            image {
-              data {
-                attributes {
-                  url
-                }
-              }
-            }
-          }
+          createdAt
+          bgClass
         }
-        productFeatureScreenshots {
-          id
-          info {
-            title
-            description
-            subTitle
-            theme
-            alignment
-            background {
-              data {
-                attributes {
-                  name
-                  alternativeText
-                  url
-                }
-              }
-            }
+        plans {
+          name
+          description
+          price
+          purchaseLink
+          icon {
+            url
           }
           features {
+            feature
             id
-            title
-            description
-            screenshot {
-              data {
-                attributes {
-                  name
-                  alternativeText
-                  url
-                }
-              }
-            }
           }
         }
-        folder_structure {
-          title
-          description
-          structure
+      }
+      ... on HerosectionRecord {
+        __typename
+        id
+        title
+        subtitle
+        description
+        cssClass
+        banner {
+          url
         }
-        cta_section {
-          title
-          description
-          screenshots {
-            data {
-              attributes {
-                url
-              }
-            }
+        actions {
+          link {
+            label
+            target
+            href
           }
+          cssClass
+        }
+      }
+      ... on FunFactRecord {
+        __typename
+        id
+        fact {
+          title
+          id
+          description
+          cssClass
+          counter
+          icon {
+            url
+          }
+        }
+      }
+      ... on FolderstructureRecord {
+        __typename
+        id
+        title
+        updatedAt
+        description
+        cssClass
+        structure {
+          blocks
+          links
+          value
         }
       }
     }

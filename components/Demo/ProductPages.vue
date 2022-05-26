@@ -3,15 +3,15 @@
     <div class="container">
       <div class="text-center mb-8 lg:mb-12">
         <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
-          {{data.length}}+ Beautiful hand-crafted pages
+          {{ data.title }}
         </h2>
       </div>
       <div class="grid grid-cols-12 gap-6">
-        <div v-for="(item, itemIndex) in data" :key="itemIndex"
+        <div v-for="(item, itemIndex) in data.pages" :key="itemIndex"
           class="col-span-12 xl:col-span-3 lg:col-span-6 md:col-span-6">
           <div class="thumb-link">
             <a :href="item.url" target="_blank">
-              <img :src="fixImageUrl(item.image)" alt="product-img" class="w-full h-250 object-cover overflow-hidden shadow-bs12" />
+              <img :src="item.image.url" alt="product-img" class="w-full h-250 object-cover overflow-hidden shadow-bs12" />
               <h3 class="text-white text-base font-medium absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-300 flex w-full justify-center opacity-0">
                 {{ item.name }} <img class="ml-2" src="~assets/images/svg/ArrowSquareOut.svg" alt="">
               </h3>

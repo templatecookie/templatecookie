@@ -2,18 +2,55 @@
   <div>
     <ProductDemoHeader :product="product" v-if="product" />
     <product-hero :product="product" v-if="product"  />
-    <product-fun-fact :data="product.product_funfacts" v-if="product.product_funfacts"  />
-    <product-top-features :data="product.productFeatures" v-if="product.productFeatures" />
+    <!-- DisplayfeatureRecord
+    ExclusivefeatureRecord
+    FeaturescreenshotRecord
+    TopfeatureRecord
+    ProductctaRecord
+    ProductPageRecord
+    PriceplanRecord
+    HerosectionRecord
+    FunFactRecord
+    FolderstructureRecord
+    CustomerSupportRecord -->
 
-    <div class="">
-      <product-screenshots :data="product.productFeatureScreenshots" v-if="product.productFeatureScreenshots" />
-      <product-feature-screenshots :data="product.displayFeatures" v-if="product.displayFeatures"/>
-      <product-pages :data="product.productPages" v-if="product.productPages"  />
-      <!-- <pricing-plan /> -->
-      <product-folder-structure :data="product.folder_structure" v-if="product.folder_structure" />
-      <product-support  />
+    <div v-for="(section, index) in product.contents" :key="index">
+      <div v-if="section.__typename == 'DisplayfeatureRecord'">
+        <product-feature-screenshots :data="section"/>
+      </div>
+      <div v-if="section.__typename == 'ExclusivefeatureRecord'">
+        <exclusive-feature :data="section"/>
+      </div>
+      <div v-if="section.__typename == 'FeaturescreenshotRecord'">
+        <product-screenshots :data="section" />
+      </div>
+      <div v-if="section.__typename == 'TopfeatureRecord'">
+       <ProductTopFeatures :data="section" />
+      </div>
+      <div v-if="section.__typename == 'ProductctaRecord'">
+        <call-to-action :product="section" />
+      </div>
+      <div v-if="section.__typename == 'ProductPageRecord'">
+        <product-pages :data="section"  />
+      </div>
+      <div v-if="section.__typename == 'PriceplanRecord'">
+        <pricing-plan />
+      </div>
+      <div v-if="section.__typename == 'FunFactRecord'">
+        <product-fun-fact :data="section"  />
+      </div>
+
+      <!-- <div v-if="section.__typename == 'HerosectionRecord'">
+        <product-hero :product="product" />
+      </div> -->
+      <!-- <div v-if="section.__typename == 'FolderstructureRecord'">
+        <product-folder-structure :data="section" />
+      </div> -->
+      <!-- 
+      <div v-if="section.__typename == 'CustomerSupportRecord'">
+        <product-support  />
+      </div> -->
     </div>
-    <call-to-action :product="product" v-if="product && product.cta_section" />
   </div>
 </template>
 
@@ -32,8 +69,8 @@ import ProductFunFact from '../../components/Demo/ProductFunFact.vue';
 import ProductHero from "../../components/Demo/ProductHero.vue";
 import ProductSupport from '../../components/Demo/ProductSupport.vue';
 import CallToAction from '../../components/Demo/CallToAction.vue';
-import GLOBAL_QUERY from '~/graphql/global'
 import PricingPlan from '../../components/Demo/PricingPlanSection.vue';
+import ExclusiveFeature from "../../components/Demo/ExclusiveFeature.vue";
 
 export default {
   layout: "empty",
@@ -64,16 +101,15 @@ export default {
       }
     })
 
-    if(!store.getters.getGlobalData){
-      const global = await client.query({
-        query: GLOBAL_QUERY,
-      })
+    // if(!store.getters.getGlobalData){
+    //   const global = await client.query({
+    //     query: GLOBAL_QUERY,
+    //   })
         
-      const globalData = global.data?.global?.data?.attributes
-      store.commit('SET_GLOBAL_DATA', globalData)
-    }
-    
-    const product = data.products.data[0]?.attributes;
+    //   const globalData = global.data?.global?.data?.attributes
+    //   store.commit('SET_GLOBAL_DATA', globalData)
+    // }
+    const product = data.product;
     return { product }
   },
   components: {
@@ -89,7 +125,8 @@ export default {
     ProductHero,
     ProductSupport,
     CallToAction,
-    PricingPlan
+    PricingPlan,
+    ExclusiveFeature
   },
 };
 </script>

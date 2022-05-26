@@ -1,18 +1,18 @@
 <template>
-  <div class="pt-20 lg:pt-124" id="screenshot-gallery">
+  <div class="py-20 lg:pt-124" id="screenshot-gallery">
     <div class="container">
       <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
         <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
-          {{ data.info.title }}
+          {{ data.info[0].title }}
         </h2>
         <p class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light">
-          {{ data.info.description }}
+          {{ data.info[0].description }}
         </p>
       </div>
       <div class="relative">
         <swiper class="swiper shadow-bs012 rounded-xl" :options="swiperOptionTwo">
-          <swiper-slide v-for="(item, index) in data.features" :key="index">
-            <img class="w-full h-full rounded-xl" :src="fixImageUrl(item.screenshot)" alt="" />
+          <swiper-slide v-for="(item, index) in data.screenshots" :key="index">
+            <img class="w-full h-full rounded-xl" :src="item.url" alt="" />
           </swiper-slide>
         </swiper>
         <div class="custom-pagination flex justify-center pt-16">
