@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](///compare/v2.0.0...v2.1.0) (2022-05-27)
+
+
+### Features
+
+* product support card dynamic d314fe3
+
+
+### Bug Fixes
+
+* product demo page error c1adff4
+* product listing page problem 0e559ca
+* slider animation on call to action on page de7489f
+* website 2fbab87
+
 ## 2.0.0 (2022-05-27)
 
 
