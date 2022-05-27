@@ -29,12 +29,14 @@ export default {
         query: GLOBAL_QUERY,
       })
       
-      this.global = data?.global?.data?.attributes
-      this.$store.commit('SET_GLOBAL_DATA', this.global)
+      const global = data?.global
+      this.$store.commit('SET_GLOBAL_DATA', global)
     }
   },
   mounted (){
-    this.loadData();
+    if(!this.$store.getters.getGlobalData){
+      this.loadData();
+    }
   }
 };
 </script>
