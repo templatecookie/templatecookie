@@ -1,10 +1,10 @@
 <template>
   <div>
-    <ul class="flex items-center space-x-3" v-if="social && social.data">
-      <li v-for="item in social.data" :key="item.attributes.name">
-        <a :href="item.attributes.name"
+    <ul class="flex items-center space-x-3" v-if="social && social">
+      <li v-for="item in social" :key="item.name">
+        <a :href="item.name"
           class="flex items-center justify-center p-3 duration-300 rounded-md bg-blue-18 group">
-          <img :src="fixUrl(item.attributes.icon.data.attributes.url)" />
+          <img :src="item.icon.url" />
         </a>
       </li>
     </ul>

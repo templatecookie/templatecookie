@@ -3,179 +3,114 @@ import gql from 'graphql-tag';
 // export const global = gql`
 export default gql`
 query {
-    homepage {
-    data {
-      attributes {
+  homepage {
+    seoData {
+      title
+      description
+      ogImage {
+        url
+      }
+    }
+    heroSection {
+      title
+      subtitle
+      description
+      cssClass
+      banner {
+        url
+      }
+      actions {
+        cssClass
+        link {
+          label
+          href
+          target
+        }
+      }
+    }
+    featuredSection {
+      title
+      description
+      cssClass
+      products {
+        name
+        slug
+        description
+        banner {
+          url
+        }
+        category {
+          name
+          slug
+        }
+      }
+    }
+    latestProduct {
+      title
+      description
+      bgClass
+      background {
+        url
+      }
+    }
+    topFeatures {
+      cssClass
+      info {
         title
-        meta_data {
-          title
-          description
-          og_image {
-            data {
-              attributes {
-                url
-                previewUrl
-                ext
-                name
-              }
-            }
-          }
+        description
+        bgClass
+        background {
+          url
         }
-        heroSection {
-          id
-          title
-          subTitle
-          description
-          banner {
-            data {
-              attributes {
-                name
-                url
-                previewUrl
-                ext
-                formats
-              }
-            }
-          }
-          buttons {
-            label
-            theme
-            width
-            link {
-              label
-              href
-              target
-            }
-          }
+      }
+      features {
+        title
+        description
+        cssClass
+        image {
+          url
         }
-        featuredProductSection {
-          id
-          title
-          description
-          products {
-            data {
-              id
-              attributes {
-                name
-                slug
-                regular_price
-                short_description
-                demo_banner {
-                  data {
-                    attributes {
-                      name,
-                      alternativeText,
-                      previewUrl
-                      url
-                    }
-                  }
-                }
-                category {
-                  data {
-                    attributes {
-                      name
-                      slug
-                    }
-                  }
-                }
-              }
-            }
-          }
+      }
+    }
+    whyUsSection {
+      info {
+        title
+        description
+        bgClass
+        background {
+          url
         }
-        latestProductsSection {
-          title
-          id
-          description
-          subTitle
-          theme
-          alignment
-          background {
-            data {
-              attributes {
-                name
-                url
-                previewUrl
-                ext
-                formats
-              }
-            }
-          }
+      }
+      feature {
+        title
+        description
+        cssClass
+        image {
+          url
         }
-        topFeaturesSection {
-          id
-          info {
-            title
-            description
-            subTitle
-            theme
-            alignment
-            background {
-              data {
-                attributes {
-                  name
-                  url
-                  previewUrl
-                  ext
-                  formats
-                }
-              }
-            }
-          }
-          features {
-            id,
-            title
-            description
-            theme
-            icon {
-              data {
-                attributes {
-                  name,
-                  ext,
-                  alternativeText
-                  url
-                }
-              }
-            }
-          }
-        }
-        whyUsSection {
-          id
-          info {
-            id
-            title
-            description
-            subTitle
-            theme,
-            background{
-              data {
-                attributes {
-                  url,
-                  alternativeText
-                }
-              }
-            }
-          }
-          counterNumbers {
-            id
-            title
-            description
-            theme
-            icon {
-              data {
-                attributes {
-                  name
-                  url
-                  previewUrl
-                  ext
-                  formats
-                }
-              }
-            }
-          }
+      }
+      counters {
+        title
+        description
+        cssClass
+        counter
+        icon {
+          url
         }
       }
     }
   }
-}
-
-`
+  allProducts(first: 6, orderBy: id_DESC) {
+    id
+    name
+    description
+    slug
+    banner {
+      url
+    }
+    category {
+      name
+      slug
+    }
+  }
+}`

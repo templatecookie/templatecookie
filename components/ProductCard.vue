@@ -2,14 +2,12 @@
   <!-- card wrapper  -->
   <div class="relative overflow-hidden p-6 border border-gray-e6 rounded-2xl product-card w-full" :class="large ? 'p-8 product-card--lg' : 'p-6  product-card--sm'">
     <nuxt-link :to="{ name: 'demo-slug', params: {slug: product.slug} }" class="product-card__img relative inline-block overflow-hidden rounded-lg w-full product-card__img-wrapper mb-4">
-      <img :src="fixImageUrl(product.banner)" alt="product-img" class="w-full h-full object-cover overflow-hidden" />
+      <img :src="product.banner.url" alt="product-img" class="w-full h-full object-cover overflow-hidden" />
     </nuxt-link>
 
-    <!-- Product info  -->
     <div class="product-card__text">
-      <!-- Tags  -->
-      <h6 class="tracking-widest font-normal text-pink-75 uppercase m-0 mb-1" :class=" large ? 'text-body-14' : 'text-body-12/12'" v-if="product.category.data" >
-        {{ product.category.data.attributes.name }}
+      <h6 class="tracking-widest font-normal text-pink-75 uppercase m-0 mb-1" :class=" large ? 'text-body-14' : 'text-body-12/12'" v-if="product.category" >
+        {{ product.category.name }}
       </h6>
 
       <h2 class="text-dark-06 mb-3 font-normal" :class="large ? 'text-body-24' : 'text-body-18'">
@@ -17,12 +15,10 @@
       </h2>
 
       <p class="text-body-16 text-dark-42 font-light mb-6" :class="large ? 'text-body-16' : 'text-body-14/20'">
-        {{ product.short_description }}
+        {{ product.description }}
       </p>
 
-      <!-- actions content  -->
       <div class="flex justify-between items-center sm:mt-0 mt-6  product-card__actions">
-        <!-- Purchase  -->
         <div class="flex items-center space-x-3 order-2 sm:order-1">
           <div>
             <nuxt-link :to="{ name: 'demo-slug', params: {slug: product.slug} }" class="flex items-center overflow-hidden border border-blue-0b text-blue-0b rounded-lg group py-3.5 px-9 whitespace-nowrap product-card__button">

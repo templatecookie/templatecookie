@@ -1,6 +1,6 @@
 <template>
   <div>
-    <DocsHeader :data="global.header" v-if="global && global.header"/>
+    <DocsHeader :data="global"/>
     <nuxt />
     <Newsletter :data="global.newsletter" v-if="global && global.newsletter"/>
     <Footer :data="global.footer" v-if="global && global.footer"/>
@@ -29,12 +29,15 @@ export default {
         query: GLOBAL_QUERY,
       })
       
-      this.global = data?.global?.data?.attributes
-      this.$store.commit('SET_GLOBAL_DATA', this.global)
+      const global = data?.global
+      this.global = global;
+      this.$store.commit('SET_GLOBAL_DATA', global)
     }
   },
   mounted (){
-    this.loadData();
+    if(!this.$store.getters.getGlobalData){
+      this.loadData();
+    }
   }
 };
 </script>

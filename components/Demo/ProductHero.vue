@@ -6,14 +6,14 @@
           {{ product.name }}
         </h1>
         <p class="text-white font-light text-lg md:text-xl lg:max-w-536">
-          {{ product.short_description }}
+          {{ product.description }}
         </p>
         <div class="mt-8">
           <a href="#pricing" target="_blank" class="block text-center sm:inline-block border-1.5 border-blue-0b bg-blue-0b font-medium rounded-7 py-3.5 px-8 text-body-17 text-white duration-300 mb-3 sm:mb-0 sm:mr-3">
             Buy Now
             <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="" />
           </a>
-          <a :href="product.preview_url" target="_blank"
+          <a :href="product.previewUrl" target="_blank"
             class="block text-center sm:inline-block font-medium border-1.5 border-white rounded-7 py-3.5 px-8 text-body-17 text-white duration-300">
             Live Preview
           </a>
@@ -38,7 +38,8 @@ export default {
   },
   methods: {
     getBanner(){
-      return this.product.demo_page_banner ? this.fixImageUrl(this.product.demo_page_banner) : this.bgImage
+      // return this.product.demo_page_banner ? this.fixImageUrl(this.product.demo_page_banner) : this.bgImage
+      return this.product.demoBanner && this.product.demoBanner.url ? this.product.demoBanner.url : this.bgImage;
     }
   }
 }

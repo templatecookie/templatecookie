@@ -137,7 +137,8 @@
       </div>
     </header>
 
-    <div class="min-h-600 sm:min-h-840 pb-20 pt-40 flex items-center bg-dark-06 bg-cover xl:bg-contain bg-right-bottom bg-no-repeat hero-demo"
+    <div
+      class="min-h-600 sm:min-h-840 pb-20 pt-40 flex items-center bg-dark-06 bg-cover xl:bg-contain bg-right-bottom bg-no-repeat hero-demo"
       :style="hero">
       <div class="container">
         <div class="lg:max-w-2xl sm:text-left text-center relative">
@@ -145,8 +146,11 @@
             Relik - Admin Dashboard Figma Template
           </h1>
           <p class="text-white font-light text-lg md:text-xl lg:max-w-536">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci fugiat nisi incidunt reiciendis voluptatum provident corrupti voluptates. Est cum ab vitae dolorem libero rerum adipisci, iste voluptatem nisi nesciunt eligendi magnam tempora suscipit odit minus recusandae aspernatur veniam possimus deserunt labore praesentium repellendus dolores assumenda. Tempora repellat distinctio dolorem officiis.
-   
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci fugiat nisi incidunt reiciendis
+            voluptatum provident corrupti voluptates. Est cum ab vitae dolorem libero rerum adipisci, iste voluptatem
+            nisi nesciunt eligendi magnam tempora suscipit odit minus recusandae aspernatur veniam possimus deserunt
+            labore praesentium repellendus dolores assumenda. Tempora repellat distinctio dolorem officiis.
+
           </p>
           <div class="mt-8">
             <a href="#" target="_blank"
@@ -181,7 +185,7 @@
         <div class="md:grid grid-cols-12 gap-6 mb-12 items-center">
           <div class="col-span-7 mb-4 md:mb-0">
             <h2 class="text-dark-06 text-body-32px md:text-4xl xl:text-title font-semibold tracking-01">
-             productFeatures - Explore Relik <br />
+              productFeatures - Explore Relik <br />
               Notable Feature
             </h2>
           </div>
@@ -212,14 +216,15 @@
     <div class="">
       <div class="py-20 lg:py-124">
         <div class="container">
+          <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
+            ProductFeatureScreenshots - Folder Structure
+          </h2>
+          <p class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light">
+            Nunc convallis semper justo quis tempor. Praesent molestie, lorem
+            sed imperdiet tempor, libero urna semper urna
+          </p>
           <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
-            <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
-              ProductFeatureScreenshots - Folder Structure
-            </h2>
-            <p class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light font-light">
-              Nunc convallis semper justo quis tempor. Praesent molestie, lorem
-              sed imperdiet tempor, libero urna semper urna
-            </p>
+
           </div>
           <div class="relative">
             <swiper class="swiper shadow-bs012 rounded-xl" :options="swiperOptionTwo">
@@ -454,6 +459,229 @@
       </div>
     </div>
 
+    <!-- Pricing Section Start -->
+    <section class="pricing-section bg-white py-20 lg:py-124 relative">
+    <div class="pricing-section-bg"></div>
+      <div class="container">
+        <div class="text-center">
+          <h2
+            class="text-dark-06 lg:w-3/5 m-auto  text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
+            Explore our pricing plans
+          </h2>
+          <p class="text-dark-06 lg:w-3/5 m-auto  text-base sm:text-body-18 mb-8 lg:mb-20 font-light">
+            Donec ligula ligula, porta at urna non, faucibus congue urna. Nullam nulla purus, facilisis vitae odio ac,
+            tempus aliquet dolor.
+          </p>
+        </div>
+        <div class="card-area m-auto justify-center lg:flex-row flex-col flex lg:gap-6">
+          <div class="card bg-white p-8 rounded-2xl border border-gray-100 min-w-96 w-4/12">
+            <div class="top-area flex justify-between items-center mb-8">
+              <div class="card-icon inline-block p-5 rounded-lg bg-pink-50">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.2"
+                    d="M5.1731 11.6592C5.05973 11.8515 4.99996 12.0706 5 12.2938V27.7067C5 27.9285 5.05902 28.1463 5.17099 28.3378C5.28296 28.5292 5.44386 28.6874 5.63717 28.7962L19.3872 36.5306C19.5743 36.6358 19.7853 36.6911 20 36.6911L20.0016 36.6911L20.1483 20.0003L5.17313 11.6592L5.1731 11.6592Z"
+                    fill="#F249C8" />
+                  <path
+                    d="M35 27.7068V12.2939C35 12.0721 34.941 11.8543 34.829 11.6629C34.717 11.4714 34.5561 11.3132 34.3628 11.2045L20.6128 3.4701C20.4257 3.36486 20.2147 3.30957 20 3.30957C19.7853 3.30957 19.5743 3.36486 19.3872 3.4701L5.63717 11.2045C5.44386 11.3132 5.28296 11.4714 5.17099 11.6629C5.05902 11.8543 5 12.0721 5 12.2939V27.7068C5 27.9286 5.05902 28.1464 5.17099 28.3379C5.28296 28.5293 5.44386 28.6876 5.63717 28.7963L19.3872 36.5307C19.5743 36.6359 19.7853 36.6912 20 36.6912C20.2147 36.6912 20.4257 36.6359 20.6128 36.5307L34.3628 28.7963C34.5561 28.6876 34.717 28.5293 34.829 28.3379C34.941 28.1464 35 27.9286 35 27.7068Z"
+                    stroke="#F249C8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M27.6597 23.8298V15.7048L12.5 7.34375" stroke="#F249C8" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M34.8274 11.6607L20.148 20.0003L5.17285 11.6592" stroke="#F249C8" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M20.1486 20L20.002 36.6908" stroke="#F249C8" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="price">
+                <h2 class="text-5xl text-pink-500">$21
+                  <span class="text-base text-gray-700">/One Time</span></h2>
+              </div>
+            </div>
+            <div class="details-area">
+              <h2 class="mb-2 text-gray-900 text-2xl">Standard</h2>
+              <p class="mb-8 text-base text-gray-700">Upgrade your social portfolio with a stunning profile & enhanced
+                shots.
+              </p>
+              <a href="#"
+                class="btn inline-block bg-transparent border border-blue-500 rounded-5 text-sm py-2.5 px-5 text-blue-500 duration-300 hover:bg-black">
+                <div class="flex gap-4">
+                  <span>Get Started</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.75 12H20.25" stroke="#0B63E5" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#0B63E5" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="divider bg-gray-100 h-px my-8"></div>
+            <div class="list-area">
+              <ul>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#E7F5E8"/>
+                    <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">User Dashboard</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#E7F5E8"/>
+                    <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">Post 3 Ads per week</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#E7F5E8"/>
+                        <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">Multiple images & videos</p>
+                </li>
+                <li class="flex gap-3 mb-5 opacity-30">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 12C0 5.37258 5.37258 0 12 0V0C18.6274 0 24 5.37258 24 12V12C24 18.6274 18.6274 24 12 24V24C5.37258 24 0 18.6274 0 12V12Z" fill="#E7F5E8"/>
+                        <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <p class="line-through font-light">Basic customer support</p>
+                </li>
+                <li class="flex gap-3 mb-5 opacity-30">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 12C0 5.37258 5.37258 0 12 0V0C18.6274 0 24 5.37258 24 12V12C24 18.6274 18.6274 24 12 24V24C5.37258 24 0 18.6274 0 12V12Z" fill="#E7F5E8"/>
+                        <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <p class="line-through font-light">Featured ads</p>
+                </li>
+                <li class="flex gap-3 mb-5 opacity-30">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 12C0 5.37258 5.37258 0 12 0V0C18.6274 0 24 5.37258 24 12V12C24 18.6274 18.6274 24 12 24V24C5.37258 24 0 18.6274 0 12V12Z" fill="#E7F5E8"/>
+                        <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <p class="line-through font-light">Special ads badge</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card bg-white p-8 rounded-2xl border border-gray-100 min-w-96 w-4/12">
+            <div class="top-area flex justify-between items-center mb-8">
+              <div class="card-icon inline-block p-5 rounded-lg bg-blue-50">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.2" d="M5 12.5L20 21.25L35 12.5L20 3.75L5 12.5Z" fill="#0B63E5" />
+                  <path d="M5 27.5L20 36.25L35 27.5" stroke="#0B63E5" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M5 20L20 28.75L35 20" stroke="#0B63E5" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M5 12.5L20 21.25L35 12.5L20 3.75L5 12.5Z" stroke="#0B63E5" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="price">
+                <h2 class="text-5xl text-blue-500">$49
+                  <span class="text-base text-gray-700">/One Time</span></h2>
+              </div>
+            </div>
+            <div class="details-area">
+              <h2 class="mb-2 text-gray-900 text-2xl">Premium</h2>
+              <p class="mb-8 text-base text-gray-700">Quisque auctor erat velit, quis ultrices nisi vestibulum at. Donec
+                vitae purus lorem.
+              </p>
+              <a href="#"
+                class="btn inline-block bg-blue-500 border border-blue-500 rounded-5 text-sm py-2.5 px-5 text-blue-500 duration-300 hover:bg-black">
+                <div class="flex gap-4">
+                  <span class="text-white">Get Started</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.75 12H20.25" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="divider bg-gray-100 h-px my-8"></div>
+            <div class="list-area">
+              <ul>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#E7F5E8"/>
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">User Dashboard</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#E7F5E8"/>
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">Post 3 Ads per week</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#E7F5E8"/>
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">Multiple images & videos</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#E7F5E8"/>
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">Basic customer support</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#E7F5E8"/>
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">Featured ads</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#E7F5E8"/>
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">Special ads badge</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+
+        </div>
+      </div>
+    </section>
+    <!-- Pricing Section End -->
+    <pricing-plan />
+    <exclusive-feature-left-image />
+    <exclusive-feature-right-image />
+
     <div class="pt-28 lg:pt-40 bg-dark-06">
       <div class="container">
         <div class="text-center mb-40">
@@ -476,31 +704,40 @@
             <img class="" src="~@/assets/images/all-img/slider1.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0"
+              src="~@/assets/images/all-img/slider2.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0"
+              src="~@/assets/images/all-img/slider3.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0"
+              src="~@/assets/images/all-img/slider1.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0"
+              src="~@/assets/images/all-img/slider2.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0"
+              src="~@/assets/images/all-img/slider3.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0"
+              src="~@/assets/images/all-img/slider1.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider2.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0"
+              src="~@/assets/images/all-img/slider2.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider3.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0"
+              src="~@/assets/images/all-img/slider3.png" alt="" />
           </swiper-slide>
           <swiper-slide class="slider-full">
-            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0" src="~@/assets/images/all-img/slider1.png" alt="" />
+            <img class="w-full h-60 object-cover border border-b-0 border-white p-3 pb-0"
+              src="~@/assets/images/all-img/slider1.png" alt="" />
           </swiper-slide>
         </swiper>
       </div>
@@ -509,270 +746,331 @@
 </template>
 
 <script>
-import { Swiper, SwiperSlide } from "vue-awesome-swiper";
-import "swiper/css/swiper.css";
-
-export default {
-  layout: "empty",
-  components: {
+  import {
     Swiper,
     SwiperSlide
-  },
-  name: "ProductDemo",
-  head: {
-    title: 'Product Demo Page',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'my website description'
-      }
-    ],
-  },
-  methods: {
-    openSidebar() {
-      this.toggleStatus = !this.toggleStatus;
-      this.sideBar = !this.sideBar;
-      document.body.classList.toggle("overlay");
+  } from "vue-awesome-swiper";
+  import "swiper/css/swiper.css";
+import PricingPlan from "../../components/Demo/PricingPlanSection.vue";
+import ExclusiveFeatureLeftImage from "../../components/Demo/ExclusiveFeature.vue";
+import ExclusiveFeatureRightImage from "../../components/Demo/ExclusiveFeatureRightImage.vue";
+
+  export default {
+    layout: "empty",
+    components: {
+    Swiper,
+    SwiperSlide,
+    PricingPlan,
+    ExclusiveFeatureLeftImage,
+    ExclusiveFeatureRightImage
+},
+    name: "ProductDemo",
+    head: {
+      title: 'Product Demo Page',
+      meta: [{
+          charset: 'utf-8'
+        },
+        {
+          name: 'viewport',
+          content: 'width=device-width, initial-scale=1'
+        },
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'my website description'
+        }
+      ],
     },
-  },
-  data() {
-    return {
-      toggleStatus: false,
-      sideBar: false,
-      activetab: '1',
-      swiperOptionOne: {
-        slidesPerView: 1,
-        spaceBetween: 24,
-        loop: true,
-        breakpoints: {
-          1199: {
-            slidesPerView: 4,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-          640: {
-            slidesPerView: 2,
-          },
-          320: {
-            slidesPerView: 1,
+    methods: {
+      openSidebar() {
+        this.toggleStatus = !this.toggleStatus;
+        this.sideBar = !this.sideBar;
+        document.body.classList.toggle("overlay");
+      },
+    },
+    data() {
+      return {
+        toggleStatus: false,
+        sideBar: false,
+        activetab: '1',
+        swiperOptionOne: {
+          slidesPerView: 1,
+          spaceBetween: 24,
+          loop: true,
+          breakpoints: {
+            1199: {
+              slidesPerView: 4,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            640: {
+              slidesPerView: 2,
+            },
+            320: {
+              slidesPerView: 1,
+            },
           },
         },
-      },
         linkThumb: [{
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/z3lpl2i.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/btnaKPg.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/WeNt6qZ.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/aXNiPxi.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/LrX4y5U.png",
-        },
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/z3lpl2i.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/btnaKPg.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/WeNt6qZ.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/aXNiPxi.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/LrX4y5U.png",
+          },
 
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/7A80zMR.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/nnXHQ9w.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/OkWf1Gj.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/BRCMvYp.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/Z3NJCTN.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/2kaiEQa.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/HLreajz.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/mbarwY4.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/8g0dDml.png",
-        },
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/YMm1zRS.png",
-        },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/7A80zMR.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/nnXHQ9w.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/OkWf1Gj.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/BRCMvYp.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/Z3NJCTN.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/2kaiEQa.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/HLreajz.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/mbarwY4.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/8g0dDml.png",
+          },
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/YMm1zRS.png",
+          },
 
-        {
-          url: "https://www.google.com/",
-          title: "Admin Dashboard",
-          img: "https://i.imgur.com/gE2RT42.png",
+          {
+            url: "https://www.google.com/",
+            title: "Admin Dashboard",
+            img: "https://i.imgur.com/gE2RT42.png",
+          },
+        ],
+        swiperOptionTwo: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          centeredSlides: true,
+          loop: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
         },
-      ],
-      swiperOptionTwo: {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        centeredSlides: true,
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      },
-      buisnessCard: [{
-          title: "Project Introduction",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "User Experience Design",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "User Interface Design",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "Front-end Development",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "Back-end Development",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "Delivery & Client Feedback",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-      ],
+        buisnessCard: [{
+            title: "Project Introduction",
+            text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
+          },
+          {
+            title: "User Experience Design",
+            text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
+          },
+          {
+            title: "User Interface Design",
+            text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
+          },
+          {
+            title: "Front-end Development",
+            text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
+          },
+          {
+            title: "Back-end Development",
+            text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
+          },
+          {
+            title: "Delivery & Client Feedback",
+            text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
+          },
+        ],
 
-      hero: {
-        backgroundImage: "url(https://i.imgur.com/aBzS4DP.png)",
-      },
-      FunItems: [
-      {
-        title: "55+",
-        text: "High-Quality Pages",
-      },
-      {
-        title: "55+",
-        text: "Figma UI Components",
-      },
-      {
-        title: "24/7",
-        text: "Dedicated Support all",
-      },
-      {
-        title: "100%",
-        text: "Money-Back Guarantee",
-      },
-      {
-        title: "Doc",
-        text: "Detailed Documentation",
-      },
-      {
-        title: "Global",
-        text: "Auto-Updatedable Style Guide",
-      },
-      {
-        title: "Inter",
-        text: "Free Google Font Used",
-      },
-      {
-        title: "Fig",
-        text: "Well-Organize & Easy-to-use File",
-      },
-      ],
+        hero: {
+          backgroundImage: "url(https://i.imgur.com/aBzS4DP.png)",
+        },
+        FunItems: [{
+            title: "55+",
+            text: "High-Quality Pages",
+          },
+          {
+            title: "55+",
+            text: "Figma UI Components",
+          },
+          {
+            title: "24/7",
+            text: "Dedicated Support all",
+          },
+          {
+            title: "100%",
+            text: "Money-Back Guarantee",
+          },
+          {
+            title: "Doc",
+            text: "Detailed Documentation",
+          },
+          {
+            title: "Global",
+            text: "Auto-Updatedable Style Guide",
+          },
+          {
+            title: "Inter",
+            text: "Free Google Font Used",
+          },
+          {
+            title: "Fig",
+            text: "Well-Organize & Easy-to-use File",
+          },
+        ],
+      }
+    },
+    mounted(){
+      const token = 'YOUR-API-TOKEN';
+      fetch(
+        'https://graphql.datocms.com/',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+            'Authorization': `Bearer ce32bbd78955d348af32c5f3fb0417`,
+          },
+          body: JSON.stringify({
+            query: `{
+              global{
+                logo {
+                  url
+                  filename
+                  title
+                }
+              } 
+            }`
+          }),
+        }
+      ).then(res => res.json()).then((res) => {
+        console.log(res.data)
+      })
+      .catch((error) => {
+        console.log(error);
+      });
     }
-  },
-};
+  };
+
 </script>
 
-<style lang="scss" scoped>
-// animation
-.slider-full {
-  animation: scroll 26s linear infinite;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
+<style lang="scss">
+  .slider-full {
+    animation: scroll 26s linear infinite;
   }
 
-  100% {
-    transform: translateX(calc(-250px * 7));
-  }
-}
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
 
-// swiper single silder
-.single-slider {
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    top: calc(50% - 15px);
-    transform: translateY(-50%);
-  }
-
-  .swiper-button-prev:after,
-  .swiper-button-next:after {
-    content: none;
-  }
-}
-
-.tab-content-wrap {
-  &.active {
-    background-color: #0b63e5;
-
-    h3,
-    p {
-      color: white;
+    100% {
+      transform: translateX(calc(-250px * 7));
     }
   }
-}
+
+  // swiper single silder
+  .single-slider {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      top: calc(50% - 15px);
+      transform: translateY(-50%);
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+      content: none;
+    }
+  }
+
+  .tab-content-wrap {
+    &.active {
+      background-color: #0b63e5;
+
+      h3,
+      p {
+        color: white;
+      }
+    }
+  }
+  .pricing-section {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    &-bg{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: calc( 100% - 200px) ;
+      background-color: #F5F6F7;
+      transform: skewY(-11deg);
+      transform-origin: top left;
+      z-index: -1;
+    }
+  }
 </style>

@@ -29,9 +29,6 @@
                 </li>
               </ul>
             </li> -->
-            <!-- <li class="nav-menu__item">
-              <nuxt-link to="#">Preview</nuxt-link>
-            </li> -->
             <li class="nav-menu__item">
               <nuxt-link to="#top-features">Top Features</nuxt-link>
             </li>
@@ -45,7 +42,7 @@
               <nuxt-link to="#support">Support</nuxt-link>
             </li>
             <li class="flex items-center space-x-3">
-              <a href="#pricing" target="_blank"
+              <a href="#pricing"
                 class="flex items-center justify-center text-white hover:text-white text-button capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded px-5 w-full text-center">
                 Buy Now
                 <span class="inline-block ml-2">
@@ -57,7 +54,7 @@
                   </svg>
                 </span>
               </a>
-              <nuxt-link :to="product.documentation_url" v-if="product.documentation_url"
+              <a target="_blank" :href="product.docsUrl" v-if="product.docsUrl"
                 class="flex items-center justify-center text-dark-06 hover:text-white text-button capitalize font-medium bg-gray-e6 hover:bg-dark-06 overflow-hidden rounded px-5 w-full text-center whitespace-nowrap">
                 <span class="inline-block mr-2">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +70,7 @@
                   </svg>
                 </span>
                 Documentation
-              </nuxt-link>
+              </a>
             </li>
           </ul>
         </div>

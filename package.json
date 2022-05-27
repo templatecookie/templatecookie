@@ -1,12 +1,14 @@
 {
   "name": "template-cookie",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "fragment-generate": "graphql-codegen",
+    "release": "standard-version"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
@@ -32,12 +34,15 @@
     "webpack": "^4.46.0"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^2.4.0",
+    "@graphql-codegen/fragment-matcher": "^3.2.1",
     "@nuxtjs/eslint-config": "^10.0.0",
     "@nuxtjs/google-fonts": "^1.3.0",
     "@nuxtjs/tailwindcss": "^4.2.1",
     "eslint": "^8.16.0",
     "postcss": "^8.4.4",
     "sass": "^1.47.0",
-    "sass-loader": "10.1.1"
+    "sass-loader": "10.1.1",
+    "standard-version": "^9.5.0"
   }
 }

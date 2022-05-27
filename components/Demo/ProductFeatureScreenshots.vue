@@ -1,8 +1,8 @@
 <template>
-  <div class="pt-20 lg:pt-124">
+  <div class="py-20 lg:pt-124">
     <div class="container">
       <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
-        <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">
+        <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4" v-if="data.subtitle">
           {{ data.subtitle }}
         </h3>
         <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
@@ -18,16 +18,16 @@
             <div class="tabcontent">
               <div class="h-340 md:h-600 overflow-hidden rounded-20">
                 <img class="rounded-20"
-                  :src="fixImageUrl(activeItem.image)" alt="" />
+                  :src="activeItem" alt="" />
               </div>
             </div>
           </div>
         </div>
         <div class="col-span-4">
           <div class="tabs">
-            <div v-for="(item, index) in data.features" :key="index" class="block mb-6 tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300" @click="activeItem = item">
+            <div v-for="(item, index) in data.features" :key="index" class="block mb-6 tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300" @click="activeItem = item.image.url">
               <h3 class="text-dark-06 font-medium text-2xl mb-4 duration-300">
-                {{ item.name }}
+                {{ item.title }}
               </h3>
               <p class="text-dark-42 test-base font-light duration-300">
                 {{ item.description }}
@@ -45,7 +45,7 @@ export default {
   props: ['data'],
   data() {
     return {
-      activeItem: this.data.features[0],
+      activeItem: this.data.features[0].image.url,
     };
   }
 }

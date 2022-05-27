@@ -1,43 +1,46 @@
 <template>
   <div>
-    <HeroSection :bannerImg="bannerImg" :data="homepage.heroSection" v-if="homepage && homepage.heroSection"/>
+    <HeroSection :data="homepage.heroSection" v-if="homepage && homepage.heroSection"/>
     <!-- Featured Card  -->
-    <section class="featured pt-14 md:pt-124" v-if="homepage && homepage.featuredProductSection">
+    <section class="featured pt-14 md:pt-124" v-if="homepage && homepage.featuredSection[0]">
       <div class="container">
         <div class="mb-72 text-center">
-          <h2 class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1">
-            {{ homepage.featuredProductSection.title }}
+          <h2 class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1 mb-8 max-w-md mx-auto">
+            {{ homepage.featuredSection[0].title }}
           </h2>
+          <p class="text-body-16 font-light max-w-lg mx-auto text-dark-06" v-if="homepage.featuredSection[0].description">
+            {{ homepage.featuredSection[0].description }}
+          </p>
         </div>
-
         <!-- Features Card  -->
-        <div class="grid lg:grid-cols-2 gap-6" v-if="homepage.featuredProductSection.products.data">
-          <div v-for="(item, itemIndex) in homepage.featuredProductSection.products.data" :key="itemIndex" class="flex items-stretch">
-            <ProductCard :product="item.attributes" :id="item.id" :large="true"/>
+        <div class="grid lg:grid-cols-2 gap-6" v-if="homepage.featuredSection[0].products">
+          <div v-for="(item, itemIndex) in homepage.featuredSection[0].products" :key="itemIndex" class="flex items-stretch">
+            <ProductCard :product="item" :large="true"/>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Latest Product -->
-    <section class="latest py-14 md:py-124" v-if="homepage && homepage.latestProductsSection">
+    <section class="latest py-14 md:py-124" v-if="homepage && homepage.latestProduct" id="products">
       <div class="container">
         <div class="mb-72 text-center">
-          <h2 class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1">
-            {{ homepage.latestProductsSection.title }}
+          <h2 class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1 mb-8 max-w-md mx-auto">
+            {{ homepage.latestProduct[0].title }}
           </h2>
+          <p class="text-body-16 font-light max-w-lg mx-auto text-dark-06" v-if="homepage.latestProduct[0].description">
+            {{ homepage.latestProduct[0].description }}
+          </p>
         </div>
-        <!-- Latest Product -->
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           <div
             v-for="(item, itemIndex) in latestProducts"
             :key="itemIndex"
             class="flex items-stretch">
-            <ProductCard :product="item.attributes" :id="item.id" :large="false" />
+            <ProductCard :product="item" :large="false" />
           </div>
         </div>
-
-        <div>
+        <!-- <div>
           <nuxt-link :to="{ name: 'products' }"
             class="mt-12 flex items-center bg-blue-0b hover:bg-dark-06 transition-all w-auto max-w-232 justify-center text-button-17 text-white rounded-lg overflow-hidden mx-auto">
             Browse Products
@@ -50,13 +53,12 @@
               </svg>
             </span>
           </nuxt-link>
-        </div>
+        </div> -->
       </div>
     </section>
 
     <!-- Why Should  -->
-    <TopFeaturesSection v-if="homepage && homepage.topFeaturesSection" :data="homepage.topFeaturesSection" />
-    
+    <TopFeaturesSection v-if="homepage && homepage.topFeatures" :data="homepage.topFeatures" />
     <WhyUs v-if="homepage && homepage.whyUsSection" :data="homepage.whyUsSection" />
   </div>
 </template>
@@ -65,7 +67,6 @@
 import bannerImg from "~/assets/images/all-img/img-five.png";
 import ProductCard from "../components/ProductCard.vue";
 import HOMEPAGE_QUERY from '~/graphql/homepage'
-import LATEST_PRODUCTS from '~/graphql/latestProducts'
 import HeroSection from "../components/Home/HeroSection.vue";
 import WhyUs from "../components/Home/WhyUs.vue";
 import TopFeaturesSection from "../components/Home/TopFeaturesSection.vue";
@@ -90,12 +91,9 @@ export default {
     const { data } = await client.query({
       query: HOMEPAGE_QUERY,
     })
-    let products = await client.query({
-      query: LATEST_PRODUCTS,
-    })
     
-    const homepage = data.homepage.data?.attributes;
-    const latestProducts = products.data.products.data;
+    const homepage = data.homepage;
+    const latestProducts = data.allProducts;
     
     return { homepage, latestProducts }
   },

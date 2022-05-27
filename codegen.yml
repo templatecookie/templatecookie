@@ -1,0 +1,10 @@
+schema:
+  - "https://graphql.datocms.com":
+      headers:
+        Authorization: "Bearer ce32bbd78955d348af32c5f3fb0417"
+generates:
+  ./graphql/config/fragmentTypes.json:
+    plugins:
+      - "fragment-matcher"
+    config:
+      apolloClientVersion: 2

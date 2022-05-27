@@ -1,28 +1,27 @@
 <template>
   <footer class="relative bg-dark-06 pt-40 lg:pt-200">
     <div class="container">
-      <!-- footer top content  -->
       <div class="grid xl:grid-cols-3 pb-10 md:pb-16">
         <div class="mb-8">
           <div class="mb-6">
-            <img v-if="data.logo.data.attributes.url" :src="fixUrl(data.logo.data.attributes.url)" alt="Templatecookie" />
+            <img v-if="footer.logo.url" :src="footer.logo.url" alt="Templatecookie" />
             <img v-else src="~/assets/images/logo.svg" alt="Templatecookie " />
           </div>
           <p class="text-body-16 text-gray-b4 max-w-sm font-light">
-            {{ data.description }}
+            {{ footer.description }}
           </p>
         </div>
         <!-- Navigation Menu -->
-        <div class="grid sm:grid-cols-2 gap-7 sm:gap-0 col-span-2" v-if="data && data.menuItems">
-          <div v-for="item in data.menuItems" :key="item.id">
+        <div class="grid sm:grid-cols-2 gap-7 sm:gap-0 col-span-2" v-if="footer && footer.menuitems">
+          <div v-for="item in footer.menuitems" :key="item.id">
             <h2 class="mb-7 text-body-16 leading-none tracking-widest uppercase text-white">
-              {{ item.name }}
+              {{ item.label }}
             </h2>
             <div>
-              <ul class="space-y-2 footer-menu" v-if="item.products.data">
-                <li v-for="(subItem, index) in item.products.data" :key="index">
-                  <nuxt-link class="text-body-16 capitalize text-gray-83" :to="{ name: 'demo-slug', params: {slug: subItem.attributes.slug} }">
-                    {{ subItem.attributes.name }}
+              <ul class="space-y-2 footer-menu" v-if="item.products">
+                <li v-for="(subItem, index) in item.products" :key="index">
+                  <nuxt-link class="text-body-16 capitalize text-gray-83" :to="{ name: 'demo-slug', params: {slug: subItem.slug} }">
+                    {{ subItem.name }}
                   </nuxt-link>
                 </li>
               </ul>
@@ -51,5 +50,10 @@
 export default {
   name: "Footer",
   props: ['data'],
+  computed: {
+    footer() {
+      return this.data[0]
+    }
+  }
 };
 </script>
