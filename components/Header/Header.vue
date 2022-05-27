@@ -12,13 +12,13 @@
         <div class="hidden lg:block">
           <ul class="flex items-center space-x-5 nav-menu">
             <li class="nav-menu__item">
-              <nuxt-link :to="{ name: 'products'}"> All Products </nuxt-link>
+              <nuxt-link :to="{ name: 'index', params: { product: 'bar' }}"> All Products </nuxt-link>
             </li>
             <li class="nav-menu__item">
               <nuxt-link :to="{ name: 'docs'}"> Documentation </nuxt-link>
             </li>
             <li class="nav-menu__item">
-              <nuxt-link to="https://support.templatecookie.com" target="_blank"> Support </nuxt-link>
+              <a href="https://support.templatecookie.com" target="_blank"> Support </a>
             </li>
             <li >
               <a href="https://codecanyon.net/user/templatecookie" target="_blank" class="text-white hover:text-white text-sm capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded inline-block px-5 py-4">

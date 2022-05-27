@@ -1,6 +1,6 @@
 <template>
   <div>
-    <DocsHeader :data="global.header" v-if="global && global.header"/>
+    <DocsHeader :data="global"/>
     <nuxt />
     <Newsletter :data="global.newsletter" v-if="global && global.newsletter"/>
     <Footer :data="global.footer" v-if="global && global.footer"/>
@@ -30,6 +30,7 @@ export default {
       })
       
       const global = data?.global
+      this.global = global;
       this.$store.commit('SET_GLOBAL_DATA', global)
     }
   },

@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-20 lg:pt-124">
+  <div class="py-20 lg:pt-124">
     <div class="container">
       <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
         <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4" v-if="data.subtitle">

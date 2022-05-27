@@ -22,7 +22,7 @@
     </section>
 
     <!-- Latest Product -->
-    <section class="latest py-14 md:py-124" v-if="homepage && homepage.latestProduct">
+    <section class="latest py-14 md:py-124" v-if="homepage && homepage.latestProduct" id="products">
       <div class="container">
         <div class="mb-72 text-center">
           <h2 class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1 mb-8 max-w-md mx-auto">
@@ -40,7 +40,7 @@
             <ProductCard :product="item" :large="false" />
           </div>
         </div>
-        <div>
+        <!-- <div>
           <nuxt-link :to="{ name: 'products' }"
             class="mt-12 flex items-center bg-blue-0b hover:bg-dark-06 transition-all w-auto max-w-232 justify-center text-button-17 text-white rounded-lg overflow-hidden mx-auto">
             Browse Products
@@ -53,7 +53,7 @@
               </svg>
             </span>
           </nuxt-link>
-        </div>
+        </div> -->
       </div>
     </section>
 

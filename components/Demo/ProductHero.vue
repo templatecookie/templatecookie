@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-600 sm:min-h-840 pb-20 pt-40 flex items-center bg-dark-06 bg-cover xl:bg-contain bg-right-bottom bg-no-repeat hero-demo" :style="{ backgroundImage: 'url(' + product.demoBanner.url + ')' }">
+  <div class="min-h-600 sm:min-h-840 pb-20 pt-40 flex items-center bg-dark-06 bg-cover xl:bg-contain bg-right-bottom bg-no-repeat hero-demo" :style="{ backgroundImage: 'url(' + getBanner() + ')' }">
     <div class="container">
       <div class="max-w-2xl sm:text-left text-center relative">
         <h1 class="tracking-01 font-semibold text-3xl md:text-4xl lg:text-title text-white mb-8">
@@ -38,7 +38,8 @@ export default {
   },
   methods: {
     getBanner(){
-      return this.product.demo_page_banner ? this.fixImageUrl(this.product.demo_page_banner) : this.bgImage
+      // return this.product.demo_page_banner ? this.fixImageUrl(this.product.demo_page_banner) : this.bgImage
+      return this.product.demoBanner && this.product.demoBanner.url ? this.product.demoBanner.url : this.bgImage;
     }
   }
 }

@@ -135,10 +135,12 @@ query product($slug: String!){
           description
           price
           purchaseLink
+          bgClass
           icon {
             url
           }
           features {
+            active
             feature
             id
           }

@@ -41,6 +41,7 @@ query {
       title
       description
       cssClass
+      bgClass
       action{
         label
         href
