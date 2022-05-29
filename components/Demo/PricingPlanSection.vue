@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-20 lg:pt-124 bg-white pricing-section pb-32" id="pricing" :class="data.info[0].bgClass">
+  <div class="pt-20 lg:pt-124 bg-white pricing-section pb-32" id="pricing">
     <div class="pricing-section-bg !bg-gray-100"></div>
     <div class="container">
       <div class="lg:w-3/5 m-auto text-center mb-10 lg:mb-16">
