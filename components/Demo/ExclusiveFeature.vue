@@ -22,22 +22,27 @@
             <h3 class="text-blue-0b text-base tracking-ls04 uppercase mb-4">
               {{ data.subtitle }}
             </h3>
-            <h2
-              class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01"
-            >
+            <h2  class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01" >
               {{ data.title }}
             </h2>
-            <p
-              class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light"
-            >
-              {{ data.description }}
-            </p>
-            <nuxt-link to="/" class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06">Button Label
-              <img
-                class="inline-block ml-2"
-                src="~/assets/images/svg/arrow-right.svg"
-                alt="brand-logo"/>
-            </nuxt-link>
+            <div class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light markdown-body" v-html="parseMarkdown(data.description)">
+            </div>
+            <div v-if="data.action && data.action[0]">
+              <a v-if="data.action[0].target" :href="data.action[0].href" target="_blank" class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06">
+                {{ data.action[0].label }}
+                <img
+                  class="inline-block ml-2"
+                  src="~/assets/images/svg/arrow-right.svg"
+                  alt="brand-logo"/>
+              </a>
+              <nuxt-link v-else :to="data.action[0].href" class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06">
+                {{ data.action[0].label }}
+                <img
+                  class="inline-block ml-2"
+                  src="~/assets/images/svg/arrow-right.svg"
+                  alt="brand-logo"/>
+              </nuxt-link>
+            </div>
           </div>
         </div>
       </div>
@@ -47,10 +52,11 @@
 
 <script>
 export default {
-  props: ['data']
+  props: ['data'],
 }
 </script>
 
-<style>
 
+<style lang="scss">
+  @import '../../assets/scss/markdown.scss';
 </style>

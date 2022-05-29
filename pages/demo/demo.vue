@@ -679,8 +679,8 @@
     </section>
     <!-- Pricing Section End -->
     <pricing-plan />
-    <exclusive-feature-left-image />
-    <exclusive-feature-right-image />
+    <!-- <exclusive-feature-left-image />
+    <exclusive-feature-right-image /> -->
 
     <div class="pt-28 lg:pt-40 bg-dark-06">
       <div class="container">
@@ -752,8 +752,8 @@
   } from "vue-awesome-swiper";
   import "swiper/css/swiper.css";
 import PricingPlan from "../../components/Demo/PricingPlanSection.vue";
-import ExclusiveFeatureLeftImage from "../../components/Demo/ExclusiveFeature.vue";
-import ExclusiveFeatureRightImage from "../../components/Demo/ExclusiveFeatureRightImage.vue";
+// import ExclusiveFeatureLeftImage from "../../components/Demo/ExclusiveFeature.vue";
+// import ExclusiveFeatureRightImage from "../../components/Demo/ExclusiveFeatureRightImage.vue";
 
   export default {
     layout: "empty",
@@ -761,8 +761,8 @@ import ExclusiveFeatureRightImage from "../../components/Demo/ExclusiveFeatureRi
     Swiper,
     SwiperSlide,
     PricingPlan,
-    ExclusiveFeatureLeftImage,
-    ExclusiveFeatureRightImage
+    // ExclusiveFeatureLeftImage,
+    // ExclusiveFeatureRightImage
 },
     name: "ProductDemo",
     head: {

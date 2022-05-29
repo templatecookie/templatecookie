@@ -1,7 +1,11 @@
-import Vue from 'vue'
+import Vue from 'vue';
+const marked = require('marked');
 
 let mixin = {
   methods: {
+    parseMarkdown(markdown){
+      return marked.parse(markdown);
+    },
     fixUrl(file){
       // return `http://localhost:1337${file}`
       return `https://api.templatecookie.com${file}`
