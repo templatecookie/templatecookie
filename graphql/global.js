@@ -15,13 +15,9 @@ query {
       title
     }
     notice {
-      noticeText
+      announcement
+      show_notice
       cssClass
-      link {
-        label
-        href
-        target
-      }
     }
     newsletter {
       newsletterTitle
