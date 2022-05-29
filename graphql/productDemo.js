@@ -135,7 +135,7 @@ query product($slug: String!){
           description
           price
           purchaseLink
-          bgClass
+          theme
           icon {
             url
           }

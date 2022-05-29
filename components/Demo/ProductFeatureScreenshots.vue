@@ -25,11 +25,11 @@
         </div>
         <div class="col-span-4">
           <div class="tabs">
-            <div v-for="(item, index) in data.features" :key="index" class="block mb-6 tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300" @click="activeItem = item.image.url">
-              <h3 class="text-dark-06 font-medium text-2xl mb-4 duration-300">
+            <div v-for="(item, index) in data.features" :key="index" class="block mb-6 tab-content-wrap cursor-pointer border border-gray-e6 rounded-2xl p-8 duration-300" :class="activeItem == item.image.url ? 'bg-blue-500' : '' " @click="activeItem = item.image.url">
+              <h3 class="font-medium text-2xl mb-4 duration-300" :class="activeItem == item.image.url ? 'text-white' : 'text-dark-06'">
                 {{ item.title }}
               </h3>
-              <p class="text-dark-42 test-base font-light duration-300">
+              <p class="test-base font-light duration-300" :class="activeItem == item.image.url ? 'text-white opacity-80' : 'text-dark-42'">
                 {{ item.description }}
               </p>
             </div>
