@@ -1,6 +1,10 @@
 <template>
   <div>
-    <div class="text-center py-3 text-base" :class="notice.cssClass" v-if="notice.showNotice" v-html="parseMarkdown(announcement)"></div>
+    <div class="hidden bg-red-300"></div>
+    <div class="hidden bg-green-300"></div>
+    <div class="hidden bg-blue-300 "></div>
+    <div class="hidden bg-purple-300 "></div>
+    <div class="text-center py-3 text-base" :class="notice.cssClass" v-if="notice && notice.showNotice" v-html="parseMarkdown(notice.announcement)"></div>
     <Header :data="global.logo" v-if="global && global.logo"/>
     <nuxt />
     <Newsletter :data="global.newsletter" v-if="global && global.newsletter"/>
