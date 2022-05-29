@@ -1,8 +1,6 @@
 <template>
   <div>
-    <div class="text-center py-3 text-base bg-red-300" v-if="notice">
-      {{ notice.noticeText }} 
-    </div>
+    <div class="text-center py-3 text-base" :class="notice.cssClass" v-if="notice.show_notice" v-html="parseMarkdown(announcement)"></div>
     <Header :data="global.logo" v-if="global && global.logo"/>
     <nuxt />
     <Newsletter :data="global.newsletter" v-if="global && global.newsletter"/>
