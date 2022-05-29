@@ -16,7 +16,7 @@ query {
     }
     notice {
       announcement
-      show_notice
+      showNotice
       cssClass
     }
     newsletter {
