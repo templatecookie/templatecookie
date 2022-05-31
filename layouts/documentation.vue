@@ -16,11 +16,6 @@ import DocsHeader from "../components/Header/DocsHeader.vue";
 
 export default { 
   components: { Footer, SocialLink, Newsletter, DocsHeader },
-  data () {
-    return {
-      global: null,
-    }
-  },
   methods: {
     async loadData(){
       const client = this.$nuxt.$apolloProvider.defaultClient;
@@ -30,7 +25,6 @@ export default {
       })
       
       const global = data?.global
-      this.global = global;
       this.$store.commit('SET_GLOBAL_DATA', global)
     }
   },
@@ -38,6 +32,11 @@ export default {
     if(!this.$store.getters.getGlobalData){
       this.loadData();
     }
+  },
+  computed: {
+    global() {
+      return this.$store.getters.getGlobalData
+    },
   }
 };
 </script>
