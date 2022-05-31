@@ -1,6 +1,6 @@
 <template>
   <div>
-    <DocsHeader :data="global"/>
+    <DocsHeader :data="global" v-if="global && global.length"/>
     <nuxt />
     <Newsletter :data="global.newsletter" v-if="global && global.newsletter"/>
     <Footer :data="global.footer" v-if="global && global.footer"/>
