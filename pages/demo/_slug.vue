@@ -2,6 +2,7 @@
   <div>
     <ProductDemoHeader :product="product" v-if="product" />
     <product-hero :product="product" v-if="product"  />
+    
     <!-- DisplayfeatureRecord
     ExclusivefeatureRecord
     FeaturescreenshotRecord
@@ -42,6 +43,9 @@
       <div v-if="section.__typename == 'FunFactRecord'">
         <product-fun-fact :data="section" />
       </div>
+      <div v-if="section.__typename == 'GroupfeaturesectionRecord'">
+        <group-feature-section :data="section" />
+      </div>
 
       <!-- <div v-if="section.__typename == 'HerosectionRecord'">
         <product-hero :product="product" />
@@ -70,6 +74,7 @@ import ProductSupport from '../../components/Demo/ProductSupport.vue';
 import CallToAction from '../../components/Demo/CallToAction.vue';
 import PricingPlan from '../../components/Demo/PricingPlanSection.vue';
 import ExclusiveFeature from "../../components/Demo/ExclusiveFeature.vue";
+import GroupFeatureSection from "../../components/Demo/GroupFeatureSection.vue";
 
 export default {
   layout: "empty",
@@ -126,8 +131,9 @@ export default {
     ProductSupport,
     CallToAction,
     PricingPlan,
-    ExclusiveFeature
-  },
+    ExclusiveFeature,
+    GroupFeatureSection
+},
 };
 </script>
 
