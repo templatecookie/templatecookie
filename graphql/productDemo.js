@@ -146,6 +146,16 @@ query product($slug: String!){
           }
         }
       }
+      ... on GroupfeaturesectionRecord {
+        id
+        items {
+          id
+          text 
+          icon {
+            url
+          }
+        }
+      }
       ... on HerosectionRecord {
         __typename
         id
