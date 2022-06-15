@@ -1054,23 +1054,4 @@ import PricingPlan from "../../components/Demo/PricingPlanSection.vue";
       }
     }
   }
-  .pricing-section {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    overflow: hidden;
-    &-bg{
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      width: 100%;
-      height: calc( 100% - 200px) ;
-      background-color: #F5F6F7;
-      transform: skewY(-11deg);
-      transform-origin: top left;
-      z-index: -1;
-    }
-  }
 </style>
