@@ -28,6 +28,15 @@ export default {
     link: [{ rel: "icon", type: "image/png", href: "/icon.png" }],
   },
 
+
+  pwa: {
+    manifest: {
+      name: 'Templatecookie.com',
+      lang: 'en',
+      useWebmanifestExtension: false
+    }
+  },
+
   loading: {
     color: '#0B63E5',
     height: '5px'
@@ -53,7 +62,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/pwa'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
