@@ -6,7 +6,7 @@
       <div class="w-3/12 fun-column" v-for="(item, index) in data.items" :key="index">
         <div class="flex flex-col py-8 items-center fun-wrap border-r border-b border-gray-e6 ">
           <div class="w-8 h-8 mb-4 text-blue-0b">
-            <img :src="item.icon.url" alt="">
+            <nuxt-img :src="item.icon.url" alt="" />
           </div>
           <h3 class="text-dark-06 text-base"> {{ item.text }} </h3>
         </div>

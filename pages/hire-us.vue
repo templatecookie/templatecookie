@@ -22,7 +22,7 @@
             class="col-span-full ex-small:col-span-2 ex-small:lg:col-span-1">
             <div class="flex flex-col ex-small:flex-row items-center text-center ex-small:text-left">
               <div class="flex-shrink-0 mb-3 ex-small:mr-5">
-                <img :src="item.icon" alt="icon" />
+                <nuxt-img :src="item.icon" alt="icon" />
               </div>
               <div>
                 <h4 class="text-dark-06 text-2xl font-medium tracking-ls03 mb-2">

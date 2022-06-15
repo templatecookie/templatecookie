@@ -5,7 +5,7 @@
       <div class="flex items-center justify-between">
         <div>
           <nuxt-link to="/">
-            <img :src="data.url" alt="Templatecookie" />
+            <nuxt-img :src="data.url" alt="Templatecookie" />
           </nuxt-link>
         </div>
         <!-- menu  -->

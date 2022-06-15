@@ -349,7 +349,7 @@
               class="col-span-12 xl:col-span-3 lg:col-span-6 md:col-span-6">
               <div class="thumb-link">
                 <a :href="item.url" target="_blank">
-                  <img :src="item.img" alt="product-img"
+                  <nuxt-img :src="item.img" alt="product-img"
                     class="w-full h-250 object-cover overflow-hidden shadow-bs12" />
                   <h3
                     class="text-white text-base font-medium absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-300 flex w-full justify-center opacity-0">

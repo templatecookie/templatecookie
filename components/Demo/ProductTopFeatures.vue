@@ -14,7 +14,7 @@
           class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6">
           <div class="bg-white rounded-lg p-8 business-card duration-300 hover:shadow-bs8">
             <div class="icon w-76 h-76 bg-gray-f0 rounded-lg flex items-center justify-center mb-7 duration-300 ">
-              <img :src="item.image.url" class="w-7 h-7 object-cover" alt="" />
+              <nuxt-img :src="item.image.url" class="w-7 h-7 object-cover" alt="" />
             </div>
             <div>
               <h3 class="text-dark-06 text-xl mb-3">{{ item.title }}</h3>

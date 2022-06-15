@@ -60,7 +60,8 @@ export default {
   modules: [
     '@nuxtjs/apollo',
     '@nuxt/content',
-    '@nuxtjs/gtm'
+    '@nuxtjs/gtm',
+    '@nuxt/image'
   ],
   
   gtm: {

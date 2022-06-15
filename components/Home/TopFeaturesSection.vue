@@ -15,7 +15,7 @@
         <div v-for="(item, itemIndex) in section.features" :key="itemIndex">
           <div class="bg-white rounded-lg p-8 business-card duration-300 hover:shadow-bs8 text-center">
             <div v-if="item.image" class="icon w-76 h-76 bg-gray-f0 rounded-lg flex items-center justify-center mb-7 duration-300 m-auto">
-              <img :src="item.image.url" alt="" class="max-w-[36px] max-h-[36px]">
+              <nuxt-img :src="item.image.url" alt="" class="max-w-[36px] max-h-[36px]" />
             </div>
             <div>
               <h3 class="text-dark-06 text-xl mb-3">{{ item.title }}</h3>

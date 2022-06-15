@@ -5,7 +5,7 @@
         <div v-for="(item, index) in global.defaultFeatures" :key="index" class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 purchase-card-wrap h-full">
           <div :class="item.bgClass" class="purchase-card p-10 text-center rounded-2xl h-full">
             <div :class="item.cssClass" class="icon w-84 h-84 m-auto rounded-full flex items-center justify-center mb-7">
-              <img :src="item.icon.url" alt="icon" />
+              <nuxt-img :src="item.icon.url" alt="icon" />
             </div>
             <div>
               <h3 class="text-dark-06 text-lg mb-3 font-medium"> {{ item.title }} </h3>

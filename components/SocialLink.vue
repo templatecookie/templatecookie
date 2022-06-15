@@ -4,7 +4,7 @@
       <li v-for="item in social" :key="item.name">
         <a :href="item.name"
           class="flex items-center justify-center p-3 duration-300 rounded-md bg-blue-18 group">
-          <img :src="item.icon.url" />
+          <nuxt-img :src="item.icon.url" />
         </a>
       </li>
     </ul>

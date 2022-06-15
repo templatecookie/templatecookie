@@ -14,7 +14,7 @@
             class="flex flex-col sm:flex-row items-center justify-center sm:justify-start sm:space-x-3 p-6 rounded-xl overflow-hidden bg-primary-100" :class="item.cssClass">
             <div>
               <span class="inline-block">
-                <img :src="item.icon.url" alt="" class="max-w-[56px] max-h-[56px]" />
+                <nuxt-img :src="item.icon.url" alt="" class="max-w-[56px] max-h-[56px]" />
               </span>
             </div>
             <div class="text-center sm:text-left">
@@ -40,7 +40,7 @@
           <div class="text-center sm:text-left" v-if="item.image">
 
             <span class="inline-block">
-              <img :src="item.image.url" alt="" />
+              <nuxt-img :src="item.image.url" alt="" />
             </span>
             <h2 class="text-xl font-medium text-dark-06 mb-2 mt-4">
               <!-- <ICountUp :delay="item.delay" :endVal="item.title" :options="options" /> -->
