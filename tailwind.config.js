@@ -27,7 +27,7 @@ module.exports = {
         "pink-f2": "#F249C8",
         "purple-e3": "#E3D6FF",
         "green-of": "#0F9918",
-        "green-cf": "#CFEBD",
+        "green-cf": "#CFEBDE",
         "orange-ff": "#FFF4DE",
         "pink-f1": "#F1EBFF",
         "green-e7": "#E7F5E8",

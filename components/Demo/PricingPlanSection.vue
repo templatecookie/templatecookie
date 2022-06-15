@@ -1,6 +1,6 @@
 <template>
   <div class="pt-20 lg:pt-124 bg-white pricing-section pb-32" id="pricing">
-    <div class="pricing-section-bg !bg-gray-100"></div>
+    <div class="pricing-section-bg" :class="data.info[0].bgClass"></div>
     <div class="container">
       <div class="lg:w-3/5 m-auto text-center mb-10 lg:mb-16">
         <h2 class="text-6xl font-semibold mb-8">{{ data.info[0].title }}</h2>
@@ -11,7 +11,7 @@
           <div class="border-b-[1px] p-8 border-t-4 border-b-gray-200"  :class="item.theme == 'pink' ? 'border-pink-600' : item.theme == 'blue' ? 'border-blue-600' : 'border-green-600'">
             <div class="mb-8 price flex justify-between items-center">
               <div class="w-20 h-20 rounded-lg flex justify-center items-center" :class="item.theme == 'pink' ? 'bg-pink-200 ' : item.theme == 'blue' ? 'bg-blue-200' : 'bg-green-200'">
-                <img :src="item.icon.url" class="w-10 h-auto" alt="">
+                <nuxt-img :src="item.icon.url" class="w-10 h-auto" alt="" />
               </div>
               <h3 class="text-5xl font-semibold text-pink-600" :class="item.theme == 'pink' ? 'text-pink-600' : item.theme == 'blue' ? 'text-blue-600' : 'text-green-600'"> 
               ${{ item.price }} 

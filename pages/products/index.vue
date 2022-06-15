@@ -31,7 +31,7 @@
                 <li v-for="(item, index) in technologies" :key="index" @click="setTechnology(item.attributes.slug)">
                   <div class="flex flex-col items-center feature-box group" :class="activeTechnology == item.attributes.slug ? 'is-active' : ''">
                     <span class="feature-box__icon inline-block mb-3">
-                      <img :src="fixImageUrl(item.attributes.icon)" alt="version" />
+                      <nuxt-img :src="fixImageUrl(item.attributes.icon)" alt="version" />
                     </span>
                     <h6 class="feature-box__title text-body-16 capitalize text-gray-61 text-gray-6a group-hover:text-dark-06">
                       {{ item.attributes.name }}

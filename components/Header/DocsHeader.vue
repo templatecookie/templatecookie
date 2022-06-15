@@ -5,7 +5,7 @@
       
         <div v-if="data && data.logo">
           <nuxt-link to="/docs">
-            <img :src="data.logo.url" alt="Templatecookie.com" />
+            <nuxt-img :src="data.logo.url" alt="Templatecookie.com" />
           </nuxt-link>
         </div>
         <!-- menu  -->

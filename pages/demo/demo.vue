@@ -349,7 +349,7 @@
               class="col-span-12 xl:col-span-3 lg:col-span-6 md:col-span-6">
               <div class="thumb-link">
                 <a :href="item.url" target="_blank">
-                  <img :src="item.img" alt="product-img"
+                  <nuxt-img :src="item.img" alt="product-img"
                     class="w-full h-250 object-cover overflow-hidden shadow-bs12" />
                   <h3
                     class="text-white text-base font-medium absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-300 flex w-full justify-center opacity-0">
@@ -1052,25 +1052,6 @@ import PricingPlan from "../../components/Demo/PricingPlanSection.vue";
       p {
         color: white;
       }
-    }
-  }
-  .pricing-section {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    overflow: hidden;
-    &-bg{
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      width: 100%;
-      height: calc( 100% - 200px) ;
-      background-color: #F5F6F7;
-      transform: skewY(-11deg);
-      transform-origin: top left;
-      z-index: -1;
     }
   }
 </style>
