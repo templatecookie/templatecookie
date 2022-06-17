@@ -19,29 +19,31 @@ Jobpilot is a modern and complete Job Portal system for your organization. With 
 
 - Laravel 8 (Latest Version)
 - Templating system based on Bootstrap 4
+- Beautiful User Interface
+- Lightweight Speed
 - Light & Dark Theme Available
 - Users & Roles Management
-- Beautiful User Interface
-- Chat Application
-- Ads Management
+- Employer and Candidate Management
+- Job Management
+- Job Shortlisted Manage
+- Job Featured and Highlight
+- Job Apply and Favorite
 - Blog Management
-- Ads Share on Social Media
+- Job Share on Social Media
 - Blog Post Share on Social Media
-- User Activity Log
-- Favourite Ads
-- Featured Ads
 - Pricing Plan
 - Social Login
-- Email Subcription
+- Email Subscription
 - Email Notification
-- Multiple Homepage Skins
 - Multiple Admin Layout
+- Multiple Countries
 - Multiple Language
+- Multiple Currency
 - Multiple Payment Solutions
-- Specific Module Enable/Disable
+- Theme Customization
+- Website CMS
 - Report & Chart
 - SEO friendly
-- Premium Membership Badge
 - Advanced Search
 - Application Setting Panel
 - Powerful Admin Panel
