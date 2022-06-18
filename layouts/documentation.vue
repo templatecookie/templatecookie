@@ -1,6 +1,6 @@
 <template>
   <div>
-    <DocsHeader :data="global" v-if="global && global.length"/>
+    <DocsHeader :data="global" v-if="global"/>
     <nuxt />
     <Newsletter :data="global.newsletter" v-if="global && global.newsletter"/>
     <Footer :data="global.footer" v-if="global && global.footer"/>
@@ -29,14 +29,14 @@ export default {
     }
   },
   mounted (){
-    this.loadData();
-    // if(!this.$store.getters.getGlobalData){
-    // }
+    if(!this.$store.getters.getGlobalData){
+      this.loadData();
+    }
   },
   computed: {
     global() {
       return this.$store.getters.getGlobalData
-    },
-  }
+    }
+  },
 };
 </script>
