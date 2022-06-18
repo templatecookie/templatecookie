@@ -29,13 +29,13 @@ export default {
   },
 
 
-  pwa: {
-    manifest: {
-      name: 'Templatecookie.com',
-      lang: 'en',
-      useWebmanifestExtension: false
-    }
-  },
+  // pwa: {
+  //   manifest: {
+  //     name: 'Templatecookie.com',
+  //     lang: 'en',
+  //     useWebmanifestExtension: false
+  //   }
+  // },
 
   loading: {
     color: '#0B63E5',
@@ -63,7 +63,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
     '@nuxtjs/google-fonts',
-    '@nuxtjs/pwa'
+    // '@nuxtjs/pwa'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
