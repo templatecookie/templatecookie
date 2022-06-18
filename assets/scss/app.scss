@@ -634,3 +634,21 @@ html {
     z-index: -1;
   }
 }
+
+
+// slider Part
+// .swiper-button-next.swiper-button-disabled,
+// .swiper-button-prev.swiper-button-disabled {
+//   display: none !important;
+// }
+
+.swiper-button-next, .swiper-button-prev {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+    
+.swiper-button-disabled {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
