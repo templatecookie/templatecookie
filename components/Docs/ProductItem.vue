@@ -1,7 +1,7 @@
 <template>
   <div class="relative overflow-hidden p-6 border border-gray-e6 rounded-2xl product-card w-full product-card--sm">
     <nuxt-link :to="product.dir" class="product-card__img relative inline-block overflow-hidden rounded-lg  w-full product-card__img-wrapper mb-4">
-      <nuxt-img :src="resolveImage()" :alt="product.title" class="w-full h-full object-cover overflow-hidden" />
+      <img :src="resolveImage()" :alt="product.title" class="w-full h-full object-cover overflow-hidden" />
     </nuxt-link>
     <div class="product-card__text">
       <h2 class="text-dark-06 mb-3 font-normal text-body-18">
@@ -19,9 +19,8 @@ export default {
   props: ['product'],
   methods: {
     resolveImage() {
-      const path = this.product.dir.replace('/docs/', '');
       try {
-        return `/docs/${path}/preview.png`
+        return `${this.product.dir}/preview.png`
       } catch (error) {
         return null;
       }
