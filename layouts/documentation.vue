@@ -29,9 +29,9 @@ export default {
     }
   },
   mounted (){
-    if(!this.$store.getters.getGlobalData){
-      this.loadData();
-    }
+    this.loadData();
+    // if(!this.$store.getters.getGlobalData){
+    // }
   },
   computed: {
     global() {
