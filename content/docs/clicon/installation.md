@@ -12,7 +12,7 @@ category: "Getting Started"
 Before you install **Clicon** make sure your server meets the following requirements:
 
 - Server Type: Linux (Shared / VPS / Dedicated)
-- PHP >= 7.3
+- PHP = 7.3/7.4
 - BCMath PHP Extension
 - Ctype PHP Extension
 - Fileinfo PHP Extension
