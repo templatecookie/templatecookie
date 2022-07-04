@@ -35,8 +35,10 @@
 <script>
 import bannerImg from "~/assets/images/all-img/img-five.png";
 import groupBy from 'lodash.groupby'
+import DocCategoryCardItem from '../../components/Docs/DocCategoryCardItem.vue';
 
 export default {
+  components: { DocCategoryCardItem },
   layout: 'documentation',
   head() {
     const title = this.product.title + ' Documentation';
@@ -89,7 +91,7 @@ export default {
     }
   },
   created(){
-    this.redirectToDocs();
+    // this.redirectToDocs();
   },
   
   watch:{

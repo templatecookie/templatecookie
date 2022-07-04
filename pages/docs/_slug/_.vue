@@ -1,9 +1,8 @@
 <template>
   <div class="px-8 pb-0">
     <nuxt-content class="markdown-body" :document="page" />
-
     <div class="pt-8 w-full text-left text-gray-500">
-        <i> Updated at {{ formatDate }}</i>
+      <i> Updated at {{ formatDate }}</i>
     </div>
   </div>
 </template>
@@ -30,12 +29,11 @@ export default {
       ]
     }
   },
-  async asyncData ({ $content, route }) {
-    // const url = params.chapter ? `docs/${params.slug}/${params.chapter}` : `docs/${params.slug}`;
+  async asyncData ({ $content, route}) {
+    console.log(route.path);
     const page = await $content(route.path)
     .sortBy('position', 'asc')
     .fetch()
-    console.log(page.updatedAt);
     return {
       page
     }
