@@ -18,7 +18,7 @@
               <nuxt-link :to="{ name: 'docs'}"> Documentation </nuxt-link>
             </li>
             <li class="nav-menu__item">
-              <a href="https://support.templatecookie.com" target="_blank"> Support </a>
+              <a href="mailto:templatecookie@gmail.com" target="_blank"> Support </a>
             </li>
             <li >
               <a href="https://codecanyon.net/user/templatecookie" target="_blank" class="text-white hover:text-white text-sm capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded inline-block px-5 py-4">
