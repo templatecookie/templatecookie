@@ -1,7 +1,7 @@
 <template>
   <div class="py-20 lg:pt-124" id="screenshot-gallery">
     <div class="container">
-      <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16">
+      <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16" v-if="data.info && data.info[0]">
         <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
           {{ data.info[0].title }}
         </h2>
