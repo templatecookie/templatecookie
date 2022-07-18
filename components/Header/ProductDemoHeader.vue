@@ -39,9 +39,6 @@
               <nuxt-link to="#pages">Pages</nuxt-link>
             </li>
             <li class="nav-menu__item">
-              <nuxt-link to="#pricing">Pricing</nuxt-link>
-            </li>
-            <li class="nav-menu__item">
               <nuxt-link to="#support">Support</nuxt-link>
             </li>
             <li class="flex items-center space-x-3">

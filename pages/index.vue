@@ -5,7 +5,7 @@
     <section class="featured pt-14 md:pt-124" v-if="homepage && homepage.featuredSection[0]">
       <div class="container">
         <div class="mb-72 text-center">
-          <h2 class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1 mb-8 max-w-md mx-auto">
+          <h2 class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1 mb-8 max-w-lg mx-auto">
             {{ homepage.featuredSection[0].title }}
           </h2>
           <p class="text-body-16 font-light max-w-lg mx-auto text-dark-06" v-if="homepage.featuredSection[0].description">
@@ -25,7 +25,7 @@
     <section class="latest py-14 md:py-124" v-if="homepage && homepage.latestProduct" id="products">
       <div class="container">
         <div class="mb-72 text-center">
-          <h2 class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1 mb-8 max-w-md mx-auto">
+          <h2 class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1 mb-8 max-w-lg mx-auto">
             {{ homepage.latestProduct[0].title }}
           </h2>
           <p class="text-body-16 font-light max-w-lg mx-auto text-dark-06" v-if="homepage.latestProduct[0].description">

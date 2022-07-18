@@ -2,7 +2,7 @@
   <div class="py-20 lg:pt-124" id="top-features">
     <div class="container">
       <div class="mb-72 text-center" v-if="data.info && data.info[0]">
-        <h2 class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1 mb-8 max-w-md mx-auto">
+        <h2 class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1 mb-8 max-w-lg mx-auto">
           {{ data.info[0].title }}
         </h2>
         <p class="text-body-16 font-light max-w-lg mx-auto text-dark-06">
