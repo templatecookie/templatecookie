@@ -1,23 +1,28 @@
 <template>
-  <div class="pt-28 lg:pt-40 bg-dark-06" :class="product.cssClass">
+  <div class="pt-28 lg:pt-40 bg-dark-06" :class="section.cssClass">
     <div class="container">
       <div class="text-center mb-40">
         <h2 class="text-white text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
-          {{ product.title }}
+          {{ section.title }}
         </h2>
         <p class="text-white text-base sm:text-lg mb-6 lg:mb-12 font-light">
-          {{ product.description }}
+          {{ section.description }}
         </p>
         <a href="#pricing"
           class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-black">
           Purchase Now
           <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" />
         </a>
+        <a :href="product.previewUrl" v-if="product.previewUrl"
+          class="inline-block bg-green-500 rounded-7 py-4 ml-2 px-9 text-body-17 text-white duration-300 hover:bg-black">
+          View Demo
+          <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" />
+        </a>
       </div>
     </div>
     <div>
       <swiper class="swiper" :options="swiperOptionOne">
-        <swiper-slide class="slider-full" v-for="(item, index) in product.screenshots" :key="index">
+        <swiper-slide class="slider-full" v-for="(item, index) in section.screenshots" :key="index">
           <img class="w-full h-60 object-cover border border-white p-3 pb-0 border-b-0" :src="item.url" alt="" />
         </swiper-slide>
       </swiper>
@@ -29,7 +34,7 @@
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/css/swiper.css";
 export default {
-  props: ['product'],
+  props: ['section', 'product'],
   components: {
     Swiper,
     SwiperSlide,

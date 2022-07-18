@@ -9,7 +9,7 @@
           {{ data.info[0].description }}
         </p>
       </div>
-      <div class="relative">
+      <div class="relative" v-if="data.screenshots && data.screenshots.length > 1">
         <swiper class="swiper shadow-bs012 rounded-xl" :options="swiperOptionTwo">
           <swiper-slide v-for="(item, index) in data.screenshots" :key="index">
             <img class="w-full h-full rounded-xl" :src="item.url" alt="" />
@@ -32,6 +32,9 @@
             </span>
           </div>
         </div>
+      </div>
+      <div class="relative" v-if="data.screenshots && data.screenshots.length === 1">
+        <img class="w-full h-full rounded-xl" :src="data.screenshots[0].url" alt="" />
       </div>
     </div>
   </div>

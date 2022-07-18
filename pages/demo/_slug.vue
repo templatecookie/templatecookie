@@ -2,7 +2,7 @@
   <div>
     <ProductDemoHeader :product="product" v-if="product" />
     <product-hero :product="product" v-if="product"  />
-    
+
     <!-- DisplayfeatureRecord
     ExclusivefeatureRecord
     FeaturescreenshotRecord
@@ -29,7 +29,7 @@
        <ProductTopFeatures :data="section" />
       </div>
       <div v-if="section.__typename == 'ProductctaRecord'">
-        <call-to-action :product="section" />
+        <call-to-action :section="section" :product="product" />
       </div>
       <div v-if="section.__typename == 'ProductPageRecord'">
         <product-pages :data="section" />
