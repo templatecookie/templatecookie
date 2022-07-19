@@ -23,9 +23,7 @@
               </li>
             </ul>
           </div>
-          <div class="w-9/12 h-full">
-            <NuxtChild :productName="product.title + ' Documentation'" :categories="categories"/>
-          </div>
+          <NuxtChild :productName="product.title + ' Documentation'" :categories="categories"/>
         </div>
       </div>
     </section>

@@ -6,7 +6,7 @@
     <div class="px-5 py-3">
       <ul>
         <li v-for="(item, index) in items" :key="index" class="mb-2">
-          <a href="#" class="text-gray-900 font-light">{{ item.title }}</a>
+          <nuxt-link :to="item.path" class="text-gray-900 font-light">{{ item.title }}</nuxt-link>
         </li>
       </ul>
     </div>

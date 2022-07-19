@@ -67,7 +67,7 @@ click on "Select File" and choose app.zip file.
 
 ![](/docs/clicon/install/s3.png)
 
-#### Step 4:
+### Step 4:
 
 Wait for the completation and close the tab once it is finished.
 
@@ -75,7 +75,7 @@ Wait for the completation and close the tab once it is finished.
 
 ![](/docs/clicon/install/s4.png)
 
-#### Step 5:
+### Step 5:
 
 Reload the file manager and extract the file following the screenshot.
 
@@ -83,7 +83,7 @@ Reload the file manager and extract the file following the screenshot.
 
 ![](/docs/clicon/install/s5.png) ![](/docs/clicon/install/s5_2.png)
 
-#### Step 6:
+### Step 6:
 
 We need to setup 775 permission on these 3 folders. Let's do this
 
@@ -93,7 +93,7 @@ We need to setup 775 permission on these 3 folders. Let's do this
 
 ---
 
-#### Step 7:
+### Step 7:
 
 Select the storage folder and follow the screenshot.
 
@@ -101,7 +101,7 @@ Select the storage folder and follow the screenshot.
 
 ![](/docs/clicon/install/s7.png)
 
-#### Step 8:
+### Step 8:
 
 Go to bootstrap folder & select cache folder and folow the same process.
 
@@ -109,7 +109,7 @@ Go to bootstrap folder & select cache folder and folow the same process.
 
 ![](/docs/clicon/install/s8.png)
 
-#### Step 9:
+### Step 9:
 
 Got to the storage folder and follow the same process as below.
 
@@ -117,7 +117,7 @@ Got to the storage folder and follow the same process as below.
 
 ![](/docs/clicon/install/s9.png)
 
-#### Step 10:
+### Step 10:
 
 We need a database for the next step. Let's create a database by clicking on "MYSQL Database Wizard" form shared hosting.
 
@@ -125,7 +125,7 @@ We need a database for the next step. Let's create a database by clicking on "MY
 
 ![](/docs/clicon/install/s11.png)
 
-#### Step 11:
+### Step 11:
 
 Enter the database and click `Next Step`.
 
@@ -133,7 +133,7 @@ Enter the database and click `Next Step`.
 
 ![](/docs/clicon/install/s12.png)
 
-#### Step 12:
+### Step 12:
 
 Enter the database user name & password. Click on `Create User`.
 
@@ -141,7 +141,7 @@ Enter the database user name & password. Click on `Create User`.
 
 ![](/docs/clicon/install/s13.png)
 
-#### Step 13:
+### Step 13:
 
 Save database name and database user name. Select All Permission and Click on `Next Step`.
 
@@ -149,7 +149,7 @@ Save database name and database user name. Select All Permission and Click on `N
 
 ![](/docs/clicon/install/s14.png)
 
-#### Step 14:
+### Step 14:
 
 We are going to import demo database. From cpanel open `phpmyadmin` app. Then select your database and click on import.
 
@@ -157,7 +157,7 @@ We are going to import demo database. From cpanel open `phpmyadmin` app. Then se
 
 ![](/docs/clicon/install/s18.png)
 
-#### Step 15:
+### Step 15:
 
 Choose the backup database from your computer and click on "Go" Button.
 
@@ -165,7 +165,7 @@ Choose the backup database from your computer and click on "Go" Button.
 
 ![](/docs/clicon/install/s19.png)
 
-#### Step 16:
+### Step 16:
 
 Now we need to setup database credentails in our app config. Go to your application folder and follow the screenshot.
 
@@ -173,7 +173,7 @@ Now we need to setup database credentails in our app config. Go to your applicat
 
 ![](/docs/clicon/install/s15.png) ![](/docs/clicon/install/s16.png)
 
-#### Step 17:
+### Step 17:
 
 Carefully, Set necessery details marked in the screenshot. .
 
@@ -183,7 +183,7 @@ Carefully, Set necessery details marked in the screenshot. .
 
 ![](/docs/clicon/install/s17.png) ![](/docs/clicon/install/s20.png)
 
-#### Step 18:
+### Step 18:
 
 Congratulations 🎉🎉🎉 You have installed the application successfully. Go to your domain and view the app.
 
