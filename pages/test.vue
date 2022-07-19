@@ -25,7 +25,7 @@
             <div class="w-40 h-28 flex justify-center items-center bg-yellow-ff">yellow-ff</div>
             <div class="w-40 h-28 flex justify-center items-center bg-pink-fe">pink-fe</div>
             <div class="w-40 h-28 flex justify-center items-center bg-gray-cd">gray-cd</div>
-            <div class="w-40 h-28 flex justify-center items-center bg-blue-18">blue-18":</div>
+            <div class="w-40 h-28 flex justify-center items-center bg-blue-18">blue-18</div>
         </div>
     </div>
   </div>
