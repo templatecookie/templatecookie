@@ -151,6 +151,7 @@ query product($slug: String!){
       }
       ... on GroupfeaturesectionRecord {
         id
+        cssClass
         items {
           id
           text 

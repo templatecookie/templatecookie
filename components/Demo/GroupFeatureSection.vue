@@ -1,5 +1,5 @@
 <template>
-<section class="bg-gray-f5 py-16" :class="data.cssClass">
+<section class="py-16" :class="data.cssClass ? data.cssClass : 'bg-gray-f5 '">
   <div class="container">
     <!-- Project services -->
     <div class="flex flex-wrap">
