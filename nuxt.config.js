@@ -11,19 +11,13 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Homepage | Templatecookie',
-    htmlAttrs: {
-      lang: "en",
-    },
+    title: 'Premium PHP Scripts & HTML Templates | Templatecookie.com',
+    htmlAttrs: { lang: "en" },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'my website description'
-      },
-      { name: "format-detection", content: "telephone=no" },
+      { hid: 'description', name: 'description', content: 'A team of talented developers working on building quality UI,HTML templates and PHP scripts! Reuseable Website Templates & PHP Scripts for your next project!' },
+      { hid: 'og:image', property: 'og:image', content: "/social-meta.png" }
     ],
     link: [{ rel: "icon", type: "image/png", href: "/icon.png" }],
   },
@@ -73,7 +67,7 @@ export default {
     '@nuxtjs/gtm',
     '@nuxt/image'
   ],
-  
+
   gtm: {
     id: 'GTM-NZ5TXGP'
   },

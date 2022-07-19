@@ -11,6 +11,9 @@ query product($slug: String!){
     banner {
       url
     }
+    category {
+      name
+    }
     demoBanner {
       url
     }

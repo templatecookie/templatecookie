@@ -81,16 +81,16 @@ export default {
   name: "ProductDemo",
   head() {
     const product = this.product
-    return { 
-      title: product.name + "| Templatecookie.com",
+    return {
+      title: `${product.name} - ${product.category.name}`,
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'my website description'
-        }
+        { hid: 'description', name: 'description', content: product.description },
+        { hid: 'og:title', property: 'og:title', name: 'og:title', content: product.name },
+        { hid: 'og:description', name: 'og:description', name: 'og:description', content: product.description },
+        { hid: 'og:type', property: 'og:type', name: 'og:type', content: "product" },
+        { hid: 'og:image', property: 'og:image', name: 'og:image', content: product.banner.url },
       ],
     }
   },
@@ -109,7 +109,7 @@ export default {
       const global = await client.query({
         query: GLOBAL_QUERY,
       })
-        
+
       const globalData = global.data?.global?.data?.attributes
       store.commit('SET_GLOBAL_DATA', globalData)
     }

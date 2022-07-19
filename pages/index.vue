@@ -91,10 +91,10 @@ export default {
     const { data } = await client.query({
       query: HOMEPAGE_QUERY,
     })
-    
+
     const homepage = data.homepage;
     const latestProducts = data.allProducts;
-    
+
     return { homepage, latestProducts }
   },
   data() {
