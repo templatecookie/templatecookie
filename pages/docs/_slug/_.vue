@@ -14,8 +14,8 @@
           </h2>
           <nav class="mt-4">
             <ul>
-              <li class="toc-list" :class="{ 'pl-4': link.depth === 3}" v-for="link of page.toc" :key="link.id">
-                <a role="button" class="transition-colors duration-75 mb-2 block text-gray-700 font-light text-sm" :href="`#${link.id}`">{{ link.text }}</a>
+              <li @click="tableOfContentsHeadingClick(link)" class="toc-list" :class="{ 'pl-4': link.depth === 3}" v-for="link of page.toc" :key="link.id">
+                <a role="button" class="transition-colors duration-75 mb-2 block text-gray-700 font-light text-sm"  :class="{ 'text-blue-500 hover:text-blue-600': link.id === currentlyActiveToc, 'text-black hover:gray-900': link.id !== currentlyActiveToc }" :href="`#${link.id}`">{{ link.text }}</a>
               </li>
             </ul>
           </nav>
@@ -60,6 +60,41 @@ export default {
     formatDate(){
       return this.page ? dayjs(this.page.updatedAt).format('dddd, MMMM DD YYYY') : '';
     }
+  },
+  data() {
+    return {
+      currentlyActiveToc: "",
+      observer: null,
+      observerOptions: {
+        root: this.$refs.nuxtContent,
+        threshold: 0
+      }
+    };
+  },
+  methods: {
+    tableOfContentsHeadingClick(link) {
+      this.currentlyActiveToc = link.id;
+    },
+  },
+  mounted() {
+    this.observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const id = entry.target.getAttribute("id");
+        if (entry.isIntersecting) {
+          this.currentlyActiveToc = id;
+        }
+      });
+    }, this.observerOptions);
+
+    // Track all sections that have an `id` applied
+    document
+      .querySelectorAll(".nuxt-content h2[id], .nuxt-content h3[id]")
+      .forEach(section => {
+        this.observer.observe(section);
+      });
+  },
+  beforeDestroy() {
+    this.observer.disconnect();
   }
 }
 </script>
