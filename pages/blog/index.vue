@@ -3,7 +3,10 @@
     <div class="bg-blue-600">
       <div class="container markdown-body">
         <div class="py-12">
-          <h1 class="text-white">Refund Policy</h1>
+          <h1 class="!text-white">Templatecookie Blog</h1>
+          <div class="text-gray-200 font-light">
+            <nuxt-link to="/" class="!text-gray-200 !hover:text-gray-600">Home</nuxt-link> / <a class="!text-gray-200" href="javascript:void(0)">Blog</a>
+          </div>
         </div>
       </div>
     </div>
@@ -11,7 +14,7 @@
       <div class="container">
         <div class="py-24">
           <h3 class="text-4xl font-bold mb-8">Latest Posts</h3>
-          <div class="grid grid-cols-3 gap-8">
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div class="shadow-lg rounded-lg overflow-hidden" v-for="(d, i) in 8" :key="i">
               <img class="w-full h-52 object-cover" src="../../static/docs/adlisting/preview.png" alt="">
               <div class="p-4 px-6">

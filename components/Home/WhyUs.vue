@@ -33,17 +33,14 @@
       </div>
     </div>
     <div class="container mt-8">
-    <!-- features card  -->
-      <div class="flex align-start gap-6">
+      <div class="flex align-start gap-6 flex-wrap lg:flex-nowrap">
         <div v-for="(item, itemIndex) in section.feature" :key="itemIndex"
-          class="flex flex-col sm:flex-row items-center justify-center sm:justify-start sm:space-x-3 p-6 rounded-xl overflow-hidden mb-4" :class="item.cssClass">
+          class="flex flex-col sm:w-64 flex-grow sm:flex-row items-center justify-center sm:justify-start sm:space-x-3 p-6 rounded-xl overflow-hidden mb-4" :class="item.cssClass">
           <div class="text-center sm:text-left" v-if="item.image">
-
             <span class="inline-block">
               <nuxt-img :src="item.image.url" alt="" />
             </span>
             <h2 class="text-xl font-medium text-dark-06 mb-2 mt-4">
-              <!-- <ICountUp :delay="item.delay" :endVal="item.title" :options="options" /> -->
               {{ item.title }}
             </h2>
             <p class="text-body-14 text-dark-42 leading-normal font-light">

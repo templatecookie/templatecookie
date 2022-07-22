@@ -3,7 +3,12 @@
     <div class="bg-blue-600">
       <div class="container markdown-body">
         <div class="py-12">
-          <h1 class="text-white">Best eCommerce Script on Codecanyon</h1>
+        </div>
+        <div class="py-12">
+          <h1 class="!text-white">Best eCommerce Script on Codecanyon</h1>
+          <div class="text-gray-200 font-light">
+            <nuxt-link to="/" class="!text-gray-200 hover:text-gray-600">Home</nuxt-link> / <nuxt-link class="!text-gray-200 hover:text-gray-600" to="/blog">Blog</nuxt-link> / <a href="javascript:void(0)" class="!text-gray-300">Best eCommerce Script on Codecanyon</a>
+          </div>
         </div>
       </div>
     </div>
