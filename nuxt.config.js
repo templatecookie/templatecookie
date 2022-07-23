@@ -65,7 +65,8 @@ export default {
     '@nuxtjs/apollo',
     '@nuxt/content',
     '@nuxtjs/gtm',
-    '@nuxt/image'
+    '@nuxt/image',
+    '@nuxtjs/sitemap'
   ],
 
   gtm: {
