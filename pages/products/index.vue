@@ -119,13 +119,13 @@ export default {
         category: query.category || "",
       }
     })
-    
+
     const products = productData.data.products.data;
     const pagination = productData.data.products?.meta?.pagination;
     const page = data.productListing.data?.attributes;
     const technologies = data.technologies.data;
     const categories = data.categories.data;
-    
+
     return { page, products, pagination, technologies, categories }
   },
   data() {
@@ -168,9 +168,9 @@ export default {
       this.categories.forEach(element => {
         this.categoryList.push(element.attributes);
       });
-      
+
       this.activeTechnology = this.$route.query.technology || "";
-  
+
       let category = this.categories.find(element  => element.attributes.slug === this.$route.query.category);
       this.selectedCategory = category ? category.attributes : this.categoryList[0];
     },
