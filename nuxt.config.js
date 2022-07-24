@@ -1,12 +1,22 @@
+require('dotenv').config()
 const preview = false;
 const endpoint = preview ? `https://graphql.datocms.com/preview` : `https://graphql.datocms.com`;
+import linkages from './util/getSitemapProducts'
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: true,
+  // Generate index.html files for each blog post
+  generate: {
+    routes: linkages
+  },
 
   publicRuntimeConfig: {
     dataPerPage: 6,
+  },
+
+  privateRuntimeConfig: {
+    datoCMSAuthToken: process.env.DATOCMS_GRAPHQL_AUTH_TOKEN
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -21,7 +31,6 @@ export default {
     ],
     link: [{ rel: "icon", type: "image/png", href: "/icon.png" }],
   },
-
 
   pwa: {
     manifest: {
@@ -57,7 +66,8 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
     '@nuxtjs/google-fonts',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/dotenv',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -69,9 +79,26 @@ export default {
     '@nuxtjs/sitemap'
   ],
 
+  sitemap: {
+    hostname: 'https://templatecookie.com',
+    gzip: true,
+    exclude: [
+      '/test',
+      '/demo/demo'
+    ],
+    routes: linkages,
+    trailingSlash: true
+  },
+
   gtm: {
     id: 'GTM-NZ5TXGP'
   },
+
+  // Generate index.html files for each blog post
+  generate: {
+    routes: linkages
+  },
+
   googleFonts: {
     display: 'swap',
     families: {

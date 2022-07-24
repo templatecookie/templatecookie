@@ -32,12 +32,38 @@
 </template>
 
 <script>
+import SITEMAP_PRODUCTS from '~/graphql/allProducts'
+import getSitemapProducts from '../util/getSitemapProducts';
+
 export default {
-head: {
+  head: {
     meta: [
       { charset: 'utf-8' },
       { name: 'robots', content: 'noindex' },
     ],
+  },
+  async mounted(){
+    // // const client = this.$apollo.getClient();
+    // const client = this.$apollo.vm.$apolloProvider.defaultClient;
+    // // const data = this.$apollo.getClient().readQuery({
+    // //   query: SITEMAP_PRODUCTS,
+    // // });
+
+    // // const { data } = client.query({
+    // //   query: SITEMAP_PRODUCTS,
+    // // })
+
+    // const data = await this.$apollo.query({
+    //     query: SITEMAP_PRODUCTS,
+    // }).then(({ data }) => {
+    //   return data.allProducts.map(({ slug }) => ({
+    //     url: `/demo/${slug}`,
+    //     changefreq: 'daily',
+    //     priority: 1,
+    //   }));
+    // })
+
+    console.log(await getSitemapProducts());
   }
 }
 </script>
