@@ -16,7 +16,7 @@ export default {
   },
 
   privateRuntimeConfig: {
-    datoCMSAuthToken: process.env.DATOCMS_GRAPHQL_AUTH_TOKEN
+    // datoCMSAuthToken: process.env.DATOCMS_GRAPHQL_AUTH_TOKEN
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
