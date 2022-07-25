@@ -1,4 +1,4 @@
-require('dotenv').config()
+// require('dotenv').config()
 const preview = false;
 const endpoint = preview ? `https://graphql.datocms.com/preview` : `https://graphql.datocms.com`;
 import linkages from './util/getSitemapProducts'
@@ -7,16 +7,12 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: true,
   // Generate index.html files for each blog post
-  generate: {
-    routes: linkages
-  },
+  // generate: {
+  //   routes: linkages
+  // },
 
   publicRuntimeConfig: {
     dataPerPage: 6,
-  },
-
-  privateRuntimeConfig: {
-    // datoCMSAuthToken: process.env.DATOCMS_GRAPHQL_AUTH_TOKEN
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -67,7 +63,7 @@ export default {
     "@nuxtjs/tailwindcss",
     '@nuxtjs/google-fonts',
     '@nuxtjs/pwa',
-    '@nuxtjs/dotenv',
+    // '@nuxtjs/dotenv',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

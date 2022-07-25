@@ -7,9 +7,9 @@ import SITEMAP_PRODUCTS from '../graphql/allProducts'
 import dataTypes from '../graphql/config/fragmentTypes.json'
 import { InMemoryCache, IntrospectionFragmentMatcher } from 'apollo-cache-inmemory'
 
-const fragmentMatcher = new IntrospectionFragmentMatcher({
-  introspectionQueryResultData: dataTypes
-})
+// const fragmentMatcher = new IntrospectionFragmentMatcher({
+//   introspectionQueryResultData: dataTypes
+// })
 
 const httpLink = new HttpLink({
   uri: 'https://graphql.datocms.com',
@@ -24,7 +24,8 @@ const httpLink = new HttpLink({
 
 const client = new ApolloClient({
   link: httpLink,
-  cache: new InMemoryCache({ fragmentMatcher })
+  cache: new InMemoryCache()
+  // cache: new InMemoryCache({ fragmentMatcher })
 })
 
 const getSitemapProducts = async () => {

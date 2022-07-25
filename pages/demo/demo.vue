@@ -752,18 +752,14 @@
   } from "vue-awesome-swiper";
   import "swiper/css/swiper.css";
 import PricingPlan from "../../components/Demo/PricingPlanSection.vue";
-// import ExclusiveFeatureLeftImage from "../../components/Demo/ExclusiveFeature.vue";
-// import ExclusiveFeatureRightImage from "../../components/Demo/ExclusiveFeatureRightImage.vue";
 
-  export default {
+export default {
     layout: "empty",
     components: {
-    Swiper,
-    SwiperSlide,
-    PricingPlan,
-    // ExclusiveFeatureLeftImage,
-    // ExclusiveFeatureRightImage
-},
+        Swiper,
+        SwiperSlide,
+        PricingPlan,
+    },
     name: "ProductDemo",
     head: {
       title: 'Product Demo Page',
@@ -981,34 +977,34 @@ import PricingPlan from "../../components/Demo/PricingPlanSection.vue";
       }
     },
     mounted(){
-      const token = 'YOUR-API-TOKEN';
-      fetch(
-        'https://graphql.datocms.com/',
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json',
-            'Authorization': `Bearer ce32bbd78955d348af32c5f3fb0417`,
-          },
-          body: JSON.stringify({
-            query: `{
-              global{
-                logo {
-                  url
-                  filename
-                  title
-                }
-              } 
-            }`
-          }),
-        }
-      ).then(res => res.json()).then((res) => {
-        console.log(res.data)
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+      // const token = 'YOUR-API-TOKEN';
+      // fetch(
+      //   'https://graphql.datocms.com/',
+      //   {
+      //     method: 'POST',
+      //     headers: {
+      //       'Content-Type': 'application/json',
+      //       'Accept': 'application/json',
+      //       'Authorization': `Bearer ce32bbd78955d348af32c5f3fb0417`,
+      //     },
+      //     body: JSON.stringify({
+      //       query: `{
+      //         global{
+      //           logo {
+      //             url
+      //             filename
+      //             title
+      //           }
+      //         } 
+      //       }`
+      //     }),
+      //   }
+      // ).then(res => res.json()).then((res) => {
+      //   console.log(res.data)
+      // })
+      // .catch((error) => {
+      //   console.log(error);
+      // });
     }
   };
 
