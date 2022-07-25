@@ -80,129 +80,129 @@
 </template>
 <script>
 
-import bannerImg from "~/assets/images/all-img/img-five.png";
-import Pagination from "~/components/Pagination.vue";
-import ProductCard from "~/components/ProductCard.vue";
-import PRODUCT_LISTING from '../../graphql/productListing'
-import ALL_PRODUCTS from '../../graphql/allProducts'
+// import bannerImg from "~/assets/images/all-img/img-five.png";
+// import Pagination from "~/components/Pagination.vue";
+// import ProductCard from "~/components/ProductCard.vue";
+// import PRODUCT_LISTING from '../../graphql/productListing'
+// import ALL_PRODUCTS from '../../graphql/allProducts'
 
-export default {
-  components: {
-    Pagination,
-    ProductCard,
-  },
-  head: {
-    title: 'All Products Listing',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'my website description'
-      }
-    ],
-  },
-  async asyncData({ app, query, $config }) {
-    const client = app.apolloProvider.defaultClient;
+// export default {
+//   components: {
+//     Pagination,
+//     ProductCard,
+//   },
+//   head: {
+//     title: 'All Products Listing',
+//     meta: [
+//       { charset: 'utf-8' },
+//       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+//       {
+//         hid: 'description',
+//         name: 'description',
+//         content: 'my website description'
+//       }
+//     ],
+//   },
+//   async asyncData({ app, query, $config }) {
+//     const client = app.apolloProvider.defaultClient;
 
-    const { data } = await client.query({
-      query: PRODUCT_LISTING,
-    })
+//     const { data } = await client.query({
+//       query: PRODUCT_LISTING,
+//     })
 
-    let productData = await client.query({
-      query: ALL_PRODUCTS,
-      variables: {
-        page: parseInt(query.page || 1),
-        pageSize: $config.dataPerPage,
-        technology: query.technology || "",
-        category: query.category || "",
-      }
-    })
+//     let productData = await client.query({
+//       query: ALL_PRODUCTS,
+//       variables: {
+//         page: parseInt(query.page || 1),
+//         pageSize: $config.dataPerPage,
+//         technology: query.technology || "",
+//         category: query.category || "",
+//       }
+//     })
+    
+//     const products = productData.data.products.data;
+//     const pagination = productData.data.products?.meta?.pagination;
+//     const page = data.productListing.data?.attributes;
+//     const technologies = data.technologies.data;
+//     const categories = data.categories.data;
+    
+//     return { page, products, pagination, technologies, categories }
+//   },
+//   data() {
+//     return {
+//       tabs: [],
+//       activeTechnology: "",
+//       bannerImg,
+//       selectedCategory: {},
+//       categoryList: [
+//         {
+//           name: "All Categories",
+//           slug: "",
+//         }
+//       ],
+//     };
+//   },
+//   methods: {
+//     handleGoToPage(event){
+//       this.$router.push({ query: { page: event } })
+//     },
+//     setTechnology(technology) {
+//       this.activeTechnology = technology;
 
-    const products = productData.data.products.data;
-    const pagination = productData.data.products?.meta?.pagination;
-    const page = data.productListing.data?.attributes;
-    const technologies = data.technologies.data;
-    const categories = data.categories.data;
+//       const query = {
+//         ...this.$route.query,
+//         technology: technology,
+//       }
 
-    return { page, products, pagination, technologies, categories }
-  },
-  data() {
-    return {
-      tabs: [],
-      activeTechnology: "",
-      bannerImg,
-      selectedCategory: {},
-      categoryList: [
-        {
-          name: "All Categories",
-          slug: "",
-        }
-      ],
-    };
-  },
-  methods: {
-    handleGoToPage(event){
-      this.$router.push({ query: { page: event } })
-    },
-    setTechnology(technology) {
-      this.activeTechnology = technology;
+//       this.$router.push({ query: query })
+//     },
+//     setCategory(category) {
+//       const query = {
+//         ...this.$route.query,
+//         category: category.slug,
+//       }
 
-      const query = {
-        ...this.$route.query,
-        technology: technology,
-      }
-
-      this.$router.push({ query: query })
-    },
-    setCategory(category) {
-      const query = {
-        ...this.$route.query,
-        category: category.slug,
-      }
-
-      this.$router.push({ query: query })
-    },
-    setQueries(){
-      this.categories.forEach(element => {
-        this.categoryList.push(element.attributes);
-      });
-
-      this.activeTechnology = this.$route.query.technology || "";
-
-      let category = this.categories.find(element  => element.attributes.slug === this.$route.query.category);
-      this.selectedCategory = category ? category.attributes : this.categoryList[0];
-    },
-    async filterProducts(){
-      const client = this.$nuxt.$apolloProvider.defaultClient;
-      const query = this.$route.query
-
-      const { data } = await client.query({
-        query: ALL_PRODUCTS,
-        variables: {
-          page: parseInt(query.page || 1),
-          pageSize: this.$config.dataPerPage,
-          technology: query.technology || "",
-          category: query.category || "",
-        }
-      })
+//       this.$router.push({ query: query })
+//     },
+//     setQueries(){
+//       this.categories.forEach(element => {
+//         this.categoryList.push(element.attributes);
+//       });
       
-      this.products = data.products.data;
-      this.pagination = data.products?.meta?.pagination;
-    }
-  },
-  watch: {
-    '$route.query': {
-      handler(query) {
-        this.filterProducts();
-      },
-      // deep: true,
-      // immediate: true
-    },
-  },
-  mounted() {
-    this.setQueries();
-  },
-};
+//       this.activeTechnology = this.$route.query.technology || "";
+  
+//       let category = this.categories.find(element  => element.attributes.slug === this.$route.query.category);
+//       this.selectedCategory = category ? category.attributes : this.categoryList[0];
+//     },
+//     async filterProducts(){
+//       const client = this.$nuxt.$apolloProvider.defaultClient;
+//       const query = this.$route.query
+
+//       const { data } = await client.query({
+//         query: ALL_PRODUCTS,
+//         variables: {
+//           page: parseInt(query.page || 1),
+//           pageSize: this.$config.dataPerPage,
+//           technology: query.technology || "",
+//           category: query.category || "",
+//         }
+//       })
+
+//       this.products = data.products.data;
+//       this.pagination = data.products?.meta?.pagination;
+//     }
+//   },
+//   watch: {
+//     '$route.query': {
+//       handler(query) {
+//         this.filterProducts();
+//       },
+//       // deep: true,
+//       // immediate: true
+//     },
+//   },
+//   mounted() {
+//     this.setQueries();
+//   },
+// };
 </script>
