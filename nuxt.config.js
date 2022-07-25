@@ -15,6 +15,10 @@ export default {
     dataPerPage: 6,
   },
 
+  privateRuntimeConfig: {
+    // datoCMSAuthToken: process.env.DATOCMS_GRAPHQL_AUTH_TOKEN
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Premium PHP Scripts & HTML Templates | Templatecookie.com',
