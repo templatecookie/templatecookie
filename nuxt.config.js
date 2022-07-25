@@ -1,15 +1,11 @@
 // require('dotenv').config()
-const preview = false;
-const endpoint = preview ? `https://graphql.datocms.com/preview` : `https://graphql.datocms.com`;
+// const preview = false;
+// const endpoint = preview ? `https://graphql.datocms.com/preview` : `https://graphql.datocms.com`;
 import linkages from './util/getSitemapProducts'
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: true,
-  // Generate index.html files for each blog post
-  // generate: {
-  //   routes: linkages
-  // },
 
   publicRuntimeConfig: {
     dataPerPage: 6,
@@ -94,10 +90,10 @@ export default {
     id: 'GTM-NZ5TXGP'
   },
 
-  // Generate index.html files for each blog post
-  generate: {
-    routes: linkages
-  },
+  // // Generate index.html files for each blog post
+  // generate: {
+  //   routes: linkages
+  // },
 
   googleFonts: {
     display: 'swap',
