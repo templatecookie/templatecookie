@@ -33,7 +33,7 @@
 
 <script>
 import SITEMAP_PRODUCTS from '~/graphql/allProducts'
-import getSitemapProducts from '../util/getSitemapProducts';
+// import getSitemapProducts from '../util/getSitemapProducts';
 
 export default {
   head: {
@@ -63,7 +63,7 @@ export default {
     //   }));
     // })
 
-    console.log(await getSitemapProducts());
+    // console.log(await getSitemapProducts());
   }
 }
 </script>
