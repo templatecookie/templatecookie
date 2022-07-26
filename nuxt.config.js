@@ -1,7 +1,50 @@
-// require('dotenv').config()
+import gql from 'graphql-tag';
+import fetch from 'node-fetch'
+import ApolloClient from 'apollo-client'
+import { HttpLink } from 'apollo-link-http'
+import { InMemoryCache } from 'apollo-cache-inmemory'
+
+const httpLink = new HttpLink({
+  uri: 'https://graphql.datocms.com',
+  credentials: 'same-origin',
+  headers: {
+    'Content-Type': 'application/json',
+    Authorization: `Bearer ce32bbd78955d348af32c5f3fb0417`
+  },
+  fetch: fetch
+})
+
+const client = new ApolloClient({
+  link: httpLink,
+  cache: new InMemoryCache()
+})
+
+const linkages = async () => {
+  return await client.query({
+    query: gql`
+      query {
+        allProducts (first:50) {
+          id
+          name
+          slug
+          category{
+            name
+            slug
+          }
+        }
+      }
+    `,
+  }).then(({ data }) => {
+    return data.allProducts.map(({ slug }) => ({
+      url: `/demo/${slug}`,
+      changefreq: 'daily',
+      priority: 1,
+    }));
+  })
+}
+
 // const preview = false;
 // const endpoint = preview ? `https://graphql.datocms.com/preview` : `https://graphql.datocms.com`;
-import linkages from './util/getSitemapProducts'
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
@@ -9,6 +52,10 @@ export default {
 
   publicRuntimeConfig: {
     dataPerPage: 6,
+  },
+
+  privateRuntimeConfig: {
+    // datoCMSAuthToken: process.env.DATOCMS_GRAPHQL_AUTH_TOKEN
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
