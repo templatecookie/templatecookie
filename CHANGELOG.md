@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](///compare/v2.0.0...v2.2.0) (2022-06-15)
+
+
+### Features
+
+* group feature section 1fe26ee
+* Image lazy loading 3753647
+* product support card dynamic d314fe3
+* PWA support added be9d10e
+
+
+### Bug Fixes
+
+* bug fix fab1f1d
+* bug fixing across dmeo pages & seciton 117e3fe
+* condition added for  docs header component bf1797e
+* docs header component e79cd09
+* notice feature 504ebec
+* notice record on header 5b9546d
+* notice updated 0407c15
+* price plan active option fix 73e84a2
+* pricing plan color 01653cc
+* pricing plan section background color 841c05e
+* product demo page error c1adff4
+* product listing page problem 0e559ca
+* product pages, data access issues on null object 26ade14
+* slider animation on call to action on page de7489f
+* website 2fbab87
+
 ## [2.1.0](///compare/v2.0.0...v2.1.0) (2022-05-27)
 
 
