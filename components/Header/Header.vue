@@ -17,7 +17,10 @@
             <li class="nav-menu__item">
               <nuxt-link :to="{ name: 'docs'}"> Documentation </nuxt-link>
             </li>
-            <li class="nav-menu__item">
+            <li class="nav-menu__item" v-if="global.supportUrl">
+              <a :href="global.supportUrl" target="_blank"> Support </a>
+            </li>
+            <li class="nav-menu__item" v-else>
               <a href="mailto:templatecookie@gmail.com" target="_blank"> Support </a>
             </li>
             <li >
@@ -57,6 +60,11 @@
                 <nuxt-link to="https://support.templatecookie.com"> Support </nuxt-link>
               </div>
             </li>
+            <li class="sidebar-menu__item">
+              <div class="sidebar-menu__content">
+                <nuxt-link :to="{ name: '/contact-us'}"> Contact </nuxt-link>
+              </div>
+            </li>
             <li class="sidebar-menu__button">
               <a href="https://codecanyon.net/user/templatecookie" target="_blank"
                 class="text-white hover:text-white text-button capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded inline-block px-5 w-full text-center">
@@ -78,6 +86,11 @@ export default {
       toggleStatus: false,
       sideBar: false,
     };
+  },
+  computed: {
+    global() {
+      return this.$store.getters.getGlobalData;
+    }
   },
   methods: {
     openSidebar() {

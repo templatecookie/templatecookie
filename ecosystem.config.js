@@ -1,6 +1,6 @@
 module.exports = {
   apps : [{
-    name   : "templatecookie-frontend",
+    name   : "templatecookie.com",
     cwd: '/var/www/templatecookie.com',
     script: 'npm',
     args: 'start',
