@@ -59,6 +59,7 @@
 
     <!-- Why Should  -->
     <TopFeaturesSection v-if="homepage && homepage.topFeatures" :data="homepage.topFeatures" />
+    <!-- <product-support /> -->
     <WhyUs v-if="homepage && homepage.whyUsSection" :data="homepage.whyUsSection" />
   </div>
 </template>
@@ -70,9 +71,10 @@ import HOMEPAGE_QUERY from '~/graphql/homepage'
 import HeroSection from "../components/Home/HeroSection.vue";
 import WhyUs from "../components/Home/WhyUs.vue";
 import TopFeaturesSection from "../components/Home/TopFeaturesSection.vue";
+import ProductSupport from '../components/Demo/ProductSupport.vue';
 
 export default {
-  components: { ProductCard, HeroSection, WhyUs, TopFeaturesSection },
+  components: { ProductCard, HeroSection, WhyUs, TopFeaturesSection, ProductSupport },
   head() {
     const homepage = this.homepage
     const ogImage = homepage.seoData.ogImage ? homepage.seoData.ogImage.url : "/social-meta.png";

@@ -14,6 +14,7 @@ query {
       filename
       title
     }
+    supportUrl
     notice {
       announcement
       showNotice
