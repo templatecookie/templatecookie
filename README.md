@@ -1,6 +1,5 @@
 # Templatecookie - Online Product Documentation
-https://templatecookie-static.netlify.app/
-https://templatecookie-v2.netlify.app/
+
 All [Product Documentation](https://templatecookie.com/docs) source code lives here. Watch the video below and get started!
 
 ## How to add & Update Docs in this project? Watch this Tutorial.
@@ -40,3 +39,8 @@ Start the server
 - [Vue Js](https://vuejs.org/)
 - [Vue Select ](https://vue-select.org/)
 - [Animate on Scroll](https://michalsnik.github.io/aos/)
+
+
+## Old Version
+[v1 templatecookie.com](https://templatecookie.netlify.app/)
+[v2 templatecookie.com](https://templatecookie-static.netlify.app)
