@@ -73,17 +73,21 @@ import TopFeaturesSection from "../components/Home/TopFeaturesSection.vue";
 
 export default {
   components: { ProductCard, HeroSection, WhyUs, TopFeaturesSection },
-  head: {
-    title: 'Homepage | Templatecookie',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'my website description'
-      }
-    ],
+  head() {
+    const homepage = this.homepage
+    const ogImage = homepage.seoData.ogImage ? homepage.seoData.ogImage.url : "/social-meta.png";
+    return {
+      title: homepage.seoData.title,
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: homepage.seoData.description },
+        { hid: 'og:title', property: 'og:title', name: 'og:title', content: homepage.seoData.title },
+        { hid: 'og:description', name: 'og:description', name: 'og:description', content: homepage.seoData.description },
+        { hid: 'og:type', property: 'og:type', name: 'og:type', content: "website" },
+        { hid: 'og:image', property: 'og:image', name: 'og:image', content: ogImage },
+      ],
+    }
   },
   async asyncData({ app }) {
     const client = app.apolloProvider.defaultClient;

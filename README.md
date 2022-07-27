@@ -1,5 +1,6 @@
 # Templatecookie - Online Product Documentation
-
+https://templatecookie-static.netlify.app/
+https://templatecookie-v2.netlify.app/
 All [Product Documentation](https://templatecookie.com/docs) source code lives here. Watch the video below and get started!
 
 ## How to add & Update Docs in this project? Watch this Tutorial.
