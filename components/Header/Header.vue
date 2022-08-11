@@ -57,7 +57,7 @@
             </li>
             <li class="sidebar-menu__item">
               <div class="sidebar-menu__content">
-                <nuxt-link to="https://support.templatecookie.com"> Support </nuxt-link>
+                <a href="mailto:templatecookie@gmail.com" target="_blank"> Support </a>
               </div>
             </li>
             <li class="sidebar-menu__item">

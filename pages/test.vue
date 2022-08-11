@@ -27,6 +27,14 @@
             <div class="w-40 h-28 flex justify-center items-center bg-gray-cd">gray-cd</div>
             <div class="w-40 h-28 flex justify-center items-center bg-blue-18">blue-18</div>
         </div>
+        <div class="hidden">
+        <div class="bg-pink-f1 w-full h-4">1</div>
+        <div class="bg-green-e7 w-full h-4">1</div>
+        <div class="bg-yellow-ff w-full h-4">1</div>
+        <div class="bg-pink-fe w-full h-4">1</div>
+        <div class="bg-pink-f1 w-full h-4">1</div>
+        <div class="bg-blue-ce w-full h-4">1</div>
+        </div>
     </div>
   </div>
 </template>
