@@ -8,9 +8,7 @@
             Contact Us
           </h1>
           <p class="text-dark-06 text-lg mb-6 lg:mb-9 max-w-xl m-auto font-light">
-            Golio gives you everything you need to create your website in
-            minutes. Bootstrap code with a well-organized Figma file to design &
-            develop your next websites in minutes.
+            The Contact Us page is the best way to get in touch with the staff at <a href="https://templatecookie.com" class="text-blue-700">Templatecookie.com</a>. You can use the form on this page to send us a message, and we will get back to you as soon as possible.
           </p>
         </div>
       </div>
