@@ -48,13 +48,6 @@ export default {
     }
   },
   mounted(){
-    // this.$nextTick(() => {
-    //   hbspt.forms.create({
-    //     region: "na1",
-    //     portalId: "22174697",
-    //     formId: "4d82d2ef-a223-4999-b203-06d969f41c43"
-    //   });
-    // })
     const script = document.createElement("script");
     script.src="https://js.hsforms.net/forms/v2.js";
     document.body.appendChild(script);
