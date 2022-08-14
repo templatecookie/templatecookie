@@ -1,3 +1,4 @@
+// Products Page Meta Data
 import gql from 'graphql-tag';
 
 // export const global = gql`

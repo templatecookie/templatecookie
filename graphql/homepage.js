@@ -1,3 +1,4 @@
+// Home Page Query
 import gql from 'graphql-tag';
 
 // export const global = gql`
@@ -100,7 +101,7 @@ query {
       }
     }
   }
-  allProducts(first: 6, orderBy: id_DESC) {
+  allProducts(first: 6, orderBy: id_DESC, filter: {homepage: {eq: "true"}}) {
     id
     name
     description

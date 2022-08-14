@@ -3,19 +3,20 @@
     <div class="container relative">
       <!-- header inner content  -->
       <div class="flex items-center justify-between">
-        <div>
-          <nuxt-link to="/">
-            <nuxt-img :src="data.url" alt="Templatecookie" />
-          </nuxt-link>
-        </div>
+        <nuxt-link to="/">
+          <nuxt-img :src="data.url" alt="Templatecookie - Premium Quality Scripts & HTML Templates" />
+        </nuxt-link>
         <!-- menu  -->
         <div class="hidden lg:block">
           <ul class="flex items-center space-x-5 nav-menu">
             <li class="nav-menu__item">
-              <nuxt-link :to="{ name: 'index', params: { product: 'bar' }}"> All Products </nuxt-link>
+              <nuxt-link to="/"> Home </nuxt-link>
             </li>
             <li class="nav-menu__item">
-              <nuxt-link :to="{ name: 'docs'}"> Documentation </nuxt-link>
+              <nuxt-link to="/products"> Products </nuxt-link>
+            </li>
+            <li class="nav-menu__item">
+              <nuxt-link to="/docs"> Documentation </nuxt-link>
             </li>
             <li class="nav-menu__item" v-if="global.supportUrl">
               <a :href="global.supportUrl" target="_blank"> Support </a>
@@ -52,12 +53,17 @@
           <ul class="sidebar-menu">
             <li class="sidebar-menu__item">
               <div class="sidebar-menu__content">
-                <nuxt-link :to="{ name: 'products'}"> All Products </nuxt-link>
+                <nuxt-link to="/"> Home </nuxt-link>
               </div>
             </li>
             <li class="sidebar-menu__item">
               <div class="sidebar-menu__content">
-                <nuxt-link :to="{ name: 'docs'}"> Documentation </nuxt-link>
+                <nuxt-link to="/products"> Products </nuxt-link>
+              </div>
+            </li>
+            <li class="sidebar-menu__item">
+              <div class="sidebar-menu__content">
+                <nuxt-link to="/docs"> Documentation </nuxt-link>
               </div>
             </li>
             <li class="sidebar-menu__item">
@@ -67,7 +73,7 @@
             </li>
             <li class="sidebar-menu__item">
               <div class="sidebar-menu__content">
-                <nuxt-link :to="{ name: '/contact-us'}"> Contact </nuxt-link>
+                <nuxt-link to="/contact-us"> Contact </nuxt-link>
               </div>
             </li>
             <li class="sidebar-menu__button">
