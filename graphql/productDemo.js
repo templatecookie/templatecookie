@@ -1,3 +1,4 @@
+// Product Demo Page Query
 import gql from 'graphql-tag';
 
 export default gql`

@@ -5,6 +5,9 @@
     <div class="container">
       <!-- banner content  -->
       <div class="text-center">
+        <h5 class="font-light text-lg mb-2">
+          {{ hero.subtitle }}
+        </h5>
         <h1 class="text-3xl md:text-5xl text-dark-06 mb-8 max-w-680 mx-auto font-semibold">
           {{ hero.title }}
         </h1>

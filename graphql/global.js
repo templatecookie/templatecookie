@@ -1,10 +1,11 @@
+// Global Query
 import gql from 'graphql-tag';
 
 // export const global = gql`
 export default gql`
 query {
   global{
-		logo {
+    logo {
       url
       filename
       title
@@ -33,7 +34,7 @@ query {
         }
       }
     }
-    
+
     defaultFeatures{
       title
       description
@@ -47,9 +48,9 @@ query {
       icon {
         filename
         url
-      } 
+      }
     }
-    
+
     customerSupport {
       title
       description
@@ -59,7 +60,7 @@ query {
         url
       }
     }
-    
+
     footer {
       logo {
         url

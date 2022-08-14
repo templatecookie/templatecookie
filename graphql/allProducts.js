@@ -1,15 +1,31 @@
+// All Products for Products Page Query
 import gql from 'graphql-tag';
 
 export default gql`
   query {
-    allProducts (first:50) {
+    allProducts(first: 8, orderBy: id_DESC) {
       id
       name
+      description
       slug
-      category{
+      banner {
+        url
+      }
+      category {
         name
         slug
       }
+    }
+
+    _allProductsMeta{
+      count
+    }
+
+    allCategories {
+      id
+      slug
+      name
+      updatedAt
     }
   }
 `
