@@ -9,10 +9,11 @@
         <!-- menu  -->
         <div class="hidden lg:block">
           <ul class="flex items-center space-x-5 nav-menu">
-            <li class="nav-menu__item">
-              <nuxt-link to="/"> Home </nuxt-link>
+            <li class="nav-menu__item" v-for="(item, index) in menuItems" :key="index">
+              <a v-if="blank" target="_blank" :href="item.url"> {{ item.name }} </a>
+              <nuxt-link v-else :to="item.url"> {{ item.name }} </nuxt-link>
             </li>
-            <li class="nav-menu__item">
+            <!-- <li class="nav-menu__item">
               <nuxt-link to="/products"> Products </nuxt-link>
             </li>
             <li class="nav-menu__item">
@@ -28,12 +29,12 @@
               <div class="sidebar-menu__content">
                 <nuxt-link to="/contact-us"> Contact Us </nuxt-link>
               </div>
-            </li>
-            <li >
+            </li> -->
+            <!-- <li >
               <a href="https://codecanyon.net/user/templatecookie" target="_blank" class="text-white hover:text-white text-sm capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded inline-block px-5 py-4">
                 Codecanyon Profile
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <!-- Toggole -->
@@ -51,29 +52,10 @@
         v-if="sideBar">
         <div class="py-6">
           <ul class="sidebar-menu">
-            <li class="sidebar-menu__item">
+            <li class="sidebar-menu__item" v-for="(item, index) in menuItems" :key="index">
               <div class="sidebar-menu__content">
-                <nuxt-link to="/"> Home </nuxt-link>
-              </div>
-            </li>
-            <li class="sidebar-menu__item">
-              <div class="sidebar-menu__content">
-                <nuxt-link to="/products"> Products </nuxt-link>
-              </div>
-            </li>
-            <li class="sidebar-menu__item">
-              <div class="sidebar-menu__content">
-                <nuxt-link to="/docs"> Documentation </nuxt-link>
-              </div>
-            </li>
-            <li class="sidebar-menu__item">
-              <div class="sidebar-menu__content">
-                <a href="mailto:templatecookie@gmail.com" target="_blank"> Support </a>
-              </div>
-            </li>
-            <li class="sidebar-menu__item">
-              <div class="sidebar-menu__content">
-                <nuxt-link to="/contact-us"> Contact </nuxt-link>
+                <a v-if="blank" target="_blank" :href="item.url"> {{ item.name }} </a>
+                <nuxt-link v-else :to="item.url"> {{ item.name }} </nuxt-link>
               </div>
             </li>
             <li class="sidebar-menu__button">
@@ -96,6 +78,38 @@ export default {
     return {
       toggleStatus: false,
       sideBar: false,
+      menuItems: [
+        {
+          name: "Home",
+          url: '/',
+          blank: false,
+        },
+        {
+          name: "Products",
+          url: '/products',
+          blank: false,
+        },
+        {
+          name: "Get Support",
+          url: '/get-support',
+          blank: false,
+        },
+        // {
+        //   name: "Hire Us",
+        //   url: '/hire-us',
+        //   blank: false,
+        // },
+        {
+          name: "Documentation",
+          url: '/docs',
+          blank: false,
+        },
+        {
+          name: "Contact Us",
+          url: '/contact-us',
+          blank: false,
+        },
+      ]
     };
   },
   computed: {

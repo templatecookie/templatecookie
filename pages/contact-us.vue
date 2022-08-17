@@ -17,6 +17,9 @@
     <div class="container py-12">
       <div class="flex justify-center">
         <div class="w-full md:w-8/12 lg:w-6/12">
+          <div class="py-6 px-8 rounded-lg mb-6 bg-red-200">
+            For technical support of your purchased products, please submit a ticket to <nuxt-link class="underline" to="/get-support"> Support page </nuxt-link>
+          </div>
           <div id="hubspotForm" v-once></div>
         </div>
       </div>
