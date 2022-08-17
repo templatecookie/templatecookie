@@ -35,6 +35,7 @@
         <div class="bg-pink-f1 w-full h-4">1</div>
         <div class="bg-blue-ce w-full h-4">1</div>
         </div>
+        <div class="bg-green-50 bg-red-50 bg-blue-50 text-green-600 text-blue-600 text-red-600 bg-green-600 bg-blue-600 bg-red-600"></div>
     </div>
   </div>
 </template>

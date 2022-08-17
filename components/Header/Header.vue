@@ -9,10 +9,11 @@
         <!-- menu  -->
         <div class="hidden lg:block">
           <ul class="flex items-center space-x-5 nav-menu">
-            <li class="nav-menu__item">
-              <nuxt-link to="/"> Home </nuxt-link>
+            <li class="nav-menu__item" v-for="(item, index) in menuItems" :key="index">
+              <a v-if="blank" target="_blank" :href="item.url"> {{ item.name }} </a>
+              <nuxt-link v-else :to="item.url"> {{ item.name }} </nuxt-link>
             </li>
-            <li class="nav-menu__item">
+            <!-- <li class="nav-menu__item">
               <nuxt-link to="/products"> Products </nuxt-link>
             </li>
             <li class="nav-menu__item">
@@ -28,7 +29,7 @@
               <div class="sidebar-menu__content">
                 <nuxt-link to="/contact-us"> Contact Us </nuxt-link>
               </div>
-            </li>
+            </li> -->
             <li >
               <a href="https://codecanyon.net/user/templatecookie" target="_blank" class="text-white hover:text-white text-sm capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded inline-block px-5 py-4">
                 Codecanyon Profile
@@ -96,6 +97,33 @@ export default {
     return {
       toggleStatus: false,
       sideBar: false,
+      menuItems: [
+        {
+          name: "Home",
+          url: '/',
+          blank: false,
+        },
+        {
+          name: "Products",
+          url: '/products',
+          blank: false,
+        },
+        {
+          name: "Get Support",
+          url: '/get-support',
+          blank: false,
+        },
+        {
+          name: "Documentation",
+          url: '/docs',
+          blank: false,
+        },
+        {
+          name: "Contact Us",
+          url: '/contact-us',
+          blank: false,
+        },
+      ]
     };
   },
   computed: {
