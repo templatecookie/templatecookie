@@ -94,11 +94,11 @@ export default {
           url: '/get-support',
           blank: false,
         },
-        {
-          name: "Hire Us",
-          url: '/hire-us',
-          blank: false,
-        },
+        // {
+        //   name: "Hire Us",
+        //   url: '/hire-us',
+        //   blank: false,
+        // },
         {
           name: "Documentation",
           url: '/docs',
