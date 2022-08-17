@@ -30,11 +30,11 @@
                 <nuxt-link to="/contact-us"> Contact Us </nuxt-link>
               </div>
             </li> -->
-            <li >
+            <!-- <li >
               <a href="https://codecanyon.net/user/templatecookie" target="_blank" class="text-white hover:text-white text-sm capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded inline-block px-5 py-4">
                 Codecanyon Profile
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <!-- Toggole -->
@@ -52,29 +52,10 @@
         v-if="sideBar">
         <div class="py-6">
           <ul class="sidebar-menu">
-            <li class="sidebar-menu__item">
+            <li class="sidebar-menu__item" v-for="(item, index) in menuItems" :key="index">
               <div class="sidebar-menu__content">
-                <nuxt-link to="/"> Home </nuxt-link>
-              </div>
-            </li>
-            <li class="sidebar-menu__item">
-              <div class="sidebar-menu__content">
-                <nuxt-link to="/products"> Products </nuxt-link>
-              </div>
-            </li>
-            <li class="sidebar-menu__item">
-              <div class="sidebar-menu__content">
-                <nuxt-link to="/docs"> Documentation </nuxt-link>
-              </div>
-            </li>
-            <li class="sidebar-menu__item">
-              <div class="sidebar-menu__content">
-                <a href="mailto:templatecookie@gmail.com" target="_blank"> Support </a>
-              </div>
-            </li>
-            <li class="sidebar-menu__item">
-              <div class="sidebar-menu__content">
-                <nuxt-link to="/contact-us"> Contact </nuxt-link>
+                <a v-if="blank" target="_blank" :href="item.url"> {{ item.name }} </a>
+                <nuxt-link v-else :to="item.url"> {{ item.name }} </nuxt-link>
               </div>
             </li>
             <li class="sidebar-menu__button">
@@ -111,6 +92,11 @@ export default {
         {
           name: "Get Support",
           url: '/get-support',
+          blank: false,
+        },
+        {
+          name: "Hire Us",
+          url: '/hire-us',
           blank: false,
         },
         {
