@@ -1,10 +1,5 @@
 <template>
-  <div>
-    <div class="hidden bg-red-300"></div>
-    <div class="hidden bg-green-300"></div>
-    <div class="hidden bg-blue-300"></div>
-    <div class="hidden bg-blue-600"></div>
-    <div class="hidden bg-purple-300"></div>
+  <div class="relative">
     <div class="text-center py-3 text-base" :class="notice.cssClass" v-if="notice && notice.showNotice" v-html="parseMarkdown(notice.announcement)"></div>
     <Header :data="global.logo" v-if="global && global.logo"/>
     <nuxt />
@@ -20,7 +15,7 @@ import SocialLink from "../components/SocialLink.vue";
 import GLOBAL_QUERY from '~/graphql/global'
 import Newsletter from "../components/Newsletter.vue";
 
-export default { 
+export default {
   components: { Header, Footer, SocialLink, Newsletter },
   methods: {
     async loadData(){
@@ -29,7 +24,7 @@ export default {
       const { data } = await client.query({
         query: GLOBAL_QUERY,
       })
-      
+
       const global = data?.global
       this.$store.commit('SET_GLOBAL_DATA', global)
     }

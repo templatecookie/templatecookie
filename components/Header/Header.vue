@@ -1,6 +1,6 @@
 <template>
-  <header class="w-full py-3 bg-white shadow-6xl">
-    <div class="container relative">
+  <header class="w-full py-3 bg-white drop-shadow-sm">
+    <div class="container">
       <!-- header inner content  -->
       <div class="flex items-center justify-between">
         <nuxt-link to="/">
@@ -9,27 +9,10 @@
         <!-- menu  -->
         <div class="hidden lg:block">
           <ul class="flex items-center space-x-5 nav-menu">
-            <li class="nav-menu__item" v-for="(item, index) in menuItems" :key="index">
-              <a v-if="blank" target="_blank" :href="item.url"> {{ item.name }} </a>
-              <nuxt-link v-else :to="item.url"> {{ item.name }} </nuxt-link>
+            <li v-for="(item, index) in menuItems" :key="index">
+              <a class="px-3" v-if="item.blank" target="_blank" :href="item.url"> {{ item.name }} </a>
+              <nuxt-link class="px-3" v-else :to="item.url"> {{ item.name }} </nuxt-link>
             </li>
-            <!-- <li class="nav-menu__item">
-              <nuxt-link to="/products"> Products </nuxt-link>
-            </li>
-            <li class="nav-menu__item">
-              <nuxt-link to="/docs"> Documentation </nuxt-link>
-            </li>
-            <li class="nav-menu__item" v-if="global.supportUrl">
-              <a :href="global.supportUrl" target="_blank"> Support </a>
-            </li>
-            <li class="nav-menu__item" v-else>
-              <a href="mailto:templatecookie@gmail.com" target="_blank"> Support </a>
-            </li>
-            <li class="sidebar-menu__item">
-              <div class="sidebar-menu__content">
-                <nuxt-link to="/contact-us"> Contact Us </nuxt-link>
-              </div>
-            </li> -->
             <!-- <li >
               <a href="https://codecanyon.net/user/templatecookie" target="_blank" class="text-white hover:text-white text-sm capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded inline-block px-5 py-4">
                 Codecanyon Profile
@@ -37,9 +20,8 @@
             </li> -->
           </ul>
         </div>
-        <!-- Toggole -->
         <div class="lg:hidden">
-          <div @click="openSidebar" :class="`toggle ${toggleStatus === true ? 'active' : ''} `">
+          <div @click.prevent="openSidebar()" class="toggle" :class="{ 'active' : mobileNav }">
             <span></span>
           </div>
         </div>
@@ -47,16 +29,17 @@
     </div>
 
     <!-- Sidebar  -->
+    <!-- <div class="absolute top-0 left-0 w-screen h-screen z-10 bg-black/75 backdrop-blur-3xl inset-2"></div> -->
     <transition name="fade">
-      <div class="sidebar absolute left-0 top-full w-full bg-white h-screen max-w-300 block lg:hidden z-50"
-        v-if="sideBar">
+      <div class="sidebar drop-shadow-lg absolute left-0 top-0 z-50 w-full bg-white h-screen max-w-300 block lg:hidden" v-if="mobileNav">
         <div class="py-6">
+          <div class="px-8 py-4">
+            <nuxt-img :src="data.url" class="w-52" alt="Templatecookie - Premium Quality Scripts & HTML Templates" />
+          </div>
           <ul class="sidebar-menu">
-            <li class="sidebar-menu__item" v-for="(item, index) in menuItems" :key="index">
-              <div class="sidebar-menu__content">
-                <a v-if="blank" target="_blank" :href="item.url"> {{ item.name }} </a>
-                <nuxt-link v-else :to="item.url"> {{ item.name }} </nuxt-link>
-              </div>
+            <li v-for="(item, index) in menuItems" :key="index">
+                <a v-if="item.blank" @click.native="openSidebar()" class="px-8 py-2 w-full flex" target="_blank" :href="item.url"> {{ item.name }} </a>
+                <nuxt-link v-else @click.native="openSidebar()" class="px-8 py-2 w-full flex" :to="item.url"> {{ item.name }} </nuxt-link>
             </li>
             <li class="sidebar-menu__button">
               <a href="https://codecanyon.net/user/templatecookie" target="_blank"
@@ -76,8 +59,7 @@ export default {
   props: ['data'],
   data() {
     return {
-      toggleStatus: false,
-      sideBar: false,
+      mobileNav: false,
       menuItems: [
         {
           name: "Home",
@@ -119,9 +101,8 @@ export default {
   },
   methods: {
     openSidebar() {
-      this.toggleStatus = !this.toggleStatus;
-      this.sideBar = !this.sideBar;
-      document.body.classList.toggle("overlay");
+      this.mobileNav = !this.mobileNav;
+      // document.body.classList.toggle("overlay");
     },
   },
 };

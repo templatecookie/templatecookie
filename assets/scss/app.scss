@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  height: 100%;
+}
+
 :root {
   --primary: #0B63E5;
   --secondary: #7534FF;
@@ -353,6 +357,7 @@ input[type="radio"]:checked + label span {
 body {
   position: relative;
   &.overlay {
+    z-index: 1;
     &::after {
       content: "";
       position: absolute;
@@ -360,7 +365,7 @@ body {
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: 49;
+      z-index: -1;
       background: rgba(0, 0, 0, 0.75);
       box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
       backdrop-filter: blur(4px);
@@ -382,8 +387,8 @@ body {
 // Navbar & sidebar
 // Toggle Button
 .toggle {
-  width: 65px;
-  height: 65px;
+  width: 60px;
+  height: 60px;
   display: flex;
   cursor: pointer;
   overflow: hidden;
@@ -392,11 +397,12 @@ body {
   align-items: center;
   justify-content: center;
   transition: all 0.1s linear;
+  z-index: 99;
    span, 
    span:before, 
    span:after {
-      width: 35px;
-      height: 3px;
+      width: 30px;
+      height: 2px;
       background-color: #0B63E5;
       display: block;
       transition: .3s;
@@ -414,23 +420,14 @@ body {
     span{
       background-color: transparent;
       &:before {
-      transform: translateY(0px) rotate(
-    45deg
-    );
-    }
-    &:after {
-          transform: translateY(-3px) rotate(
-      -45deg
-      );
+        transform: translateY(0px) rotate(45deg);
+      }
+      &:after {
+        transform: translateY(-3px) rotate(-45deg);
       }
     }
   }
 }
-
-
-
-
-
 
 .nav-menu {
   &__item {
@@ -653,7 +650,7 @@ html {
   opacity: 1;
   transition: 0.5s ease-in-out;
 }
-    
+
 .swiper-button-disabled {
   visibility: hidden;
   opacity: 0;

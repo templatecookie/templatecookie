@@ -164,7 +164,7 @@
     </div>
     <!-- end -->
 
-    <div class="pt-20 md:pb-0 pb-20 lg:pt-124 bg-content bg-center-top bg-no-repeat relative responsive-overly"
+    <div class="pt-20 md:pb-0 pb-20 lg:pt-124 bg-content bg-center-top bg-no-repeat responsive-overly"
       :style="projectIdea">
       <div class="container">
         <div class="lg:max-w-680 m-auto text-center mb-16">
