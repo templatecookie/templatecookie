@@ -1,53 +1,31 @@
+// All Products for Products Page Query
 import gql from 'graphql-tag';
 
-// export const global = gql`
 export default gql`
-query products($page: Int!, $pageSize: Int!, $technology: String!, $category: String! ) {
-  products(
-      sort: "publishedAt:desc",
-      pagination: { page: $page, pageSize: $pageSize }
-      filters: {
-        technology: { slug: { contains: $technology } }
-        category: { slug: { contains: $category } }
+  query {
+    allProducts(first: 8, orderBy: id_DESC) {
+      id
+      name
+      description
+      slug
+      banner {
+        url
       }
-    ) {
-    data {
-      id,
-      attributes {
+      category {
         name
         slug
-        publishedAt
-        short_description
-        regular_price
-        category {
-          data {
-            attributes {
-              name
-              slug
-            }
-          }
-        }
-        demo_banner {
-          data {
-            attributes {
-              name
-              previewUrl
-              url
-              alternativeText
-              ext
-            }
-          }
-        }
       }
     }
-    meta {
-      pagination {
-        page
-        pageSize
-        pageCount
-        total
-      }
+
+    _allProductsMeta{
+      count
+    }
+
+    allCategories {
+      id
+      slug
+      name
+      updatedAt
     }
   }
-}
 `

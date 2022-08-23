@@ -1,9 +1,9 @@
 {
   "name": "templatecookie",
   "description": "Templatecookie.com is premium templates & scripts marketplace. We have a wide range of templates and scripts for you to choose from.",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "private": true,
-  "homepage": "https://github.com/zakirsoft/templatecookie-v2",
+  "homepage": "https://github.com/templatecookie/templatecookie",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -13,14 +13,15 @@
     "release": "standard-version"
   },
   "author": {
-    "name": "Zakirsoft",
-    "email": "zakirsoft20@gmail.com",
-    "url": "https://zakirsoft.com"
+    "name": "templatecookie.com",
+    "email": "templatecookie@gmail.com",
+    "url": "https://templatecookie.com"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
     "@nuxtjs/apollo": "^4.0.1-rc.5",
     "@nuxtjs/gtm": "^2.4.0",
+    "@nuxtjs/sitemap": "^2.4.0",
     "aos": "^2.3.4",
     "core-js": "^3.19.3",
     "countup.js": "^2.0.8",
@@ -28,6 +29,7 @@
     "graphql-tag": "^2.12.6",
     "lodash.groupby": "^4.6.0",
     "marked": "^4.0.16",
+    "node-fetch": "^2.6.7",
     "nuxt": "^2.15.8",
     "swiper": "5.x",
     "vue": "^2.6.14",

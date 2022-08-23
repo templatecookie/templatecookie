@@ -27,17 +27,58 @@
             <div class="w-40 h-28 flex justify-center items-center bg-gray-cd">gray-cd</div>
             <div class="w-40 h-28 flex justify-center items-center bg-blue-18">blue-18</div>
         </div>
+        <div class="hidden">
+          <div class="bg-pink-f1 w-full h-4">1</div>
+          <div class="bg-green-e7 w-full h-4">1</div>
+          <div class="bg-yellow-ff w-full h-4">1</div>
+          <div class="bg-pink-fe w-full h-4">1</div>
+          <div class="bg-pink-f1 w-full h-4">1</div>
+          <div class="bg-blue-ce w-full h-4">1</div>
+          <div class="hidden bg-red-300"></div>
+          <div class="hidden bg-green-300"></div>
+          <div class="hidden bg-blue-300"></div>
+          <div class="hidden bg-blue-600"></div>
+          <div class="hidden bg-purple-300"></div>
+        </div>
+
+        <div class="bg-green-50 bg-red-50 bg-blue-50 text-green-600 text-blue-600 text-red-600 bg-green-600 bg-blue-600 bg-red-600"></div>
     </div>
   </div>
 </template>
 
 <script>
+import SITEMAP_PRODUCTS from '~/graphql/allProducts'
+// import getSitemapProducts from '../util/getSitemapProducts';
+
 export default {
-head: {
+  head: {
     meta: [
       { charset: 'utf-8' },
       { name: 'robots', content: 'noindex' },
     ],
+  },
+  async mounted(){
+    // // const client = this.$apollo.getClient();
+    // const client = this.$apollo.vm.$apolloProvider.defaultClient;
+    // // const data = this.$apollo.getClient().readQuery({
+    // //   query: SITEMAP_PRODUCTS,
+    // // });
+
+    // // const { data } = client.query({
+    // //   query: SITEMAP_PRODUCTS,
+    // // })
+
+    // const data = await this.$apollo.query({
+    //     query: SITEMAP_PRODUCTS,
+    // }).then(({ data }) => {
+    //   return data.allProducts.map(({ slug }) => ({
+    //     url: `/demo/${slug}`,
+    //     changefreq: 'daily',
+    //     priority: 1,
+    //   }));
+    // })
+
+    // console.log(await getSitemapProducts());
   }
 }
 </script>

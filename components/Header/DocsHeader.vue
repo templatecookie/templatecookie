@@ -1,8 +1,7 @@
 <template>
-  <header class="w-full py-3 bg-white shadow-6xl z-50">
+  <header class="w-full py-3 bg-white drop-shadow-sm z-50">
     <div class="container relative">
       <div class="flex items-center justify-between">
-      
         <div v-if="data && data.logo">
           <nuxt-link to="/docs">
             <nuxt-img :src="data.logo.url" alt="Templatecookie.com" />
@@ -25,7 +24,7 @@
         </div>
         <!-- Toggole -->
         <div class="lg:hidden">
-          <div @click="openSidebar" :class="`toggle ${toggleStatus === true ? 'active' : ''} `">
+          <div @click.prevent="openSidebar()" class="toggle" :class="{ 'active' : mobileNav }">
             <span></span>
           </div>
         </div>
@@ -34,12 +33,12 @@
 
     <!-- Sidebar  -->
     <transition name="fade">
-      <div class="sidebar absolute left-0 top-full w-full bg-white h-screen max-w-300 block lg:hidden z-50"
-        v-if="sideBar">
+      <div class="sidebar absolute left-0 top-0 w-full bg-white h-screen max-w-300 block lg:hidden z-50"
+        v-if="mobileNav">
         <div class="py-6">
           <ul class="sidebar-menu">
             <li class="sidebar-menu__button">
-              <nuxt-link to="/" class="text-white hover:text-white text-button capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded inline-block px-5 w-full text-center">
+              <nuxt-link @click.native="openSidebar()" to="/" class="text-white hover:text-white text-button capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded inline-block px-5 w-full text-center">
                 Browse products
               </nuxt-link>
             </li>
@@ -55,14 +54,12 @@ export default {
   props: ['data'],
   data() {
     return {
-      toggleStatus: false,
-      sideBar: false,
+      mobileNav: false,
     };
   },
   methods: {
     openSidebar() {
-      this.toggleStatus = !this.toggleStatus;
-      this.sideBar = !this.sideBar;
+      this.mobileNav = !this.mobileNav;
       document.body.classList.toggle("overlay");
     },
   },

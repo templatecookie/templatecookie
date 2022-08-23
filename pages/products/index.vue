@@ -1,22 +1,19 @@
 <template>
   <div>
     <!-- Banner  -->
-    <section class="realtive pb-14 lg:pb-72 pt-156 bg-no-repeat bg-center bg-cover"
-      :style="{ backgroundImage: `url(${bannerImg})` }">
+    <section class="pb-14 lg:pb-72 pt-14 lg:pt-32 bg-no-repeat bg-center bg-cover" :style="{ backgroundImage: `url(${bannerImg})` }">
       <div class="container">
-        <!-- banner content  -->
         <div class="text-center">
           <h1 class="text-4xl md:text-heading-40 text-dark-06 mb-6 max-w-680 mx-auto font-semibold">
-            {{ page.info.title }}
+            <!-- {{ page.info.title }} -->
+            Browse our Products
           </h1>
           <p class="text-lg md:text-body-18 text-dark-06 mb-8 max-w-full md:max-w-536 mx-auto font-light">
-            {{ page.info.description }}
+            Browse our latest products for your next big idea, and see what we have to offer.
           </p>
 
-          <!-- Templates Tabs Menu  -->
-          <div class="grid grid-cols-2 lg:grid-cols-3 items-center bg-white relative rounded px-6">
-            <!-- Tab menu  -->
-            <div class="col-span-full lg:col-span-2">
+          <div class="grid grid-cols-2 lg:grid-cols-3 items-center bg-white relative rounded px-6" v-if="1 === 3">
+            <!-- <div class="col-span-full lg:col-span-2">
               <ul class="flex items-center justify-center lg:justify-start feature relative">
                 <li @click="setTechnology('')">
                   <div class="flex flex-col items-center feature-box group" :class="activeTechnology == '' ? 'is-active' : ''">
@@ -39,8 +36,7 @@
                   </div>
                 </li>
               </ul>
-            </div>
-            <!-- Sort List  -->
+            </div> -->
             <div class="col-span-full lg:col-span-1 py-4 lg:py-0">
               <div class="flex items-center justify-center lg:justify-end space-x-3 sort-filter">
                 <h5 class="whitespace-nowrap text-body-14 leading-5">
@@ -61,12 +57,12 @@
       <div class="container" v-if="products.length">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 my-8">
           <div v-for="(item, itemIndex) in products" :key="itemIndex" class="flex items-stretch">
-            <ProductCard :product="item.attributes" :id="item.id" :large="true" />
+            <ProductCard :product="item" :large="true" />
           </div>
         </div>
         <!-- pagination   -->
         <div class="flex items-center justify-center py-7">
-          <Pagination :data="pagination" v-on:goToPage="handleGoToPage"/>
+          <!-- <Pagination :data="pagination" v-on:goToPage="handleGoToPage"/> -->
         </div>
       </div>
 
@@ -83,7 +79,7 @@
 import bannerImg from "~/assets/images/all-img/img-five.png";
 import Pagination from "~/components/Pagination.vue";
 import ProductCard from "~/components/ProductCard.vue";
-import PRODUCT_LISTING from '../../graphql/productListing'
+// import PRODUCT_LISTING from '../../graphql/productListing'
 import ALL_PRODUCTS from '../../graphql/allProducts'
 
 export default {
@@ -106,34 +102,35 @@ export default {
   async asyncData({ app, query, $config }) {
     const client = app.apolloProvider.defaultClient;
 
-    const { data } = await client.query({
-      query: PRODUCT_LISTING,
-    })
+//     const { data } = await client.query({
+//       query: PRODUCT_LISTING,
+//     })
 
     let productData = await client.query({
       query: ALL_PRODUCTS,
-      variables: {
-        page: parseInt(query.page || 1),
-        pageSize: $config.dataPerPage,
-        technology: query.technology || "",
-        category: query.category || "",
-      }
+      // variables: {
+      //   page: parseInt(query.page || 1),
+      //   pageSize: $config.dataPerPage,
+      //   technology: query.technology || "",
+      //   category: query.category || "",
+      // }
     })
-    
-    const products = productData.data.products.data;
-    const pagination = productData.data.products?.meta?.pagination;
-    const page = data.productListing.data?.attributes;
-    const technologies = data.technologies.data;
-    const categories = data.categories.data;
-    
-    return { page, products, pagination, technologies, categories }
+
+    const products = productData.data.allProducts;
+    const pagination = productData.data.allProducts;
+    const categories = productData.data.allCategories;
+//     const page = data.productListing.data?.attributes;
+//     const technologies = data.technologies.data;
+
+//     return { page, products, pagination, technologies, categories }
+    return { products, pagination, categories }
   },
   data() {
     return {
-      tabs: [],
-      activeTechnology: "",
       bannerImg,
       selectedCategory: {},
+      tabs: [],
+      activeTechnology: "",
       categoryList: [
         {
           name: "All Categories",
@@ -143,19 +140,19 @@ export default {
     };
   },
   methods: {
-    handleGoToPage(event){
-      this.$router.push({ query: { page: event } })
-    },
-    setTechnology(technology) {
-      this.activeTechnology = technology;
+//     handleGoToPage(event){
+//       this.$router.push({ query: { page: event } })
+//     },
+//     setTechnology(technology) {
+//       this.activeTechnology = technology;
 
-      const query = {
-        ...this.$route.query,
-        technology: technology,
-      }
+//       const query = {
+//         ...this.$route.query,
+//         technology: technology,
+//       }
 
-      this.$router.push({ query: query })
-    },
+//       this.$router.push({ query: query })
+//     },
     setCategory(category) {
       const query = {
         ...this.$route.query,
@@ -166,41 +163,41 @@ export default {
     },
     setQueries(){
       this.categories.forEach(element => {
-        this.categoryList.push(element.attributes);
+        this.categoryList.push(element);
       });
-      
-      this.activeTechnology = this.$route.query.technology || "";
-  
-      let category = this.categories.find(element  => element.attributes.slug === this.$route.query.category);
-      this.selectedCategory = category ? category.attributes : this.categoryList[0];
-    },
-    async filterProducts(){
-      const client = this.$nuxt.$apolloProvider.defaultClient;
-      const query = this.$route.query
 
-      const { data } = await client.query({
-        query: ALL_PRODUCTS,
-        variables: {
-          page: parseInt(query.page || 1),
-          pageSize: this.$config.dataPerPage,
-          technology: query.technology || "",
-          category: query.category || "",
-        }
-      })
-      
-      this.products = data.products.data;
-      this.pagination = data.products?.meta?.pagination;
-    }
-  },
-  watch: {
-    '$route.query': {
-      handler(query) {
-        this.filterProducts();
-      },
-      // deep: true,
-      // immediate: true
+      this.activeTechnology = this.$route.query.technology || "";
+
+      let category = this.categories.find(element  => element.slug === this.$route.query.category);
+      this.selectedCategory = category ? category : this.categoryList[0];
     },
+    // async filterProducts(){
+    //   const client = this.$nuxt.$apolloProvider.defaultClient;
+    //   const query = this.$route.query
+
+    //   const { data } = await client.query({
+    //     query: ALL_PRODUCTS,
+    //     variables: {
+    //       page: parseInt(query.page || 1),
+    //       pageSize: this.$config.dataPerPage,
+    //       technology: query.technology || "",
+    //       category: query.category || "",
+    //     }
+    //   })
+
+    //   this.products = data.products.data;
+    //   this.pagination = data.products?.meta?.pagination;
+    // }
   },
+  // watch: {
+  //   '$route.query': {
+  //     handler(query) {
+  //       this.filterProducts();
+  //     },
+  //     // deep: true,
+  //     // immediate: true
+  //   },
+  // },
   mounted() {
     this.setQueries();
   },

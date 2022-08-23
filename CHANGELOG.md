@@ -2,6 +2,49 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](///compare/v2.0.0...v2.3.0) (2022-07-27)
+
+
+### Features
+
+* group feature section 1fe26ee
+* Image lazy loading 3753647
+* product support card dynamic d314fe3
+* PWA support added be9d10e
+* sitemap added 170b299
+* support added for sitemap 2b13cf6
+* toc active color added f285217
+
+
+### Bug Fixes
+
+* banner button background css fix 502cd73
+* bug fix fab1f1d
+* bug fixing across dmeo pages & seciton 117e3fe
+* condition added for  docs header component bf1797e
+* docs header component e79cd09
+* docs header loading fix e273e8f
+* dynamic css class on GroupFeatureItem b0c1f5a
+* dynamic css class on GroupFeatureItem e021913
+* image loading error on Top Features Section -> added if condition eb70f6e
+* notice feature 504ebec
+* notice record on header 5b9546d
+* notice updated 0407c15
+* object property not found error, added condition c331755
+* price plan active option fix 73e84a2
+* pricing plan color 01653cc
+* pricing plan section background color 841c05e
+* product demo page fce6963
+* product demo page 89a154d
+* product demo page error c1adff4
+* product item image fix 9c146bb
+* product listing page problem 0e559ca
+* product pages, data access issues on null object 26ade14
+* route direction error and empty page on docs/product/index 62e2534
+* slider animation on call to action on page de7489f
+* social media og image and meta information 672da6b
+* website 2fbab87
+
 ## [2.1.0](///compare/v2.0.0...v2.1.0) (2022-05-27)
 
 
