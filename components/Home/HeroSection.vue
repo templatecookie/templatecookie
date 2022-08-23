@@ -14,6 +14,7 @@
         <p class="text-lg md:text-body-20 text-dark-06 mb-8 max-w-680 mx-auto">
           {{ hero.description }}
         </p>
+
         <div class="flex justify-center w-full flex-wrap gap-6">
           <nuxt-link :to="item.link[0].href" v-for="(item, index ) in hero.actions" :key="index" :class="item.cssClass ? item.cssClass : 'bg-blue-0b hover:bg-dark-06'"
             class="flex items-center transition-all px-6 justify-center text-button-17 text-white rounded-lg overflow-hidden max-w-max">
