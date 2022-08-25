@@ -91,6 +91,11 @@ export default {
           url: '/contact-us',
           blank: false,
         },
+        {
+          name: "Blog",
+          url: '/blog',
+          blank: false,
+        },
       ]
     };
   },

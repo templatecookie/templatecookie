@@ -1,5 +1,6 @@
 import Vue from 'vue';
 const marked = require('marked');
+import dayjs from 'dayjs';
 
 let mixin = {
   methods: {
@@ -18,6 +19,9 @@ let mixin = {
         // return `http://localhost:1337${image?.data?.attributes?.url}`
         return `https://api.templatecookie.com${image?.data?.attributes?.url}`
       }
+    },
+    formateDate(data){
+      return dayjs(data).format('D MMMM, YYYY');
     }
   }
 };
