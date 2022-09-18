@@ -1,105 +1,502 @@
 <template>
   <div>
-    <div class="bg-gray-f0 py-18">
+    <section class="realtive py-12 lg:py-20 bg-no-repeat bg-center bg-cover"
+      :style="{ backgroundImage: `url(${bannerImg})` }">
       <div class="container">
-        <div class="text-center max-w-4xl m-auto mb-20 lg:mb-28">
-          <h1 class="text-dark-06 text-4xl md:text-5xl lg:text-6xl xl:text-heading-80 font-semibold mb-6 lg:mb-9 tracking-ls02">
+        <div class="text-center">
+          <h1 class="text-4xl md:text-heading-40 text-dark-06 mb-6 max-w-680 mx-auto font-semibold">
             Installation Plans
           </h1>
-          <p class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9 max-w-xl m-auto font-light">
-            YOU MUST HAVE TO PURCHASE LICENSE FIRST FROM <a href="https://codecanyon.net/user/templatecookie">CODECANYON</a> TO BUY THESE INSTALLATION PLANS.
+          <p class="text-lg md:text-body-18 text-dark-06 mb-8 max-w-full md:max-w-536 mx-auto font-light">
+            You must have to purchase license first from Themeforest & codecanyon to buy these installation plans
           </p>
-          <nuxt-link to="/" class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06">
-            View Plan
-            <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></nuxt-link>
         </div>
       </div>
-    </div>
+    </section>
     <!-- end -->
 
-    <div class="py-20 lg:py-124">
-      <div class="container">
-        <div class="lg:max-w-3xl m-auto text-center mb-16">
-          <h2
-            class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-ls02">
-            Your development plan, our development team.
-          </h2>
-          <p class="text-dark-06 text-lg sm:text-lg mb-6 lg:mb-9 font-light">
-            You want to build a web app from scratch or just add some new
-            features on a theme. We’ll give you an entire team of professional
-            developers. Or just one. Pick what works best for you, and we’ll
-            develop wonders.
-          </p>
-        </div>
-        <div class="max-w-872 m-auto grid grid-cols-12 gap-6">
-          <div class="col-span-12 lg:col-span-6 md:col-span-6 sm:col-span-6">
-            <div class="rounded-xl p-6 md:p-8 shadow-bs8 border border-gray-e6">
-              <div class="mb-8">
-                <img class="m-auto" src="~@/assets/images/all-img/thumb1.png" alt="" />
+    <section>
+      <div class="container py-[124px]">
+        <h2 class="mb-6 text-2xl font-medium">Chose your purchased product</h2>
+        <div class="grid grid-cols-4 gap-6">
+          <div class="" v-for="i in 8" :key="i">
+            <input class="hidden" type="checkbox" name="" :id="'first'+i" :value="i" v-model="isChecked">
+            <label :for="'first'+i">
+              <div class="flex items-center gap-3 rounded-xl p-5"
+                :class="isChecked.includes(i) ? 'border-2 border-[#0B63E5] bg-white': 'bg-[#F5F6F7] border-2 border-transparent'">
+                <div class="">
+                  <img class="" src="../assets/images/all-img/clickon.png" alt="">
+                </div>
+                <h2 class="text-base text-[#061C3D]">Clicon - eCommerce Laravel Script (Single Vendor)</h2>
               </div>
-              <div>
-                <h3 class="text-2xl font-semibold mb-6 text-center text-dark-06">
-                  Lend-a-dev.
-                </h3>
-                <p class="text-dark-42 font-light text-lg mb-4">
-                  In need of some extra help customizing features? Borrow one of
-                  our developers.
-                </p>
-                <p class="text-dark-42 font-light text-lg">
-                  One is not enough for your growing development needs? We have
-                  more. Profesional engineers that can augment your team now.
-                </p>
-                <nuxt-link to="/"><span
-                    class="mt-7 w-full font-medium rounded-7 text-body-17/56px text-white inline-block bg-blue-0b text-center duration-300 hover:bg-dark-06">I
-                    Want This</span></nuxt-link>
-              </div>
-            </div>
+            </label>
           </div>
-          <div class="col-span-12 lg:col-span-6 md:col-span-6 sm:col-span-6">
-            <div class="rounded-xl p-6 md:p-8 shadow-bs8 border border-gray-e6">
-              <div class="mb-8">
-                <img class="m-auto" src="~@/assets/images/all-img/thumb2.png" alt="" />
-              </div>
-              <div>
-                <h3 class="text-2xl font-semibold mb-6 text-center text-dark-06">
-                  Get-a-team.
-                </h3>
-                <p class="text-dark-42 font-light text-lg">
-                  In need of full coding power? You can get the entire dev team
-                  with just the right roles:
-                </p>
-                <ul class="list-disc text-dark-06 text-base pt-4 pl-4">
-                  <li class="mb-2">Professional engineers? Check.</li>
-                  <li class="mb-2">Testers? Check.</li>
-                  <li class="mb-2">UI/UX Designers? Check.</li>
-                  <li class="mb-2">Project Managers? Check.</li>
-                  <li>Your app is exactly what you want!</li>
-                </ul>
-                <nuxt-link to="/"><span
-                    class="mt-7 w-full font-medium rounded-7 text-body-17/56px text-white inline-block bg-blue-0b text-center duration-300 hover:bg-dark-06">I
-                    Want This</span></nuxt-link>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
-    </div>
+    </section>
     <!-- end -->
+    <section class="pricing-section bg-white">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="text-dark-06  md:text-4xl lg:text-5xl lg:leading-[56px] font-semibold mb-6 tracking-01">
+            Jobpilot Installation Pricing Plan
+          </h2>
+          <p class="text-dark-06 lg:w-3/5 m-auto  text-base sm:text-body-18 mb-8 lg:mb-20 font-light">
+            Donec ligula ligula, porta at urna non, faucibus congue urna. Nullam nulla purus, facilisis vitae odio ac,
+            tempus aliquet dolor.
+          </p>
+        </div>
+        <div class="card-area m-auto justify-center lg:flex-row flex-col flex lg:gap-6">
+          <div
+            class="card bg-white p-8 rounded-2xl border border-gray-100 border-t-4 border-t-[#FF8800] min-w-96 w-4/12">
+            <div class="top-area flex justify-between items-center mb-8">
+              <div class="card-icon inline-block p-5 rounded-lg bg-[#FFF9EE]">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.2"
+                    d="M5.1731 11.6589C5.05973 11.8512 4.99996 12.0704 5 12.2936V27.7065C5 27.9283 5.05902 28.1461 5.17099 28.3375C5.28296 28.529 5.44386 28.6872 5.63717 28.7959L19.3872 36.5303C19.5743 36.6356 19.7853 36.6909 20 36.6908L20.0016 36.6909L20.1483 20L5.17313 11.659L5.1731 11.6589Z"
+                    fill="#FF8800" />
+                  <path
+                    d="M35 27.7065V12.2936C35 12.0718 34.941 11.854 34.829 11.6625C34.717 11.4711 34.5561 11.3128 34.3628 11.2041L20.6128 3.46973C20.4257 3.36449 20.2147 3.3092 20 3.3092C19.7853 3.3092 19.5743 3.36449 19.3872 3.46973L5.63717 11.2041C5.44386 11.3128 5.28296 11.4711 5.17099 11.6625C5.05902 11.854 5 12.0718 5 12.2936V27.7065C5 27.9283 5.05902 28.1461 5.17099 28.3375C5.28296 28.529 5.44386 28.6872 5.63717 28.7959L19.3872 36.5303C19.5743 36.6355 19.7853 36.6908 20 36.6908C20.2147 36.6908 20.4257 36.6355 20.6128 36.5303L34.3628 28.7959C34.5561 28.6872 34.717 28.529 34.829 28.3375C34.941 28.1461 35 27.9283 35 27.7065Z"
+                    stroke="#FF8800" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M27.6597 23.8298V15.7048L12.5 7.34375" stroke="#FF8800" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M34.8274 11.6605L20.148 20L5.17285 11.6589" stroke="#FF8800" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M20.1486 20L20.002 36.6908" stroke="#FF8800" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+
+              </div>
+              <div class="price">
+                <h2 class="text-5xl text-[#FF8800]">Free
+                  <span class="text-base text-gray-700"></span>
+                </h2>
+              </div>
+            </div>
+            <div class="details-area">
+              <h2 class="mb-2 text-gray-900 text-2xl">Free Access</h2>
+              <p class="mb-8 text-base text-gray-700">Etiam venenatis condimentum elit at semper. Ut commodo consectetur
+                nulla.
+              </p>
+              <a href="#"
+                class="btn inline-block bg-transparent border-[1.5px] border-[#FF8800] rounded-7 px-8 duration-300">
+                <div class="flex gap-4 items-center">
+                  <span class="text-[17px] leading-[56px] text-[#FF8800] font-medium">Get Demo</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.75 12H20.25" stroke="#FF8800" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#FF8800" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+
+                </div>
+              </a>
+            </div>
+            <div class="divider bg-gray-100 h-px my-8"></div>
+            <div class="list-area">
+              <ul>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">Global Style Guide</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">Simple & Clean Icon Library</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">8+ UI Blocks</p>
+                </li>
+                <li class="flex gap-3 mb-5 opacity-30">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0V0C18.6274 0 24 5.37258 24 12V12C24 18.6274 18.6274 24 12 24V24C5.37258 24 0 18.6274 0 12V12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="line-through font-light">4+ Premade Templates</p>
+                </li>
+                <li class="flex gap-3 mb-5 opacity-30">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0V0C18.6274 0 24 5.37258 24 12V12C24 18.6274 18.6274 24 12 24V24C5.37258 24 0 18.6274 0 12V12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="line-through font-light">Free UI Assets</p>
+                </li>
+                <li class="flex gap-3 mb-5 opacity-30">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0V0C18.6274 0 24 5.37258 24 12V12C24 18.6274 18.6274 24 12 24V24C5.37258 24 0 18.6274 0 12V12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="line-through font-light">Design Principle Guidelines</p>
+                </li>
+                <li class="flex gap-3 mb-5 opacity-30">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0V0C18.6274 0 24 5.37258 24 12V12C24 18.6274 18.6274 24 12 24V24C5.37258 24 0 18.6274 0 12V12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="line-through font-light">Well-Organized Documentation</p>
+                </li>
+                <li class="flex gap-3 mb-5 opacity-30">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0V0C18.6274 0 24 5.37258 24 12V12C24 18.6274 18.6274 24 12 24V24C5.37258 24 0 18.6274 0 12V12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="line-through font-light">Life-time Customer Support</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="card bg-white p-8 rounded-2xl border border-gray-100 border-t-4 border-t-[#0B63E5] min-w-96 w-4/12">
+            <div class="top-area flex justify-between items-center mb-8">
+              <div class="card-icon inline-block p-5 rounded-lg bg-[#F0F5FF]">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.2"
+                    d="M5.1731 11.6589C5.05973 11.8512 4.99996 12.0704 5 12.2936V27.7065C5 27.9283 5.05902 28.1461 5.17099 28.3375C5.28296 28.529 5.44386 28.6872 5.63717 28.7959L19.3872 36.5303C19.5743 36.6356 19.7853 36.6909 20 36.6908L20.0016 36.6909L20.1483 20L5.17313 11.659L5.1731 11.6589Z"
+                    fill="#0B63E5" />
+                  <path
+                    d="M35 27.7065V12.2936C35 12.0718 34.941 11.854 34.829 11.6625C34.717 11.4711 34.5561 11.3128 34.3628 11.2041L20.6128 3.46973C20.4257 3.36449 20.2147 3.3092 20 3.3092C19.7853 3.3092 19.5743 3.36449 19.3872 3.46973L5.63717 11.2041C5.44386 11.3128 5.28296 11.4711 5.17099 11.6625C5.05902 11.854 5 12.0718 5 12.2936V27.7065C5 27.9283 5.05902 28.1461 5.17099 28.3375C5.28296 28.529 5.44386 28.6872 5.63717 28.7959L19.3872 36.5303C19.5743 36.6355 19.7853 36.6908 20 36.6908C20.2147 36.6908 20.4257 36.6355 20.6128 36.5303L34.3628 28.7959C34.5561 28.6872 34.717 28.529 34.829 28.3375C34.941 28.1461 35 27.9283 35 27.7065Z"
+                    stroke="#0B63E5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M27.6597 23.8298V15.7048L12.5 7.34375" stroke="#0B63E5" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M34.8274 11.6605L20.148 20L5.17285 11.6589" stroke="#0B63E5" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M20.1486 20L20.002 36.6908" stroke="#0B63E5" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="price">
+                <h2 class="text-5xl text-[#0B63E5]">$21<span class="text-base text-gray-700">/Per-Month</span>
+                </h2>
+              </div>
+            </div>
+            <div class="details-area">
+              <h2 class="mb-2 text-gray-900 text-2xl">Free Access</h2>
+              <p class="mb-8 text-base text-gray-700">Etiam venenatis condimentum elit at semper. Ut commodo consectetur
+                nulla.
+              </p>
+              <a href="#"
+                class="btn inline-block bg-transparent border-[1.5px] border-[#0B63E5] rounded-7 px-8 duration-300">
+                <div class="flex gap-4 items-center">
+                  <span class="text-[17px] leading-[56px] text-[#0B63E5] font-medium">Purchase now</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.75 12H20.25" stroke="#0B63E5" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#0B63E5" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+
+                </div>
+              </a>
+            </div>
+            <div class="divider bg-gray-100 h-px my-8"></div>
+            <div class="list-area">
+              <ul>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">Global Style Guide</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">Simple & Clean Icon Library</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">8+ UI Blocks</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">4+ Premade Templates</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">Free UI Assets</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">Design Principle Guidelines</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">Well-Organized Documentation</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">Life-time Customer Support</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="card bg-white p-8 rounded-2xl border border-gray-100 border-t-4 border-t-[#0F9918] min-w-96 w-4/12">
+            <div class="top-area flex justify-between items-center mb-8">
+              <div class="card-icon inline-block p-5 rounded-lg bg-[#E7F5E8]">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.2"
+                    d="M5.1731 11.6589C5.05973 11.8512 4.99996 12.0704 5 12.2936V27.7065C5 27.9283 5.05902 28.1461 5.17099 28.3375C5.28296 28.529 5.44386 28.6872 5.63717 28.7959L19.3872 36.5303C19.5743 36.6356 19.7853 36.6909 20 36.6908L20.0016 36.6909L20.1483 20L5.17313 11.659L5.1731 11.6589Z"
+                    fill="#0F9918" />
+                  <path
+                    d="M35 27.7065V12.2936C35 12.0718 34.941 11.854 34.829 11.6625C34.717 11.4711 34.5561 11.3128 34.3628 11.2041L20.6128 3.46973C20.4257 3.36449 20.2147 3.3092 20 3.3092C19.7853 3.3092 19.5743 3.36449 19.3872 3.46973L5.63717 11.2041C5.44386 11.3128 5.28296 11.4711 5.17099 11.6625C5.05902 11.854 5 12.0718 5 12.2936V27.7065C5 27.9283 5.05902 28.1461 5.17099 28.3375C5.28296 28.529 5.44386 28.6872 5.63717 28.7959L19.3872 36.5303C19.5743 36.6355 19.7853 36.6908 20 36.6908C20.2147 36.6908 20.4257 36.6355 20.6128 36.5303L34.3628 28.7959C34.5561 28.6872 34.717 28.529 34.829 28.3375C34.941 28.1461 35 27.9283 35 27.7065Z"
+                    stroke="#0F9918" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M27.6597 23.8298V15.7048L12.5 7.34375" stroke="#0F9918" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M34.8274 11.6605L20.148 20L5.17285 11.6589" stroke="#0F9918" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M20.1486 20L20.002 36.6908" stroke="#0F9918" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="price">
+                <h2 class="text-5xl text-[#0F9918]">$21<span class="text-base text-gray-700">/Per Month</span>
+                </h2>
+              </div>
+            </div>
+            <div class="details-area">
+              <h2 class="mb-2 text-gray-900 text-2xl">Life-time Access</h2>
+              <p class="mb-8 text-base text-gray-700">Etiam venenatis condimentum elit at semper. Ut commodo consectetur
+                nulla.
+              </p>
+              <a href="#"
+                class="btn inline-block bg-transparent border-[1.5px] border-[#0F9918] rounded-7 px-8 duration-300">
+                <div class="flex gap-4 items-center">
+                  <span class="text-[17px] leading-[56px] text-[#0F9918] font-medium">Purchase Now</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.75 12H20.25" stroke="#0F9918" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#0F9918" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+
+                </div>
+              </a>
+            </div>
+            <div class="divider bg-gray-100 h-px my-8"></div>
+            <div class="list-area">
+              <ul>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">Global Style Guide</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">Simple & Clean Icon Library</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">8+ UI Blocks</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">4+ Premade Templates</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">Free UI Assets</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">Design Principle Guidelines</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">Well-Organized Documentation</p>
+                </li>
+                <li class="flex gap-3 mb-5">
+                  <div class="list-icon inline-block rounded-full">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                        fill="#E7F5E8" />
+                      <path d="M16.8125 8.9375L10.6875 15.0622L7.625 12" stroke="#0F9918" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <p class="text-gray-700 font-light">Life-time Customer Support</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
   </div>
 </template>
 <script>
-import SolutionCard from "../components/SolutionCard.vue";
-import BusinessCard from "../components/BusinessCard.vue";
-import ICountUp from "vue-countup-v2";
+import bannerImg from "~/assets/images/all-img/img-five.png";
 
 export default {
-  components: {
-    SolutionCard,
-    BusinessCard,
-    ICountUp,
-  },
   head: {
-    title: 'Hire Us',
+    title: 'Installation Plans',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -112,101 +509,19 @@ export default {
   },
   data() {
     return {
-      options: {
-        useEasing: true,
-        useGrouping: true,
-      },
-
-      achivementList: [
-        {
-          value: 17,
-          designation: "Awards Rewarded",
-          icon: "https://i.imgur.com/XHzKgiy.png",
-        },
-        {
-          value: 23,
-          designation: "Years of Experience",
-          icon: "https://i.imgur.com/RHw1fUb.png",
-        },
-        {
-          value: 23,
-          designation: "Happy Clients",
-          icon: "https://i.imgur.com/ddKeF4B.png",
-        },
-        {
-          value: 315,
-          designation: "COMPLETED PROJECT",
-          icon: "https://i.imgur.com/h8K5qbt.png",
-        },
-      ],
-
-      projectIdea: {
-        backgroundImage: "url(https://i.imgur.com/2HNdUlR.png)",
-      },
-
-      featureList: [
-        {
-          icon: "https://i.imgur.com/UhqXDIG.png",
-          aos: "fade-up-right",
-          title: "1. Understanding (UX)",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          icon: "https://i.imgur.com/bniudjt.png",
-          aos: "fade-up-left",
-          title: "2. Stage of Design (UI)",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          icon: "https://i.imgur.com/iGXELjX.png",
-          aos: "fade-up-right",
-          title: "3. Development",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          icon: "https://i.imgur.com/eWkTzLc.png",
-          aos: "fade-up-left",
-          title: "4. Project Delivery",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-      ],
-
-      BusinessItems: [
-        {
-          title: "Project Introduction",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "User Experience Design",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "User Interface Design",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "Front-end Development",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "Back-end Development",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "Delivery & Client Feedback",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-      ],
+      bannerImg,
+      isChecked: [],
     };
   },
+
 };
 </script>
 
 <style lang="scss" scoped>
 .responsive-overly {
-    @media (max-width: 1199px) {
-      background-position: center!important;
-      background-size: cover!important;
-    }
+  @media (max-width: 1199px) {
+    background-position: center !important;
+    background-size: cover !important;
+  }
 }
 </style>
