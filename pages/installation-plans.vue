@@ -19,19 +19,102 @@
       <div class="container py-[124px]">
         <h2 class="mb-6 text-2xl font-medium">Chose your purchased product</h2>
         <div class="grid grid-cols-4 gap-6">
-          <div class="" v-for="i in 8" :key="i">
-            <input class="hidden" type="checkbox" name="" :id="'first'+i" :value="i" v-model="isChecked">
-            <label :for="'first'+i">
+          <div class="">
+            <input class="hidden"  type="radio" name="choose-product" id="first" value="first" v-model="picked" >
+            <label for="first">
               <div class="flex items-center gap-3 rounded-xl p-5"
-                :class="isChecked.includes(i) ? 'border-2 border-[#0B63E5] bg-white': 'bg-[#F5F6F7] border-2 border-transparent'">
+                :class="picked == 'first' ? 'border-2 border-[#0B63E5] bg-white': 'bg-[#F5F6F7] border-2 border-transparent'">
                 <div class="">
-                  <img class="" src="../assets/images/all-img/clickon.png" alt="">
+                  <img class="" src="../assets/images/all-img/product-1.png" alt="">
                 </div>
                 <h2 class="text-base text-[#061C3D]">Clicon - eCommerce Laravel Script (Single Vendor)</h2>
               </div>
             </label>
           </div>
-
+          <div class="">
+            <input class="hidden"  type="radio" name="choose-product" id="second" value="second" v-model="picked">
+            <label for="second">
+              <div class="flex items-center gap-3 rounded-xl p-5"
+                :class="picked == 'second' ? 'border-2 border-[#0B63E5] bg-white': 'bg-[#F5F6F7] border-2 border-transparent'">
+                <div class="">
+                  <img class="" src="../assets/images/all-img/product-2.png" alt="">
+                </div>
+                <h2 class="text-base text-[#061C3D]">Jobpilot - Job Portal Laravel Script</h2>
+              </div>
+            </label>
+          </div>
+          <div class="">
+            <input class="hidden"  type="radio" name="choose-product" id="third" value="third" v-model="picked" >
+            <label for="third">
+              <div class="flex items-center gap-3 rounded-xl p-5"
+                :class="picked == 'third' ? 'border-2 border-[#0B63E5] bg-white': 'bg-[#F5F6F7] border-2 border-transparent'">
+                <div class="">
+                  <img class="" src="../assets/images/all-img/product-3.png" alt="">
+                </div>
+                <h2 class="text-base text-[#061C3D]">Schooling - School Management System (SPA)</h2>
+              </div>
+            </label>
+          </div>
+          <div class="">
+            <input class="hidden"  type="radio" name="choose-product" id="four" value="four" v-model="picked">
+            <label for="four">
+              <div class="flex items-center gap-3 rounded-xl p-5"
+                :class="picked == 'four' ? 'border-2 border-[#0B63E5] bg-white': 'bg-[#F5F6F7] border-2 border-transparent'">
+                <div class="">
+                  <img class="" src="../assets/images/all-img/product-4.png" alt="">
+                </div>
+                <h2 class="text-base text-[#061C3D]">Adlisting - Buy Sell Classified Ads Marketplace Laravel Script</h2>
+              </div>
+            </label>
+          </div>
+          <div class="">
+            <input class="hidden"  type="radio" name="choose-product" id="five" value="five" v-model="picked" >
+            <label for="five">
+              <div class="flex items-center gap-3 rounded-xl p-5"
+                :class="picked == 'five' ? 'border-2 border-[#0B63E5] bg-white': 'bg-[#F5F6F7] border-2 border-transparent'">
+                <div class="">
+                  <img class="" src="../assets/images/all-img/product-5.png" alt="">
+                </div>
+                <h2 class="text-base text-[#061C3D]">Hasaal - Hospital Management System SPA (Single Page Application)</h2>
+              </div>
+            </label>
+          </div>
+          <div class="">
+            <input class="hidden"  type="radio" name="choose-product" id="six" value="six" v-model="picked">
+            <label for="six">
+              <div class="flex items-center gap-3 rounded-xl p-5"
+                :class="picked == 'six' ? 'border-2 border-[#0B63E5] bg-white': 'bg-[#F5F6F7] border-2 border-transparent'">
+                <div class="">
+                  <img class="" src="../assets/images/all-img/product-6.png" alt="">
+                </div>
+                <h2 class="text-base text-[#061C3D]">Eduguard - Education & Online Course Template for Figma</h2>
+              </div>
+            </label>
+          </div>
+          <div class="">
+            <input class="hidden"  type="radio" name="choose-product" id="seven" value="seven" v-model="picked" >
+            <label for="seven">
+              <div class="flex items-center gap-3 rounded-xl p-5"
+                :class="picked == 'seven' ? 'border-2 border-[#0B63E5] bg-white': 'bg-[#F5F6F7] border-2 border-transparent'">
+                <div class="">
+                  <img class="" src="../assets/images/all-img/product-7.png" alt="">
+                </div>
+                <h2 class="text-base text-[#061C3D]">Kevin - Personal Portfolio Template</h2>
+              </div>
+            </label>
+          </div>
+          <div class="">
+            <input class="hidden" type="radio" name="choose-product" id="eight" value="eight" v-model="picked">
+            <label for="eight">
+              <div class="flex items-center gap-3 rounded-xl p-5"
+                :class="picked == 'eight' ? 'border-2 border-[#0B63E5] bg-white': 'bg-[#F5F6F7] border-2 border-transparent'">
+                <div class="">
+                  <img class="" src="../assets/images/all-img/product-8.png" alt="">
+                </div>
+                <h2 class="text-base text-[#061C3D]">Shopery - Organic eCommerce Figma Template</h2>
+              </div>
+            </label>
+          </div>
         </div>
       </div>
     </section>
@@ -510,10 +593,9 @@ export default {
   data() {
     return {
       bannerImg,
-      isChecked: [],
+      picked:'first',
     };
   },
-
 };
 </script>
 
