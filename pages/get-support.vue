@@ -31,7 +31,12 @@
                 </ul>
               </div>
             </div>
-            <div id="hubspotForm" v-once class="w-full lg:w-1/2"></div>
+            <div class="w-full lg:w-1/2">
+              <div class="py-4 px-8 bg-red-200 w-full text-center text-gray-800 rounded mb-6">
+                We are available from Saturday to Thursday <strong>9 AM to 5 PM (GMT +6)</strong> 
+              </div>
+              <div id="hubspotForm" v-once></div>
+            </div>
           </div>
           <!-- <div class="flex gap-6 flex-col mb-8">
             <div class="rounded-lg mb-6 border overflow-hidden" :class="`bg-${section.color}-50 border-${section.color}-600`" v-for="(section, index) in supportFeatures" :key="index">
