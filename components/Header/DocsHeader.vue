@@ -3,7 +3,7 @@
     <div class="container relative">
       <div class="flex items-center justify-between">
         <div v-if="data && data.logo">
-          <nuxt-link to="/docs">
+          <nuxt-link to="/docs/">
             <nuxt-img :src="data.logo.url" alt="Templatecookie.com" />
           </nuxt-link>
         </div>

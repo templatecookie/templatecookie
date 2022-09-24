@@ -83,7 +83,7 @@ export default {
         // },
         {
           name: "Documentation",
-          url: '/docs',
+          url: '/docs/',
           blank: false,
         },
         {

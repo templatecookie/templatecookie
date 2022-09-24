@@ -31,7 +31,7 @@
       </div>
       <ul class="flex gap-4 flex-wrap items-center justify-center pb-6 pt-6 border-t border-gray-24">
         <!-- <li><nuxt-link to="/hire-us" class="mr-4 text-base font-light text-gray-83">Hire Us</nuxt-link></li> -->
-        <li><nuxt-link to="/docs" class="text-base font-light text-gray-83">Documentation</nuxt-link></li>
+        <li><nuxt-link to="/docs/" class="text-base font-light text-gray-83">Documentation</nuxt-link></li>
         <li><a href="https://themeforest.net/user/templatecookie" target="_blank" class="text-base font-light text-gray-83">Themeforest Profile</a></li>
         <li><a href="https://codecanyon.net/user/templatecookie" target="_blank" class="text-base font-light text-gray-83">Codecanyon Profile</a></li>
         <li><a href="https://zakirsoft.notion.site/1b82679fb8a94ed5b8da224bf0722418?v=91846e018e6948e18e9365fb2450e0f1" target="_blank" class="text-base font-light text-gray-83">Product Roadmap</a></li>
