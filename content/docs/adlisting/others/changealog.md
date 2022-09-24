@@ -5,70 +5,70 @@ position: 23
 category: Others
 ---
 
-[Purchase Now](https://codecanyon.net/item/adlisting-laravel-classified-ads/34961310?s_rank=1)
-
 # Changelog
-
-Last updated: April 2nd, 2022
-
-#### Version 1.23 - 2 April, 2022
-
+---
+### v2.2.4 - 20th August, 2022
+```
+- Youtube embed plugin added for ad details page
+- Footer social media update option fix
+- Redirect the previous URL
+- Customer social media parent div remove issue fix
+- About page background image fix
 ```
 
-### Features
 
-- Language translated with one click
-- Mail & Payment missing alert
-
-### Bug Fixes
-
-- Hide declined ads when admin approval off
-- Admin default language selection fix
-- Image validation issue fix
-- Category, subcategory, city, town spacing warning fix
-- Ad details seo issue
-- and many more
-
+### v2.1.0 - 25th July, 2022
+```
+- Push Notification Feature Added
 ```
 
-#### Version 1.21.20 - 24 March, 2022
-
+### v2.0 - July 24th, 2022
+```
+- Subscription and membership (Monthly/Yearly/Custom Days)
+- Map (Google Map, Mapbox)
+- Custom Field
+- Mark as sold option
+- Message via whatsapp
+- Message via email
+- Added new payment gateways
+    - Flutterwave
+    - Instamojo
+    - Midtrans
+    - Mollie
+- Phone number hide option
+- Watermark
+- Coming soon and maintenance mode enable/disable
+- Seller public profile
+- Seller review
+- Seller report
 ```
 
-### Features
+### V1.17.25 - 14th march, 2022
 
-- Change default language
-- Change default currency
-
+**Features**
 ```
-
-#### Version 1.17.25 - 14 March, 2022
-
-```
-
-### Features
-
+- Multi Currency Support
+- Frontend Multilingual with country flag
+- RTL Language Support
+- Ads approval setting
 - Email verification with turn off/on functionality
 - Category and Subcategory active/inactive
-- RTL Language support
 - Change app and database configuration
 - Show/Hide regular & featured ads on homepage
-- Multi Currency
-- Ads admin approval
-- Frontend multilingual with country flag
 
-### Bug Fixes
-
+```
+**Bug Fixes**
+```
 - Ad images page fix
 - Customer sidebar active/inactive fix
 - Subcategory required while creating ad
 - Frontend messenger image issue fix
 - Admin dark mode theme content fix
 - Frontend translation issue fix
-- and many more
 
-### Improvement
-
+```
+**Improvement**
+```
 - Admin ads search and filtering update
 - Admin panel category, brand, customer and other related module wise ads
 - Admin all transaction list show
@@ -76,37 +76,28 @@ Last updated: April 2nd, 2022
 - Adding sweet alert
 - Admin panel redirect related page if not found while creating ad
 - Website redirect to customer dashboard after login
-- and many more
 
 ```
 
-#### Version 1.10.10 - 19 February, 2022
-
+### V1.10.10 - 19 February, 2022
+**Features**
 ```
-
-### Features
-
 - Frontend language change
 - verified seller badge
 - REST API integration
 - Frontend pre-loader turn off/on and change
 - User email notification
+```
 
-### Bug Fixes
-
+**Bug Fixes**
+```
 - Dropify image icon
 - Translate issue
-- Login page hardcode
-- and many more
-
+- Login page credentails remove
 ```
 
-#### Version 1.7.20 – 22 December, 2021
-
+### V1.7.20 – 22 December, 2021
 ```
-
-### Features
-
 - Add 3 payment gateways
 - Social media login
 - Email Subscription
@@ -114,6 +105,8 @@ Last updated: April 2nd, 2022
 - User email notification
 ```
 
-#### Version 1.0.1 – 26 November, 2021
 
-`Initial Release`
+### V1.0.1 – 26 November, 2021
+```
+- Initial Release
+```
