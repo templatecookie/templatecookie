@@ -18,7 +18,7 @@
     <section>
       <div class="container py-[124px]">
         <h2 class="mb-6 text-2xl font-medium">Chose your purchased product</h2>
-        <div class="grid grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
           <div class="">
             <input class="hidden"  type="radio" name="choose-product" id="first" value="first" v-model="picked" >
             <label for="first">
@@ -130,9 +130,9 @@
             tempus aliquet dolor.
           </p>
         </div>
-        <div class="card-area m-auto justify-center lg:flex-row flex-col flex lg:gap-6">
+        <div class="card-area m-auto justify-center flex-wrap flex gap-6 mb-6">
           <div
-            class="card bg-white p-8 rounded-2xl border border-gray-100 border-t-4 border-t-[#FF8800] min-w-96 w-4/12">
+            class="card bg-white p-8 rounded-2xl border border-gray-100 border-t-4 border-t-[#FF8800] max-w-[424px]">
             <div class="top-area flex justify-between items-center mb-8">
               <div class="card-icon inline-block p-5 rounded-lg bg-[#FFF9EE]">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -279,7 +279,7 @@
             </div>
           </div>
           <div
-            class="card bg-white p-8 rounded-2xl border border-gray-100 border-t-4 border-t-[#0B63E5] min-w-96 w-4/12">
+            class="card bg-white p-8 rounded-2xl border border-gray-100 border-t-4 border-t-[#0B63E5] max-w-[424px]">
             <div class="top-area flex justify-between items-center mb-8">
               <div class="card-icon inline-block p-5 rounded-lg bg-[#F0F5FF]">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -424,7 +424,7 @@
             </div>
           </div>
           <div
-            class="card bg-white p-8 rounded-2xl border border-gray-100 border-t-4 border-t-[#0F9918] min-w-96 w-4/12">
+            class="card bg-white p-8 rounded-2xl border border-gray-100 border-t-4 border-t-[#0F9918] max-w-[424px]">
             <div class="top-area flex justify-between items-center mb-8">
               <div class="card-icon inline-block p-5 rounded-lg bg-[#E7F5E8]">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -604,6 +604,12 @@ export default {
   @media (max-width: 1199px) {
     background-position: center !important;
     background-size: cover !important;
+  }
+}
+.container{
+  @media (min-width: 1320px) {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 </style>
