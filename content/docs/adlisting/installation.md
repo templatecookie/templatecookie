@@ -12,7 +12,7 @@ category: "Getting Started"
 Before you install **Adlisting** make sure your server meets the following requirements:
 
 - Server Type: Linux (Shared / VPS / Dedicated)
-- PHP >= 7.3
+- PHP >= 8.1
 - BCMath PHP Extension
 - Ctype PHP Extension
 - Fileinfo PHP Extension
