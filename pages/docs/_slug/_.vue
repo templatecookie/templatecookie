@@ -1,7 +1,7 @@
 <template>
   <div class="flex w-full md:flex-wrap">
     <div class="px-6 pb-0 w-8/12 h-full">
-      <nuxt-content class="markdown-body" :document="page" />
+      <nuxt-content class="markdown-body docs-details" :document="page" />
       <div class="pt-8 w-full text-left text-gray-500">
         <i> Updated at {{ formatDate }}</i>
       </div>

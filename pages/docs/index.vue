@@ -8,7 +8,7 @@
             Templatecookie Docs
           </h1>
           <p class="text-lg md:text-body-18 text-dark-06 mb-8 max-w-full md:max-w-536 mx-auto font-light">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, expedita illo! Velit delectus totam quaerat voluptatem porro commodi veniam facilis?
+            Don't have previous experience using our products? Read the documentation to learn more about the complex features and topics.
           </p>
         </div>
       </div>
@@ -26,14 +26,14 @@
 </template>
 
 <script>
-import ProductItem from '../../components/Docs/ProductItem.vue'
+import ProductItem from '~/components/Docs/ProductItem.vue'
 import bannerImg from "~/assets/images/all-img/img-five.png";
 
 export default {
   layout: 'documentation',
   head() {
     const title = 'Templatecookie Product Documentation';
-    const description = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, expedita illo! Velit delectus totam quaerat voluptatem porro commodi veniam facilis?';
+    const description = "Don't have previous experience using our products? Read the documentation to learn more about the complex features and topics?";
     return {
       title: title,
       meta: [

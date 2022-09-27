@@ -61,11 +61,11 @@ export default {
     return {
       mobileNav: false,
       menuItems: [
-        {
-          name: "Home",
-          url: '/',
-          blank: false,
-        },
+        // {
+        //   name: "Home",
+        //   url: '/',
+        //   blank: false,
+        // },
         {
           name: "Products",
           url: '/products',
@@ -77,18 +77,23 @@ export default {
           blank: false,
         },
         // {
-        //   name: "Hire Us",
-        //   url: '/hire-us',
+        //   name: "Installation Plans",
+        //   url: '/installation-plans',
         //   blank: false,
         // },
         {
           name: "Documentation",
-          url: '/docs',
+          url: '/docs/',
           blank: false,
         },
         {
           name: "Contact Us",
           url: '/contact-us',
+          blank: false,
+        },
+        {
+          name: "Blog",
+          url: '/blog',
           blank: false,
         },
       ]
