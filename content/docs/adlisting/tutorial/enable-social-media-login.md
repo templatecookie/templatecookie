@@ -6,7 +6,7 @@ category: How to Tutorial
 
 #### How to login with Social Media
 
-##### Facebook
+#### Facebook
 
 1.  Register for regular Facebook account, if you don't already have one.
 2.  Open [this url](https://developers.facebook.com/), and **Create a New App.**
@@ -24,7 +24,7 @@ NOTE:
 - The `/.env` file settings override those of the admin panel.
 - The "**OAuth redirect URI**" is: (`http://` or `https://`) `domain.tld/auth/facebook/callback` or `www.domain.com/auth/facebook/callback`
 
-##### Google
+#### Google
 
 1.  Register for regular Google account, if you don't already have one.
 2.  Open [this url](https://console.developers.google.com/), and **Create a New App.**

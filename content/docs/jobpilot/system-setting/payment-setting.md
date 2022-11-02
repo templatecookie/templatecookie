@@ -37,3 +37,34 @@ Get your Paystack API's from the [Paystack Dashboard](https://paystack.com). Her
 
 #### 4. Razorpay
 Get your Razorpay API's from the [Razorpay Dashboard](https://razorpay.com/). Here is a official documentation on how to [get Razorpay API's](https://razorpay.com/docs/api/)
+
+
+
+Payment Providers
+-----------------
+
+The script support these payment providers:
+
+*   Paypal
+
+Paypal is one of the best payment gateway in the world, it support all credit cards and accepted in many countries.
+
+### Paypal
+
+##### Setting up credentials
+
+Get client ID and client secret by going to: [https://developer .paypal.com/developer/applications](https://developer.paypal.com/developer/applications) and generating a REST API app. Get Client ID and Secret from there.
+
+**Setup**
+
+*   Copy and paste the API client-id, and client-secret into the /.env file like this:
+
+PAYPAL\_MODE=sandbox
+PAYPAL\_CLIENT\_ID=your-paypal-client-id
+PAYPAL\_CLIENT\_SECRET=your-paypal-client-secret
+
+*   You have to use `PAYPAL_MODE=live` in your live server.
+*   You are done.
+
+Now visit **Admin Panel** -> **Payment** -> **Packages** to set the packages and currencies.
+
