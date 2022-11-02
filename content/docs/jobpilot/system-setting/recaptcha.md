@@ -11,13 +11,13 @@ reCAPTCHA is a free CAPTCHA service that helps protect your site against spam, m
 **How to setup.**
 
 *   Visit [https://www.google.com/recaptcha/admin](https://www.google.com/recaptcha/admin)
-*   Follow the steps by select the reCAPTCHA version and get your **site key** and your **secret key**.
+*   Follow the steps by select the reCAPTCHA v2 and get your **site key** and your **secret key**.
 
 **Admin panel setup**
 
 *   Go to the **Admin panel** -> **Settings** -> **General** -> **Security**
 *   Enable the feature from the '**Enable reCAPTCHA**' field
-*   Set '**reCAPTCHA version**', '**reCAPTCHA site key**' and '**reCAPTCHA secret key**'
+*   Set '**reCAPTCHA site key**' and '**reCAPTCHA secret key**'
 *   And save your changes.
 
 **Or use `/.env` file setup**
@@ -31,7 +31,7 @@ reCAPTCHA is a free CAPTCHA service that helps protect your site against spam, m
     RECAPTCHA_SECRET_KEY=your-recaptcha-secret_key
 ```
 
-*   Replace `your-recaptcha-keys-version` (by **v2** or **v3**), replace `your-recaptcha-site_key` and `your-recaptcha-secret_key` by your keys.
+*   Replace `your-recaptcha-keys-version` (by **v2**), replace `your-recaptcha-site_key` and `your-recaptcha-secret_key` by your keys.
 *   Save the file.
 *   You are done.
 
