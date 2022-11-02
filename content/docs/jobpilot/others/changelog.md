@@ -7,6 +7,15 @@ category: Others
 
 # Changelog
 
+### v2.10.3 - 3rd October, 2022
+```
+- Candidate technology skills feature added
+- Candidate language skills feature added
+- Map selected country wise cities feature added
+- Company application kanban board issue fix
+- Admin profile image update issue fix
+- Login & Register page responsive design fix
+```
 ### v2.7.3 - 21st September, 2022
 ```
 - Multiple language terms and privacy issue fix
