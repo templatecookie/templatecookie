@@ -6,7 +6,7 @@ category: System Setting
 
 ### Social Login
 
-**Important:** Make sure APP\_URL in `/.env` file matches your site url. It should be set automatically, but you might need to do it manually in some rare cases.
+**Important:** Make sure APP_URL in `/.env` file matches your site url. It should be set automatically, but you might need to do it manually in some rare cases.
 
 ### Facebook
 
@@ -24,10 +24,10 @@ Now, you have to setup your admin panel:
 Or place all the config values or API keys in the `/.env` file.
 
 Facebook example in `/.env` file
-
-FACEBOOK\_CLIENT\_ID=your-facebook-client\_id
-FACEBOOK\_CLIENT\_SECRET=your-facebook-client\_secret
-
+```
+FACEBOOK_CLIENT_ID=your-facebook-client_id
+FACEBOOK_CLIENT_SECRET=your-facebook-client_secret
+```
 NOTE:
 
 *   The `/.env` file settings override those of the admin panel.
@@ -50,8 +50,8 @@ Or place all the config values or API keys in the `/.env` file.
 
 LinkedIn example in `/.env` file
 
-LINKEDIN\_CLIENT\_ID=your-linkedin-client\_id
-LINKEDIN\_CLIENT\_SECRET=your-linkedin-client\_secret
+LINKEDIN_CLIENT_ID=your-linkedin-client_id
+LINKEDIN_CLIENT_SECRET=your-linkedin-client_secret
 
 NOTE:
 
@@ -75,8 +75,8 @@ Or place all the config values or API keys in the `/.env` file.
 
 Twitter example in `/.env` file
 
-TWITTER\_CLIENT\_ID=your-twitter-client\_id
-TWITTER\_CLIENT\_SECRET=your-twitter-client\_secret
+TWITTER_CLIENT_ID=your-twitter-client_id
+TWITTER_CLIENT_SECRET=your-twitter-client_secret
 
 NOTE:
 

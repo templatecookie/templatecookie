@@ -18,7 +18,7 @@ Or use /.env file setup
 *   Open and edit `.env` file.
 *   Add this code:
 
-GOOGLE\_MAPS\_API\_KEY=your-googlemaps-key
+```GOOGLE_MAPS_API_KEY=your-googlemaps-key```
 
 *   Replace `your-googlemaps-key`.
 *   Save and upload the file.

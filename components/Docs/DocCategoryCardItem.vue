@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-shrink-0 w-3/12 flex-grow mb-4 border rounded-md overflow-hidden">
+  <div class="flex-shrink-0 w-3/12 flex-grow mb-4 border rounded-md overflow-hidden min-h-full">
     <div class="py-3 px-5 bg-gray-50 uppercase text-gray-400">
       {{ name }}
     </div>

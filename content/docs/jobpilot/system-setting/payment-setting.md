@@ -59,9 +59,9 @@ Get client ID and client secret by going to: [https://developer .paypal.com/deve
 
 *   Copy and paste the API client-id, and client-secret into the /.env file like this:
 
-PAYPAL\_MODE=sandbox
-PAYPAL\_CLIENT\_ID=your-paypal-client-id
-PAYPAL\_CLIENT\_SECRET=your-paypal-client-secret
+PAYPAL_MODE=sandbox
+PAYPAL_CLIENT_ID=your-paypal-client-id
+PAYPAL_CLIENT_SECRET=your-paypal-client-secret
 
 *   You have to use `PAYPAL_MODE=live` in your live server.
 *   You are done.
