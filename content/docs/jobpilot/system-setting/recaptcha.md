@@ -26,12 +26,13 @@ reCAPTCHA is a free CAPTCHA service that helps protect your site against spam, m
 *   Open `/.env` file.
 *   Provide the keys there.
 ```
-    RECAPTCHA_VERSION=your-recaptcha-keys-version
-    RECAPTCHA_SITE_KEY=your-recaptcha-site_key
-    RECAPTCHA_SECRET_KEY=your-recaptcha-secret_key
+    NOCAPTCHA_SITEKEY=your-recaptcha-site_key
+    NOCAPTCHA_SECRET=your-recaptcha-secret_key
 ```
 
-*   Replace `your-recaptcha-keys-version` (by **v2**), replace `your-recaptcha-site_key` and `your-recaptcha-secret_key` by your keys.
+
+
+*   replace `your-recaptcha-site_key` and `your-recaptcha-secret_key` by your keys.
 *   Save the file.
 *   You are done.
 
