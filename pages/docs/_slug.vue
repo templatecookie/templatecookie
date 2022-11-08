@@ -14,7 +14,7 @@
     </section>
     <section>
       <div class="container">
-        <div class="flex py-8">
+        <div class="flex py-8 items-start">
           <div class="w-3/12 h-full border-r-[1px] border-gray-100 ">
             <ul class="mb-6" v-for="(items, index) in categories" :key="index">
               <li class="uppercase text-xs text-gray-500 mb-4"> {{ index }} </li>
