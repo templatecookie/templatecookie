@@ -12,7 +12,6 @@ category: Others
 - Contact and newsletter spam protection
 - Candidate and employer account auto/manual activation
 ```
-
 ### v2.10.3 - 3rd October, 2022
 ```
 - Candidate technology skills feature added

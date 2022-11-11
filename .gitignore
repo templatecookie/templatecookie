@@ -88,5 +88,6 @@ sw.*
 
 # Vim swap files
 *.swp
-yarn.lock
 .vercel
+package-lock.json
+yarn.lock
