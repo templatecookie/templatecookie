@@ -7,6 +7,11 @@ category: Others
 
 # Changelog
 
+### v2.12.0 - 9th October, 2022
+```
+- Contact and newsletter spam protection
+- Candidate and employer account auto/manual activation
+```
 ### v2.10.3 - 3rd October, 2022
 ```
 - Candidate technology skills feature added
