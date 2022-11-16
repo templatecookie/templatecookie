@@ -14,7 +14,7 @@
               <nuxt-link class="px-3" v-else :to="item.url"> {{ item.name }} </nuxt-link>
             </li>
             <!-- <li >
-              <a href="https://codecanyon.net/user/templatecookie" target="_blank" class="text-white hover:text-white text-sm capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded inline-block px-5 py-4">
+              <a href="https://1.envato.market/EaNJ2X" target="_blank" class="text-white hover:text-white text-sm capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded inline-block px-5 py-4">
                 Codecanyon Profile
               </a>
             </li> -->
@@ -42,7 +42,7 @@
                 <nuxt-link v-else @click.native="openSidebar()" class="px-8 py-2 w-full flex" :to="item.url"> {{ item.name }} </nuxt-link>
             </li>
             <li class="sidebar-menu__button">
-              <a href="https://codecanyon.net/user/templatecookie" target="_blank"
+              <a href="https://1.envato.market/EaNJ2X" target="_blank"
                 class="text-white hover:text-white text-button capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded inline-block px-5 w-full text-center">
                 Codecanyon Profile
               </a>
@@ -76,11 +76,11 @@ export default {
           url: '/get-support',
           blank: false,
         },
-        {
-          name: "Installation Plans",
-          url: '/installation-plans',
-          blank: false,
-        },
+        // {
+        //   name: "Installation Plans",
+        //   url: '/installation-plans',
+        //   blank: false,
+        // },
         {
           name: "Documentation",
           url: '/docs/',
