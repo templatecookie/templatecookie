@@ -7,6 +7,17 @@ category: Others
 
 # Changelog
 
+### v2.20.0 - 21th Novembar, 2022
+```
+- Job edit functionality with auto/manual activation
+- Pay per job integration
+- Leaflet & Openstreat map integration
+- Location wise careerjet & indeed jobs integration
+- Candidates education & experience setting
+- Multiple currency conversion integration
+- Job benefits and tags integration
+- Much design improvements and bug fixes
+```
 ### v2.12.0 - 9th October, 2022
 ```
 - Contact and newsletter spam protection
