@@ -7,6 +7,13 @@ category: Others
 
 # Changelog
 
+### v2.20.4 - 23th Novembar, 2022
+```
+- Leaflet map dragging issue fix
+- Leaflet map autocomplete searching issue fix
+- Autocomplete job searching issue fix
+- Notification static content issue fix
+```
 ### v2.20.0 - 21th Novembar, 2022
 ```
 - Job edit functionality with auto/manual activation
