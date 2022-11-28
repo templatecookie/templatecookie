@@ -33,7 +33,7 @@
             </div>
             <div class="w-full lg:w-1/2">
               <div class="py-4 px-8 bg-red-200 w-full text-center text-gray-800 rounded mb-6">
-                We are available from Saturday to Thursday <strong>9 AM to 5 PM (GMT +6)</strong> 
+                We are available from Monday to Friday <strong>9 AM to 5 PM (GMT +6)</strong> 
               </div>
               <div id="hubspotForm" v-once></div>
             </div>
