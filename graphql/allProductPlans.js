@@ -21,9 +21,6 @@ export default gql`
         price
         name
         id
-        icon {
-          url
-        }
         features {
           id
           feature

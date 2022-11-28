@@ -8,9 +8,7 @@
             The easiest way to create your website.
           </h1>
           <p class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9 max-w-xl m-auto font-light">
-            Golio gives you everything you need to create your website in
-            minutes. Bootstrap code with a well-organized Figma file to design &
-            develop your next websites in minutes.
+            Our software development team is composed of dedicated engineers and strategic project managers who can handle projects of any size and complexity.
           </p>
           <nuxt-link to="/"
             class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06">
