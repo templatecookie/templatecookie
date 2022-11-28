@@ -14,9 +14,8 @@ To send all the necessary email, we need a Email Delivery servcies. Jobpilot use
 
 1. Mailgun
 2. Postmark
-3. Amazon SES
-4. Sendmail
-5. Sengrid
+3. Sendmail
+4. Sengrid
 
 Although, you can use any email delivery platform as long as it supports SMTP. 
 
@@ -35,16 +34,13 @@ Short for Simple Mail Transfer Protocol, a protocol for sending e-mail messages 
 
 **In short it used to send emails to your site users..!!** You can use any SMTP service provider.
 
-*   Your own hosting SMTP server
+*   SMTP server
 *   Mailgun
-*   Postmark
-*   Amazon SES
-*   Sparkpost
 *   Gmail, Yahoo or some other email provider
 
 **Please note that some hosting providers blocks port 25 or 465 in that case you have change your SMTP email server or contact your hosting provider**
 
-### Own SMTP Server
+### SMTP
 
 **Using your own or some SMTP server** **Admin panel setup**
 
@@ -104,97 +100,6 @@ NOTE: The `/.env` file settings override those of the admin panel.
 ```
 
 *   Replace `your-mailgun-domain`, `your-mailgun-secret`, `your-mailgun-smtp-host`, `your-mailgun-smtp-port`, `your-mailgun-smtp-username`, `your-mailgun-smtp-password` and `your-mailgun-smtp-encryption`.
-*   Save and upload the file.
-*   You are done.
-
-NOTE: The `/.env` file settings override those of the admin panel.
-
-**Note:** Don't forget to change your sender email address in your **Admin panel** -> **Settings** -> **General** -> **Mail** -> **Email Sender** to match it with an allowed email address of your SMTP server.
-
-### Postmark
-
-**Admin panel setup**
-
-*   Go to your **Admin panel** -> **Settings** -> **General** -> **Mail**
-*   Set '**Mail Mailer**', '**Postmark Token**', '**Mail Host**', '**Mail Port**', '**Mail Encryption**', '**Mail Username**' and '**Mail Password**'
-*   And save your changes.
-
-**Or use `/.env` file setup**
-
-*   Login to your FTP account.
-*   Open and edit `/.env` file.
-*   Remove all your current Mail configuration variables.
-*   Add the lines below:
-```
-    MAIL_MAILER=postmark
-    POSTMARK_TOKEN=your-postmark-token
-    MAIL_HOST=your-postmark-smtp-host
-    MAIL_PORT=your-postmark-smtp-port
-    MAIL_USERNAME=your-postmark-smtp-username
-    MAIL_PASSWORD=your-postmark-smtp-password
-    MAIL_ENCRYPTION=your-postmark-smtp-encryption
-```
-
-*   Replace `your-postmark-secret`, `your-postmark-smtp-host`, `your-postmark-smtp-port`, `your-postmark-smtp-username`, `your-postmark-smtp-password` and `your-postmark-smtp-encryption`.
-*   Save and upload the file.
-*   You are done.
-
-NOTE: The `/.env` file settings override those of the admin panel.
-
-**Note:** Don't forget to change your sender email address in your **Admin panel** -> **Settings** -> **General** -> **Mail** -> **Email Sender** to match it with an allowed email address of your SMTP server.
-
-### Amazon SES
-
-**Admin panel setup**
-
-*   Go to your **Admin panel** -> **Settings** -> **General** -> **Mail**
-*   Set '**Mail Mailer**', '**SES Key**', '**SES Secret**' and '**SES Region**'
-*   And save your changes.
-
-**Or use `/.env` file setup**
-
-*   Login to your FTP account.
-*   Open and edit `/.env` file.
-*   Remove all your current Mail configuration variables.
-*   Add the lines below:
-```
-    MAIL_MAILER=ses
-    SES_KEY=your-ses-key
-    SES_SECRET=your-ses-secret
-    SES_REGION=your-ses-region
-```
-*   Replace `your-ses-key`, `your-ses-secret` and `your-ses-region`.
-*   Save and upload the file.
-*   You are done.
-
-NOTE: The `/.env` file settings override those of the admin panel.
-
-**Note:** Don't forget to change your sender email address in your **Admin panel** -> **Settings** -> **General** -> **Mail** -> **Email Sender** to match it with an allowed email address of your SMTP server.
-
-### Sparkpost
-
-**Admin panel setup**
-
-*   Go to your **Admin panel** -> **Settings** -> **General** -> **Mail**
-*   Set '**Mail Mailer**', '**Sparkpost Secret**', '**Mail Host**', '**Mail Port**', '**Mail Encryption**', '**Mail Username**' and '**Mail Password**'
-*   And save your changes.
-
-**Or use `/.env` file setup**
-
-*   Login to your FTP account.
-*   Open and edit `/.env` file.
-*   Remove all your current Mail configuration variables.
-*   Add the lines below:
-```
-    MAIL_MAILER=sparkpost
-    SPARKPOST_SECRET=your-sparkpost-secret
-    MAIL_HOST=your-sparkpost-smtp-host
-    MAIL_PORT=your-sparkpost-smtp-port
-    MAIL_USERNAME=your-sparkpost-smtp-username
-    MAIL_PASSWORD=your-sparkpost-smtp-password
-    MAIL_ENCRYPTION=your-sparkpost-smtp-encryption
-```
-*   Replace `your-sparkpost-secret`, `your-sparkpost-smtp-host`, `your-sparkpost-smtp-port`, `your-sparkpost-smtp-username`, `your-sparkpost-smtp-password` and `your-sparkpost-smtp-encryption`.
 *   Save and upload the file.
 *   You are done.
 

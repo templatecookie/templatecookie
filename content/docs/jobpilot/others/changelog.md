@@ -7,6 +7,29 @@ category: Others
 
 # Changelog
 
+### v2.20.4 - 23th Novembar, 2022
+```
+- Leaflet map dragging issue fix
+- Leaflet map autocomplete searching issue fix
+- Autocomplete job searching issue fix
+- Notification static content issue fix
+```
+### v2.20.0 - 21th Novembar, 2022
+```
+- Job edit functionality with auto/manual activation
+- Pay per job integration
+- Leaflet & Openstreat map integration
+- Location wise careerjet & indeed jobs integration
+- Candidates education & experience setting
+- Multiple currency conversion integration
+- Job benefits and tags integration
+- Much design improvements and bug fixes
+```
+### v2.12.0 - 9th October, 2022
+```
+- Contact and newsletter spam protection
+- Candidate and employer account auto/manual activation
+```
 ### v2.10.3 - 3rd October, 2022
 ```
 - Candidate technology skills feature added
