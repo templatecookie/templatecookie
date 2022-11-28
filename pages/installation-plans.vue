@@ -35,88 +35,14 @@
       <div class="container">
         <div class="text-center">
           <h2 class="text-dark-06 md:text-4xl lg:text-5xl lg:leading-[56px] font-semibold mb-6 tracking-01">
-            Jobpilot Installation Pricing Plan
+            {{ selectedProductData.title }}
           </h2>
           <p class="text-dark-06 lg:w-3/5 m-auto text-base sm:text-body-18 mb-8 lg:mb-20 font-light">
-            Donec ligula ligula, porta at urna non, faucibus congue urna. Nullam nulla purus, facilisis vitae odio ac, tempus aliquet dolor.
+            {{ selectedProductData.description }}
           </p>
         </div>
         <div class="card-area m-auto justify-center flex-wrap flex gap-6 mb-6">
-          <div v-for="(plan, index) in selectedProductData.plans" :key="index" class="card bg-white p-8 rounded-2xl border border-gray-100 border-t-4 border-t-[#FF8800] max-w-[424px]">
-            <div class="top-area flex flex-wrap gap-4 justify-between items-center mb-8">
-              <div class="card-icon inline-block p-5 rounded-lg bg-[#FFF9EE]">
-                <!-- <img :src="plan.icon.url" class="w-10 h-10" alt=""> -->
-              </div>
-              <div class="price">
-                <h2 class="text-5xl text-[#FF8800]">
-                  Free
-                  <span class="text-base text-gray-700"></span>
-                </h2>
-              </div>
-            </div>
-            <div class="details-area">
-              <h2 class="mb-2 text-gray-900 text-2xl">Free Access</h2>
-              <p class="mb-8 text-base text-gray-700">
-                Etiam venenatis condimentum elit at semper. Ut commodo consectetur
-                nulla.
-              </p>
-              <a href="#" class="btn inline-block bg-transparent border-[1.5px] border-[#FF8800] rounded-7 px-8 duration-300">
-                <div class="flex gap-4 items-center">
-                  <span class="text-[17px] leading-[56px] text-[#FF8800] font-medium">Get Demo</span>
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M3.75 12H20.25"
-                      stroke="#FF8800"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M13.5 5.25L20.25 12L13.5 18.75"
-                      stroke="#FF8800"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <div class="divider bg-gray-100 h-px my-8"></div>
-            <div class="list-area">
-              <ul>
-                <li class="flex gap-3 mb-5" v-for="(feature, index) in plan.features" :key="index">
-                  <div class="list-icon inline-block rounded-full" :class="{ 'opacity-30' : !feature.active }">
-                    <svg width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
-                        fill="#E7F5E8"
-                      />
-                      <path
-                        d="M16.8125 8.9375L10.6875 15.0622L7.625 12"
-                        stroke="#0F9918"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </div>
-                  <p class="text-gray-700 font-light " :class="{ 'line-through' :  !feature.active }">{{ feature.feature }}</p>
-                </li>
-              </ul>
-            </div>
-          </div>
+         <pricing-plan v-for="(plan, index) in selectedProductData.plans" :key="index" :item="plan.priceplan[0]"/>
         </div>
       </div>
     </section>
@@ -126,6 +52,7 @@
 <script>
 import bannerImg from "~/assets/images/all-img/img-five.png";
 import ALL_PRODUCT_PLANS from '~/graphql/allProductPlans.js'
+import PricingPlan from '~/components/PricingPlan.vue'
 
 export default {
   head: {
@@ -140,6 +67,7 @@ export default {
       }
     ]
   },
+  components: { PricingPlan },
   data() {
     return {
       selectedProduct: null,
@@ -162,8 +90,7 @@ export default {
     }
   },
   created(){
-    this.selectedProduct = this.products[0].product.id
-    console.log(this.selectedProduct);
+    this.selectedProduct = 'id'+this.products[0].product.id
   }
 };
 </script>

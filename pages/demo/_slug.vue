@@ -94,16 +94,18 @@ export default {
       ],
     }
   },
-  async asyncData({ app, params, store }) {
+  async asyncData({ app, params, store, query  }) {
     const client = app.apolloProvider.defaultClient;
+    const draft = app.apolloProvider.clients.draft
     const { slug } = params;
+    const queryObject = { query: PRODUCT_DEMO, variables: { slug } };
+    let productData;
 
-    const { data } = await client.query({
-      query: PRODUCT_DEMO,
-      variables: {
-        slug
-      }
-    })
+    if(query && query.draft){
+      productData = await draft.query(queryObject)
+    }else {
+      productData = await client.query(queryObject)
+    }
 
     if(!store.getters.getGlobalData){
       const global = await client.query({
@@ -114,7 +116,7 @@ export default {
       store.commit('SET_GLOBAL_DATA', globalData)
     }
 
-    const product = data.product;
+    const product = productData.data.product;
     return { product }
   },
   components: {

@@ -76,11 +76,11 @@ export default {
           url: '/get-support',
           blank: false,
         },
-        // {
-        //   name: "Installation Plans",
-        //   url: '/installation-plans',
-        //   blank: false,
-        // },
+        {
+          name: "Installation Plans",
+          url: '/installation-plans',
+          blank: false,
+        },
         {
           name: "Documentation",
           url: '/docs/',

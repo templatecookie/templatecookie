@@ -155,6 +155,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: '~/graphql/config/config.js',
+      draft: '~/graphql/config/draft.js',
     }
   },
 
