@@ -7,6 +7,13 @@ category: Others
 
 # Changelog
 
+### v2.20.8 - 29th Novembar, 2022
+```
+- Login & Register page social login showing condition fix
+- Duplicate helper function remove
+- Employee details social media hide if not found
+- IP wise country, currency & language selection fix
+```
 ### v2.20.4 - 23th Novembar, 2022
 ```
 - Leaflet map dragging issue fix
