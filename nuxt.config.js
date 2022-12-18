@@ -48,7 +48,7 @@ const linkages = async () => {
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: true,
+  ssr: false,
 
   publicRuntimeConfig: {
     dataPerPage: 6,
