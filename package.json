@@ -22,6 +22,7 @@
     "@nuxtjs/apollo": "^4.0.1-rc.5",
     "@nuxtjs/gtm": "^2.4.0",
     "@nuxtjs/sitemap": "^2.4.0",
+    "add": "^2.0.6",
     "aos": "^2.3.4",
     "core-js": "^3.19.3",
     "countup.js": "^2.0.8",
@@ -39,7 +40,8 @@
     "vue-select": "^3.16.0",
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
-    "webpack": "^4.46.0"
+    "webpack": "^4.46.0",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^2.4.0",
