@@ -18,7 +18,7 @@
     "url": "https://templatecookie.com"
   },
   "engines": {
-    "node": "16"
+    "node": "14"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
