@@ -17,6 +17,9 @@
     "email": "templatecookie@gmail.com",
     "url": "https://templatecookie.com"
   },
+  "engines": {
+    "node": "16.16.0"
+  },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
     "@nuxtjs/apollo": "^4.0.1-rc.5",
