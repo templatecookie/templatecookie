@@ -25,8 +25,7 @@
       </a>
     </div>
     <ul class="p-8 pb-3">
-      <li class="flex font-light mb-5" v-for="(feature, index) in item.features" :key="index" 
-      :class="{ 'opacity-30' : !feature.active }"> 
+      <li class="flex font-light mb-5" v-for="(feature, index) in item.features" :key="index">
         <img src="~/assets/images/svg/check.svg" alt="" class="mr-3" >
         <p v-if="feature.active" >{{ feature.feature }}</p>
         <p v-else class="line-through"> {{ feature.feature }} </p>

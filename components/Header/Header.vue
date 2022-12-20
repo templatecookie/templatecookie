@@ -61,24 +61,24 @@ export default {
     return {
       mobileNav: false,
       menuItems: [
-        // {
-        //   name: "Home",
-        //   url: '/',
-        //   blank: false,
-        // },
         {
-          name: "Products",
+          name: "All Products",
           url: '/products',
-          blank: false,
-        },
-        {
-          name: "Get Support",
-          url: '/get-support',
           blank: false,
         },
         {
           name: "Installation Plans",
           url: '/installation-plans',
+          blank: false,
+        },
+        {
+          name: "Hire Us",
+          url: '/hire-us',
+          blank: false,
+        },
+        {
+          name: "Get Support",
+          url: '/get-support',
           blank: false,
         },
         {

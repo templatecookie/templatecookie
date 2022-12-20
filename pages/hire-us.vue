@@ -1,329 +1,378 @@
 <template>
   <div>
-    <div class="bg-gray-f0 pb-20 lg:pb-124 pt-230">
-      <div class="container">
-        <div class="text-center max-w-4xl m-auto mb-20 lg:mb-28">
-          <h1
-            class="text-dark-06 text-4xl md:text-5xl lg:text-6xl xl:text-heading-80 font-semibold mb-6 lg:mb-9 tracking-ls02">
-            The easiest way to create your website.
-          </h1>
-          <p class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9 max-w-xl m-auto font-light">
-            Our software development team is composed of dedicated engineers and strategic project managers who can handle projects of any size and complexity.
-          </p>
-          <nuxt-link to="/"
-            class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06">
-            Let’s Work together
-            <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></nuxt-link>
-        </div>
-        <div class="grid grid-cols-4 gap-6">
-          <div v-for="(item, itemIndex) in achivementList" :key="itemIndex"
-            class="col-span-full ex-small:col-span-2 ex-small:lg:col-span-1">
-            <div class="flex flex-col ex-small:flex-row items-center text-center ex-small:text-left">
-              <div class="flex-shrink-0 mb-3 ex-small:mr-5">
-                <nuxt-img :src="item.icon" alt="icon" />
+    <div class="relative overflow-hidden bg-gray-800">
+      <div class="hidden sm:absolute sm:inset-0 sm:block" aria-hidden="true">
+        <svg class="absolute bottom-0 right-0 mb-48 translate-x-1/2 transform text-gray-700 lg:top-0 lg:mt-28 lg:mb-0 xl:translate-x-0 xl:transform-none" width="364" height="384" viewBox="0 0 364 384" fill="none">
+          <defs>
+            <pattern id="eab71dd9-9d7a-47bd-8044-256344ee00d0" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <rect x="0" y="0" width="4" height="4" fill="currentColor" />
+            </pattern>
+          </defs>
+          <rect width="364" height="384" fill="url(#eab71dd9-9d7a-47bd-8044-256344ee00d0)" />
+        </svg>
+      </div>
+      <div class="relative pt-6 pb-16 sm:pb-24">
+        <main class="mt-16 sm:mt-24">
+          <div class="mx-auto max-w-7xl">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+              <div class="px-4 sm:px-6 sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:flex lg:items-center lg:text-left">
+                <div>
+                  <a href="#" class="inline-flex items-center rounded-full bg-gray-900 p-1 px-3 pr-2 text-white hover:text-gray-200 text-sm">
+                    Looking for Partner for your Next Web Design & Development Project?
+                  </a>
+                  <h1 class="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
+                    We are here to Partner with You!
+                  </h1>
+                  <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">At Templatecookie we have a very talented and experienced team of designers and developers who are committed to offering the best value to your projects. </p>
+                  <p class="mt-8 text-base font-semibold text-white sm:mt-10">Used by</p>
+                  <div class="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
+                    <div class="flex flex-wrap items-start justify-between">
+                      <div class="flex justify-center px-1">
+                        <img class="h-9 sm:h-10" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple">
+                      </div>
+                      <div class="flex justify-center px-1">
+                        <img class="h-9 sm:h-10" src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg" alt="Workcation">
+                      </div>
+                      <div class="flex justify-center px-1">
+                        <img class="h-9 sm:h-10" src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg" alt="StaticKit">
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div>
-                <h4 class="text-dark-06 text-2xl font-medium tracking-ls03 mb-2">
-                  <ICountUp :delay="item.delay" :endVal="item.value" :options="options" />
-                  +
-                </h4>
-                <p class="text-dark-42 text-sm tracking-ls04 uppercase">
-                  {{ item.designation }}
-                </p>
+              <div class="mt-16 sm:mt-24 lg:col-span-6 lg:mt-0">
+                <div class="bg-white sm:mx-auto sm:w-full sm:max-w-md sm:overflow-hidden sm:rounded-lg">
+                  <div class="px-4 py-8 sm:px-10">
+                    <p class="text-sm font-medium text-gray-700">Request Free Consultation</p>
+                    <!-- <div class="relative mt-6">
+                      <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                        <div class="w-full border-t border-gray-300"></div>
+                      </div>
+                      <div class="relative flex justify-center text-sm">
+                        <span class="bg-white px-2 text-gray-500">Or</span>
+                      </div>
+                    </div> -->
+
+                    <div class="mt-6">
+                      <form action="#" method="POST" class="space-y-6">
+                        <div>
+                          <label for="name" class="sr-only">Full name</label>
+                          <input type="text" name="name" id="name" autocomplete="name" placeholder="Full name" required class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                        </div>
+
+                        <div>
+                          <label for="mobile-or-email" class="sr-only">Mobile number or email</label>
+                          <input type="text" name="mobile-or-email" id="mobile-or-email" autocomplete="email" placeholder="Mobile number or email" required class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                        </div>
+
+                        <div>
+                          <label for="password" class="sr-only">Password</label>
+                          <input id="password" name="password" type="password" placeholder="Password" autocomplete="current-password" required class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                        </div>
+
+                        <div>
+                          <button type="submit" class="flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Request Consultation now</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div class="relative bg-white py-24 sm:py-32 lg:py-40">
+      <div class="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
+        <h2 class="text-lg font-semibold text-indigo-600">Deploy faster</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          Services We Offer
+        </p>
+        <p class="mx-auto mt-5 max-w-prose text-xl text-gray-500">Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.</p>
+        <div class="mt-20">
+          <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="pt-6">
+              <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                <div class="-mt-6">
+                  <div>
+                    <span class="inline-flex items-center justify-center rounded-xl bg-indigo-500 p-3 shadow-lg">
+                      <!-- Heroicon name: outline/cloud-arrow-up -->
+                      <svg class="h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                      </svg>
+                    </span>
+                  </div>
+                  <h3 class="mt-8 text-lg font-semibold leading-8 tracking-tight text-gray-900">Push to Deploy</h3>
+                  <p class="mt-5 text-base leading-7 text-gray-600">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-6">
+              <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                <div class="-mt-6">
+                  <div>
+                    <span class="inline-flex items-center justify-center rounded-xl bg-indigo-500 p-3 shadow-lg">
+                      <!-- Heroicon name: outline/lock-closed -->
+                      <svg class="h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                      </svg>
+                    </span>
+                  </div>
+                  <h3 class="mt-8 text-lg font-semibold leading-8 tracking-tight text-gray-900">SSL Certificates</h3>
+                  <p class="mt-5 text-base leading-7 text-gray-600">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-6">
+              <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                <div class="-mt-6">
+                  <div>
+                    <span class="inline-flex items-center justify-center rounded-xl bg-indigo-500 p-3 shadow-lg">
+                      <!-- Heroicon name: outline/arrow-path -->
+                      <svg class="h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12c0-1.232.046-2.453.138-3.662a4.006 4.006 0 013.7-3.7 48.678 48.678 0 017.324 0 4.006 4.006 0 013.7 3.7c.017.22.032.441.046.662M4.5 12l-3-3m3 3l3-3m12 3c0 1.232-.046 2.453-.138 3.662a4.006 4.006 0 01-3.7 3.7 48.657 48.657 0 01-7.324 0 4.006 4.006 0 01-3.7-3.7c-.017-.22-.032-.441-.046-.662M19.5 12l-3 3m3-3l3 3" />
+                      </svg>
+                    </span>
+                  </div>
+                  <h3 class="mt-8 text-lg font-semibold leading-8 tracking-tight text-gray-900">Simple Queues</h3>
+                  <p class="mt-5 text-base leading-7 text-gray-600">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-6">
+              <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                <div class="-mt-6">
+                  <div>
+                    <span class="inline-flex items-center justify-center rounded-xl bg-indigo-500 p-3 shadow-lg">
+                      <!-- Heroicon name: outline/shield-check -->
+                      <svg class="h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                      </svg>
+                    </span>
+                  </div>
+                  <h3 class="mt-8 text-lg font-semibold leading-8 tracking-tight text-gray-900">Advanced Security</h3>
+                  <p class="mt-5 text-base leading-7 text-gray-600">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-6">
+              <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                <div class="-mt-6">
+                  <div>
+                    <span class="inline-flex items-center justify-center rounded-xl bg-indigo-500 p-3 shadow-lg">
+                      <!-- Heroicon name: outline/cog -->
+                      <svg class="h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12a7.5 7.5 0 0015 0m-15 0a7.5 7.5 0 1115 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077l1.41-.513m14.095-5.13l1.41-.513M5.106 17.785l1.15-.964m11.49-9.642l1.149-.964M7.501 19.795l.75-1.3m7.5-12.99l.75-1.3m-6.063 16.658l.26-1.477m2.605-14.772l.26-1.477m0 17.726l-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205L12 12m6.894 5.785l-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864l-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495" />
+                      </svg>
+                    </span>
+                  </div>
+                  <h3 class="mt-8 text-lg font-semibold leading-8 tracking-tight text-gray-900">Powerful API</h3>
+                  <p class="mt-5 text-base leading-7 text-gray-600">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-6">
+              <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                <div class="-mt-6">
+                  <div>
+                    <span class="inline-flex items-center justify-center rounded-xl bg-indigo-500 p-3 shadow-lg">
+                      <!-- Heroicon name: outline/server -->
+                      <svg class="h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 17.25v-.228a4.5 4.5 0 00-.12-1.03l-2.268-9.64a3.375 3.375 0 00-3.285-2.602H7.923a3.375 3.375 0 00-3.285 2.602l-2.268 9.64a4.5 4.5 0 00-.12 1.03v.228m19.5 0a3 3 0 01-3 3H5.25a3 3 0 01-3-3m19.5 0a3 3 0 00-3-3H5.25a3 3 0 00-3 3m16.5 0h.008v.008h-.008v-.008zm-3 0h.008v.008h-.008v-.008z" />
+                      </svg>
+                    </span>
+                  </div>
+                  <h3 class="mt-8 text-lg font-semibold leading-8 tracking-tight text-gray-900">Database Backups</h3>
+                  <p class="mt-5 text-base leading-7 text-gray-600">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- end -->
 
-    <div class="py-20 lg:py-124">
-      <div class="container">
-        <div class="lg:grid grid-cols-2 gap-7">
-          <div class="flex items-center lg:mb-0 mb-9 text-center lg:text-left">
-            <div class="lg:max-w-536">
-              <h2
-                class="text-dark-06 text-body-32px sm:text-4xl md:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-01">
-                We design & build your solution.
+    <!-- HTML -->
+      <section class="bg-gray-50 ">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:py-16 lg:px-8">
+          <div class="mb-20">
+            <h2 class="text-lg font-semibold text-indigo-600">Deploy faster</h2>
+            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Our working process
+            </p>
+            <p class="mt-5 max-w-prose text-xl text-gray-500">Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.</p>
+          </div>
+          <div class="grid grid-cols-12 gap-6">
+            <div v-for="(item, itemIndex) in featureList" :key="itemIndex"
+              class="sm:col-span-6 col-span-12 build-solution">
+              <div class="p-6 rounded-lg border-2 border-blue-ce build-solution-wrap bg-white">
+                <div class="w-16 h-16 bg-blue-0b rounded-lg flex items-center justify-center mb-6 icon" >
+                  <nuxt-img :src="item.icon" alt="" />
+                </div>
+                <div>
+                  <h3 class="text-dark-06 text-lg font-normal mb-3">{{ item.title }}</h3>
+                  <p class="text-dark-42 text-sm font-light">{{ item.text }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="bg-white">
+        <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+          <div class="lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
+            <div>
+              <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                Technology We Use
               </h2>
-              <p class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9 font-light">
-                Nunc convallis semper justo quis tempor. Praesent molestie,
-                lorem sed imperdiet tempor, libero urna semper urna, facilisis
-                vulputate velit arcu vitae mi. Donec ac nisi ex.
-              </p>
-              <nuxt-link to="/"
-                class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06">
-                Request A Quote
-                <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></nuxt-link>
+              <p class="mt-3 max-w-3xl text-lg text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.</p>
+              <div class="mt-8 sm:flex">
+                <div class="rounded-md shadow">
+                  <a href="#" class="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700">Create Account</a>
+                </div>
+                <div class="mt-3 sm:mt-0 sm:ml-3">
+                  <a href="#" class="flex items-center justify-center rounded-md border border-transparent bg-indigo-100 px-5 py-3 text-base font-medium text-indigo-700 hover:bg-indigo-200">Contact Us</a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div>
-            <div class="grid grid-cols-12 gap-6">
-              <div v-for="(item, itemIndex) in featureList" :key="itemIndex"
-                class="sm:col-span-6 col-span-12 build-solution">
-                <SolutionCard :title="item.title" :text="item.text" :icon="item.icon" />
+            <div class="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
+              <div class="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+                <img class="max-h-12" src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg" alt="Workcation">
+              </div>
+              <div class="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+                <img class="max-h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage">
+              </div>
+              <div class="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+                <img class="max-h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple">
+              </div>
+              <div class="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+                <img class="max-h-12" src="https://tailwindui.com/img/logos/laravel-logo-gray-400.svg" alt="Laravel">
+              </div>
+              <div class="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+                <img class="max-h-12" src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg" alt="StaticKit">
+              </div>
+              <div class="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+                <img class="max-h-12" src="https://tailwindui.com/img/logos/statamic-logo-gray-400.svg" alt="Statamic">
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- end -->
 
-    <div class="bg-orange-ff py-20 lg:py-124">
-      <div class="container">
-        <div class="lg:max-w-680 m-auto text-center mb-16">
-          <h2
-            class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-ls02">
-            Beautiful UI kit designed to grow your business.
-          </h2>
-          <p class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9 font-light">
-            Phasellus interdum sagittis magna. Donec varius ultricies diam sed
-            lacinia. Mauris porttitor. quis risus eget mattis Ut auctor.
-          </p>
-        </div>
-        <div class="grid grid-cols-12 gap-6">
-          <div v-for="(item, itemIndex) in BusinessItems" :key="itemIndex"
-            class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6">
-            <BusinessCard className="text-center" classNameIcon="m-auto" :title="item.title" :text="item.text" />
+      <div class="overflow-hidden bg-white py-16 px-4 sm:px-6 lg:px-8 lg:py-24 bg-hireus-banner bg-contain">
+        <div class="relative mx-auto max-w-xl">
+          <svg class="absolute left-full translate-x-1/2 transform" width="404" height="404" fill="none" viewBox="0 0 404 404" aria-hidden="true">
+            <defs>
+              <pattern id="85737c0e-0916-41d7-917f-596dc7edfa27" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width="404" height="404" fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)" />
+          </svg>
+          <svg class="absolute right-full bottom-0 -translate-x-1/2 transform" width="404" height="404" fill="none" viewBox="0 0 404 404" aria-hidden="true">
+            <defs>
+              <pattern id="85737c0e-0916-41d7-917f-596dc7edfa27" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width="404" height="404" fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)" />
+          </svg>
+          <div class="text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Contact Us
+            </h2>
+            <p class="mt-4 text-lg leading-6 text-gray-500">
+              Our team will reach you within 24 hours and schedule a meeting at your convenience. Simply fill out the form.
+            </p>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- end -->
-
-    <div class="py-20 lg:py-124">
-      <div class="container">
-        <div class="lg:max-w-3xl m-auto text-center mb-16">
-          <h2
-            class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-ls02">
-            Your development plan, our development team.
-          </h2>
-          <p class="text-dark-06 text-lg sm:text-lg mb-6 lg:mb-9 font-light">
-            You want to build a web app from scratch or just add some new
-            features on a theme. We’ll give you an entire team of professional
-            developers. Or just one. Pick what works best for you, and we’ll
-            develop wonders.
-          </p>
-        </div>
-        <div class="max-w-872 m-auto grid grid-cols-12 gap-6">
-          <div class="col-span-12 lg:col-span-6 md:col-span-6 sm:col-span-6">
-            <div class="rounded-xl p-6 md:p-8 shadow-bs8 border border-gray-e6">
-              <div class="mb-8">
-                <img class="m-auto" src="~@/assets/images/all-img/thumb1.png" alt="" />
+          <div class="mt-12">
+            <form action="#" method="POST" class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+              <div>
+                <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
+                <div class="mt-1">
+                  <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                </div>
               </div>
               <div>
-                <h3 class="text-2xl font-semibold mb-6 text-center text-dark-06">
-                  Lend-a-dev.
-                </h3>
-                <p class="text-dark-42 font-light text-lg mb-4">
-                  In need of some extra help customizing features? Borrow one of
-                  our developers.
-                </p>
-                <p class="text-dark-42 font-light text-lg">
-                  One is not enough for your growing development needs? We have
-                  more. Profesional engineers that can augment your team now.
-                </p>
-                <nuxt-link to="/"><span
-                    class="mt-7 w-full font-medium rounded-7 text-body-17/56px text-white inline-block bg-blue-0b text-center duration-300 hover:bg-dark-06">I
-                    Want This</span></nuxt-link>
+                <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
+                <div class="mt-1">
+                  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-span-12 lg:col-span-6 md:col-span-6 sm:col-span-6">
-            <div class="rounded-xl p-6 md:p-8 shadow-bs8 border border-gray-e6">
-              <div class="mb-8">
-                <img class="m-auto" src="~@/assets/images/all-img/thumb2.png" alt="" />
+              <div class="sm:col-span-2">
+                <label for="company" class="block text-sm font-medium text-gray-700">Company</label>
+                <div class="mt-1">
+                  <input type="text" name="company" id="company" autocomplete="organization" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                </div>
               </div>
-              <div>
-                <h3 class="text-2xl font-semibold mb-6 text-center text-dark-06">
-                  Get-a-team.
-                </h3>
-                <p class="text-dark-42 font-light text-lg">
-                  In need of full coding power? You can get the entire dev team
-                  with just the right roles:
-                </p>
-                <ul class="list-disc text-dark-06 text-base pt-4 pl-4">
-                  <li class="mb-2">Professional engineers? Check.</li>
-                  <li class="mb-2">Testers? Check.</li>
-                  <li class="mb-2">UI/UX Designers? Check.</li>
-                  <li class="mb-2">Project Managers? Check.</li>
-                  <li>Your app is exactly what you want!</li>
-                </ul>
-                <nuxt-link to="/"><span
-                    class="mt-7 w-full font-medium rounded-7 text-body-17/56px text-white inline-block bg-blue-0b text-center duration-300 hover:bg-dark-06">I
-                    Want This</span></nuxt-link>
+              <div class="sm:col-span-2">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <div class="mt-1">
+                  <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                </div>
               </div>
-            </div>
+              <div class="sm:col-span-2">
+                <label for="phone-number" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                <div class="relative mt-1 rounded-md shadow-sm">
+                  <div class="absolute inset-y-0 left-0 flex items-center">
+                    <label for="country" class="sr-only">Country</label>
+                    <select id="country" name="country" class="h-full rounded-md border-transparent bg-transparent py-0 pl-4 pr-8 text-gray-500 focus:border-indigo-500 focus:ring-indigo-500">
+                      <option>US</option>
+                      <option>CA</option>
+                      <option>EU</option>
+                    </select>
+                  </div>
+                  <input type="text" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-gray-300 py-3 px-4 pl-20 focus:border-indigo-500 focus:ring-indigo-500" placeholder="+1 (555) 987-6543">
+                </div>
+              </div>
+              <div class="sm:col-span-2">
+                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                <div class="mt-1">
+                  <textarea id="message" name="message" rows="4" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"></textarea>
+                </div>
+              </div>
+              <div class="sm:col-span-2">
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
+                    <button type="button" class="bg-gray-200 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" role="switch" aria-checked="false">
+                      <span class="sr-only">Agree to policies</span>
+                      <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
+                      <span aria-hidden="true" class="translate-x-0 inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+                    </button>
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-base text-gray-500">
+                      By selecting this, you agree to the
+                      <a href="#" class="font-medium text-gray-700 underline">Privacy Policy</a>
+                      and
+                      <a href="#" class="font-medium text-gray-700 underline">Cookie Policy</a>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="sm:col-span-2">
+                <button type="submit" class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Let's talk</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </div>
-    <!-- end -->
 
-    <div class="pt-20 md:pb-0 pb-20 lg:pt-124 bg-content bg-center-top bg-no-repeat responsive-overly"
-      :style="projectIdea">
-      <div class="container">
-        <div class="lg:max-w-680 m-auto text-center mb-16">
-          <h2
-            class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl xl:text-heading-56 font-semibold mb-6 tracking-ls02">
-            Have a project idea! Write down a quote.
-          </h2>
-          <p class="text-dark-06 text-lg sm:text-xl mb-6 lg:mb-9">
-            Got a project? Drop me a line if you want to work together on
-            something exciting. Or do you need our help? Feel free to contact
-            us.
-          </p>
-        </div>
-        <div class="shadow-bs08 rounded-3xl p-8 sm:p-12 bg-white max-w-872 m-auto">
-          <h2 class="text-dark-06 font-semibold tracking-01 text-2xl md:text-4xl mb-8 md:mb-12 text-center">
-            Request a quote to
-            <span class="text-blue-0b">Templatecookie</span>
-          </h2>
-          <div class="mb-6">
-            <div class="lg:grid grid-cols-12 gap-6">
-              <div class="col-span-6 mb-6">
-                <label class="text-dark-06 text-sm font-light mb-1.5 block">Name</label>
-                <input
-                  class="w-full placeholder:text-gray-83 text-base font-light border border-gray-e6 rounded-5 px-4 h-48"
-                  type="text" placeholder="Full name" />
-              </div>
-              <div class="col-span-6 mb-6">
-                <label class="text-dark-06 text-sm font-light mb-1.5 block">Email</label>
-                <input
-                  class="w-full placeholder:text-gray-83 text-base font-light border border-gray-e6 rounded-5 px-4 h-48"
-                  type="email" placeholder="Email adress" />
-              </div>
-            </div>
-            <div class="mb-6">
-              <label class="text-dark-06 text-sm font-light mb-1.5 block">Message</label>
-              <input
-                class="w-full placeholder:text-gray-83 text-base font-light border border-gray-e6 rounded-5 px-4 h-48"
-                type="text" placeholder="Brand/Company/Product Name" />
-            </div>
-            <div class="mb-6">
-              <label class="text-dark-06 text-sm font-light mb-1.5 block">Company Name</label>
-              <textarea class="w-full placeholder:text-gray-83 text-base font-light border border-gray-e6 rounded-5 p-4"
-                name="textarea" rows="3" placeholder="Tell us about your project..."></textarea>
-            </div>
-          </div>
-          <div class="mb-6">
-            <span class="text-sm text-dark-06 font-light mb-3 block">I want:</span>
-            <div class="flex flex-wrap items-center">
-              <div class="mr-2 sm:mr-6 my-2">
-                <input id="radio1" type="radio" name="radio-group" class="hidden" />
-                <label for="radio1" class="flex items-center cursor-pointer text-sm text-dark-06 font-light">
-                  <span class="w-5 h-5 inline-block mr-2 rounded-full border-1.5 border-gray-cd flex-no-shrink"></span>
-                  <strong>Plan A:</strong> One or more developer</label>
-              </div>
-              <div class="mr-2 sm:mr-6 my-2">
-                <input id="radio2" type="radio" name="radio-group" class="hidden" />
-                <label for="radio2" class="flex items-center cursor-pointer text-sm text-dark-06 font-light">
-                  <span class="w-5 h-5 inline-block mr-2 rounded-full border-1.5 border-gray-cd flex-no-shrink"></span>
-                  <strong>Plan A+:</strong> An entire team</label>
-              </div>
-            </div>
-          </div>
-          <div class="mb-12">
-            <span class="text-sm text-dark-06 font-light mb-3 block">Budgets</span>
-            <div class="flex flex-wrap items-center">
-              <div class="mr-2 sm:mr-6 my-2">
-                <input id="radio3" type="radio" name="radio" class="hidden" checked />
-                <label for="radio3" class="flex items-center cursor-pointer text-sm text-dark-06 font-light">
-                  <span class="w-5 h-5 inline-block mr-2 rounded-full border-1.5 border-gray-cd flex-no-shrink"></span>
-                  $1,000 to $2,500</label>
-              </div>
-              <div class="mr-2 sm:mr-6 my-2">
-                <input id="radio4" type="radio" name="radio" class="hidden" />
-                <label for="radio4" class="flex items-center cursor-pointer text-sm text-dark-06 font-light">
-                  <span class="w-5 h-5 inline-block mr-2 rounded-full border-1.5 border-gray-cd flex-no-shrink"></span>
-                  $1,000 to $2,500</label>
-              </div>
-              <div class="mr-2 sm:mr-6 my-2">
-                <input id="radio5" type="radio" name="radio" class="hidden" />
-                <label for="radio5" class="flex items-center cursor-pointer text-sm text-dark-06 font-light">
-                  <span class="w-5 h-5 inline-block mr-2 rounded-full border-1.5 border-gray-cd flex-no-shrink"></span>
-                  $5,000 to $10,000</label>
-              </div>
-              <div>
-                <input id="radio6" type="radio" name="radio" class="hidden" />
-                <label for="radio6" class="flex items-center cursor-pointer text-sm text-dark-06 font-light">
-                  <span class="w-5 h-5 inline-block mr-2 rounded-full border-1.5 border-gray-cd flex-no-shrink"></span>
-                  $10,000 or more</label>
-              </div>
-            </div>
-          </div>
-          <div>
-            <nuxt-link to="/"
-              class="w-full text-center inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-dark-06 capitalize">
-              Request a quote
-              <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></nuxt-link>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end -->
+
   </div>
 </template>
 <script>
-import SolutionCard from "../components/SolutionCard.vue";
-import BusinessCard from "../components/BusinessCard.vue";
-import ICountUp from "vue-countup-v2";
-
 export default {
-  name: "HireUsPage",
-  components: {
-    SolutionCard,
-    BusinessCard,
-    ICountUp,
-  },
-  head: {
-    title: 'Hire Us',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'my website description'
-      }
-    ],
-  },
-  data() {
+  data(){
     return {
-      options: {
-        useEasing: true,
-        useGrouping: true,
-      },
-
-      achivementList: [
-        {
-          value: 17,
-          designation: "Awards Rewarded",
-          icon: "https://i.imgur.com/XHzKgiy.png",
-        },
-        {
-          value: 23,
-          designation: "Years of Experience",
-          icon: "https://i.imgur.com/RHw1fUb.png",
-        },
-        {
-          value: 23,
-          designation: "Happy Clients",
-          icon: "https://i.imgur.com/ddKeF4B.png",
-        },
-        {
-          value: 315,
-          designation: "COMPLETED PROJECT",
-          icon: "https://i.imgur.com/h8K5qbt.png",
-        },
-      ],
-
-      projectIdea: {
-        backgroundImage: "url(https://i.imgur.com/2HNdUlR.png)",
-      },
-
       featureList: [
         {
           icon: "https://i.imgur.com/UhqXDIG.png",
@@ -350,43 +399,10 @@ export default {
           text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
         },
       ],
-
-      BusinessItems: [
-        {
-          title: "Project Introduction",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "User Experience Design",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "User Interface Design",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "Front-end Development",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "Back-end Development",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-        {
-          title: "Delivery & Client Feedback",
-          text: "Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.",
-        },
-      ],
-    };
-  },
-};
-</script>
-
-<style lang="scss" scoped>
-.responsive-overly {
-    @media (max-width: 1199px) {
-      background-position: center!important;
-      background-size: cover!important;
     }
+  }
 }
+</script>
+<style>
+  
 </style>

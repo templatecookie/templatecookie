@@ -22,7 +22,6 @@ export default gql`
       plans {
         id
         name
-        updatedAt
         priceplan {
           name
           description
@@ -33,8 +32,7 @@ export default gql`
             url
           }
           features {
-            active
-            feature
+            name
             id
           }
         }

@@ -46,13 +46,6 @@
       <div v-if="section.__typename == 'GroupfeaturesectionRecord'">
         <group-feature-section :data="section" />
       </div>
-
-      <!-- <div v-if="section.__typename == 'HerosectionRecord'">
-        <product-hero :product="product" />
-      </div> -->
-      <!-- <div v-if="section.__typename == 'FolderstructureRecord'">
-        <product-folder-structure :data="section" />
-      </div> -->
     </div>
   </div>
 </template>
@@ -75,6 +68,7 @@ import CallToAction from '../../components/Demo/CallToAction.vue';
 import PricingPlan from '../../components/Demo/PricingPlanSection.vue';
 import ExclusiveFeature from "../../components/Demo/ExclusiveFeature.vue";
 import GroupFeatureSection from "../../components/Demo/GroupFeatureSection.vue";
+import PricingSection from '~/components/PricingSection.vue'
 
 export default {
   layout: "empty",
@@ -132,6 +126,7 @@ export default {
     ProductHero,
     ProductSupport,
     CallToAction,
+    PricingSection,
     PricingPlan,
     ExclusiveFeature,
     GroupFeatureSection

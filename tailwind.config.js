@@ -10,6 +10,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage: {
+        'hireus-banner': "url('/images/hire-us.png')",
+      },
       colors: {
         "blue-0b": "#0B63E5",
         "blue-09": "#094FB7",

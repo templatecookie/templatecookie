@@ -144,8 +144,7 @@ query product($slug: String!){
             url
           }
           features {
-            active
-            feature
+            name
             id
           }
         }

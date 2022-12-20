@@ -3,8 +3,7 @@
     <div class="text-center py-3 text-base" :class="notice.cssClass" v-if="notice && notice.showNotice" v-html="parseMarkdown(notice.announcement)"></div>
     <Header :data="global.logo" v-if="global && global.logo"/>
     <nuxt />
-    <Newsletter :data="global.newsletter" v-if="global && global.newsletter"/>
-    <Footer :data="global.footer" v-if="global && global.footer"/>
+    <Footer :data="global.footer" :newsletter="global.newsletter" v-if="global && global.footer"/>
   </div>
 </template>
 

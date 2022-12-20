@@ -14,8 +14,8 @@
     </section>
 
     <section>
-      <div class="container py-[124px]">
-        <h2 class="mb-6 text-2xl font-medium">Chose your purchased product</h2>
+      <div class="container pt-28 pb-14">
+        <h2 class="mb-6 text-3xl font-medium">Chose your purchased product</h2>
         <div class="grid gap-4 grid-cols-3">
           <div v-for="(item, index) in products" :key="index">
             <input class="hidden" type="radio" name="choose-product" :id="'id'+item.product.id" :value="'id'+item.product.id" v-model="selectedProduct" />
@@ -31,28 +31,14 @@
         </div>
       </div>
     </section>
-    <section class="pricing-section bg-white">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="text-dark-06 md:text-4xl lg:text-5xl lg:leading-[56px] font-semibold mb-6 tracking-01">
-            {{ selectedProductData.title }}
-          </h2>
-          <p class="text-dark-06 lg:w-3/5 m-auto text-base sm:text-body-18 mb-8 lg:mb-20 font-light">
-            {{ selectedProductData.description }}
-          </p>
-        </div>
-        <div class="card-area m-auto justify-center flex-wrap flex gap-6 mb-6">
-         <pricing-plan v-for="(plan, index) in selectedProductData.plans" :key="index" :item="plan.priceplan[0]"/>
-        </div>
-      </div>
-    </section>
+    <PricingSection :data="selectedProductData" :info="selectedProductData" />
   </div>
 </template>
 
 <script>
 import bannerImg from "~/assets/images/all-img/img-five.png";
 import ALL_PRODUCT_PLANS from '~/graphql/allProductPlans.js'
-import PricingPlan from '~/components/PricingPlan.vue'
+import PricingSection from '~/components/PricingSection.vue'
 
 export default {
   head: {
@@ -67,7 +53,7 @@ export default {
       }
     ]
   },
-  components: { PricingPlan },
+  components: { PricingSection },
   data() {
     return {
       selectedProduct: null,
