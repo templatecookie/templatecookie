@@ -8,7 +8,7 @@ category: Others
 # Changelog
 ---
 
-### v2.8.2 - 21th December, 2022
+### v2.8.15 - 22th December, 2022
 ```
 - Leaflet & Openstreet map integration
 - Multiple currency conversion integration
