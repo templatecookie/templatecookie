@@ -7,6 +7,18 @@ category: Others
 
 # Changelog
 ---
+
+### v2.8.15 - 22th December, 2022
+```
+- Leaflet & Openstreet map integration
+- Multiple currency conversion integration
+- Multiple language contents faq, testimonials, seo and cms
+- Added recaptcha integration to avoid spamming
+- Offline payment integration
+- Verified seller badge for premium users
+- Much design improvements and bug fixes
+```
+
 ### v2.2.4 - 20th August, 2022
 ```
 - Youtube embed plugin added for ad details page
