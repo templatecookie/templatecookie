@@ -3,10 +3,10 @@
     <section class="py-12 lg:pb-12 bg-no-repeat bg-center bg-cover" :style="{ backgroundImage: `url(${bannerImg})` }">
       <div class="container">
         <div class="text-left">
-          <h1 class="text-4xl md:text-heading-40 text-dark-06 mb-6 mx-auto font-semibold">
+          <h1 class="text-4xl md:text-heading-40 textdark mb-6 mx-auto font-semibold">
             {{ product.title }} - Documentation
           </h1>
-          <p class="text-lg md:text-body-18 text-dark-06 mb-8 font-light">
+          <p class="text-lg md:text-lg textdark mb-8 font-light">
             {{ product.description }}
           </p>
         </div>
@@ -31,13 +31,12 @@
 </template>
 
 <script>
-import bannerImg from "~/assets/images/all-img/img-five.png";
+import bannerImg from "../../static/images/img-five.png";
 import groupBy from 'lodash.groupby'
 import DocCategoryCardItem from '../../components/Docs/DocCategoryCardItem.vue';
 
 export default {
   components: { DocCategoryCardItem },
-  layout: 'documentation',
   head() {
     const title = this.product.title + ' Documentation';
     const description = this.product.description;

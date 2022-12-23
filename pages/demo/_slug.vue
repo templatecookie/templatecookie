@@ -51,7 +51,6 @@
 </template>
 
 <script>
-import BusinessCard from "~/components/BusinessCard.vue";
 import PurchaseCard from "~/components/PurchaseCard.vue";
 import PRODUCT_DEMO from '~/graphql/productDemo'
 import ProductDemoHeader from "~/components/Header/ProductDemoHeader.vue";
@@ -114,7 +113,6 @@ export default {
     return { product }
   },
   components: {
-    BusinessCard,
     PurchaseCard,
     ProductTopFeatures,
     ProductDemoHeader,

@@ -3,10 +3,10 @@
     <div class="container">
       <div class="flex px-3 lg:px-0">
         <div class="w-1/2 lg:py-124 order-2 lg:order-1 pb-14 lg:pb-0 pr-8">
-          <h1 class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1 mb-8">
+          <h1 class="text-4xl md:text-5xl textdark font-semibold capitalize tracking-1 mb-8">
             {{ section.info[0].title }}
           </h1>
-          <p class="text-body-16 font-light text-dark-06 mb-10">
+          <p class="text-base font-light textdark mb-10">
             {{ section.info[0].description }}
           </p>
           <div class="grid sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6">
@@ -18,10 +18,10 @@
                 </span>
               </div>
               <div class="text-center sm:text-left">
-                <h2 class="text-body-24 font-medium text-dark-06 mb-2">
+                <h2 class="text-2xl font-medium textdark mb-2">
                   <ICountUp :delay="400" :endVal="item.counter" :options="options" />{{ item.title }}
                 </h2>
-                <p class="text-body-14 text-dark-42 uppercase whitespace-nowrap overflow-ellipsis">
+                <p class="text-sm text-dark-gray uppercase whitespace-nowrap overflow-ellipsis">
                   {{ item.description }}
                 </p>
               </div>
@@ -41,10 +41,10 @@
             <span class="inline-block">
               <nuxt-img :src="item.image.url" alt="" />
             </span>
-            <h2 class="text-xl font-medium text-dark-06 mb-2 mt-4">
+            <h2 class="text-xl font-medium textdark mb-2 mt-4">
               {{ item.title }}
             </h2>
-            <p class="text-body-14 text-dark-42 leading-normal font-light">
+            <p class="text-sm text-dark-gray leading-normal font-light">
               {{ item.description }}
             </p>
           </div>

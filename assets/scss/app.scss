@@ -27,7 +27,7 @@ header ul li a.nuxt-link-exact-active {
 
 @layer components {
   .button {
-    @apply text-button capitalize font-medium bg-blue-0b overflow-hidden rounded  inline-block px-5;
+    @apply text-sm capitalize font-medium bg-primary overflow-hidden rounded  inline-block px-5;
   }
 }
 
@@ -75,37 +75,6 @@ header ul li a.nuxt-link-exact-active {
     }
   }
 }
-
-.build-solution {
-  &:nth-child(2) .build-solution-wrap {
-    margin-top: 50px;
-    @media (max-width: 640px) {
-      margin: 0;
-    }
-    border: 2px solid #fcdbf4;
-    .icon {
-      background-color: #f249c8;
-    }
-  }
-  &:nth-child(3) .build-solution-wrap {
-    margin-top: -50px;
-    border: 2px solid #e3d6ff;
-    @media (max-width: 640px) {
-      margin: 0;
-    }
-    .icon {
-      background-color: #7534ff;
-    }
-  }
-  &:nth-child(4) .build-solution-wrap {
-    border: 2px solid #cfebd1;
-    .icon {
-      background-color: #0f9918;
-    }
-  }
-}
-
-
 
 // radio
 input[type="radio"] + label span {

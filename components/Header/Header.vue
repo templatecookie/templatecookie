@@ -14,7 +14,7 @@
               <nuxt-link class="px-3" v-else :to="item.url"> {{ item.name }} </nuxt-link>
             </li>
             <!-- <li >
-              <a href="https://1.envato.market/EaNJ2X" target="_blank" class="text-white hover:text-white text-sm capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded inline-block px-5 py-4">
+              <a href="https://1.envato.market/EaNJ2X" target="_blank" class="text-white hover:text-white text-sm capitalize font-medium bg-primary hover:bg-dark overflow-hidden rounded inline-block px-5 py-4">
                 Codecanyon Profile
               </a>
             </li> -->
@@ -43,7 +43,7 @@
             </li>
             <li class="sidebar-menu__button">
               <a href="https://1.envato.market/EaNJ2X" target="_blank"
-                class="text-white hover:text-white text-button capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded inline-block px-5 w-full text-center">
+                class="text-white hover:text-white text-sm capitalize font-medium bg-primary hover:bg-dark overflow-hidden rounded inline-block px-5 w-full text-center">
                 Codecanyon Profile
               </a>
             </li>
@@ -84,11 +84,6 @@ export default {
         {
           name: "Documentation",
           url: '/docs/',
-          blank: false,
-        },
-        {
-          name: "Contact Us",
-          url: '/contact-us',
           blank: false,
         },
         {

@@ -2,10 +2,10 @@
   <div class="py-20 lg:pt-124" id="top-features">
     <div class="container">
       <div class="mb-72 text-center" v-if="data.info && data.info[0]">
-        <h2 class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1 mb-8 max-w-lg mx-auto">
+        <h2 class="text-4xl md:text-5xl textdark font-semibold capitalize tracking-1 mb-8 max-w-lg mx-auto">
           {{ data.info[0].title }}
         </h2>
-        <p class="text-body-16 font-light max-w-lg mx-auto text-dark-06">
+        <p class="text-base font-light max-w-lg mx-auto textdark">
           {{ data.info[0].description }}
         </p>
       </div>
@@ -17,8 +17,8 @@
               <nuxt-img :src="item.image.url" class="w-7 h-7 object-cover" alt="" />
             </div>
             <div>
-              <h3 class="text-dark-06 text-xl mb-3">{{ item.title }}</h3>
-              <p class="text-dark-42 text-base font-light">{{ item.description }}</p>
+              <h3 class="textdark text-xl mb-3">{{ item.title }}</h3>
+              <p class="text-dark-gray text-base font-light">{{ item.description }}</p>
             </div>
           </div>
         </div>

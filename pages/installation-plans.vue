@@ -3,10 +3,10 @@
     <section class="realtive py-12 lg:py-20 bg-no-repeat bg-center bg-cover" :style="{ backgroundImage: `url(${bannerImg})` }">
       <div class="container">
         <div class="text-center">
-          <h1 class="text-4xl md:text-heading-40 text-dark-06 mb-6 max-w-680 mx-auto font-semibold">
+          <h1 class="text-4xl md:text-heading-40 textdark mb-6 max-w-680 mx-auto font-semibold">
             Installation Plans
           </h1>
-          <p class="text-lg md:text-body-18 text-dark-06 mb-8 max-w-full md:max-w-536 mx-auto font-light">
+          <p class="text-lg md:text-lg textdark mb-8 max-w-full md:max-w-536 mx-auto font-light">
             These plans are only available to those who have bought one or more products from us before. If you haven't purchased yet, check our <a class="text-blue-600" href="https://1.envato.market/EaNJ2X">codecanyon profile</a>
           </p>
         </div>
@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import bannerImg from "~/assets/images/all-img/img-five.png";
+import bannerImg from "../static/images/img-five.png";
 import ALL_PRODUCT_PLANS from '~/graphql/allProductPlans.js'
 import PricingSection from '~/components/PricingSection.vue'
 

@@ -4,10 +4,10 @@
       <div class="container">
         <div class="text-center max-w-4xl m-auto pt-6">
           <h1
-            class="text-dark-06 text-5xl font-semibold mb-6 lg:mb-9 tracking-ls02">
+            class="textdark text-5xl font-semibold mb-6 lg:mb-9 tracking-ls02">
             We're here to help!
           </h1>
-          <p class="text-dark-06 text-lg mb-6 lg:mb-9 max-w-xl m-auto font-light">
+          <p class="textdark text-lg mb-6 lg:mb-9 max-w-xl m-auto font-light">
             Our customer support team is available 24/7 to answer your questions and help you with whatever you need.
           </p>
         </div>

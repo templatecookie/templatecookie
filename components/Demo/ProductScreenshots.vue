@@ -2,10 +2,10 @@
   <div class="py-20 lg:pt-124" id="screenshot-gallery">
     <div class="container">
       <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16" v-if="data.info && data.info[0]">
-        <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
+        <h2 class="textdark text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
           {{ data.info[0].title }}
         </h2>
-        <p class="text-dark-06 text-base sm:text-body-18 mb-6 lg:mb-9 font-light">
+        <p class="textdark text-base sm:text-lg mb-6 lg:mb-9 font-light">
           {{ data.info[0].description }}
         </p>
       </div>
@@ -21,14 +21,14 @@
         <div class="single-slider">
           <div class="swiper-button-prev ml-6" slot="button-prev">
             <span
-              class="w-12 h-12 rounded-md flex items-center justify-center flex-shrink-0 bg-black bg-opacity-50 duration-300 hover:bg-blue-0b">
-              <img src="~@/assets/images/svg/caret-left.svg" alt="" />
+              class="w-12 h-12 rounded-md flex items-center justify-center flex-shrink-0 bg-black bg-opacity-50 duration-300 hover:bg-primary">
+              <img src="/icons/caret-left.svg" alt="" />
             </span>
           </div>
           <div class="swiper-button-next mr-6" slot="button-next">
             <span
-              class="w-12 h-12 rounded-md flex items-center justify-center flex-shrink-0 bg-black bg-opacity-50 duration-300 hover:bg-blue-0b arrow-icon">
-              <img src="~@/assets/images/svg/caret-right.svg" alt="" />
+              class="w-12 h-12 rounded-md flex items-center justify-center flex-shrink-0 bg-black bg-opacity-50 duration-300 hover:bg-primary arrow-icon">
+              <img src="/icons/caret-right.svg" alt="" />
             </span>
           </div>
         </div>

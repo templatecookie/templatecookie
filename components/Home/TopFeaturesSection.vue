@@ -1,12 +1,12 @@
 <template>
-  <section class="why-should bg-gray-f5 py-14 md:py-124">
+  <section class="why-should bg-gray-f0 py-14 md:py-124">
     <div class="container">
       <!-- section title  -->
       <div class="mb-72 text-center" v-if="section.info[0]">
-        <h2 class="text-4xl md:text-title text-dark-06 font-semibold capitalize tracking-1 mb-8 max-w-lg mx-auto">
+        <h2 class="text-4xl md:text-5xl textdark font-semibold capitalize tracking-1 mb-8 max-w-lg mx-auto">
           {{ section.info[0].title }}
         </h2>
-        <p class="text-body-16 font-light max-w-lg mx-auto text-dark-06">
+        <p class="text-base font-light max-w-lg mx-auto textdark">
           {{ section.info[0].description }}
         </p>
       </div>
@@ -18,8 +18,8 @@
               <nuxt-img :src="item.image.url" alt="" class="max-w-[36px] max-h-[36px]" />
             </div>
             <div>
-              <h3 class="text-dark-06 text-xl mb-3">{{ item.title }}</h3>
-              <p class="text-dark-42 text-base font-light">{{ item.description }}</p>
+              <h3 class="textdark text-xl mb-3">{{ item.title }}</h3>
+              <p class="text-dark-gray text-base font-light">{{ item.description }}</p>
             </div>
           </div>
         </div>

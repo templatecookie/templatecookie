@@ -4,11 +4,11 @@
     <section class="pb-14 lg:pb-72 pt-14 lg:pt-32 bg-no-repeat bg-center bg-cover" :style="{ backgroundImage: `url(${bannerImg})` }">
       <div class="container">
         <div class="text-center">
-          <h1 class="text-4xl md:text-heading-40 text-dark-06 mb-6 max-w-680 mx-auto font-semibold">
+          <h1 class="text-4xl md:text-heading-40 textdark mb-6 max-w-680 mx-auto font-semibold">
             <!-- {{ page.info.title }} -->
             Browse our Products
           </h1>
-          <p class="text-lg md:text-body-18 text-dark-06 mb-8 max-w-full md:max-w-536 mx-auto font-light">
+          <p class="text-lg md:text-lg textdark mb-8 max-w-full md:max-w-536 mx-auto font-light">
             Browse our latest products for your next big idea, and see what we have to offer.
           </p>
 
@@ -18,9 +18,9 @@
                 <li @click="setTechnology('')">
                   <div class="flex flex-col items-center feature-box group" :class="activeTechnology == '' ? 'is-active' : ''">
                     <span class="feature-box__icon inline-block mb-3">
-                      <img src="../../assets/images/svg/all.svg" alt="version" />
+                      <img src="/icons/all.svg" alt="version" />
                     </span>
-                    <h6 class="feature-box__title text-body-16 capitalize text-gray-61 text-gray-6a group-hover:text-dark-06">
+                    <h6 class="feature-box__title text-base capitalize text-gray-61 text-dark-gray group-hover:textdark">
                       All
                     </h6>
                   </div>
@@ -30,7 +30,7 @@
                     <span class="feature-box__icon inline-block mb-3">
                       <nuxt-img :src="fixImageUrl(item.attributes.icon)" alt="version" />
                     </span>
-                    <h6 class="feature-box__title text-body-16 capitalize text-gray-61 text-gray-6a group-hover:text-dark-06">
+                    <h6 class="feature-box__title text-base capitalize text-gray-61 text-dark-gray group-hover:textdark">
                       {{ item.attributes.name }}
                     </h6>
                   </div>
@@ -39,7 +39,7 @@
             </div> -->
             <div class="col-span-full lg:col-span-1 py-4 lg:py-0">
               <div class="flex items-center justify-center lg:justify-end space-x-3 sort-filter">
-                <h5 class="whitespace-nowrap text-body-14 leading-5">
+                <h5 class="whitespace-nowrap text-sm leading-5">
                   Category :
                 </h5>
                 <div class="w-200">
@@ -76,7 +76,7 @@
 </template>
 <script>
 
-import bannerImg from "~/assets/images/all-img/img-five.png";
+import bannerImg from "../../static/images/img-five.png";
 import Pagination from "~/components/Pagination.vue";
 import ProductCard from "~/components/ProductCard.vue";
 // import PRODUCT_LISTING from '../../graphql/productListing'

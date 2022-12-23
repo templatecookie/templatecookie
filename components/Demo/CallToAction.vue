@@ -1,22 +1,22 @@
 <template>
-  <div class="pt-28 lg:pt-40 bg-dark-06" :class="section.cssClass">
+  <div class="pt-28 lg:pt-40 bg-dark" :class="section.cssClass">
     <div class="container">
       <div class="text-center mb-40">
-        <h2 class="text-white text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
+        <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
           {{ section.title }}
         </h2>
         <p class="text-white text-base sm:text-lg mb-6 lg:mb-12 font-light">
           {{ section.description }}
         </p>
         <a href="#pricing"
-          class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-black">
+          class="inline-block bg-primary rounded-7 py-4 px-9 text-lg text-white duration-300 hover:bg-black">
           Purchase Now
-          <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" />
+          <img class="inline-block ml-2" src="/icons/arrow-right.svg" alt="brand-logo" />
         </a>
         <a :href="product.previewUrl" v-if="product.previewUrl"
-          class="inline-block bg-green-500 rounded-7 py-4 ml-2 px-9 text-body-17 text-white duration-300 hover:bg-black">
+          class="inline-block bg-green-500 rounded-7 py-4 ml-2 px-9 text-lg text-white duration-300 hover:bg-black">
           View Demo
-          <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" />
+          <img class="inline-block ml-2" src="/icons/arrow-right.svg" alt="brand-logo" />
         </a>
       </div>
     </div>

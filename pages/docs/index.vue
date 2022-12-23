@@ -4,10 +4,10 @@
       :style="{ backgroundImage: `url(${bannerImg})` }">
       <div class="container">
         <div class="text-center">
-          <h1 class="text-4xl md:text-heading-40 text-dark-06 mb-6 max-w-680 mx-auto font-semibold">
+          <h1 class="text-4xl md:text-heading-40 textdark mb-6 max-w-680 mx-auto font-semibold">
             Templatecookie Docs
           </h1>
-          <p class="text-lg md:text-body-18 text-dark-06 mb-8 max-w-full md:max-w-536 mx-auto font-light">
+          <p class="text-lg md:text-lg textdark mb-8 max-w-full md:max-w-536 mx-auto font-light">
             Don't have previous experience using our products? Read the documentation to learn more about the complex features and topics.
           </p>
         </div>
@@ -27,10 +27,9 @@
 
 <script>
 import ProductItem from '~/components/Docs/ProductItem.vue'
-import bannerImg from "~/assets/images/all-img/img-five.png";
+import bannerImg from "../../static/images/img-five.png";
 
 export default {
-  layout: 'documentation',
   head() {
     const title = 'Templatecookie Product Documentation';
     const description = "Don't have previous experience using our products? Read the documentation to learn more about the complex features and topics?";

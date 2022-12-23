@@ -1,13 +1,13 @@
 <template>
-  <div class="bg-white relative overflow-hidden p-6 border border-gray-e6 rounded-2xl product-card w-full product-card--sm">
+  <div class="bg-white relative overflow-hidden p-6 border border-gray-f0 rounded-2xl product-card w-full product-card--sm">
     <nuxt-link :to="product.dir" class="product-card__img relative inline-block overflow-hidden rounded-lg  w-full product-card__img-wrapper mb-4">
       <img :src="resolveImage()" :alt="product.title" class="w-full h-full object-cover overflow-hidden" />
     </nuxt-link>
     <div class="product-card__text">
-      <h2 class="text-dark-06 mb-3 font-normal text-body-18">
+      <h2 class="textdark mb-3 font-normal text-lg">
         {{ product.title }}
       </h2>
-      <p class="text-dark-42 font-light mb-0 text-body-14/20">
+      <p class="text-dark-gray font-light mb-0 text-sm/20">
         {{ product.description }}
       </p>
     </div>

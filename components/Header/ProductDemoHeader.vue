@@ -4,7 +4,7 @@
       <div class="flex items-center justify-between">
         <div>
           <nuxt-link to="/">
-            <img src="~/assets/images/logo.svg" alt="brand-logo" />
+            <img src="/images/logo.svg" alt="brand-logo" />
           </nuxt-link>
         </div>
         <div class="hidden lg:block">
@@ -43,7 +43,7 @@
             </li>
             <li class="flex items-center space-x-3">
               <a href="#pricing"
-                class="flex items-center justify-center text-white hover:text-white text-button capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded px-5 w-full text-center">
+                class="flex items-center justify-center text-white hover:text-white text-sm capitalize font-medium bg-primary hover:bg-dark overflow-hidden rounded px-5 w-full text-center">
                 Buy Now
                 <span class="inline-block ml-2">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,7 +55,7 @@
                 </span>
               </a>
               <a target="_blank" :href="product.docsUrl" v-if="product.docsUrl"
-                class="flex items-center justify-center text-dark-06 hover:text-white text-button capitalize font-medium bg-gray-e6 hover:bg-dark-06 overflow-hidden rounded px-5 w-full text-center whitespace-nowrap">
+                class="flex items-center justify-center textdark hover:text-white text-sm capitalize font-medium bg-gray-f0 hover:bg-dark overflow-hidden rounded px-5 w-full text-center whitespace-nowrap">
                 <span class="inline-block mr-2">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.75 8.75H13.75" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
@@ -136,7 +136,7 @@
 
             <li class="sidebar-menu__button">
               <a href="#pricing" target="_blank"
-                class="flex items-center justify-center text-white hover:text-white text-button capitalize font-medium bg-blue-0b hover:bg-dark-06 overflow-hidden rounded px-5 w-full text-center">
+                class="flex items-center justify-center text-white hover:text-white text-sm capitalize font-medium bg-primary hover:bg-dark overflow-hidden rounded px-5 w-full text-center">
                 Buy Now
                 <span class="inline-block ml-2">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -150,7 +150,7 @@
             </li>
             <!-- <li class="sidebar-menu__button">
               <nuxt-link to="#"
-                class="flex items-center justify-center text-dark-06 hover:text-white text-button capitalize font-medium bg-gray-e6 hover:bg-dark-06 overflow-hidden rounded px-5 w-full text-center">
+                class="flex items-center justify-center textdark hover:text-white text-sm capitalize font-medium bg-gray-f0 hover:bg-dark overflow-hidden rounded px-5 w-full text-center">
                 <span class="inline-block mr-2">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.75 8.75H13.75" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
