@@ -10,7 +10,7 @@
             {{ section.info[0].description }}
           </p>
           <div class="grid sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6">
-            <div v-for="(item, itemIndex) in section.counters" :key="itemIndex"
+            <div v-for="(item, index) in section.counters" :key="index" data-aos="zoom-in" :data-aos-delay="index * 100"
               class="flex flex-col sm:flex-row items-center justify-center sm:justify-start sm:space-x-3 p-6 rounded-xl overflow-hidden bg-primary-100" :class="item.cssClass">
               <div>
                 <span class="inline-block">
@@ -28,14 +28,14 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 order-1 lg:order-2 mb-6 lg:mb-0 h-680 clip-thumb">
+        <div class="w-1/2 order-1 lg:order-2 mb-6 lg:mb-0 h-680 clip-thumb" data-aos="slide-left">
           <img v-if="section.info[0].background" :src="section.info[0].background.url" alt="" class="w-full h-full object-cover object-center rounded-lg" />
         </div>
       </div>
     </div>
     <div class="container mt-8">
       <div class="flex align-start gap-6">
-        <div v-for="(item, itemIndex) in section.feature" :key="itemIndex"
+        <div v-for="(item, index) in section.feature" :key="index" data-aos="fade-up" :data-aos-delay="index * 100"
           class="flex flex-col sm:w-64 flex-grow sm:flex-row items-center justify-center sm:justify-start sm:space-x-3 p-6 rounded-xl overflow-hidden mb-4" :class="item.cssClass">
           <div class="text-center sm:text-left" v-if="item.image">
             <span class="inline-block">
