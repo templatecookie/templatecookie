@@ -2,11 +2,9 @@
   <header class="fixed w-full py-3 z-50 bg-white shadow-6xl">
     <div class="container relative">
       <div class="flex items-center justify-between">
-        <div>
-          <nuxt-link to="/">
-            <img src="/images/logo.svg" alt="brand-logo" />
-          </nuxt-link>
-        </div>
+        <nuxt-link to="/">
+          <img class="h-10 w-full" src="/logo.svg" alt="brand-logo" />
+        </nuxt-link>
         <div class="hidden lg:block">
           <ul class="flex items-center space-x-5 nav-menu">
             <!-- <li class="nav-menu__item">

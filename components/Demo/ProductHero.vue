@@ -11,11 +11,10 @@
         <div class="mt-8">
           <a href="#pricing" target="_blank" class="block text-center sm:inline-block border-1.5 border-primary bg-primary font-medium rounded-7 py-3.5 px-8 text-lg text-white duration-300 mb-3 sm:mb-0 sm:mr-3">
             Buy Now
-            <img class="inline-block ml-2" src="/icons/arrow-right.svg" alt="" />
           </a>
           <a :href="product.previewUrl" target="_blank"
             class="block text-center sm:inline-block font-medium border-1.5 border-white rounded-7 py-3.5 px-8 text-lg text-white duration-300">
-            Live Preview
+            Try For Free!
           </a>
         </div>
       </div>

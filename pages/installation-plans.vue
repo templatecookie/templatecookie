@@ -21,8 +21,8 @@
             <input class="hidden" type="radio" name="choose-product" :id="'id'+item.product.id" :value="'id'+item.product.id" v-model="selectedProduct" />
             <label :for="'id'+item.product.id">
               <div class="flex items-center gap-3 rounded-xl p-5" :class="selectedProduct == `id${item.product.id}` ? 'border-2 border-[#0B63E5] bg-white': 'bg-[#F5F6F7] border-2 border-transparent'">
-                <div class="flex-shrink-0">
-                  <img class="w-16 h-16 object-cover" :src="item.product.banner.url" alt />
+                <div class="flex-shrink-0" v-if="item.product.thumbnail">
+                  <img class="w-16 h-16 object-cover rounded-md" :src="item.product.thumbnail.url" alt />
                 </div>
                 <h2 class="text-base text-[#061C3D]"> {{ item.product.name }} </h2>
               </div>

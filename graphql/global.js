@@ -61,6 +61,15 @@ query {
       }
     }
 
+    selectedProducts {
+      name
+      slug
+      thumbnail {
+        url
+      }
+      description
+    }
+
     footer {
       logo {
         url

@@ -124,7 +124,8 @@ export default {
     gzip: true,
     exclude: [
       '/test',
-      '/demo/demo'
+      '/demo/demo',
+      '/plan-purchase-success'
     ],
     routes: linkages,
     trailingSlash: true

@@ -6,7 +6,7 @@
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-8 xl:col-span-1">
           <img class="h-10" v-if="footer.logo.url" :src="footer.logo.url" alt="Templatecookie" />
-          <img class="h-10" v-else src="/images/logo.svg" alt="Templatecookie" />
+          <img class="h-10" v-else src="/logo-white.svg" alt="Templatecookie" />
           <p class="text-base text-gray-400">
             {{ footer.description }}
           </p>

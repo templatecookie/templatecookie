@@ -1,6 +1,7 @@
 <template>
   <div>
-    <ProductDemoHeader :product="product" v-if="product" />
+    <demo-header />
+    <!-- <ProductDemoHeader :product="product" v-if="product" /> -->
     <product-hero :product="product" v-if="product"  />
 
     <!-- DisplayfeatureRecord
@@ -68,6 +69,7 @@ import PricingPlan from '../../components/Demo/PricingPlanSection.vue';
 import ExclusiveFeature from "../../components/Demo/ExclusiveFeature.vue";
 import GroupFeatureSection from "../../components/Demo/GroupFeatureSection.vue";
 import PricingSection from '~/components/PricingSection.vue'
+import DemoHeader from '../../components/Header/DemoHeader.vue';
 
 export default {
   layout: "empty",
@@ -127,7 +129,8 @@ export default {
     PricingSection,
     PricingPlan,
     ExclusiveFeature,
-    GroupFeatureSection
+    GroupFeatureSection,
+    DemoHeader
 },
 };
 </script>
