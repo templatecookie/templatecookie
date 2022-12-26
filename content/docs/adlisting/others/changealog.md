@@ -8,6 +8,12 @@ category: Others
 # Changelog
 ---
 
+### v2.8.18 - 26th December, 2022
+```
+- Improved faq category page design
+- Currency symbol unique validation remove
+- Responsive design fixed
+```
 ### v2.8.15 - 22th December, 2022
 ```
 - Leaflet & Openstreet map integration
