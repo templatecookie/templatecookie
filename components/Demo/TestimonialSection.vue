@@ -1,9 +1,9 @@
 <template>
-  <section class="overflow-hidden bg-gray-100 py-12 lg:py-16">
+  <section class="overflow-hidden bg-dark py-12 lg:py-16">
     <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <div class="mb-8 text-center">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"> {{ data.title }} </h2>
-        <p class="mt-3 mx-auto max-w-3xl text-lg text-gray-500"> 
+        <h2 class="text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl"> {{ data.title }} </h2>
+        <p class="mt-3 mx-auto max-w-3xl text-lg text-gray-300"> 
           {{ data.description }}
         </p>
       </div>
