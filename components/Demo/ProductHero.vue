@@ -58,17 +58,28 @@
     <div class="bg-gray-800">
       <div class="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <h2 class="text-center text-base font-semibold text-gray-400">{{ product.logoCloudsTitle }}</h2>
-        <div class="mt-8 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+        <!-- <div class="mt-8 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
           <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1" v-for="(item, index) in product.logoCloudsImages" :key="index">
             <img class="h-12" :src="item.url" alt="Tuple">
           </div>
-        </div>
+        </div> -->
+
+      <swiper class="swiper" :options="swiperOptionOne">
+        <swiper-slide class="mt-8 slider-full" v-for="(item, index) in product.logoCloudsImages" :key="index">
+          <div class="flex justify-center bg-white/10 py-2 px-4 rounded">
+            <img class="h-12" :src="item.url" alt="Tuple">
+          </div>
+        </swiper-slide>
+      </swiper>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+import "swiper/css/swiper.css";
+
 export default {
   props: {
     product: {
@@ -78,7 +89,35 @@ export default {
   },
   data() {
     return {
-      bgImage: require('../../static/images/img-five.png')
+      bgImage: require('../../static/images/img-five.png'),
+      swiperOptionOne: {
+        slidesPerView: 1,
+        spaceBetween: 24,
+        loop: true,
+        autoplay: {
+          delay: 1,
+          disableOnInteraction: false
+        },
+        freeMode: true,
+        speed: 10000,
+        breakpoints: {
+          1199: {
+            slidesPerView: 4,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          320: {
+            slidesPerView: 1,
+          },
+        },
+      },
     }
   },
   methods: {
@@ -86,7 +125,11 @@ export default {
       // return this.product.demo_page_banner ? this.fixImageUrl(this.product.demo_page_banner) : this.bgImage
       return this.product.demoBanner && this.product.demoBanner.url ? this.product.demoBanner.url : this.bgImage;
     }
-  }
+  },
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
 }
 </script>
 

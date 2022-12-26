@@ -37,6 +37,9 @@
           </div>
         </swiper-slide>
       </swiper>
+      <div class="custom-pagination flex justify-center pt-16">
+        <div class="swiper-pagination" slot="pagination"></div>
+      </div>
     </div>
   </section>
 </template>

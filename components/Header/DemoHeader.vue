@@ -1,7 +1,7 @@
 <template>
 <div class="relative bg-dark">
   <div class="mx-auto max-w-7xl px-4 sm:px-6">
-    <div class="flex items-center justify-between border-b-2 border-gray-100/50 py-6 md:justify-start md:space-x-10">
+    <div class="flex items-center justify-between border-b-2 border-gray-100/40 py-6 md:justify-start md:space-x-10">
       <div class="flex justify-start lg:w-0 lg:flex-1">
         <nuxt-link to="/">
           <span class="sr-only">Templatecookie</span>
@@ -17,14 +17,14 @@
         </button>
       </div>
       <div class="hidden items-center justify-end md:flex md:flex-1 lg:w-0 space-x-4">
-        <button-element v-for="(item, index) in mainMenuItems" :key="index" :label="item.name" :href="item.href" />
+        <button-element v-for="(item, index) in mainMenuItems" :key="index" :label="item.name" :href="item.href" cssClass="bg-primary hover:bg-secondary" />
       </div>
     </div>
   </div>
   <div class="mx-auto max-w-7xl px-4 sm:px-6 py-1 pb-4">
     <nav class="hidden md:flex md:justify-between">
       <div class="flex flex-wrap">
-        <a href="#" v-for="(item, index) in subMenuItems" :key="index" class="text-sm text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded-xl py-2 px-4">
+        <a href="#" v-for="(item, index) in subMenuItems" :key="index" class="text-sm text-gray-400 hover:text-gray-900 hover:bg-gray-200 rounded-xl py-2 px-4">
           {{ item.name }}
         </a>
       </div>
