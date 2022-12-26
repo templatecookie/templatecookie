@@ -30,6 +30,7 @@ module.exports = {
       },
       fontFamily: {
         lexend: ["Lexend", "sans-serif"],
+        raleway: ["Raleway", "sans-serif"],
       },
       fontSize: {
         "heading-40": ["40px", "48px"],
@@ -138,5 +139,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
   ],
 };

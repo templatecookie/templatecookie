@@ -1,6 +1,6 @@
 <template>
   <div class="py-20 lg:py-124" id="pages" :class="data.cssClass">
-    <div class="container">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <div class="text-center mb-8 lg:mb-12">
         <h2 class="textdark text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
           {{ data.title }}

@@ -12,21 +12,46 @@ query product($slug: String!){
     banner {
       url
     }
-    category {
-      name
-    }
     demoBanner {
       url
     }
+    logoCloudsTitle
+    logoCloudsImages {
+      url
+    }
+    seo{
+      title
+      description
+      image {
+        url
+      }
+    }
     contents {
-      ... on CustomerSupportRecord {
+      ... on TestimonialSectionRecord {
         __typename
-        description
-        cssClass
-        id
         title
-        image {
-          url
+        description
+        testimonials{
+          id
+          name
+          role
+          quote
+          image {
+            url
+          }
+        }
+      }
+      ... on TechnologySectionRecord {
+        __typename
+        title
+        description
+        technologies{
+          id
+          name
+          description
+          icon {
+            url
+          }
         }
       }
       ... on DisplayfeatureRecord {
@@ -146,17 +171,6 @@ query product($slug: String!){
           features {
             name
             id
-          }
-        }
-      }
-      ... on GroupfeaturesectionRecord {
-        id
-        cssClass
-        items {
-          id
-          text 
-          icon {
-            url
           }
         }
       }

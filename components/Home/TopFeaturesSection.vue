@@ -1,6 +1,6 @@
 <template>
   <section class="why-should bg-gray-f0 py-14 md:py-124">
-    <div class="container">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <!-- section title  -->
       <div class="mb-72 text-center" v-if="section.info[0]">
         <h2 class="text-4xl md:text-5xl textdark font-semibold capitalize tracking-1 mb-8 max-w-lg mx-auto">

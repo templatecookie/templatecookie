@@ -51,16 +51,6 @@ query {
       }
     }
 
-    customerSupport {
-      title
-      description
-      cssClass
-      image {
-        filename
-        url
-      }
-    }
-
     selectedProducts {
       name
       slug

@@ -1,11 +1,11 @@
 <template>
-<div class="relative bg-white">
+<div class="relative bg-dark">
   <div class="mx-auto max-w-7xl px-4 sm:px-6">
     <div class="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
       <div class="flex justify-start lg:w-0 lg:flex-1">
         <nuxt-link to="/">
           <span class="sr-only">Templatecookie</span>
-          <img class="h-8 w-auto sm:h-10" src="/logo.svg" alt="Templatecookie.com Premium Quality Scripts & HTML Templates">
+          <img class="h-8 w-auto sm:h-10" src="/logo-white.svg" alt="Templatecookie.com Premium Quality Scripts & HTML Templates">
         </nuxt-link>
       </div>
       <div class="-my-2 -mr-2 md:hidden">
@@ -24,7 +24,7 @@
   </div>
   <div class="mx-auto max-w-7xl px-4 sm:px-6 py-1 pb-4">
     <nav class="hidden md:flex md:justify-between">
-      <div class="flex">
+      <div class="flex flex-wrap">
         <a href="#" v-for="(item, index) in subMenuItems" :key="index" class="text-sm text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded-xl py-2 px-4">
           {{ item.name }}
         </a>
@@ -140,7 +140,7 @@ export default {
     return {
       subMenuItems: [
         {
-          name: 'Payment Gateways',
+          name: 'Features',
           href: '',
         },
         {

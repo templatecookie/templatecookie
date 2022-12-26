@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-900">
+  <div class="bg-gray-900" id="pricing">
     <div class="relative overflow-hidden pt-32 pb-96 lg:pt-40">
       <div><img class="absolute bottom-0 left-1/2 w-[1440px] max-w-none -translate-x-1/2" src="https://tailwindui.com/img/component-images/grid-blur-purple-on-black.jpg" alt="" /></div>
       <div class="relative mx-auto max-w-7xl px-6 text-center lg:px-8">
@@ -14,11 +14,11 @@
       <div class="relative -mt-80">
         <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-4xl lg:grid-cols-2 lg:gap-8">
-            <pricing-item v-for="(tier, index) in data.plans" :key="index" :item="tier" />
+            <pricing-item v-for="(tier, index) in plans" :key="index" :item="tier" />
           </div>
         </div>
       </div>
-      <!-- <div class="relative mx-auto mt-8 max-w-7xl px-6 lg:px-8">
+      <div class="relative mx-auto mt-8 max-w-7xl px-6 lg:px-8" v-if="extraOffer">
         <div class="mx-auto max-w-md lg:max-w-4xl">
           <div class="flex flex-col gap-6 rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 lg:flex-row lg:items-center lg:gap-8">
             <div class="lg:min-w-0 lg:flex-1">
@@ -30,7 +30,7 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
 </template>
@@ -39,7 +39,7 @@
 import PricingItem from './PricingItem.vue'
 
 export default {
-  props: ['data', 'info'],
+  props: ['data', 'info', 'plans', 'extraOffer'],
   components: {
     PricingItem
   },

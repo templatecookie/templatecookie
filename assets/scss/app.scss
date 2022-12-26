@@ -33,12 +33,16 @@ header ul li a.nuxt-link-exact-active {
 
 @layer utilities {
   body {
-    @apply font-lexend font-normal;
+    @apply font-raleway font-normal;
   }
   .container {
     @apply mx-auto px-3  xl:max-w-1320;
   }
+  h1, h2, h3, h4, a, blockquote {
+    @apply font-lexend font-normal;
+  }
 }
+
 
 // Custom css
 

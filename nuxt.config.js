@@ -143,12 +143,10 @@ export default {
   googleFonts: {
     display: 'swap',
     families: {
-      Roboto: true,
-      'Josefin+Sans': true,
       Lexend: [300, 400, 500, 600, 700, 800],
       Raleway: {
-        wght: [100, 400],
-        ital: [100]
+        wght: [100, 300, 400, 500, 600, 700, 800],
+        ital: [100, 300, 400, 500,]
       },
     }
   },

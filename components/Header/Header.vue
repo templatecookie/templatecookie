@@ -1,6 +1,6 @@
 <template>
   <header class="w-full py-3 bg-white drop-shadow-sm">
-    <div class="container">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <!-- header inner content  -->
       <div class="flex items-center justify-between">
         <nuxt-link to="/">

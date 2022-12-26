@@ -1,6 +1,6 @@
 <template>
   <div class="py-10 bg-cover bg-center" :style="{ backgroundImage: 'url(' + bgimage + ')' }">
-    <div class="container">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <div class="ex-small:overflow-auto overflow-x-scroll">
         <ul class="flex text-dark-gray text-sm space-x-2 mb-3">
           <li class="leading-3 whitespace-nowrap">

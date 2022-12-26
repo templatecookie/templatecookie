@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="realtive py-12 lg:py-20 bg-no-repeat bg-center bg-cover" :style="{ backgroundImage: `url(${bannerImg})` }">
-      <div class="container">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="text-center">
           <h1 class="text-4xl md:text-heading-40 textdark mb-6 max-w-680 mx-auto font-semibold">
             Thank you for purchasing
@@ -12,7 +12,7 @@
         </div>
       </div>
     </section>
-    <div class="container">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <div class="w-full lg:w-1/2 mx-auto py-6">
         <div class="py-4 px-8 bg-red-200 w-full text-gray-800 rounded mb-6">
           Note: Sometimes it can take longer than usual, like 1 to 3 working days, because of our higher volume of tickets.

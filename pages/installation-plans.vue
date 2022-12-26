@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="realtive py-12 lg:py-20 bg-no-repeat bg-center bg-cover" :style="{ backgroundImage: `url(${bannerImg})` }">
-      <div class="container">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="text-center">
           <h1 class="text-4xl md:text-heading-40 textdark mb-6 max-w-680 mx-auto font-semibold">
             Installation Plans
@@ -31,7 +31,7 @@
         </div>
       </div>
     </section>
-    <PricingSection :data="selectedProductData" :info="selectedProductData" />
+    <PricingSection :plans="selectedProductPlans" :info="selectedProductData" />
   </div>
 </template>
 
@@ -73,6 +73,9 @@ export default {
   computed: {
     selectedProductData(){
         return this.products.find(elem => elem.product.id == this.selectedProduct.replace('id',''));
+    },
+    selectedProductPlans(){
+      return this.selectedProductData.plans.map(item => item.priceplan[0])
     }
   },
   created(){

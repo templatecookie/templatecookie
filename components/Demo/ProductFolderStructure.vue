@@ -1,6 +1,6 @@
 <template>
   <div class="py-20 lg:py-124 bg-gray-f0">
-    <div class="container">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <div class="lg:grid grid-cols-2 gap-6">
         <div class="flex items-center mb-6 lg:mb-0">
           <div class="lg:pr-20 text-center lg:text-left">

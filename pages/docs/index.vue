@@ -2,7 +2,7 @@
   <div>
     <section class="realtive py-12 lg:py-20 bg-no-repeat bg-center bg-cover"
       :style="{ backgroundImage: `url(${bannerImg})` }">
-      <div class="container">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="text-center">
           <h1 class="text-4xl md:text-heading-40 textdark mb-6 max-w-680 mx-auto font-semibold">
             Templatecookie Docs

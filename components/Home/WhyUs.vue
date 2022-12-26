@@ -1,6 +1,6 @@
 <template>
   <section class="overflow-hidden">
-    <div class="container">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <div class="flex px-3 lg:px-0">
         <div class="w-1/2 lg:py-124 order-2 lg:order-1 pb-14 lg:pb-0 pr-8">
           <h1 class="text-4xl md:text-5xl textdark font-semibold capitalize tracking-1 mb-8">

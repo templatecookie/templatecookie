@@ -1,7 +1,7 @@
 <template>
   <!-- newsletter  -->
   <section class="relative lg:pt-124 z-10">
-    <div class="container">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <!-- call to action card  -->
       <div class="relative overflow-hidden bg-white border-gray-f0 border rounded-3xl p-6 md:p-12 -mb-16">
         <div class="flex flex-col lg:flex-row lg:space-x-8">

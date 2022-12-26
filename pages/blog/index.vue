@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="bg-blue-600">
-      <div class="container">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="py-12">
           <h1 class="!text-white text-2xl lg:text-5xl mb-2">Templatecookie Blog</h1>
           <div class="text-gray-200 font-light">

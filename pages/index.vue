@@ -3,7 +3,7 @@
     <HeroSection :data="homepage.heroSection" v-if="homepage && homepage.heroSection"/>
     <!-- Featured Card  -->
     <section class="featured pt-14 md:pt-124" v-if="homepage && homepage.featuredSection[0]">
-      <div class="container">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="mb-72 text-center">
           <h2 class="text-4xl md:text-5xl textdark font-semibold capitalize tracking-1 mb-8 max-w-lg mx-auto" data-aos="fade-up">
             {{ homepage.featuredSection[0].title }}
@@ -23,7 +23,7 @@
 
     <!-- Latest Product -->
     <section class="latest py-14 md:py-124" v-if="homepage && homepage.latestProduct" id="products">
-      <div class="container">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="mb-72 text-center">
           <h2 class="text-4xl md:text-5xl textdark font-semibold capitalize tracking-1 mb-8 max-w-lg mx-auto">
             {{ homepage.latestProduct[0].title }}

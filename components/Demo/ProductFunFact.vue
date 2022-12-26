@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
     <div class="ex-small:grid grid-cols-12">
       <div v-for="(item, indexItem) in data.fact" :key="indexItem"
         class="col-span-6 lg:col-span-3 fun-column duration-300 hover:shadow-bs8">

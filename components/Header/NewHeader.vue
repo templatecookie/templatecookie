@@ -24,7 +24,7 @@
           <nav class="hidden space-x-6 md:flex items-center">
             <div class="relative">
               <button @click="solutionStatus = !solutionStatus" :class="solutionStatus ? 'text-gray-900' : 'text-gray-500'" type="button" class="group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" aria-expanded="false">
-                <span>Products</span>
+                <span class="font-lexend">Products</span>
                 <svg :class="solutionStatus ? 'text-gray-600' : 'text-gray-400'" class="ml-2 h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                 </svg>

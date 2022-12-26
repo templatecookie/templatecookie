@@ -1,6 +1,6 @@
 <template>
   <div class="py-20 lg:pt-124" id="top-features">
-    <div class="container">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <div class="mb-72 text-center" v-if="data.info && data.info[0]">
         <h2 class="text-4xl md:text-5xl textdark font-semibold capitalize tracking-1 mb-8 max-w-lg mx-auto">
           {{ data.info[0].title }}

@@ -1,6 +1,6 @@
 <template>
 <section class="py-16" :class="data.cssClass ? data.cssClass : 'bg-gray-f0'">
-  <div class="container">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
     <!-- Project services -->
     <div class="flex flex-wrap">
       <div class="w-3/12 fun-column border border-collapse border-gray-f0 table-cell" v-for="(item, index) in data.items" :key="index">

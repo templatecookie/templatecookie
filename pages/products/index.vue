@@ -2,7 +2,7 @@
   <div>
     <!-- Banner  -->
     <section class="pb-14 lg:pb-72 pt-14 lg:pt-32 bg-no-repeat bg-center bg-cover" :style="{ backgroundImage: `url(${bannerImg})` }">
-      <div class="container">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="text-center">
           <h1 class="text-4xl md:text-heading-40 textdark mb-6 max-w-680 mx-auto font-semibold">
             <!-- {{ page.info.title }} -->
@@ -54,7 +54,7 @@
 
     <!-- Filter Item content -->
     <section>
-      <div class="container" v-if="products.length">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6" v-if="products.length">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 my-8">
           <div v-for="(item, itemIndex) in products" :key="itemIndex" class="flex items-stretch">
             <ProductCard :product="item" :large="true" />

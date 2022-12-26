@@ -1,8 +1,7 @@
 <template>
   <div>
-    <demo-header />
-    <!-- <ProductDemoHeader :product="product" v-if="product" /> -->
-    <product-hero :product="product" v-if="product"  />
+    <demo-header :product="product" v-if="product"  />
+    <product-hero :product="product" v-if="product" />
 
     <!-- DisplayfeatureRecord
     ExclusivefeatureRecord
@@ -36,10 +35,13 @@
         <product-pages :data="section" />
       </div>
       <div v-if="section.__typename == 'PriceplanRecord'">
-        <pricing-plan :data="section" />
+        <PricingSection :plans="section.plans" :info="section.info[0]" extraOffer="true" />
       </div>
-      <div v-if="section.__typename == 'CustomerSupportRecord'">
-        <product-support  />
+      <div v-if="section.__typename == 'TestimonialSectionRecord'">
+        <testimonial-section :data="section" />
+      </div>
+      <div v-if="section.__typename == 'TechnologySectionRecord'">
+        <technology-section :data="section" />
       </div>
       <div v-if="section.__typename == 'FunFactRecord'">
         <product-fun-fact :data="section" />
@@ -54,7 +56,6 @@
 <script>
 import PurchaseCard from "~/components/PurchaseCard.vue";
 import PRODUCT_DEMO from '~/graphql/productDemo'
-import ProductDemoHeader from "~/components/Header/ProductDemoHeader.vue";
 import GLOBAL_QUERY from '~/graphql/global'
 import ProductTopFeatures from '~/components/Demo/ProductTopFeatures.vue';
 import ProductFeatureScreenshots from '../../components/Demo/ProductFeatureScreenshots.vue';
@@ -68,8 +69,10 @@ import CallToAction from '../../components/Demo/CallToAction.vue';
 import PricingPlan from '../../components/Demo/PricingPlanSection.vue';
 import ExclusiveFeature from "../../components/Demo/ExclusiveFeature.vue";
 import GroupFeatureSection from "../../components/Demo/GroupFeatureSection.vue";
-import PricingSection from '~/components/PricingSection.vue'
 import DemoHeader from '../../components/Header/DemoHeader.vue';
+import PricingSection from '~/components/PricingSection.vue'
+import TestimonialSection from '../../components/Demo/TestimonialSection.vue';
+import TechnologySection from '../../components/Demo/TechnologySection.vue';
 
 export default {
   layout: "empty",
@@ -77,7 +80,7 @@ export default {
   head() {
     const product = this.product
     return {
-      title: `${product.name} - ${product.category.name}`,
+      title: `${product.name}`,
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -117,7 +120,6 @@ export default {
   components: {
     PurchaseCard,
     ProductTopFeatures,
-    ProductDemoHeader,
     ProductFeatureScreenshots,
     ProductFolderStructure,
     ProductScreenshots,
@@ -130,7 +132,9 @@ export default {
     PricingPlan,
     ExclusiveFeature,
     GroupFeatureSection,
-    DemoHeader
+    DemoHeader,
+    TestimonialSection,
+    TechnologySection,
 },
 };
 </script>

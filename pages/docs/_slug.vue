@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="py-12 lg:pb-12 bg-no-repeat bg-center bg-cover" :style="{ backgroundImage: `url(${bannerImg})` }">
-      <div class="container">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="text-left">
           <h1 class="text-4xl md:text-heading-40 textdark mb-6 mx-auto font-semibold">
             {{ product.title }} - Documentation
@@ -13,7 +13,7 @@
       </div>
     </section>
     <section>
-      <div class="container">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="flex py-8 items-start">
           <div class="w-3/12 h-full border-r-[1px] border-gray-100 ">
             <ul class="mb-6" v-for="(items, index) in categories" :key="index">

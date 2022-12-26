@@ -1,6 +1,6 @@
 <template>
   <div class="py-20 lg:py-124" :class="data.cssClass">
-    <div class="container">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <div class="lg:grid grid-cols-12 gap-6">
         <div class="col-span-6" :class="data.alignment == 'left' ? 'order-1' : 'order-3'">
           <div
