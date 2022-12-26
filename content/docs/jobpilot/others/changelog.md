@@ -7,6 +7,21 @@ category: Others
 
 # Changelog
 
+### v2.30.6 - 26th December, 2022
+```
+- Added highlighted or featured job duration
+- One click application upgrade feature added
+- Website currency show/hide option added
+- External page added for careerjet and indeed jobs 
+- Choosing a plan is necessary after a newly company created feature added
+- Repeating view count for candidate resume for 30 days feature added
+- Candidate job posting benefits management has been added
+- Candidate language management has been added
+- Candidate resumes viewable on the company application page feature added
+- Candidates can create resumes in the meantime of submitting an application feature added
+- Responsive design issue fixed
+- Minor bug fixed and improved functionality
+```
 ### v2.20.8 - 29th Novembar, 2022
 ```
 - Login & Register page social login showing condition fix
