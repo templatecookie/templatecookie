@@ -48,21 +48,21 @@
                     <form action="#" method="POST" class="space-y-6">
                       <div>
                         <label for="name" class="sr-only">Your name</label>
-                        <input type="text" name="name" id="name" autocomplete="name" placeholder="Full name" required class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                        <input type="text" name="name" id="name" autocomplete="name" placeholder="Full name" required class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm">
                       </div>
 
                       <div>
                         <label for="mobile-or-email" class="sr-only">Your email</label>
-                        <input type="text" name="mobile-or-email" id="mobile-or-email" autocomplete="email" placeholder="Your email" required class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                        <input type="text" name="mobile-or-email" id="mobile-or-email" autocomplete="email" placeholder="Your email" required class="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm">
                       </div>
 
                       <div>
                         <label for="message" class="sr-only">Message</label>
-                        <textarea id="message" placeholder="Enter your message" name="message" rows="4" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"></textarea>
+                        <textarea id="message" placeholder="Enter your message" name="message" rows="4" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-primary focus:ring-primary"></textarea>
                       </div>
 
                       <div>
-                        <button type="submit" class="flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Request Consultation now</button>
+                        <button type="submit" class="flex w-full justify-center rounded-md border border-transparent bg-primary py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">Request Consultation now</button>
                       </div>
                     </form>
                   </div>

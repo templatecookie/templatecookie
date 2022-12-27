@@ -1,8 +1,8 @@
 ---
 title: Basic Editing
 description: Installation documentation
-position: 3
-category: Basics
+position: 40
+category: Others
 ---
 
 <!--more-->

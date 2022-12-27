@@ -1,7 +1,7 @@
 <template>
   <div class="relative bg-white py-24 sm:py-32 lg:py-40">
     <div class="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
-      <!-- <h2 class="text-lg font-semibold text-indigo-600">Deploy faster</h2> -->
+      <!-- <h2 class="text-lg font-semibold text-primary">Deploy faster</h2> -->
       <p class="mt-2 text-3xl font-bold text- tracking-tight text-gray-900 sm:text-4xl">
         Services We Offer
       </p>
@@ -12,7 +12,7 @@
             <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
               <div class="-mt-6">
                 <div>
-                  <span class="inline-flex items-center justify-center rounded-xl bg-indigo-500 p-3 shadow-lg" v-html="item.icon"> </span>
+                  <span class="inline-flex items-center justify-center rounded-xl bg-primary p-3 shadow-lg" v-html="item.icon"> </span>
                 </div>
                 <h3 class="mt-8 text-lg font-semibold leading-8 tracking-tight text-gray-900">{{ item.name }}</h3>
                 <p class="mt-5 text-base leading-7 text-gray-600">{{ item.description }}</p>

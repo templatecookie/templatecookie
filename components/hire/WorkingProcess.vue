@@ -2,7 +2,7 @@
   <section class="bg-gray-50 ">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:py-16 lg:px-8">
       <div class="mb-20 text-center">
-        <!-- <h2 class="text-lg font-semibold text-indigo-600">Deploy faster</h2> -->
+        <!-- <h2 class="text-lg font-semibold text-primary">Deploy faster</h2> -->
         <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Our working process
         </p>

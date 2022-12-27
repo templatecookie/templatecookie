@@ -1,8 +1,8 @@
 ---
 title: Blade File Edit
 description: Installation documentation
-position: 4
-category: Basics
+position: 41
+category: Others
 ---
 
 <!--more-->

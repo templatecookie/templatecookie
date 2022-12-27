@@ -31,24 +31,24 @@
           <div class="sm:col-span-2">
             <label for="first-name" class="block text-sm font-medium text-gray-700">Your name</label>
             <div class="mt-1">
-              <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+              <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-primary focus:ring-primary">
             </div>
           </div>
           <div class="sm:col-span-2">
             <label for="email" class="block text-sm font-medium text-gray-700">Your e mail</label>
             <div class="mt-1">
-              <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+              <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-primary focus:ring-primary">
             </div>
           </div>
           <div class="sm:col-span-2">
             <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
             <div class="mt-1">
-              <textarea id="message" name="message" rows="4" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"></textarea>
+              <textarea id="message" name="message" rows="4" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-primary focus:ring-primary"></textarea>
             </div>
           </div>
           <div class="sm:col-span-2">
             <label for="location" class="block text-sm font-medium text-gray-700">Your budget range* (Starting from 5,000 USD)</label>
-            <select id="location" name="location" class="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+            <select id="location" name="location" class="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-primary focus:outline-none focus:ring-primary sm:text-sm">
               <option value="">Please select from list</option>
               <option value="Below 5,000 USD">Below 5,000 USD</option>
               <option value="5,000-10,000 USD">5,000-10,000 USD</option>
@@ -57,7 +57,7 @@
             </select>
           </div>
           <div class="sm:col-span-2">
-            <button type="submit" class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Let's talk</button>
+            <button type="submit" class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-primary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">Let's talk</button>
           </div>
         </form> -->
       </div>

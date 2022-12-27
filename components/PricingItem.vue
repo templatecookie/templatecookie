@@ -1,7 +1,7 @@
 <template>
    <div class="flex flex-col rounded-3xl bg-white shadow-xl ring-1 ring-black/10">
     <div class="p-8 sm:p-10">
-      <h3 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600" :id="item.id">{{ item.name }}</h3>
+      <h3 class="text-lg font-semibold leading-8 tracking-tight text-primary" :id="item.id">{{ item.name }}</h3>
       <div class="mt-4 flex items-baseline text-5xl font-bold tracking-tight text-gray-900 font-lexend">
         ${{ item.price }}
       </div>
@@ -18,10 +18,10 @@
           </li>
         </ul>
         <div class="mt-8">
-          <a v-if="checkout" href="#" @click.prevent="openCheckout(item.paddleProductId)" class="inline-block w-full rounded-lg bg-indigo-600 px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-indigo-700">
+          <a v-if="checkout" href="#" @click.prevent="openCheckout(item.paddleProductId)" class="inline-block w-full rounded-lg bg-primary px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-secondary">
             Get started now
           </a>
-          <a v-else :href="item.purchaseLink" class="inline-block w-full rounded-lg bg-indigo-600 px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-indigo-700">
+          <a v-else :href="item.purchaseLink" class="inline-block w-full rounded-lg bg-primary px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-secondary">
             Get started now
           </a>
         </div>

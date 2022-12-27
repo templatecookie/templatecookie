@@ -1,8 +1,8 @@
 ---
 title: Basic Editing
 description: Installation documentation
-position: 3
-category: Basics
+position: 40
+category: Others
 ---
 
 <!--more-->
@@ -50,11 +50,11 @@ Application core routes located in route files. If you want to change something.
 
 ### 1\. Screenshot
 
-![screenshot](/docs/jobpilot/screenshot/editcode/route.png)
+![screenshot](/docs/clicon/screenshot/editcode/route.png)
 
 ### 2\. Screenshot
 
-![screenshot](/docs/jobpilot/screenshot/editcode/route2.png)
+![screenshot](/docs/clicon/screenshot/editcode/route2.png)
 
 ## Blade File Edit
 
@@ -64,11 +64,11 @@ Application core views code located in blade files. If you want to change someth
 
 ### 1\. Screenshot
 
-![screenshot](/docs/jobpilot/screenshot/editcode/blade.png)
+![screenshot](/docs/clicon/screenshot/editcode/blade.png)
 
 ### 2\. Screenshot
 
-![screenshot](/docs/jobpilot/screenshot/editcode/blade2.png)
+![screenshot](/docs/clicon/screenshot/editcode/blade2.png)
 
 ## Controller File Edit
 
@@ -76,11 +76,11 @@ You will find all the controller files under `app/Http/Controllers & Modules/*/H
 
 ### 1\. Screenshot
 
-![screenshot](/docs/jobpilot/screenshot/editcode/controller.png)
+![screenshot](/docs/clicon/screenshot/editcode/controller.png)
 
 ### 2\. Screenshot
 
-![screenshot](/docs/jobpilot/screenshot/editcode/controller2.png)
+![screenshot](/docs/clicon/screenshot/editcode/controller2.png)
 
 ## Website Content Change
 
@@ -90,12 +90,12 @@ You will find all the translated line under `resources/lang/en/website.php` Fold
 
 ### 1\. Screenshot
 
-![screenshot](/docs/jobpilot/screenshot/editcode/content.png)
+![screenshot](/docs/clicon/screenshot/editcode/content.png)
 
 ### 2\. Screenshot
 
-![screenshot](/docs/jobpilot/screenshot/editcode/content2.png)
+![screenshot](/docs/clicon/screenshot/editcode/content2.png)
 
 ### 3\. Screenshot
 
-![screenshot](/docs/jobpilot/screenshot/editcode/content3.png)
+![screenshot](/docs/clicon/screenshot/editcode/content3.png)
