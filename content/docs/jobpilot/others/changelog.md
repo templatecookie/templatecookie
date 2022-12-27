@@ -7,6 +7,12 @@ category: Others
 
 # Changelog
 
+### v2.30.8 - 27th December, 2022
+```
+- After the purchase plan session issue fix
+- Choosing a plan is necessary after a newly company created feature added issue fix
+```
+
 ### v2.30.6 - 26th December, 2022
 ```
 - Added highlighted or featured job duration
