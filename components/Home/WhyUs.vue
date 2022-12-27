@@ -33,7 +33,7 @@
         </div>
       </div>
     </div>
-    <div class="container mt-8">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 mt-8">
       <div class="flex align-start gap-6">
         <div v-for="(item, index) in section.feature" :key="index" data-aos="fade-up" :data-aos-delay="index * 100"
           class="flex flex-col sm:w-64 flex-grow sm:flex-row items-center justify-center sm:justify-start sm:space-x-3 p-6 rounded-xl overflow-hidden mb-4" :class="item.cssClass">

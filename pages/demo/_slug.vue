@@ -69,7 +69,7 @@ import CallToAction from '../../components/Demo/CallToAction.vue';
 import PricingPlan from '../../components/Demo/PricingPlanSection.vue';
 import ExclusiveFeature from "../../components/Demo/ExclusiveFeature.vue";
 import GroupFeatureSection from "../../components/Demo/GroupFeatureSection.vue";
-import DemoHeader from '../../components/Header/DemoHeader.vue';
+import DemoHeader from '../../components/DemoHeader.vue';
 import PricingSection from '~/components/PricingSection.vue'
 import TestimonialSection from '../../components/Demo/TestimonialSection.vue';
 import TechnologySection from '../../components/Demo/TechnologySection.vue';

@@ -28,7 +28,7 @@ module.exports = {
       },
       fontFamily: {
         lexend: ["Lexend", "sans-serif"],
-        raleway: ["Raleway", "sans-serif"],
+        opensans: ["Open Sans", "sans-serif"],
       },
       fontSize: {
         "heading-40": ["40px", "48px"],

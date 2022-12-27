@@ -11,7 +11,7 @@
       </div>
     </div>
     <section class="text-gray-600 body-font bg-white">
-      <div class="container px-5 py-24 mx-auto">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 px-5 py-24 mx-auto">
         <div class="flex flex-wrap -m-4" v-if="posts.length">
           <div class="p-4 md:w-1/3" v-for="(item, i) in posts" :key="i">
             <blog-item :item="item" />

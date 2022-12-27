@@ -122,7 +122,6 @@ export default {
   },
   methods: {
     getBanner(){
-      // return this.product.demo_page_banner ? this.fixImageUrl(this.product.demo_page_banner) : this.bgImage
       return this.product.demoBanner && this.product.demoBanner.url ? this.product.demoBanner.url : this.bgImage;
     }
   },

@@ -14,10 +14,10 @@
       </div>
     </div>
     <!-- end -->
-    <div class="container py-12">
+    <div class="py-12">
       <div class="flex justify-center">
         <!-- <div class="w-full md:w-8/12 lg:w-6/12"> -->
-        <div class="container mx-auto">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6">
           <div class="flex gap-8 flex-wrap lg:flex-nowrap mb-8">
             <div class="flex-grow-0 w-full lg:w-1/2 lg:pr-10">
               <div class="rounded-lg mb-6 border overflow-hidden" :class="`bg-${section.color}-50 border-${section.color}-600`" v-for="(section, index) in supportFeatures" :key="index">

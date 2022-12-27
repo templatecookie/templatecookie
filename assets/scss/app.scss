@@ -33,7 +33,7 @@ header ul li a.nuxt-link-exact-active {
 
 @layer utilities {
   body {
-    @apply font-raleway font-normal;
+    @apply font-opensans font-normal;
   }
   .container {
     @apply mx-auto px-3  xl:max-w-1320;

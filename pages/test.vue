@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container py-32">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-32">
         <div class="flex gap-6 flex-wrap">
             <div class="w-40 h-28 flex justify-center items-center bg-primary">blue-0b</div>
             <div class="w-40 h-28 flex justify-center items-center bg-blue-09">blue-09</div>

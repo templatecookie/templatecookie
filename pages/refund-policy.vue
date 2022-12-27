@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="bg-gray-100">
-      <div class="container markdown-body">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 markdown-body">
         <div class="py-12">
           <h1>Refund Policy</h1>
           <p>

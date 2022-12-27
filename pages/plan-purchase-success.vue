@@ -70,10 +70,4 @@ export default {
     background-size: cover !important;
   }
 }
-.container {
-  @media (min-width: 1320px) {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
 </style>

@@ -51,6 +51,7 @@ export default {
   ssr: false,
 
   publicRuntimeConfig: {
+    datoCmsToken: process.env.DATO_CMS_TOKEN,
     dataPerPage: 6,
   },
 
@@ -103,11 +104,9 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
     '@nuxtjs/google-fonts',
     '@nuxtjs/pwa',
-    // '@nuxtjs/dotenv',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -135,16 +134,11 @@ export default {
     id: 'GTM-NZ5TXGP'
   },
 
-  // // Generate index.html files for each blog post
-  // generate: {
-  //   routes: linkages
-  // },
-
   googleFonts: {
     display: 'swap',
     families: {
       Lexend: [300, 400, 500, 600, 700, 800],
-      Raleway: {
+      "Open+Sans": {
         wght: [100, 300, 400, 500, 600, 700, 800],
         ital: [100, 300, 400, 500,]
       },

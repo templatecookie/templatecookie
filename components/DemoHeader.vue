@@ -134,7 +134,7 @@
 </template>
 
 <script>
-import ButtonElement from '../ButtonElement.vue'
+import ButtonElement from './ButtonElement.vue'
 export default {
   components: { ButtonElement },
   data(){
