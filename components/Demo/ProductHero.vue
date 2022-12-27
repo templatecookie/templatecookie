@@ -89,7 +89,7 @@ export default {
   },
   data() {
     return {
-      bgImage: require('../../static/images/img-five.png'),
+      bgImage: '/images/img-five.png',
       swiperOptionOne: {
         slidesPerView: 1,
         spaceBetween: 24,

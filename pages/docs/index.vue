@@ -27,7 +27,6 @@
 
 <script>
 import ProductItem from '~/components/Docs/ProductItem.vue'
-import bannerImg from "../../static/images/img-five.png";
 
 export default {
   head() {
@@ -48,7 +47,7 @@ export default {
   },
   data() {
     return {
-      bannerImg,
+      bannerImg: "/images/img-five.png",
     };
   },
   async asyncData({ $content }) {

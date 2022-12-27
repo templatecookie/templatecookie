@@ -32,7 +32,6 @@
 </template>
 
 <script>
-import bannerImg from "../static/images/img-five.png";
 import ProductCard from "../components/ProductCard.vue";
 import HOMEPAGE_QUERY from '~/graphql/homepage'
 import HeroSection from "../components/Home/HeroSection.vue";
@@ -77,7 +76,7 @@ export default {
         useEasing: true,
         useGrouping: true,
       },
-      bannerImg,
+      bannerImg: "/images/img-five.png",
     };
   }
 };

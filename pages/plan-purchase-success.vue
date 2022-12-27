@@ -24,8 +24,6 @@
 </template>
 
 <script>
-import bannerImg from "../static/images/img-five.png";
-
 export default {
   head: {
     title: "Installation Plans",
@@ -42,7 +40,7 @@ export default {
   data() {
     return {
       selectedProduct: null,
-      bannerImg: bannerImg,
+      bannerImg: "/images/img-five.png",
     };
   },
   mounted(){

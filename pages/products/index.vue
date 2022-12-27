@@ -49,8 +49,6 @@
   </div>
 </template>
 <script>
-
-import bannerImg from "../../static/images/img-five.png";
 import Pagination from "~/components/Pagination.vue";
 import ProductCard from "~/components/ProductCard.vue";
 import ALL_PRODUCTS from '../../graphql/allProducts'
@@ -86,7 +84,7 @@ export default {
   },
   data() {
     return {
-      bannerImg,
+      bannerImg: "/images/img-five.png",
       selectedCategory: {},
       tabs: [],
       activeTechnology: "",

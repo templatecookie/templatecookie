@@ -24,8 +24,8 @@
   <div class="mx-auto max-w-7xl px-4 sm:px-6">
     <nav class="hidden md:flex md:justify-between py-1 pb-4">
       <div class="flex flex-wrap">
-        <a href="#" v-for="(item, index) in subMenuItems" :key="index" class="text-sm text-gray-400 hover:text-gray-900 hover:bg-gray-200 rounded-xl py-2 px-4">
-          {{ item.name }}
+        <a :href="item.href" v-for="(item, index) in product.menuItems" :key="index" class="text-sm text-gray-400 hover:text-gray-900 hover:bg-gray-200 rounded-xl py-2 px-4">
+          {{ item.label }}
         </a>
       </div>
       <div class="flex">
@@ -62,8 +62,8 @@
         </div>
         <div class="mt-4 border-t-2 border-gray-100 pt-4">
           <nav class="grid gap-y-4">
-            <a href="#" class="flex items-center rounded-md hover:bg-gray-50" v-for="(item, index) in subMenuItems" :key="index">
-              <span class="text-base font-medium text-gray-900">{{ item.name }}</span>
+            <a :href="item.href" class="flex items-center rounded-md hover:bg-gray-50" v-for="(item, index) in product.menuItems" :key="index">
+              <span class="text-base font-medium text-gray-900">{{ item.label }}</span>
             </a>
           </nav>
         </div>
@@ -84,6 +84,7 @@
 <script>
 import ButtonElement from './ButtonElement.vue'
 export default {
+  props: ['product'],
   components: { ButtonElement },
   data(){
     return {

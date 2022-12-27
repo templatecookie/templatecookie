@@ -36,7 +36,6 @@
 </template>
 
 <script>
-import bannerImg from "../static/images/img-five.png";
 import ALL_PRODUCT_PLANS from '~/graphql/allProductPlans.js'
 import PricingSection from '~/components/PricingSection.vue'
 
@@ -57,7 +56,7 @@ export default {
   data() {
     return {
       selectedProduct: null,
-      bannerImg: bannerImg,
+      bannerImg: "/images/img-five.png",
     };
   },
   async asyncData({ app, params, store }) {

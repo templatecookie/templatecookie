@@ -26,6 +26,11 @@ query product($slug: String!){
         url
       }
     }
+    menuItems {
+      label
+      id
+      href
+    }
     contents {
       ... on TestimonialSectionRecord {
         __typename

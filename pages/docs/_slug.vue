@@ -31,7 +31,6 @@
 </template>
 
 <script>
-import bannerImg from "../../static/images/img-five.png";
 import groupBy from 'lodash.groupby'
 import DocCategoryCardItem from '../../components/Docs/DocCategoryCardItem.vue';
 
@@ -55,7 +54,7 @@ export default {
   },
   data() {
     return {
-      bannerImg,
+      bannerImg: "/images/img-five.png",
     };
   },
   async asyncData ({ $content, params }) {
