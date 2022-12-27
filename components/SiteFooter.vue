@@ -10,8 +10,8 @@
           <p class="text-base text-gray-400">
             {{ footer.description }}
           </p>
-          <div class="flex space-x-6" v-if="newsletter[0].socials && newsletter[0].socials">
-            <a :href="item.url" class="text-gray-400 hover:text-gray-300 h-10 w-10 flex justify-center items-center" v-for="item in newsletter[0].socials" :key="item.name">
+          <div class="flex space-x-6" v-if="socials">
+            <a :href="item.url" class="text-gray-400 hover:text-gray-300 h-10 w-10 flex justify-center items-center" v-for="item in socials" :key="item.name">
               <span class="sr-only">Facebook</span>
               <img :src="item.icon.url" alt="">
             </a>
@@ -67,7 +67,7 @@
 <script>
 export default {
   name: "Footer",
-  props: ['data', 'newsletter'],
+  props: ['data', 'socials'],
   computed: {
     footer() {
       return this.data[0]

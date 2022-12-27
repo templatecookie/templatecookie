@@ -7,31 +7,18 @@ query {
   global{
     logo {
       url
-      filename
       title
     }
-    favicon {
-      url
-      filename
-      title
-    }
-    supportUrl
     notice {
       announcement
       showNotice
       cssClass
     }
-    newsletter {
-      newsletterTitle
-      newsletterDescription
-      socialTitle
-      socialDescription
-      socials {
-        name
+    socialMedias {
+      name
+      url
+      icon {
         url
-        icon {
-          url
-        }
       }
     }
 

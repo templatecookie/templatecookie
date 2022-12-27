@@ -3,7 +3,7 @@
     <div class="text-center py-3 text-base" :class="notice.cssClass" v-if="notice && notice.showNotice" v-html="parseMarkdown(notice.announcement)"></div>
     <site-header :data="global.logo" v-if="global && global.logo"/>
     <nuxt />
-    <site-footer :data="global.footer" :newsletter="global.newsletter" v-if="global && global.footer"/>
+    <site-footer :data="global.footer" :socials="global.socialMedias" v-if="global && global.footer"/>
   </div>
 </template>
 
@@ -11,11 +11,10 @@
 import SiteFooter from "../components/SiteFooter.vue";
 import SocialLink from "../components/SocialLink.vue";
 import GLOBAL_QUERY from '~/graphql/global'
-import Newsletter from "../components/Newsletter.vue";
 import SiteHeader from '../components/SiteHeader.vue';
 
 export default {
-  components: { SiteFooter, SocialLink, Newsletter, SiteHeader },
+  components: { SiteFooter, SocialLink, SiteHeader },
   methods: {
     async loadData(){
       const client = this.$nuxt.$apolloProvider.defaultClient;
