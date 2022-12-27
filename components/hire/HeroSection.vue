@@ -40,7 +40,8 @@
               </div>
             </div>
             <div class="mt-16 sm:mt-24 lg:col-span-6 lg:mt-0">
-              <div class="bg-white sm:mx-auto sm:w-full sm:max-w-md sm:overflow-hidden sm:rounded-lg" data-aos="zoom-in">
+              <div id="hubspotForm" class="px-6 pb-4 pt-8 bg-white sm:mx-auto sm:w-full sm:max-w-lg sm:overflow-hidden sm:rounded-lg" data-aos="zoom-in"></div>
+              <!-- <div class="bg-white sm:mx-auto sm:w-full sm:max-w-md sm:overflow-hidden sm:rounded-lg" data-aos="zoom-in">
                 <div class="px-4 py-8 sm:px-10">
                   <p class="text-sm font-medium text-gray-700">Request Free Consultation</p>
                   <div class="mt-6">
@@ -66,7 +67,7 @@
                     </form>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -77,7 +78,14 @@
 
 <script>
 export default {
-
+  mounted() {
+    window.hbspt.forms.create({
+      region: "na1",
+      portalId: "22174697",
+      formId: "55ae1706-e17a-40a0-81db-275fc2d1030a",
+      target: "#hubspotForm"
+    })
+  }
 }
 </script>
 

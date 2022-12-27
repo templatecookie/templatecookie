@@ -14,7 +14,7 @@
       <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
         <div v-for="(item, index) in section.features" :key="index" data-aos="fade-up" :data-aos-delay="index * 100">
           <div class="bg-white rounded-lg p-8 business-card duration-300 hover:shadow-bs8 text-center">
-            <div v-if="item.image" class="icon w-76 h-76 bg-gray-f0 rounded-lg flex items-center justify-center mb-7 duration-300 m-auto">
+            <div v-if="item.image" class="icon w-20 h-20 bg-gray-f0 rounded-lg flex items-center justify-center mb-7 duration-300 m-auto">
               <nuxt-img :src="item.image.url" alt="" class="max-w-[36px] max-h-[36px]" />
             </div>
             <div>

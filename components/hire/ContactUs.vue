@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-hidden bg-white py-16 px-4 sm:px-6 lg:px-8 lg:py-24 bg-hireus-banner bg-contain">
+  <div class="overflow-hidden bg-white py-16 px-4 sm:px-6 lg:px-8 lg:py-24 bg-hireus-banner bg-no-repeat bg-cover pb-48">
     <div class="relative mx-auto max-w-xl">
       <svg class="absolute left-full translate-x-1/2 transform" width="404" height="404" fill="none" viewBox="0 0 404 404" aria-hidden="true">
         <defs>
@@ -26,7 +26,8 @@
         </p>
       </div>
       <div class="mt-12">
-        <form action="#" method="POST" class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+        <div id="hireUsForm" class="pt-8 py-4 px-6 bg-white rounded-lg"></div>
+        <!-- <form action="#" method="POST" class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
           <div class="sm:col-span-2">
             <label for="first-name" class="block text-sm font-medium text-gray-700">Your name</label>
             <div class="mt-1">
@@ -58,7 +59,7 @@
           <div class="sm:col-span-2">
             <button type="submit" class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Let's talk</button>
           </div>
-        </form>
+        </form> -->
       </div>
     </div>
   </div>
@@ -66,7 +67,14 @@
 
 <script>
 export default {
-
+  mounted() {
+    window.hbspt.forms.create({
+      region: "na1",
+      portalId: "22174697",
+      formId: "55ae1706-e17a-40a0-81db-275fc2d1030a",
+      target: "#hireUsForm"
+    })
+  }
 }
 </script>
 

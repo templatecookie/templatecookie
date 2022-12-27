@@ -17,7 +17,7 @@
                 <h5 class="whitespace-nowrap text-sm leading-5">
                   Category :
                 </h5>
-                <div class="w-200">
+                <div class="w-48">
                   <v-select label="name" :clearable="false" placeholder="Select Category" v-model="selectedCategory" :options="categoryList" @input="setCategory" />
                 </div>
               </div>

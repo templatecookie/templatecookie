@@ -1,6 +1,6 @@
 <template>
   <div class="purchase-card p-10 bg-gray-f0 text-center rounded-2xl">
-    <div class="icon w-84 h-84 m-auto bg-primary rounded-full flex items-center justify-center mb-7">
+    <div class="icon w-20 h-20 m-auto bg-primary rounded-full flex items-center justify-center mb-7">
       <nuxt-img :src="icon" alt="icon" />
     </div>
     <div>
