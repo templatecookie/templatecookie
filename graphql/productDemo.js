@@ -29,6 +29,7 @@ query product($slug: String!){
     contents {
       ... on TestimonialSectionRecord {
         __typename
+        id
         title
         description
         testimonials{
@@ -43,6 +44,7 @@ query product($slug: String!){
       }
       ... on TechnologySectionRecord {
         __typename
+        id
         title
         description
         technologies{
@@ -54,24 +56,9 @@ query product($slug: String!){
           }
         }
       }
-      ... on DisplayfeatureRecord {
-        __typename
-        title
-        subtitle
-        bgClass
-        description
-        features {
-          createdAt
-          title
-          description
-          cssClass
-          image {
-            url
-          }
-        }
-      }
       ... on ExclusivefeatureRecord {
         __typename
+        id
         id
         title
         subtitle
@@ -91,6 +78,7 @@ query product($slug: String!){
       ... on FeaturescreenshotRecord {
         __typename
         id
+        id
         info {
           title
           updatedAt
@@ -106,6 +94,7 @@ query product($slug: String!){
       }
       ... on TopfeatureRecord {
         __typename
+        id
         id
         info {
           title
@@ -129,6 +118,7 @@ query product($slug: String!){
       ... on ProductctaRecord {
         __typename
         id
+        id
         title
         description
         cssClass
@@ -136,22 +126,9 @@ query product($slug: String!){
           url
         }
       }
-      ... on ProductPageRecord {
-        __typename
-        id
-        title
-        cssClass
-        pages {
-          name
-          url
-          cssClass
-          image {
-            url
-          }
-        }
-      }
       ... on PriceplanRecord {
         __typename
+        id
         id
         info {
           title
@@ -177,6 +154,7 @@ query product($slug: String!){
       ... on HerosectionRecord {
         __typename
         id
+        id
         title
         subtitle
         description
@@ -191,33 +169,6 @@ query product($slug: String!){
             href
           }
           cssClass
-        }
-      }
-      ... on FunFactRecord {
-        __typename
-        id
-        fact {
-          title
-          id
-          description
-          cssClass
-          counter
-          icon {
-            url
-          }
-        }
-      }
-      ... on FolderstructureRecord {
-        __typename
-        id
-        title
-        updatedAt
-        description
-        cssClass
-        structure {
-          blocks
-          links
-          value
         }
       }
     }

@@ -3,22 +3,7 @@
     <demo-header :product="product" v-if="product"  />
     <product-hero :product="product" v-if="product" />
 
-    <!-- DisplayfeatureRecord
-    ExclusivefeatureRecord
-    FeaturescreenshotRecord
-    TopfeatureRecord
-    ProductctaRecord
-    ProductPageRecord
-    PriceplanRecord
-    HerosectionRecord
-    FunFactRecord
-    FolderstructureRecord
-    CustomerSupportRecord -->
-
     <div v-for="(section, index) in product.contents" :key="index">
-      <div v-if="section.__typename == 'DisplayfeatureRecord'">
-        <product-feature-screenshots :data="section" />
-      </div>
       <div v-if="section.__typename == 'ExclusivefeatureRecord'">
         <exclusive-feature :data="section" />
       </div>
@@ -31,9 +16,6 @@
       <div v-if="section.__typename == 'ProductctaRecord'">
         <call-to-action :section="section" :product="product" />
       </div>
-      <div v-if="section.__typename == 'ProductPageRecord'">
-        <product-pages :data="section" />
-      </div>
       <div v-if="section.__typename == 'PriceplanRecord'">
         <PricingSection :plans="section.plans" :info="section.info[0]" extraOffer="true" />
       </div>
@@ -42,12 +24,6 @@
       </div>
       <div v-if="section.__typename == 'TechnologySectionRecord'">
         <technology-section :data="section" />
-      </div>
-      <div v-if="section.__typename == 'FunFactRecord'">
-        <product-fun-fact :data="section" />
-      </div>
-      <div v-if="section.__typename == 'GroupfeaturesectionRecord'">
-        <group-feature-section :data="section" />
       </div>
     </div>
   </div>
@@ -117,6 +93,7 @@ export default {
     const product = productData.data.product;
     return { product }
   },
+
   components: {
     PurchaseCard,
     ProductTopFeatures,
@@ -135,7 +112,7 @@ export default {
     DemoHeader,
     TestimonialSection,
     TechnologySection,
-},
+  },
 };
 </script>
 
