@@ -14,13 +14,13 @@
     </section>
 
     <section>
-      <div class="container pt-28 pb-14">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 pt-28 pb-14">
         <h2 class="mb-6 text-3xl font-medium">Chose your purchased product</h2>
-        <div class="grid gap-4 grid-cols-3">
+        <div class="grid gap-4 grid-cols-1 lg:grid-cols-3 sm:grid-cols-2">
           <div v-for="(item, index) in products" :key="index">
             <input class="hidden" type="radio" name="choose-product" :id="'id'+item.product.id" :value="'id'+item.product.id" v-model="selectedProduct" />
             <label :for="'id'+item.product.id">
-              <div class="flex items-center gap-3 rounded-xl p-5" :class="selectedProduct == `id${item.product.id}` ? 'border-2 border-[#0B63E5] bg-white': 'bg-[#F5F6F7] border-2 border-transparent'">
+              <div class="flex items-center gap-3 rounded-xl p-5" :class="selectedProduct == `id${item.product.id}` ? 'border-2 border-[#0B63E5] bg-white': 'bg-gray-f0 border-2 border-transparent'">
                 <div class="flex-shrink-0" v-if="item.product.thumbnail">
                   <img class="w-16 h-16 object-cover rounded-md" :src="item.product.thumbnail.url" alt />
                 </div>
@@ -31,7 +31,7 @@
         </div>
       </div>
     </section>
-    <PricingSection :plans="selectedProductPlans" :info="selectedProductData" />
+    <PricingSection :plans="selectedProductPlans" :info="selectedProductData" :checkout="true" />
   </div>
 </template>
 
@@ -51,7 +51,7 @@ export default {
         name: "description",
         content: "my website description"
       }
-    ]
+    ],
   },
   components: { PricingSection },
   data() {
@@ -70,6 +70,7 @@ export default {
     const products = data.allProductplans;
     return { products }
   },
+
   computed: {
     selectedProductData(){
         return this.products.find(elem => elem.product.id == this.selectedProduct.replace('id',''));

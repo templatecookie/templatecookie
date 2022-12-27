@@ -18,7 +18,12 @@
           </li>
         </ul>
         <div class="mt-8">
-          <a :href="item.purchaseLink" class="inline-block w-full rounded-lg bg-indigo-600 px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-indigo-700" :aria-describedby="item.id">Get started now</a>
+          <a v-if="checkout" href="#" @click.prevent="openCheckout(item.paddleProductId)" class="inline-block w-full rounded-lg bg-indigo-600 px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-indigo-700">
+            Get started now
+          </a>
+          <a v-else :href="item.purchaseLink" class="inline-block w-full rounded-lg bg-indigo-600 px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-indigo-700">
+            Get started now
+          </a>
         </div>
       </div>
     </div>
@@ -27,12 +32,12 @@
 
 <script>
 export default {
-  props: ['item'],
-  computed: {
-    // tier(){
-    //   return this.item.priceplan[0];
-    // }
-  }
+  props: ['item', 'checkout'],
+  methods: {
+    openCheckout(product) {
+      Paddle.Checkout.open({ product: product });
+    }
+  },
 }
 </script>
 

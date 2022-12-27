@@ -27,6 +27,7 @@ export default gql`
           description
           price
           purchaseLink
+          paddleProductId
           theme
           icon {
             url

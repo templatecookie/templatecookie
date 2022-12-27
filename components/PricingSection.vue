@@ -14,7 +14,7 @@
       <div class="relative -mt-80">
         <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-4xl lg:grid-cols-2 lg:gap-8">
-            <pricing-item v-for="(tier, index) in plans" :key="index" :item="tier" />
+            <pricing-item v-for="(tier, index) in plans" :key="index" :item="tier" :checkout="checkout"/>
           </div>
         </div>
       </div>
@@ -39,9 +39,33 @@
 import PricingItem from './PricingItem.vue'
 
 export default {
-  props: ['data', 'info', 'plans', 'extraOffer'],
+  props: ['data', 'info', 'plans', 'extraOffer', 'checkout'],
   components: {
     PricingItem
+  },
+  data () {
+    return {
+      isPaddleLoaded: false
+    }
+  },
+  head () {
+    return {
+      script: [
+        {
+          hid: 'paddle',
+          src: 'https://cdn.paddle.com/paddle/paddle.js',
+          defer: true,
+          callback: () => { this.isPaddleLoaded = true } 
+        }
+      ]
+    }
+  },
+  watch: {
+    isPaddleLoaded(){
+      Paddle.Environment.set('sandbox');
+      Paddle.Setup({ vendor: 5864 });
+      console.log('Paddle Loaded');
+    }
   },
 }
 </script>
