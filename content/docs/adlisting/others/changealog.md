@@ -8,6 +8,11 @@ category: Others
 # Changelog
 ---
 
+### v2.8.20 - 27th December, 2022
+```
+- Missing setting method issue fix
+- Admin profile image upload issue fix
+```
 ### v2.8.18 - 26th December, 2022
 ```
 - Improved faq category page design
