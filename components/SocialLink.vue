@@ -15,17 +15,5 @@
 export default {
   name: "SocialLink",
   props: ['social'],
-  methods: {
-    setThemeColor(theme){
-      switch (theme) {
-        case "red":
-          return 'hover:bg-dribble'
-        case "blue": 
-          return 'hover:bg-facebook'
-        default:
-          return 'hover:bg-black'
-      }
-    }
-  }
 };
 </script>

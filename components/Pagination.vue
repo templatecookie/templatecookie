@@ -13,7 +13,7 @@
           </span>
           Prev
         </a>
-        <a href="#" v-else @click.prevent="goToPreviousPage()" class="bg-gray-f0 text-blue-0b flex items-center text-sm font-medium capitalize rounded-md p-3 sm:px-5">
+        <a href="#" v-else @click.prevent="goToPreviousPage()" class="bg-gray-f0 text-primary flex items-center text-sm font-medium capitalize rounded-md p-3 sm:px-5">
           <span class="icon mr-2 inline-block">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M16.875 10H3.125" stroke="#0B63E5" stroke-width="1.5" stroke-linecap="round"
@@ -29,10 +29,10 @@
       <li>
         <ul class="flex items-center max-w-100 sm:max-w-full overflow-hidden overflow-x-scroll sm:overflow-x-hidden">
           <li v-for="page in data.pageCount" :key="page">
-            <a href="#" v-if="page != data.page" @click.prevent="goToPage(page)" class="inline-block text-sm text-dark-42 hover:text-blue-0b font-normal px-3.5 p-3 overflow-hidden rounded-md hover:bg-gray-f0">
+            <a href="#" v-if="page != data.page" @click.prevent="goToPage(page)" class="inline-block text-sm text-dark-gray hover:text-primary font-normal px-3.5 p-3 overflow-hidden rounded-md hover:bg-gray-f0">
               {{ leadingZero(page) }}
             </a>
-            <a @click.prevent v-else class="active inline-block text-sm text-dark-42 hover:text-blue-0b font-normal px-3.5 p-3 overflow-hidden rounded-md hover:bg-gray-f0">
+            <a @click.prevent v-else class="active inline-block text-sm text-dark-gray hover:text-primary font-normal px-3.5 p-3 overflow-hidden rounded-md hover:bg-gray-f0">
               {{ leadingZero(page) }}
             </a>
           </li>
@@ -50,7 +50,7 @@
             </svg>
           </span>
         </a>
-        <a href="#" v-else @click.prevent="goToNextPage()" class="bg-gray-f0 text-blue-0b flex items-center text-sm font-medium capitalize rounded-md  p-2.5 sm:px-5">
+        <a href="#" v-else @click.prevent="goToNextPage()" class="bg-gray-f0 text-primary flex items-center text-sm font-medium capitalize rounded-md  p-2.5 sm:px-5">
           Next
           <span class="icon ml-2 inline-block">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,22 +1,20 @@
 <template>
   <div class="relative">
     <div class="text-center py-3 text-base" :class="notice.cssClass" v-if="notice && notice.showNotice" v-html="parseMarkdown(notice.announcement)"></div>
-    <Header :data="global.logo" v-if="global && global.logo"/>
+    <site-header :data="global.logo" v-if="global && global.logo"/>
     <nuxt />
-    <Newsletter :data="global.newsletter" v-if="global && global.newsletter"/>
-    <Footer :data="global.footer" v-if="global && global.footer"/>
+    <site-footer :data="global.footer" :socials="global.socialMedias" v-if="global && global.footer"/>
   </div>
 </template>
 
 <script>
-import Header from "../components/Header/Header.vue";
-import Footer from "../components/Footer/Footer.vue";
+import SiteFooter from "../components/SiteFooter.vue";
 import SocialLink from "../components/SocialLink.vue";
 import GLOBAL_QUERY from '~/graphql/global'
-import Newsletter from "../components/Newsletter.vue";
+import SiteHeader from '../components/SiteHeader.vue';
 
 export default {
-  components: { Header, Footer, SocialLink, Newsletter },
+  components: { SiteFooter, SocialLink, SiteHeader },
   methods: {
     async loadData(){
       const client = this.$nuxt.$apolloProvider.defaultClient;

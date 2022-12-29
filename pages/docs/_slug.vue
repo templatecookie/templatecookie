@@ -1,19 +1,19 @@
 <template>
   <div>
     <section class="py-12 lg:pb-12 bg-no-repeat bg-center bg-cover" :style="{ backgroundImage: `url(${bannerImg})` }">
-      <div class="container">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="text-left">
-          <h1 class="text-4xl md:text-heading-40 text-dark-06 mb-6 mx-auto font-semibold">
+          <h1 class="text-4xl md:text-heading-40 textdark mb-6 mx-auto font-semibold">
             {{ product.title }} - Documentation
           </h1>
-          <p class="text-lg md:text-body-18 text-dark-06 mb-8 font-light">
+          <p class="text-lg md:text-lg textdark mb-8 font-light">
             {{ product.description }}
           </p>
         </div>
       </div>
     </section>
     <section>
-      <div class="container">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="flex py-8 items-start">
           <div class="w-3/12 h-full border-r-[1px] border-gray-100 ">
             <ul class="mb-6" v-for="(items, index) in categories" :key="index">
@@ -31,13 +31,11 @@
 </template>
 
 <script>
-import bannerImg from "~/assets/images/all-img/img-five.png";
 import groupBy from 'lodash.groupby'
 import DocCategoryCardItem from '../../components/Docs/DocCategoryCardItem.vue';
 
 export default {
   components: { DocCategoryCardItem },
-  layout: 'documentation',
   head() {
     const title = this.product.title + ' Documentation';
     const description = this.product.description;
@@ -56,7 +54,7 @@ export default {
   },
   data() {
     return {
-      bannerImg,
+      bannerImg: "/images/img-five.png",
     };
   },
   async asyncData ({ $content, params }) {

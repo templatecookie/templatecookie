@@ -2,7 +2,7 @@
 title: Basic Editing
 description: Installation documentation
 position: 3
-category: Basics
+category: Others
 ---
 
 ## Basics

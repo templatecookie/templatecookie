@@ -48,9 +48,10 @@ const linkages = async () => {
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: true,
+  ssr: false,
 
   publicRuntimeConfig: {
+    datoCmsToken: process.env.DATO_CMS_TOKEN,
     dataPerPage: 6,
   },
 
@@ -103,11 +104,9 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
     '@nuxtjs/google-fonts',
     '@nuxtjs/pwa',
-    // '@nuxtjs/dotenv',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -124,7 +123,8 @@ export default {
     gzip: true,
     exclude: [
       '/test',
-      '/demo/demo'
+      '/demo/demo',
+      '/plan-purchase-success'
     ],
     routes: linkages,
     trailingSlash: true
@@ -134,20 +134,13 @@ export default {
     id: 'GTM-NZ5TXGP'
   },
 
-  // // Generate index.html files for each blog post
-  // generate: {
-  //   routes: linkages
-  // },
-
   googleFonts: {
     display: 'swap',
     families: {
-      Roboto: true,
-      'Josefin+Sans': true,
       Lexend: [300, 400, 500, 600, 700, 800],
-      Raleway: {
-        wght: [100, 400],
-        ital: [100]
+      "Open+Sans": {
+        wght: [100, 300, 400, 500, 600, 700, 800],
+        ital: [100, 300, 400, 500,]
       },
     }
   },
@@ -155,6 +148,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: '~/graphql/config/config.js',
+      draft: '~/graphql/config/draft.js',
     }
   },
 

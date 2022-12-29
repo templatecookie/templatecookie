@@ -2,19 +2,19 @@
   <div>
     <section class="realtive py-12 lg:py-20 bg-no-repeat bg-center bg-cover"
       :style="{ backgroundImage: `url(${bannerImg})` }">
-      <div class="container">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="text-center">
-          <h1 class="text-4xl md:text-heading-40 text-dark-06 mb-6 max-w-680 mx-auto font-semibold">
+          <h1 class="text-4xl md:text-heading-40 textdark mb-6 max-w-680 mx-auto font-semibold">
             Templatecookie Docs
           </h1>
-          <p class="text-lg md:text-body-18 text-dark-06 mb-8 max-w-full md:max-w-536 mx-auto font-light">
+          <p class="text-lg md:text-lg textdark mb-8 max-w-full md:max-w-536 mx-auto font-light">
             Don't have previous experience using our products? Read the documentation to learn more about the complex features and topics.
           </p>
         </div>
       </div>
     </section>
     <section>
-      <div class="container py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 py-20">
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           <div v-for="(item, index) in products" :key="index" class="flex items-stretch">
             <ProductItem :product="item"/>
@@ -27,10 +27,8 @@
 
 <script>
 import ProductItem from '~/components/Docs/ProductItem.vue'
-import bannerImg from "~/assets/images/all-img/img-five.png";
 
 export default {
-  layout: 'documentation',
   head() {
     const title = 'Templatecookie Product Documentation';
     const description = "Don't have previous experience using our products? Read the documentation to learn more about the complex features and topics?";
@@ -49,7 +47,7 @@ export default {
   },
   data() {
     return {
-      bannerImg,
+      bannerImg: "/images/img-five.png",
     };
   },
   async asyncData({ $content }) {

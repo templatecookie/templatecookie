@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-100">
     <div class="bg-blue-600">
-      <div class="container">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="py-12">
           <h1 class="!text-white text-2xl lg:text-5xl mb-2">Blog Details</h1>
           <div class="text-gray-200 font-light">
@@ -12,7 +12,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 bg-white">
       <div class="py-24">
         <div class="w-full md:w-8/12 p-4 mx-auto">
           <div class="mb-6">
@@ -20,7 +20,7 @@
             <div class="text-sm text-gray-600">
               Updated at <span class="mr-2 pr-3 border-r border-gray-400">{{ formateDate(post.updatedAt) }}</span> 
               Category:
-              <a href="#" v-for="(tag, index) in post.tags" :key="index">{{ tag.name }}</a> 
+              <a href="#" v-for="(tag, index) in post.tags" :key="index"> {{ tag.name }}, </a>
             </div>
           </div>
           <img class="w-full h-auto object-cover" v-if="post.image && post.image.url" :src="post.image.url" alt="">

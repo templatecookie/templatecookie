@@ -1,8 +1,8 @@
 <template>
   <div class="py-20 lg:py-124" id="pages" :class="data.cssClass">
-    <div class="container">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <div class="text-center mb-8 lg:mb-12">
-        <h2 class="text-dark-06 text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
+        <h2 class="textdark text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
           {{ data.title }}
         </h2>
       </div>
@@ -13,7 +13,7 @@
             <a :href="item.image" target="_blank">
               <nuxt-img :src="item.image.url" v-if="item.image && item.image.url" alt="product-img" class="w-full h-250 object-cover overflow-hidden shadow-bs12" />
               <h3 class="text-white text-base font-medium absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-300 flex w-full justify-center opacity-0">
-                {{ item.name }} <img class="ml-2" src="~assets/images/svg/ArrowSquareOut.svg" alt="">
+                {{ item.name }} <img class="ml-2" src="/icons/ArrowSquareOut.svg" alt="">
               </h3>
             </a>
           </div>

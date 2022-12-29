@@ -12,35 +12,53 @@ query product($slug: String!){
     banner {
       url
     }
-    category {
-      name
-    }
     demoBanner {
       url
     }
+    logoCloudsTitle
+    logoCloudsImages {
+      url
+    }
+    seo{
+      title
+      description
+      image {
+        url
+      }
+    }
+    menuItems {
+      label
+      id
+      href
+    }
     contents {
-      ... on CustomerSupportRecord {
+      ... on TestimonialSectionRecord {
         __typename
-        description
-        cssClass
         id
         title
-        image {
-          url
+        sectionId
+        description
+        testimonials{
+          id
+          name
+          role
+          quote
+          image {
+            url
+          }
         }
       }
-      ... on DisplayfeatureRecord {
+      ... on TechnologySectionRecord {
         __typename
+        id
         title
-        subtitle
-        bgClass
+        sectionId
         description
-        features {
-          createdAt
-          title
+        technologies{
+          id
+          name
           description
-          cssClass
-          image {
+          icon {
             url
           }
         }
@@ -66,6 +84,7 @@ query product($slug: String!){
       ... on FeaturescreenshotRecord {
         __typename
         id
+        sectionId
         info {
           title
           updatedAt
@@ -82,6 +101,7 @@ query product($slug: String!){
       ... on TopfeatureRecord {
         __typename
         id
+        sectionId
         info {
           title
           description
@@ -111,24 +131,12 @@ query product($slug: String!){
           url
         }
       }
-      ... on ProductPageRecord {
-        __typename
-        id
-        title
-        cssClass
-        pages {
-          name
-          url
-          cssClass
-          image {
-            url
-          }
-        }
-      }
       ... on PriceplanRecord {
         __typename
         id
+        sectionId
         info {
+          id
           title
           description
           createdAt
@@ -144,20 +152,8 @@ query product($slug: String!){
             url
           }
           features {
-            active
-            feature
+            name
             id
-          }
-        }
-      }
-      ... on GroupfeaturesectionRecord {
-        id
-        cssClass
-        items {
-          id
-          text 
-          icon {
-            url
           }
         }
       }
@@ -178,33 +174,6 @@ query product($slug: String!){
             href
           }
           cssClass
-        }
-      }
-      ... on FunFactRecord {
-        __typename
-        id
-        fact {
-          title
-          id
-          description
-          cssClass
-          counter
-          icon {
-            url
-          }
-        }
-      }
-      ... on FolderstructureRecord {
-        __typename
-        id
-        title
-        updatedAt
-        description
-        cssClass
-        structure {
-          blocks
-          links
-          value
         }
       }
     }

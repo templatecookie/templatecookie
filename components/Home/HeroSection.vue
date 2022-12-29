@@ -2,22 +2,22 @@
   <!-- Banner  -->
   <section class="overflow-hidden py-20 lg:py-28 md:py-24 bg-no-repeat bg-center bg-cover"
     :style="{ backgroundImage: `url(${hero.banner.url})` }">
-    <div class="container">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <!-- banner content  -->
       <div class="text-center">
-        <h5 class="font-light text-lg mb-2">
+        <h5 class="font-light text-lg mb-2" data-aos="flip-up" data-aos-delay="300">
           {{ hero.subtitle }}
         </h5>
-        <h1 class="text-3xl md:text-5xl text-dark-06 mb-8 max-w-680 mx-auto font-semibold">
+        <h1 class="text-3xl md:text-5xl textdark mb-8 max-w-680 mx-auto font-semibold" data-aos="fade-up">
           {{ hero.title }}
         </h1>
-        <p class="text-lg md:text-body-20 text-dark-06 mb-8 max-w-680 mx-auto">
+        <p class="text-lg md:text-xl textdark mb-8 max-w-680 mx-auto" data-aos="fade-up">
           {{ hero.description }}
         </p>
 
         <div class="flex justify-center w-full flex-wrap gap-6">
-          <nuxt-link :to="item.link[0].href" v-for="(item, index ) in hero.actions" :key="index" :class="item.cssClass ? item.cssClass : 'bg-blue-0b hover:bg-dark-06'"
-            class="flex items-center transition-all px-6 justify-center text-button-17 text-white rounded-lg overflow-hidden max-w-max">
+          <nuxt-link :to="item.link[0].href" v-for="(item, index ) in hero.actions" :key="index" :class="item.cssClass ? item.cssClass : 'bg-primary hover:bg-dark'"
+            class="py-4 px-10 flex items-center transition-all justify-center text-sm-17 text-white rounded-lg overflow-hidden max-w-max" data-aos="flip-up" :data-aos-delay="200 * index">
             {{ item.link[0].label }}
             <span class="inline-block ml-3">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,6 +37,13 @@
 <script>
 export default {
   props: ['data'],
+  methods: {
+    calculateButtonsDelay(index){
+      const total = (index * 100) + 300;
+      console.log(total);
+      return total
+    }
+  },
   computed: {
     hero() {
       return this.data[0]
