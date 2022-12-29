@@ -36,6 +36,7 @@ query product($slug: String!){
         __typename
         id
         title
+        sectionId
         description
         testimonials{
           id
@@ -51,6 +52,7 @@ query product($slug: String!){
         __typename
         id
         title
+        sectionId
         description
         technologies{
           id
@@ -63,7 +65,6 @@ query product($slug: String!){
       }
       ... on ExclusivefeatureRecord {
         __typename
-        id
         id
         title
         subtitle
@@ -83,7 +84,7 @@ query product($slug: String!){
       ... on FeaturescreenshotRecord {
         __typename
         id
-        id
+        sectionId
         info {
           title
           updatedAt
@@ -100,7 +101,7 @@ query product($slug: String!){
       ... on TopfeatureRecord {
         __typename
         id
-        id
+        sectionId
         info {
           title
           description
@@ -123,7 +124,6 @@ query product($slug: String!){
       ... on ProductctaRecord {
         __typename
         id
-        id
         title
         description
         cssClass
@@ -134,8 +134,9 @@ query product($slug: String!){
       ... on PriceplanRecord {
         __typename
         id
-        id
+        sectionId
         info {
+          id
           title
           description
           createdAt
@@ -158,7 +159,6 @@ query product($slug: String!){
       }
       ... on HerosectionRecord {
         __typename
-        id
         id
         title
         subtitle

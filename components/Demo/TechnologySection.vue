@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white">
+  <div class="bg-white" :id="data.sectionId ? data.sectionId : data.id">
     <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
       <div>
         <div class="mb-8 text-center">

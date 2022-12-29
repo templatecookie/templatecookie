@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-900" id="pricing">
+  <div class="bg-gray-900" :id="id">
     <div class="relative overflow-hidden pt-32 pb-96 lg:pt-40">
       <div><img class="absolute bottom-0 left-1/2 w-[1440px] max-w-none -translate-x-1/2" src="https://tailwindui.com/img/component-images/grid-blur-purple-on-black.jpg" alt="" /></div>
       <div class="relative mx-auto max-w-7xl px-6 text-center lg:px-8">
@@ -39,7 +39,7 @@
 import PricingItem from './PricingItem.vue'
 
 export default {
-  props: ['data', 'info', 'plans', 'extraOffer', 'checkout'],
+  props: ['data', 'info', 'plans', 'extraOffer', 'checkout', 'id'],
   components: {
     PricingItem
   },

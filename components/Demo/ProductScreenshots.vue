@@ -1,5 +1,5 @@
 <template>
-  <div class="py-20 lg:pt-124" id="screenshot-gallery">
+  <div class="py-20 lg:pt-124" :id="data.sectionId ? data.sectionId : data.id">
     <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <div class="lg:max-w-536 m-auto text-center mb-10 lg:mb-16" v-if="data.info && data.info[0]">
         <h2 class="textdark text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">

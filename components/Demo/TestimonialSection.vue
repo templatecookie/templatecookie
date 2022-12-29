@@ -1,5 +1,5 @@
 <template>
-  <section class="overflow-hidden bg-dark py-12 lg:py-16">
+  <section class="overflow-hidden bg-dark py-12 lg:py-16" :id="data.sectionId ? data.sectionId : data.id">
     <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <div class="mb-8 text-center">
         <h2 class="text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl"> {{ data.title }} </h2>

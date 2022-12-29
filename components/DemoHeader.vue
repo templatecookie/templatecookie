@@ -21,7 +21,7 @@
       </div>
     </div>
   </div>
-  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6" v-if="product.menuItems && product.menuItems.length">
     <nav class="hidden md:flex md:justify-between py-1 pb-4">
       <div class="flex flex-wrap">
         <a :href="item.href" v-for="(item, index) in product.menuItems" :key="index" class="text-sm text-gray-400 hover:text-gray-900 hover:bg-gray-200 rounded-xl py-2 px-4">

@@ -45,7 +45,7 @@
         </div>
       </div>
 
-      <div class="relative">
+      <div class="relative" v-if="product.demoBanner">
         <div class="absolute inset-0 flex flex-col" aria-hidden="true">
           <div class="flex-1"></div>
           <div class="w-full flex-1 bg-gray-800"></div>
@@ -55,7 +55,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-gray-800">
+    <div class="bg-gray-800" v-if="product.logoCloudsImages && product.logoCloudsTitle">
       <div class="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <h2 class="text-center text-base font-semibold text-gray-400">{{ product.logoCloudsTitle }}</h2>
         <!-- <div class="mt-8 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">

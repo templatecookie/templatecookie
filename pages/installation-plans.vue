@@ -31,7 +31,7 @@
         </div>
       </div>
     </section>
-    <PricingSection :plans="selectedProductPlans" :info="selectedProductData" :checkout="true" />
+    <PricingSection :id="selectedProductData.id" :plans="selectedProductPlans" :info="selectedProductData" :checkout="true" />
   </div>
 </template>
 
