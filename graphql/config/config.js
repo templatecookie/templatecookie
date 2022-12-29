@@ -12,8 +12,8 @@ export default function () {
       credentials: 'same-origin',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ce32bbd78955d348af32c5f3fb0417`
-        // Authorization: `Bearer ${process.env.DATOCMS_GRAPHQL_AUTH_TOKEN}`
+        Authorization: `Bearer ce32bbd78955d348af32c5f3fb0417`,
+        // 'X-Environment': 'dev-2022-12-20'
       }
     },
     cache: new InMemoryCache({ fragmentMatcher })

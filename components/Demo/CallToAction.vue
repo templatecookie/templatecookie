@@ -1,22 +1,43 @@
 <template>
-  <div class="pt-28 lg:pt-40 bg-dark-06" :class="section.cssClass">
-    <div class="container">
+  <div>
+  <!-- <div class="bg-white">
+    <div class="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
+      <div class="overflow-hidden rounded-lg bg-dark shadow-xl lg:grid lg:grid-cols-2 lg:gap-4">
+        <div class="px-6 pt-10 pb-12 sm:px-16 sm:pt-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
+          <div class="lg:self-center">
+            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              <span class="block">Ready to dive in?</span>
+              <span class="block">Start your free trial today.</span>
+            </h2>
+            <p class="mt-4 text-lg leading-6 text-indigo-200">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
+            <a href="#" class="mt-8 inline-flex items-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-primary shadow hover:bg-indigo-50">View Pricing</a>
+          </div>
+        </div>
+        <div class="aspect-w-5 aspect-h-3 -mt-6 md:aspect-w-2 md:aspect-h-1">
+          <img class="translate-x-6 translate-y-6 transform rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20" src="https://tailwindui.com/img/component-images/full-width-with-sidebar.jpg" alt="App screenshot">
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="pt-28 lg:pt-40 bg-dark" :class="section.cssClass">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <div class="text-center mb-40">
-        <h2 class="text-white text-body-32px md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
+        <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 tracking-01">
           {{ section.title }}
         </h2>
         <p class="text-white text-base sm:text-lg mb-6 lg:mb-12 font-light">
           {{ section.description }}
         </p>
         <a href="#pricing"
-          class="inline-block bg-blue-0b rounded-7 py-4 px-9 text-body-17 text-white duration-300 hover:bg-black">
-          Purchase Now
-          <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" />
+          class="inline-block bg-primary rounded-7 py-4 px-9 text-lg text-white duration-300 hover:bg-black">
+          Buy Now
+          <img class="inline-block ml-2" src="/icons/arrow-right.svg" alt="brand-logo" />
         </a>
         <a :href="product.previewUrl" v-if="product.previewUrl"
-          class="inline-block bg-green-500 rounded-7 py-4 ml-2 px-9 text-body-17 text-white duration-300 hover:bg-black">
-          View Demo
-          <img class="inline-block ml-2" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" />
+          class="inline-block bg-green-500 rounded-7 py-4 ml-2 px-9 text-lg text-white duration-300 bg-secondary hover:bg-black">
+          Try it for free
+          <img class="inline-block ml-2" src="/icons/arrow-right.svg" alt="brand-logo" />
         </a>
       </div>
     </div>
@@ -28,6 +49,7 @@
       </swiper>
     </div>
   </div>
+</div>
 </template>
 
 <script>

@@ -1,23 +1,23 @@
 <template>
   <div>
     <div class="bg-gray-f0 py-12">
-      <div class="container">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="text-center max-w-4xl m-auto pt-6">
           <h1
-            class="text-dark-06 text-5xl font-semibold mb-6 lg:mb-9 tracking-ls02">
+            class="textdark text-5xl font-semibold mb-6 lg:mb-9 tracking-ls02">
             We're here to help!
           </h1>
-          <p class="text-dark-06 text-lg mb-6 lg:mb-9 max-w-xl m-auto font-light">
+          <p class="textdark text-lg mb-6 lg:mb-9 max-w-xl m-auto font-light">
             Our customer support team is available 24/7 to answer your questions and help you with whatever you need.
           </p>
         </div>
       </div>
     </div>
     <!-- end -->
-    <div class="container py-12">
+    <div class="py-12">
       <div class="flex justify-center">
         <!-- <div class="w-full md:w-8/12 lg:w-6/12"> -->
-        <div class="container mx-auto">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6">
           <div class="flex gap-8 flex-wrap lg:flex-nowrap mb-8">
             <div class="flex-grow-0 w-full lg:w-1/2 lg:pr-10">
               <div class="rounded-lg mb-6 border overflow-hidden" :class="`bg-${section.color}-50 border-${section.color}-600`" v-for="(section, index) in supportFeatures" :key="index">
@@ -33,7 +33,7 @@
             </div>
             <div class="w-full lg:w-1/2">
               <div class="py-4 px-8 bg-red-200 w-full text-center text-gray-800 rounded mb-6">
-                We are available from Saturday to Thursday <strong>9 AM to 5 PM (GMT +6)</strong> 
+                We are available from Monday to Friday <strong>9 AM to 5 PM (GMT +6)</strong> 
               </div>
               <div id="hubspotForm" v-once></div>
             </div>

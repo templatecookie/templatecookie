@@ -28,7 +28,6 @@
 <script>
 import dayjs from 'dayjs'
 export default {
-  layout: 'documentation',
   props: ['productName', 'categories'],
   scrollToTop: true,
   head() {

@@ -5,13 +5,6 @@ import gql from 'graphql-tag';
 export default gql`
 query {
   homepage {
-    seoData {
-      title
-      description
-      ogImage {
-        url
-      }
-    }
     heroSection {
       title
       subtitle
@@ -26,23 +19,6 @@ query {
           label
           href
           target
-        }
-      }
-    }
-    featuredSection {
-      title
-      description
-      cssClass
-      products {
-        name
-        slug
-        description
-        banner {
-          url
-        }
-        category {
-          name
-          slug
         }
       }
     }

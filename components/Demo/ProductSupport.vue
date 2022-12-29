@@ -1,49 +1,22 @@
 <template>
   <div class="py-20 lg:py-124 md:pb-0 pb-20" id="support">
-    <div class="container" v-if="global && global.defaultFeatures">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6" v-if="global && global.defaultFeatures">
       <div class="grid grid-cols-12 gap-6">
         <div v-for="(item, index) in global.defaultFeatures" :key="index" class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 purchase-card-wrap h-full">
           <div :class="item.bgClass" class="purchase-card p-10 text-center rounded-2xl h-full">
-            <div :class="item.cssClass" class="icon w-84 h-84 m-auto rounded-full flex items-center justify-center mb-7">
+            <div :class="item.cssClass" class="icon w-20 h-20 m-auto rounded-full flex items-center justify-center mb-7">
               <nuxt-img :src="item.icon.url" alt="icon" />
             </div>
             <div>
-              <h3 class="text-dark-06 text-lg mb-3 font-medium"> {{ item.title }} </h3>
-              <p class="text-dark-06 text-sm font-light mb-7"> {{ item.description }} </p>
+              <h3 class="textdark text-lg mb-3 font-medium"> {{ item.title }} </h3>
+              <p class="textdark text-sm font-light mb-7"> {{ item.description }} </p>
               <a :href="item.action[0].href" v-if="item.action && item.action.length" :target="item.action[0].target" :class="item.cssClass" class="btn inline-block rounded-5 text-sm py-2.5 px-5 text-white duration-300 hover:bg-black"> 
                 {{ item.action[0].label }}
-                <img class="inline-block ml-2 duration-300" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" />
+                <img class="inline-block ml-2 duration-300" src="/icons/arrow-right.svg" alt="brand-logo" />
               </a>
             </div>
           </div>
         </div>
-        <!-- <div class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 purchase-card-wrap">
-          <div class="purchase-card p-10 bg-purple-e3 text-center rounded-2xl">
-            <div class="icon w-84 h-84 m-auto bg-purple-600 rounded-full flex items-center justify-center mb-7">
-              <img src="../../assets/images/svg/notebook.svg" alt="icon" />
-            </div>
-            <div>
-              <h3 class="text-dark-06 text-lg mb-3 font-medium"> Well-Organize Documentation </h3>
-              <p class="text-dark-06 text-sm font-light mb-7"> Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes. </p>
-              <a href="#" class="btn inline-block bg-purple-600 rounded-5 text-sm py-2.5 px-5 text-white duration-300 hover:bg-black"> Documentation
-                <img class="inline-block ml-2 duration-300" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6 purchase-card-wrap">
-          <div class="purchase-card p-10 bg-green-e7 text-center rounded-2xl">
-            <div class="icon w-84 h-84 m-auto bg-green-of rounded-full flex items-center justify-center mb-7">
-              <img src="../../assets/images/svg/headset.svg" alt="icon" />
-            </div>
-            <div>
-              <h3 class="text-dark-06 text-lg mb-3 font-medium"> 24/7 Customer Support </h3>
-              <p class="text-dark-06 text-sm font-light mb-7"> Cras condimentum tincidunt dolor quis imperdiet. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes. </p>
-              <a href="#"
-                class="btn inline-block bg-green-of rounded-5 text-sm py-2.5 px-5 text-white duration-300 hover:bg-black"> Get Support
-                <img class="inline-block ml-2 duration-300" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></a>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
   </div>
@@ -66,8 +39,8 @@ export default {
     getThemeColor(theme) {
       switch (theme) {
         case 'purple': return 'bg-purple-600'
-        case 'green': return 'bg-green-of'
-        default: return 'bg-blue-0b'
+        case 'green': return 'bg-green'
+        default: return 'bg-primary'
       }
     },
     getBgColor(theme){

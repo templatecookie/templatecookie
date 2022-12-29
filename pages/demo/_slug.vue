@@ -1,24 +1,9 @@
 <template>
   <div>
-    <ProductDemoHeader :product="product" v-if="product" />
-    <product-hero :product="product" v-if="product"  />
-
-    <!-- DisplayfeatureRecord
-    ExclusivefeatureRecord
-    FeaturescreenshotRecord
-    TopfeatureRecord
-    ProductctaRecord
-    ProductPageRecord
-    PriceplanRecord
-    HerosectionRecord
-    FunFactRecord
-    FolderstructureRecord
-    CustomerSupportRecord -->
+    <demo-header :product="product" v-if="product"  />
+    <product-hero :product="product" v-if="product" />
 
     <div v-for="(section, index) in product.contents" :key="index">
-      <div v-if="section.__typename == 'DisplayfeatureRecord'">
-        <product-feature-screenshots :data="section" />
-      </div>
       <div v-if="section.__typename == 'ExclusivefeatureRecord'">
         <exclusive-feature :data="section" />
       </div>
@@ -31,37 +16,22 @@
       <div v-if="section.__typename == 'ProductctaRecord'">
         <call-to-action :section="section" :product="product" />
       </div>
-      <div v-if="section.__typename == 'ProductPageRecord'">
-        <product-pages :data="section" />
-      </div>
       <div v-if="section.__typename == 'PriceplanRecord'">
-        <pricing-plan :data="section" />
+        <PricingSection :plans="section.plans" :id="section.sectionId ? section.sectionId : section.id" :info="section.info[0]" extraOffer="true" />
       </div>
-      <div v-if="section.__typename == 'CustomerSupportRecord'">
-        <product-support  />
+      <div v-if="section.__typename == 'TestimonialSectionRecord'">
+        <testimonial-section :data="section" />
       </div>
-      <div v-if="section.__typename == 'FunFactRecord'">
-        <product-fun-fact :data="section" />
+      <div v-if="section.__typename == 'TechnologySectionRecord'">
+        <technology-section :data="section" />
       </div>
-      <div v-if="section.__typename == 'GroupfeaturesectionRecord'">
-        <group-feature-section :data="section" />
-      </div>
-
-      <!-- <div v-if="section.__typename == 'HerosectionRecord'">
-        <product-hero :product="product" />
-      </div> -->
-      <!-- <div v-if="section.__typename == 'FolderstructureRecord'">
-        <product-folder-structure :data="section" />
-      </div> -->
     </div>
   </div>
 </template>
 
 <script>
-import BusinessCard from "~/components/BusinessCard.vue";
 import PurchaseCard from "~/components/PurchaseCard.vue";
 import PRODUCT_DEMO from '~/graphql/productDemo'
-import ProductDemoHeader from "~/components/Header/ProductDemoHeader.vue";
 import GLOBAL_QUERY from '~/graphql/global'
 import ProductTopFeatures from '~/components/Demo/ProductTopFeatures.vue';
 import ProductFeatureScreenshots from '../../components/Demo/ProductFeatureScreenshots.vue';
@@ -75,6 +45,10 @@ import CallToAction from '../../components/Demo/CallToAction.vue';
 import PricingPlan from '../../components/Demo/PricingPlanSection.vue';
 import ExclusiveFeature from "../../components/Demo/ExclusiveFeature.vue";
 import GroupFeatureSection from "../../components/Demo/GroupFeatureSection.vue";
+import DemoHeader from '../../components/DemoHeader.vue';
+import PricingSection from '~/components/PricingSection.vue'
+import TestimonialSection from '../../components/Demo/TestimonialSection.vue';
+import TechnologySection from '../../components/Demo/TechnologySection.vue';
 
 export default {
   layout: "empty",
@@ -82,7 +56,7 @@ export default {
   head() {
     const product = this.product
     return {
-      title: `${product.name} - ${product.category.name}`,
+      title: `${product.name}`,
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -94,16 +68,18 @@ export default {
       ],
     }
   },
-  async asyncData({ app, params, store }) {
+  async asyncData({ app, params, store, query  }) {
     const client = app.apolloProvider.defaultClient;
+    const draft = app.apolloProvider.clients.draft
     const { slug } = params;
+    const queryObject = { query: PRODUCT_DEMO, variables: { slug } };
+    let productData;
 
-    const { data } = await client.query({
-      query: PRODUCT_DEMO,
-      variables: {
-        slug
-      }
-    })
+    if(query && query.draft){
+      productData = await draft.query(queryObject)
+    }else {
+      productData = await client.query(queryObject)
+    }
 
     if(!store.getters.getGlobalData){
       const global = await client.query({
@@ -114,14 +90,13 @@ export default {
       store.commit('SET_GLOBAL_DATA', globalData)
     }
 
-    const product = data.product;
+    const product = productData.data.product;
     return { product }
   },
+
   components: {
-    BusinessCard,
     PurchaseCard,
     ProductTopFeatures,
-    ProductDemoHeader,
     ProductFeatureScreenshots,
     ProductFolderStructure,
     ProductScreenshots,
@@ -130,10 +105,14 @@ export default {
     ProductHero,
     ProductSupport,
     CallToAction,
+    PricingSection,
     PricingPlan,
     ExclusiveFeature,
-    GroupFeatureSection
-},
+    GroupFeatureSection,
+    DemoHeader,
+    TestimonialSection,
+    TechnologySection,
+  },
 };
 </script>
 

@@ -1,27 +1,27 @@
 <template>
   <!-- card wrapper  -->
-  <div class="bg-white relative overflow-hidden p-6 border border-gray-e6 rounded-2xl product-card w-full" :class="large ? 'p-8 product-card--lg' : 'p-6  product-card--sm'">
+  <div class="bg-white relative overflow-hidden p-6 border border-gray-f0 rounded-2xl product-card w-full" :class="large ? 'p-8 product-card--lg' : 'p-6  product-card--sm'">
     <nuxt-link :to="{ name: 'demo-slug', params: {slug: product.slug} }" class="product-card__img relative inline-block overflow-hidden rounded-lg w-full product-card__img-wrapper mb-4">
       <nuxt-img :src="product.banner.url" alt="product-img" class="w-full h-full object-cover overflow-hidden"></nuxt-img>
     </nuxt-link>
 
     <div class="product-card__text">
-      <h6 class="tracking-widest font-normal text-pink-75 uppercase m-0 mb-1" :class=" large ? 'text-body-14' : 'text-body-12/12'" v-if="product.category" >
+      <h6 class="tracking-widest font-normal text-secondary uppercase m-0 mb-1" :class=" large ? 'text-sm' : 'text-sm'" v-if="product.category" >
         {{ product.category.name }}
       </h6>
 
-      <h2 class="text-dark-06 mb-3 font-normal" :class="large ? 'text-body-24' : 'text-body-18'">
+      <h2 class="textdark mb-3 font-normal" :class="large ? 'text-2xl' : 'text-lg'">
         {{ product.name }}
       </h2>
 
-      <p class="text-body-16 text-dark-42 font-light mb-6" :class="large ? 'text-body-16' : 'text-body-14/20'">
+      <p class="text-base text-dark-gray font-light mb-6" :class="large ? 'text-base' : 'text-sm/20'">
         {{ product.description }}
       </p>
 
       <div class="flex justify-between items-center sm:mt-0 mt-6  product-card__actions">
         <div class="flex items-center space-x-3 order-2 sm:order-1">
           <div>
-            <nuxt-link :to="{ name: 'demo-slug', params: {slug: product.slug} }" class="flex items-center overflow-hidden border border-blue-0b text-blue-0b rounded-lg group py-3.5 px-9 whitespace-nowrap product-card__button">
+            <nuxt-link :to="{ name: 'demo-slug', params: {slug: product.slug} }" class="flex items-center overflow-hidden border border-primary text-primary rounded-lg group py-3.5 px-9 whitespace-nowrap product-card__button">
               Learn More
               <span class="inline-block ml-2">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

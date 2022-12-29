@@ -1,14 +1,14 @@
 <template>
   <div class="purchase-card p-10 bg-gray-f0 text-center rounded-2xl">
-    <div class="icon w-84 h-84 m-auto bg-blue-0b rounded-full flex items-center justify-center mb-7">
+    <div class="icon w-20 h-20 m-auto bg-primary rounded-full flex items-center justify-center mb-7">
       <nuxt-img :src="icon" alt="icon" />
     </div>
     <div>
-      <h3 class="text-dark-06 text-lg mb-3 font-medium">{{ title }}</h3>
-      <p class="text-dark-06 text-sm font-light mb-7">{{ text }}</p>
+      <h3 class="textdark text-lg mb-3 font-medium">{{ title }}</h3>
+      <p class="textdark text-sm font-light mb-7">{{ text }}</p>
       <a :href="btnUrl"
-        class="btn inline-block bg-blue-0b rounded-5 text-sm py-2.5 px-5 text-white duration-300 hover:bg-black">{{ btnText }}
-        <img class="inline-block ml-2 duration-300" src="~/assets/images/svg/arrow-right.svg" alt="brand-logo" /></a>
+        class="btn inline-block bg-primary rounded-5 text-sm py-2.5 px-5 text-white duration-300 hover:bg-black">{{ btnText }}
+        <img class="inline-block ml-2 duration-300" src="/icons/arrow-right.svg" alt="brand-logo" /></a>
     </div>
   </div>
 </template>
