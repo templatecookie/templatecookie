@@ -38,7 +38,6 @@ import ProductFeatureScreenshots from '../../components/Demo/ProductFeatureScree
 import ProductFolderStructure from '../../components/Demo/ProductFolderStructure.vue';
 import ProductScreenshots from '../../components/Demo/ProductScreenshots.vue';
 import ProductPages from '../../components/Demo/ProductPages.vue';
-import ProductFunFact from '../../components/Demo/ProductFunFact.vue';
 import ProductHero from "../../components/Demo/ProductHero.vue";
 import ProductSupport from '../../components/Demo/ProductSupport.vue';
 import CallToAction from '../../components/Demo/CallToAction.vue';
@@ -101,7 +100,6 @@ export default {
     ProductFolderStructure,
     ProductScreenshots,
     ProductPages,
-    ProductFunFact,
     ProductHero,
     ProductSupport,
     CallToAction,
