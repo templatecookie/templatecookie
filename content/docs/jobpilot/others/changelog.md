@@ -7,6 +7,11 @@ category: Others
 
 # Changelog
 
+### v2.30.9 - 2nd January, 2022
+```
+- Plan middleware missing line fix
+```
+
 ### v2.30.8 - 27th December, 2022
 ```
 - After the purchase plan session issue fix
