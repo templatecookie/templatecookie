@@ -48,7 +48,7 @@ const linkages = async () => {
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+  // ssr: false,
 
   publicRuntimeConfig: {
     datoCmsToken: process.env.DATO_CMS_TOKEN,
