@@ -7,7 +7,10 @@ category: Others
 
 # Changelog
 ---
-
+### v2.8.21 - 03rd January 2022
+```
+- Frontend messenger issue fix
+```
 ### v2.8.20 - 27th December, 2022
 ```
 - Missing setting method issue fix
