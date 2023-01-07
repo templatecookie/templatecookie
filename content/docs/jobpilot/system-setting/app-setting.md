@@ -4,10 +4,10 @@ position: 6
 category: System Setting
 ---
 
-## Add App Information
+# App Setting
 Fill up app settings with your business information! See below, what you can change!
 
-## What can I change?
+###  What can I change?
 - App Name, Owner Email & Phone!
 - App Logo, Favicon and Loader
 - Default Timezone

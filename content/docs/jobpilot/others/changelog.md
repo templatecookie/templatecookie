@@ -7,11 +7,12 @@ category: Others
 
 # Changelog
 
+## January
 ### v2.30.9 - 2nd January, 2022
 ```
 - Plan middleware missing line fix
 ```
-
+## December, 2022
 ### v2.30.8 - 27th December, 2022
 ```
 - After the purchase plan session issue fix
@@ -33,6 +34,7 @@ category: Others
 - Responsive design issue fixed
 - Minor bug fixed and improved functionality
 ```
+## November, 2022
 ### v2.20.8 - 29th Novembar, 2022
 ```
 - Login & Register page social login showing condition fix
@@ -58,6 +60,7 @@ category: Others
 - Job benefits and tags integration
 - Much design improvements and bug fixes
 ```
+## October, 2022
 ### v2.12.0 - 9th October, 2022
 ```
 - Contact and newsletter spam protection
@@ -72,6 +75,7 @@ category: Others
 - Admin profile image update issue fix
 - Login & Register page responsive design fix
 ```
+## September, 2022
 ### v2.7.3 - 21st September, 2022
 ```
 - Multiple language terms and privacy issue fix
@@ -86,6 +90,7 @@ category: Others
 - bug fixes
 ```
 
+## August, 2022
 ### v2.4.5 - 22nd August, 2022
 ```
 - Candidate setting map design issue fix
@@ -103,6 +108,7 @@ category: Others
 - Bug fixes
 ```
 
+## July, 2022
 ### v2.0.12 - 24th July, 2022
 ```
 Jobpilot - v2.0.12

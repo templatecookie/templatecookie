@@ -11,8 +11,9 @@ category: "Getting Started"
 
 Before you install **Jobpilot** make sure your server meets the following requirements:
 
-- Server Type: Linux (Shared / VPS / Dedicated)
+- Server Type: Linux (Shared Hosting or VPS or Dedicated Server)
 - PHP >= 8.1
+- MariaDB 10.3+ or MySQL 5.7+ or PostgreSQL 10.0+
 - BCMath PHP Extension
 - Ctype PHP Extension
 - Fileinfo PHP Extension
@@ -29,168 +30,79 @@ Before you install **Jobpilot** make sure your server meets the following requir
 
 # Hosting Recommendation
 
-We recommend you to setup this application on cloud server. Cloud server is great for SPA, in terms of speed, security and scalibitly.
+We recommend you set up this application on a cloud server. A cloud server is great for SPA, in terms of speed, security, and scalability.
 
-We recommend Digitalocean, Vultr, Linode and AWS
+We recommend Digitalocean, Vultr, Linode, and AWS
 
 [Bluehost Shared Hosting](https://www.bluehost.com/track/webzakir/)
 [Digitalocean Cloud Hosting](https://m.do.co/c/44ed55706f71)
 
 </template>
 </hightlight-block>
-### Step 1:
 
-Login to your shared hosting and go to file manager.
 
----
+Before you move forward, please ensure server requirements are met. 👆
 
-![](/docs/jobpilot/install/s1.png)
+### Step 1: Upload your files
 
-### Step 2:
+Log in to your shared hosting and go to file manager. To upload files go to the `public_html` Folder and start uploading. Click on `Select File` and choose app.zip file. Please wait for the completion and close the tab once it is finished. Then reload the file manager and extract the file following the screenshot.
 
-go to `public_html` Folder and click on upload button.
-
----
 
 ![](/docs/jobpilot/install/s2.png)
-
-### Step 3:
-
-click on "Select File" and choose app.zip file.
-
----
-
 ![](/docs/jobpilot/install/s3.png)
-
-### Step 4:
-
-Wait for the completation and close the tab once it is finished.
-
----
-
 ![](/docs/jobpilot/install/s4.png)
+![](/docs/jobpilot/install/s5.png) 
+![](/docs/jobpilot/install/s5_2.png)
 
-### Step 5:
+### Step 3: Set the folder permissions
 
-Reload the file manager and extract the file following the screenshot.
-
----
-
-![](/docs/jobpilot/install/s5.png) ![](/docs/jobpilot/install/s5_2.png)
-
-### Step 6:
-
-We need to setup 775 permission on these 3 folders. Let's do this
+The application requires `775` permission to work properly. Set up 775 permission on these 3 folders. 
 
 - `bootstrap/cache`
 - `storage/framework`
 - `storage/logs`
 
----
-
-### Step 7:
-
-Select the storage folder and follow the screenshot.
-
----
-
 ![](/docs/jobpilot/install/s7.png)
-
-### Step 8:
-
-Go to bootstrap folder & select cache folder and folow the same process.
-
----
-
 ![](/docs/jobpilot/install/s8.png)
-
-### Step 9:
-
-Got to the storage folder and follow the same process as below.
-
----
-
 ![](/docs/jobpilot/install/s9.png)
 
-### Step 10:
 
-We need a database for the next step. Let's create a database by clicking on "MYSQL Database Wizard" form shared hosting.
 
----
+### Step 10: Create a Database
+
+We need a database for the next step. Let's create a database by clicking on the `MYSQL Database Wizard` from your hosting panel. Once the database is created assign all database permission 
+Follow the screenshots for step by step process. 
 
 ![](/docs/jobpilot/install/s11.png)
-
-### Step 11:
-
-Enter the database and click `Next Step`.
-
----
-
 ![](/docs/jobpilot/install/s12.png)
-
-### Step 12:
-
-Enter the database user name & password. Click on `Create User`.
-
----
-
 ![](/docs/jobpilot/install/s13.png)
-
-### Step 13:
-
-Save database name and database user name. Select All Permission and Click on `Next Step`.
-
----
-
 ![](/docs/jobpilot/install/s14.png)
 
-### Step 14:
+### Step 14: Import the database
 
-We are going to import demo database. From cpanel open `phpmyadmin` app. Then select your database and click on import.
-
----
+We are going to import the demo database from Cpanel open `phpmyadmin` app. Then select your database and click on import. Choose the backup database from your computer and click on the "Go" Button.
 
 ![](/docs/jobpilot/install/s18.png)
-
-### Step 15:
-
-Choose the backup database from your computer and click on "Go" Button.
-
----
-
 ![](/docs/jobpilot/install/s19.png)
 
-### Step 16:
+### Step 16: Set DB Credentials on `.env` File
 
-Now we need to setup database credentails in our app config. Go to your application folder and follow the screenshot.
+Now we need to set up database credentials in our app config. Go to your application folder and follow the screenshot.
 
----
+![](/docs/jobpilot/install/s15.png) 
+![](/docs/jobpilot/install/s16.png)
 
-![](/docs/jobpilot/install/s15.png) ![](/docs/jobpilot/install/s16.png)
+### Step 17: Congratulations
 
-### Step 17:
+Carefully, Set the necessary details marked in the screenshot. Congratulations 🎉🎉🎉 You have installed the application successfully. Go to your domain and view the app.
 
-Carefully, Set necessery details marked in the screenshot. .
+`Notice: You must fill in the red mark field.`
 
-`Notice: You must fill the red mark field.` .
+![](/docs/jobpilot/install/s17.png) 
 
----
+### Admin Login Credentials
 
-![](/docs/jobpilot/install/s17.png) ![](/docs/jobpilot/install/s20.png)
-
-### Step 18:
-
-Congratulations 🎉🎉🎉 You have installed the application successfully. Go to your domain and view the app.
-
----
-
-#### Wait a Minute!
-
-Use the credentials listed below to login to the app.
-
-# Account Credentials
-
-Admin Login
+Wait a Minute! Use the credentials listed below to log in to the admin area.
 
 **URL:** [https://yoururl.com/admin/](https://yoururl.com/admin/)
 

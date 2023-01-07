@@ -4,8 +4,8 @@ position: 31
 category: How to Tutorial
 ---
 
-## How to Enable Maintanance Mode
---------
-Enable maintanance mode for the public view, until you finish the schedule maintaince. 
+# Maintenance Mode
+Enable maintenance mode for the public view, until you finish the scheduled maintenance. 
 
-To enable maintanance mode, Go to `Settings` -> `Preferences`
+### How to Enable Maintenance Mode
+To enable maintenance mode, Go to `Settings` -> `Preferences`

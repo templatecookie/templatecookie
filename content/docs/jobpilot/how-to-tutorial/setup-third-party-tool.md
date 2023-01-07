@@ -1,6 +1,6 @@
 ---
 title: Setup Third Party Tool
-position: 34
+position: 31
 category: How to Tutorial
 ---
 

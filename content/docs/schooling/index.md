@@ -1,6 +1,7 @@
 ---
 title: Schooling - School Management System
-description: "Welcome to Schooling Documentation. This page documented with quick start guide, installation docs and required information for you get started. If you need any help, do not hesitate to reach out."
+description: "Schooling is a modern, clean and professional school management system. It’s built on Laravel 8, Vue.js, and is easily coded with best practices and a human-readable format for enhancement."
 position: 1
 category: Getting Started
+status: true
 ---

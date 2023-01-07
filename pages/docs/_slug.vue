@@ -17,7 +17,7 @@
         <div class="flex py-8 items-start">
           <div class="w-3/12 h-full border-r-[1px] border-gray-100 ">
             <ul class="mb-6" v-for="(items, index) in categories" :key="index">
-              <li class="uppercase text-xs text-gray-500 mb-4"> {{ index }} </li>
+              <li class="uppercase text-xs text-gray-500 mb-2"> {{ index }} </li>
               <li v-for="(item, index) in items" :key="index">
                 <nuxt-link :to="item.path" class="px-4 py-2 inline-block w-full text-gray-700 font-light text-sm"> {{ item.title }} </nuxt-link>
               </li>
