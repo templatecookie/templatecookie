@@ -12,29 +12,24 @@ Currently Jobpilot support 4 payment gateways.
 2. Paypal
 3. Paystack
 4. Razorpay
+5. Flutterwave
+5. SSl Commerz
+5. Mollie
+5. Midtrans
+5. Instamojo
 
 
-> Attention, you need API keys for every payment provider, which you need retrieve from the payment gateway website.
+> Attention, you need API keys for every payment provider, which you need to retrieve from your payment gateway provider. Contact your payment gateway's support for any help.
 
 ### How to enable?
 - To enable each payment gateway, Go to `Settings` -> `Payment Gateway`
 
 Enable the payment provider by clicking on the switch, Entering the `API` keys, and hitting update! Congratulations 🎉
 
-### Paypal
-Get your Paypal API's from the [Paypal Developer Dashboard](https://developer.paypal.com/developer/applications). Here is a official documentation on how to [get Paypal API's](https://developer.paypal.com/home/)
+<details>
+    <summary> Paypal Setup</summary>
 
-### Stripe
-Get your Stripe API's from the [dashboard](https://dashboard.stripe.com/). Here is a official documentation on how to [get Stripe API's](https://stripe.com/docs/keys)
-
-### Paystack
-Get your Paystack API's from the [Paystack Dashboard](https://paystack.com). Here is a official documentation on how to [get Paystack API's](https://paystack.zendesk.com/hc/en-us/articles/360011508199-How-do-I-generate-new-API-keys)
-
-
-### Razorpay
-Get your Razorpay API's from the [Razorpay Dashboard](https://razorpay.com/). Here is a official documentation on how to [get Razorpay API's](https://razorpay.com/docs/api/)
-
-### Paypal Setup
+Get your Paypal API's from the [Paypal Developer Dashboard](https://developer.paypal.com/developer/applications). Here is a official documentation on how to [get Paypal API keys](https://developer.paypal.com/home/)
 
 - Visit  [https://developer.paypal.com/developer/applications](https://developer.paypal.com/developer/applications)
 - Generating a REST API app and get `Client ID` and `Client Secret` from there
@@ -57,8 +52,10 @@ Get your Razorpay API's from the [Razorpay Dashboard](https://razorpay.com/). He
     PAYPAL_CLIENT_SECRET=your-paypal-client-secret
 ```
 *Note: You have to use `PAYPAL_MODE=live` in your live server.*
+</details>
 
 ### STRIPE Setup
+Get your Stripe API's from the [dashboard](https://dashboard.stripe.com/). Here is a official documentation on how to [get Stripe API's](https://stripe.com/docs/keys)
 
 - Visit  [https://dashboard.stripe.com/](https://dashboard.stripe.com/)
 - Get client ID and client secret from there
@@ -82,6 +79,7 @@ Get your Razorpay API's from the [Razorpay Dashboard](https://razorpay.com/). He
 ```
 
 ### RAZORPAY Setup
+Get your Razorpay API's from the [Razorpay Dashboard](https://razorpay.com/). Here is a official documentation on how to [get Razorpay API's](https://razorpay.com/docs/api/)
 
 - Visit  [https://razorpay.com/docs/api/](https://razorpay.com/docs/api/)
 - Get client ID and client secret from there
@@ -105,6 +103,7 @@ Get your Razorpay API's from the [Razorpay Dashboard](https://razorpay.com/). He
 ```
 
 ### Paystack Setup
+Get your Paystack API's from the [Paystack Dashboard](https://paystack.com). Here is a official documentation on how to [get Paystack API's](https://paystack.zendesk.com/hc/en-us/articles/360011508199-How-do-I-generate-new-API-keys)
 
 - Visit  [https://paystack.com](https://paystack.com)
 - Get client ID and client secret from there
