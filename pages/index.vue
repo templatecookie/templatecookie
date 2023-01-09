@@ -38,10 +38,10 @@
           Our team composed with expert designer and developers to handle project at any size
         </p>
         <div class="flex flex-wrap gap-4 justify-center">
-          <nuxt-link href="/hire-us" class="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-dark hover:bg-indigo-50 sm:w-auto">
+          <nuxt-link to="/hire-us" class="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-dark hover:bg-indigo-50 sm:w-auto">
             Hire Us Now
           </nuxt-link>
-          <nuxt-link href="/installation-plans" class="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-dark hover:bg-indigo-50 sm:w-auto">
+          <nuxt-link to="/installation-plans" class="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-dark hover:bg-indigo-50 sm:w-auto">
             Installation Plans
           </nuxt-link>
         </div>
