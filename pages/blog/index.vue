@@ -33,7 +33,7 @@ export default {
   components: { BlogItem },
   head() {
     const title = `Blog - Templatecookie.com`;
-    const description = 'Read templatecookie blog daily.'
+    const description = 'Read templatecookie blog. Updated Weekly'
     return {
       title: title,
       meta: [

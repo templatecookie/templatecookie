@@ -15,6 +15,18 @@ import OurServices from '../components/hire/OurServices.vue'
 import WorkingProcess from '../components/hire/WorkingProcess.vue'
 export default {
   components: { HeroSection, OurServices,WorkingProcess, OurExperties, ContactUs},
+  head: {
+    title: "Hire Expert Designer & Developers | Templatecookie",
+    meta: [
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "Get premium ",
+        name: "description",
+        content: "We have expert developers and designers to help you build your next dream project. Our team composed with experts in various industry"
+      }
+    ],
+  },
   data(){
     return {
       hubspotLoaded: false,

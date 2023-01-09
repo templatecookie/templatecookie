@@ -4,7 +4,7 @@ position: 31
 category: How to Tutorial
 ---
 
-## Setup Third Party Tool 
+# Setup Third Party Tool 
 --------
 
 Use our **Custom CSS & JS** feature to setup any third party tools using code. 

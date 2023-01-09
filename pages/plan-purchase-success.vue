@@ -26,14 +26,14 @@
 <script>
 export default {
   head: {
-    title: "Installation Plans",
+    title: "Thank you for your purchase",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: "my website description"
+        content: "Thank you for purchasing our installation plans. our team will get back to you soon."
       }
     ]
   },
