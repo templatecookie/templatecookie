@@ -5,8 +5,6 @@ position: 40
 category: Others
 ---
 
-<!--more-->
-
 # Basic Editing
 In this post, I will share with you how to perform basic editing.
 
