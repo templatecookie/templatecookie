@@ -8,6 +8,10 @@ category: Others
 # Changelog
 
 ## January
+### v2.30.10 - 3rd January, 2022
+```
+- Website responsive design issue fix
+```
 ### v2.30.9 - 2nd January, 2022
 ```
 - Plan middleware missing line fix
