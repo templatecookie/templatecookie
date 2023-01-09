@@ -35,7 +35,6 @@ import PRODUCT_DEMO from '~/graphql/productDemo'
 import GLOBAL_QUERY from '~/graphql/global'
 import ProductTopFeatures from '~/components/Demo/ProductTopFeatures.vue';
 import ProductFeatureScreenshots from '../../components/Demo/ProductFeatureScreenshots.vue';
-import ProductFolderStructure from '../../components/Demo/ProductFolderStructure.vue';
 import ProductScreenshots from '../../components/Demo/ProductScreenshots.vue';
 import ProductPages from '../../components/Demo/ProductPages.vue';
 import ProductFunFact from '../../components/Demo/ProductFunFact.vue';
@@ -95,10 +94,8 @@ export default {
   },
 
   components: {
-    PurchaseCard,
     ProductTopFeatures,
     ProductFeatureScreenshots,
-    ProductFolderStructure,
     ProductScreenshots,
     ProductPages,
     ProductFunFact,

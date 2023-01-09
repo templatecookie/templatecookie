@@ -28,6 +28,7 @@
     <TopFeaturesSection v-if="homepage && homepage.topFeatures" :data="homepage.topFeatures" />
     <!-- <product-support /> -->
     <WhyUs v-if="homepage && homepage.whyUsSection" :data="homepage.whyUsSection" />
+    <blog-section :data="latestPosts" />
   </div>
 </template>
 
@@ -36,11 +37,12 @@ import ProductCard from "../components/ProductCard.vue";
 import HOMEPAGE_QUERY from '~/graphql/homepage'
 import HeroSection from "../components/Home/HeroSection.vue";
 import WhyUs from "../components/Home/WhyUs.vue";
+import BlogSection from "../components/Home/BlogSection.vue";
 import TopFeaturesSection from "../components/Home/TopFeaturesSection.vue";
 import ProductSupport from '../components/Demo/ProductSupport.vue';
 
 export default {
-  components: { ProductCard, HeroSection, WhyUs, TopFeaturesSection, ProductSupport },
+  components: { ProductCard, BlogSection, HeroSection, WhyUs, TopFeaturesSection, ProductSupport },
   head() {
     const ogImage = "/social-meta.png";
     const description = "Templatecookie is a team of developers working on building quality templates and scripts! We create high-quality products to help you manage your business."
@@ -67,8 +69,9 @@ export default {
 
     const homepage = data.homepage;
     const latestProducts = data.allProducts;
+    const latestPosts = data.allPosts;
 
-    return { homepage, latestProducts }
+    return { homepage, latestProducts, latestPosts }
   },
   data() {
     return {

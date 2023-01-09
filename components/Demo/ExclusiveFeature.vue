@@ -4,7 +4,7 @@
       <div class="lg:grid grid-cols-12 gap-6">
         <div class="col-span-6" :class="data.alignment == 'left' ? 'order-1' : 'order-3'">
           <div
-            class="lg:mr-20 mb-6 lg:mb-0 h-340 md:h-470"
+            class="lg:mr-20 mb-6 lg:mb-0 h-[340px] md:h-[470px]"
             data-aos="fade-up-right"
             data-aos-duration="800"
             data-aos-delay="300"
