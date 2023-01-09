@@ -26,8 +26,7 @@ Currently Jobpilot support 4 payment gateways.
 
 Enable the payment provider by clicking on the switch, Entering the `API` keys, and hitting update! Congratulations 🎉
 
-<details>
-    <summary> Paypal Setup</summary>
+### Paypal Setup
 
 Get your Paypal API's from the [Paypal Developer Dashboard](https://developer.paypal.com/developer/applications). Here is a official documentation on how to [get Paypal API keys](https://developer.paypal.com/home/)
 
@@ -52,7 +51,6 @@ Get your Paypal API's from the [Paypal Developer Dashboard](https://developer.pa
     PAYPAL_CLIENT_SECRET=your-paypal-client-secret
 ```
 *Note: You have to use `PAYPAL_MODE=live` in your live server.*
-</details>
 
 ### STRIPE Setup
 Get your Stripe API's from the [dashboard](https://dashboard.stripe.com/). Here is a official documentation on how to [get Stripe API's](https://stripe.com/docs/keys)

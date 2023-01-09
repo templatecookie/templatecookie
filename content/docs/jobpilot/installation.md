@@ -54,7 +54,7 @@ Log in to your shared hosting and go to file manager. To upload files go to the 
 ![](/docs/jobpilot/install/s5.png) 
 ![](/docs/jobpilot/install/s5_2.png)
 
-### Step 3: Set the folder permissions
+### Step 2: Set the folder permissions
 
 The application requires `775` permission to work properly. Set up 775 permission on these 3 folders. 
 
@@ -68,7 +68,7 @@ The application requires `775` permission to work properly. Set up 775 permissio
 
 
 
-### Step 10: Create a Database
+### Step 3: Create a Database
 
 We need a database for the next step. Let's create a database by clicking on the `MYSQL Database Wizard` from your hosting panel. Once the database is created assign all database permission 
 Follow the screenshots for step by step process. 
@@ -78,21 +78,21 @@ Follow the screenshots for step by step process.
 ![](/docs/jobpilot/install/s13.png)
 ![](/docs/jobpilot/install/s14.png)
 
-### Step 14: Import the database
+### Step 4: Import the database
 
 We are going to import the demo database from Cpanel open `phpmyadmin` app. Then select your database and click on import. Choose the backup database from your computer and click on the "Go" Button.
 
 ![](/docs/jobpilot/install/s18.png)
 ![](/docs/jobpilot/install/s19.png)
 
-### Step 16: Set DB Credentials on `.env` File
+### Step 5: Set DB Credentials on `.env` File
 
 Now we need to set up database credentials in our app config. Go to your application folder and follow the screenshot.
 
 ![](/docs/jobpilot/install/s15.png) 
 ![](/docs/jobpilot/install/s16.png)
 
-### Step 17: Congratulations
+### Congratulations
 
 Carefully, Set the necessary details marked in the screenshot. Congratulations 🎉🎉🎉 You have installed the application successfully. Go to your domain and view the app.
 

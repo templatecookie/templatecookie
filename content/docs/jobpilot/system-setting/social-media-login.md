@@ -4,7 +4,7 @@ position: 12
 category: System Setting
 ---
 
-### Social Login
+# Social Login
 
 **Important:** Make sure APP_URL in `/.env` file matches your site url. It should be set automatically, but you might need to do it manually in some rare cases.
 

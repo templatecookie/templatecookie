@@ -16,7 +16,7 @@ In this post, I will share with you how to perform basic editing.
 
 You must have basic knowledge of HTML, CSS, PHP & Websites. If you don't have any knowledge, I would recommend not overwriting project files.
 
-## Basics
+### Basics
 Before we get started, let's take a look at the tools we need for editing.
 
 - Code Editor (I recommend [VS Code Editor](https://code.visualstudio.com/) , but you can use any.)
@@ -50,14 +50,7 @@ Application core routes located in route files. If you want to change something.
 ![screenshot](/docs/jobpilot/screenshot/editcode/route2.png)
 
 
-###  Balde File Edit
-
-You will find all the blade files under `resources/views` Folder. You can open any file using VS code editor.
-Application core views code located in blade files. If you want to change something. You can do here.
-
-![Blade File Edit](/docs/blade.png)
-
-## Blade File Edit
+### Blade File Edit
 
 You will find all the blade files under `resources/views` and `Modules/*/resources/views` Folder. You can open any file using VS code editor or any.
 
@@ -66,15 +59,16 @@ Application core views code located in blade files. If you want to change someth
 ![screenshot](/docs/jobpilot/screenshot/editcode/blade.png)
 ![screenshot](/docs/jobpilot/screenshot/editcode/blade2.png)
 
-## Controller File Edit
+<!-- 
+### Controller File Edit
 
 You will find all the controller files under `app/Http/Controllers` `Modules/*/Http/Controllers` Folder. You can open any controller using VS code editor or any.
 
 ![screenshot](/docs/jobpilot/screenshot/editcode/controller.png)
 ![screenshot](/docs/jobpilot/screenshot/editcode/controller2.png)
 
-<!-- 
-## Website Content Change
+
+### Website Content Change
 
 If you want to change website content like below then you can simply follow the steps.
 
