@@ -56,7 +56,7 @@ Before you install **Jobpilot** make sure your server meets the following requir
           <h3>Full Server Installation - $55</h3>
           <p>The full server installation package includes the following:</p>
           <ul>
-              <li>Setting up a new server (Ubuntu OS) on one of those platforms: <a href="https://vrlps.co/u9r50jM/cp" target="_blank">Cloudways</a>, <a href="https://www.vultr.com/?ref=9334560-8H" target="_blank">Vultr</a>, <a href="https://m.do.co/c/44ed55706f71" target="_blank">DigitalOcean</a></li>
+              <li>Setting up a new server (Ubuntu OS) on one of those platforms: <a href="https://www.cloudways.com/en/?id=705743" target="_blank">Cloudways</a>, <a href="https://www.vultr.com/?ref=9334560-8H" target="_blank">Vultr</a>, <a href="https://m.do.co/c/44ed55706f71" target="_blank">DigitalOcean</a></li>
               <li>Setting up the domain for the server</li>
               <li>Free SSL Certificate Installation (Let's Encrypt)</li>
               <li>Installation of Apache, MySQL with MySQLi, PHP</li>
