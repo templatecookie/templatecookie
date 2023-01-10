@@ -37,7 +37,6 @@ import ProductTopFeatures from '~/components/Demo/ProductTopFeatures.vue';
 import ProductFeatureScreenshots from '../../components/Demo/ProductFeatureScreenshots.vue';
 import ProductScreenshots from '../../components/Demo/ProductScreenshots.vue';
 import ProductPages from '../../components/Demo/ProductPages.vue';
-import ProductFunFact from '../../components/Demo/ProductFunFact.vue';
 import ProductHero from "../../components/Demo/ProductHero.vue";
 import ProductSupport from '../../components/Demo/ProductSupport.vue';
 import CallToAction from '../../components/Demo/CallToAction.vue';
@@ -98,7 +97,6 @@ export default {
     ProductFeatureScreenshots,
     ProductScreenshots,
     ProductPages,
-    ProductFunFact,
     ProductHero,
     ProductSupport,
     CallToAction,
