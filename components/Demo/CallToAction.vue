@@ -34,11 +34,10 @@
           Buy Now
           <img class="inline-block ml-2" src="/icons/arrow-right.svg" alt="brand-logo" />
         </a>
-        <a :href="product.previewUrl" v-if="product.previewUrl"
-          class="inline-block bg-green-500 rounded-7 py-4 ml-2 px-9 text-lg text-white duration-300 bg-secondary hover:bg-black">
-          Try it for free
-          <img class="inline-block ml-2" src="/icons/arrow-right.svg" alt="brand-logo" />
-        </a>
+        <nuxt-link to="/hire-us"
+          class="inline-block rounded-7 py-4 ml-2 px-9 text-lg text-white duration-300 bg-secondary hover:bg-black">
+          Request Customization
+        </nuxt-link>
       </div>
     </div>
     <div>
@@ -68,12 +67,11 @@ export default {
         spaceBetween: 24,
         loop: true,
         autoplay: {
-          delay: 1, 
+          delay: 1,
           disableOnInteraction: false
-        }, 
-        freeMode: true, 
+        },
+        freeMode: true,
         speed: 10000,
-        
         breakpoints: {
           1199: {
             slidesPerView: 4,

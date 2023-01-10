@@ -113,12 +113,12 @@ export default {
       ],
       mainMenuItems: [
         {
-          name: 'Request Development',
-          href: '/hire-us',
-        },
-        {
           name: 'Buy Now',
           href: '#pricing',
+        },
+        {
+          name: 'Request Customization',
+          href: '/hire-us',
         },
       ]
     }

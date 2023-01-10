@@ -59,10 +59,9 @@ import HeroSection from "../components/Home/HeroSection.vue";
 import WhyUs from "../components/Home/WhyUs.vue";
 import BlogSection from "../components/Home/BlogSection.vue";
 import TopFeaturesSection from "../components/Home/TopFeaturesSection.vue";
-import ProductSupport from '../components/Demo/ProductSupport.vue';
 
 export default {
-  components: { ProductCard, BlogSection, HeroSection, WhyUs, TopFeaturesSection, ProductSupport },
+  components: { ProductCard, BlogSection, HeroSection, WhyUs, TopFeaturesSection },
   head() {
     const ogImage = "/social-meta.png";
     const description = "Templatecookie is a team of developers working on building quality templates and scripts! We create high-quality products to help you manage your business."

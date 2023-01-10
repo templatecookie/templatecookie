@@ -47,7 +47,6 @@ export default {
     }
   },
   async asyncData ({ $content, route}) {
-    console.log(route.path);
     const page = await $content(route.path)
     .sortBy('position', 'asc')
     .fetch()
@@ -97,7 +96,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-  @import '../../../assets/scss/markdown.scss';
-</style>

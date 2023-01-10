@@ -34,7 +34,7 @@
           </div>
 
           <div class="mt-8 flex justify-center gap-4 flex-wrap">
-            <a href="#pricing" target="_blank" class="block text-center sm:inline-block border-1.5 border-primary bg-primary font-medium rounded-7 py-3.5 px-8 text-lg text-white duration-300 mb-3 sm:mb-0">
+            <a href="#pricing" class="block text-center sm:inline-block border-1.5 border-primary bg-primary font-medium rounded-7 py-3.5 px-8 text-lg text-white duration-300 mb-3 sm:mb-0">
               Buy Now
             </a>
             <a :href="product.previewUrl" target="_blank"

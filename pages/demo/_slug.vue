@@ -17,7 +17,7 @@
         <call-to-action :section="section" :product="product" />
       </div>
       <div v-if="section.__typename == 'PriceplanRecord'">
-        <PricingSection :plans="section.plans" :id="section.sectionId ? section.sectionId : section.id" :info="section.info[0]" extraOffer="true" />
+        <PricingSection :plans="section.plans" :id="section.sectionId ? section.sectionId : section.id" :info="section.info[0]" :extraOffer="product.extraOffer" />
       </div>
       <div v-if="section.__typename == 'TestimonialSectionRecord'">
         <testimonial-section :data="section" />
@@ -36,11 +36,8 @@ import GLOBAL_QUERY from '~/graphql/global'
 import ProductTopFeatures from '~/components/Demo/ProductTopFeatures.vue';
 import ProductFeatureScreenshots from '../../components/Demo/ProductFeatureScreenshots.vue';
 import ProductScreenshots from '../../components/Demo/ProductScreenshots.vue';
-import ProductPages from '../../components/Demo/ProductPages.vue';
 import ProductHero from "../../components/Demo/ProductHero.vue";
-import ProductSupport from '../../components/Demo/ProductSupport.vue';
 import CallToAction from '../../components/Demo/CallToAction.vue';
-import PricingPlan from '../../components/Demo/PricingPlanSection.vue';
 import ExclusiveFeature from "../../components/Demo/ExclusiveFeature.vue";
 import GroupFeatureSection from "../../components/Demo/GroupFeatureSection.vue";
 import DemoHeader from '../../components/DemoHeader.vue';
@@ -96,12 +93,9 @@ export default {
     ProductTopFeatures,
     ProductFeatureScreenshots,
     ProductScreenshots,
-    ProductPages,
     ProductHero,
-    ProductSupport,
     CallToAction,
     PricingSection,
-    PricingPlan,
     ExclusiveFeature,
     GroupFeatureSection,
     DemoHeader,

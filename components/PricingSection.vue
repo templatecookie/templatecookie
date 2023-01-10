@@ -18,15 +18,35 @@
           </div>
         </div>
       </div>
-      <div class="relative mx-auto mt-8 max-w-7xl px-6 lg:px-8" v-if="extraOffer">
+      <div class="relative mx-auto mt-8 max-w-7xl px-6 lg:px-8" v-for="(item, index) in extraOffer" :key="index">
         <div class="mx-auto max-w-md lg:max-w-4xl">
           <div class="flex flex-col gap-6 rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 lg:flex-row lg:items-center lg:gap-8">
             <div class="lg:min-w-0 lg:flex-1">
-              <h3 class="text-lg font-semibold leading-8 tracking-tight text-primary">Discounted</h3>
-              <div class="mt-2 text-base leading-7 text-gray-600">Get full access to all of standard license features for solo projects that make less than $20k gross revenue for <span class="font-semibold text-gray-900">$29</span>.</div>
+              <h3 class="text-lg font-semibold leading-8 tracking-tight text-primary">{{ item.title }}</h3>
+              <div class="mt-2 text-base leading-7 text-gray-600">
+                {{ item.description }}
+              </div>
             </div>
             <div>
-              <a href="#" class="inline-block rounded-lg bg-indigo-50 px-4 py-2.5 text-center text-sm font-semibold leading-5 text-secondary hover:bg-indigo-100">Buy discounted license <span aria-hidden="true">&rarr;</span></a>
+              <a :href="item.href" target="_blank" class="inline-block rounded-lg bg-indigo-50 px-4 py-2.5 text-center text-sm font-semibold leading-5 text-secondary hover:bg-indigo-100">
+                {{ item.label }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative mx-auto mt-8 max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-md lg:max-w-4xl">
+          <div class="flex flex-col gap-6 rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 lg:flex-row lg:items-center lg:gap-8">
+            <div class="lg:min-w-0 lg:flex-1">
+              <h3 class="text-lg font-semibold leading-8 tracking-tight text-primary">Request Customization</h3>
+              <div class="mt-2 text-base leading-7 text-gray-600">
+                We built our product with the most flexible system and features that can be customized based on your exact business needs. Our creative and experienced developers are ready to make all the changes that you need for your business.
+              </div>
+            </div>
+            <div>
+              <a href="#" class="inline-block rounded-lg bg-indigo-50 px-4 py-2.5 text-center text-sm font-semibold leading-5 text-secondary hover:bg-indigo-100">Request Customization Now <span aria-hidden="true">&rarr;</span></a>
             </div>
           </div>
         </div>

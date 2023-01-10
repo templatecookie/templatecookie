@@ -31,7 +31,7 @@ import ProductItem from '~/components/Docs/ProductItem.vue'
 export default {
   head() {
     const title = 'Templatecookie Product Documentation';
-    const description = "Don't have previous experience using our products? Read the documentation to learn more about the complex features and topics?";
+    const description = "Don't have previous experience using our products? Read the documentation to learn more about the features and topics?";
     return {
       title: title,
       meta: [
