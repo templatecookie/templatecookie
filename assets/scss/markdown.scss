@@ -1,12 +1,4 @@
 .markdown-body {
-  body {
-    margin: 0 auto;
-    font-family: Georgia, Palatino, serif;
-    color: #4e4e54;
-    line-height: 1;
-    max-width: 960px;
-    padding: 30px;
-  }
   & h1:first-of-type,
   & h2:first-of-type {
     margin-top: 0 !important;
@@ -67,9 +59,6 @@
 
   a {
     color: #0099ff;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
   }
 
   ul,
@@ -77,7 +66,6 @@
     padding: 0;
     margin: 0;
     margin-bottom: 1.5rem;
-    // padding-left: 30px;
   }
 
   li {

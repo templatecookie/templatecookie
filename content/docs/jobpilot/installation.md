@@ -27,18 +27,46 @@ Before you install **Jobpilot** make sure your server meets the following requir
 
 <hightlight-block>
 <template>
+  <h3 class="!text-white"> Hosting Recommendation </h3>
 
-# Hosting Recommendation
+  We recommend you set up this application on a cloud server. A cloud server is great for SPA, in terms of speed, security, and scalability.
 
-We recommend you set up this application on a cloud server. A cloud server is great for SPA, in terms of speed, security, and scalability.
+  We recommend Digitalocean, Vultr, Linode, and AWS
 
-We recommend Digitalocean, Vultr, Linode, and AWS
-
-[Bluehost Shared Hosting](https://www.bluehost.com/track/webzakir/)
-[Digitalocean Cloud Hosting](https://m.do.co/c/44ed55706f71)
-
+  <a href="https://bluehost.sjv.io/e4DJAg" target="_blank" class="outline-btn bg-white hover:bg-dark"> Bluehost Shared Hosting </a>
+  <a href="https://m.do.co/c/44ed55706f71" target="_blank" class="outline-btn bg-white hover:bg-dark"> Digitalocean Cloud Hosting </a>
 </template>
 </hightlight-block>
+
+<div class="bg-gray-100 rounded-xl px-4 py-6">
+  <section id="installation-services">
+      <h2>Installation Services</h2>
+      <p>I also offer quality installation services at a low cost if you do not want to bother with the installation process.</p>
+      <div id="product-installation">
+          <h3>Product Installation - $29</h3>
+          <p>The product installation package includes the following:</p>
+          <ul>
+              <li>Uploading the product files on your server (requires a fully configured and ready to go server).</li>
+              <li>Creating and configuring the database that is going to be used.</li>
+              <li>Full installation of the <strong>product</strong>.</li>
+          </ul>
+          <small class="text-muted">You must own a server with a control panel like Plesk, cPanel...etc.</small>
+      </div>
+      <div id="full-installation">
+          <h3>Full Server Installation - $55</h3>
+          <p>The full server installation package includes the following:</p>
+          <ul>
+              <li>Setting up a new server (Ubuntu OS) on one of those platforms: <a href="https://vrlps.co/u9r50jM/cp" target="_blank">Cloudways</a>, <a href="https://www.vultr.com/?ref=9334560-8H" target="_blank">Vultr</a>, <a href="https://m.do.co/c/44ed55706f71" target="_blank">DigitalOcean</a></li>
+              <li>Setting up the domain for the server</li>
+              <li>Free SSL Certificate Installation (Let's Encrypt)</li>
+              <li>Installation of Apache, MySQL with MySQLi, PHP</li>
+              <li>Installation and configuration of PHP's necessary modules / extensions</li>
+              <li>Full installation of the <strong>product</strong></li>
+          </ul>
+      </div>
+      <nuxt-link class="outline-btn" to="/get-support">Create a installation support ticket</nuxt-link>
+  </section>
+</div>
 
 
 Before you move forward, please ensure server requirements are met. 👆

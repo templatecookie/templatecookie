@@ -55,8 +55,3 @@ export default {
   props: ['data'],
 }
 </script>
-
-
-<style lang="scss">
-  @import '../../assets/scss/markdown.scss';
-</style>

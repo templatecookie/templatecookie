@@ -22,6 +22,18 @@
                 <nuxt-link :to="item.path" class="px-4 py-2 inline-block w-full text-gray-700 font-light text-sm"> {{ item.title }} </nuxt-link>
               </li>
             </ul>
+            <ul>
+              <li>
+                <nuxt-link :to="`/docs/${$route.params.slug}/hosting`" class="px-4 py-2 inline-block w-full text-gray-700 font-light text-sm">
+                  Hosting
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link :to="`/docs/${$route.params.slug}/faq`" class="px-4 py-2 inline-block w-full text-gray-700 font-light text-sm">
+                  FAQ
+                </nuxt-link>
+              </li>
+            </ul>
           </div>
           <NuxtChild :productName="product.title + ' Documentation'" :categories="categories"/>
         </div>
@@ -84,17 +96,8 @@ export default {
       const url = this.categories[keys[0]][0].path;
 
       this.$router.push(url)
-    }
+    },
   },
-  created(){
-    // this.redirectToDocs();
-  },
-  
-  watch:{
-    $route (to, from){
-      // this.redirectToDocs();
-    }
-} 
 }
 </script>
 
