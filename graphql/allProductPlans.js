@@ -29,9 +29,6 @@ export default gql`
           purchaseLink
           paddleProductId
           theme
-          icon {
-            url
-          }
           features {
             name
             id

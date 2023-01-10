@@ -31,6 +31,13 @@ query product($slug: String!){
       id
       href
     }
+    extraOffer {
+      title
+      description
+      state
+      label
+      href
+    }
     contents {
       ... on TestimonialSectionRecord {
         __typename

@@ -1,11 +1,11 @@
 <template>
   <!-- card wrapper  -->
-  <div class="bg-white relative overflow-hidden p-6 border border-gray-f0 rounded-2xl product-card w-full" :class="large ? 'p-8 product-card--lg' : 'p-6  product-card--sm'">
-    <nuxt-link :to="{ name: 'demo-slug', params: {slug: product.slug} }" class="product-card__img relative inline-block overflow-hidden rounded-lg w-full product-card__img-wrapper mb-4">
+  <div class="bg-gray-50 relative overflow-hidden border border-gray-f0 rounded-2xl product-card w-full" :class="large ? 'product-card--lg' : 'product-card--sm'">
+    <nuxt-link :to="{ name: 'demo-slug', params: {slug: product.slug} }" class="h-56 product-card__img relative inline-block overflow-hidden rounded-lg w-full product-card__img-wrapper">
       <nuxt-img :src="product.banner.url" alt="product-img" class="w-full h-full object-cover overflow-hidden"></nuxt-img>
     </nuxt-link>
 
-    <div class="product-card__text">
+    <div class="product-card__text" :class="large ? 'p-8' : 'p-6'">
       <h6 class="tracking-widest font-normal text-secondary uppercase m-0 mb-1" :class=" large ? 'text-sm' : 'text-sm'" v-if="product.category" >
         {{ product.category.name }}
       </h6>
@@ -108,10 +108,6 @@ export default {
 
   &--sm {
     .product-card {
-      &__img {
-        height: 190px;
-      }
-
       &__button {
         height: 45px;
         width: 150px;
