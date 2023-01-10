@@ -16,7 +16,7 @@
         <div class="col-span-8 order-2">
           <div class="content lg:pl-6 mb-6">
             <div class="tabcontent">
-              <div class="h-340 md:h-600 overflow-hidden rounded-20">
+              <div class="h-[340px] md:h-[600px] overflow-hidden rounded-20">
                 <img class="rounded-20"
                   :src="activeItem" alt="" />
               </div>

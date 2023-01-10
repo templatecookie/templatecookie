@@ -1,6 +1,7 @@
 ---
 title: Jobpilot - Job Portal
-description: "Jobpilot is job portal laravel script designed to create, manage and publish jobs posts. Companies can create their profile and publish jobs posts. Candidate can apply job posts."
+description: "Jobpilot is a modern, high-quality, and well-organized Job Portal PHP Laravel Script designed to connect people looking for suitable Jobs & Candidates."
 position: 1
 category: Getting Started
+status: true
 ---

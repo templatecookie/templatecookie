@@ -90,4 +90,14 @@ query {
       slug
     }
   }
+  allPosts(first: 3, orderBy: _createdAt_DESC){
+    id
+    title
+    slug
+    updatedAt
+    shortDescription
+    image {
+      url
+    }
+  }
 }`

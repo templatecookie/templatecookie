@@ -10,8 +10,8 @@
         </div>
       </div>
     </div>
-    <section class="text-gray-600 body-font bg-white">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 px-5 py-24 mx-auto">
+    <section class="text-gray-600 body-font bg-gray-50">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 py-24">
         <div class="flex flex-wrap -m-4" v-if="posts.length">
           <div class="p-4 md:w-1/3" v-for="(item, i) in posts" :key="i">
             <blog-item :item="item" />
@@ -33,7 +33,7 @@ export default {
   components: { BlogItem },
   head() {
     const title = `Blog - Templatecookie.com`;
-    const description = 'Read templatecookie blog daily.'
+    const description = 'Read templatecookie blog. Updated Weekly'
     return {
       title: title,
       meta: [

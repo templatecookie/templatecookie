@@ -66,7 +66,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'my website description'
+        content: 'Browse Templatecookie all products, Templatecookie has HTML, Figma & Laravel products.'
       }
     ],
   },

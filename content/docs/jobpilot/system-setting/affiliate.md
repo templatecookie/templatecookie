@@ -4,7 +4,7 @@ position: 13
 category: System Setting
 ---
 
-## Affiliate Settings
+# Affiliate Settings
 Fill up app settings with your business information! See below, what you can change!
 
 ## Setup Careerjet API Jobs

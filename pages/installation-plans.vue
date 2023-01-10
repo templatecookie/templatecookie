@@ -41,14 +41,14 @@ import PricingSection from '~/components/PricingSection.vue'
 
 export default {
   head: {
-    title: "Installation Plans",
+    title: "Installation Plans | Templatecookie Products",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: "my website description"
+        content: "Buy our premium installation support package, our expert team will help you get your app installed & configured."
       }
     ],
   },

@@ -28,6 +28,27 @@
     <TopFeaturesSection v-if="homepage && homepage.topFeatures" :data="homepage.topFeatures" />
     <!-- <product-support /> -->
     <WhyUs v-if="homepage && homepage.whyUsSection" :data="homepage.whyUsSection" />
+    <div class="bg-primary">
+      <div class="mx-auto max-w-2xl py-16 px-6 text-center sm:py-20 lg:px-8">
+        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <span class="block"> Build Better Products </span>
+          <span class="block"> Hire us today </span>
+        </h2>
+        <p class="mt-4 text-lg leading-6 text-indigo-200">
+          Our team composed with expert designer and developers to handle project at any size
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <nuxt-link to="/hire-us" class="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-dark hover:bg-indigo-50 sm:w-auto">
+            Hire Us Now
+          </nuxt-link>
+          <nuxt-link to="/installation-plans" class="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-dark hover:bg-indigo-50 sm:w-auto">
+            Installation Plans
+          </nuxt-link>
+        </div>
+      </div>
+    </div>
+
+    <blog-section :data="latestPosts" />
   </div>
 </template>
 
@@ -36,11 +57,12 @@ import ProductCard from "../components/ProductCard.vue";
 import HOMEPAGE_QUERY from '~/graphql/homepage'
 import HeroSection from "../components/Home/HeroSection.vue";
 import WhyUs from "../components/Home/WhyUs.vue";
+import BlogSection from "../components/Home/BlogSection.vue";
 import TopFeaturesSection from "../components/Home/TopFeaturesSection.vue";
 import ProductSupport from '../components/Demo/ProductSupport.vue';
 
 export default {
-  components: { ProductCard, HeroSection, WhyUs, TopFeaturesSection, ProductSupport },
+  components: { ProductCard, BlogSection, HeroSection, WhyUs, TopFeaturesSection, ProductSupport },
   head() {
     const ogImage = "/social-meta.png";
     const description = "Templatecookie is a team of developers working on building quality templates and scripts! We create high-quality products to help you manage your business."
@@ -67,8 +89,9 @@ export default {
 
     const homepage = data.homepage;
     const latestProducts = data.allProducts;
+    const latestPosts = data.allPosts;
 
-    return { homepage, latestProducts }
+    return { homepage, latestProducts, latestPosts }
   },
   data() {
     return {
