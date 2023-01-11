@@ -7,7 +7,7 @@ category: Getting Started
 # Payment Setting
 To activate payment gateway on your website and receive payment from the customers, You have enable payment gateway's by using API's Keys! Here is where to get them. 
 
-Currently Jobpilot support 4 payment gateways.
+Currently Jobpilot support 9 payment gateways.
 1. Stripe
 2. Paypal
 3. Paystack
@@ -60,6 +60,13 @@ The Paystack integration gives your users the ability to pay with via the Paysta
 - Go to the Settings page -> API Keys 
 - Go to your product Admin Panel -> Settings -> Payment Gateway -> Manual Payment -> Paystack Tab and enter the given API Keys.
 
+### Flutterwave Setup
+The Flutterwave integration gives your users the ability to pay with via the Flutterwave payment gateway for purchases.
+
+- Go to [Flutterwave](https://flutterwave.com/us/) and Login to your account.
+- Go to Settings -> API Keys page on Flutterwave get your API key.
+- Go to your product Admin Panel -> Settings -> Payment Gateway -> Manual Payment -> Flutterwave and enter the given API Key.
+
 ### Mollie Setup
 The Mollie integration gives your users the ability to pay with via the Mollie payment gateway for purchases.
 
@@ -67,3 +74,16 @@ The Mollie integration gives your users the ability to pay with via the Mollie p
 - Go to the Developers -> API Keys page on Mollie get your API key.
 - Go to your product installation Admin Panel -> Settings -> Payment Gateway -> Manual Payment -> Mollie and enter the given API Key.
 
+### Midtrans Setup
+The Midtrans integration gives your users the ability to pay with via the Midtrans payment gateway for purchases.
+
+- Go to [Midtrans](https://midtrans.com/id) and Login to your account.
+- Go to Settings -> Access Keys page on Midtrans get your API key.
+- Go to your product Admin Panel -> Settings -> Payment Gateway -> Manual Payment -> Midtrans and enter the given API Key.
+
+### Instamojo Setup
+The Instamojo integration gives your users the ability to pay with via the Instamojo payment gateway for purchases.
+
+- Go to [Instamojo](https://www.instamojo.com/) and Login to your account.
+- Go to Settings -> Api & Plugins page -> Scroll down to create new credentials -> select "WooCommerce / WordPress click" to generate credentials and get your API key.
+- Go to your product Admin Panel -> Settings -> Payment Gateway -> Manual Payment -> Instamojo and enter the given API Key.
