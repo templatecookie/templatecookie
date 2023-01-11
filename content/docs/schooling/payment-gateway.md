@@ -17,7 +17,7 @@ Currently Jobpilot support 9 payment gateways.
 > Attention, you need API keys for every payment provider, which you need to retrieve from your payment gateway provider. Contact your payment gateway's support for any help.
 
 ### How to enable?
-- To enable each payment gateway, Go to `Admin Panel` -> `Settings` -> `Payment Gateway`
+- To enable each payment gateway, Go to `Admin Panel` -> `Settings` -> `Payment`
 
 Enable the payment provider by clicking on the switch, Entering the `API` keys, and hitting update! Congratulations 🎉
 
@@ -46,7 +46,7 @@ The Razorpay integration gives your users the ability to pay with via the Razorp
 
 - Go to Razorpay and Login to your account.
 - Go to the Settings page -> API Keys tab on Razorpay & generate your API keys.
-- Go to your product installation Admin Panel -> Website Settings -> Razorpay Tab and enter the given API Keys.
+- Go to your product installation Admin Panel -> Settings -> Payment -> Razorpay Tab and enter the given API Keys.
 
 ### Paystack Setup
 The Paystack integration gives your users the ability to pay with via the Paystack payment gateway for one time & recurring purchases.
