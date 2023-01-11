@@ -8,6 +8,7 @@ query PostDetails($slug: String) {
     slug
     title
     updatedAt
+    shortDescription
     image {
       alt
       url

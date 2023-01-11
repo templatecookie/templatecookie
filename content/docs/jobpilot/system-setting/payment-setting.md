@@ -33,18 +33,6 @@ Get your Paypal API's from the [Paypal Developer Dashboard](https://developer.pa
 - Visit  [https://developer.paypal.com/developer/applications](https://developer.paypal.com/developer/applications)
 - Generating a REST API app and get `Client ID` and `Client Secret` from there
 
-
-<!-- - Go to the **Admin panel** -> **Settings** -> **System Setting** -> **Payment Gateway** -> **Auto Payment**
-- Enable the paypal feature from the '**Status**' field
-- Set '**CLIENT ID**' and '**CLIENT SECRET**'
-- And save your changes.
-
-**Or use `/.env` file setup**
-
-- Login to your FTP account
-- Open `/.env` file.
-- Provide the keys there. -->
-
 ```
     PAYPAL_MODE=sandbox
     PAYPAL_CLIENT_ID=your-paypal-client-id
@@ -58,19 +46,6 @@ Get your Stripe API's from the [dashboard](https://dashboard.stripe.com/). Here 
 - Visit  [https://dashboard.stripe.com/](https://dashboard.stripe.com/)
 - Get client ID and client secret from there
 
-<!-- **Admin panel setup**
-
-- Go to the **Admin panel** -> **Settings** -> **System Setting** -> **Payment Gateway** -> **Auto Payment**
-- Enable the stripe feature from the '**Status**' field
-- Set '**STRIPE KEY**' and '**STRIPE SECRET**'
-- And save your changes.
-
-**Or use `/.env` file setup**
-
-- Login to your FTP account
-- Open `/.env` file.
-- Provide the keys there. -->
-
 ```
     STRIPE_KEY=your-stripe-client-id
     STRIPE_SECRET=your-stripe-client-secret
@@ -82,18 +57,6 @@ Get your Razorpay API's from the [Razorpay Dashboard](https://razorpay.com/). He
 - Visit  [https://razorpay.com/docs/api/](https://razorpay.com/docs/api/)
 - Get client ID and client secret from there
 
-<!-- **Admin panel setup**
-
-- Go to the **Admin panel** -> **Settings** -> **System Setting** -> **Payment Gateway** -> **Auto Payment**
-- Enable the razorpay feature from the '**Status**' field
-- Set '**RAZORPAY KEY**' and '**RAZORPAY SECRET**'
-- And save your changes.
-
-**Or use `/.env` file setup**
-
-- Login to your FTP account
-- Open `/.env` file.
-- Provide the keys there. -->
 
 ```
     RAZORPAY_KEY=your-razorpay-client-id
@@ -106,18 +69,6 @@ Get your Paystack API's from the [Paystack Dashboard](https://paystack.com). Her
 - Visit  [https://paystack.com](https://paystack.com)
 - Get client ID and client secret from there
 
-<!-- **Admin panel setup**
-
-- Go to the **Admin panel** -> **Settings** -> **System Setting** -> **Payment Gateway** -> **Auto Payment**
-- Enable the paystack feature from the '**Status**' field
-- Set '**CLIENT ID**' and '**CLIENT SECRET**'
-- And save your changes.
-
-**Or use `/.env` file setup**
-
-- Login to your FTP account
-- Open `/.env` file.
-- Provide the keys there and hit update -->
 
 ```
     PAYSTACK_PUBLIC_KEY=your-paystack-client-id/public-key

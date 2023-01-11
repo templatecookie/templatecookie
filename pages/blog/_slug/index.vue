@@ -70,6 +70,23 @@
 <script>
 import BLOG_DETAILS from '~/graphql/blog/postDetails'
 export default {
+  head() {
+    const postDetails = this.post
+    const seoTitle = `${postDetails.title} | Templatecookie.com`;
+    const seoDesc = postDetails.shortDescription;
+    return {
+      title: title,
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: seoDesc },
+        { hid: 'og:title', property: 'og:title', name: 'og:title', content: seoTitle },
+        { hid: 'og:description', name: 'og:description', name: 'og:description', content: seoDesc },
+        { hid: 'og:type', property: 'og:type', name: 'og:type', content: "article" },
+        { hid: 'og:image', property: 'og:image', name: 'og:image', content: post.image.url },
+      ],
+    }
+  },
   async asyncData({ app, params, store }) {
     const client = app.apolloProvider.defaultClient;
     const { slug } = params;
@@ -82,7 +99,6 @@ export default {
     })
 
     const post = data.post;
-    console.log(post)
     const relatedPosts = data.allPosts;
 
     return { post, relatedPosts }

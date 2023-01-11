@@ -31,19 +31,17 @@ Before you install **Jobpilot** make sure your server meets the following requir
 
   We recommend you set up this application on a cloud server. A cloud server is great for SPA, in terms of speed, security, and scalability.
 
-  We recommend Digitalocean, Vultr, Linode, and AWS
-
-  <a href="https://bluehost.sjv.io/e4DJAg" target="_blank" class="outline-btn bg-white hover:bg-dark"> Bluehost Shared Hosting </a>
-  <a href="https://m.do.co/c/44ed55706f71" target="_blank" class="outline-btn bg-white hover:bg-dark"> Digitalocean Cloud Hosting </a>
+  We recommend 
+  <a href="http://go.templatecookie.com/cloudways" target="_blank">Cloudways</a>, <a href="http://go.templatecookie.com/vultr" target="_blank">Vultr</a>, <a href="http://go.templatecookie.com/digitalocean" target="_blank">Digitalocean</a>, and <a href="http://go.templatecookie.com/namecheap" target="_blank"> Namecheap </a>
 </template>
 </hightlight-block>
 
-<div class="bg-gray-100 rounded-xl px-4 py-6">
+<div class="bg-gray-200 rounded-xl px-4 py-6">
   <section id="installation-services">
       <h2>Installation Services</h2>
       <p>I also offer quality installation services at a low cost if you do not want to bother with the installation process.</p>
       <div id="product-installation">
-          <h3>Product Installation - $29</h3>
+          <h3>Product Installation - $35</h3>
           <p>The product installation package includes the following:</p>
           <ul>
               <li>Uploading the product files on your server (requires a fully configured and ready to go server).</li>
@@ -53,13 +51,13 @@ Before you install **Jobpilot** make sure your server meets the following requir
           <small class="text-muted">You must own a server with a control panel like Plesk, cPanel...etc.</small>
       </div>
       <div id="full-installation">
-          <h3>Full Server Installation - $55</h3>
+          <h3>Full Server Installation - $45</h3>
           <p>The full server installation package includes the following:</p>
           <ul>
-              <li>Setting up a new server (Ubuntu OS) on one of those platforms: <a href="https://www.cloudways.com/en/?id=705743" target="_blank">Cloudways</a>, <a href="https://www.vultr.com/?ref=9334560-8H" target="_blank">Vultr</a>, <a href="https://m.do.co/c/44ed55706f71" target="_blank">DigitalOcean</a></li>
+              <li>Setting up a new server (Ubuntu OS) on one of those platforms: <a href="http://go.templatecookie.com/cloudways" target="_blank">Cloudways</a>, <a href="http://go.templatecookie.com/vultr" target="_blank">Vultr</a>, <a href="http://go.templatecookie.com/digitalocean" target="_blank">DigitalOcean</a></li>
               <li>Setting up the domain for the server</li>
               <li>Free SSL Certificate Installation (Let's Encrypt)</li>
-              <li>Installation of Apache, MySQL with MySQLi, PHP</li>
+              <li>Installation of Nginx, MySQL with MySQLi, PHP</li>
               <li>Installation and configuration of PHP's necessary modules / extensions</li>
               <li>Full installation of the <strong>product</strong></li>
           </ul>

@@ -36,7 +36,7 @@ We recommend you to setup this application on cloud server. Cloud server is grea
 We recommend Digitalocean, Vultr, Linode and AWS
 
 [Bluehost Shared Hosting](https://www.bluehost.com/track/webzakir/)
-[Digitalocean Cloud Hosting](https://m.do.co/c/44ed55706f71)
+[Digitalocean Cloud Hosting](http://go.templatecookie.com/digitalocean)
 
 </template>
 </hightlight-block>
