@@ -1,7 +1,7 @@
 ---
 title: Recaptcha Setting
 position: 6
-category: Getting Started
+category: System Setting
 ---
 
 # Captcha Setup

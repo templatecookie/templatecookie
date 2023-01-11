@@ -92,8 +92,6 @@ The application requires `775` permission to work properly. Set up 775 permissio
 ![](/docs/jobpilot/install/s8.png)
 ![](/docs/jobpilot/install/s9.png)
 
-
-
 ### Step 3: Create a Database
 
 We need a database for the next step. Let's create a database by clicking on the `MYSQL Database Wizard` from your hosting panel. Once the database is created assign all database permission 
