@@ -1,7 +1,7 @@
 ---
 title: Setup Third Party Tool
 position: 31
-category: How to Tutorial
+category: System Setting
 ---
 
 # Setup Third Party Tool 

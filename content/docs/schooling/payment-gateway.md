@@ -1,13 +1,13 @@
 ---
 title: Setup Payment Gateway
 position: 5
-category: How to Tutorial
+category: Getting Started
 ---
 
 # Payment Setting
 To activate payment gateway on your website and receive payment from the customers, You have enable payment gateway's by using API's Keys! Here is where to get them. 
 
-Currently Jobpilot support 4 payment gateways.
+Currently Schooling supports 4 payment gateways.
 1. Paypal
 2. Stripe
 3. Paystack

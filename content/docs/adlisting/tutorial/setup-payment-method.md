@@ -1,13 +1,13 @@
 ---
 title: Setup Payment Gateway
 position: 19
-category: How to Tutorial
+category: Getting Started
 ---
 
 # Payment Setting
 To activate payment gateway on your website and receive payment from the customers, You have enable payment gateway's by using API's Keys! Here is where to get them. 
 
-Currently Jobpilot support 8 payment gateways.
+Currently Adlisting support 8 payment gateways.
 1. Stripe
 2. Paypal
 3. Paystack

@@ -1,7 +1,7 @@
 ---
 title: Recaptcha Setting
 position: 22
-category: How to Tutorial
+category: System Setting
 ---
 
 # Captcha Setup

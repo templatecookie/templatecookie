@@ -1,7 +1,7 @@
 ---
 title: Social Media Login
 position: 16
-category: How to Tutorial
+category: System Setting
 ---
 
 # Social Login
