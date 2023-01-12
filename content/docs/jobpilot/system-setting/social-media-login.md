@@ -50,8 +50,10 @@ Or place all the config values or API keys in the `/.env` file.
 
 LinkedIn example in `/.env` file
 
+```
 LINKEDIN_CLIENT_ID=your-linkedin-client_id
 LINKEDIN_CLIENT_SECRET=your-linkedin-client_secret
+```
 
 NOTE:
 
@@ -74,10 +76,10 @@ Now, you have to setup your admin panel:
 Or place all the config values or API keys in the `/.env` file.
 
 Twitter example in `/.env` file
-
+```
 TWITTER_CLIENT_ID=your-twitter-client_id
 TWITTER_CLIENT_SECRET=your-twitter-client_secret
-
+```
 NOTE:
 
 *   The `/.env` file settings override those of the admin panel.

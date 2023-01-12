@@ -1,7 +1,7 @@
 ---
-title: Email Setup
+title: SMTP Setup
 position: 3
-category: Getting Started
+category: System Setting
 ---
 
 ### What is SMTP?

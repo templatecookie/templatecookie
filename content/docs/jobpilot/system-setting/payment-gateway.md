@@ -1,13 +1,13 @@
 ---
-title: Setup Payment Gateway
-position: 19
-category: How to Tutorial
+title: Payment Gateway
+position: 5
+category: System Setting
 ---
 
 # Payment Setting
 To activate payment gateway on your website and receive payment from the customers, You have enable payment gateway's by using API's Keys! Here is where to get them. 
 
-Currently Jobpilot support 8 payment gateways.
+Currently Jobpilot support 9 payment gateways.
 1. Stripe
 2. Paypal
 3. Paystack
@@ -16,6 +16,7 @@ Currently Jobpilot support 8 payment gateways.
 6. SSl Commerz
 7. Mollie
 8. Midtrans
+9. Instamojo
 
 
 > Attention, you need API keys for every payment provider, which you need to retrieve from your payment gateway provider. Contact your payment gateway's support for any help.
@@ -79,3 +80,10 @@ The Midtrans integration gives your users the ability to pay with via the Midtra
 - Go to [Midtrans](https://midtrans.com/id) and Login to your account.
 - Go to Settings -> Access Keys page on Midtrans get your API key.
 - Go to your product Admin Panel -> Settings -> Payment Gateway -> Manual Payment -> Midtrans and enter the given API Key.
+
+### Instamojo Setup
+The Instamojo integration gives your users the ability to pay with via the Instamojo payment gateway for purchases.
+
+- Go to [Instamojo](https://www.instamojo.com/) and Login to your account.
+- Go to Settings -> Api & Plugins page -> Scroll down to create new credentials -> select "WooCommerce / WordPress click" to generate credentials and get your API key.
+- Go to your product Admin Panel -> Settings -> Payment Gateway -> Manual Payment -> Instamojo and enter the given API Key.

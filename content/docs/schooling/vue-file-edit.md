@@ -2,7 +2,7 @@
 title: Vue File Edit
 description: Installation documentation
 position: 5
-category: Basics
+category: Others
 ---
 
 <!--more-->

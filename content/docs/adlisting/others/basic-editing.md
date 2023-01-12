@@ -5,26 +5,22 @@ position: 40
 category: Others
 ---
 
-<!--more-->
+# Basic Editing
+In this post, I will share with you how to perform basic editing.
 
-# How to edit code
+### Requirements
 
-Last updated: Nov 25th, 2021
+---
 
-## Basics
+You must have basic knowledge of HTML, CSS, PHP & Websites. If you don't have any knowledge, I would recommend not overwriting project files.
 
+### Basics
 Before we get started, let's take a look at the tools we need for editing.
 
 - Code Editor (I recommend [VS Code Editor](https://code.visualstudio.com/) , but you can use any.)
 - Browser (I recommend [Google Chrome](http://chrome.google.com) Any browser is ok)
 
-##### Requirements
-
----
-
-You must have basic knowledge about HTML, CSS & Website. If you don't have any knowledge, I would recommend not to overrite project files.
-
-##### Files and Folder
+### Files and Folder
 
 ---
 
@@ -42,60 +38,21 @@ We Maintain Laravel Structure(MVC) on This Project.
 
 `resources/views & Modules/*/resources/views` if you want need to change anything on view file.
 
-## Route File Edit
+### Route File Edit
 
 You will find all the route files under `routes/web.php & Modules/*/Routes/web.php` Folder. You can open any route file using VS code editor or any.
 
 Application core routes located in route files. If you want to change something. You can do here.
 
-### 1\. Screenshot
+![screenshot](/docs/jobpilot/screenshot/editcode/route.png)
+![screenshot](/docs/jobpilot/screenshot/editcode/route2.png)
 
-![screenshot](/docs/adlisting/screenshot/editcode/route.png)
 
-### 2\. Screenshot
+### Blade File Edit
 
-![screenshot](/docs/adlisting/screenshot/editcode/route2.png)
-
-## Blade File Edit
-
-You will find all the blade files under `resources/views & Modules/*/resources/views` Folder. You can open any file using VS code editor or any.
+You will find all the blade files under `resources/views` and `Modules/*/resources/views` Folder. You can open any file using VS code editor or any.
 
 Application core views code located in blade files. If you want to change something. You can do here.
 
-### 1\. Screenshot
-
-![screenshot](/docs/adlisting/screenshot/editcode/blade.png)
-
-### 2\. Screenshot
-
-![screenshot](/docs/adlisting/screenshot/editcode/blade2.png)
-
-## Controller File Edit
-
-You will find all the controller files under `app/Http/Controllers & Modules/*/Http/Controllers` Folder. You can open any controller using VS code editor or any.
-
-### 1\. Screenshot
-
-![screenshot](/docs/adlisting/screenshot/editcode/controller.png)
-
-### 2\. Screenshot
-
-![screenshot](/docs/adlisting/screenshot/editcode/controller2.png)
-
-## Website Content Change
-
-If you want to change website content like below then you can simply follow the steps.
-
-You will find all the translated line under `resources/lang/en/website.php` Folder. You can open file using VS code editor or any then simply replace it.
-
-### 1\. Screenshot
-
-![screenshot](/docs/adlisting/screenshot/editcode/content.png)
-
-### 2\. Screenshot
-
-![screenshot](/docs/adlisting/screenshot/editcode/content2.png)
-
-### 3\. Screenshot
-
-![screenshot](/docs/adlisting/screenshot/editcode/content3.png)
+![screenshot](/docs/jobpilot/screenshot/editcode/blade.png)
+![screenshot](/docs/jobpilot/screenshot/editcode/blade2.png)

@@ -1,6 +1,6 @@
 ---
-title: Setup SMTP Config
-position: 20
+title: SMTP Setup
+position: 3
 category: How to Tutorial
 ---
 
@@ -20,7 +20,7 @@ To send all the necessary emails, we need an Email Delivery service. Jobpilot us
 **In short, it is used to send emails to your site users..!! You can use any email delivery platform as long as it supports SMTP.** 
 
 ### How to Enable?
-- To enable, Go to `Settings` -> `SMTP`
+- To enable, Go to `Settings` -> `Mail`
 - Add the SMTP details and hit `Update`!
 
  You can test the configuration by sending a test email from the same page. Also, you can use this tool to <a href="https://www.gmass.co/smtp-test" target="_blank"> test your SMTP credentials </a>

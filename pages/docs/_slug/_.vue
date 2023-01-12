@@ -13,11 +13,39 @@
             Table of contents
           </h2>
           <nav class="mt-4">
-            <ul>
+            <ul class="mb-2">
               <li @click="tableOfContentsHeadingClick(link)" class="toc-list" :class="{ 'pl-4': link.depth === 3}" v-for="link of page.toc" :key="link.id">
                 <a role="button" class="transition-colors duration-75 mb-2 block text-gray-700 font-light text-sm"  :class="{ 'text-blue-500 hover:text-blue-600': link.id === currentlyActiveToc, 'text-black hover:gray-900': link.id !== currentlyActiveToc }" :href="`#${link.id}`">{{ link.text }}</a>
               </li>
             </ul>
+            <div class="bg-blue-200 px-3 py-5 rounded-md mt-4">
+              <h3 class="text-xl mb-2"> Buy our products from Envato Market </h3>
+              <a href="https://go.templatecookie.com/codecanyon" target="_blank" class="outline-btn">
+                Buy our products
+                <svg xmlns="http://www.w3.org/2000/svg" class="ml-1" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M122.3,71.4l19.8-19.8a44.1,44.1,0,0,1,62.3,62.3l-28.3,28.2a43.9,43.9,0,0,1-62.2,0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><path d="M133.7,184.6l-19.8,19.8a44.1,44.1,0,0,1-62.3-62.3l28.3-28.2a43.9,43.9,0,0,1,62.2,0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+              </a>
+            </div>
+            <div class="bg-blue-200 px-3 py-5 rounded-md mt-4">
+              <h3 class="text-xl mb-2"> Get VPS Hosting on Cloudways </h3>
+              <a href="http://go.templatecookie.com/cloudways" target="_blank" class="outline-btn">
+                Get Cloudways Hosting
+                <svg xmlns="http://www.w3.org/2000/svg" class="ml-1" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M122.3,71.4l19.8-19.8a44.1,44.1,0,0,1,62.3,62.3l-28.3,28.2a43.9,43.9,0,0,1-62.2,0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><path d="M133.7,184.6l-19.8,19.8a44.1,44.1,0,0,1-62.3-62.3l28.3-28.2a43.9,43.9,0,0,1,62.2,0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+              </a>
+            </div>
+            <div class="bg-blue-200 px-3 py-5 rounded-md mt-4">
+              <h3 class="text-xl mb-2">Get $100 Free Credit on Digitalocean</h3>
+              <a href="http://go.templatecookie.com/digitalocean" target="_blank" class="outline-btn">
+                Get $100 on Digitalocean
+                <svg xmlns="http://www.w3.org/2000/svg" class="ml-1" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M122.3,71.4l19.8-19.8a44.1,44.1,0,0,1,62.3,62.3l-28.3,28.2a43.9,43.9,0,0,1-62.2,0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><path d="M133.7,184.6l-19.8,19.8a44.1,44.1,0,0,1-62.3-62.3l28.3-28.2a43.9,43.9,0,0,1,62.2,0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+              </a>
+            </div>
+            <div class="bg-blue-200 px-3 py-5 rounded-md mt-4">
+              <h3 class="text-xl mb-2">Get Domain & Web Hosting at Cheaper Rate</h3>
+              <a href="http://go.templatecookie.com/namecheap" target="_blank" class="outline-btn">
+                Get Domain & Shared Hosting
+                <svg xmlns="http://www.w3.org/2000/svg" class="ml-1" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M122.3,71.4l19.8-19.8a44.1,44.1,0,0,1,62.3,62.3l-28.3,28.2a43.9,43.9,0,0,1-62.2,0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><path d="M133.7,184.6l-19.8,19.8a44.1,44.1,0,0,1-62.3-62.3l28.3-28.2a43.9,43.9,0,0,1,62.2,0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+              </a>
+            </div>
           </nav>
         </div>
       </aside>

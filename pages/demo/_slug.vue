@@ -59,7 +59,7 @@ export default {
         { hid: 'og:title', property: 'og:title', name: 'og:title', content: product.name },
         { hid: 'og:description', name: 'og:description', name: 'og:description', content: product.description },
         { hid: 'og:type', property: 'og:type', name: 'og:type', content: "product" },
-        { hid: 'og:image', property: 'og:image', name: 'og:image', content: product.banner.url },
+        { hid: 'og:image', property: 'og:image', name: 'og:image', content: product.demoBanner ? product.demoBanner.url : product.banner.url },
       ],
     }
   },
