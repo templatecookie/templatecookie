@@ -1,7 +1,7 @@
 ---
 title: Map Setup
 position: 4
-category: System Setting
+category: Getting Started
 ---
 # Map Setup
 

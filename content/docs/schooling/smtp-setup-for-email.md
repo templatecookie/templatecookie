@@ -1,7 +1,7 @@
 ---
 title: SMTP Setup
 position: 3
-category: How to Tutorial
+category: Getting Started
 ---
 
 ### What is SMTP?

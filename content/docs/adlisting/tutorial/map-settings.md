@@ -1,11 +1,11 @@
 ---
 title: Map Setup
 position: 17
-category: How to Tutorial
+category: Getting Started
 ---
 # Map Setup
 
-In short, Jobpilot supports 3 different map service providers. You can use any of them 
+In short, Adlisting supports 3 different map service providers. You can use any of them 
 - Leaftlet (Free) 
 - Mapbox (Require API keys)
 - Google Map (Required API keys)
