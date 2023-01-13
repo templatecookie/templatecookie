@@ -18,10 +18,10 @@
           </li>
         </ul>
         <div class="mt-8">
-          <a v-if="checkout" href="#" @click.prevent="openCheckout(item.paddleProductId)" class="inline-block w-full rounded-lg bg-primary px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-secondary">
+          <a v-if="item.paddleCheckout" href="#" @click.prevent="openCheckout(item.paddleProductId)" class="inline-block w-full rounded-lg bg-primary px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-secondary">
             Get started now
           </a>
-          <a v-else :href="item.purchaseLink" class="inline-block w-full rounded-lg bg-primary px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-secondary">
+          <a v-else :href="item.purchaseLink" target="_blank" class="inline-block w-full rounded-lg bg-primary px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-secondary">
             Get started now
           </a>
         </div>
@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  props: ['item', 'checkout'],
+  props: ['item'],
   methods: {
     openCheckout(product) {
       Paddle.Checkout.open({ product: product });

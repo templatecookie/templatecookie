@@ -28,6 +28,7 @@ export default gql`
           price
           purchaseLink
           paddleProductId
+          paddleCheckout
           theme
           features {
             name
