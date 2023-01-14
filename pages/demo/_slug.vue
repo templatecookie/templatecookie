@@ -63,30 +63,34 @@ export default {
       ],
     }
   },
-  async asyncData({ app, params, store, query  }) {
-    const client = app.apolloProvider.defaultClient;
-    const draft = app.apolloProvider.clients.draft
-    const { slug } = params;
-    const queryObject = { query: PRODUCT_DEMO, variables: { slug } };
-    let productData;
+  async asyncData({ app, params, store, query, $sentry }) {
+    try {
+      const client = app.apolloProvider.defaultClient;
+      const draft = app.apolloProvider.clients.draft
+      const { slug } = params;
+      const queryObject = { query: PRODUCT_DEMO, variables: { slug } };
+      let productData;
 
-    if(query && query.draft){
-      productData = await draft.query(queryObject)
-    }else {
-      productData = await client.query(queryObject)
+      if(query && query.draft){
+        productData = await draft.query(queryObject)
+      }else {
+        productData = await client.query(queryObject)
+      }
+
+      if(!store.getters.getGlobalData){
+        const global = await client.query({
+          query: GLOBAL_QUERY,
+        })
+
+        const globalData = global.data?.global?.data?.attributes
+        store.commit('SET_GLOBAL_DATA', globalData)
+      }
+
+      const product = productData.data.product;
+      return { product }
+    } catch (error) {
+      $sentry.captureException(error)
     }
-
-    if(!store.getters.getGlobalData){
-      const global = await client.query({
-        query: GLOBAL_QUERY,
-      })
-
-      const globalData = global.data?.global?.data?.attributes
-      store.commit('SET_GLOBAL_DATA', globalData)
-    }
-
-    const product = productData.data.product;
-    return { product }
   },
 
   components: {

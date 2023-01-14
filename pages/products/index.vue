@@ -70,17 +70,21 @@ export default {
       }
     ],
   },
-  async asyncData({ app, query, $config }) {
-    const client = app.apolloProvider.defaultClient;
+  async asyncData({ app, query, $config, $sentry }) {
+    try {
+      const client = app.apolloProvider.defaultClient;
 
-    let productData = await client.query({
-      query: ALL_PRODUCTS,
-    })
+      let productData = await client.query({
+        query: ALL_PRODUCTS,
+      })
 
-    const products = productData.data.allProducts;
-    const pagination = productData.data.allProducts;
-    const categories = productData.data.allCategories;
-    return { products, pagination, categories }
+      const products = productData.data.allProducts;
+      const pagination = productData.data.allProducts;
+      const categories = productData.data.allCategories;
+      return { products, pagination, categories }
+    } catch (error) {
+      $sentry.captureException(error)
+    }
   },
   data() {
     return {

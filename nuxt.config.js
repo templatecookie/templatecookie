@@ -115,7 +115,8 @@ export default {
     '@nuxt/content',
     '@nuxtjs/gtm',
     '@nuxt/image',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/sentry',
   ],
 
   sitemap: {
@@ -128,6 +129,13 @@ export default {
     ],
     routes: linkages,
     trailingSlash: true
+  },
+
+  sentry: {
+    dsn: 'https://72cc635251b84e40964ee9111b009c8e@o1134535.ingest.sentry.io/6438928',
+    publishRelease: true,
+    sourceMapStyle: 'hidden-source-map',
+    lazy: true,
   },
 
   gtm: {

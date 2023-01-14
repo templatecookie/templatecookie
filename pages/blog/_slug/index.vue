@@ -87,21 +87,25 @@ export default {
       ],
     }
   },
-  async asyncData({ app, params, store }) {
-    const client = app.apolloProvider.defaultClient;
-    const { slug } = params;
+  async asyncData({ app, params, store, $sentry }) {
+    try {
+      const client = app.apolloProvider.defaultClient;
+      const { slug } = params;
 
-    const { data } = await client.query({
-      query: BLOG_DETAILS,
-      variables: {
-        slug
-      }
-    })
+      const { data } = await client.query({
+        query: BLOG_DETAILS,
+        variables: {
+          slug
+        }
+      })
 
-    const post = data.post;
-    const relatedPosts = data.allPosts;
+      const post = data.post;
+      const relatedPosts = data.allPosts;
 
-    return { post, relatedPosts }
+      return { post, relatedPosts }
+    } catch (error) {
+      $sentry.captureException(error)
+    }
   }
 }
 </script>

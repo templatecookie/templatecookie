@@ -74,12 +74,16 @@ export default {
       ]
     }
   },
-  async asyncData ({ $content, route}) {
-    const page = await $content(route.path)
-    .sortBy('position', 'asc')
-    .fetch()
-    return {
-      page
+  async asyncData ({ $content, route, $sentry}) {
+    try{
+      const page = await $content(route.path)
+      .sortBy('position', 'asc')
+      .fetch()
+      return {
+        page
+      }
+    } catch (error) {
+      $sentry.captureException(error)
     }
   },
   computed: {

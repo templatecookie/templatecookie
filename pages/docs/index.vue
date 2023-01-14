@@ -50,15 +50,19 @@ export default {
       bannerImg: "/images/img-five.png",
     };
   },
-  async asyncData({ $content }) {
-    const products = await $content("docs", {deep: true})
-      .where({slug: {$eq: "index"}})
-      .where({status: true })
-      .sortBy("position", "asc")
-      .fetch();
-    return {
-      products
-    };
+  async asyncData({ $content, $sentry }) {
+    try {
+      const products = await $content("docs", {deep: true})
+        .where({slug: {$eq: "index"}})
+        .where({status: true })
+        .sortBy("position", "asc")
+        .fetch();
+      return {
+        products
+      };
+    } catch (error) {
+      $sentry.captureException(error)
+    }
   },
   components: {
     ProductItem
