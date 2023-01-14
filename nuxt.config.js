@@ -133,8 +133,8 @@ export default {
 
   sentry: {
     dsn: 'https://72cc635251b84e40964ee9111b009c8e@o1134535.ingest.sentry.io/6438928',
-    publishRelease: true,
-    sourceMapStyle: 'hidden-source-map',
+    // publishRelease: true,
+    // sourceMapStyle: 'hidden-source-map',
     lazy: true,
   },
 
