@@ -75,7 +75,7 @@ export default {
     const seoTitle = `${postDetails.title} | Templatecookie.com`;
     const seoDesc = postDetails.shortDescription;
     return {
-      title: title,
+      title: seoTitle,
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -83,7 +83,7 @@ export default {
         { hid: 'og:title', property: 'og:title', name: 'og:title', content: seoTitle },
         { hid: 'og:description', name: 'og:description', name: 'og:description', content: seoDesc },
         { hid: 'og:type', property: 'og:type', name: 'og:type', content: "article" },
-        { hid: 'og:image', property: 'og:image', name: 'og:image', content: post.image.url },
+        { hid: 'og:image', property: 'og:image', name: 'og:image', content: postDetails.image.url },
       ],
     }
   },
