@@ -59,15 +59,19 @@ export default {
       bannerImg: "/images/img-five.png",
     };
   },
-  async asyncData({ app, params, store }) {
-    const client = app.apolloProvider.defaultClient;
+  async asyncData({ app, params, store, $sentry }) {
+    try {
+      const client = app.apolloProvider.defaultClient;
 
-    const { data } = await client.query({
-      query: ALL_PRODUCT_PLANS,
-    })
+      const { data } = await client.query({
+        query: ALL_PRODUCT_PLANS,
+      })
 
-    const products = data.allProductplans;
-    return { products }
+      const products = data.allProductplans;
+      return { products }
+    } catch (error) {
+      $sentry.captureException(error)
+    }
   },
 
   computed: {

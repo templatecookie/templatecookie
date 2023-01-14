@@ -79,18 +79,22 @@ export default {
       ],
     }
   },
-  async asyncData({ app }) {
-    const client = app.apolloProvider.defaultClient;
+  async asyncData({ app, $sentry }) {
+    try {
+      const client = app.apolloProvider.defaultClient;
 
-    const { data } = await client.query({
-      query: HOMEPAGE_QUERY,
-    })
+      const { data } = await client.query({
+        query: HOMEPAGE_QUERY,
+      })
 
-    const homepage = data.homepage;
-    const latestProducts = data.allProducts;
-    const latestPosts = data.allPosts;
+      const homepage = data.homepage;
+      const latestProducts = data.allProducts;
+      const latestPosts = data.allPosts;
 
-    return { homepage, latestProducts, latestPosts }
+      return { homepage, latestProducts, latestPosts }
+    } catch (error) {
+      $sentry.captureException(error)
+    }
   },
   data() {
     return {

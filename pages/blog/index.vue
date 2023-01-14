@@ -47,15 +47,19 @@ export default {
       ],
     }
   },
-  async asyncData({ app, params, store }) {
-    const client = app.apolloProvider.defaultClient;
+  async asyncData({ app, params, store, $sentry }) {
+    try {
+      const client = app.apolloProvider.defaultClient;
 
-    const { data } = await client.query({
-      query: ALL_BLOG_QUERY,
-    })
+      const { data } = await client.query({
+        query: ALL_BLOG_QUERY,
+      })
 
-    const posts = data.allPosts;
-    return { posts }
+      const posts = data.allPosts;
+      return { posts }
+    } catch (error) {
+      $sentry.captureException(error)
+    }
   },
 }
 </script>
