@@ -7,23 +7,17 @@
             <nuxt-link to="/">Home </nuxt-link>
           </li>
           <li class="leading-3 whitespace-nowrap">
-            <img src="/icons/arrow-gray.svg" alt="" />
+            <img src="/icons/arrow-gray.svg" alt="Templatecookie Arrow Right Icon" />
           </li>
           <li class="leading-3 whitespace-nowrap">
             <nuxt-link :to="{ name: 'products'}">Products</nuxt-link>
           </li>
           <li class="leading-3 whitespace-nowrap">
-            <img src="/icons/arrow-gray.svg" alt="" />
+            <img src="/icons/arrow-gray.svg" alt="Templatecookie Arrow Right Icon" />
           </li>
           <li class="leading-3 whitespace-nowrap" v-if="category && category.attributes">
             <nuxt-link to="#">{{ category.attributes.name }}</nuxt-link>
           </li>
-          <!-- <li class="leading-3 whitespace-nowrap">
-            <img src="/icons/arrow-gray.svg" alt="" />
-          </li>
-          <li class="leading-3 whitespace-nowrap">
-            <nuxt-link to="#">Figma</nuxt-link>
-          </li> -->
         </ul>
       </div>
 

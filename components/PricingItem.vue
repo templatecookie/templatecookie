@@ -12,7 +12,7 @@
         <ul role="list" class="space-y-6">
           <li v-for="feature in item.features" :key="feature.id" class="flex items-start">
             <div class="flex-shrink-0">
-              <img src="/icons/check.svg" alt="">
+              <img src="/icons/check.svg" alt="Templatecookie Check Icon">
             </div>
             <p class="ml-3 text-sm leading-6 text-gray-600">{{ feature.name }}</p>
           </li>

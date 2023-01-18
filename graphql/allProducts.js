@@ -8,6 +8,7 @@ export default gql`
       name
       description
       slug
+      shortName
       banner {
         url
       }

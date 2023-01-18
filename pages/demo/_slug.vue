@@ -30,7 +30,6 @@
 </template>
 
 <script>
-import PurchaseCard from "~/components/PurchaseCard.vue";
 import PRODUCT_DEMO from '~/graphql/productDemo'
 import GLOBAL_QUERY from '~/graphql/global'
 import ProductTopFeatures from '~/components/Demo/ProductTopFeatures.vue';

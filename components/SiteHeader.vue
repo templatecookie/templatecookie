@@ -39,11 +39,10 @@
                     <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
                       <nuxt-link :to="{ name: 'demo-slug', params: {slug: product.slug} }" v-for="(product, index) in global.selectedProducts" :key="index" class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
                         <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-primary text-white sm:h-12 sm:w-12">
-                          <img class="w-full h-full object-cover rounded-md" v-if="product.thumbnail" :src="product.thumbnail.url" />
+                          <img class="w-full h-full object-cover rounded-md" v-if="product.thumbnail" :src="product.thumbnail.url" :alt="product.name" />
                         </div>
                         <div class="ml-4">
                           <p class="text-base font-medium text-gray-900">{{ product.name }}</p>
-                          <!-- <p class="mt-1 text-sm text-gray-500">Get a better understanding of where your traffic is coming from.</p> -->
                         </div>
                       </nuxt-link>
                     </div>
@@ -91,7 +90,7 @@
                   <nav class="grid grid-cols-1 gap-7">
                     <nuxt-link :to="{ name: 'demo-slug', params: {slug: product.slug} }" v-for="(product, index) in global.selectedProducts" :key="index" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
                       <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-primary text-white">
-                        <img class="w-full h-full object-cover rounded-md" v-if="product.thumbnail" :src="product.thumbnail.url" />
+                        <img class="w-full h-full object-cover rounded-md" v-if="product.thumbnail" :src="product.thumbnail.url" :alt="product.name" />
                       </div>
                       <div class="ml-4 text-base font-medium text-gray-900">{{ product.name }}</div>
                     </nuxt-link>
