@@ -18,7 +18,7 @@
             <div class="tabcontent">
               <div class="h-[340px] md:h-[600px] overflow-hidden rounded-20">
                 <img class="rounded-20"
-                  :src="activeItem" alt="" />
+                  :src="activeItem" :alt="data.title" />
               </div>
             </div>
           </div>

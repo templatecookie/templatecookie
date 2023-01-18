@@ -41,6 +41,7 @@ query {
     selectedProducts {
       name
       slug
+      shortName
       thumbnail {
         url
       }

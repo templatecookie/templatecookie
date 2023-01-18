@@ -23,7 +23,7 @@
               <a href="#" v-for="(tag, index) in post.tags" :key="index"> {{ tag.name }}, </a>
             </div>
           </div>
-          <img class="w-full h-auto object-cover" v-if="post.image && post.image.url" :src="post.image.url" alt="">
+          <img class="w-full h-auto object-cover" v-if="post.image && post.image.url" :src="post.image.url" :alt="post.title">
           <div class="content py-4 markdown-body">
             <structured-text :data="post.description" :renderInlineRecord="renderInlineRecord" renderLinkToRecord="renderLinkToRecord" />
           </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-900" :id="id">
     <div class="relative overflow-hidden pt-32 pb-96 lg:pt-40">
-      <div><img class="absolute bottom-0 left-1/2 w-[1440px] max-w-none -translate-x-1/2" src="https://tailwindui.com/img/component-images/grid-blur-purple-on-black.jpg" alt="" /></div>
+      <div><img class="absolute bottom-0 left-1/2 w-[1440px] max-w-none -translate-x-1/2" src="/images/grid-blur-purple-on-black.jpg" alt="Teplatecookie Pricing Section Background" /></div>
       <div class="relative mx-auto max-w-7xl px-6 text-center lg:px-8">
         <div class="mx-auto max-w-2xl lg:max-w-4xl">
           <h2 class="text-lg font-semibold leading-8 text-primary/70">Pricing</h2>

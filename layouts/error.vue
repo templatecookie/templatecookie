@@ -1,9 +1,6 @@
 <template>
   <div class="bg-white">
     <main class="mx-auto w-full max-w-7xl px-6 lg:px-8">
-      <!-- <div class="flex-shrink-0 pt-16">
-        <img class="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company">
-      </div> -->
       <div class="mx-auto max-w-xl py-16 sm:py-32">
         <div v-if="error.statusCode === 404"  class="text-center">
           <p class="text-base font-semibold text-primary">404</p>

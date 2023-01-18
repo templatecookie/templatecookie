@@ -59,19 +59,13 @@
     <div class="bg-gray-800" v-if="product.logoCloudsImages && product.logoCloudsTitle">
       <div class="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <h2 class="text-center text-base font-semibold text-gray-400">{{ product.logoCloudsTitle }}</h2>
-        <!-- <div class="mt-8 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-          <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1" v-for="(item, index) in product.logoCloudsImages" :key="index">
-            <img class="h-12" :src="item.url" alt="Tuple">
-          </div>
-        </div> -->
-
-      <swiper class="swiper" :options="swiperOptionOne">
-        <swiper-slide class="mt-8 slider-full" v-for="(item, index) in product.logoCloudsImages" :key="index">
-          <div class="flex justify-center bg-white py-2 px-4 rounded">
-            <img class="h-12" :src="item.url" alt="Tuple">
-          </div>
-        </swiper-slide>
-      </swiper>
+        <swiper class="swiper" :options="swiperOptionOne">
+          <swiper-slide class="mt-8 slider-full" v-for="(item, index) in product.logoCloudsImages" :key="index">
+            <div class="flex justify-center bg-white py-2 px-4 rounded">
+              <img class="h-12" :src="item.url" :alt="item.alt">
+            </div>
+          </swiper-slide>
+        </swiper>
       </div>
     </div>
   </div>

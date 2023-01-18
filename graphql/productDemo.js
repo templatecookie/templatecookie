@@ -9,6 +9,7 @@ query product($slug: String!){
     description
     docsUrl
     previewUrl
+    shortName
     banner {
       url
     }
@@ -18,6 +19,7 @@ query product($slug: String!){
     logoCloudsTitle
     logoCloudsImages {
       url
+      alt
     }
     seo{
       title
@@ -103,6 +105,7 @@ query product($slug: String!){
         }
         screenshots {
           url
+          alt
         }
       }
       ... on TopfeatureRecord {
@@ -136,6 +139,7 @@ query product($slug: String!){
         cssClass
         screenshots {
           url
+          alt
         }
       }
       ... on PriceplanRecord {
