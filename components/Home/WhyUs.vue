@@ -19,7 +19,7 @@
               </div>
               <div class="text-center sm:text-left">
                 <h2 class="text-2xl font-medium textdark mb-2">
-                  <ICountUp :delay="400" :endVal="item.counter" :options="options" />{{ item.title }}
+                  {{item.counter}}{{ item.title }}
                 </h2>
                 <p class="text-sm text-dark-gray uppercase whitespace-nowrap overflow-ellipsis">
                   {{ item.description }}
@@ -55,11 +55,8 @@
 </template>
 
 <script>
-import ICountUp from "vue-countup-v2";
-
 export default {
   props: ['data'],
-  components: { ICountUp },
   data() {
     return {
       options: {
