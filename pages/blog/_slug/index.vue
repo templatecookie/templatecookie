@@ -25,7 +25,7 @@
           </div>
           <img class="w-full h-auto object-cover" v-if="post.image && post.image.url" :src="post.image.url" alt="">
           <div class="content py-4 markdown-body">
-            <structured-text :data="post.description" />
+            <structured-text :data="post.description" :renderInlineRecord="renderInlineRecord" renderLinkToRecord="renderLinkToRecord" />
           </div>
         </div>
         <section class="text-gray-600 body-font overflow-hidden pt-14 lg:pt-20">
@@ -69,6 +69,7 @@
 
 <script>
 import BLOG_DETAILS from '~/graphql/blog/postDetails'
+
 export default {
   head() {
     const postDetails = this.post
@@ -87,6 +88,7 @@ export default {
       ],
     }
   },
+
   async asyncData({ app, params, store, $sentry }) {
     try {
       const client = app.apolloProvider.defaultClient;
@@ -106,6 +108,33 @@ export default {
     } catch (error) {
       $sentry.captureException(error)
     }
+  },
+
+  methods: {
+    renderInlineRecord: ({ record, h }) => {
+      switch (record.__typename) {
+        case 'ProductRecord':
+          return h('nuxt-link', { href: `/demo/${record.slug}` }, record.firstName);
+        case 'PostRecord':
+          return h('nuxt-link', { ...transformedMeta, to: `/blog/${record.slug}` }, children, );
+        case 'TagRecord':
+          return h('nuxt-link', { ...transformedMeta, to: `/blog/${record.slug}` }, children, );
+        default:
+          return null;
+      }
+    },
+    renderLinkToRecord: ({ record, h, children, transformedMeta }) => {
+      switch (record.__typename) {
+        case 'TeamMemberRecord':
+          return h(
+            'a',
+            { ...transformedMeta, href: `/team/${record.slug}` },
+            children,
+          );
+        default:
+          return null;
+      }
+    },
   }
 }
 </script>
