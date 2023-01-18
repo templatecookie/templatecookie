@@ -34,7 +34,7 @@
           <span class="block"> Build Better Products </span>
           <span class="block"> Hire us today </span>
         </h2>
-        <p class="mt-4 text-lg leading-6 text-indigo-200">
+        <p class="mt-4 text-lg leading-6 text-white">
           Our team composed with expert designer and developers to handle project at any size
         </p>
         <div class="flex flex-wrap gap-4 justify-center">
