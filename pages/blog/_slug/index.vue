@@ -50,7 +50,7 @@
                     {{ item.shortDescription }}
                   </p>
                   <nuxt-link :to="{ name: 'blog-slug', params: { slug: item.slug }}" class="text-blue-500 inline-flex items-center mt-4">
-                    Blog Details
+                    Read More
                     <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
                       stroke-linecap="round" stroke-linejoin="round">
                       <path d="M5 12h14"></path>
