@@ -6,9 +6,9 @@
     </nuxt-link>
 
     <div class="product-card__text" :class="large ? 'p-8' : 'p-6'">
-      <h6 class="tracking-widest font-normal text-secondary uppercase m-0 mb-1" :class=" large ? 'text-sm' : 'text-sm'" v-if="product.category" >
+      <div class="tracking-widest font-normal text-secondary uppercase m-0 mb-1" :class=" large ? 'text-sm' : 'text-sm'" v-if="product.category" >
         {{ product.category.name }}
-      </h6>
+      </div>
 
       <h2 class="textdark mb-3 font-normal" :class="large ? 'text-2xl' : 'text-lg'">
         {{ product.name }}
