@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-900" :id="id">
     <div class="relative overflow-hidden pt-32 pb-96 lg:pt-40">
-      <div><img class="absolute bottom-0 left-1/2 w-[1440px] max-w-none -translate-x-1/2" src="/images/grid-blur-purple-on-black.jpg" alt="Teplatecookie Pricing Section Background" /></div>
+      <div><img class="absolute bottom-0 left-1/2 w-full max-w-none -translate-x-1/2" src="/images/grid-blur-purple-on-black.jpg" alt="Teplatecookie Pricing Section Background" /></div>
       <div class="relative mx-auto max-w-7xl px-6 text-center lg:px-8">
         <div class="mx-auto max-w-2xl lg:max-w-4xl">
           <h2 class="text-lg font-semibold leading-8 text-primary/70">Pricing</h2>
@@ -42,7 +42,7 @@
             <div class="lg:min-w-0 lg:flex-1">
               <h3 class="text-lg font-semibold leading-8 tracking-tight text-primary">Request Customization</h3>
               <div class="mt-2 text-base leading-7 text-gray-600">
-                We built our product with the most flexible system and features that can be customized based on your exact business needs. Our creative and experienced developers are ready to make all the changes that you need for your business.
+                We designed our product with the most adaptable system and features that may be altered in accordance with your unique company requirements. Our talented and knowledgeable developers are prepared to implement all the adjustments you require for your company.
               </div>
             </div>
             <div>
