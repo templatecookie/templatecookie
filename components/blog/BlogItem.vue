@@ -13,7 +13,7 @@
       <p class="leading-relaxed mb-3">
         {{ item.shortDescription }}
       </p>
-      <div class="flex items-center flex-wrap ">
+      <!-- <div class="flex items-center flex-wrap ">
         <nuxt-link :to="{ name: 'blog-slug', params: { slug: item.slug }}" class="text-green-500 inline-flex items-center md:mb-2 lg:mb-0">
           Read More
           <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -21,7 +21,7 @@
             <path d="M12 5l7 7-7 7"></path>
           </svg>
         </nuxt-link>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
