@@ -8,6 +8,10 @@ category: Others
 # Changelog
 
 ## January
+### v2.30.11 - 24th January, 2022
+```
+- Leaflet map region not save issue fix
+```
 ### v2.30.10 - 3rd January, 2022
 ```
 - Website responsive design issue fix
