@@ -10,7 +10,7 @@ category: Others
 ## January
 ### v2.31.1 - 24th January, 2022
 ```
-- Admin dashboard company update issues fixed
+- Admin dashboard company update issues fix
 - Admin dashboard candidate update mail notification added
 ```
 ### v2.30.11 - 24th January, 2022
