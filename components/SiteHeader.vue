@@ -56,7 +56,7 @@
             <nuxt-link v-for="(item, index) in menuItems" :key="index" :to="item.url" class="text-base font-medium text-gray-500 hover:text-gray-900">{{ item.name }}</nuxt-link>
           </nav>
           <div class="hidden items-center justify-end lg:flex md:flex-1 lg:w-0">
-            <nuxt-link to="/hire-us" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">Hire Us</nuxt-link>
+            <nuxt-link to="/hire-us" class="whitespace-nowrap lg:hidden xl:block block text-base font-medium text-gray-500 hover:text-gray-900">Hire Us</nuxt-link>
             <nuxt-link to="/installation-plans" class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-primary px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-secondary">Installation Plans</nuxt-link>
           </div>
         </div>
