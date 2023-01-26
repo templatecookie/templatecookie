@@ -9,9 +9,11 @@
               <img class="h-8 w-auto sm:h-10" :src="data.url" alt="Templatecookie.com Premium Quality Scripts & HTML Templates">
             </nuxt-link>
           </div>
-          <div class="-my-2 -mr-2 lg:hidden ml-auto">
-            <div @click="mobileNav = !mobileNav" class="toggle" :class="{ 'active' : mobileNav }">
-              <span></span>
+          <div class="lg:hidden ml-auto">
+            <div @click="mobileNav = !mobileNav" class="toggle flex flex-col gap-1" :class="{ 'active' : mobileNav }">
+              <span class="w-5 h-0.5 bg-gray-700 inline-flex"></span>
+              <span class="w-5 h-0.5 bg-gray-700 inline-flex"></span>
+              <span class="w-5 h-0.5 bg-gray-700 inline-flex"></span>
             </div>
           </div>
           <nav class="hidden space-x-6 lg:flex items-center">
