@@ -46,7 +46,7 @@
               </div>
             </div>
             <div>
-              <a href="#" class="inline-block rounded-lg bg-indigo-50 px-4 py-2.5 text-center text-sm font-semibold leading-5 text-secondary hover:bg-indigo-100">Request Customization Now <span aria-hidden="true">&rarr;</span></a>
+              <nuxt-link to="/hire-us" class="inline-block rounded-lg bg-indigo-50 px-4 py-2.5 text-center text-sm font-semibold leading-5 text-secondary hover:bg-indigo-100">Request Customization Now <span aria-hidden="true">&rarr;</span></nuxt-link>
             </div>
           </div>
         </div>
