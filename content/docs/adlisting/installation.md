@@ -40,7 +40,7 @@ Before you install **Adlisting** make sure your server meets the following requi
 <div class="bg-gray-200 rounded-xl px-4 py-6">
   <section id="installation-services">
       <h2>Installation Services</h2>
-      <p>I also offer quality installation services at a low cost if you do not want to bother with the installation process.</p>
+      <p>If you prefer not to deal with installation setup, we provide professional installation services at a reasonable price.</p>
       <div id="product-installation">
           <h3>Product Installation - $35</h3>
           <p>The product installation package includes the following:</p>
