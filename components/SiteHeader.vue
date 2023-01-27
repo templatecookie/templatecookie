@@ -9,9 +9,11 @@
               <img class="h-8 w-auto sm:h-10" :src="data.url" alt="Templatecookie.com Premium Quality Scripts & HTML Templates">
             </nuxt-link>
           </div>
-          <div class="-my-2 -mr-2 lg:hidden ml-auto">
-            <div @click="mobileNav = !mobileNav" class="toggle" :class="{ 'active' : mobileNav }">
-              <span></span>
+          <div class="lg:hidden ml-auto">
+            <div @click="mobileNav = !mobileNav" class="toggle flex flex-col gap-1" :class="{ 'active' : mobileNav }">
+              <span class="w-5 h-0.5 bg-gray-700 inline-flex"></span>
+              <span class="w-5 h-0.5 bg-gray-700 inline-flex"></span>
+              <span class="w-5 h-0.5 bg-gray-700 inline-flex"></span>
             </div>
           </div>
           <nav class="hidden space-x-6 lg:flex items-center">
@@ -54,7 +56,7 @@
             <nuxt-link v-for="(item, index) in menuItems" :key="index" :to="item.url" class="text-base font-medium text-gray-500 hover:text-gray-900">{{ item.name }}</nuxt-link>
           </nav>
           <div class="hidden items-center justify-end lg:flex md:flex-1 lg:w-0">
-            <nuxt-link to="/hire-us" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">Hire Us</nuxt-link>
+            <nuxt-link to="/hire-us" class="whitespace-nowrap lg:hidden xl:block block text-base font-medium text-gray-500 hover:text-gray-900">Hire Us</nuxt-link>
             <nuxt-link to="/installation-plans" class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-primary px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-secondary">Installation Plans</nuxt-link>
           </div>
         </div>
