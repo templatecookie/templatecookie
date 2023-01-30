@@ -1,7 +1,7 @@
 ---
 title: Maintainance Mode
 position: 31
-category: How to Tutorial
+category: System Setting
 ---
 
 ## Maintenance Mode

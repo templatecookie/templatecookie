@@ -6,9 +6,9 @@
     </nuxt-link>
 
     <div class="product-card__text" :class="large ? 'p-8' : 'p-6'">
-      <h6 class="tracking-widest font-normal text-secondary uppercase m-0 mb-1" :class=" large ? 'text-sm' : 'text-sm'" v-if="product.category" >
+      <div class="tracking-widest font-normal text-secondary uppercase m-0 mb-1" :class=" large ? 'text-sm' : 'text-sm'" v-if="product.category" >
         {{ product.category.name }}
-      </h6>
+      </div>
 
       <h2 class="textdark mb-3 font-normal" :class="large ? 'text-2xl' : 'text-lg'">
         {{ product.name }}
@@ -22,7 +22,7 @@
         <div class="flex items-center space-x-3 order-2 sm:order-1">
           <div>
             <nuxt-link :to="{ name: 'demo-slug', params: {slug: product.slug} }" class="flex items-center overflow-hidden border border-primary text-primary rounded-lg group py-3.5 px-9 whitespace-nowrap product-card__button">
-              Learn More
+              View Details
               <span class="inline-block ml-2">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3.75 12H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"

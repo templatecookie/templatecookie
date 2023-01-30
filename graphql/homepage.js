@@ -82,6 +82,7 @@ query {
     name
     description
     slug
+    shortName
     banner {
       url
     }

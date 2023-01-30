@@ -1,7 +1,7 @@
 ---
 title: Payment Gateway
 position: 5
-category: System Setting
+category: Getting Started
 ---
 
 # Payment Setting

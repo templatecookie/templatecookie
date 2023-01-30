@@ -5,24 +5,7 @@
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl" data-aos="flip-up">From the blog</h2>
         <p class="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4" data-aos="flip-up" data-aos-delay="100">Learn more about our products, latest news and how to tutorial </p>
       </div>
-      <div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
-        <!-- <div v-for="post in posts" :key="post.title" class="flex flex-col overflow-hidden rounded-lg shadow-lg">
-          <div class="flex-shrink-0">
-            <img class="h-48 w-full object-cover" :src="post.imageUrl" alt="" />
-          </div>
-          <div class="flex flex-1 flex-col justify-between bg-white p-6">
-            <div class="flex-1">
-              <p class="text-sm font-medium text-indigo-600">
-                <a :href="post.category.href" class="hover:underline">{{ post.category.name }}</a>
-              </p>
-              <a :href="post.href" class="mt-2 block">
-                <p class="text-xl font-semibold text-gray-900">{{ post.title }}</p>
-                <p class="mt-3 text-base text-gray-500">{{ post.description }}</p>
-              </a>
-            </div>
-          </div>
-        </div> -->
-
+      <div class="mx-auto mt-12 grid gap-5 lg:max-w-none sm:grid-cols-2 lg:grid-cols-3">
         <blog-item data-aos="fade-up" :data-aos-delay="index * 100" :item="item" v-for="(item, index) in data" :key="index"/>
       </div>
     </div>

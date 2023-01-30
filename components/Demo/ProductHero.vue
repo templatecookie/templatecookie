@@ -38,8 +38,9 @@
               Buy Now
             </a>
             <a :href="product.previewUrl" target="_blank"
-              class="block text-center sm:inline-block font-medium border-1.5 border-white rounded-7 py-3.5 px-8 text-lg text-white duration-300 bg-dark">
-              Try For Free!
+              class="text-center font-medium border-1.5 border-white rounded-7 py-3.5 px-8 text-lg text-white duration-300 bg-dark flex items-center">
+              View Live Demo
+              <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,56C48,56,16,128,16,128s32,72,112,72,112-72,112-72S208,56,128,56Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></path><circle cx="128" cy="128" r="32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></circle></svg>
             </a>
           </div>
         </div>
@@ -58,19 +59,13 @@
     <div class="bg-gray-800" v-if="product.logoCloudsImages && product.logoCloudsTitle">
       <div class="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <h2 class="text-center text-base font-semibold text-gray-400">{{ product.logoCloudsTitle }}</h2>
-        <!-- <div class="mt-8 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-          <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1" v-for="(item, index) in product.logoCloudsImages" :key="index">
-            <img class="h-12" :src="item.url" alt="Tuple">
-          </div>
-        </div> -->
-
-      <swiper class="swiper" :options="swiperOptionOne">
-        <swiper-slide class="mt-8 slider-full" v-for="(item, index) in product.logoCloudsImages" :key="index">
-          <div class="flex justify-center bg-white/10 py-2 px-4 rounded">
-            <img class="h-12" :src="item.url" alt="Tuple">
-          </div>
-        </swiper-slide>
-      </swiper>
+        <swiper class="swiper" :options="swiperOptionOne">
+          <swiper-slide class="mt-8 slider-full" v-for="(item, index) in product.logoCloudsImages" :key="index">
+            <div class="flex justify-center bg-white py-2 px-4 rounded">
+              <img class="h-12" :src="item.url" :alt="item.alt">
+            </div>
+          </swiper-slide>
+        </swiper>
       </div>
     </div>
   </div>

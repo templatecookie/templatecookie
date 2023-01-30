@@ -13,7 +13,7 @@
     <section class="text-gray-600 body-font bg-gray-50">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 py-24">
         <div class="flex flex-wrap -m-4" v-if="posts.length">
-          <div class="p-4 md:w-1/3" v-for="(item, i) in posts" :key="i">
+          <div class="p-4 lg:w-1/3 sm:w-1/2" v-for="(item, i) in posts" :key="i">
             <blog-item :item="item" />
           </div>
         </div>
@@ -47,15 +47,19 @@ export default {
       ],
     }
   },
-  async asyncData({ app, params, store }) {
-    const client = app.apolloProvider.defaultClient;
+  async asyncData({ app, params, store, $sentry }) {
+    try {
+      const client = app.apolloProvider.defaultClient;
 
-    const { data } = await client.query({
-      query: ALL_BLOG_QUERY,
-    })
+      const { data } = await client.query({
+        query: ALL_BLOG_QUERY,
+      })
 
-    const posts = data.allPosts;
-    return { posts }
+      const posts = data.allPosts;
+      return { posts }
+    } catch (error) {
+      $sentry.captureException(error)
+    }
   },
 }
 </script>

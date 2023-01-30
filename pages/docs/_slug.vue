@@ -69,25 +69,29 @@ export default {
       bannerImg: "/images/img-five.png",
     };
   },
-  async asyncData ({ $content, params }) {
-    const pages = await $content(`docs/${ params.slug }`, { deep: true })
-    .where({slug: {$ne: "index"}})
-    .sortBy('position', 'asc')
-    .only(['title', 'path', 'description', 'category',])
-    .fetch()
-
-    const categories = groupBy(pages, 'category')
-
-    let productData = await $content(`docs/${ params.slug }`, { deep: true })
-      .where({slug: {$eq: 'index'}})
-      .only(['title', 'path', 'description'])
+  async asyncData ({ $content, params, $sentry }) {
+    try {
+      const pages = await $content(`docs/${ params.slug }`, { deep: true })
+      .where({slug: {$ne: "index"}})
+      .sortBy('position', 'asc')
+      .only(['title', 'path', 'description', 'category',])
       .fetch()
-    const product = productData[0]
 
-    return {
-      pages,
-      product,
-      categories,
+      const categories = groupBy(pages, 'category')
+
+      let productData = await $content(`docs/${ params.slug }`, { deep: true })
+        .where({slug: {$eq: 'index'}})
+        .only(['title', 'path', 'description'])
+        .fetch()
+      const product = productData[0]
+
+      return {
+        pages,
+        product,
+        categories,
+      }
+    } catch (error) {
+      $sentry.captureException(error)
     }
   },
   methods: {

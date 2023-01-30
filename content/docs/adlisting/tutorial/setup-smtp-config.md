@@ -1,7 +1,7 @@
 ---
 title: Setup SMTP Config
 position: 20
-category: How to Tutorial
+category: Getting Started
 ---
 
 ### What is SMTP?
@@ -10,7 +10,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Prot
 
 Across the entire application, We have created many email templates like Account Verification email, Job Post Approval, Candidate Applied, and many more! 
 
-To send all the necessary emails, we need an Email Delivery service. Jobpilot uses SMTP for sending emails. Some of the popular SMTP Email Delivery Companies
+To send all the necessary emails, we need an Email Delivery service. Adlisting uses SMTP for sending emails. Some of the popular SMTP Email Delivery Companies
 
 1. Mailgun
 2. Postmark

@@ -34,14 +34,14 @@
           <span class="block"> Build Better Products </span>
           <span class="block"> Hire us today </span>
         </h2>
-        <p class="mt-4 text-lg leading-6 text-indigo-200">
+        <p class="mt-4 text-lg leading-6 text-white">
           Our team composed with expert designer and developers to handle project at any size
         </p>
-        <div class="flex flex-wrap gap-4 justify-center">
-          <nuxt-link to="/hire-us" class="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-dark hover:bg-indigo-50 sm:w-auto">
+        <div class="flex flex-wrap gap-4 justify-center mt-4">
+          <nuxt-link to="/hire-us" class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-dark hover:bg-indigo-50 sm:w-auto">
             Hire Us Now
           </nuxt-link>
-          <nuxt-link to="/installation-plans" class="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-dark hover:bg-indigo-50 sm:w-auto">
+          <nuxt-link to="/installation-plans" class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-dark hover:bg-indigo-50 sm:w-auto">
             Installation Plans
           </nuxt-link>
         </div>
@@ -79,18 +79,22 @@ export default {
       ],
     }
   },
-  async asyncData({ app }) {
-    const client = app.apolloProvider.defaultClient;
+  async asyncData({ app, $sentry }) {
+    try {
+      const client = app.apolloProvider.defaultClient;
 
-    const { data } = await client.query({
-      query: HOMEPAGE_QUERY,
-    })
+      const { data } = await client.query({
+        query: HOMEPAGE_QUERY,
+      })
 
-    const homepage = data.homepage;
-    const latestProducts = data.allProducts;
-    const latestPosts = data.allPosts;
+      const homepage = data.homepage;
+      const latestProducts = data.allProducts;
+      const latestPosts = data.allPosts;
 
-    return { homepage, latestProducts, latestPosts }
+      return { homepage, latestProducts, latestPosts }
+    } catch (error) {
+      $sentry.captureException(error)
+    }
   },
   data() {
     return {

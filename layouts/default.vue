@@ -9,12 +9,11 @@
 
 <script>
 import SiteFooter from "../components/SiteFooter.vue";
-import SocialLink from "../components/SocialLink.vue";
 import GLOBAL_QUERY from '~/graphql/global'
 import SiteHeader from '../components/SiteHeader.vue';
 
 export default {
-  components: { SiteFooter, SocialLink, SiteHeader },
+  components: { SiteFooter, SiteHeader },
   methods: {
     async loadData(){
       const client = this.$nuxt.$apolloProvider.defaultClient;

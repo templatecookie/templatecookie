@@ -15,7 +15,20 @@ query PostDetails($slug: String) {
     }
     description {
       blocks
-      links
+      links {
+        ... on TagRecord {
+          id
+          slug
+        }
+        ... on ProductRecord {
+          id
+          slug
+        }
+        ... on PostRecord {
+          id
+          slug
+        }
+      }
       value
     }
     tags {

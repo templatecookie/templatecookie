@@ -23,9 +23,9 @@
               <a href="#" v-for="(tag, index) in post.tags" :key="index"> {{ tag.name }}, </a>
             </div>
           </div>
-          <img class="w-full h-auto object-cover" v-if="post.image && post.image.url" :src="post.image.url" alt="">
+          <img class="w-full h-auto object-cover" v-if="post.image && post.image.url" :src="post.image.url" :alt="post.title">
           <div class="content py-4 markdown-body">
-            <structured-text :data="post.description" />
+            <structured-text :data="post.description" :renderInlineRecord="renderInlineRecord" renderLinkToRecord="renderLinkToRecord" />
           </div>
         </div>
         <section class="text-gray-600 body-font overflow-hidden pt-14 lg:pt-20">
@@ -50,7 +50,7 @@
                     {{ item.shortDescription }}
                   </p>
                   <nuxt-link :to="{ name: 'blog-slug', params: { slug: item.slug }}" class="text-blue-500 inline-flex items-center mt-4">
-                    Learn More
+                    Read More
                     <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
                       stroke-linecap="round" stroke-linejoin="round">
                       <path d="M5 12h14"></path>
@@ -69,13 +69,14 @@
 
 <script>
 import BLOG_DETAILS from '~/graphql/blog/postDetails'
+
 export default {
   head() {
     const postDetails = this.post
     const seoTitle = `${postDetails.title} | Templatecookie.com`;
     const seoDesc = postDetails.shortDescription;
     return {
-      title: title,
+      title: seoTitle,
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -83,25 +84,57 @@ export default {
         { hid: 'og:title', property: 'og:title', name: 'og:title', content: seoTitle },
         { hid: 'og:description', name: 'og:description', name: 'og:description', content: seoDesc },
         { hid: 'og:type', property: 'og:type', name: 'og:type', content: "article" },
-        { hid: 'og:image', property: 'og:image', name: 'og:image', content: post.image.url },
+        { hid: 'og:image', property: 'og:image', name: 'og:image', content: postDetails.image.url },
       ],
     }
   },
-  async asyncData({ app, params, store }) {
-    const client = app.apolloProvider.defaultClient;
-    const { slug } = params;
 
-    const { data } = await client.query({
-      query: BLOG_DETAILS,
-      variables: {
-        slug
+  async asyncData({ app, params, store, $sentry }) {
+    try {
+      const client = app.apolloProvider.defaultClient;
+      const { slug } = params;
+
+      const { data } = await client.query({
+        query: BLOG_DETAILS,
+        variables: {
+          slug
+        }
+      })
+
+      const post = data.post;
+      const relatedPosts = data.allPosts;
+
+      return { post, relatedPosts }
+    } catch (error) {
+      $sentry.captureException(error)
+    }
+  },
+
+  methods: {
+    renderInlineRecord: ({ record, h }) => {
+      switch (record.__typename) {
+        case 'ProductRecord':
+          return h('nuxt-link', { href: `/demo/${record.slug}` }, record.firstName);
+        case 'PostRecord':
+          return h('nuxt-link', { ...transformedMeta, to: `/blog/${record.slug}` }, children, );
+        case 'TagRecord':
+          return h('nuxt-link', { ...transformedMeta, to: `/blog/${record.slug}` }, children, );
+        default:
+          return null;
       }
-    })
-
-    const post = data.post;
-    const relatedPosts = data.allPosts;
-
-    return { post, relatedPosts }
+    },
+    renderLinkToRecord: ({ record, h, children, transformedMeta }) => {
+      switch (record.__typename) {
+        case 'TeamMemberRecord':
+          return h(
+            'a',
+            { ...transformedMeta, href: `/team/${record.slug}` },
+            children,
+          );
+        default:
+          return null;
+      }
+    },
   }
 }
 </script>

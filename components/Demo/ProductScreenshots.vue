@@ -12,7 +12,7 @@
       <div class="relative" v-if="data.screenshots && data.screenshots.length > 1">
         <swiper class="swiper shadow-bs012 rounded-xl" :options="swiperOptionTwo">
           <swiper-slide v-for="(item, index) in data.screenshots" :key="index">
-            <img class="w-full h-full rounded-xl" :src="item.url" alt="" />
+            <img class="w-full h-full rounded-xl" :src="item.url" alt="Templatecookie Products Screenshots" />
           </swiper-slide>
         </swiper>
         <div class="custom-pagination flex justify-center pt-16">
@@ -22,19 +22,19 @@
           <div class="swiper-button-prev ml-6" slot="button-prev">
             <span
               class="w-12 h-12 rounded-md flex items-center justify-center flex-shrink-0 bg-black bg-opacity-50 duration-300 hover:bg-primary">
-              <img src="/icons/caret-left.svg" alt="" />
+              <img src="/icons/caret-left.svg" alt="Templatecookie Arrow Left Icon" />
             </span>
           </div>
           <div class="swiper-button-next mr-6" slot="button-next">
             <span
               class="w-12 h-12 rounded-md flex items-center justify-center flex-shrink-0 bg-black bg-opacity-50 duration-300 hover:bg-primary arrow-icon">
-              <img src="/icons/caret-right.svg" alt="" />
+              <img src="/icons/caret-right.svg" alt="Templatecookie Arrow Right Icon" />
             </span>
           </div>
         </div>
       </div>
       <div class="relative" v-if="data.screenshots && data.screenshots.length === 1">
-        <img class="w-full h-full rounded-xl" :src="data.screenshots[0].url" alt="" />
+        <img class="w-full h-full rounded-xl" :src="data.screenshots[0].url" alt="Templatecookie Product Screenshots" />
       </div>
     </div>
   </div>

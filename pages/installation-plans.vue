@@ -22,7 +22,7 @@
             <label :for="'id'+item.product.id">
               <div class="flex items-center gap-3 rounded-xl p-5" :class="selectedProduct == `id${item.product.id}` ? 'border-2 border-[#0B63E5] bg-white': 'bg-gray-f0 border-2 border-transparent'">
                 <div class="flex-shrink-0" v-if="item.product.thumbnail">
-                  <img class="w-16 h-16 object-cover rounded-md" :src="item.product.thumbnail.url" alt />
+                  <img class="w-16 h-16 object-cover rounded-md" :src="item.product.thumbnail.url" :alt="item.product.name" />
                 </div>
                 <h2 class="text-base text-[#061C3D]"> {{ item.product.name }} </h2>
               </div>
@@ -59,15 +59,19 @@ export default {
       bannerImg: "/images/img-five.png",
     };
   },
-  async asyncData({ app, params, store }) {
-    const client = app.apolloProvider.defaultClient;
+  async asyncData({ app, params, store, $sentry }) {
+    try {
+      const client = app.apolloProvider.defaultClient;
 
-    const { data } = await client.query({
-      query: ALL_PRODUCT_PLANS,
-    })
+      const { data } = await client.query({
+        query: ALL_PRODUCT_PLANS,
+      })
 
-    const products = data.allProductplans;
-    return { products }
+      const products = data.allProductplans;
+      return { products }
+    } catch (error) {
+      $sentry.captureException(error)
+    }
   },
 
   computed: {

@@ -13,7 +13,7 @@
             <img
               class="w-full h-full object-cover rounded-20"
               :src="data.image.url"
-              alt=""
+              :alt="data.title"
             />
           </div>
         </div>
@@ -33,14 +33,14 @@
                 <img
                   class="inline-block ml-2"
                   src="/icons/arrow-right.svg"
-                  alt="brand-logo"/>
+                  alt="Templatecookie Arrow Right Icon"/>
               </a>
               <nuxt-link v-else :to="data.action[0].href" class="inline-block bg-primary rounded-7 py-4 px-9 text-lg text-white duration-300 hover:bg-dark">
                 {{ data.action[0].label }}
                 <img
                   class="inline-block ml-2"
                   src="/icons/arrow-right.svg"
-                  alt="brand-logo"/>
+                  alt="Templatecookie Arrow Right"/>
               </nuxt-link>
             </div>
           </div>

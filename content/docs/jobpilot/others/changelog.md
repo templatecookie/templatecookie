@@ -8,6 +8,15 @@ category: Others
 # Changelog
 
 ## January
+### v2.31.1 - 24th January, 2022
+```
+- Admin dashboard company update issues fix
+- Admin dashboard candidate update mail notification added
+```
+### v2.30.11 - 24th January, 2022
+```
+- Leaflet map region not save issue fix
+```
 ### v2.30.10 - 3rd January, 2022
 ```
 - Website responsive design issue fix
