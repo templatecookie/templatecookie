@@ -14,7 +14,7 @@ reCAPTCHA is a free CAPTCHA service that helps protect your site against spam, m
 - Follow the steps by select the reCAPTCHA v2 and get your **site key** and your **secret key**.
 
 ### Set API keys from Admin panel
-- Go to the **Admin panel** -> **Settings** -> **General** -> **Security**
+- Go to the **Admin panel** -> **Settings** -> **General** -> **Recaptcha Configuration**
 - Enable the feature from the '**Enable reCAPTCHA**' field
 - Set '**reCAPTCHA site key**' and '**reCAPTCHA secret key**'
 - And save your changes.
