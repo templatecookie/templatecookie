@@ -1,6 +1,6 @@
 <template>
-  <div class="relative bg-gray-50 px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28 -mb-20">
-    <div class="relative mx-auto max-w-7xl">
+  <div class="relative bg-gray-50 -mb-20">
+    <div class="relative mx-auto max-w-7xl py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
       <div class="text-center">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl" data-aos="flip-up">From the blog</h2>
         <p class="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4" data-aos="flip-up" data-aos-delay="100">Learn more about our products, latest news and how to tutorial </p>

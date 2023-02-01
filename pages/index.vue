@@ -3,13 +3,13 @@
     <HeroSection :data="homepage.heroSection" v-if="homepage && homepage.heroSection"/>
 
     <!-- Latest Product -->
-    <section class="latest py-14 md:py-124" v-if="homepage && homepage.latestProduct" id="products">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <section class="latest" v-if="homepage && homepage.latestProduct" id="products">
+      <div class="mx-auto max-w-7xl py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
         <div class="mb-72 text-center">
-          <h2 class="text-4xl md:text-5xl textdark font-semibold capitalize tracking-1 mb-8 max-w-lg mx-auto">
+          <h2 class="text-4xl md:text-5xl textdark font-semibold capitalize tracking-1 mb-8 ">
             {{ homepage.latestProduct[0].title }}
           </h2>
-          <p class="text-base font-light max-w-lg mx-auto textdark" v-if="homepage.latestProduct[0].description">
+          <p class="text-lg font-light max-w-lg mx-auto text-dark" v-if="homepage.latestProduct[0].description">
             {{ homepage.latestProduct[0].description }}
           </p>
         </div>
@@ -26,22 +26,21 @@
 
     <!-- Why Should  -->
     <TopFeaturesSection v-if="homepage && homepage.topFeatures" :data="homepage.topFeatures" />
-    <!-- <product-support /> -->
     <WhyUs v-if="homepage && homepage.whyUsSection" :data="homepage.whyUsSection" />
     <div class="bg-primary">
       <div class="mx-auto max-w-2xl py-16 px-6 text-center sm:py-20 lg:px-8">
         <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          <span class="block"> Build Better Products </span>
+          <span class="block"> Lunch your site faster </span>
           <span class="block"> Hire us today </span>
         </h2>
         <p class="mt-4 text-lg leading-6 text-white">
           Our team composed with expert designer and developers to handle project at any size
         </p>
         <div class="flex flex-wrap gap-4 justify-center mt-4">
-          <nuxt-link to="/hire-us" class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-dark hover:bg-indigo-50 sm:w-auto">
+          <nuxt-link to="/hire-us" class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-dark hover:text-white hover:bg-dark sm:w-auto">
             Hire Us Now
           </nuxt-link>
-          <nuxt-link to="/installation-plans" class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-dark hover:bg-indigo-50 sm:w-auto">
+          <nuxt-link to="/installation-plans" class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-dark hover:text-white hover:bg-dark sm:w-auto">
             Installation Plans
           </nuxt-link>
         </div>

@@ -8,7 +8,7 @@
             We're here to help!
           </h1>
           <p class="textdark text-lg mb-6 lg:mb-9 max-w-xl m-auto font-light">
-            Our customer support team is available 24/7 to answer your questions and help you with whatever you need.
+            Our customer support team is available to answer your questions and help you with whatever you need.
           </p>
         </div>
       </div>
@@ -16,7 +16,6 @@
     <!-- end -->
     <div class="py-12">
       <div class="flex justify-center">
-        <!-- <div class="w-full md:w-8/12 lg:w-6/12"> -->
         <div class="mx-auto max-w-7xl px-4 sm:px-6">
           <div class="flex gap-8 flex-wrap lg:flex-nowrap mb-8">
             <div class="flex-grow-0 w-full lg:w-1/2 lg:pr-10">
@@ -38,34 +37,6 @@
               <div id="hubspotForm" v-once></div>
             </div>
           </div>
-          <!-- <div class="flex gap-6 flex-col mb-8">
-            <div class="rounded-lg mb-6 border overflow-hidden" :class="`bg-${section.color}-50 border-${section.color}-600`" v-for="(section, index) in supportFeatures" :key="index">
-              <h3 class="py-4 px-6 text-white" :class="`bg-${section.color}-600`">{{ section.name }}</h3>
-              <hr>
-              <ul class="py-4 px-6 gap-2 flex flex-col">
-                <li class="flex gap-2" :class="`text-${section.color}-600`" v-for="(item, itemIndex) in section.items" :key="itemIndex">
-                  <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="172 104 113.3 160 84 132" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle></svg>
-                  <span class="text-gray-800"> {{ item.title }} </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div id="hubspotForm" v-once></div> -->
-          <!-- <div class="flex gap-6 flex-wrap md:flex-nowrap">
-            <div id="hubspotForm" v-once class="w-1/2"></div>
-
-            <div class="rounded-lg mb-6 overflow-hidden bg-blue-50 flex-grow-0 w-1/2">
-              <div class="py-4 px-6">
-                <p class="mb-4"></p>
-                <ul class="gap-2 flex flex-col">
-                  <li class="flex gap-2 text-blue-600" v-for="(item, index) in guides" :key="index">
-                    <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="172 104 113.3 160 84 132" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle></svg>
-                    <span class="text-gray-800"> {{ item }} </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>

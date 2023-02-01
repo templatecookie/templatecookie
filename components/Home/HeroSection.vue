@@ -1,8 +1,8 @@
 <template>
   <!-- Banner  -->
-  <section class="overflow-hidden py-20 lg:py-28 md:py-24 bg-no-repeat bg-center bg-cover"
+  <section class="overflow-hidden bg-no-repeat bg-center bg-cover"
     :style="{ backgroundImage: `url(${hero.banner.url})` }">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <div class="mx-auto max-w-7xl py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
       <!-- banner content  -->
       <div class="text-center">
         <h5 class="font-light text-lg mb-2" data-aos="flip-up" data-aos-delay="200">
