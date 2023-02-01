@@ -1,8 +1,8 @@
 <template>
   <div class="bg-white">
-    <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+    <div class="mx-auto max-w-7xl py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
       <div class="">
-        <div class="mb-8 text-center">
+        <div class="mb-14 text-center">
           <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Technology We Use
           </h2>

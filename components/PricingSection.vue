@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-900" :id="id">
-    <div class="relative overflow-hidden pt-32 pb-96 lg:pt-40">
+    <div class="relative overflow-hidden pt-24 pb-96 lg:pt-32">
       <div><img class="absolute bottom-0 left-1/2 w-full max-w-none -translate-x-1/2" src="/images/grid-blur-purple-on-black.jpg" alt="Teplatecookie Pricing Section Background" /></div>
       <div class="relative mx-auto max-w-7xl px-6 text-center lg:px-8">
         <div class="mx-auto max-w-2xl lg:max-w-4xl">

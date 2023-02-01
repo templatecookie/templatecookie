@@ -1,12 +1,12 @@
 <template>
-  <section class="why-should bg-gray-f0 py-14 md:py-124">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+  <section class="why-should bg-gray-50">
+    <div class="mx-auto max-w-7xl py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
       <!-- section title  -->
       <div class="mb-72 text-center" v-if="section.info[0]">
-        <h2 class="text-4xl md:text-5xl textdark font-semibold capitalize tracking-1 mb-8 max-w-lg mx-auto">
+        <h2 class="text-4xl md:text-5xl textdark font-semibold capitalize tracking-1 mb-8 ">
           {{ section.info[0].title }}
         </h2>
-        <p class="text-base font-light max-w-lg mx-auto textdark">
+        <p class="text-lg font-light max-w-lg mx-auto text-dark">
           {{ section.info[0].description }}
         </p>
       </div>

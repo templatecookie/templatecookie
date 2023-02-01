@@ -13,13 +13,11 @@ query {
       banner {
         url
       }
-      actions {
+      buttons {
         cssClass
-        link {
-          label
-          href
-          target
-        }
+        label
+        href
+        target
       }
     }
     latestProduct {

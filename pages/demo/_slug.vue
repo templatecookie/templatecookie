@@ -2,7 +2,7 @@
   <div>
     <demo-header :product="product" v-if="product"  />
     <product-hero :product="product" v-if="product" />
-
+    <why-choose-our-product :product="product" v-if="product" />
     <div v-for="(section, index) in product.contents" :key="index">
       <div v-if="section.__typename == 'ExclusivefeatureRecord'">
         <exclusive-feature :data="section" />
@@ -23,7 +23,7 @@
         <testimonial-section :data="section" />
       </div>
       <div v-if="section.__typename == 'TechnologySectionRecord'">
-        <technology-section :data="section" />
+        <technology-section :data="section" :product="product" />
       </div>
     </div>
   </div>
@@ -43,6 +43,7 @@ import DemoHeader from '../../components/DemoHeader.vue';
 import PricingSection from '~/components/PricingSection.vue'
 import TestimonialSection from '../../components/Demo/TestimonialSection.vue';
 import TechnologySection from '../../components/Demo/TechnologySection.vue';
+import WhyChooseOurProduct from '../../components/Demo/WhyChooseOurProduct.vue';
 
 export default {
   layout: "empty",
@@ -104,6 +105,7 @@ export default {
     DemoHeader,
     TestimonialSection,
     TechnologySection,
+    WhyChooseOurProduct,
   },
 };
 </script>

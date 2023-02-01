@@ -28,6 +28,12 @@ query product($slug: String!){
         url
       }
     }
+    actionButtons {
+      label
+      href
+      target
+      cssClass
+    }
     menuItems {
       label
       id

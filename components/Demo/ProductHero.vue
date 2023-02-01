@@ -32,16 +32,15 @@
               {{ product.description }}
             </p>
           </div>
-
           <div class="mt-8 flex justify-center gap-4 flex-wrap">
-            <a href="#pricing" class="block text-center sm:inline-block border-1.5 border-primary bg-primary font-medium rounded-7 py-3.5 px-8 text-lg text-white duration-300 mb-3 sm:mb-0">
-              Buy Now
-            </a>
-            <a :href="product.previewUrl" target="_blank"
-              class="text-center font-medium border-1.5 border-white rounded-7 py-3.5 px-8 text-lg text-white duration-300 bg-dark flex items-center">
-              View Live Demo
-              <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,56C48,56,16,128,16,128s32,72,112,72,112-72,112-72S208,56,128,56Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></path><circle cx="128" cy="128" r="32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></circle></svg>
-            </a>
+            <template v-for="(item, index) in product.actionButtons">
+                <a v-if="item.target" :href="item.href" target="_blank" :key="index" class="block text-center sm:inline-block bg-primary font-medium rounded-7 py-3.5 px-8 text-lg text-white duration-300 mb-3 sm:mb-0"  :class="item.cssClass ? item.cssClass : 'bg-primary hover:bg-dark'">
+                {{ item.label }}
+                </a>
+                <nuxt-link v-else :to="item.href" :key="index" class="block text-center sm:inline-block bg-primary font-medium rounded-7 py-3.5 px-8 text-lg text-white duration-300 mb-3 sm:mb-0"  :class="item.cssClass ? item.cssClass : 'bg-primary hover:bg-dark'">
+                {{ item.label}}
+                </nuxt-link>
+            </template>
           </div>
         </div>
       </div>

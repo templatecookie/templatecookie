@@ -1,12 +1,12 @@
 <template>
   <div>
-    <section class="realtive py-12 lg:py-20 bg-no-repeat bg-center bg-cover" :style="{ backgroundImage: `url(${bannerImg})` }">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <section class="realtive bg-no-repeat bg-center bg-cover" :style="{ backgroundImage: `url(${bannerImg})` }">
+      <div class="mx-auto max-w-7xl py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
         <div class="text-center">
           <h1 class="text-4xl md:text-heading-40 textdark mb-6 max-w-680 mx-auto font-semibold">
             Installation Plans
           </h1>
-          <p class="text-lg md:text-lg textdark mb-8 max-w-full md:max-w-536 mx-auto font-light">
+          <p class="text-lg md:text-lg textdark max-w-full md:max-w-536 mx-auto font-light">
             These plans are only available to those who have bought one or more products from us before. If you haven't purchased yet, check our <a class="text-blue-600" href="https://1.envato.market/EaNJ2X">codecanyon profile</a>
           </p>
         </div>
@@ -14,7 +14,7 @@
     </section>
 
     <section>
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 pt-28 pb-14">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-28 pb-14">
         <h2 class="mb-6 text-3xl font-medium">Chose your purchased product</h2>
         <div class="grid gap-4 grid-cols-1 lg:grid-cols-3 sm:grid-cols-2">
           <div v-for="(item, index) in products" :key="index">

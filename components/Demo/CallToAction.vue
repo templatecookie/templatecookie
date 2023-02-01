@@ -10,12 +10,12 @@
           {{ section.description }}
         </p>
         <a href="#pricing"
-          class="inline-block bg-primary rounded-7 py-4 px-9 text-lg text-white duration-300 hover:bg-black">
+          class="inline-block bg-primary rounded-7 m-2 py-4 px-9 text-lg text-white duration-300 hover:bg-black">
           Buy Now
           <img class="inline-block ml-2" src="/icons/arrow-right.svg" alt="Templatecookie Arrow Right Icon" />
         </a>
         <nuxt-link to="/hire-us"
-          class="inline-block rounded-7 py-4 ml-2 px-9 text-lg text-white duration-300 bg-secondary hover:bg-black">
+          class="inline-block rounded-7 py-4 m-2 px-9 text-lg text-white duration-300 bg-secondary hover:bg-black">
           Request Customization
         </nuxt-link>
       </div>

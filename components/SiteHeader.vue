@@ -127,11 +127,11 @@ export default {
       solutionStatus: false,
       mobileNav: false,
       menuItems: [
-        {
-          name: "All Products",
-          url: '/products',
-          blank: false,
-        },
+        // {
+        //   name: "All Products",
+        //   url: '/products',
+        //   blank: false,
+        // },
         {
           name: "Get Support",
           url: '/get-support',

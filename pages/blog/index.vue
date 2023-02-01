@@ -4,18 +4,16 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="py-12">
           <h1 class="!text-white text-2xl lg:text-5xl mb-2">Templatecookie Blog</h1>
-          <div class="text-gray-200 font-light">
+          <div class="font-light">
             <nuxt-link to="/" class="!text-gray-200 !hover:text-gray-600">Home</nuxt-link> / <a class="!text-gray-200" href="javascript:void(0)">Blog</a>
           </div>
         </div>
       </div>
     </div>
-    <section class="text-gray-600 body-font bg-gray-50">
+    <section class="bg-gray-50">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 py-24">
-        <div class="flex flex-wrap -m-4" v-if="posts.length">
-          <div class="p-4 lg:w-1/3 sm:w-1/2" v-for="(item, i) in posts" :key="i">
-            <blog-item :item="item" />
-          </div>
+        <div class="mx-auto mt-12 grid gap-5 lg:max-w-none sm:grid-cols-2 lg:grid-cols-3" v-if="posts.length">
+          <blog-item :item="item" v-for="(item, i) in posts" :key="i" />
         </div>
         <div v-else>
             No post found

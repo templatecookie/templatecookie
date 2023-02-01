@@ -3,42 +3,23 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 py-32">
         <div class="flex gap-6 flex-wrap">
             <div class="w-40 h-28 flex justify-center items-center bg-primary">blue-0b</div>
-            <div class="w-40 h-28 flex justify-center items-center bg-blue-09">blue-09</div>
-            <div class="w-40 h-28 flex justify-center items-center bg-pink-75">pink-75</div>
             <div class="w-40 h-28 flex justify-center items-center bg-dark">dark-06</div>
-            <div class="w-40 h-28 flex justify-center items-center bg-dark-">dark-42</div>
             <div class="w-40 h-28 flex justify-center items-center bg-gray-f0">gray-f0</div>
-            <div class="w-40 h-28 flex justify-center items-center bg-gray-b4">gray-b4</div>
-            <div class="w-40 h-28 flex justify-center items-center bg-gray-83">gray-83</div>
-            <div class="w-40 h-28 flex justify-center items-center bg-gray-24">gray-24</div>
             <div class="w-40 h-28 flex justify-center items-center bg-gray-f0">gray-f0</div>
             <div class="w-40 h-28 flex justify-center items-center bg-gray-f0">gray-f0</div>
             <div class="w-40 h-28 flex justify-center items-center bg-blue-ce">blue-ce</div>
-            <div class="w-40 h-28 flex justify-center items-center bg-pink-fc">pink-fc</div>
-            <div class="w-40 h-28 flex justify-center items-center bg-pink-f2">pink-f2</div>
             <div class="w-40 h-28 flex justify-center items-center bg-purple-e3">purple-e3</div>
-            <div class="w-40 h-28 flex justify-center items-center bg-green">green-of</div>
-            <div class="w-40 h-28 flex justify-center items-center bg-green-cf">green-cf</div>
-            <div class="w-40 h-28 flex justify-center items-center bg-orange-ff">orange-ff</div>
-            <div class="w-40 h-28 flex justify-center items-center bg-pink-f1">pink-f1</div>
             <div class="w-40 h-28 flex justify-center items-center bg-green-e7">green-e7</div>
-            <div class="w-40 h-28 flex justify-center items-center bg-yellow-ff">yellow-ff</div>
-            <div class="w-40 h-28 flex justify-center items-center bg-pink-fe">pink-fe</div>
-            <div class="w-40 h-28 flex justify-center items-center bg-gray-cd">gray-cd</div>
             <div class="w-40 h-28 flex justify-center items-center bg-blue-18">blue-18</div>
         </div>
-        <div class="hidden">
-          <div class="bg-pink-f1 w-full h-4">1</div>
-          <div class="bg-green-e7 w-full h-4">1</div>
-          <div class="bg-yellow-ff w-full h-4">1</div>
-          <div class="bg-pink-fe w-full h-4">1</div>
-          <div class="bg-pink-f1 w-full h-4">1</div>
-          <div class="bg-blue-ce w-full h-4">1</div>
-          <div class="hidden bg-red-300"></div>
-          <div class="hidden bg-green-300"></div>
-          <div class="hidden bg-blue-300"></div>
-          <div class="hidden bg-blue-600"></div>
-          <div class="hidden bg-purple-300"></div>
+        <div class="flex gap-6 flex-wrap">
+          <div class="w-40 h-28 flex justify-center items-center bg-green-e7"> bg-green-e7 </div>
+          <div class="w-40 h-28 flex justify-center items-center bg-blue-ce"> bg-blue-ce </div>
+          <div class="w-40 h-28 flex justify-center items-center bg-red-300"> bg-red-300 </div>
+          <div class="w-40 h-28 flex justify-center items-center bg-green-300"> bg-green-300 </div>
+          <div class="w-40 h-28 flex justify-center items-center bg-blue-300"> bg-blue-300 </div>
+          <div class="w-40 h-28 flex justify-center items-center bg-blue-600"> bg-blue-600 </div>
+          <div class="w-40 h-28 flex justify-center items-center bg-purple-300"> bg-purple-300 </div>
         </div>
 
         <div class="bg-green-50 bg-red-50 bg-blue-50 text-green-600 text-blue-600 text-red-600 bg-green-600 bg-blue-600 bg-red-600"></div>
@@ -48,8 +29,6 @@
 
 <script>
 import SITEMAP_PRODUCTS from '~/graphql/allProducts'
-// import getSitemapProducts from '../util/getSitemapProducts';
-
 export default {
   head: {
     meta: [
@@ -58,27 +37,6 @@ export default {
     ],
   },
   async mounted(){
-    // // const client = this.$apollo.getClient();
-    // const client = this.$apollo.vm.$apolloProvider.defaultClient;
-    // // const data = this.$apollo.getClient().readQuery({
-    // //   query: SITEMAP_PRODUCTS,
-    // // });
-
-    // // const { data } = client.query({
-    // //   query: SITEMAP_PRODUCTS,
-    // // })
-
-    // const data = await this.$apollo.query({
-    //     query: SITEMAP_PRODUCTS,
-    // }).then(({ data }) => {
-    //   return data.allProducts.map(({ slug }) => ({
-    //     url: `/demo/${slug}`,
-    //     changefreq: 'daily',
-    //     priority: 1,
-    //   }));
-    // })
-
-    // console.log(await getSitemapProducts());
   }
 }
 </script>

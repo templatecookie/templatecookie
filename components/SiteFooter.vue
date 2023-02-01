@@ -40,7 +40,7 @@
               </li>
             </ul>
           </div>
-          <div class="mt-12 md:mt-0" v-for="item in footer.menuitems" :key="item.id">
+          <div class="" v-for="item in footer.menuitems" :key="item.id">
             <h3 class="text-base font-medium text-gray-200">{{ item.label }}</h3>
             <ul role="list" class="mt-4 space-y-4" v-if="item.products">
               <li v-for="(subItem, index) in item.products" :key="index">

@@ -1,11 +1,13 @@
 <template>
-  <div class="relative bg-white py-24 sm:py-32 lg:py-40">
-    <div class="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
-      <!-- <h2 class="text-lg font-semibold text-primary">Deploy faster</h2> -->
-      <p class="mt-2 text-3xl font-bold text- tracking-tight text-gray-900 sm:text-4xl">
-        Services We Offer
-      </p>
-      <p class="mx-auto mt-5 max-w-prose text-xl text-gray-500">We offer different types of product design and development services based on our client’s demands. Here goes the list of top services we are offering at Template Cookie.</p>
+  <div class="relative bg-white">
+    <div class="mx-auto max-w-7xl py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2 class="text-lg font-semibold text-primary">Lunch faster</h2>
+        <p class="mt-2 text-3xl font-bold text- tracking-tight text-gray-900 sm:text-4xl">
+          Services We Offer
+        </p>
+        <p class="mx-auto mt-5 max-w-prose text-xl text-gray-500">We offer complete product design and development services based on our client’s demands. Here goes the list of top services we are offering at Templatecookie.</p>
+      </div>
       <div class="mt-20">
         <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
           <div class="pt-6" v-for="(item, index) in services" :key="index" :data-aos="item.aos" :data-aos-delay="100 * index">
