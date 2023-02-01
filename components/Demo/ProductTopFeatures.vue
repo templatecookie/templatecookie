@@ -12,7 +12,7 @@
       <div class="grid grid-cols-12 gap-8">
         <div v-for="(item, itemIndex) in data.features" :key="itemIndex"
           class="col-span-12 xl:col-span-4 lg:col-span-6 md:col-span-6">
-          <div class="bg-white rounded-md p-8 business-card duration-300 shadow-sm">
+          <div class="bg-white rounded-md p-8 duration-300 shadow-md">
             <div v-if="item.image && item.image.url" class="inline-flex justify-center items-center w-16 h-16 mb-7 rounded-lg border-4 border-blue-50 bg-blue-100 dark:border-blue-900 dark:bg-blue-800">
                 <nuxt-img :src="item.image.url" class="w-7 h-7 object-cover" alt="" />
               </div>

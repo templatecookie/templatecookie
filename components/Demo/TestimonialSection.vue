@@ -2,14 +2,19 @@
   <section class="overflow-hidden bg-dark" :id="data.sectionId ? data.sectionId : data.id">
     <div class="mx-auto max-w-7xl py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
       <div class="mb-8 text-center">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl"> {{ data.title }} </h2>
-        <p class="mt-3 mx-auto max-w-3xl text-lg text-gray-300"> 
-          {{ data.description }}
+        <h2 class="text-lg font-semibold text-primary">Testimonial</h2>
+        <!-- <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl"> {{ data.title }} </h2> -->
+        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          What People Say About Us
+        </h2>
+        <p class="mt-3 mx-auto max-w-xl text-lg text-gray-200"> 
+          <!-- {{ data.description }} -->
+          Don't just listen to our words, see what our valued customers think about our product.
         </p>
       </div>
       <swiper class="flex" :options="config">
-        <swiper-slide  v-for="(item, index) in data.testimonials" :key="index">
-          <div class="flex h-auto">
+        <swiper-slide class="!h-auto" v-for="(item, index) in data.testimonials" :key="index">
+          <div class="flex h-full">
             <div class="flex flex-col bg-white rounded-xl">
               <div class="flex-auto p-4 md:p-6">
                 <p class="text-base italic md:text-lg text-gray-800">
