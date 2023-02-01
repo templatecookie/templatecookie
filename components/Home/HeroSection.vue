@@ -16,9 +16,9 @@
         </p>
 
         <div class="flex justify-center w-full flex-wrap gap-6">
-          <nuxt-link :to="item.link[0].href" v-for="(item, index ) in hero.actions" :key="index" :class="item.cssClass ? item.cssClass : 'bg-primary hover:bg-dark'"
+          <nuxt-link :to="item.href" v-for="(item, index ) in hero.buttons" :key="index" :class="item.cssClass ? item.cssClass : 'bg-primary hover:bg-dark'"
             class="py-4 px-10 flex items-center transition-all justify-center text-sm-17 text-white rounded-lg overflow-hidden max-w-max" data-aos="flip-up" :data-aos-delay="100 * index">
-            {{ item.link[0].label }}
+            {{ item.label }}
             <span class="inline-block ml-3">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3.75 12H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"

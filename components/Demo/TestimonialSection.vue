@@ -63,6 +63,15 @@ export default {
         //   delay: 3000,
         //   disableOnInteraction: true,
         // },
+        
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          320: {
+            slidesPerView: 1,
+          },
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
