@@ -6,7 +6,29 @@ category: Others
 ---
 
 # Changelog
-
+## February
+### v2.48.0 - 24th February, 2022
+```
+- Added candidate current employment status in experience
+- Auto generating profile image
+- After enabling auto job approval, the pending job message issue was resolved
+- Map displayed on company details page
+- Display current location in the map search field on the settings page
+- Not resetting previous data after preview candidate resume issue resolved
+- On the job details page, salaries are displayed in the current language
+- Fixed job counts by job category and job role 
+- Multiple language translations: Job Category, Job Role, Benefits, Skills, Tags, Industry Type, Profession
+- Added Job Category, Job Role search in posting job page 
+- Added Google job posting feature
+- New sign-up mails are being sent to candidates and companies
+- Added job custom salary option
+- Added refund policy page
+- Added email template customization
+- Remove nationality field 
+- Improvement Social login feature 
+- Design improvements
+- Minor bug fixes
+```
 ## January
 ### v2.31.1 - 24th January, 2022
 ```

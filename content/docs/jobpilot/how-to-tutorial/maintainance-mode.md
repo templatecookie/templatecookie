@@ -1,5 +1,5 @@
 ---
-title: Maintainance Mode
+title: Maintenance Mode
 position: 31
 category: System Setting
 ---
