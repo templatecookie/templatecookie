@@ -36,34 +36,11 @@ Before you install **Adlisting** make sure your server meets the following requi
 </template>
 </hightlight-block>
 
-
 <div class="bg-gray-200 rounded-xl px-4 py-6">
   <section id="installation-services">
       <h2>Installation Services</h2>
-      <p>If you prefer not to deal with installation setup, we provide professional installation services at a reasonable price.</p>
-      <div id="product-installation">
-          <h3>Product Installation - $35</h3>
-          <p>The product installation package includes the following:</p>
-          <ul>
-              <li>Uploading the product files on your server (requires a fully configured and ready to go server).</li>
-              <li>Creating and configuring the database that is going to be used.</li>
-              <li>Full installation of the <strong>product</strong>.</li>
-          </ul>
-          <small class="text-muted">You must own a server with a control panel like Plesk, cPanel...etc.</small>
-      </div>
-      <div id="full-installation">
-          <h3>Full Server Installation - $45</h3>
-          <p>The full server installation package includes the following:</p>
-          <ul>
-              <li>Setting up a new server (Ubuntu OS) on one of those platforms: <a href="http://go.templatecookie.com/cloudways" target="_blank">Cloudways</a>, <a href="http://go.templatecookie.com/vultr" target="_blank">Vultr</a>, <a href="http://go.templatecookie.com/digitalocean" target="_blank">DigitalOcean</a></li>
-              <li>Setting up the domain for the server</li>
-              <li>Free SSL Certificate Installation (Let's Encrypt)</li>
-              <li>Installation of Nginx, MySQL with MySQLi, PHP</li>
-              <li>Installation and configuration of PHP's necessary modules / extensions</li>
-              <li>Full installation of the <strong>product</strong></li>
-          </ul>
-      </div>
-      <nuxt-link class="outline-btn" to="/get-support">Create a installation support ticket</nuxt-link>
+      <p>We offer quality installation services at a low cost if you do not want to bother with the installation process.</p>
+      <nuxt-link class="outline-btn" to="/installation-plans">View our Installation Plans</nuxt-link>
   </section>
 </div>
 

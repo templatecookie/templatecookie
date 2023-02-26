@@ -42,7 +42,7 @@ Before you install **Shikkha** make sure your server meets the following require
 <div class="bg-gray-200 rounded-xl px-4 py-6">
   <section id="installation-services">
       <h2>Installation Services</h2>
-      <p>We also offer quality installation services at a low cost if you do not want to bother with the installation process.</p>
+      <p>We offer quality installation services at a low cost if you do not want to bother with the installation process.</p>
       <nuxt-link class="outline-btn" to="/installation-plans">View our Installation Plans</nuxt-link>
   </section>
 </div>

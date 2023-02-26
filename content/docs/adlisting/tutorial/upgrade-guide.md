@@ -14,10 +14,8 @@ Following the steps below, you can perform an upgrade on your app.
 
 1. Get the Latest file from your codecanyon account, [Get from here](https://codecanyon.net/downloads)
 2. Turn on App Maintenance mode from **Settings** -> **General Setting**
-3. Replace your old files with your new file. Don't replace the **/public/uploads** folder.
-4. Migrate the database by clicking on "Upgrade Now" from Setting. **Admin panel** -> **Settings** -> **System Setting** -> **Upgrade Guide** 
+3. Replace your old files with your new file. Don't replace the **/public/uploads** folder and **.env** file.
+4. Migrate the database by clicking on "Upgrade Now" from Setting. **Admin panel** -> **Settings** -> **System Setting** -> **Upgrade Guide**
 5. Turn off the maintenance mode and Enjoy.
 
 NOTE: If you face an issue after replacing the latest code. Then hit the URL `https://your_domain.com/migrate/data`
-
-
