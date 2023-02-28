@@ -7,6 +7,14 @@ category: Others
 
 # Changelog
 ## February
+### v2.48.5 - 28th February, 2022
+```
+- Candidate create page issue fix
+- Job details empty salary issue fix
+- Improved Kanban board pages
+- Improved about page brand logo management
+- SEO improvements to the job and post details
+```
 ### v2.48.0 - 24th February, 2022
 ```
 - Added candidate current employment status in experience
