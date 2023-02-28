@@ -7,7 +7,8 @@ category: Others
 
 # Changelog
 ## February
-### v2.48.5 - 28th February, 2022
+
+### v2.48.5 - 28th February, 2023
 ```
 - Candidate create page issue fix
 - Job details empty salary issue fix
@@ -15,7 +16,7 @@ category: Others
 - Improved about page brand logo management
 - SEO improvements to the job and post details
 ```
-### v2.48.0 - 24th February, 2022
+### v2.48.0 - 24th February, 2023
 ```
 - Added candidate current employment status in experience
 - Auto generating profile image
@@ -38,20 +39,20 @@ category: Others
 - Minor bug fixes
 ```
 ## January
-### v2.31.1 - 24th January, 2022
+### v2.31.1 - 24th January, 2023
 ```
 - Admin dashboard company update issues fix
 - Admin dashboard candidate update mail notification added
 ```
-### v2.30.11 - 24th January, 2022
+### v2.30.11 - 24th January, 2023
 ```
 - Leaflet map region not save issue fix
 ```
-### v2.30.10 - 3rd January, 2022
+### v2.30.10 - 3rd January, 2023
 ```
 - Website responsive design issue fix
 ```
-### v2.30.9 - 2nd January, 2022
+### v2.30.9 - 2nd January, 2023
 ```
 - Plan middleware missing line fix
 ```
