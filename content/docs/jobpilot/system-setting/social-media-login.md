@@ -28,6 +28,13 @@ Now, you have to setup your admin panel:
 *   And save your changes.
 *   You are done.
 
+Or place all the config values or API keys in the `/.env` file.
+
+Google example in `/.env` file
+```
+GOOGLE_CLIENT_ID=your-google-client_id
+GOOGLE_CLIENT_SECRET=your-google-client_secret
+```
 
 ### Facebook
 
@@ -124,3 +131,11 @@ Now, you have to setup your admin panel:
 *   For Github: set '**Github Client ID**' and '**Github Client Secret**'
 *   And save your changes.
 *   You are done.
+
+Or place all the config values or API keys in the `/.env` file.
+
+github example in `/.env` file
+```
+GITHUB_CLIENT_ID=your-github-client_id
+GITHUB_CLIENT_SECRET=your-github-client_secret
+```
