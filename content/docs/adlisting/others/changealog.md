@@ -8,7 +8,7 @@ category: Others
 # Changelog
 ---
 
-### v2.10 - 15th March 2022
+### v2.10 - 15th March 2023
 ## Added
 ```
 - Added log viewer 
@@ -25,7 +25,7 @@ category: Others
 - Chat responsive design fix
 - Customer profile sidebar design fix
 ```
-### v2.8.21 - 03rd January 2022
+### v2.8.21 - 03rd January 2023
 ```
 - Frontend messenger issue fix
 ```
