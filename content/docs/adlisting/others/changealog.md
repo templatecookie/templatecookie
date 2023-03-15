@@ -7,6 +7,24 @@ category: Others
 
 # Changelog
 ---
+
+### v2.10 - 15th March 2022
+## Added
+```
+- Added log viewer 
+- Added email export feature
+```
+## Fixed
+```
+- Unauthenticated user login issue fix
+- Translation issue fix
+- Language and Currency switcher issue fix
+- Email verification process improved
+- Price range slider issue fix
+- Verify email page broken design fix
+- Chat responsive design fix
+- Customer profile sidebar design fix
+```
 ### v2.8.21 - 03rd January 2022
 ```
 - Frontend messenger issue fix
