@@ -6,6 +6,14 @@ category: Others
 ---
 
 # Changelog
+
+## March
+### v2.48.8 - 16th March, 2023
+```
+- Map location selection issue fix
+- Candidate page responsive issue fix    
+- Enable/Disable ip based country, currency and language selection
+```
 ## February
 
 ### v2.48.5 - 28th February, 2023
