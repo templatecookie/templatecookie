@@ -164,6 +164,8 @@ query product($slug: String!){
           description
           price
           purchaseLink
+          paddleProductId
+          paddleCheckout
           features {
             name
             id
