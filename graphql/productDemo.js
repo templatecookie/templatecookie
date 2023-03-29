@@ -164,10 +164,6 @@ query product($slug: String!){
           description
           price
           purchaseLink
-          theme
-          icon {
-            url
-          }
           features {
             name
             id
