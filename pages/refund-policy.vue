@@ -1,58 +1,83 @@
 <template>
   <div>
-    <section class="bg-gray-100">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 markdown-body">
-        <div class="py-12">
-          <h1>Refund Policy</h1>
-          <p>
-            We have trust in our products quality and performance. We believe that you will definitely love our product. Also we are offering you refund within 15 days from the day of your first payment. Please, check our policies when we grant refund and when we do not issue refund :
-          </p>
-
-          <p>If you faced any issue with our product or found any bug, We request you to contact our support team at <strong> templatecookie@gmail.com </strong>  and Our team will gradually help you to fix it, if you face any issue.</p>
-
-          <h3>We grant refund if</h3>
-          <ul>
-            <li>If we are not able to resolve the issue we will refund your money.</li>
-            <li>If our support team unable to fix problem.</li>
-            <li>The product purchased has stopped functioning or displaying that we described to its details, or broken after the installation.</li>
-          </ul>
-
-          <h3>We do not issue refund if </h3>
-          <ul>
-            <li>If you found your host doesn’t meet the requirement of Laravel or denied to update the PHP, MySQL version.</li>
-            <li>You decided to change your mind.</li>
-            <li>You decided not to use our product.</li>
-            <li>You find that our product doesn’t suit your needs (our live demo site are very explanatory of our script/templates)</li>
-          </ul>
-
-          <h3>T & C :</h3>
-          <ul>
-            <li> Refund will process as soon as possible. In some scenario, we will try to solve your issue. </li>
-            <li> No refunds will be processed after 15 days post-purchase. </li>
-            <li> By requesting and receiving a refund, you relinquish all ownership of your license and agree to cease the use of the product immediately. </li>
-            <li>We reserve the right to reject a refund request if it necessary.</li>
-            <li>You can submit a refund request with this form :</li>
-          </ul>
+    <div class="bg-gray-f0 py-12">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <div class="text-center max-w-4xl m-auto pt-6">
+          <h1 class="textdark text-5xl font-semibold mb-6 lg:mb-9 tracking-ls02">
+            Privacy Policy
+          </h1>
         </div>
       </div>
-    </section>
+    </div>
+    <!-- end -->
+    <div class="py-12">
+      <div class="flex justify-center">
+        <div class="max-w-2xl mx-auto px-4 py-8  sm:px-6">
+          <h1 class="text-2xl font-bold mb-4">Refund Policy</h1>
+          <p class="mt-2 text-gray-600">Last updated: {{currentDate}}</p>
+          <p class="mt-4"> At Templatecookie, we are committed to providing high-quality products and services to our customers. We understand that sometimes you may need to request a refund, and we have outlined our refund policy below. </p>
+
+          <h3 class="mt-6 text-xl font-bold leading-tight text-gray-900">Refund Eligibility </h3>
+          <p class="mt-4">We offer a refund within 7 days from the day of your first payment. To be eligible for a refund, you must meet the following criteria:</p>
+          <ul class="list-disc pl-6 flex flex-col gap-2">
+            <li>You have contacted our support team at templatecookie(at)gmail(dot)com and allowed us to attempt to resolve any issues you are experiencing. </li>
+            <li> The product purchased has stopped functioning or displaying that we described to its details, or broken after the installation. </li>
+            <li>Item has a security vulnerability and support can not resolve it. </li>
+            <li>Item support is promised but not provided. </li>
+            <li>Our support team is unable to fix the problem. </li>
+          </ul>
+
+          <h3 class="mt-6 text-xl font-bold leading-tight text-gray-900">Refund Ineligibility</h3>
+          <p class="mt-4">We are unable to issue a refund under the following circumstances:</p>
+          <ul class="list-disc pl-6 flex flex-col gap-2">
+            <li> Your host does not meet the requirement of Laravel or denies updating the PHP, MySQL version. </li>
+            <li> You changed your mind or decided not to use our product. </li>
+            <li> You found that our product does not suit your needs (our live demo site is very explanatory of our script/templates). </li>
+            <li> You don't want it after you've downloaded it </li>
+            <li> The item did not meet your expectations or you feel the item is of low quality </li>
+            <li> You bought an item by mistake </li>
+            <li> You do not have sufficient expertise to use the item </li>
+            <li> You claim that you are entitled to a refund but do not provide sufficient information as to why you are entitled to a refund </li>
+            <li> You can no longer access the item because it has been removed or the author who previously provided the item is no longer active on our  platform (we advise you to download items as soon as you have purchased them to avoid this situation). </li>
+          </ul>
+
+          <h3 class="mt-6 text-xl font-bold leading-tight text-gray-900">Refund Processing and T&C</h3>
+          <p class="mt-4"> Refunds will be processed as soon as possible, and we will make every effort to resolve your issue before issuing a refund. However, no refunds will be processed after 7 days post-purchase. By requesting and receiving a refund, you relinquish all ownership of your license and agree to cease the use of the product immediately. </p>
+
+          <p class="mt-4"> We reserve the right to reject a refund request if it is necessary. To submit a refund request, please fill out this form. If you have any questions or concerns about our refund policy, please contact us at templatecookie(at)gmail(dot)com. </p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  head: {
-    title: "Refund Policy | Templatecookie.com",
-    meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        hid: "description",
-        name: "description",
-        content: "Thank you for purchasing our installation plans. our team will get back to you soon."
-      }
-    ]
+  head() {
+    let title = "Refund Policy | Our commitment to customer satisfaction";
+    const description = "Our refund policy ensures that our customers receive a satisfactory experience. If you're unhappy with your purchase or encounter issues, we're here to help. Learn more about our refund policy and eligibility criteria.";
+    return {
+      title: title,
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: description },
+        { hid: 'og:title', property: 'og:title', name: 'og:title', content: title },
+        { hid: 'og:description', name: 'og:description', name: 'og:description', content: description },
+        { hid: 'og:type', property: 'og:type', name: 'og:type', content: "website" },
+        { hid: 'og:image', property: 'og:image', name: 'og:image', content: '/social-meta.png' },
+      ],
+    }
   },
+  data() {
+    return {
+      currentDate: ''
+    };
+  },
+  mounted() {
+    const date = new Date('2023-03-31');
+    this.currentDate = date.toLocaleDateString();
+  }
 }
 </script>
 

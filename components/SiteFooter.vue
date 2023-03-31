@@ -17,36 +17,52 @@
             </a>
           </div>
         </div>
-        <div class="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-          <div>
-            <h3 class="text-base font-medium text-gray-200">Company</h3>
-            <ul role="list" class="mt-4 space-y-4">
-              <li>
-                <nuxt-link to="/hire-us" class="text-base text-gray-400 hover:text-gray-300">Hire Us</nuxt-link>
-              </li>
-
-              <li>
-                <nuxt-link to="/installation-plans" class="text-base text-gray-400 hover:text-gray-300">Installation Plans</nuxt-link>
-              </li>
-
-              <li>
-                <nuxt-link to="/get-support" class="text-base text-gray-400 hover:text-gray-300">Get Support</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/docs" class="text-base text-gray-400 hover:text-gray-300">Documentation</nuxt-link>
-              </li>
-              <li>
-                <a href="https://1.envato.market/EaNJ2X" target="_blank" class="text-base text-gray-400 hover:text-gray-300">Codecanyon Profile</a>
-              </li>
-            </ul>
-          </div>
-          <div class="" v-for="item in footer.menuitems" :key="item.id">
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+          <div v-for="item in footer.menuitems" :key="item.id">
             <h3 class="text-base font-medium text-gray-200">{{ item.label }}</h3>
             <ul role="list" class="mt-4 space-y-4" v-if="item.products">
               <li v-for="(subItem, index) in item.products" :key="index">
                 <nuxt-link class="text-base text-gray-400 hover:text-gray-300" :to="{ name: 'demo-slug', params: {slug: subItem.slug} }">{{ subItem.name }}</nuxt-link>
               </li>
             </ul>
+          </div>
+          <div class="flex justify-between flex-wrap md:flex-nowrap">
+            <div>
+              <h3 class="text-base font-medium text-gray-200">Company</h3>
+              <ul role="list" class="mt-4 space-y-4">
+                <li>
+                  <nuxt-link to="/hire-us" class="text-base text-gray-400 hover:text-gray-300">Hire Us</nuxt-link>
+                </li>
+
+                <li>
+                  <nuxt-link to="/installation-plans" class="text-base text-gray-400 hover:text-gray-300">Installation Plans</nuxt-link>
+                </li>
+
+                <li>
+                  <nuxt-link to="/get-support" class="text-base text-gray-400 hover:text-gray-300">Get Support</nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/docs" class="text-base text-gray-400 hover:text-gray-300">Documentation</nuxt-link>
+                </li>
+                <li>
+                  <a href="https://1.envato.market/EaNJ2X" target="_blank" class="text-base text-gray-400 hover:text-gray-300">Codecanyon Profile</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-base font-medium text-gray-200">Others</h3>
+              <ul role="list" class="mt-4 space-y-4">
+                <li>
+                  <nuxt-link to="/privacy-policy" class="text-base text-gray-400 hover:text-gray-300">Privacy Policy</nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/refund-policy" class="text-base text-gray-400 hover:text-gray-300">Refund Policy</nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/terms" class="text-base text-gray-400 hover:text-gray-300">Terms & Condition</nuxt-link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
