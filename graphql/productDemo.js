@@ -10,6 +10,7 @@ query product($slug: String!){
     docsUrl
     previewUrl
     shortName
+    offerRequestCustomization
     banner {
       url
     }
@@ -27,6 +28,12 @@ query product($slug: String!){
       image {
         url
       }
+    }
+    showNotice
+    noticeBar {
+      blocks
+      links
+      value
     }
     actionButtons {
       label

@@ -17,7 +17,7 @@
         <call-to-action :section="section" :product="product" />
       </div>
       <div v-if="section.__typename == 'PriceplanRecord'">
-        <PricingSection :plans="section.plans" :id="section.sectionId ? section.sectionId : section.id" :info="section.info[0]" :extraOffer="product.extraOffer" />
+        <PricingSection :plans="section.plans" :id="section.sectionId ? section.sectionId : section.id" :info="section.info[0]" :extraOffer="product.extraOffer" :requstCustomization="offerRequestCustomization" />
       </div>
       <div v-if="section.__typename == 'TestimonialSectionRecord'">
         <testimonial-section :data="section" />
