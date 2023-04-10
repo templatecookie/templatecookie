@@ -28,7 +28,7 @@
             </div>
           </div>
         </div>
-        <div class="lg:w-1/2 w-full order-1 lg:order-2 mb-6 lg:mb-0 h-680 clip-thumb" data-aos="slide-left">
+        <div class="lg:w-1/2 w-full order-1 lg:order-2 mb-6 lg:mb-0 h-80 lg:h-680 clip-thumb" data-aos="slide-left">
           <img v-if="section.info[0].background" :src="section.info[0].background.url" alt="" class="w-full h-full object-cover object-center rounded-lg" />
         </div>
       </div>

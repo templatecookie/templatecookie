@@ -8,6 +8,9 @@
       <div class="mx-auto mt-12 grid gap-5 lg:max-w-none sm:grid-cols-2 lg:grid-cols-3">
         <blog-item data-aos="fade-up" :data-aos-delay="index * 100" :item="item" v-for="(item, index) in data" :key="index"/>
       </div>
+      <div class="flex justify-center">
+        <nuxt-link to="/blog" class="mt-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-primary px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-secondary">Read our blog</nuxt-link>
+      </div>
     </div>
   </div>
 </template>
