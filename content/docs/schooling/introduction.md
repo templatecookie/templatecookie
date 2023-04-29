@@ -9,19 +9,23 @@ category: Getting Started
 
 ## Introduction
 
-Thank you so much for purchasing. Please rate this item, if you like it.
+Thank you so much for purchasing. Please [rate this item](https://codecanyon.net/downloads).
 
-Streamline your entire School Management Process with our premium school management system PHP script. It’s clean, feature-packed, well-organized, and easy to use.
+Streamline your entire institue management process with our premium education management system PHP script. It’s clean, feature-packed, well-organized, and easy to use.
 
 ### Key Features
 
-- Laravel 8 (Latest Version)
-- Vue.js Used (Progressive Javascript Framework)
-- Student & Teacher Attendance Management
-- Academic Management with Routine, homework, syllabus, exams and grade
+- Laravel 9 (Latest) and Vue.js Used (Progressive Javascript Framework)
+- 5 Roles (Teacher, Student, Parent, Accountant & Admin)
+- Online Class Schedule
+- Online Zoom classes
+- Student assignments & attendence
+- Course Group Chat & File sharing
+- Admission Price Plan & Recurring Invoice
+- Fees & Expense Management
+- Leave Management for Student & Staff
+- School Holiday, Events, Announcements & More
 - Student Promotion
-- Fees and Expense Management
-- Online Fee Payment with 4 Payment Gateway
 - Multi-Language
-- 5 Types of Users & Roles Management
-- Lightweight speed
+- Multi Currency
+- Online Fee Payment with 4 Payment Gateway

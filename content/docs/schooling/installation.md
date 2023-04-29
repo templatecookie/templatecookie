@@ -11,7 +11,7 @@ category: Getting Started
 
 ### Server Requirements
 
-Before you install **Schooling** make sure your server meets the following requirements:
+Before you install **Shikkha** make sure your server meets the following requirements:
 
 - Server Type: Linux (Shared Hosting or VPS or Dedicated Server)
 - PHP >= 8.1
@@ -104,19 +104,6 @@ Carefully, Set the necessary details marked in the screenshot. Congratulations ð
 `Notice: You must fill in the red mark field.`
 
 ![Step 17](/docs/schooling/s17.png)
-
-<call-out-block type="warning">
-<template>
-
-## Attention!
-
-To avoid error, Please set the `SESSION_DOMAIN` & `SANCTUM_STATEFUL_DOMAINS` property value properly by following the example below!
-
-![local server](/docs/schooling/localserver-demo.png)
-![Domain Demo](/docs/schooling/localserver-demo.png)
-</template>
-
-</call-out-block>
 
 ### Admin Login Credentials
 
