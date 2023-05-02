@@ -11,7 +11,7 @@ category: Getting Started
 
 ### Server Requirements
 
-Before you install **Shikkha** make sure your server meets the following requirements:
+Before you install **Schooling** make sure your server meets the following requirements:
 
 - Server Type: Linux (Shared Hosting or VPS or Dedicated Server)
 - PHP >= 8.1
