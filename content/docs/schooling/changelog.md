@@ -7,6 +7,25 @@ category: Others
 
 # Changelog
 
+### v2.0.0 - 27 April, 2023
+```
+- Multi language supported
+- Multi currency
+- 6 different payment gateways
+- Recurring admission plan
+- One time & recurring invoice
+- 5 user types
+- Full academic management
+- Student result card
+- Live class schedule
+- Online class with Zoom
+- Student & teacher group chat
+- PDF & Excel reports
+- Online student admission
+- Dark Mode supported
+- School home page
+```
+
 ### v1.14.21 - 16th May, 2022
 ```
 - Teacher attendance page some teachers missing issue
