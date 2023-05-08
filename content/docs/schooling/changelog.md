@@ -7,6 +7,13 @@ category: Others
 
 # Changelog
 
+### v2.2.1 - 8 May, 2023
+```
+- feat - Student and Teacher role account hold system
+- feat - Onboarding process integration
+- fix - Parent delete time trouble
+```
+
 ### v2.0.0 - 27 April, 2023
 ```
 - Multi language supported
