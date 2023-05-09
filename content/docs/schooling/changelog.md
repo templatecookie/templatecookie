@@ -7,6 +7,14 @@ category: Others
 
 # Changelog
 
+### v2.2.6 - 9 May, 2023
+```
+- fix - Price amount range issue for admission plan
+- fix - Avatar not work during student account create
+- fix: - Teacher and Student account creation failed issue from the all users page
+- style: Color added for subject
+- style: Footer logo color changed
+```
 ### v2.2.1 - 8 May, 2023
 ```
 - feat - Student and Teacher role account hold system
