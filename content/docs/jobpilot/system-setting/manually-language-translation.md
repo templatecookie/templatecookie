@@ -11,8 +11,6 @@ If you want to translate your application and you don't want to use the auto tra
 
 For example, you want to translate your application into the German language. Follow the steps below to translate your application.
 
-**Note: Take a `backup` your `database and files`, before performing an upgrade. Take a backup of your database and uploaded images folder  **/public/uploads**. Templatecookie is not responsible for any data loss.
-
 1. Create a language from **Admin panel** -> **Settings** -> **Language** -> **Create New**
 2. Go to the **application root directory/resources/lang** folder and find the **your_language_code.json** file and open it.
 3. Now you will find left and right side of the translation. Left side is the default language and right side is the translation language. You need to translate the right side of the language.
