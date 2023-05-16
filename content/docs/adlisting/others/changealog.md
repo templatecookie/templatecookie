@@ -8,6 +8,22 @@ category: Others
 # Changelog
 ---
 
+### v2.14.0 - 16th May 2023
+```
+- feat - Efficient Order Management with User Plan Customization
+- feat - Identity Verification Made Easy: Safeguarding User Interactions
+- feat - Monetizing Your Platform: Unleashing the Potential of Advertisement Revenue
+- feat - Enhancing Category Navigation through Multi-Translation
+
+- fix - Resolved PayPal Payment Gateway Issues
+- fix - Resolved Offline Payment Gateway Issues
+- fix - Solved Price Amount Discrepancies for Enhanced Customer Experience
+- fix - Not Redirect After Sitemap Creation
+
+- style - Addressing Website Theme Style Dysfunction
+- style - Optimizing Google Maps for Mobile: Ensuring Full Visibility in Mobile View
+```
+
 ### v2.10 - 15th March 2023
 ## Added
 ```
