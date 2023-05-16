@@ -7,7 +7,7 @@ category: Others
 
 # Changelog
 ## May
-### v2.55.0 - 15th May, 2023
+### v2.55.0 - 16th May, 2023
 ```
 - feat: Company can create benefits while creating a job
 - feat: Shuffle and randomize the job listing
