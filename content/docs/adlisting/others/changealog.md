@@ -8,6 +8,13 @@ category: Others
 # Changelog
 ---
 
+### v2.14.3 - 16th May 2023
+```
+- fix - Place Ad Page Blank Show Issue
+- fix - Sub Category Multi Translation Problem
+- fix - Version Highlighting Issue in Footer
+```
+
 ### v2.14.0 - 16th May 2023
 ```
 - feat - Efficient Order Management with User Plan Customization
