@@ -7,6 +7,25 @@ category: Others
 
 # Changelog
 
+### v2.2.19 - 19 May, 2023
+```
+improved - Author Assistance Widget - Empowering Authors with Enhanced Support
+improved - Visualizing Course Schedule - Enhancing Clarity and User Experience
+improved - Enhanced Onboarding System - Elevating User Adoption and Integration
+improved - Optimized Schooling Homepage - Dynamic Slider with Conditional Div Hide
+improved - Meeting Page with add status column
+
+fix - Resolving Admission Time Profile Image Issue
+fix - Allowing Image and Document Selection for Student Admission Time
+fix - Fixing Website System Data Update Issue - Troubleshooting from Settings Page
+fix - Resolving Student Export Time Error
+fix - Resolving Invoice Download Issues
+fix - Subject-based Course Selection with Fixed Filtering
+
+style - Message Page Design - Resolving Issues for Enhanced User Experience In Mobile Screen
+style - Resolving Dark Style Issue on Admission Form Page
+```
+
 ### v2.2.6 - 9 May, 2023
 ```
 - fix - Price amount range issue for admission plan
