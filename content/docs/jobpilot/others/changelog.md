@@ -6,6 +6,19 @@ category: Others
 ---
 
 # Changelog
+## June
+### v2.61.0 - 3rd June, 2023
+```
+- feat: Laravel 9 compatibility
+- feat: Bulk job import feature added
+- feat: Multiple language translations:  Organization Type
+- feat: After applying for a job, the employer receives mail notification added
+- feat: Display the exact location on the job details page
+- feat: Flutterwave new package integration compatibility with laravel 9
+- style: Smooth Slide animation on setting and account setup tabs 
+- fix: Insert image in WYSIWYG editor issue fix
+- and many more...
+```
 ## May
 ### v2.55.0 - 16th May, 2023
 ```
