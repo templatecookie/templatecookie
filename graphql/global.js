@@ -22,22 +22,6 @@ query {
       }
     }
 
-    defaultFeatures{
-      title
-      description
-      cssClass
-      bgClass
-      action{
-        label
-        href
-        target
-      }
-      icon {
-        filename
-        url
-      }
-    }
-
     selectedProducts {
       name
       slug
