@@ -7,6 +7,59 @@ category: Others
 
 # Changelog
 
+### v2.2.19 - 19 May, 2023
+```
+improved - Author Assistance Widget - Empowering Authors with Enhanced Support
+improved - Visualizing Course Schedule - Enhancing Clarity and User Experience
+improved - Enhanced Onboarding System - Elevating User Adoption and Integration
+improved - Optimized Schooling Homepage - Dynamic Slider with Conditional Div Hide
+improved - Meeting Page with add status column
+
+fix - Resolving Admission Time Profile Image Issue
+fix - Allowing Image and Document Selection for Student Admission Time
+fix - Fixing Website System Data Update Issue - Troubleshooting from Settings Page
+fix - Resolving Student Export Time Error
+fix - Resolving Invoice Download Issues
+fix - Subject-based Course Selection with Fixed Filtering
+
+style - Message Page Design - Resolving Issues for Enhanced User Experience In Mobile Screen
+style - Resolving Dark Style Issue on Admission Form Page
+```
+
+### v2.2.6 - 9 May, 2023
+```
+- fix - Price amount range issue for admission plan
+- fix - Avatar not work during student account create
+- fix: - Teacher and Student account creation failed issue from the all users page
+- style: Color added for subject
+- style: Footer logo color changed
+```
+### v2.2.1 - 8 May, 2023
+```
+- feat - Student and Teacher role account hold system
+- feat - Onboarding process integration
+- fix - Parent delete time trouble
+```
+
+### v2.0.0 - 27 April, 2023
+```
+- Multi language supported
+- Multi currency
+- 6 different payment gateways
+- Recurring admission plan
+- One time & recurring invoice
+- 5 user types
+- Full academic management
+- Student result card
+- Live class schedule
+- Online class with Zoom
+- Student & teacher group chat
+- PDF & Excel reports
+- Online student admission
+- Dark Mode supported
+- School home page
+```
+
 ### v1.14.21 - 16th May, 2022
 ```
 - Teacher attendance page some teachers missing issue

@@ -6,7 +6,33 @@ category: Others
 ---
 
 # Changelog
-
+## June
+### v2.61.0 - 3rd June, 2023
+```
+- feat: Laravel 9 compatibility
+- feat: Bulk job import feature added
+- feat: Multiple language translations:  Organization Type
+- feat: After applying for a job, the employer receives mail notification added
+- feat: Display the exact location on the job details page
+- feat: Flutterwave new package integration compatibility with laravel 9
+- style: Smooth Slide animation on setting and account setup tabs 
+- fix: Insert image in WYSIWYG editor issue fix
+- and many more...
+```
+## May
+### v2.55.0 - 16th May, 2023
+```
+- feat: Company can create benefits while creating a job
+- feat: Shuffle and randomize the job listing
+- feat: Added whatsapp button in the candidate profile
+- feat: Design of the new invoice page
+- feat: Employer listing filter
+- feat: Candidate with multiple job roles alert
+- feat: Blog post in multiple languages
+- fix: Job details url change issue fix
+- fix: Careerjet and Indeedjob http issue fix 
+- fix: Editing issue on admin panel skill, category, role, industry, profession, benefit, tag 
+```
 ## March
 ### v2.48.8 - 16th March, 2023
 ```
