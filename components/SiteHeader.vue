@@ -143,8 +143,8 @@ export default {
           blank: false,
         },
         {
-          name: "Blog",
-          url: '/blog',
+          name: "Premium Support",
+          url: '/premium-support',
           blank: false,
         },
       ]
