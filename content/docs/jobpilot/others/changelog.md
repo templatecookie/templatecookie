@@ -7,6 +7,17 @@ category: Others
 
 # Changelog
 ## June
+### v2.63.0 - 10th June, 2023
+```
+- feat: Vite.js integration
+- feat: Added why choose us section
+- improvement: Added vacancy in the job details page
+- fix: Refund policy translation issue fix
+- fix: Candidate auto-generated profile image issue fix
+- fix: Logo cropped issue fix
+- fix: Duplicate benefits and tags issue fix
+- and many more...
+```
 ### v2.61.0 - 3rd June, 2023
 ```
 - feat: Laravel 9 compatibility
