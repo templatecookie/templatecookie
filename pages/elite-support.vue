@@ -12,23 +12,18 @@
           <div class="max-w-3xl text-center mx-auto">
             <p class="text-lg text-gray-200">
               Let us handle the technical parts, you focus on the business.
-              Welcome to Templatecookie's Premium Support, where you can hire our team of expert developers at an unbelievably affordable rate. Say goodbye to technical headaches and experience top-notch assistance Script.
+              Welcome to Templatecookie's Elite Support, where you can hire our team of expert developers at an unbelievably affordable rate. Say goodbye to technical headaches and experience top-notch assistance Script.
             </p>
           </div>
 
-          <div class="text-center">
-            <a class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 shadow-lg shadow-transparent hover:shadow-blue-700/50 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-6 dark:focus:ring-offset-gray-800" href="#">
-              Get started
-              <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-            </a>
+          <div class="flex justify-center">
+            <button-element label="Get started" href="#getStarted" cssClass="bg-primary hover:bg-secondary"/>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Icon Blocks -->
+    <!-- Overview -->
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <div class="max-w-2xl mx-auto">
         <!-- Grid -->
@@ -38,16 +33,13 @@
               We tackle the technical challenges
             </h2>
             <p class="mt-3 text-gray-800 dark:text-gray-400">
-              At Templatecookie, we understand the importance of having a dedicated technical team by your side. With Premium Support, you gain access to personalized assistance, lightning-fast response times, and unparalleled expertise in handling any technical challenges you may encounter.
+              At Templatecookie, we understand the importance of having a dedicated technical team by your side. With Elite Support, you gain access to personalized assistance, lightning-fast response times, and unparalleled expertise in handling any technical challenges you may encounter.
             </p>
           </div>
           <div class="space-y-6 lg:space-y-10">
             <!-- Icon Block -->
             <div class="flex">
-              <svg class="flex-shrink-0 mt-2 h-6 w-6 text-gray-800 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
-                <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
-              </svg>
+              <svg  class="flex-shrink-0 mt-2 h-6 w-6 text-primary dark:text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M208,104a79.86,79.86,0,0,1-30.59,62.92A24.29,24.29,0,0,0,168,186v6a8,8,0,0,1-8,8H96a8,8,0,0,1-8-8v-6a24.11,24.11,0,0,0-9.3-19A79.87,79.87,0,0,1,48,104.45C47.76,61.09,82.72,25,126.07,24A80,80,0,0,1,208,104Z" opacity="0.2"></path><path d="M176,232a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h80A8,8,0,0,1,176,232Zm40-128a87.55,87.55,0,0,1-33.64,69.21A16.24,16.24,0,0,0,176,186v6a16,16,0,0,1-16,16H96a16,16,0,0,1-16-16v-6a16,16,0,0,0-6.23-12.66A87.59,87.59,0,0,1,40,104.5C39.74,56.83,78.26,17.15,125.88,16A88,88,0,0,1,216,104Zm-16,0a72,72,0,0,0-73.74-72c-39,.92-70.47,33.39-70.26,72.39a71.64,71.64,0,0,0,27.64,56.3h0A32,32,0,0,1,96,186v6h24V147.31L90.34,117.66a8,8,0,0,1,11.32-11.32L128,132.69l26.34-26.35a8,8,0,0,1,11.32,11.32L136,147.31V192h24v-6a32.12,32.12,0,0,1,12.47-25.35A71.65,71.65,0,0,0,200,104Z"></path></svg>
               <div class="ml-5 sm:ml-8">
                 <h3 class="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
                   Implementing your business requirements
@@ -61,16 +53,13 @@
 
             <!-- Icon Block -->
             <div class="flex">
-              <svg class="flex-shrink-0 mt-2 h-6 w-6 text-gray-800 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
-                <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
-              </svg>
+              <svg  class="flex-shrink-0 mt-2 h-6 w-6 text-primary dark:text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M208,128v16a80,80,0,0,1-160,0V128Z" opacity="0.2"></path><path d="M144,92a12,12,0,1,1,12,12A12,12,0,0,1,144,92ZM100,80a12,12,0,1,0,12,12A12,12,0,0,0,100,80Zm116,64A87.76,87.76,0,0,1,213,167l22.24,9.72A8,8,0,0,1,232,192a7.89,7.89,0,0,1-3.2-.67L207.38,182a88,88,0,0,1-158.76,0L27.2,191.33A7.89,7.89,0,0,1,24,192a8,8,0,0,1-3.2-15.33L43,167A87.76,87.76,0,0,1,40,144v-8H16a8,8,0,0,1,0-16H40v-8a87.76,87.76,0,0,1,3-23L20.8,79.33a8,8,0,1,1,6.4-14.66L48.62,74a88,88,0,0,1,158.76,0l21.42-9.36a8,8,0,0,1,6.4,14.66L213,89.05a87.76,87.76,0,0,1,3,23v8h24a8,8,0,0,1,0,16H216ZM56,120H200v-8a72,72,0,0,0-144,0Zm64,95.54V136H56v8A72.08,72.08,0,0,0,120,215.54ZM200,144v-8H136v79.54A72.08,72.08,0,0,0,200,144Z"></path></svg>
               <div class="ml-5 sm:ml-8">
                 <h3 class="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
                   Swift Bug Fixes
                 </h3>
                 <p class="mt-1 text-gray-600 dark:text-gray-400">
-                  Don't let bugs slow you down. Our Premium Support ensures rapid bug resolution, keeping your scripts running smoothly.
+                  Don't let bugs slow you down. Our Elite Support ensures rapid bug resolution, keeping your scripts running smoothly.
                 </p>
               </div>
             </div>
@@ -78,9 +67,7 @@
 
             <!-- Icon Block -->
             <div class="flex">
-              <svg class="flex-shrink-0 mt-2 h-6 w-6 text-gray-800 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
-              </svg>
+              <svg class="flex-shrink-0 mt-2 h-6 w-6 text-primary dark:text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M224,96a64,64,0,0,1-94.94,56L73,217A24,24,0,0,1,39,183L104,126.94a64,64,0,0,1,80-90.29L144,80l5.66,26.34L176,112l43.35-40A63.8,63.8,0,0,1,224,96Z" opacity="0.2"></path><path d="M226.76,69a8,8,0,0,0-12.84-2.88l-40.3,37.19-17.23-3.7-3.7-17.23,37.19-40.3A8,8,0,0,0,187,29.24,72,72,0,0,0,88,96,72.34,72.34,0,0,0,94,124.94L33.79,177c-.15.12-.29.26-.43.39a32,32,0,0,0,45.26,45.26c.13-.13.27-.28.39-.42L131.06,162A72,72,0,0,0,232,96,71.56,71.56,0,0,0,226.76,69ZM160,152a56.14,56.14,0,0,1-27.07-7,8,8,0,0,0-9.92,1.77L67.11,211.51a16,16,0,0,1-22.62-22.62L109.18,133a8,8,0,0,0,1.77-9.93,56,56,0,0,1,58.36-82.31l-31.2,33.81a8,8,0,0,0-1.94,7.1L141.83,108a8,8,0,0,0,6.14,6.14l26.35,5.66a8,8,0,0,0,7.1-1.94l33.81-31.2A56.06,56.06,0,0,1,160,152Z"></path></svg>
               <div class="ml-5 sm:ml-8">
                 <h3 class="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
                   Ongoing Maintenance
@@ -94,9 +81,7 @@
 
             <!-- Icon Block -->
             <div class="flex">
-              <svg class="flex-shrink-0 mt-2 h-6 w-6 text-gray-800 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
-              </svg>
+              <svg class="flex-shrink-0 mt-2 h-6 w-6 text-primary dark:text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M80,144v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V128H64A16,16,0,0,1,80,144Zm112-16a16,16,0,0,0-16,16v40a16,16,0,0,0,16,16h32V128Z" opacity="0.2"></path><path d="M201.89,54.66A104.08,104.08,0,0,0,24,128v56a24,24,0,0,0,24,24H64a24,24,0,0,0,24-24V144a24,24,0,0,0-24-24H40.36A88.12,88.12,0,0,1,190.54,65.93,87.39,87.39,0,0,1,215.65,120H192a24,24,0,0,0-24,24v40a24,24,0,0,0,24,24h24a24,24,0,0,1-24,24H136a8,8,0,0,0,0,16h56a40,40,0,0,0,40-40V128A103.41,103.41,0,0,0,201.89,54.66ZM64,136a8,8,0,0,1,8,8v40a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V136Zm128,56a8,8,0,0,1-8-8V144a8,8,0,0,1,8-8h24v56Z"></path></svg>
               <div class="ml-5 sm:ml-8">
                 <h3 class="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
                   Technical Guidance
@@ -112,500 +97,505 @@
         <!-- End Grid -->
       </div>
     </div>
-    <!-- End Icon Blocks -->
-    <div class="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+
+    <!-- Comparison -->
+    <div class="relative isolate bg-gray-100 px-6 py-24 sm:py-32 lg:px-8">
       <div class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl" aria-hidden="true">
         <div class="mx-auto aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
       </div>
       <div class="mx-auto max-w-2xl text-center lg:max-w-4xl">
-        <h2 class="text-base font-semibold leading-7 text-indigo-600">Pricing</h2>
-        <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"> Why Choose Us? </p>
+        <h2 class="text-base font-semibold leading-7 text-indigo-600">Compairson</h2>
+        <p class="mt-2 text-4xl font-bold tracking-tight leading-relaxed text-gray-900 sm:text-5xl"> 
+          The Power of a Development Partner
+        </p>
       </div>
-      <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">Qui iusto aut est earum eos quae. Eligendi est at nam aliquid ad quo reprehenderit in aliquid fugiat dolorum voluptatibus.</p>
+      <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
+        <!-- Discover how partnering with a reliable development partner can transform your technical journey, overcoming common challenges faced by non-technical founders. Explore the benefits that await you and unlock the path to success in your business ventures. -->
+        Transform your technical journey, overcome challenges, and unlock success with a reliable development partner. Explore the benefits that await you on the path to business success.
+      </p>
       <div class="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
         <div class="rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 bg-white/60 sm:mx-8 lg:mx-0 rounded-t-3xl sm:rounded-b-none lg:rounded-tr-none lg:rounded-bl-3xl">
-          <h3 id="tier-hobby" class="text-base font-semibold leading-7 text-indigo-600">Hobby</h3>
-          <p class="mt-4 flex items-baseline gap-x-2">
-            <span class="text-5xl font-bold tracking-tight text-gray-900">$19</span>
-            <span class="text-base text-gray-500">/month</span>
+          <!-- <h3 id="tier-hobby" class="text-base font-semibold leading-7 text-indigo-600">
+            Hobby
+          </h3> -->
+          <p class="mt-6 text-xl text-gray-600">
+            Challenges non-technical founders may face with technical parts
           </p>
-          <p class="mt-6 text-base leading-7 text-gray-600">The perfect plan if you&#039;re just getting started with our product.</p>
           <ul role="list" class="mt-8 space-y-3 text-sm leading-6 sm:mt-10 text-gray-600">
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              25 products
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              Up to 10,000 subscribers
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              Advanced analytics
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              24-hour support response time
+            <li class="flex gap-x-3" v-for="(item, index) in compairison[0].items" :key="index">
+              <svg class="h-6 w-5 flex-none text-red-600" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>
+              {{ item.name }}
             </li>
           </ul>
-          <a href="#" aria-describedby="tier-hobby" class="mt-8 block rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline-indigo-600">Get started today</a>
         </div>
         <div class="rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 relative bg-gray-900 shadow-2xl">
-          <h3 id="tier-enterprise" class="text-base font-semibold leading-7 text-indigo-400">Enterprise</h3>
-          <p class="mt-4 flex items-baseline gap-x-2">
-            <span class="text-5xl font-bold tracking-tight text-white">$49</span>
-            <span class="text-base text-gray-400">/month</span>
+          <!-- <h3 id="tier-enterprise" class="text-base font-semibold leading-7 text-indigo-400">
+            Enterprise
+          </h3> -->
+          <p class="mt-6 text-xl text-gray-200">
+            Benefits of having a reliable development partner
           </p>
-          <p class="mt-6 text-base leading-7 text-gray-300">Dedicated support and infrastructure for your company.</p>
           <ul role="list" class="mt-8 space-y-3 text-sm leading-6 sm:mt-10 text-gray-300">
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              Unlimited products
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              Unlimited subscribers
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              Advanced analytics
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              Dedicated support representative
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              Marketing automations
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-              </svg>
-              Custom integrations
+            <li class="flex gap-x-3" v-for="(item, index) in compairison[1].items" :key="index">
+              <svg class="h-6 w-5 flex-none text-green-500" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-52.2,6.84-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+              {{ item.name }}
             </li>
           </ul>
-          <a href="#" aria-describedby="tier-enterprise" class="mt-8 block rounded-md py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10 bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500">Get started today</a>
         </div>
+      </div>
+      <div class="flex justify-center mt-12">
+        <button-element label="Get Elite Support" href="#" cssClass="bg-dark text-white hover:bg-primary"/>
       </div>
     </div>
 
-
-  <!-- pricing  -->
-  <div class="bg-gray-100 py-24 sm:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-4xl sm:text-center">
-        <h2 class="text-base font-semibold leading-7 text-indigo-600">Pricing</h2>
-        <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"> Choose the package that suits your needs </p>
-      </div>
-      <!-- <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 sm:text-center">Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in Explicabo id ut laborum.</p> -->
-      <div class="mt-20 flow-root">
-        <div class="isolate -mt-16 grid max-w-sm grid-cols-1 gap-y-16 divide-y divide-gray-200 sm:mx-auto lg:-mx-8 lg:mt-0 lg:max-w-none lg:grid-cols-3 lg:divide-x lg:divide-y-0 xl:-mx-4">
-          <div class="pt-16 lg:px-8 lg:pt-0 xl:px-14">
-            <h3 id="tier-basic" class="text-base font-semibold leading-7 text-gray-900">Silver</h3>
-            <p class="mt-6 flex items-baseline gap-x-1">
-              <span class="text-5xl font-bold tracking-tight text-gray-900">$99</span>
-              <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
-            </p>
-            <p class="mt-3 text-sm leading-6 text-gray-500">$22 per extra hours needed</p>
-            <a href="#" aria-describedby="tier-basic" class="mt-10 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
-            <p class="mt-10 text-sm font-semibold leading-6 text-gray-900">Affordable and reliable support for small projects.</p>
-            <ul role="list" class="mt-6 space-y-3 text-sm leading-6 text-gray-600">
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                </svg>
-                5 hours included
-              </li>
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                </svg>
-                New feature implementation
-              </li>
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                </svg>
-                Quick bug fixing
-              </li>
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                </svg>
-                Ongoing support and maintenance
-              </li>
-            </ul>
+    <!-- pricing  -->
+    <!-- <div class="bg-gray-100 py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-4xl sm:text-center">
+          <h2 class="text-base font-semibold leading-7 text-indigo-600">Pricing</h2>
+          <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"> Choose the package that suits your needs </p>
+        </div>
+        <div class="mt-20 flow-root">
+          <div class="isolate -mt-16 grid max-w-sm grid-cols-1 gap-y-16 divide-y divide-gray-200 sm:mx-auto lg:-mx-8 lg:mt-0 lg:max-w-none lg:grid-cols-3 lg:divide-x lg:divide-y-0 xl:-mx-4">
+            <div class="pt-16 lg:px-8 lg:pt-0 xl:px-14">
+              <h3 id="tier-basic" class="text-base font-semibold leading-7 text-gray-900">Silver</h3>
+              <p class="mt-6 flex items-baseline gap-x-1">
+                <span class="text-5xl font-bold tracking-tight text-gray-900">$99</span>
+                <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
+              </p>
+              <p class="mt-3 text-sm leading-6 text-gray-500">$22 per extra hours needed</p>
+              <a href="#" aria-describedby="tier-basic" class="mt-10 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+              <p class="mt-10 text-sm font-semibold leading-6 text-gray-900">Affordable and reliable support for small projects.</p>
+              <ul role="list" class="mt-6 space-y-3 text-sm leading-6 text-gray-600">
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                  </svg>
+                  5 hours included
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                  </svg>
+                  New feature implementation
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                  </svg>
+                  Quick bug fixing
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                  </svg>
+                  Ongoing support and maintenance
+                </li>
+              </ul>
+            </div>
+            <div class="pt-16 lg:px-8 lg:pt-0 xl:px-14">
+              <h3 id="tier-essential" class="text-base font-semibold leading-7 text-gray-900">Gold</h3>
+              <p class="mt-6 flex items-baseline gap-x-1">
+                <span class="text-5xl font-bold tracking-tight text-gray-900">$199</span>
+                <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
+              </p>
+              <p class="mt-3 text-sm leading-6 text-gray-500">$20 per extra hours needed</p>
+              <a href="#" aria-describedby="tier-essential" class="mt-10 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+              <p class="mt-10 text-sm font-semibold leading-6 text-gray-900">Comprehensive assistance for growing businesses.</p>
+              <ul role="list" class="mt-6 space-y-3 text-sm leading-6 text-gray-600">
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                  </svg>
+                  10 Hours included
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                  </svg>
+                  Script Installation & Server Maintenance
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                  </svg>
+                  New feature implementation
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                  </svg>
+                  Quick bug fixing
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                  </svg>
+                  Ongoing support and maintenance
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                  </svg>
+                  Expert Technical Guidance
+                </li>
+              </ul>
+            </div>
+            <div class="pt-16 lg:px-8 lg:pt-0 xl:px-14">
+              <h3 id="tier-growth" class="text-base font-semibold leading-7 text-gray-900">Platinum</h3>
+              <p class="mt-6 flex items-baseline gap-x-1">
+                <span class="text-5xl font-bold tracking-tight text-gray-900">$399</span>
+                <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
+              </p>
+              <p class="mt-3 text-sm leading-6 text-gray-500">$18 per extra hours needed</p>
+              <a href="#" aria-describedby="tier-growth" class="mt-10 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+              <p class="mt-10 text-sm font-semibold leading-6 text-gray-900">VIP treatment for large-scale enterprises.</p>
+              <ul role="list" class="mt-6 space-y-3 text-sm leading-6 text-gray-600">
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                  </svg>
+                  20 Hours included
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                  </svg>
+                  Script Installation & Server Maintenance
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                  </svg>
+                  New feature implementation
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                  </svg>
+                  Quick bug fixing
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                  </svg>
+                  Ongoing support and maintenance
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                  </svg>
+                  Expert Technical Guidance
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                  </svg>
+                  Dedicated Success Manager
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="pt-16 lg:px-8 lg:pt-0 xl:px-14">
-            <h3 id="tier-essential" class="text-base font-semibold leading-7 text-gray-900">Gold</h3>
-            <p class="mt-6 flex items-baseline gap-x-1">
-              <span class="text-5xl font-bold tracking-tight text-gray-900">$199</span>
-              <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
-            </p>
-            <p class="mt-3 text-sm leading-6 text-gray-500">$20 per extra hours needed</p>
-            <a href="#" aria-describedby="tier-essential" class="mt-10 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
-            <p class="mt-10 text-sm font-semibold leading-6 text-gray-900">Comprehensive assistance for growing businesses.</p>
-            <ul role="list" class="mt-6 space-y-3 text-sm leading-6 text-gray-600">
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                </svg>
-                10 Hours included
-              </li>
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                </svg>
-                Script Installation & Server Maintenance
-              </li>
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                </svg>
-                New feature implementation
-              </li>
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                </svg>
-                Quick bug fixing
-              </li>
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                </svg>
-                Ongoing support and maintenance
-              </li>
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                </svg>
-                Expert Technical Guidance
-              </li>
-            </ul>
-          </div>
-          <div class="pt-16 lg:px-8 lg:pt-0 xl:px-14">
-            <h3 id="tier-growth" class="text-base font-semibold leading-7 text-gray-900">Platinum</h3>
-            <p class="mt-6 flex items-baseline gap-x-1">
-              <span class="text-5xl font-bold tracking-tight text-gray-900">$399</span>
-              <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
-            </p>
-            <p class="mt-3 text-sm leading-6 text-gray-500">$18 per extra hours needed</p>
-            <a href="#" aria-describedby="tier-growth" class="mt-10 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
-            <p class="mt-10 text-sm font-semibold leading-6 text-gray-900">VIP treatment for large-scale enterprises.</p>
-            <ul role="list" class="mt-6 space-y-3 text-sm leading-6 text-gray-600">
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                </svg>
-                20 Hours included
-              </li>
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                </svg>
-                Script Installation & Server Maintenance
-              </li>
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                </svg>
-                New feature implementation
-              </li>
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                </svg>
-                Quick bug fixing
-              </li>
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                </svg>
-                Ongoing support and maintenance
-              </li>
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                </svg>
-                Expert Technical Guidance
-              </li>
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                </svg>
-                Dedicated Success Manager
-              </li>
-            </ul>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- / Features  -->
+    <div class="bg-white py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:text-center">
+          <h2 class="text-base font-semibold leading-7 text-primary">Deploy faster</h2>
+          <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Features and Services</p>
+          <!-- <p class="mt-6 text-lg leading-8 text-gray-600">Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p> -->
+        </div>
+        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+          <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
+                  <!-- <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M201.89,54.66A103.43,103.43,0,0,0,128.79,24H128A104,104,0,0,0,24,128v56a24,24,0,0,0,24,24H64a24,24,0,0,0,24-24V144a24,24,0,0,0-24-24H40.36A88.12,88.12,0,0,1,190.54,65.93,87.39,87.39,0,0,1,215.65,120H192a24,24,0,0,0-24,24v40a24,24,0,0,0,24,24h24a24,24,0,0,1-24,24H136a8,8,0,0,0,0,16h56a40,40,0,0,0,40-40V128A103.41,103.41,0,0,0,201.89,54.66ZM64,136a8,8,0,0,1,8,8v40a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V136Zm128,56a8,8,0,0,1-8-8V144a8,8,0,0,1,8-8h24v56Z"></path></svg> -->
+                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M208,80H96V56a32,32,0,0,1,32-32c15.37,0,29.2,11,32.16,25.59a8,8,0,0,0,15.68-3.18C171.32,24.15,151.2,8,128,8A48.05,48.05,0,0,0,80,56V80H48A16,16,0,0,0,32,96V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V96A16,16,0,0,0,208,80Zm0,128H48V96H208V208Zm-80-96a28,28,0,0,0-8,54.83V184a8,8,0,0,0,16,0V166.83A28,28,0,0,0,128,112Zm0,40a12,12,0,1,1,12-12A12,12,0,0,1,128,152Z"></path></svg>
+                </div>
+                Access to Customer Portal
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Our team is available round-the-clock to address your queries and concerns promptly.
+              </dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
+                  <!-- <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"></path></svg> -->
+                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"></path></svg>
+                </div>
+                Monitor over your tasks
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600"> 
+                Effortlessly create, track, and collaborate on tasks. Stay organized and optimize productivity.
+              </dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
+                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M228.44,89.34l-96-64a8,8,0,0,0-8.88,0l-96,64A8,8,0,0,0,24,96V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V96A8,8,0,0,0,228.44,89.34ZM128,41.61l81.91,54.61-67,47.78H113.11l-67-47.78ZM40,200V111.53l65.9,47a8,8,0,0,0,4.65,1.49h34.9a8,8,0,0,0,4.65-1.49l65.9-47V200Z"></path></svg>
+                </div>
+                Email Support
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Reach out to us anytime via email, and we'll provide detailed and timely responses.
+              </dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" width="32" height="32" stroke-width="1.5" stroke="currentColor" fill="currentColor" viewBox="0 0 256 256"><path d="M144,92a12,12,0,1,1,12,12A12,12,0,0,1,144,92ZM100,80a12,12,0,1,0,12,12A12,12,0,0,0,100,80Zm116,64A87.76,87.76,0,0,1,213,167l22.24,9.72A8,8,0,0,1,232,192a7.89,7.89,0,0,1-3.2-.67L207.38,182a88,88,0,0,1-158.76,0L27.2,191.33A7.89,7.89,0,0,1,24,192a8,8,0,0,1-3.2-15.33L43,167A87.76,87.76,0,0,1,40,144v-8H16a8,8,0,0,1,0-16H40v-8a87.76,87.76,0,0,1,3-23L20.8,79.33a8,8,0,1,1,6.4-14.66L48.62,74a88,88,0,0,1,158.76,0l21.42-9.36a8,8,0,0,1,6.4,14.66L213,89.05a87.76,87.76,0,0,1,3,23v8h24a8,8,0,0,1,0,16H216ZM56,120H200v-8a72,72,0,0,0-144,0Zm64,95.54V136H56v8A72.08,72.08,0,0,0,120,215.54ZM200,144v-8H136v79.54A72.08,72.08,0,0,0,200,144Z"></path></svg>
+                </div>
+                Bug Resolution
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Our experts will swiftly troubleshoot and resolve any script-related issues you encounter.
+              </dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
+                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M136,120v96a8,8,0,0,1-16,0V120a8,8,0,0,1,16,0Zm64,72a8,8,0,0,0-8,8v16a8,8,0,0,0,16,0V200A8,8,0,0,0,200,192Zm24-32H208V40a8,8,0,0,0-16,0V160H176a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16ZM56,160a8,8,0,0,0-8,8v48a8,8,0,0,0,16,0V168A8,8,0,0,0,56,160Zm24-32H64V40a8,8,0,0,0-16,0v88H32a8,8,0,0,0,0,16H80a8,8,0,0,0,0-16Zm72-48H136V40a8,8,0,0,0-16,0V80H104a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Z"></path></svg>
+                </div>
+                Code Customization
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Tailor your scripts to fit your unique requirements with our customization expertise.
+              </dd>
+            </div>
+            <div class="relative pl-16">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
+                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M197.58,129.06l-51.61-19-19-51.65a15.92,15.92,0,0,0-29.88,0L78.07,110l-51.65,19a15.92,15.92,0,0,0,0,29.88L78,178l19,51.62a15.92,15.92,0,0,0,29.88,0l19-51.61,51.65-19a15.92,15.92,0,0,0,0-29.88ZM140.39,163a15.87,15.87,0,0,0-9.43,9.43l-19,51.46L93,172.39A15.87,15.87,0,0,0,83.61,163h0L32.15,144l51.46-19A15.87,15.87,0,0,0,93,115.61l19-51.46,19,51.46a15.87,15.87,0,0,0,9.43,9.43l51.46,19ZM144,40a8,8,0,0,1,8-8h16V16a8,8,0,0,1,16,0V32h16a8,8,0,0,1,0,16H184V64a8,8,0,0,1-16,0V48H152A8,8,0,0,1,144,40ZM248,88a8,8,0,0,1-8,8h-8v8a8,8,0,0,1-16,0V96h-8a8,8,0,0,1,0-16h8V72a8,8,0,0,1,16,0v8h8A8,8,0,0,1,248,88Z"></path></svg>
+                </div>
+                Performance Optimization
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Boost the performance of your scripts for optimal user experience and efficiency.
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <!-- / Team  -->
+    <div class="bg-gray-900 py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:mx-0">
+          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Team Expertise</h2>
+          <p class="mt-6 text-lg leading-8 text-gray-300"> Our team of highly skilled developers specializes in PHP scripting and web development. With years of experience, they possess in-depth knowledge of our products and are committed to delivering exceptional support. </p>
+        </div>
+        <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-3">
+          <li>
+            <img class="aspect-[14/13] max-w-xs w-full rounded-2xl object-cover" src="/images/zafor-iqbal.jpg" alt="">
+            <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">Zafor Iqbal</h3>
+            <p class="text-base leading-7 text-gray-300">User Interface Designer</p>
+            <!-- <p class="text-sm leading-6 text-gray-500">Toronto, Canada</p> -->
+          </li>
+          <li>
+            <img class="aspect-[14/13] max-w-xs w-full rounded-2xl object-cover" src="/images/ariful-islam.jpeg" alt="">
+            <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">Ariful Islam</h3>
+            <p class="text-base leading-7 text-gray-300"> Backend Developer </p>
+            <!-- <p class="text-sm leading-6 text-gray-500">Toronto, Canada</p> -->
+          </li>
+          <li>
+            <img class="aspect-[14/13] max-w-xs w-full rounded-2xl object-cover" src="/images/zakir-hossen.png" alt="">
+            <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">Zakir Hossen</h3>
+            <p class="text-base leading-7 text-gray-300">CEO & Founder</p>
+            <!-- <p class="text-sm leading-6 text-gray-500">Toronto, Canada</p> -->
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- / FAQ  -->
+    <div class="bg-white">
+      <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
+          <p class="mt-6 text-base leading-7 text-gray-600">Have a different question and can’t find the answer you’re looking for? Reach out to our support team by <a href="#" class="font-semibold text-primary hover:text-dark">sending us an email</a> and we’ll get back to you as soon as we can.</p>
+        </div>
+        <div class="mt-20">
+          <dl class="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:gap-x-10">
+            <!-- <div>
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                What is the average response time for support requests?
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                We pride ourselves on our rapid response times, typically resolving queries within 3 hours.
+              </dd>
+            </div> -->
+            <div>
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                Can I cancel my subscription at any time?
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Yes, you can cancel your subscription at any point, and we'll guide you through the process hassle-free.
+              </dd>
+            </div>
+            <div>
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                Is Elite Support available for all three products (Jobportal script, School Management System, and Classified Listing Script)?
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Absolutely! Elite Support is available for all our products, ensuring comprehensive assistance tailored to your specific needs.
+              </dd>
+            </div>
+            <div>
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                What happens if I encounter an issue outside of regular business hours?
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Our support is available during our regular business hours. We apologize for any inconvenience, but we do not currently provide support outside of these hours. 
+              </dd>
+            </div>
+            <div>
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                How soon can I expect a response from the support team?
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                We prioritize our customers' needs and aim to provide prompt assistance. On average, you can expect a response within 3 hours of submitting your support request.
+              </dd>
+            </div>
+            <div>
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                Can I upgrade or downgrade my subscription package?
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Yes, we understand that your support requirements may change over time. You can easily upgrade or downgrade your subscription package based on your evolving needs.
+              </dd>
+            </div>
+            <div>
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                Can I get a refund for the Elite Support subscription?
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                While we do not offer refunds for the Elite Support subscription, you have the flexibility to cancel your subscription at any time. We understand that circumstances may change, and you can discontinue the service whenever you need. Simply contact our support team, and they will assist you with the cancellation process.
+              </dd>
+            </div>
+            <div>
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                Can I get assistance with script installation or migration?
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Absolutely! Our support team can guide you through the installation process and provide assistance with script migration, ensuring a seamless transition.
+              </dd>
+            </div>
+            <div>
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                Do you offer any documentation or tutorials for self-help?
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Yes, we provide comprehensive documentation and tutorials to empower you with self-help resources. However, if you need personalized assistance, our support team is here to assist you.
+              </dd>
+            </div>
+            <div>
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                Is there a limit to the number of support requests I can make?
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                There is no limit to the number of support requests you can make during your subscription period. Our team is dedicated to resolving all your concerns one by one.
+              </dd>
+            </div>
+            <div>
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                How secure is the information I provide during support interactions?
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                We prioritize the security and confidentiality of your information. All support interactions are strictly confidential, and we adhere to industry-standard security measures to protect your data.
+              </dd>
+            </div>
+
+            <!-- More questions... -->
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <!-- / CTA  -->
+    <div class="bg-primary -mb-20">
+      <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Unlock Unbeatable Support Today!
+          </h2>
+          <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-blue-200">
+            Supercharge your projects with Elite Support. Get expert assistance, personalized guidance, and lightning-fast issue resolution. Elevate your business with unbeatable technical support."
+          </p>
+          <div class="mt-10 flex items-center justify-center gap-x-6">
+            <button-element label="Subscribe now" href="#contactUs" cssClass="bg-white text-black hover:bg-dark hover:text-white"/>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-<div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:text-center">
-      <h2 class="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
-      <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Features and Services</p>
-      <p class="mt-6 text-lg leading-8 text-gray-600">Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p>
-    </div>
-    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-        <div class="relative pl-16">
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
-              </svg>
-            </div>
-            24/7 Support
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-600"> Our team is available round-the-clock to address your queries and concerns promptly. </dd>
-        </div>
-        <div class="relative pl-16">
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
-              </svg>
-            </div>
-            Live Chat Assistance
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-600"> Get immediate help through our live chat feature, ensuring a seamless experience. </dd>
-        </div>
-        <div class="relative pl-16">
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
-              </svg>
-            </div>
-            Email Support
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-600">
-            Reach out to us anytime via email, and we'll provide detailed and timely responses.
-          </dd>
-        </div>
-        <div class="relative pl-16">
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
-              </svg>
-            </div>
-            Bug Resolution
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-600">
-            Our experts will swiftly troubleshoot and resolve any script-related issues you encounter.
-          </dd>
-        </div>
-        <div class="relative pl-16">
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
-              </svg>
-            </div>
-            Code Customization
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-600">
-            Tailor your scripts to fit your unique requirements with our customization expertise.
-          </dd>
-        </div>
-        <div class="relative pl-16">
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-              <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
-              </svg>
-            </div>
-            Performance Optimization
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-600">
-            Boost the performance of your scripts for optimal user experience and efficiency.
-          </dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
-<div class="bg-gray-900 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0">
-      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Team Expertise</h2>
-      <p class="mt-6 text-lg leading-8 text-gray-300"> Our team of highly skilled developers specializes in PHP scripting and web development. With years of experience, they possess in-depth knowledge of our products and are committed to delivering exceptional support. </p>
-    </div>
-    <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-3">
-      <li>
-        <img class="aspect-[14/13] w-full rounded-2xl object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="">
-        <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">Zafor Iqbal</h3>
-        <p class="text-base leading-7 text-gray-300">User Interface Designer</p>
-        <p class="text-sm leading-6 text-gray-500">Toronto, Canada</p>
-      </li>
-      <li>
-        <img class="aspect-[14/13] w-full rounded-2xl object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="">
-        <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">Rakibul Islam</h3>
-        <p class="text-base leading-7 text-gray-300">Frontend Developer</p>
-        <p class="text-sm leading-6 text-gray-500">Toronto, Canada</p>
-      </li>
-      <li>
-        <img class="aspect-[14/13] w-full rounded-2xl object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="">
-        <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">Ariful Islam</h3>
-        <p class="text-base leading-7 text-gray-300"> Backend Developer </p>
-        <p class="text-sm leading-6 text-gray-500">Toronto, Canada</p>
-      </li>
-    </ul>
-  </div>
-</div>
-
-<div class="bg-white">
-  <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
-    <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
-      <p class="mt-6 text-base leading-7 text-gray-600">Have a different question and can’t find the answer you’re looking for? Reach out to our support team by <a href="#" class="font-semibold text-indigo-600 hover:text-indigo-500">sending us an email</a> and we’ll get back to you as soon as we can.</p>
-    </div>
-    <div class="mt-20">
-      <dl class="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:gap-x-10">
-        <div>
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            What is the average response time for support requests?
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-600">
-            We pride ourselves on our rapid response times, typically resolving queries within X hours.
-          </dd>
-        </div>
-        <div>
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            Can I cancel my subscription at any time?
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-600">
-            Yes, you can cancel your subscription at any point, and we'll guide you through the process hassle-free.
-          </dd>
-        </div>
-        <div>
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            Is Premium Support available for all three products (Jobportal script, School Management System, and Classified Listing Script)?
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-600">
-            Absolutely! Premium Support is available for all our products, ensuring comprehensive assistance tailored to your specific needs.
-          </dd>
-        </div>
-        <div>
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            What happens if I encounter an issue outside of regular business hours?
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-600">
-            We understand that technical issues can arise at any time. With our 24/7 support, our team is ready to assist you round-the-clock, including weekends and holidays.
-          </dd>
-        </div>
-        <div>
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            How soon can I expect a response from the support team?
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-600">
-            We prioritize our customers' needs and aim to provide prompt assistance. On average, you can expect a response within X hours of submitting your support request.
-          </dd>
-        </div>
-        <div>
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            Can I upgrade or downgrade my subscription package?
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-600">
-            Yes, we understand that your support requirements may change over time. You can easily upgrade or downgrade your subscription package based on your evolving needs.
-          </dd>
-        </div>
-        <div>
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            What happens if I'm not satisfied with Premium Support?
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-600">
-            Your satisfaction is our utmost priority. If, for any reason, you are not satisfied with our Premium Support, we offer a X-day money-back guarantee.
-          </dd>
-        </div>
-        <div>
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            Can I get assistance with script installation or migration?
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-600">
-            Absolutely! Our support team can guide you through the installation process and provide assistance with script migration, ensuring a seamless transition.
-          </dd>
-        </div>
-        <div>
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            Do you offer any documentation or tutorials for self-help?
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-600">
-            Yes, we provide comprehensive documentation and tutorials to empower you with self-help resources. However, if you need personalized assistance, our support team is here to assist you.
-          </dd>
-        </div>
-        <div>
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            Is there a limit to the number of support requests I can make?
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-600">
-            There is no limit to the number of support requests you can make during your subscription period. Our team is dedicated to resolving all your concerns promptly.
-          </dd>
-        </div>
-        <div>
-          <dt class="text-base font-semibold leading-7 text-gray-900">
-            How secure is the information I provide during support interactions?
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-gray-600">
-            We prioritize the security and confidentiality of your information. All support interactions are strictly confidential, and we adhere to industry-standard security measures to protect your data.
-          </dd>
-        </div>
-
-        <!-- More questions... -->
-      </dl>
-    </div>
-  </div>
-</div>
-<div class="bg-indigo-700 -mb-20">
-  <div class="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
-    <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-        Unlock Unbeatable Support Today!
-      </h2>
-      <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-indigo-200">
-        Supercharge your projects with premium support. Get expert assistance, personalized guidance, and lightning-fast issue resolution. Elevate your business with unbeatable technical support."
-      </p>
-      <div class="mt-10 flex items-center justify-center gap-x-6">
-        <a href="#" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-          Subscribe Now
-        </a>
+    <div class="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8" id="contactUs">
+      <div class="mx-auto max-w-xl lg:max-w-4xl text-center" id="getStarted">
+        <h2 class="text-4xl font-bold tracking-tight text-gray-900">Get in Touch with Elite Support</h2>
+        <p class="mt-2 text-lg leading-8 text-gray-600"> Reach out to our Elite Support team for prompt and personalized assistance. </p>
+        <div id="hireUsForm" class="bg-white rounded-lg w-full mt-16 flex max-w-xl mx-auto"></div>
       </div>
     </div>
-  </div>
-</div>
-
-
-
-
   </div>
 </template>
 
 <script>
+import ButtonElement from '../components/ButtonElement.vue'
 export default {
+  components: { ButtonElement },
+  data(){
+    return {
+      hubspotLoaded: false,
+      compairison: [
+        {
+          name: "Challanges",
+          items: [
+            { name: "Limited Technical Knowledge" },
+            { name: "Difficulty hiring the right talent" },
+            { name: "Challenges translating business requirements into technical terms" },
+            { name: "Struggles managing technical projects effectively" },
+            { name: "Handling technical challenges and risks without expertise" },
+            { name: "Difficulty keeping up with evolving technology trends" },
+          ]
+        },
+        {
+          name: "Benefits",
+          items: [
+            { name: "Access to technical expertise and specialized skills" },
+            { name: "Efficient execution of projects by experienced professionals" },
+            { name: "Scalability and flexibility to adapt to changing needs" },
+            { name: "Cost optimization through streamlined processes" },
+            { name: "Mitigation of technical risks and challenges" },
+            { name: "Stay updated with the latest technology trends" },
+            { name: "Focus on core competencies and strategic decision-making" },
+            { name: "Expert guidance and support throughout the development process" },
+          ]
+        }
+      ]
+    }
+  },
+  mounted(){
+    const script = document.createElement("script");
+    script.src="https://js.hsforms.net/forms/v2.js";
+    document.body.appendChild(script);
+    script.addEventListener("load", () => {
+      this.hubspotLoaded = true;
+
+      // Create the form
+      window.hbspt.forms.create({
+        region: "na1",
+        portalId: "22174697",
+        formId: "6d720736-42f2-4fac-ab16-85e31cf04d82",
+        target: "#hireUsForm"
+      });
+
+    })
+  },
 
 }
 </script>
