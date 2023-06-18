@@ -12,12 +12,12 @@
           <div class="max-w-3xl text-center mx-auto">
             <p class="text-lg text-gray-200">
               Let us handle the technical parts, you focus on the business.
-              Welcome to Templatecookie's Premium Support, where you can hire our team of expert developers at an unbelievably affordable rate. Say goodbye to technical headaches and experience top-notch assistance Script.
+              Welcome to Templatecookie's Elite Support, where you can hire our team of expert developers at an unbelievably affordable rate. Say goodbye to technical headaches and experience top-notch assistance Script.
             </p>
           </div>
 
           <div class="flex justify-center">
-            <button-element label="Get started" href="#" cssClass="bg-primary hover:bg-secondary"/>
+            <button-element label="Get started" href="#getStarted" cssClass="bg-primary hover:bg-secondary"/>
           </div>
         </div>
       </div>
@@ -33,16 +33,13 @@
               We tackle the technical challenges
             </h2>
             <p class="mt-3 text-gray-800 dark:text-gray-400">
-              At Templatecookie, we understand the importance of having a dedicated technical team by your side. With Premium Support, you gain access to personalized assistance, lightning-fast response times, and unparalleled expertise in handling any technical challenges you may encounter.
+              At Templatecookie, we understand the importance of having a dedicated technical team by your side. With Elite Support, you gain access to personalized assistance, lightning-fast response times, and unparalleled expertise in handling any technical challenges you may encounter.
             </p>
           </div>
           <div class="space-y-6 lg:space-y-10">
             <!-- Icon Block -->
             <div class="flex">
-              <svg class="flex-shrink-0 mt-2 h-6 w-6 text-gray-800 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
-                <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
-              </svg>
+              <svg  class="flex-shrink-0 mt-2 h-6 w-6 text-primary dark:text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M208,104a79.86,79.86,0,0,1-30.59,62.92A24.29,24.29,0,0,0,168,186v6a8,8,0,0,1-8,8H96a8,8,0,0,1-8-8v-6a24.11,24.11,0,0,0-9.3-19A79.87,79.87,0,0,1,48,104.45C47.76,61.09,82.72,25,126.07,24A80,80,0,0,1,208,104Z" opacity="0.2"></path><path d="M176,232a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h80A8,8,0,0,1,176,232Zm40-128a87.55,87.55,0,0,1-33.64,69.21A16.24,16.24,0,0,0,176,186v6a16,16,0,0,1-16,16H96a16,16,0,0,1-16-16v-6a16,16,0,0,0-6.23-12.66A87.59,87.59,0,0,1,40,104.5C39.74,56.83,78.26,17.15,125.88,16A88,88,0,0,1,216,104Zm-16,0a72,72,0,0,0-73.74-72c-39,.92-70.47,33.39-70.26,72.39a71.64,71.64,0,0,0,27.64,56.3h0A32,32,0,0,1,96,186v6h24V147.31L90.34,117.66a8,8,0,0,1,11.32-11.32L128,132.69l26.34-26.35a8,8,0,0,1,11.32,11.32L136,147.31V192h24v-6a32.12,32.12,0,0,1,12.47-25.35A71.65,71.65,0,0,0,200,104Z"></path></svg>
               <div class="ml-5 sm:ml-8">
                 <h3 class="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
                   Implementing your business requirements
@@ -56,16 +53,13 @@
 
             <!-- Icon Block -->
             <div class="flex">
-              <svg class="flex-shrink-0 mt-2 h-6 w-6 text-gray-800 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
-                <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
-              </svg>
+              <svg  class="flex-shrink-0 mt-2 h-6 w-6 text-primary dark:text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M208,128v16a80,80,0,0,1-160,0V128Z" opacity="0.2"></path><path d="M144,92a12,12,0,1,1,12,12A12,12,0,0,1,144,92ZM100,80a12,12,0,1,0,12,12A12,12,0,0,0,100,80Zm116,64A87.76,87.76,0,0,1,213,167l22.24,9.72A8,8,0,0,1,232,192a7.89,7.89,0,0,1-3.2-.67L207.38,182a88,88,0,0,1-158.76,0L27.2,191.33A7.89,7.89,0,0,1,24,192a8,8,0,0,1-3.2-15.33L43,167A87.76,87.76,0,0,1,40,144v-8H16a8,8,0,0,1,0-16H40v-8a87.76,87.76,0,0,1,3-23L20.8,79.33a8,8,0,1,1,6.4-14.66L48.62,74a88,88,0,0,1,158.76,0l21.42-9.36a8,8,0,0,1,6.4,14.66L213,89.05a87.76,87.76,0,0,1,3,23v8h24a8,8,0,0,1,0,16H216ZM56,120H200v-8a72,72,0,0,0-144,0Zm64,95.54V136H56v8A72.08,72.08,0,0,0,120,215.54ZM200,144v-8H136v79.54A72.08,72.08,0,0,0,200,144Z"></path></svg>
               <div class="ml-5 sm:ml-8">
                 <h3 class="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
                   Swift Bug Fixes
                 </h3>
                 <p class="mt-1 text-gray-600 dark:text-gray-400">
-                  Don't let bugs slow you down. Our Premium Support ensures rapid bug resolution, keeping your scripts running smoothly.
+                  Don't let bugs slow you down. Our Elite Support ensures rapid bug resolution, keeping your scripts running smoothly.
                 </p>
               </div>
             </div>
@@ -73,9 +67,7 @@
 
             <!-- Icon Block -->
             <div class="flex">
-              <svg class="flex-shrink-0 mt-2 h-6 w-6 text-gray-800 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
-              </svg>
+              <svg class="flex-shrink-0 mt-2 h-6 w-6 text-primary dark:text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M224,96a64,64,0,0,1-94.94,56L73,217A24,24,0,0,1,39,183L104,126.94a64,64,0,0,1,80-90.29L144,80l5.66,26.34L176,112l43.35-40A63.8,63.8,0,0,1,224,96Z" opacity="0.2"></path><path d="M226.76,69a8,8,0,0,0-12.84-2.88l-40.3,37.19-17.23-3.7-3.7-17.23,37.19-40.3A8,8,0,0,0,187,29.24,72,72,0,0,0,88,96,72.34,72.34,0,0,0,94,124.94L33.79,177c-.15.12-.29.26-.43.39a32,32,0,0,0,45.26,45.26c.13-.13.27-.28.39-.42L131.06,162A72,72,0,0,0,232,96,71.56,71.56,0,0,0,226.76,69ZM160,152a56.14,56.14,0,0,1-27.07-7,8,8,0,0,0-9.92,1.77L67.11,211.51a16,16,0,0,1-22.62-22.62L109.18,133a8,8,0,0,0,1.77-9.93,56,56,0,0,1,58.36-82.31l-31.2,33.81a8,8,0,0,0-1.94,7.1L141.83,108a8,8,0,0,0,6.14,6.14l26.35,5.66a8,8,0,0,0,7.1-1.94l33.81-31.2A56.06,56.06,0,0,1,160,152Z"></path></svg>
               <div class="ml-5 sm:ml-8">
                 <h3 class="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
                   Ongoing Maintenance
@@ -89,44 +81,10 @@
 
             <!-- Icon Block -->
             <div class="flex">
-              <svg class="flex-shrink-0 mt-2 h-6 w-6 text-gray-800 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
-              </svg>
+              <svg class="flex-shrink-0 mt-2 h-6 w-6 text-primary dark:text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M80,144v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V128H64A16,16,0,0,1,80,144Zm112-16a16,16,0,0,0-16,16v40a16,16,0,0,0,16,16h32V128Z" opacity="0.2"></path><path d="M201.89,54.66A104.08,104.08,0,0,0,24,128v56a24,24,0,0,0,24,24H64a24,24,0,0,0,24-24V144a24,24,0,0,0-24-24H40.36A88.12,88.12,0,0,1,190.54,65.93,87.39,87.39,0,0,1,215.65,120H192a24,24,0,0,0-24,24v40a24,24,0,0,0,24,24h24a24,24,0,0,1-24,24H136a8,8,0,0,0,0,16h56a40,40,0,0,0,40-40V128A103.41,103.41,0,0,0,201.89,54.66ZM64,136a8,8,0,0,1,8,8v40a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V136Zm128,56a8,8,0,0,1-8-8V144a8,8,0,0,1,8-8h24v56Z"></path></svg>
               <div class="ml-5 sm:ml-8">
                 <h3 class="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
                   Technical Guidance
-                </h3>
-                <p class="mt-1 text-gray-600 dark:text-gray-400">
-                  Our experienced team will provide you with expert advice and solutions, helping you navigate complex technical issues effortlessly.
-                </p>
-              </div>
-            </div>
-            <!-- End Icon Block -->
-
-            <!-- Icon Block -->
-            <div class="flex">
-              <svg class="flex-shrink-0 mt-2 h-6 w-6 text-gray-800 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
-              </svg>
-              <div class="ml-5 sm:ml-8">
-                <h3 class="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
-                  Server maintenance
-                </h3>
-                <p class="mt-1 text-gray-600 dark:text-gray-400">
-                  Our experienced team will provide you with expert advice and solutions, helping you navigate complex technical issues effortlessly.
-                </p>
-              </div>
-            </div>
-            <!-- End Icon Block -->
-
-            <!-- Icon Block -->
-            <div class="flex">
-              <svg class="flex-shrink-0 mt-2 h-6 w-6 text-gray-800 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
-              </svg>
-              <div class="ml-5 sm:ml-8">
-                <h3 class="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
-                  Security Ensure
                 </h3>
                 <p class="mt-1 text-gray-600 dark:text-gray-400">
                   Our experienced team will provide you with expert advice and solutions, helping you navigate complex technical issues effortlessly.
@@ -355,20 +313,26 @@
             <div class="relative pl-16">
               <dt class="text-base font-semibold leading-7 text-gray-900">
                 <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M201.89,54.66A103.43,103.43,0,0,0,128.79,24H128A104,104,0,0,0,24,128v56a24,24,0,0,0,24,24H64a24,24,0,0,0,24-24V144a24,24,0,0,0-24-24H40.36A88.12,88.12,0,0,1,190.54,65.93,87.39,87.39,0,0,1,215.65,120H192a24,24,0,0,0-24,24v40a24,24,0,0,0,24,24h24a24,24,0,0,1-24,24H136a8,8,0,0,0,0,16h56a40,40,0,0,0,40-40V128A103.41,103.41,0,0,0,201.89,54.66ZM64,136a8,8,0,0,1,8,8v40a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V136Zm128,56a8,8,0,0,1-8-8V144a8,8,0,0,1,8-8h24v56Z"></path></svg>
+                  <!-- <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M201.89,54.66A103.43,103.43,0,0,0,128.79,24H128A104,104,0,0,0,24,128v56a24,24,0,0,0,24,24H64a24,24,0,0,0,24-24V144a24,24,0,0,0-24-24H40.36A88.12,88.12,0,0,1,190.54,65.93,87.39,87.39,0,0,1,215.65,120H192a24,24,0,0,0-24,24v40a24,24,0,0,0,24,24h24a24,24,0,0,1-24,24H136a8,8,0,0,0,0,16h56a40,40,0,0,0,40-40V128A103.41,103.41,0,0,0,201.89,54.66ZM64,136a8,8,0,0,1,8,8v40a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V136Zm128,56a8,8,0,0,1-8-8V144a8,8,0,0,1,8-8h24v56Z"></path></svg> -->
+                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M208,80H96V56a32,32,0,0,1,32-32c15.37,0,29.2,11,32.16,25.59a8,8,0,0,0,15.68-3.18C171.32,24.15,151.2,8,128,8A48.05,48.05,0,0,0,80,56V80H48A16,16,0,0,0,32,96V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V96A16,16,0,0,0,208,80Zm0,128H48V96H208V208Zm-80-96a28,28,0,0,0-8,54.83V184a8,8,0,0,0,16,0V166.83A28,28,0,0,0,128,112Zm0,40a12,12,0,1,1,12-12A12,12,0,0,1,128,152Z"></path></svg>
                 </div>
-                24/7 Support
+                Access to Customer Portal
               </dt>
-              <dd class="mt-2 text-base leading-7 text-gray-600"> Our team is available round-the-clock to address your queries and concerns promptly. </dd>
+              <dd class="mt-2 text-base leading-7 text-gray-600">
+                Our team is available round-the-clock to address your queries and concerns promptly.
+              </dd>
             </div>
             <div class="relative pl-16">
               <dt class="text-base font-semibold leading-7 text-gray-900">
                 <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"></path></svg>
+                  <!-- <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"></path></svg> -->
+                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"></path></svg>
                 </div>
-                Live Chat Assistance
+                Monitor over your tasks
               </dt>
-              <dd class="mt-2 text-base leading-7 text-gray-600"> Get immediate help through our live chat feature, ensuring a seamless experience. </dd>
+              <dd class="mt-2 text-base leading-7 text-gray-600"> 
+                Effortlessly create, track, and collaborate on tasks. Stay organized and optimize productivity.
+              </dd>
             </div>
             <div class="relative pl-16">
               <dt class="text-base font-semibold leading-7 text-gray-900">
@@ -458,14 +422,14 @@
         </div>
         <div class="mt-20">
           <dl class="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:gap-x-10">
-            <div>
+            <!-- <div>
               <dt class="text-base font-semibold leading-7 text-gray-900">
                 What is the average response time for support requests?
               </dt>
               <dd class="mt-2 text-base leading-7 text-gray-600">
-                We pride ourselves on our rapid response times, typically resolving queries within X hours.
+                We pride ourselves on our rapid response times, typically resolving queries within 3 hours.
               </dd>
-            </div>
+            </div> -->
             <div>
               <dt class="text-base font-semibold leading-7 text-gray-900">
                 Can I cancel my subscription at any time?
@@ -476,10 +440,10 @@
             </div>
             <div>
               <dt class="text-base font-semibold leading-7 text-gray-900">
-                Is Premium Support available for all three products (Jobportal script, School Management System, and Classified Listing Script)?
+                Is Elite Support available for all three products (Jobportal script, School Management System, and Classified Listing Script)?
               </dt>
               <dd class="mt-2 text-base leading-7 text-gray-600">
-                Absolutely! Premium Support is available for all our products, ensuring comprehensive assistance tailored to your specific needs.
+                Absolutely! Elite Support is available for all our products, ensuring comprehensive assistance tailored to your specific needs.
               </dd>
             </div>
             <div>
@@ -487,7 +451,7 @@
                 What happens if I encounter an issue outside of regular business hours?
               </dt>
               <dd class="mt-2 text-base leading-7 text-gray-600">
-                We understand that technical issues can arise at any time. With our 24/7 support, our team is ready to assist you round-the-clock, including weekends and holidays.
+                Our support is available during our regular business hours. We apologize for any inconvenience, but we do not currently provide support outside of these hours. 
               </dd>
             </div>
             <div>
@@ -495,7 +459,7 @@
                 How soon can I expect a response from the support team?
               </dt>
               <dd class="mt-2 text-base leading-7 text-gray-600">
-                We prioritize our customers' needs and aim to provide prompt assistance. On average, you can expect a response within X hours of submitting your support request.
+                We prioritize our customers' needs and aim to provide prompt assistance. On average, you can expect a response within 3 hours of submitting your support request.
               </dd>
             </div>
             <div>
@@ -508,10 +472,10 @@
             </div>
             <div>
               <dt class="text-base font-semibold leading-7 text-gray-900">
-                What happens if I'm not satisfied with Premium Support?
+                Can I get a refund for the Elite Support subscription?
               </dt>
               <dd class="mt-2 text-base leading-7 text-gray-600">
-                Your satisfaction is our utmost priority. If, for any reason, you are not satisfied with our Premium Support, we offer a X-day money-back guarantee.
+                While we do not offer refunds for the Elite Support subscription, you have the flexibility to cancel your subscription at any time. We understand that circumstances may change, and you can discontinue the service whenever you need. Simply contact our support team, and they will assist you with the cancellation process.
               </dd>
             </div>
             <div>
@@ -535,7 +499,7 @@
                 Is there a limit to the number of support requests I can make?
               </dt>
               <dd class="mt-2 text-base leading-7 text-gray-600">
-                There is no limit to the number of support requests you can make during your subscription period. Our team is dedicated to resolving all your concerns promptly.
+                There is no limit to the number of support requests you can make during your subscription period. Our team is dedicated to resolving all your concerns one by one.
               </dd>
             </div>
             <div>
@@ -561,17 +525,17 @@
             Unlock Unbeatable Support Today!
           </h2>
           <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-blue-200">
-            Supercharge your projects with premium support. Get expert assistance, personalized guidance, and lightning-fast issue resolution. Elevate your business with unbeatable technical support."
+            Supercharge your projects with Elite Support. Get expert assistance, personalized guidance, and lightning-fast issue resolution. Elevate your business with unbeatable technical support."
           </p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
-            <button-element label="Subscribe now" href="#" cssClass="bg-white text-black hover:bg-dark hover:text-white"/>
+            <button-element label="Subscribe now" href="#contactUs" cssClass="bg-white text-black hover:bg-dark hover:text-white"/>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
-      <div class="mx-auto max-w-xl lg:max-w-4xl text-center">
+    <div class="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8" id="contactUs">
+      <div class="mx-auto max-w-xl lg:max-w-4xl text-center" id="getStarted">
         <h2 class="text-4xl font-bold tracking-tight text-gray-900">Get in Touch with Elite Support</h2>
         <p class="mt-2 text-lg leading-8 text-gray-600"> Reach out to our Elite Support team for prompt and personalized assistance. </p>
         <div id="hireUsForm" class="bg-white rounded-lg w-full mt-16 flex max-w-xl mx-auto"></div>
@@ -626,9 +590,10 @@ export default {
       window.hbspt.forms.create({
         region: "na1",
         portalId: "22174697",
-        formId: "55ae1706-e17a-40a0-81db-275fc2d1030a",
+        formId: "6d720736-42f2-4fac-ab16-85e31cf04d82",
         target: "#hireUsForm"
-      })
+      });
+
     })
   },
 
