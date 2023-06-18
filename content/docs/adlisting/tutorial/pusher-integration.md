@@ -1,6 +1,6 @@
 ---
 title: Live Chat Integration
-position: 5
+position: 24
 category: Getting Started
 ---
 
@@ -18,7 +18,7 @@ category: Getting Started
 ![](/docs/schooling/pusher-s4.png)
 5. Now you will see you app keys as like this screenshot
 ![](/docs/schooling/pusher-s5.png)
-6. Go to your project “General settings > Livechat Settings” now add your all api credentials.
-![](/docs/schooling/pusher-s6.png)
+6. Go to your project “Admin > Settings > General > Broadcasting” now add your all api credentials.
+![](/docs/adlisting/pusher-s7.png)
 
 That’s all for setup live chat addon.

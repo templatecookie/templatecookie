@@ -7,7 +7,17 @@ category: Others
 
 # Changelog
 
+### v2.4.1 - 09 June, 2023
+
+```
+feat - Backend-Powered Dynamic Onboarding Content System
+feat - Streamlined Automated Testing Capability
+
+improved - Role-Based Permissions Management
+```
+
 ### v2.2.19 - 19 May, 2023
+
 ```
 improved - Author Assistance Widget - Empowering Authors with Enhanced Support
 improved - Visualizing Course Schedule - Enhancing Clarity and User Experience
@@ -27,6 +37,7 @@ style - Resolving Dark Style Issue on Admission Form Page
 ```
 
 ### v2.2.6 - 9 May, 2023
+
 ```
 - fix - Price amount range issue for admission plan
 - fix - Avatar not work during student account create
@@ -34,7 +45,9 @@ style - Resolving Dark Style Issue on Admission Form Page
 - style: Color added for subject
 - style: Footer logo color changed
 ```
+
 ### v2.2.1 - 8 May, 2023
+
 ```
 - feat - Student and Teacher role account hold system
 - feat - Onboarding process integration
@@ -42,6 +55,7 @@ style - Resolving Dark Style Issue on Admission Form Page
 ```
 
 ### v2.0.0 - 27 April, 2023
+
 ```
 - Multi language supported
 - Multi currency
@@ -61,6 +75,7 @@ style - Resolving Dark Style Issue on Admission Form Page
 ```
 
 ### v1.14.21 - 16th May, 2022
+
 ```
 - Teacher attendance page some teachers missing issue
 - Can’t select multiple sections from class add/edit page issue
@@ -69,6 +84,7 @@ style - Resolving Dark Style Issue on Admission Form Page
 ```
 
 ### v1.14.17
+
 ```
 - fix - Teacher edit validation error fix
 - fix - Paypal payment issue fix
@@ -76,12 +92,14 @@ style - Resolving Dark Style Issue on Admission Form Page
 ```
 
 ### v1.5.14
+
 ```
 - fix: Student update form not fill
 - fix: User doesn't create when SMTP details missing
 ```
 
 ### v1.5.2 - 16th February, 2022
+
 ```
 - PWA Module (Install as a Mobile) Add
 - Responsive bug fix
@@ -89,6 +107,7 @@ style - Resolving Dark Style Issue on Admission Form Page
 ```
 
 ### v1.4.10 - 24 March, 2022
+
 ```
 - Set Default Language [Bug Fix]
 ```
@@ -97,5 +116,3 @@ style - Resolving Dark Style Issue on Admission Form Page
 
 [Added]
 Initial Released
-
-
