@@ -9,16 +9,16 @@ category: Getting Started
 
 # To get pusher api keys
 1. First go to [Pusher.com](https://pusher.com/)
-![](/docs/schooling/images/pusher-s1.png)
+![](/docs/schooling/pusher-s1.png)
 2. After SignUp/Login you will see this screen, then click on manage button
-![](/docs/schooling/images/pusher-s2.png)
+![](/docs/schooling/pusher-s2.png)
 3. Click on create app button and create a new app for your website, make sure you select stack as like below.
-![](/docs/schooling/images/pusher-s3.png)
+![](/docs/schooling/pusher-s3.png)
 4. After create app you will see below page, now click on App Keys to get app keys for your website
-![](/docs/schooling/images/pusher-s4.png)
+![](/docs/schooling/pusher-s4.png)
 5. Now you will see you app keys as like this screenshot
-![](/docs/schooling/images/pusher-s5.png)
+![](/docs/schooling/pusher-s5.png)
 6. Go to your project “General settings > Livechat Settings” now add your all api credentials.
-![](/docs/schooling/images/pusher-s6.png)
+![](/docs/schooling/pusher-s6.png)
 
 That’s all for setup live chat addon.
