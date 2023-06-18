@@ -4,7 +4,7 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="text-center max-w-4xl m-auto pt-6">
           <h1 class="textdark text-5xl font-semibold mb-6 lg:mb-9 tracking-ls02">
-            Privacy Policy
+            Refund Policy
           </h1>
         </div>
       </div>

@@ -53,6 +53,9 @@
               <h3 class="text-base font-medium text-gray-200">Others</h3>
               <ul role="list" class="mt-4 space-y-4">
                 <li>
+                  <nuxt-link to="/blog" class="text-base text-gray-400 hover:text-gray-300">Read Our Blog</nuxt-link>
+                </li>
+                <li>
                   <nuxt-link to="/privacy-policy" class="text-base text-gray-400 hover:text-gray-300">Privacy Policy</nuxt-link>
                 </li>
                 <li>

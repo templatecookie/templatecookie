@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -37,6 +39,8 @@ module.exports = {
         "gray-200": "#CDD2D8",
         "gray-50": "#F5F6F7",
         "primary-500": "#0B63E5",
+        violet: colors.violet,
+        blueGray: colors.blueGray,
       },
       fontFamily: {
         lexend: ["Lexend", "sans-serif"],

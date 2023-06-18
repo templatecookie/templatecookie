@@ -25,16 +25,6 @@
                 </svg>
               </button>
 
-              <!--
-                'Solutions' flyout menu, show/hide based on flyout menu state.
-
-                Entering: "transition ease-out duration-200"
-                  From: "opacity-0 translate-y-1"
-                  To: "opacity-100 translate-y-0"
-                Leaving: "transition ease-in duration-150"
-                  From: "opacity-100 translate-y-0"
-                  To: "opacity-0 translate-y-1"
-              -->
               <transition name="flayout-menu">
                 <div v-if="solutionStatus" class="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform lg:left-1/2 lg:ml-0 lg:max-w-2xl lg:-translate-x-1/2">
                   <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
@@ -56,8 +46,12 @@
             <nuxt-link v-for="(item, index) in menuItems" :key="index" :to="item.url" class="text-base font-medium text-gray-500 hover:text-gray-900">{{ item.name }}</nuxt-link>
           </nav>
           <div class="hidden items-center justify-end lg:flex md:flex-1 lg:w-0">
-            <nuxt-link to="/hire-us" class="whitespace-nowrap lg:hidden xl:block block text-base font-medium text-gray-500 hover:text-gray-900">Hire Us</nuxt-link>
-            <nuxt-link to="/installation-plans" class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-primary px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-secondary">Installation Plans</nuxt-link>
+            <nuxt-link to="/hire-us" class="whitespace-nowrap lg:hidden xl:block block text-base font-medium text-gray-500 hover:text-gray-900">
+              Hire Us
+            </nuxt-link>
+            <nuxt-link to="/elite-support" class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-primary px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-secondary">
+              Elite Support
+            </nuxt-link>
           </div>
         </div>
 
@@ -104,10 +98,14 @@
                   <nuxt-link v-for="(item, index) in menuItems" :key="index" :to="item.url" class="text-base font-medium text-gray-900 hover:text-gray-700">{{ item.name }}</nuxt-link>
                 </div>
                 <div class="mt-6">
-                  <nuxt-link to="/installation-plans" class="flex w-full items-center justify-center rounded-md border border-transparent bg-primary px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-secondary">Installation Plans</nuxt-link>
+                  <nuxt-link to="/elite-support" class="flex w-full items-center justify-center rounded-md border border-transparent bg-primary px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-secondary">
+                    Elite Support
+                  </nuxt-link>
                   <p class="mt-6 text-center text-base font-medium text-gray-500">
                     Like our works?
-                    <nuxt-link to="/hire-us" class="text-gray-900">Hire Us</nuxt-link>
+                    <nuxt-link to="/hire-us" class="text-gray-900">
+                      Hire Us
+                    </nuxt-link>
                   </p>
                 </div>
               </div>
@@ -127,11 +125,11 @@ export default {
       solutionStatus: false,
       mobileNav: false,
       menuItems: [
-        // {
-        //   name: "All Products",
-        //   url: '/products',
-        //   blank: false,
-        // },
+        {
+          name: "Installation Plans",
+          url: '/installation-plans',
+          blank: false,
+        },
         {
           name: "Get Support",
           url: '/get-support',
@@ -140,11 +138,6 @@ export default {
         {
           name: "Documentation",
           url: '/docs/',
-          blank: false,
-        },
-        {
-          name: "Blog",
-          url: '/blog',
           blank: false,
         },
       ]
