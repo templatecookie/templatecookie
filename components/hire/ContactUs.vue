@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-hidden bg-white py-16 px-4 sm:px-6 lg:px-8 lg:py-24 pb-48 bg-hireus-banner bg-no-repeat bg-cover">
+  <div id="contact" class="overflow-hidden bg-white py-16 px-4 sm:px-6 lg:px-8 lg:py-24 pb-48 bg-hireus-banner bg-no-repeat bg-cover">
     <div class="relative mx-auto max-w-xl">
       <svg class="absolute left-full translate-x-1/2 transform" width="404" height="404" fill="none" viewBox="0 0 404 404" aria-hidden="true">
         <defs>

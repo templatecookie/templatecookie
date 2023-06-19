@@ -26,7 +26,6 @@
     <!-- Overview -->
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <div class="max-w-2xl mx-auto">
-        <!-- Grid -->
         <div class="grid gap-12">
           <div>
             <h2 class="text-3xl text-gray-800 font-bold lg:text-4xl dark:text-white">
@@ -37,7 +36,6 @@
             </p>
           </div>
           <div class="space-y-6 lg:space-y-10">
-            <!-- Icon Block -->
             <div class="flex">
               <svg  class="flex-shrink-0 mt-2 h-6 w-6 text-primary dark:text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M208,104a79.86,79.86,0,0,1-30.59,62.92A24.29,24.29,0,0,0,168,186v6a8,8,0,0,1-8,8H96a8,8,0,0,1-8-8v-6a24.11,24.11,0,0,0-9.3-19A79.87,79.87,0,0,1,48,104.45C47.76,61.09,82.72,25,126.07,24A80,80,0,0,1,208,104Z" opacity="0.2"></path><path d="M176,232a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h80A8,8,0,0,1,176,232Zm40-128a87.55,87.55,0,0,1-33.64,69.21A16.24,16.24,0,0,0,176,186v6a16,16,0,0,1-16,16H96a16,16,0,0,1-16-16v-6a16,16,0,0,0-6.23-12.66A87.59,87.59,0,0,1,40,104.5C39.74,56.83,78.26,17.15,125.88,16A88,88,0,0,1,216,104Zm-16,0a72,72,0,0,0-73.74-72c-39,.92-70.47,33.39-70.26,72.39a71.64,71.64,0,0,0,27.64,56.3h0A32,32,0,0,1,96,186v6h24V147.31L90.34,117.66a8,8,0,0,1,11.32-11.32L128,132.69l26.34-26.35a8,8,0,0,1,11.32,11.32L136,147.31V192h24v-6a32.12,32.12,0,0,1,12.47-25.35A71.65,71.65,0,0,0,200,104Z"></path></svg>
               <div class="ml-5 sm:ml-8">
@@ -147,158 +145,6 @@
         <button-element label="Get Elite Support" href="#" cssClass="bg-dark text-white hover:bg-primary"/>
       </div>
     </div>
-
-    <!-- pricing  -->
-    <!-- <div class="bg-gray-100 py-24 sm:py-32">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto max-w-4xl sm:text-center">
-          <h2 class="text-base font-semibold leading-7 text-indigo-600">Pricing</h2>
-          <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"> Choose the package that suits your needs </p>
-        </div>
-        <div class="mt-20 flow-root">
-          <div class="isolate -mt-16 grid max-w-sm grid-cols-1 gap-y-16 divide-y divide-gray-200 sm:mx-auto lg:-mx-8 lg:mt-0 lg:max-w-none lg:grid-cols-3 lg:divide-x lg:divide-y-0 xl:-mx-4">
-            <div class="pt-16 lg:px-8 lg:pt-0 xl:px-14">
-              <h3 id="tier-basic" class="text-base font-semibold leading-7 text-gray-900">Silver</h3>
-              <p class="mt-6 flex items-baseline gap-x-1">
-                <span class="text-5xl font-bold tracking-tight text-gray-900">$99</span>
-                <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
-              </p>
-              <p class="mt-3 text-sm leading-6 text-gray-500">$22 per extra hours needed</p>
-              <a href="#" aria-describedby="tier-basic" class="mt-10 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
-              <p class="mt-10 text-sm font-semibold leading-6 text-gray-900">Affordable and reliable support for small projects.</p>
-              <ul role="list" class="mt-6 space-y-3 text-sm leading-6 text-gray-600">
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                  </svg>
-                  5 hours included
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                  </svg>
-                  New feature implementation
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                  </svg>
-                  Quick bug fixing
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                  </svg>
-                  Ongoing support and maintenance
-                </li>
-              </ul>
-            </div>
-            <div class="pt-16 lg:px-8 lg:pt-0 xl:px-14">
-              <h3 id="tier-essential" class="text-base font-semibold leading-7 text-gray-900">Gold</h3>
-              <p class="mt-6 flex items-baseline gap-x-1">
-                <span class="text-5xl font-bold tracking-tight text-gray-900">$199</span>
-                <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
-              </p>
-              <p class="mt-3 text-sm leading-6 text-gray-500">$20 per extra hours needed</p>
-              <a href="#" aria-describedby="tier-essential" class="mt-10 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
-              <p class="mt-10 text-sm font-semibold leading-6 text-gray-900">Comprehensive assistance for growing businesses.</p>
-              <ul role="list" class="mt-6 space-y-3 text-sm leading-6 text-gray-600">
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                  </svg>
-                  10 Hours included
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                  </svg>
-                  Script Installation & Server Maintenance
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                  </svg>
-                  New feature implementation
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                  </svg>
-                  Quick bug fixing
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                  </svg>
-                  Ongoing support and maintenance
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                  </svg>
-                  Expert Technical Guidance
-                </li>
-              </ul>
-            </div>
-            <div class="pt-16 lg:px-8 lg:pt-0 xl:px-14">
-              <h3 id="tier-growth" class="text-base font-semibold leading-7 text-gray-900">Platinum</h3>
-              <p class="mt-6 flex items-baseline gap-x-1">
-                <span class="text-5xl font-bold tracking-tight text-gray-900">$399</span>
-                <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
-              </p>
-              <p class="mt-3 text-sm leading-6 text-gray-500">$18 per extra hours needed</p>
-              <a href="#" aria-describedby="tier-growth" class="mt-10 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
-              <p class="mt-10 text-sm font-semibold leading-6 text-gray-900">VIP treatment for large-scale enterprises.</p>
-              <ul role="list" class="mt-6 space-y-3 text-sm leading-6 text-gray-600">
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                  </svg>
-                  20 Hours included
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                  </svg>
-                  Script Installation & Server Maintenance
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                  </svg>
-                  New feature implementation
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                  </svg>
-                  Quick bug fixing
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                  </svg>
-                  Ongoing support and maintenance
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                  </svg>
-                  Expert Technical Guidance
-                </li>
-                <li class="flex gap-x-3">
-                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-                  </svg>
-                  Dedicated Success Manager
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     <!-- / Features  -->
     <div class="bg-white py-24 sm:py-32">
@@ -534,11 +380,58 @@
       </div>
     </div>
 
-    <div class="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8" id="contactUs">
+    <div class="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8" id="contactUs" v-if="contact">
       <div class="mx-auto max-w-xl lg:max-w-4xl text-center" id="getStarted">
         <h2 class="text-4xl font-bold tracking-tight text-gray-900">Get in Touch with Elite Support</h2>
         <p class="mt-2 text-lg leading-8 text-gray-600"> Reach out to our Elite Support team for prompt and personalized assistance. </p>
         <div id="hireUsForm" class="bg-white rounded-lg w-full mt-16 flex max-w-xl mx-auto"></div>
+      </div>
+    </div>
+
+    <div class="bg-white py-24 sm:py-32" v-else>
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-4xl text-center">
+          <h2 class="text-base font-semibold leading-7 text-indigo-600">Pricing</h2>
+          <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Pricing plans for teams of&nbsp;all&nbsp;sizes</p>
+        </div>
+        <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">Choose an affordable plan that’s packed with the best features for engaging your audience, creating customer loyalty, and driving sales.</p>
+
+        <div class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <div class="rounded-3xl p-8 xl:p-10" :class=" pricing.popular ? 'ring-indigo-600 ring-2' : 'ring-gray-200 ring-1' " v-for="(pricing, index) in packages" :key="index">
+            <div class="flex items-center justify-between gap-x-4">
+              <h3 id="tier-freelancer" class="text-lg font-semibold leading-8" :class="pricing.popular ? 'text-indigo-600' : 'text-gray-900'">
+                {{ pricing.name }}
+              </h3>
+              <p v-if="pricing.popular" class="rounded-full bg-indigo-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-indigo-600">Most popular</p>
+            </div>
+            <p class="mt-4 text-sm leading-6 text-gray-600">
+              {{ pricing.description }}
+            </p>
+            <p class="mt-6 flex items-baseline gap-x-1" v-if="pricing.price === null">
+              <span class="text-2xl font-bold tracking-tight text-gray-900">CUSTOM</span>
+            </p>
+            <p class="mt-6 flex items-baseline gap-x-1" v-else>
+              <span class="text-4xl font-bold tracking-tight text-gray-900">${{ pricing.price }}</span>
+              <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
+            </p>
+
+            <a v-if="pricing.popular" href="#" aria-describedby="tier-startup" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-500">
+              Buy plan
+            </a>
+            <a v-else href="#" aria-describedby="tier-freelancer" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300">
+              Buy plan
+            </a>
+
+            <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600 xl:mt-10">
+              <li class="flex gap-x-3" v-for="(item, index) in pricing.items" :key="index">
+                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                </svg>
+                {{ item.name }}
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -550,6 +443,7 @@ export default {
   components: { ButtonElement },
   data(){
     return {
+      contact: false,
       hubspotLoaded: false,
       compairison: [
         {
@@ -576,6 +470,53 @@ export default {
             { name: "Expert guidance and support throughout the development process" },
           ]
         }
+      ],
+      packages: [
+        {
+          name: "Essential",
+          description: "The essentials to provide your best work for clients.",
+          price: 99,
+          popular: false,
+          items: [
+            { name: "Ongoing Maintenance" },
+            { name: "Priority Support" },
+            { name: "Quick Bug Fixing" },
+            { name: "Script Installation & Server Maintenance" },
+            { name: "Access to Customer Panel" },
+            { name: "2 hours included for modifications or new feature implementation " },
+          ]
+        },
+        {
+          name: "Premium",
+          description: "Comprehensive assistance for growing businesses.",
+          price: 99,
+          popular: true,
+          items: [
+            { name: "Ongoing Maintenance" },
+            { name: "Priority Support" },
+            { name: "Quick Bug Fixing" },
+            { name: "Script Installation & Server Maintenance" },
+            { name: "Access to Customer Panel" },
+            { name: "5 hours included for modifications or new feature implementation " },
+            { name: "Expert Technical Guidance" },
+          ]
+        },
+        {
+          name: "VIP",
+          description: "Special treatment for large-scale enterprises.",
+          price: null,
+          popular: false,
+          items: [
+            { name: "Ongoing Maintenance" },
+            { name: "Priority Support" },
+            { name: "Quick Bug Fixing" },
+            { name: "Script Installation & Server Maintenance" },
+            { name: "Access to Customer Panel" },
+            { name: "5 hours included for modifications or new feature implementation " },
+            { name: "Expert Technical Guidance" },
+            { name: "Dedicated Success Manager" },
+          ]
+        },
       ]
     }
   },
