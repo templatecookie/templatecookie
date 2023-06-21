@@ -392,9 +392,11 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-4xl text-center">
           <h2 class="text-base font-semibold leading-7 text-indigo-600">Pricing</h2>
-          <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Pricing plans for teams of&nbsp;all&nbsp;sizes</p>
+          <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Pricing plans for business of&nbsp;all&nbsp;sizes</p>
         </div>
-        <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">Choose an affordable plan that’s packed with the best features for engaging your audience, creating customer loyalty, and driving sales.</p>
+        <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
+          Choose the Right Plan for You: Tailored Support for Your Success
+        </p>
 
         <div class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <div class="rounded-3xl p-8 xl:p-10" :class=" pricing.popular ? 'ring-indigo-600 ring-2' : 'ring-gray-200 ring-1' " v-for="(pricing, index) in packages" :key="index">
@@ -443,7 +445,7 @@ export default {
   components: { ButtonElement },
   data(){
     return {
-      contact: false,
+      contact: true,
       hubspotLoaded: false,
       compairison: [
         {
@@ -474,7 +476,7 @@ export default {
       packages: [
         {
           name: "Essential",
-          description: "The essentials to provide your best work for clients.",
+          description: "Simplify Support, Fuel Your Progress",
           price: 99,
           popular: false,
           items: [
@@ -488,8 +490,8 @@ export default {
         },
         {
           name: "Premium",
-          description: "Comprehensive assistance for growing businesses.",
-          price: 99,
+          description: "Elevate Your Support Experience, Unleash Your Potential.",
+          price: 199,
           popular: true,
           items: [
             { name: "Ongoing Maintenance" },
@@ -503,7 +505,7 @@ export default {
         },
         {
           name: "VIP",
-          description: "Special treatment for large-scale enterprises.",
+          description: "Unmatched Support, Customized for Your Success.",
           price: null,
           popular: false,
           items: [
