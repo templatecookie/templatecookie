@@ -8,6 +8,16 @@ category: Others
 # Changelog
 ---
 
+### v2.14.9 - 11th July 2023
+```
+- improve: Unique rule for adding languages to the flag has been removed.
+- improve: Added country code  to the Phone Number Input.
+- fix: Custom CSS/JS error: "data truncated" during customization.
+- fix: The watermark is not functioning correctly.
+- fix: Error encountered on the contact page.
+- style: Enhance the design of the Price Plan page.
+```
+
 ### v2.14.3 - 18th May 2023
 ```
 - fix - Place Ad Page Blank Show Issue
