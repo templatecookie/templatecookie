@@ -5,6 +5,7 @@
   "private": true,
   "homepage": "https://github.com/templatecookie/templatecookie",
   "scripts": {
+    "start": "node .output/server/index.mjs",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
@@ -14,6 +15,9 @@
     "lint:prettier": "prettier --check .",
     "lint": "yarn lint:js && yarn lint:prettier",
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "devDependencies": {
     "@nuxt/content": "^2.7.0",
