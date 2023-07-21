@@ -1,0 +1,45 @@
+{
+  "__schema": {
+    "types": [
+      {
+        "kind": "UNION",
+        "name": "ProductModelContentsField",
+        "possibleTypes": [
+          {
+            "name": "CustomerSupportRecord"
+          },
+          {
+            "name": "DisplayfeatureRecord"
+          },
+          {
+            "name": "ExclusivefeatureRecord"
+          },
+          {
+            "name": "FeaturescreenshotRecord"
+          },
+          {
+            "name": "FolderstructureRecord"
+          },
+          {
+            "name": "FunFactRecord"
+          },
+          {
+            "name": "HerosectionRecord"
+          },
+          {
+            "name": "PriceplanRecord"
+          },
+          {
+            "name": "ProductPageRecord"
+          },
+          {
+            "name": "ProductctaRecord"
+          },
+          {
+            "name": "TopfeatureRecord"
+          }
+        ]
+      }
+    ]
+  }
+}
