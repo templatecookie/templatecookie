@@ -6,6 +6,28 @@ category: Others
 ---
 
 # Changelog
+## July
+### v2.71.0 - 22th July, 2023
+```
+- feat: Website menu builder added
+- feat: Language sync feature added
+- feat: Featured jobs in the job listing page
+- feat: Current location added in the job listing page
+- feat: Order invoices are visible in the company dashboard
+- feat: Candidates could see their resume uploaded
+- feat: Job application status visible to candidates
+- feat: Datepicker rtl support
+- improvement: Added vacancy in the job details page
+- fix: Google job indexing issue fix
+- fix: Company job limitation issue fix
+- fix: Candidate details location issue fix
+- fix: Candidate resume views issue fix
+- fix: Admin already exists validation issue fix
+- fix: Midtrans payment issue fix
+- improvement: Application translation improvements
+- improvement: Design improvements
+- and many more...
+```
 ## June
 ### v2.63.0 - 10th June, 2023
 ```
