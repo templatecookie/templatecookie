@@ -7,6 +7,11 @@ category: Others
 
 # Changelog
 ---
+### v2.14.11 - 21st July 2023
+```
+- improve: Home page latest ads section added.
+- fix: Admin dashboard total earning convert issue.
+```
 
 ### v2.14.9 - 11th July 2023
 ```
