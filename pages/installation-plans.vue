@@ -15,7 +15,7 @@
 
     <section>
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-28 pb-14">
-        <h2 class="mb-6 text-3xl font-medium">Chose your purchased product</h2>
+        <h2 class="mb-6 text-3xl font-medium">Choose your purchased product</h2>
         <div class="grid gap-4 grid-cols-1 lg:grid-cols-3 sm:grid-cols-2">
           <div v-for="(item, index) in products" :key="index">
             <input class="hidden" type="radio" name="choose-product" :id="'id'+item.product.id" :value="'id'+item.product.id" v-model="selectedProduct" />
