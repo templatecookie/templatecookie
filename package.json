@@ -1,7 +1,7 @@
 {
   "name": "templatecookie",
   "description": "Templatecookie.com is premium templates & scripts marketplace. We have a wide range of templates and scripts for you to choose from.",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "private": true,
   "homepage": "https://github.com/templatecookie/templatecookie",
   "scripts": {
@@ -31,7 +31,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.15.1",
     "lodash.groupby": "^4.6.0",
-    "nuxt": "^3.6.1",
+    "nuxt": "^3.6.5",
     "nuxt-purgecss": "^2.0.0",
     "prettier": "^3.0.0"
   },
