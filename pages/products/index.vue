@@ -82,32 +82,25 @@
 </template>
 
 <script>
-import Pagination from "~/components/Pagination.vue";
-import ProductCard from "~/components/ProductCard.vue";
 import ALL_PRODUCTS from "../../graphql/allProducts";
 
 export default {
-  components: {
-    Pagination,
-    ProductCard,
-  },
-  head: {
-    title: "All Products Listing",
-    meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        hid: "description",
-        name: "description",
-        content:
-          "Browse Templatecookie all products, Templatecookie has HTML, Figma & Laravel products.",
-      },
-    ],
-  },
   async setup() {
     const products = ref(null);
     const { data } = await useGraphqlQuery({ query: ALL_PRODUCTS });
-    products.value = data._rawValue?.allProducts;
+    products.value = data?._rawValue?.allProducts;
+
+    const title = "All Products Listing";
+    const description = "Browse Templatecookie all products, Templatecookie has HTML, Figma & Laravel products.";
+
+    useSeoMeta({
+      title: title,
+      ogTitle: title,
+      description: description,
+      ogDescription: description,
+      ogImage: '/social-meta.png',
+    })
+
     return {
       products,
     };

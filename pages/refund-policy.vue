@@ -110,58 +110,21 @@
   </div>
 </template>
 
-<script>
-export default {
-  setup() {
-    useHead({
-      title: "Refund Policy | Our commitment to customer satisfaction",
-      meta: [
-        { charset: "utf-8" },
-        {
-          description:
-            "Our refund policy ensures that our customers receive a satisfactory experience. If you're unhappy with your purchase or encounter issues, we're here to help. Learn more about our refund policy and eligibility criteria.",
-        },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { hid: "description", name: "description", content: description },
-        {
-          hid: "og:title",
-          property: "og:title",
-          name: "og:title",
-          content: title,
-        },
-        {
-          hid: "og:description",
-          name: "og:description",
-          name: "og:description",
-          content: description,
-        },
-        {
-          hid: "og:type",
-          property: "og:type",
-          name: "og:type",
-          content: "website",
-        },
-        {
-          hid: "og:image",
-          property: "og:image",
-          name: "og:image",
-          content: "/social-meta.png",
-        },
-      ],
-    });
-  },
-  data() {
-    return {
-      currentDate: "",
-    };
-  },
-  mounted() {
-    const date = new Date("2023-03-31");
-    this.currentDate = date.toLocaleDateString();
-  },
-};
-</script>
+<script setup>
+  const title = "Refund Policy | Our commitment to customer satisfaction";
+  const description = "Our refund policy ensures that our customers receive a satisfactory experience. If you're unhappy with your purchase or encounter issues, we're here to help. Learn more about our refund policy and eligibility criteria.";
 
-<style lang="scss">
-// @import '../assets/scss/markdown/index.scss';
-</style>
+  useHead({
+    title: title,
+    meta: [
+      { name: 'description', content: description, },
+      { property: 'og:title', name: 'og:title', content: title },
+      { name: 'og:description', content: description },
+      { property: 'og:type', name: 'og:type', content: "website" },
+      { property: 'og:image', name: 'og:image', content: '/social-meta.png' },
+    ],
+  });
+
+  const date = new Date("2023-03-31");
+  let currentDate = date.toLocaleDateString();
+</script>

@@ -169,6 +169,14 @@
                       Terms & Condition
                     </nuxt-link>
                   </li>
+                  <li>
+                    <nuxt-link
+                      to="/products"
+                      class="text-base text-gray-400 hover:text-gray-300"
+                    >
+                      products
+                    </nuxt-link>
+                  </li>
                 </ul>
               </div>
             </div>

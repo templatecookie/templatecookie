@@ -41,46 +41,25 @@
   </div>
 </template>
 
+
 <script>
 import ALL_BLOG_QUERY from "~/graphql/blog/allBlogPosts.js";
-import BlogItem from "../../components/blog/BlogItem.vue";
-import { ref } from "vue";
 
 export default {
-  components: { BlogItem },
-
   async setup() {
-    useHead({
+    const title = `Blog - Templatecookie.com`;
+    const description = 'Read templatecookie blog. Updated Weekly'
+
+    useSeoMeta({
       title: title,
-      meta: [
-        { charset: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { hid: "description", name: "description", content: description },
-        {
-          hid: "og:title",
-          property: "og:title",
-          name: "og:title",
-          content: title,
-        },
-        {
-          hid: "og:description",
-          name: "og:description",
-          name: "og:description",
-          content: description,
-        },
-        {
-          hid: "og:type",
-          property: "og:type",
-          name: "og:type",
-          content: "product",
-        },
-        // { hid: 'og:image', property: 'og:image', name: 'og:image', content: product.banner.url },
-      ],
-    });
+      ogTitle: title,
+      description: description,
+      ogDescription: description,
+      ogImage: '/social-meta.png',
+    })
 
     const { data } = await useGraphqlQuery({ query: ALL_BLOG_QUERY });
-    const posts = ref([]);
-    posts.value = data._rawValue.allPosts;
+    const posts = data._rawValue.allPosts;
     return {
       posts,
     };
