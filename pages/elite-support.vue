@@ -711,15 +711,6 @@
       </div>
     </div>
 
-    <!-- <div class="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8" id="contactUs" v-if="contact">
-            <div class="mx-auto max-w-xl lg:max-w-4xl text-center" id="getStarted">
-                <h2 class="text-4xl font-bold tracking-tight text-gray-900">Get in Touch with Elite Support</h2>
-                <p class="mt-2 text-lg leading-8 text-gray-600"> Reach out to our Elite Support team for prompt and
-                    personalized assistance. </p>
-                <div id="hireUsForm" class="bg-white rounded-lg w-full mt-16 flex max-w-xl mx-auto" v-once></div>
-            </div>
-        </div> -->
-
     <div class="bg-white py-24 sm:py-32">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-4xl text-center">
@@ -832,9 +823,19 @@
 </template>
 
 <script>
-import ButtonElement from "../components/ButtonElement.vue";
 export default {
-  components: { ButtonElement },
+  setup() {
+    const title = "Elite Support | Streamlined Solutions for Unmatched Success";
+    const description = "Experience Elite Support - a premium service tailored to your technical needs. Enjoy priority assistance, rapid response times, and personalized solutions for your business. Propel your success with our reliable development partner and elevate your projects to new heights. Maximize efficiency and achieve exceptional outcomes with our streamlined support. Subscribe now and unlock the path to unparalleled success.";
+
+    useSeoMeta({
+      title: title,
+      ogTitle: title,
+      description: description,
+      ogDescription: description,
+      ogImage: '/social-meta.png',
+    })
+  },
   data() {
     return {
       contact: false,
@@ -930,22 +931,6 @@ export default {
         },
       ],
     };
-  },
-  mounted() {
-    const script = document.createElement("script");
-    script.src = "https://js.hsforms.net/forms/v2.js";
-    document.body.appendChild(script);
-    script.addEventListener("load", () => {
-      this.hubspotLoaded = true;
-      // Create the form
-      window?.hbspt?.forms.create({
-        region: "na1",
-        portalId: "22174697",
-        formId: "6d720736-42f2-4fac-ab16-85e31cf04d82",
-        target: "#hireUsForm",
-      });
-      this.contact = true;
-    });
   },
 };
 </script>

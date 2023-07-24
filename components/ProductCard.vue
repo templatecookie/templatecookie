@@ -9,6 +9,7 @@
       class="product-card__img relative inline-block overflow-hidden rounded-lg w-full product-card__img-wrapper"
     >
       <nuxt-img
+        v-if="product.banner?.url"
         :src="product.banner.url"
         alt="product-img"
         class="w-full h-full object-cover overflow-hidden"

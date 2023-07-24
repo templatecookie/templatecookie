@@ -99,9 +99,6 @@
 </template>
 
 <script setup>
-// import dayjs from 'dayjs';
-// const props = defineProps(['categories', 'content', 'data'])
-
 const currentlyActiveToc = ref("");
 const content = ref(null);
 function tocHeadClick(link) {
@@ -140,14 +137,8 @@ useHead({
   ],
 });
 
-// const formatDate = computed(() => {
-//   {
-//     return this.page ? dayjs(this.page.updatedAt).format('dddd, MMMM DD YYYY') : '';
-//   }
-// })
-
 onMounted(() => {
-  tocHeadClick(tocLinks[0]);
+  tocHeadClick(tocLinks.length ?? tocLinks[0]);
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       const id = entry.target.getAttribute("id");

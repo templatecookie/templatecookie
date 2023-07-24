@@ -114,52 +114,18 @@
   </div>
 </template>
 
-<script>
-export default {
-  setup() {
-    useHead({
-      title: title,
-      meta: [
-        { charset: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { hid: "description", name: "description", content: description },
-        {
-          hid: "og:title",
-          property: "og:title",
-          name: "og:title",
-          content: title,
-        },
-        {
-          hid: "og:description",
-          name: "og:description",
-          name: "og:description",
-          content: description,
-        },
-        {
-          hid: "og:type",
-          property: "og:type",
-          name: "og:type",
-          content: "website",
-        },
-        {
-          hid: "og:image",
-          property: "og:image",
-          name: "og:image",
-          content: "/social-meta.png",
-        },
-      ],
-    });
-  },
-  data() {
-    return {
-      currentDate: "",
-    };
-  },
-  mounted() {
-    const date = new Date("2023-03-31");
-    this.currentDate = date.toLocaleDateString();
-  },
-};
-</script>
+<script setup>
+  let title = 'Privacy Policy | Templatecookie';
+  const description = 'Learn about how Templatecookie collects, uses, and protects your personal information with our Privacy Policy. We respect your privacy and strive to provide a secure and transparent experience on our website.'
 
-<style></style>
+  useSeoMeta({
+    title: title,
+    ogTitle: title,
+    description: description,
+    ogDescription: description,
+    ogImage: '/social-meta.png',
+  })
+
+  let date = new Date("2023-03-31");
+  const currentDate = date.toLocaleDateString();
+</script>

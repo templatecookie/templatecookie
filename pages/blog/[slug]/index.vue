@@ -133,9 +133,9 @@
 </template>
 
 <script>
+import dayjs from 'dayjs';
 import BLOG_DETAILS from "~/graphql/blog/postDetails";
-import { ref } from "vue";
-import dayjs from "dayjs";
+
 export default {
   methods: {
     renderInlineRecord: ({ record, h }) => {
@@ -180,43 +180,24 @@ export default {
   },
 
   async setup() {
-    head({
-      title: seoTitle,
-      meta: [
-        { charset: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { hid: "description", name: "description", content: seoDesc },
-        {
-          hid: "og:title",
-          property: "og:title",
-          name: "og:title",
-          content: seoTitle,
-        },
-        {
-          hid: "og:description",
-          name: "og:description",
-          name: "og:description",
-          content: seoDesc,
-        },
-        {
-          hid: "og:type",
-          property: "og:type",
-          name: "og:type",
-          content: "article",
-        },
-        {
-          hid: "og:image",
-          property: "og:image",
-          name: "og:image",
-          content: postDetails.image.url,
-        },
-      ],
-    });
     const { data } = await useGraphqlQuery({ query: BLOG_DETAILS });
     const post = ref([]);
     const relatedPosts = ref([]);
     post.value = data._rawValue.post;
     relatedPosts.value = data._rawValue.allPosts;
+
+    const title = `${post?._rawValue?.title} | Templatecookie.com`;
+    const description = post?._rawValue?.shortDescription;
+    const image = post?._rawValue?.image?.url;
+
+    useSeoMeta({
+      title: title,
+      ogTitle: title,
+      description: description,
+      ogDescription: description,
+      ogImage: image,
+    })
+
     return {
       post,
       relatedPosts,

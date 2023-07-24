@@ -122,25 +122,16 @@
   </div>
 </template>
 
+
 <script>
 export default {
   mounted() {
-    // console.log(window);
-    const script = document.createElement("script");
-    script.src = "https://js.hsforms.net/forms/v2.js";
-    document.body.appendChild(script);
-    script.addEventListener("load", () => {
-      if (window?.hbspt) {
-        window?.hbspt?.forms.create({
-          region: "na1",
-          portalId: "22174697",
-          formId: "55ae1706-e17a-40a0-81db-275fc2d1030a",
-          target: "#hireUsForm",
-        });
-      }
+    window.hbspt.forms.create({
+      region: "na1",
+      portalId: "22174697",
+      formId: "55ae1706-e17a-40a0-81db-275fc2d1030a",
+      target: "#hireUsForm",
     });
   },
 };
 </script>
-
-<style></style>

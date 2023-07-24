@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeroSection
+    <home-hero-section
       :data="homepage.heroSection"
       v-if="homepage && homepage?.heroSection"
     />
@@ -42,11 +42,11 @@
     </section>
 
     <!-- Why Should  -->
-    <TopFeaturesSection
+    <home-top-features-section
       v-if="homepage && homepage.topFeatures"
       :data="homepage.topFeatures"
     />
-    <WhyUs
+    <home-why-us
       v-if="homepage && homepage.whyUsSection"
       :data="homepage.whyUsSection"
     />
@@ -76,28 +76,28 @@
         </div>
       </div>
     </div>
-    <blog-section :data="latestPosts" />
+    <home-blog-section :data="latestPosts" />
   </div>
 </template>
 
 <script setup>
-import useGraphqlQuery from "~/composables/useGraphqlQuery";
-import { ref } from "vue";
-import { Dialog, DialogPanel } from "@headlessui/vue";
-import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
-import HOMEPAGE_QUERY from "../graphql/homepage";
-import BlogSection from "~/components/Home/BlogSection.vue";
-import HeroSection from "~/components/Home/HeroSection.vue";
-import TopFeaturesSection from "~/components/Home/TopFeaturesSection.vue";
-import WhyUs from "~/components/Home/WhyUs.vue";
-import ProductCard from "~/components/ProductCard.vue";
+  const title = "Premium Quality Scripts & HTML Templates | Templatecookie.com"
+  const description = "Templatecookie is a team of developers working on building quality templates and scripts! We create high-quality products to help you manage your business."
 
-const mobileMenuOpen = ref(false);
-const { data, error } = await useGraphqlQuery({ query: HOMEPAGE_QUERY });
-const homepage = ref({});
-const latestPosts = ref([]);
-const latestProducts = ref([]);
-homepage.value = data._rawValue.homepage;
-latestProducts.value = data._rawValue.allProducts;
-latestPosts.value = data._rawValue.allPosts;
+  useSeoMeta({
+    title: title,
+    ogTitle: title,
+    description: description,
+    ogDescription: description,
+    ogImage: '/social-meta.png',
+  })
+
+  import useGraphqlQuery from "~/composables/useGraphqlQuery";
+  import HOMEPAGE_QUERY from "../graphql/homepage";
+
+  const mobileMenuOpen = ref(false);
+  const { data, error } = await useGraphqlQuery({ query: HOMEPAGE_QUERY });
+  const homepage = data._rawValue.homepage;
+  const latestProducts = data._rawValue.allProducts;
+  const latestPosts = data._rawValue.allPosts;
 </script>

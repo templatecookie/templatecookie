@@ -84,30 +84,10 @@
 
 <script>
 import ALL_PRODUCT_PLANS from "../graphql/allProductPlans";
-import PricingSection from "~/components/PricingSection.vue";
 import useGraphqlQuery from "~/composables/useGraphqlQuery";
-import { ref, computed } from "vue";
 
 export default {
   async setup() {
-    useHead({
-      title: "Installation Plans | Templatecookie Products",
-      meta: [
-        {
-          charset: "utf-8",
-        },
-        {
-          name: "viewport",
-          content: "width=device-width, initial-scale=1",
-        },
-        {
-          hid: "description",
-          name: "description",
-          content:
-            "Buy our premium installation support package, our expert team will help you get your app installed & configured.",
-        },
-      ],
-    });
     const selectedProduct = ref(null);
     const products = ref({});
     const bannerImg = ref("/img-five.png");
@@ -133,6 +113,17 @@ export default {
       }
     });
 
+    const title = "Installation Plans | Templatecookie Products";
+    const description = "Buy our premium installation support package, our expert team will help you get your app installed & configured.";
+
+    useSeoMeta({
+      title: title,
+      ogTitle: title,
+      description: description,
+      ogDescription: description,
+      ogImage: '/social-meta.png',
+    })
+
     return {
       bannerImg,
       products,
@@ -142,7 +133,7 @@ export default {
     };
   },
   created() {
-    this.selectedProduct = "id" + this.products[0].product?.id;
+    this.selectedProduct = "id" + this.products[0]?.product?.id;
   },
 };
 </script>
