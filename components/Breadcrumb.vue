@@ -63,7 +63,7 @@ export default {
   },
   data() {
     return {
-      bgimage: require("../static/images/breadcrumb.png"),
+      bgimage: require("/images/breadcrumb.png"),
     };
   },
 };

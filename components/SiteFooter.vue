@@ -189,7 +189,7 @@
           <div class="md:order-2">
             <img
               class="h-[37px] w-[390px]"
-              src="../images/payment-gateway.svg"
+              src="/images/payment-gateway.svg"
               alt="Templatecookie Payment Gateway Images"
             >
           </div>
