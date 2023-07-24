@@ -9,9 +9,10 @@
           <h1
             class="text-4xl md:text-heading-40 text-dark mb-6 mx-auto font-semibold capitalize"
           >
-            {{ product.title }} - Documentation
+            <span v-if="product?.title">{{ product.title }}</span>
+             - Documentation
           </h1>
-          <p class="text-lg md:text-lg text-dark mb-8 font-light">
+          <p class="text-lg md:text-lg text-dark mb-8 font-light" v-if="product?.description">
             {{ product.description }}
           </p>
         </div>
@@ -54,7 +55,7 @@
           </div>
           <!-- <NuxtPage /> -->
           <NuxtPage
-            :productName="product.name + 'Documentation'"
+            :productName="product?.name + 'Documentation'"
             :categories="categories"
           />
         </div>
@@ -72,9 +73,11 @@ const { data } = await useAsyncData("docs-product", () =>
     .sort({ position: 1 })
     .find(),
 );
+
 // find index.md and create product short name from _path
-const product = data._rawValue.shift();
-product.name = product._path.replace("/docs/", "");
+const product = ref([]);
+product.value = data._rawValue.shift();
+product.name = product?._path?.replace("/docs/", "");
 
 // group by categories using lodash library
 import groupBy from "lodash.groupby";

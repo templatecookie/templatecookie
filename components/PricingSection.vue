@@ -141,9 +141,6 @@ export default {
       Paddle.Environment.set("sandbox");
       Paddle.Setup({ vendor: 5864 });
     },
-  },
-  mounted() {
-    console.log("ok");
-  },
+  }
 };
 </script>

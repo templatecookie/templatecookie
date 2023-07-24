@@ -103,7 +103,6 @@ export default {
   },
   computed: {
     section() {
-      console.log(this.data);
       return this.data[0];
     },
   },

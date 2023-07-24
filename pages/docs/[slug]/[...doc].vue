@@ -120,7 +120,6 @@ const { data } = await useAsyncData("home", () =>
 
 content.value = data?._rawValue?.body;
 const tocLinks = data?._rawValue?.body?.toc?.links;
-console.log(tocLinks);
 const title = data?._rawValue?.title;
 const description = data?._rawValue?.description;
 
