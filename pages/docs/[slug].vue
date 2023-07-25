@@ -66,9 +66,10 @@
 
 <script setup>
 const { path } = useRoute();
+const newPath = path.match(/^\/docs\/\w+/);
 // fetch all pages.
 const { data } = await useAsyncData("docs-product", () =>
-  queryContent(`${path.replace(/\/+$/, "")}`)
+  queryContent(`${newPath[0]}`)
     .only(["title", "description", "category", "position", "_path", "_dir"])
     .sort({ position: 1 })
     .find(),
