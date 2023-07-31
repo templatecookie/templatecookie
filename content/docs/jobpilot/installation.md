@@ -26,16 +26,11 @@ Before you install **Jobpilot** make sure your server meets the following requir
 
 ---
 
-<hightlight-block>
-<template>
-  <h3 class="!text-white"> Hosting Recommendation </h3>
-
+<h3 class=""> Hosting Recommendation </h3>
 We recommend you set up this application on a cloud server. A cloud server is great for SPA, in terms of speed, security, and scalability.
 
 We recommend
 <a href="http://go.templatecookie.com/cloudways" target="_blank">Cloudways</a>, <a href="http://go.templatecookie.com/vultr" target="_blank">Vultr</a>, <a href="http://go.templatecookie.com/digitalocean" target="_blank">Digitalocean</a>, and <a href="http://go.templatecookie.com/namecheap" target="_blank"> Namecheap </a>
-</template>
-</hightlight-block>
 
 <div class="bg-gray-200 rounded-xl px-4 py-6">
   <section id="installation-services">
