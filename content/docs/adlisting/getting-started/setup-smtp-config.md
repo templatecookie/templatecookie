@@ -1,6 +1,6 @@
 ---
 title: Setup SMTP Config
-position: 20
+position: 12
 category: Getting Started
 ---
 

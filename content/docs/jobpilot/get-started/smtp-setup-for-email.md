@@ -1,6 +1,6 @@
 ---
 title: SMTP Setup
-position: 3
+position: 12
 category: Getting Started
 ---
 

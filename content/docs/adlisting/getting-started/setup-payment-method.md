@@ -1,6 +1,6 @@
 ---
 title: Setup Payment Gateway
-position: 19
+position: 15
 category: Getting Started
 ---
 

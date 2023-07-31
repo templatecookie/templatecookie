@@ -1,6 +1,6 @@
 ---
 title: Live Chat Integration
-position: 24
+position: 14
 category: Getting Started
 ---
 

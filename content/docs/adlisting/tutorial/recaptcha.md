@@ -1,6 +1,6 @@
 ---
 title: Recaptcha Setting
-position: 22
+position: 21
 category: System Setting
 ---
 

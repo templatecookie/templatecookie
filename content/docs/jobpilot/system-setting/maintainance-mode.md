@@ -1,6 +1,6 @@
 ---
 title: Maintenance Mode
-position: 31
+position: 22
 category: System Setting
 ---
 

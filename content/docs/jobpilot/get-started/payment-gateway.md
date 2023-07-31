@@ -1,6 +1,6 @@
 ---
 title: Payment Gateway
-position: 5
+position: 14
 category: Getting Started
 ---
 

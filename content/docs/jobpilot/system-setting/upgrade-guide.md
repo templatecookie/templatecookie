@@ -1,6 +1,6 @@
 ---
 title: Upgrade Guide
-position: 35
+position: 28
 category: System Setting
 ---
 

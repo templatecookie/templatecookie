@@ -1,7 +1,7 @@
 ---
 title: Changelog
 description: Installation documentation
-position: 42
+position: 32
 category: Others
 ---
 

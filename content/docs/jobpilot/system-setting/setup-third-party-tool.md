@@ -1,6 +1,6 @@
 ---
 title: Setup Third Party Tool
-position: 31
+position: 23
 category: System Setting
 ---
 

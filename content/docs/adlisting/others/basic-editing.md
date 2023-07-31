@@ -1,7 +1,7 @@
 ---
 title: Basic Editing
 description: Installation documentation
-position: 40
+position: 30
 category: Others
 ---
 

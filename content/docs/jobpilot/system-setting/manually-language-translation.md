@@ -1,6 +1,6 @@
 ---
 title: Manually Language Translation
-position: 34
+position: 27
 category: System Setting
 ---
 

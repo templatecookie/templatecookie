@@ -1,6 +1,6 @@
 ---
 title: Affiliate Setting
-position: 13
+position: 21
 category: System Setting
 ---
 

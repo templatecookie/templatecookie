@@ -1,7 +1,7 @@
 ---
 title: Welcome to Jobpilot
 description: Learn how to use Jobpilot docs.
-position: 1
+position: 10
 category: "Getting Started"
 ---
 

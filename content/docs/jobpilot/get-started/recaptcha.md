@@ -1,6 +1,6 @@
 ---
 title: Recaptcha Setting
-position: 6
+position: 15
 category: Getting Started
 ---
 
