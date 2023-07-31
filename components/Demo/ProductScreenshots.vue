@@ -1,5 +1,4 @@
 <template>
-  <h2>This is PSc</h2>
   <div
     class="py-20 lg:pt-124"
     :id="data.sectionId ? data.sectionId : data.id"

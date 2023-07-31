@@ -42,9 +42,8 @@ export default defineNuxtConfig({
   ],
 
   plugins: [
-    // { src: "./mixin/global.js", },
     { src: "@/plugins/aos", mode: "client" },
-    { src: "./plugins/datocms.js", mode: "client" },
+    { src: "@/plugins/datocms.js", mode: "client" },
   ],
 
   //   purgeCSS: {

@@ -72,7 +72,14 @@
 </template>
 
 <script>
+import { marked } from 'marked';
+
 export default {
   props: ["data"],
+  methods: {
+    parseMarkdown(markdown) {
+      return marked.parse(markdown);
+    },
+  }
 };
 </script>
