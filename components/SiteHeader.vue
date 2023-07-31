@@ -28,9 +28,8 @@
             </div>
           </div>
           <nav class="hidden space-x-6 lg:flex items-center">
-            <div class="relative">
+            <div class="relative dropdown-btn">
               <button
-                @pointerenter="solutionStatus = !solutionStatus"
                 :class="solutionStatus ? 'text-gray-900' : 'text-gray-500'"
                 class="group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 lg:focus:ring-transparent focus:ring-primary focus:ring-offset-2"
                 aria-expanded="false"
@@ -54,8 +53,7 @@
 
               <transition name="flayout-menu">
                 <div
-                  v-if="solutionStatus"
-                  class="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform lg:left-1/2 lg:ml-0 lg:max-w-2xl lg:-translate-x-1/2"
+                  class="dropdown-item absolute z-10 -ml-4 w-screen max-w-md transform lg:left-0 lg:ml-0 lg:max-w-2xl"
                 >
                   <div
                     class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5"
@@ -267,3 +265,15 @@ export default {
   mounted() {},
 };
 </script>
+<style>
+  .dropdown-item{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  .dropdown-btn:hover  .dropdown-item{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(12px);
+  }
+</style>
