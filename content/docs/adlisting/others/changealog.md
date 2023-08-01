@@ -8,6 +8,13 @@ category: Others
 # Changelog
 
 ---
+### v2.15 - 30th July 2023
+
+```
+- Feat: Admin sets limit for homepage ads.
+- fix: Seller profile page document problem.
+```
+
 ### v2.14.11 - 21st July 2023
 ```
 - improve: Home page latest ads section added.
