@@ -78,7 +78,7 @@ const { data } = await useAsyncData("docs-product", () =>
 // find index.md and create product short name from _path
 const product = ref([]);
 product.value = data._rawValue.shift();
-product.name = product?._path?.replace("/docs/", "");
+const productName = product?._path?.replace("/docs/", "");
 
 // group by categories using lodash library
 import groupBy from "lodash.groupby";

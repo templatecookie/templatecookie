@@ -59,13 +59,15 @@
           <div
             class="hidden items-center justify-end md:flex md:flex-1 lg:w-0 space-x-4"
           >
-            <button-element
-              v-for="(item, index) in mainMenuItems"
-              :key="index"
-              :label="item.name"
-              :href="item.href"
-              css-class="bg-primary hover:bg-secondary text-white"
-            />
+            <template v-for="(item, index) in mainMenuItems"
+              :key="index">
+              <button-element
+                :label="item.name"
+                :href="item.href"
+                v-if="item.status"
+                css-class="bg-primary hover:bg-secondary text-white"
+              />
+            </template>
           </div>
         </div>
       </div>
@@ -214,8 +216,10 @@ export default {
         {
           name: "Buy Now",
           href: "#pricing",
+          status: true,
         },
         {
+          status: this.product.offerRequestCustomization,
           name: "Request Customization",
           href: "/hire-us",
         },

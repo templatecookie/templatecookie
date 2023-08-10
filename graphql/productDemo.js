@@ -10,6 +10,7 @@ query product($slug: String!){
     previewUrl
     shortName
     offerRequestCustomization
+    whyChooseUs
     banner {
       url
     }

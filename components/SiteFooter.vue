@@ -174,7 +174,7 @@
                       to="/products"
                       class="text-base text-gray-400 hover:text-gray-300"
                     >
-                      products
+                      Products
                     </nuxt-link>
                   </li>
                 </ul>

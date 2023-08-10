@@ -10,7 +10,7 @@
     />
     <demo-why-choose-our-product
       :product="product"
-      v-if="product?.contents"
+      v-if="product?.whyChooseUs"
     />
     <div
       v-for="(section, index) in product?.contents"
@@ -53,40 +53,32 @@
   </div>
 </template>
 
-<script>
-import PRODUCT_DEMO from "~/graphql/productDemo";
+<script setup>
+  import PRODUCT_DEMO from "~/graphql/productDemo";
 
-definePageMeta({
-  layout: "empty",
-});
-export default {
-  async setup() {
-    const product = ref(null);
-    const route = useRoute();
-    const { slug } = route?.params;
-    const { data } = await useGraphqlQuery({
-      query: PRODUCT_DEMO,
-      variables: { slug },
-    });
-    product.value = data?._rawValue?.product;
+  definePageMeta({
+    layout: "empty",
+  });
+  const product = ref(null);
+  const route = useRoute();
+  const { slug } = route?.params;
+  const { data } = await useGraphqlQuery({
+    query: PRODUCT_DEMO,
+    variables: { slug },
+  });
+  product.value = data?._rawValue?.product;
 
-    const title = product?._rawValue?.seo?.title;
-    const description = product?._rawValue?.seo?.description;
-    const image = product?._rawValue?.banner?.url;
+  const title = product?._rawValue?.seo?.title ?? product?._rawValue?.name;
+  const description = product?._rawValue?.seo?.description ?? product?._rawValue?.description;
+  const image = product?._rawValue?.banner?.url ?? data?._rawValue?.image;
 
-    useSeoMeta({
-      title: title,
-      ogTitle: title,
-      description: description,
-      ogDescription: description,
-      ogImage: image,
-    })
-
-    return {
-      product,
-    };
-  },
-};
+  useSeoMeta({
+    title: title,
+    ogTitle: title,
+    description: description,
+    ogDescription: description,
+    ogImage: image,
+  })
 </script>
 
 <style lang="scss" scoped>
