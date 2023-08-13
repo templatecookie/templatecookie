@@ -111,20 +111,21 @@
 </template>
 
 <script setup>
-  const title = "Refund Policy | Our commitment to customer satisfaction";
-  const description = "Our refund policy ensures that our customers receive a satisfactory experience. If you're unhappy with your purchase or encounter issues, we're here to help. Learn more about our refund policy and eligibility criteria.";
+const title = "Refund Policy | Our commitment to customer satisfaction";
+const description =
+  "Our refund policy ensures that our customers receive a satisfactory experience. If you're unhappy with your purchase or encounter issues, we're here to help. Learn more about our refund policy and eligibility criteria.";
 
-  useHead({
-    title: title,
-    meta: [
-      { name: 'description', content: description, },
-      { property: 'og:title', name: 'og:title', content: title },
-      { name: 'og:description', content: description },
-      { property: 'og:type', name: 'og:type', content: "website" },
-      { property: 'og:image', name: 'og:image', content: '/social-meta.png' },
-    ],
-  });
+useHead({
+  title: title,
+  meta: [
+    { name: "description", content: description },
+    { property: "og:title", name: "og:title", content: title },
+    { name: "og:description", content: description },
+    { property: "og:type", name: "og:type", content: "website" },
+    { property: "og:image", name: "og:image", content: "/social-meta.png" },
+  ],
+});
 
-  const date = new Date("2023-03-31");
-  let currentDate = date.toLocaleDateString();
+const date = new Date("2023-03-31");
+let currentDate = date.toLocaleDateString();
 </script>

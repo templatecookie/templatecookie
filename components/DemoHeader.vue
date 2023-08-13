@@ -59,8 +59,10 @@
           <div
             class="hidden items-center justify-end md:flex md:flex-1 lg:w-0 space-x-4"
           >
-            <template v-for="(item, index) in mainMenuItems"
-              :key="index">
+            <template
+              v-for="(item, index) in mainMenuItems"
+              :key="index"
+            >
               <button-element
                 :label="item.name"
                 :href="item.href"

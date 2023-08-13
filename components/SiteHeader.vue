@@ -266,14 +266,14 @@ export default {
 };
 </script>
 <style>
-  .dropdown-item{
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.5s ease;
-  }
-  .dropdown-btn:hover  .dropdown-item{
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(12px);
-  }
+.dropdown-item {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.dropdown-btn:hover .dropdown-item {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(12px);
+}
 </style>

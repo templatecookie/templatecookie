@@ -10,9 +10,12 @@
             class="text-4xl md:text-heading-40 text-dark mb-6 mx-auto font-semibold capitalize"
           >
             <span v-if="product?.title">{{ product.title }}</span>
-             - Documentation
+            - Documentation
           </h1>
-          <p class="text-lg md:text-lg text-dark mb-8 font-light" v-if="product?.description">
+          <p
+            class="text-lg md:text-lg text-dark mb-8 font-light"
+            v-if="product?.description"
+          >
             {{ product.description }}
           </p>
         </div>

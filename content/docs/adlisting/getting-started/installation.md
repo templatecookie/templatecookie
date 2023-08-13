@@ -33,7 +33,6 @@ We recommend you set up this application on a cloud server. A cloud server is gr
 We recommend
 <a href="http://go.templatecookie.com/cloudways" target="_blank">Cloudways</a>, <a href="http://go.templatecookie.com/vultr" target="_blank">Vultr</a>, <a href="http://go.templatecookie.com/digitalocean" target="_blank">Digitalocean</a>, and <a href="http://go.templatecookie.com/namecheap" target="_blank"> Namecheap </a>
 
-
 <div class="bg-gray-200 rounded-xl px-4 py-6">
   <section id="installation-services">
       <h2>Installation Services</h2>

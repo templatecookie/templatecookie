@@ -1,21 +1,12 @@
 <template>
   <div>
-    <demo-header
-      :product="product"
-      v-if="product"
-    />
-    <demo-product-hero
-      :product="product"
-      v-if="product"
-    />
+    <demo-header :product="product" v-if="product" />
+    <demo-product-hero :product="product" v-if="product" />
     <demo-why-choose-our-product
       :product="product"
       v-if="product?.whyChooseUs"
     />
-    <div
-      v-for="(section, index) in product?.contents"
-      :key="index"
-    >
+    <div v-for="(section, index) in product?.contents" :key="index">
       <div v-if="section.__typename == 'ExclusivefeatureRecord'">
         <demo-exclusive-feature :data="section" />
       </div>
@@ -26,10 +17,7 @@
         <demo-product-top-features :data="section" />
       </div>
       <div v-if="section.__typename == 'ProductctaRecord'">
-        <demo-call-to-action
-          :section="section"
-          :product="product"
-        />
+        <demo-call-to-action :section="section" :product="product" />
       </div>
       <div v-if="section.__typename == 'PriceplanRecord'">
         <PricingSection
@@ -44,41 +32,39 @@
         <demo-testimonial-section :data="section" />
       </div>
       <div v-if="section.__typename == 'TechnologySectionRecord'">
-        <demo-technology-section
-          :data="section"
-          :product="product"
-        />
+        <demo-technology-section :data="section" :product="product" />
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-  import PRODUCT_DEMO from "~/graphql/productDemo";
+import PRODUCT_DEMO from "~/graphql/productDemo";
 
-  definePageMeta({
-    layout: "empty",
-  });
-  const product = ref(null);
-  const route = useRoute();
-  const { slug } = route?.params;
-  const { data } = await useGraphqlQuery({
-    query: PRODUCT_DEMO,
-    variables: { slug },
-  });
-  product.value = data?._rawValue?.product;
+definePageMeta({
+  layout: "empty",
+});
+const product = ref(null);
+const route = useRoute();
+const { slug } = route?.params;
+const { data } = await useGraphqlQuery({
+  query: PRODUCT_DEMO,
+  variables: { slug },
+});
+product.value = data?._rawValue?.product;
 
-  const title = product?._rawValue?.seo?.title ?? product?._rawValue?.name;
-  const description = product?._rawValue?.seo?.description ?? product?._rawValue?.description;
-  const image = product?._rawValue?.banner?.url ?? data?._rawValue?.image;
+const title = product?._rawValue?.seo?.title ?? product?._rawValue?.name;
+const description =
+  product?._rawValue?.seo?.description ?? product?._rawValue?.description;
+const image = product?._rawValue?.banner?.url ?? data?._rawValue?.image;
 
-  useSeoMeta({
-    title: title,
-    ogTitle: title,
-    description: description,
-    ogDescription: description,
-    ogImage: image,
-  })
+useSeoMeta({
+  title: title,
+  ogTitle: title,
+  description: description,
+  ogDescription: description,
+  ogImage: image,
+});
 </script>
 
 <style lang="scss" scoped>

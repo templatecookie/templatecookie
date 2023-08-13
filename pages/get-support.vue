@@ -113,15 +113,16 @@
 export default {
   setup() {
     const title = "Get Customer Support - Templatecookie.com";
-    const description = "Having trouble with our products? Get in touch and create a support ticket";
+    const description =
+      "Having trouble with our products? Get in touch and create a support ticket";
 
     useSeoMeta({
       title: title,
       ogTitle: title,
       description: description,
       ogDescription: description,
-      ogImage: '/social-meta.png',
-    })
+      ogImage: "/social-meta.png",
+    });
   },
   data() {
     return {

@@ -41,22 +41,21 @@
   </div>
 </template>
 
-
 <script>
 import ALL_BLOG_QUERY from "~/graphql/blog/allBlogPosts.js";
 
 export default {
   async setup() {
     const title = `Blog - Templatecookie.com`;
-    const description = 'Read templatecookie blog. Updated Weekly'
+    const description = "Read templatecookie blog. Updated Weekly";
 
     useSeoMeta({
       title: title,
       ogTitle: title,
       description: description,
       ogDescription: description,
-      ogImage: '/social-meta.png',
-    })
+      ogImage: "/social-meta.png",
+    });
 
     const { data } = await useGraphqlQuery({ query: ALL_BLOG_QUERY });
     const posts = data._rawValue.allPosts;

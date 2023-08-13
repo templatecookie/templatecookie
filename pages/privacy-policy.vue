@@ -115,17 +115,18 @@
 </template>
 
 <script setup>
-  let title = 'Privacy Policy | Templatecookie';
-  const description = 'Learn about how Templatecookie collects, uses, and protects your personal information with our Privacy Policy. We respect your privacy and strive to provide a secure and transparent experience on our website.'
+let title = "Privacy Policy | Templatecookie";
+const description =
+  "Learn about how Templatecookie collects, uses, and protects your personal information with our Privacy Policy. We respect your privacy and strive to provide a secure and transparent experience on our website.";
 
-  useSeoMeta({
-    title: title,
-    ogTitle: title,
-    description: description,
-    ogDescription: description,
-    ogImage: '/social-meta.png',
-  })
+useSeoMeta({
+  title: title,
+  ogTitle: title,
+  description: description,
+  ogDescription: description,
+  ogImage: "/social-meta.png",
+});
 
-  let date = new Date("2023-03-31");
-  const currentDate = date.toLocaleDateString();
+let date = new Date("2023-03-31");
+const currentDate = date.toLocaleDateString();
 </script>

@@ -133,7 +133,7 @@
 </template>
 
 <script>
-import dayjs from 'dayjs';
+import dayjs from "dayjs";
 import BLOG_DETAILS from "~/graphql/blog/postDetails";
 
 export default {
@@ -196,7 +196,7 @@ export default {
       description: description,
       ogDescription: description,
       ogImage: image,
-    })
+    });
 
     return {
       post,

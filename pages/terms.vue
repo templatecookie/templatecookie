@@ -102,18 +102,18 @@
   </div>
 </template>
 
-
 <script setup>
-  const title = "Terms and Conditions | Templatecookie";
-  const description = "By using Templatecookie, you agree to be bound by our Terms and Conditions. We provide high-quality templates and resources for web development, while also outlining our expectations for user conduct and ownership of content. Learn more here.";
+const title = "Terms and Conditions | Templatecookie";
+const description =
+  "By using Templatecookie, you agree to be bound by our Terms and Conditions. We provide high-quality templates and resources for web development, while also outlining our expectations for user conduct and ownership of content. Learn more here.";
 
-  useSeoMeta({
-    title: title,
-    ogTitle: title,
-    description: description,
-    ogDescription: description,
-    ogImage: '/social-meta.png',
-  })
+useSeoMeta({
+  title: title,
+  ogTitle: title,
+  description: description,
+  ogDescription: description,
+  ogImage: "/social-meta.png",
+});
 </script>
 
 <style></style>

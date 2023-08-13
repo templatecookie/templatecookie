@@ -114,15 +114,16 @@ export default {
     });
 
     const title = "Installation Plans | Templatecookie Products";
-    const description = "Buy our premium installation support package, our expert team will help you get your app installed & configured.";
+    const description =
+      "Buy our premium installation support package, our expert team will help you get your app installed & configured.";
 
     useSeoMeta({
       title: title,
       ogTitle: title,
       description: description,
       ogDescription: description,
-      ogImage: '/social-meta.png',
-    })
+      ogImage: "/social-meta.png",
+    });
 
     return {
       bannerImg,

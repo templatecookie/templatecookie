@@ -11,16 +11,17 @@
 <script>
 export default {
   setup() {
-    const title =  "Hire Expert Designer & Developers | Templatecookie";
-    const description = "We have expert developers and designers to help you build your next dream project. Our team composed with experts in various industry"
+    const title = "Hire Expert Designer & Developers | Templatecookie";
+    const description =
+      "We have expert developers and designers to help you build your next dream project. Our team composed with experts in various industry";
 
     useSeoMeta({
       title: title,
       ogTitle: title,
       description: description,
       ogDescription: description,
-      ogImage: '/social-meta.png',
-    })
+      ogImage: "/social-meta.png",
+    });
   },
   data() {
     return {
