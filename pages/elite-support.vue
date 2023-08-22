@@ -817,6 +817,9 @@
             </ul>
           </div>
         </div>
+        <p class="mx-auto mt-8 max-w-2xl text-center text-base leading-8 text-gray-900">
+          Support plans does not include script purchase price. Script purchased separately from our profile
+        </p>
       </div>
     </div>
   </div>
@@ -893,8 +896,7 @@ export default {
         },
         {
           name: "Essential",
-          description:
-            "Elevate Your Support Experience, Unleash Your Potential.",
+          description: "Elevate Your Support Experience, Unleash Your Potential.",
           price: 199,
           popular: false,
           items: [
@@ -905,9 +907,7 @@ export default {
             { name: "Access to Customer Panel" },
             { name: "Supported 1 Domain" },
             { name: "Script Installation & Server Maintenance" },
-            {
-              name: "2 hours included for modifications or new feature implementation ",
-            },
+            { name: "2 hours included for modifications or new feature implementation ",},
           ],
         },
         {
@@ -921,11 +921,9 @@ export default {
             { name: "Quick Bug Fixing" },
             { name: "Access to email support" },
             { name: "Access to Customer Panel" },
-              { name: "Supported 2 Domain" },
+            { name: "Supported 2 Domain" },
             { name: "Script Installation & Server Maintenance" },
-            {
-              name: "5 hours included for modifications or new feature implementation ",
-            },
+            { name: "5 hours included for modifications or new feature implementation ",},
             { name: "Access to Whatsapp Support" },
             { name: "Expert Technical Guidance" },
           ],
