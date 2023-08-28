@@ -1,10 +1,11 @@
 ---
 title: Manually Language Translation
-position: 34
+position: 27
 category: System Setting
 ---
 
 # Manually Language Translation
+
 If you want to translate your application and you don't want to use the auto translation feature and 1000+ clicks, you can do it manually. Follow the steps below to translate your application.
 
 ### How to translate manually
@@ -19,6 +20,7 @@ For example, you want to translate your application into the German language. Fo
 NOTE: Don't change the left side of the language. If you change the left side of the language, your application will not work properly. You can change the right side of the language.
 
 ## Screenshot
+
 ![](/docs/jobpilot/setting/manually_1.png)
 <br>
 ![](/docs/jobpilot/setting/manually_2.png)

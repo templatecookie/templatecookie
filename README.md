@@ -40,7 +40,7 @@ Start the server
 - [Vue Select ](https://vue-select.org/)
 - [Animate on Scroll](https://michalsnik.github.io/aos/)
 
-
 ## Old Version
+
 [v1 templatecookie.com](https://templatecookie.netlify.app/)
 [v2 templatecookie.com](https://templatecookie-static.netlify.app)

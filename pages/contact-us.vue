@@ -4,12 +4,10 @@
 
 <script>
 export default {
-    beforeCreate(){
-        this.$router.push('/hire-us');
-    }
-}
+  beforeCreate() {
+    this.$router.push("/hire-us");
+  },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

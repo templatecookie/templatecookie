@@ -1,7 +1,6 @@
 // Product Demo Page Query
-import gql from 'graphql-tag';
 
-export default gql`
+export default `
 query product($slug: String!){
   product(filter: {slug: {eq: $slug}}) {
     id
@@ -11,6 +10,7 @@ query product($slug: String!){
     previewUrl
     shortName
     offerRequestCustomization
+    whyChooseUs
     banner {
       url
     }
@@ -201,4 +201,4 @@ query product($slug: String!){
     }
   }
 }
-`
+`;

@@ -1,32 +1,89 @@
 <template>
-  <div id="contact" class="overflow-hidden bg-white py-16 px-4 sm:px-6 lg:px-8 lg:py-24 pb-48 bg-hireus-banner bg-no-repeat bg-cover">
+  <div
+    id="contact"
+    class="overflow-hidden bg-white py-16 px-4 sm:px-6 lg:px-8 lg:py-24 pb-48 bg-hireus-banner bg-no-repeat bg-cover"
+  >
     <div class="relative mx-auto max-w-xl">
-      <svg class="absolute left-full translate-x-1/2 transform" width="404" height="404" fill="none" viewBox="0 0 404 404" aria-hidden="true">
+      <svg
+        class="absolute left-full translate-x-1/2 transform"
+        width="404"
+        height="404"
+        fill="none"
+        viewBox="0 0 404 404"
+        aria-hidden="true"
+      >
         <defs>
-          <pattern id="85737c0e-0916-41d7-917f-596dc7edfa27" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+          <pattern
+            id="85737c0e-0916-41d7-917f-596dc7edfa27"
+            x="0"
+            y="0"
+            width="20"
+            height="20"
+            patternUnits="userSpaceOnUse"
+          >
+            <rect
+              x="0"
+              y="0"
+              width="4"
+              height="4"
+              class="text-gray-200"
+              fill="currentColor"
+            />
           </pattern>
         </defs>
-        <rect width="404" height="404" fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)" />
+        <rect
+          width="404"
+          height="404"
+          fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)"
+        />
       </svg>
-      <svg class="absolute right-full bottom-0 -translate-x-1/2 transform" width="404" height="404" fill="none" viewBox="0 0 404 404" aria-hidden="true">
+      <svg
+        class="absolute right-full bottom-0 -translate-x-1/2 transform"
+        width="404"
+        height="404"
+        fill="none"
+        viewBox="0 0 404 404"
+        aria-hidden="true"
+      >
         <defs>
-          <pattern id="85737c0e-0916-41d7-917f-596dc7edfa27" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+          <pattern
+            id="85737c0e-0916-41d7-917f-596dc7edfa27"
+            x="0"
+            y="0"
+            width="20"
+            height="20"
+            patternUnits="userSpaceOnUse"
+          >
+            <rect
+              x="0"
+              y="0"
+              width="4"
+              height="4"
+              class="text-gray-200"
+              fill="currentColor"
+            />
           </pattern>
         </defs>
-        <rect width="404" height="404" fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)" />
+        <rect
+          width="404"
+          height="404"
+          fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)"
+        />
       </svg>
       <div class="text-center">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Contact Us
         </h2>
         <p class="mt-4 text-lg leading-6 text-gray-500">
-          Our team will reach you within 24 hours and schedule a meeting at your convenience. Simply fill out the form.
+          Our team will reach you within 24 hours and schedule a meeting at your
+          convenience. Simply fill out the form.
         </p>
       </div>
       <div class="mt-12">
-        <div id="hireUsForm" class="pt-8 py-4 px-6 bg-white rounded-lg"></div>
+        <div
+          id="hireUsForm"
+          class="pt-8 py-4 px-6 bg-white rounded-lg"
+        />
         <!-- <form action="#" method="POST" class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
           <div class="sm:col-span-2">
             <label for="first-name" class="block text-sm font-medium text-gray-700">Your name</label>
@@ -72,12 +129,8 @@ export default {
       region: "na1",
       portalId: "22174697",
       formId: "55ae1706-e17a-40a0-81db-275fc2d1030a",
-      target: "#hireUsForm"
-    })
-  }
-}
+      target: "#hireUsForm",
+    });
+  },
+};
 </script>
-
-<style>
-
-</style>

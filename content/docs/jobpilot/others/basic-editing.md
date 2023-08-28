@@ -1,11 +1,12 @@
 ---
 title: Basic Editing
 description: Installation documentation
-position: 40
+position: 30
 category: Others
 ---
 
 # Basic Editing
+
 In this post, I will share with you how to perform basic editing.
 
 ### Requirements
@@ -15,6 +16,7 @@ In this post, I will share with you how to perform basic editing.
 You must have basic knowledge of HTML, CSS, PHP & Websites. If you don't have any knowledge, I would recommend not overwriting project files.
 
 ### Basics
+
 Before we get started, let's take a look at the tools we need for editing.
 
 - Code Editor (I recommend [VS Code Editor](https://code.visualstudio.com/) , but you can use any.)
@@ -47,7 +49,6 @@ Application core routes located in route files. If you want to change something.
 ![screenshot](/docs/jobpilot/screenshot/editcode/route.png)
 ![screenshot](/docs/jobpilot/screenshot/editcode/route2.png)
 
-
 ### Blade File Edit
 
 You will find all the blade files under `resources/views` and `Modules/*/resources/views` Folder. You can open any file using VS code editor or any.
@@ -57,7 +58,7 @@ Application core views code located in blade files. If you want to change someth
 ![screenshot](/docs/jobpilot/screenshot/editcode/blade.png)
 ![screenshot](/docs/jobpilot/screenshot/editcode/blade2.png)
 
-<!-- 
+<!--
 ### Controller File Edit
 
 You will find all the controller files under `app/Http/Controllers` `Modules/*/Http/Controllers` Folder. You can open any controller using VS code editor or any.

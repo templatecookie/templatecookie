@@ -1,19 +1,20 @@
-@import './markdown.scss';
+@import "./markdown.scss";
 
 // Tailwind css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-$primary: #0B63E5;
-$secondary: #7534FF;
-$accent: #061C3D;
+$primary: #0b63e5;
+$secondary: #7534ff;
+$accent: #061c3d;
 
 html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -23,13 +24,13 @@ html, body {
   --primary-200: #9dc1f5;
   --primary-300: #6da1ef;
   --primary-400: #3c82ea;
-  --primary-500: #0B63E5;
+  --primary-500: #0b63e5;
   --primary-600: #094fb7;
   --primary-700: #073b89;
   --primary-800: #04285c;
   --primary-900: #02142e;
-  --secondary: #7534FF;
-  --accent: #061C3D;
+  --secondary: #7534ff;
+  --accent: #061c3d;
 }
 
 header ul li a.nuxt-link-exact-active {
@@ -42,7 +43,7 @@ header ul li a.nuxt-link-exact-active {
   }
 
   .outline-btn {
-   @apply text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 flex items-center w-max;
+    @apply text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 flex items-center w-max;
   }
 }
 
@@ -53,16 +54,21 @@ header ul li a.nuxt-link-exact-active {
   .container {
     @apply mx-auto px-3  xl:max-w-1320;
   }
-  h1, h2, h3, h4, a, blockquote {
+  h1,
+  h2,
+  h3,
+  h4,
+  a,
+  blockquote {
     @apply font-lexend font-normal;
   }
 }
 
-
-
 // radio
 input[type="radio"] + label span {
-  transition: background 0.2s, transform 0.2s;
+  transition:
+    background 0.2s,
+    transform 0.2s;
 }
 
 input[type="radio"]:checked + label span {
@@ -108,8 +114,6 @@ input[type="radio"]:checked + label span {
     overflow-x: auto;
   }
 
-
-
   &-box {
     cursor: pointer;
     padding: 24px;
@@ -126,8 +130,6 @@ input[type="radio"]:checked + label span {
     }
   }
 }
-
-
 
 // custom scroll
 
@@ -205,11 +207,12 @@ body {
   }
 }
 
-.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after, 
-.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after{
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after,
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
   display: none;
 }
-
 
 /* Sidbar transition animation  */
 .fade-enter-active,
@@ -231,7 +234,8 @@ html {
   clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   opacity: 1;
   transition: 0.5s ease-in-out;
 }
@@ -242,9 +246,9 @@ html {
   transition: 0.5s ease-in-out;
 }
 
-
 .markdown-body {
-  .highlight-block, .callout-block {
+  .highlight-block,
+  .callout-block {
     &.info {
       background: var(--primary-600);
       color: #fff;
@@ -270,11 +274,10 @@ html {
   }
 }
 
-
 @media screen and (max-width: 767px) {
-    [data-aos] {
-      pointer-events: auto !important;
-      opacity: 1 !important;
-      transform: none !important;
-    }
+  [data-aos] {
+    pointer-events: auto !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }

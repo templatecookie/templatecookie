@@ -23,7 +23,8 @@
     margin-top: 20px;
   }
 
-  b, strong {
+  b,
+  strong {
     font-weight: bold;
   }
 
@@ -72,7 +73,7 @@
     line-height: 24px;
   }
 
-  ul li ,
+  ul li,
   ol li {
     margin-left: 24px;
     margin-bottom: 5px;
@@ -111,7 +112,11 @@
   }
 
   code {
-    font-family: Consolas, Monaco, Andale Mono, monospace;
+    font-family:
+      Consolas,
+      Monaco,
+      Andale Mono,
+      monospace;
     line-height: 1.5;
     font-size: 13px;
     background-color: rgba(#0099ff, 0.1);
@@ -147,11 +152,11 @@
   table {
     border-collapse: collapse;
     margin: 1em 1em;
-    border: 1px solid #CCC;
+    border: 1px solid #ccc;
   }
 
   table thead {
-    background-color: #EEE;
+    background-color: #eee;
   }
 
   // table thead td {
@@ -160,6 +165,6 @@
 
   table td {
     padding: 0.5em 1em;
-    border: 1px solid #CCC;
+    border: 1px solid #ccc;
   }
 }

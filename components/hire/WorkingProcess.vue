@@ -1,30 +1,46 @@
 <template>
-  <section class="bg-gray-50 ">
+  <section class="bg-gray-50">
     <div class="mx-auto max-w-7xl py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
       <div class="mb-14 text-center">
-        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <p
+          class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+        >
           Our working process
         </p>
         <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-          We're excited to partner with you to bring your online vision to life. Here's a quick overview of how we work and deliver the best possible outcome to our valued clients.
+          We're excited to partner with you to bring your online vision to life.
+          Here's a quick overview of how we work and deliver the best possible
+          outcome to our valued clients.
         </p>
       </div>
-      <div class="timeline-wrap mx-auto max-w-[1072px] relative after:absolute after:h-full after:w-[1px] after:bg-gray-400 after:top-0 after:left-8">
-        <div class="relative flex items-center lg:gap-12 gap-6 justify-center mb-6 timeline-item" v-for="(item, index) in steps" :key="index">
-            <div>
-                <span class="relative z-50 inline-flex justify-center items-center lg:w-16 w-12 lg:h-16 h-12 bg-white rounded-full border border-gray-400 text-primary-500 text-2xl ">{{ index + 1}}</span>
-            </div>
-            <div class="lg:p-8 p-4 bg-white rounded-lg border-2 border-blue-ce ">
-                <!-- <div class="mb-5 text-primary-500" v-html="item.icon"> -->
-                <div class="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mb-6 icon" v-html="item.icon">
-                </div>
-                <h2 class="md:text-xl text-lg text-start text-gray-900 mb-3 font-medium">
-                    {{ item.title }}
-                </h2>
-                <p class="text-base text-start text-gray-700">
-                    {{ item.text }}
-                </p>
-            </div>
+      <div
+        class="timeline-wrap mx-auto max-w-[1072px] relative after:absolute after:h-full after:w-[1px] after:bg-gray-400 after:top-0 after:left-8"
+      >
+        <div
+          class="relative flex items-center lg:gap-12 gap-6 justify-center mb-6 timeline-item"
+          v-for="(item, index) in steps"
+          :key="index"
+        >
+          <div>
+            <span
+              class="relative z-50 inline-flex justify-center items-center lg:w-16 w-12 lg:h-16 h-12 bg-white rounded-full border border-gray-400 text-primary-500 text-2xl"
+            >{{ index + 1 }}</span>
+          </div>
+          <div class="lg:p-8 p-4 bg-white rounded-lg border-2 border-blue-ce">
+            <!-- <div class="mb-5 text-primary-500" v-html="item.icon"> -->
+            <div
+              class="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mb-6 icon"
+              v-html="item.icon"
+            />
+            <h2
+              class="md:text-xl text-lg text-start text-gray-900 mb-3 font-medium"
+            >
+              {{ item.title }}
+            </h2>
+            <p class="text-base text-start text-gray-700">
+              {{ item.text }}
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -33,7 +49,7 @@
 
 <script>
 export default {
-  data(){
+  data() {
     return {
       steps: [
         {
@@ -73,28 +89,28 @@ export default {
           text: "After launch, we'll provide ongoing maintenance and support to ensure that your project continues to function smoothly. You can count on us to be there for you every step of the way.",
         },
       ],
-    }
-  }
-}
+    };
+  },
+};
 </script>
 
 <style>
-  .timeline-wrap .timeline-item:first-child::before, 
-  .timeline-wrap .timeline-item:last-child::after {
-    content: '';
-    position: absolute;
-    left: 31px;
-    width: 3px;
-    height: 50%;
-    background: #f5f6f7;
-    z-index: 2;
-  }
+.timeline-wrap .timeline-item:first-child::before,
+.timeline-wrap .timeline-item:last-child::after {
+  content: "";
+  position: absolute;
+  left: 31px;
+  width: 3px;
+  height: 50%;
+  background: #f5f6f7;
+  z-index: 2;
+}
 
-  .timeline-wrap .timeline-item:first-child::before {
-    top: 0;
-  }
-  .timeline-wrap .timeline-item:last-child::after {
-    bottom: 0;
-  }
+.timeline-wrap .timeline-item:first-child::before {
+  top: 0;
+}
 
+.timeline-wrap .timeline-item:last-child::after {
+  bottom: 0;
+}
 </style>

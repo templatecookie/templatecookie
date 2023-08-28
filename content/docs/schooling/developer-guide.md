@@ -20,8 +20,6 @@ Development & Contribution guide for Developers looking to customize Schooling f
 - run command: `php artisan key:generate` to generate a unique application key.
 - Open the link to the domain in the browser (Example: `http://localhost:8000`) and complete the installation wizard as directed.
 
-
-
 ## Source & Credits
 
 Here are the list of tools and framework we used in this application.
@@ -33,4 +31,3 @@ Here are the list of tools and framework we used in this application.
 - [Vue Router](https://router.vuejs.org) - SPA Routing
 - [Axios](https://github.com/axios/axios) - Promise based HTTP client
 - Laravel Permission (Spatie) Package and Much more
-

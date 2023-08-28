@@ -1,19 +1,30 @@
 ---
-title: Changealog
+title: Changelog
 description: Installation documentation
-position: 41
+position: 32
 category: Others
 ---
 
 # Changelog
+
 ---
+
+### v2.15 - 30th July 2023
+
+```
+- Feat: Admin sets limit for homepage ads.
+- fix: Seller profile page document problem.
+```
+
 ### v2.14.11 - 21st July 2023
+
 ```
 - improve: Home page latest ads section added.
 - fix: Admin dashboard total earning convert issue.
 ```
 
 ### v2.14.9 - 11th July 2023
+
 ```
 - improve: Unique rule for adding languages to the flag has been removed.
 - improve: Added country code  to the Phone Number Input.
@@ -24,6 +35,7 @@ category: Others
 ```
 
 ### v2.14.3 - 18th May 2023
+
 ```
 - fix - Place Ad Page Blank Show Issue
 - fix - Sub Category Multi Translation Problem
@@ -31,6 +43,7 @@ category: Others
 ```
 
 ### v2.14.0 - 16th May 2023
+
 ```
 - feat - Efficient Order Management with User Plan Customization
 - feat - Identity Verification Made Easy: Safeguarding User Interactions
@@ -47,12 +60,16 @@ category: Others
 ```
 
 ### v2.10 - 15th March 2023
+
 ## Added
+
 ```
-- Added log viewer 
+- Added log viewer
 - Added email export feature
 ```
+
 ## Fixed
+
 ```
 - Unauthenticated user login issue fix
 - Translation issue fix
@@ -63,22 +80,30 @@ category: Others
 - Chat responsive design fix
 - Customer profile sidebar design fix
 ```
+
 ### v2.8.21 - 03rd January 2023
+
 ```
 - Frontend messenger issue fix
 ```
+
 ### v2.8.20 - 27th December, 2022
+
 ```
 - Missing setting method issue fix
 - Admin profile image upload issue fix
 ```
+
 ### v2.8.18 - 26th December, 2022
+
 ```
 - Improved faq category page design
 - Currency symbol unique validation remove
 - Responsive design fixed
 ```
+
 ### v2.8.15 - 22th December, 2022
+
 ```
 - Leaflet & Openstreet map integration
 - Multiple currency conversion integration
@@ -90,6 +115,7 @@ category: Others
 ```
 
 ### v2.2.4 - 20th August, 2022
+
 ```
 - Youtube embed plugin added for ad details page
 - Footer social media update option fix
@@ -98,13 +124,14 @@ category: Others
 - About page background image fix
 ```
 
-
 ### v2.1.0 - 25th July, 2022
+
 ```
 - Push Notification Feature Added
 ```
 
 ### v2.0 - July 24th, 2022
+
 ```
 - Subscription and membership (Monthly/Yearly/Custom Days)
 - Map (Google Map, Mapbox)
@@ -128,6 +155,7 @@ category: Others
 ### V1.17.25 - 14th march, 2022
 
 **Features**
+
 ```
 - Multi Currency Support
 - Frontend Multilingual with country flag
@@ -139,7 +167,9 @@ category: Others
 - Show/Hide regular & featured ads on homepage
 
 ```
+
 **Bug Fixes**
+
 ```
 - Ad images page fix
 - Customer sidebar active/inactive fix
@@ -149,7 +179,9 @@ category: Others
 - Frontend translation issue fix
 
 ```
+
 **Improvement**
+
 ```
 - Admin ads search and filtering update
 - Admin panel category, brand, customer and other related module wise ads
@@ -162,7 +194,9 @@ category: Others
 ```
 
 ### V1.10.10 - 19 February, 2022
+
 **Features**
+
 ```
 - Frontend language change
 - verified seller badge
@@ -172,6 +206,7 @@ category: Others
 ```
 
 **Bug Fixes**
+
 ```
 - Dropify image icon
 - Translate issue
@@ -179,6 +214,7 @@ category: Others
 ```
 
 ### V1.7.20 – 22 December, 2021
+
 ```
 - Add 3 payment gateways
 - Social media login
@@ -187,8 +223,8 @@ category: Others
 - User email notification
 ```
 
-
 ### V1.0.1 – 26 November, 2021
+
 ```
 - Initial Release
 ```

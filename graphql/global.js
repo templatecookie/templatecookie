@@ -1,8 +1,8 @@
 // Global Query
-import gql from 'graphql-tag';
+// import gql from 'graphql-tag';
 
 // export const global = gql`
-export default gql`
+export default `
 query {
   global{
     logo {
@@ -49,4 +49,4 @@ query {
     }
   }
 }
-`
+`;

@@ -1,11 +1,12 @@
 ---
 title: Basic Editing
 description: Installation documentation
-position: 40
+position: 30
 category: Others
 ---
 
 # Basic Editing
+
 In this post, I will share with you how to perform basic editing.
 
 ### Requirements
@@ -15,6 +16,7 @@ In this post, I will share with you how to perform basic editing.
 You must have basic knowledge of HTML, CSS, PHP & Websites. If you don't have any knowledge, I would recommend not overwriting project files.
 
 ### Basics
+
 Before we get started, let's take a look at the tools we need for editing.
 
 - Code Editor (I recommend [VS Code Editor](https://code.visualstudio.com/) , but you can use any.)
@@ -46,7 +48,6 @@ Application core routes located in route files. If you want to change something.
 
 ![screenshot](/docs/jobpilot/screenshot/editcode/route.png)
 ![screenshot](/docs/jobpilot/screenshot/editcode/route2.png)
-
 
 ### Blade File Edit
 

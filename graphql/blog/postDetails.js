@@ -1,8 +1,6 @@
 // All Blog Posts
-import gql from 'graphql-tag';
 
-// export const global = gql`
-export default gql`
+export default `
 query PostDetails($slug: String) {
   post(filter: {slug: {eq: $slug}}) {
     slug
@@ -52,4 +50,4 @@ query PostDetails($slug: String) {
   }
 }
 
-`
+`;

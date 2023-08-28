@@ -5,23 +5,26 @@ category: Getting Started
 ---
 
 # Payment Setting
-To activate payment gateway on your website and receive payment from the customers, You have enable payment gateway's by using API's Keys! Here is where to get them. 
+
+To activate payment gateway on your website and receive payment from the customers, You have enable payment gateway's by using API's Keys! Here is where to get them.
 
 Currently Schooling supports 4 payment gateways.
+
 1. Paypal
 2. Stripe
 3. Paystack
 4. Razorpay
 
-
 > Attention, you need API keys for every payment provider, which you need to retrieve from your payment gateway provider. Contact your payment gateway's support for any help.
 
 ### How to enable?
+
 - To enable each payment gateway, Go to `Admin Panel` -> `Settings` -> `Payment`
 
 Enable the payment provider by clicking on the switch, Entering the `API` keys, and hitting update! Congratulations 🎉
 
 ### Paypal Setup
+
 The PayPal integration gives your users the ability to pay via PayPal on your website.
 
 - Go to PayPal Developer Console and Login to your account after clicking the Log into Dashboard button
@@ -33,6 +36,7 @@ The PayPal integration gives your users the ability to pay via PayPal on your we
 - Make sure to also switch the Mode to Live and Submit the new settings.
 
 ### STRIPE Setup
+
 The PayPal integration gives your users the ability to pay via Stripe on your website.
 
 - Go to Stripe Dashboard and Login to your account.
@@ -42,6 +46,7 @@ The PayPal integration gives your users the ability to pay via Stripe on your we
 - Go to your product Admin Panel -> Settings -> Payment -> Stripe Tab and enter the Publishable key and Secret Key.
 
 ### RAZORPAY Setup
+
 The Razorpay integration gives your users the ability to pay with via the Razorpay payment gateway for purchases.
 
 - Go to Razorpay and Login to your account.
@@ -49,8 +54,9 @@ The Razorpay integration gives your users the ability to pay with via the Razorp
 - Go to your product installation Admin Panel -> Settings -> Payment -> Razorpay Tab and enter the given API Keys.
 
 ### Paystack Setup
+
 The Paystack integration gives your users the ability to pay with via the Paystack payment gateway for one time & recurring purchases.
 
 - Go to Paystack and Login to your account.
-- Go to the Settings page -> API Keys 
+- Go to the Settings page -> API Keys
 - Go to your product Admin Panel -> Settings -> Payment -> Paystack Tab and enter the given API Keys.

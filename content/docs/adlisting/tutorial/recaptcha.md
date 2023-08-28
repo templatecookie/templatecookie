@@ -1,6 +1,6 @@
 ---
 title: Recaptcha Setting
-position: 22
+position: 21
 category: System Setting
 ---
 
@@ -14,12 +14,14 @@ reCAPTCHA is a free CAPTCHA service that helps protect your site against spam, m
 - Follow the steps by select the reCAPTCHA v2 and get your **site key** and your **secret key**.
 
 ### Set API keys from Admin panel
+
 - Go to the **Admin panel** -> **Settings** -> **General** -> **Recaptcha Configuration**
 - Enable the feature from the '**Enable reCAPTCHA**' field
 - Set '**reCAPTCHA site key**' and '**reCAPTCHA secret key**'
 - And save your changes.
 
 ### Or use `/.env` file
+
 - Login to your FTP account and Open `.env` file.
 - Set your keys in `.env` file. Example below
 - replace `your-recaptcha-site_key` and `your-recaptcha-secret_key` with your keys.

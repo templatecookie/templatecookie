@@ -5,12 +5,14 @@ category: System Setting
 ---
 
 # Upgrade Guide
+
 If you want to learn more about upgrading your application, you are in the right place. Below we have added 5 easy steps to upgrade your application today.
 
 ### How to Upgrade Application
-Following the steps below, you can perform an upgrade on your app. 
 
-**Note: Take a `backup` your `database and files`, before performing an upgrade. Take a backup of your database and uploaded images folder  **/public/uploads**. Templatecookie is not responsible for any data loss.
+Following the steps below, you can perform an upgrade on your app.
+
+**Note: Take a `backup` your `database and files`, before performing an upgrade. Take a backup of your database and uploaded images folder **/public/uploads\*\*. Templatecookie is not responsible for any data loss.
 
 1. Get the Latest file from your codecanyon account, [Get from here](https://codecanyon.net/downloads)
 2. Turn on App Maintenance mode from **Settings** -> **General Setting**
