@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- Hero Section -->
     <div class="bg-gray-900">
       <div class="bg-gradient-to-b from-violet-600/[.15] via-transparent">
         <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
@@ -32,7 +33,6 @@
       </div>
     </div>
 
-    <!-- Overview -->
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <div class="max-w-2xl mx-auto">
         <div class="grid gap-12">
@@ -711,6 +711,7 @@
       </div>
     </div>
 
+    <!-- / Pricing Plans -->
     <div class="bg-white py-24 sm:py-32">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-4xl text-center">
@@ -882,7 +883,7 @@ export default {
       ],
       packages: [
         {
-          name: "Startup",
+          name: "Essential",
           description: "Simplify Support, Fuel Your Progress",
           price: 49,
           popular: false,
@@ -895,7 +896,7 @@ export default {
           ],
         },
         {
-          name: "Essential",
+          name: "Startup",
           description: "Elevate Your Support Experience, Unleash Your Potential.",
           price: 199,
           popular: false,
