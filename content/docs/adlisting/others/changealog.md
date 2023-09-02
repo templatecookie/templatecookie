@@ -9,6 +9,12 @@ category: Others
 
 ---
 
+### v2.15.1 - 30th August 2023
+
+```
+- fix: Sub Category filter issue for ads page.
+```
+
 ### v2.15 - 30th July 2023
 
 ```
