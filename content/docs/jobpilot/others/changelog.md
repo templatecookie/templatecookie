@@ -6,16 +6,31 @@ category: Others
 ---
 
 # Changelog
-<<<<<<< HEAD
-## July
-### v2.71.0 - 22th July, 2023
-=======
+## September
+### v2.77.0 - 2nd September, 2023
+
+```
+- feat: Plan description multilingual
+- feat: Footer description multilingual
+- feat: Bulk import in the category, role, industry, organization, profession, benefit, tag feature added
+- feat: Added skills in the job creation page
+- feat: Job posting with no company reference and under the administration
+- feat: Candidates/companies can change their account email and username facility added
+- improvement: Jobs SEO improvements
+- improvement: Remove extra map addresses and set pointer after the search
+- improvement: Job status change based on the job expiry date
+- fix: Menu builder bugs issue fix
+- fix: Job apply not working issue fix
+- fix: Stripe setting issue fix
+- fix: Responsive design issue fix
+- fix: Payperjob zero pricing job published
+- and many more...
+```
 
 ## July
 
 ### v2.71.0 - 22th July, 2023
 
->>>>>>> b93a1f7d45102597345cb01edbc5627ace896b57
 ```
 - feat: Website menu builder added
 - feat: Language sync feature added
