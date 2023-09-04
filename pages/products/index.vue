@@ -2,7 +2,7 @@
   <div>
     <!-- Banner  -->
     <section
-      class="pb-14 pt-14 bg-no-repeat bg-center bg-cover"
+      class="pb-14 lg:pb-72 pt-14 lg:pt-32 bg-no-repeat bg-center bg-cover"
       :style="{ backgroundImage: `url(${bannerImg})` }"
     >
       <div class="mx-auto max-w-7xl px-4 sm:px-6">
@@ -66,7 +66,7 @@
           </div>
         </div>
         <!-- pagination   -->
-        <div class="flex items-center justify-center py-7" />
+        <pagination :data="products.value"/>
       </div>
 
       <div
@@ -91,16 +91,15 @@ export default {
     products.value = data?._rawValue?.allProducts;
 
     const title = "All Products Listing";
-    const description =
-      "Browse Templatecookie all products, Templatecookie has HTML, Figma & Laravel products.";
+    const description = "Browse Templatecookie all products, Templatecookie has HTML, Figma & Laravel products.";
 
     useSeoMeta({
       title: title,
       ogTitle: title,
       description: description,
       ogDescription: description,
-      ogImage: "/social-meta.png",
-    });
+      ogImage: '/social-meta.png',
+    })
 
     return {
       products,
