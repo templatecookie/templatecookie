@@ -2,7 +2,7 @@
 
 export default `
   query {
-    allProducts(first: 8, orderBy: id_DESC) {
+    allProducts(first: 37, orderBy: id_DESC) {
       id
       name
       description
