@@ -1,21 +1,12 @@
 <template>
   <div>
-    <section
-      class="realtive bg-no-repeat bg-center bg-cover"
-      :style="{ backgroundImage: `url(${bannerImg})` }"
-    >
-      <div
-        class="mx-auto max-w-7xl py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8"
-      >
+    <section class="realtive bg-no-repeat bg-center bg-cover" :style="{ backgroundImage: `url(${bannerImg})` }" >
+      <div class="mx-auto max-w-7xl py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8" >
         <div class="text-center">
-          <h1
-            class="text-4xl md:text-heading-40 text-dark mb-6 max-w-[680px] mx-auto font-semibold"
-          >
+          <h1 class="text-4xl md:text-heading-40 text-dark mb-6 max-w-[680px] mx-auto font-semibold" >
             Installation Plans
           </h1>
-          <p
-            class="text-lg md:text-lg text-dark max-w-full md:max-w-[536px] mx-auto font-light"
-          >
+          <p class="text-lg md:text-lg text-dark max-w-full md:max-w-[536px] mx-auto font-light" >
             These plans are only available to those who have bought one or more
             products from us before. If you haven't purchased yet, check our
             <a

@@ -744,10 +744,7 @@
             :key="index"
           >
             <div class="flex items-center justify-between gap-x-4">
-              <h3
-                id="tier-freelancer"
-                class="text-lg font-semibold leading-8"
-                :class="pricing.popular ? 'text-indigo-600' : 'text-gray-900'"
+              <h3 id="tier-freelancer" class="text-lg font-semibold leading-8" :class="pricing.popular ? 'text-indigo-600' : 'text-gray-900'"
               >
                 {{ pricing.name }}
               </h3>
@@ -761,34 +758,20 @@
             <p class="mt-4 text-sm leading-6 text-gray-600">
               {{ pricing.description }}
             </p>
-            <p
-              class="mt-6 flex items-baseline gap-x-1"
-              v-if="pricing.price === null"
-            >
+            <p class="mt-6 flex items-baseline gap-x-1" v-if="pricing.price === null">
               <span class="text-2xl font-bold tracking-tight text-gray-900">CUSTOM</span>
             </p>
-            <p
-              class="mt-6 flex items-baseline gap-x-1"
-              v-else
-            >
+            <p class="mt-6 flex items-baseline gap-x-1" v-else>
               <span class="text-4xl font-bold tracking-tight text-gray-900">${{ pricing.price }}</span>
               <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
             </p>
 
-            <a
-              v-if="pricing.popular"
-              href="https://share.hsforms.com/1bXIHNkLyT6yrFoXjHPBNggd7a3t"
-              aria-describedby="tier-startup"
-              class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-indigo-600 text-white shadow-sm hover:bg-indigo-500"
-            >
-              Buy plan
-            </a>
-            <a
-              v-else
-              href="https://share.hsforms.com/1bXIHNkLyT6yrFoXjHPBNggd7a3t"
-              aria-describedby="tier-freelancer"
-              class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300"
-            >
+              <!-- href="https://share.hsforms.com/1bXIHNkLyT6yrFoXjHPBNggd7a3t"  -->
+            <a 
+              :href="pricing.purchase_url" 
+              :aria-describedby="pricing.name" 
+              class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              :class="pricing.popular ? ' bg-indigo-600 text-white shadow-sm hover:bg-indigo-500' : 'text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300'">
               Buy plan
             </a>
 
@@ -819,7 +802,7 @@
           </div>
         </div>
         <p class="mx-auto mt-8 max-w-2xl text-center text-base leading-8 text-gray-900">
-          Support plans does not include script purchase price. Script purchased separately from our profile
+          <span>Support plans does not include script purchase price. Script purchased separately from</span> <a class="inline-block" href="https://1.envato.market/EaNJ2X" target="_blank">our profile</a>
         </p>
       </div>
     </div>
@@ -887,6 +870,7 @@ export default {
           description: "Simplify Support, Fuel Your Progress",
           price: 49,
           popular: false,
+          purchase_url: "https://buy.stripe.com/dR6g305pr4vQ2cM9AE",
           items: [
             { name: "Ongoing Maintenance" },
             { name: "Priority Support Within 24 Hours" },
@@ -900,6 +884,7 @@ export default {
           description: "Elevate Your Support Experience, Unleash Your Potential.",
           price: 199,
           popular: false,
+          purchase_url: "https://buy.stripe.com/5kA0425pr7I2aJi28b",
           items: [
             { name: "Ongoing Maintenance" },
             { name: "Priority Support within 12 Hours" },
@@ -914,8 +899,9 @@ export default {
         {
           name: "Growth",
           description: "Unmatched Support, Customized for Your Success.",
-          price: 299,
+          price: 249,
           popular: true,
+          purchase_url: "https://buy.stripe.com/9AQeYWcRT0fAaJi146",
           items: [
             { name: "Ongoing Maintenance" },
             { name: "Priority Support within 8 Hours" },
