@@ -245,18 +245,13 @@ export default {
       hdata: this.data,
       menuItems: [
         {
-          name: "Installation Plans",
-          url: "/installation-plans",
-          blank: false,
-        },
-        {
-          name: "Get Support",
+          name: "Support Ticket",
           url: "/get-support",
           blank: false,
         },
         {
-          name: "Documentation",
-          url: "/docs/",
+          name: "Installation Plans",
+          url: "/installation-plans",
           blank: false,
         },
       ],

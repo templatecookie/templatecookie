@@ -52,12 +52,20 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     // '@nuxtjs/sentry',
     // '@nuxtjs/apollo',
+    "nuxt-phosphor-icons",
   ],
+  
+  // PhosphorIcon Config
+  phosphor: {
+    prefix: "Ph",
+  },
 
   plugins: [
     { src: "@/plugins/aos", mode: "client" },
     { src: "@/plugins/datocms.js", mode: "client" },
   ],
+
+
 
   //   purgeCSS: {
   //     whitelist: ["aos-init", "aos-animate", "data-aos-delay", "data-aos-duration", "fade-up", "zoom-in"],

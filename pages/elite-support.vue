@@ -198,7 +198,7 @@
         />
       </div>
       <div class="mx-auto max-w-2xl text-center lg:max-w-4xl">
-        <h2 class="text-base font-semibold leading-7 text-indigo-600">
+        <h2 class="text-base font-semibold leading-7 text-primary">
           Compairson
         </h2>
         <p
@@ -221,7 +221,7 @@
         <div
           class="rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 bg-white/60 sm:mx-8 lg:mx-0 rounded-t-3xl sm:rounded-b-none lg:rounded-tr-none lg:rounded-bl-3xl"
         >
-          <!-- <h3 id="tier-hobby" class="text-base font-semibold leading-7 text-indigo-600">
+          <!-- <h3 id="tier-hobby" class="text-base font-semibold leading-7 text-primary">
             Hobby
           </h3> -->
           <p class="mt-6 text-xl text-gray-600">
@@ -716,7 +716,7 @@
     <div class="bg-white py-24 sm:py-32" id="pricing">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-4xl text-center">
-          <h2 class="text-base font-semibold leading-7 text-indigo-600">
+          <h2 class="text-base font-semibold leading-7 text-primary">
             Pricing
           </h2>
           <p
@@ -738,20 +738,20 @@
             class="rounded-3xl p-8 xl:p-10"
             :class="
               pricing.popular
-                ? 'ring-indigo-600 ring-2'
+                ? 'ring-primary ring-2'
                 : 'ring-gray-200 ring-1'
             "
             v-for="(pricing, index) in packages"
             :key="index"
           >
             <div class="flex items-center justify-between gap-x-4">
-              <h3 id="tier-freelancer" class="text-lg font-semibold leading-8" :class="pricing.popular ? 'text-indigo-600' : 'text-gray-900'"
+              <h3 id="tier-freelancer" class="text-lg font-semibold leading-8" :class="pricing.popular ? 'text-primary' : 'text-gray-900'"
               >
                 {{ pricing.name }}
               </h3>
               <p
                 v-if="pricing.popular"
-                class="rounded-full bg-indigo-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-indigo-600"
+                class="rounded-full bg-primary/10 px-2.5 py-1 text-xs font-semibold leading-5 text-primary"
               >
                 Most popular
               </p>
@@ -771,8 +771,8 @@
             <a 
               :href="pricing.purchase_url" 
               :aria-describedby="pricing.name" 
-              class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              :class="pricing.popular ? ' bg-indigo-600 text-white shadow-sm hover:bg-indigo-500' : 'text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300'">
+              class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              :class="pricing.popular ? ' bg-primary text-white shadow-sm hover:bg-indigo-500' : 'text-primary ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300'">
               Subscribe now
             </a>
 
@@ -786,7 +786,7 @@
                 :key="index"
               >
                 <svg
-                  class="h-6 w-5 flex-none text-indigo-600"
+                  class="h-6 w-5 flex-none text-primary"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-hidden="true"
