@@ -7,6 +7,21 @@ category: Others
 
 # Changelog
 ## September
+
+### v2.77.8 - 8th September, 2023
+
+```
+- fix: Cookies issue fix
+- fix: Job edit page namespace issue fix
+- fix: Login route issue fix
+- fix: Candidate profile page issue fix
+- fix: Candidate setting page jobalert update issue fix
+- improvement: Jobs list load more jobs feature improved
+- improvement: Added pagination in the company details page
+- improvement: Query optimization
+- and many more...
+```
+
 ### v2.77.0 - 2nd September, 2023
 
 ```
