@@ -6,7 +6,7 @@ category: Others
 
 # Upgrade Guide
 
-If you want to learn more about upgrading your application, you are in the right place. Below we have added 5 easy steps to upgrade your application today.
+If you want to learn more about upgrading your application, you are in the right place. Below we have added 8 easy steps to upgrade your application today.
 Following the steps below, you can perform an upgrade on your app.
 
 <div class="bg-gray-200 rounded-xl px-4 py-2">
