@@ -7,7 +7,7 @@ category: Others
 
 # Changelog
 
-### v2.9.11 - 30 Aug, 2023
+### v2.9.11 - 30 August, 2023
 
 ```
 Fix: Currency conversion issue
