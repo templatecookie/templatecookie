@@ -1,6 +1,6 @@
 ---
 title: Upgrade Guide
-position: 10
+position: 9
 category: Getting Started
 ---
 
