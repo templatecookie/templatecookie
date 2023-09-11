@@ -1,6 +1,6 @@
 ---
-title: Collecting Twilio SMS SID, Token, and Number
-position: 5
+title: SMS Gateway
+position: 15
 category: Getting Started
 ---
 
