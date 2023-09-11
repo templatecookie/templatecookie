@@ -7,6 +7,22 @@ category: Others
 
 # Changelog
 
+### v2.9.11 - 09 June, 2023
+
+```
+Fix: Currency conversion issue
+Fix: Parent role transaction issue
+Fix: Plan price issue
+Fix: Assignment creation issue for teacher role
+Fix: New leave request issue
+Fix: Accountant can create transaction types
+Fix: Website crashing when deleting a currency
+Fix: Subject-wise attendance report bug fix
+Improve: On boarding content is more optimized
+Improve: Optimize role permissions
+Refactor: Zoom JWT app to Server to Server app
+```
+
 ### v2.4.1 - 09 June, 2023
 
 ```
