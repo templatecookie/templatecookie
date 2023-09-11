@@ -1,6 +1,6 @@
 ---
 title: SMS Gateway
-position: 15
+position: 55
 category: Getting Started
 ---
 
