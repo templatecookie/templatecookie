@@ -15,15 +15,17 @@ Following the steps below, you can perform an upgrade on your app.
   </section>
 </div>
 
+### Step 1 - Delete a file
+Delete the file (en.json) that are located inside your domain_root/lang folder.
 
-### Step 1 - Backup the important files
+### Step 2 - Backup the important files
 
 - public/uploads
-- resources/lang
+- lang
 - storage
 - .env
 
-### Step 2 - Delete the old files
+### Step 3 - Delete the old files
 
 Delete all of the files that are located inside your domain root.
 
@@ -44,7 +46,7 @@ Extract the **app.zip** file to your domain root.
 Please replace the following files and folders in their respective directories.
 
 - public/uploads
-- resources/lang
+- lang
 - storage
 - .env
 

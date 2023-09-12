@@ -7,6 +7,16 @@ category: Others
 
 # Changelog
 
+### v2.9.15 - 12 September, 2023
+
+```
+Fix: Attendance issue for teacher.
+Fix: Transaction search bug from admin and accountant role
+Fix: Online Class: Search Optimize for student role
+Fix: Frontend announce page issue.
+Improve: Upgrade gidue updated. 
+```
+
 ### v2.9.11 - 30 August, 2023
 
 ```
@@ -21,6 +31,24 @@ Fix: Subject-wise attendance report bug fix
 Improve: On boarding content is more optimized
 Improve: Optimize role permissions
 Refactor: Zoom JWT app to Server to Server app
+```
+
+### v2.9.0 - 02 August, 2023
+
+```
+feat - SMS Feature: Added the ability to send SMS messages directly from the application.
+feat - Improved Report System: The report system has been reorganized for better readability and usability.
+feat - Quick Actions: Introduced an easy and quick action feature for faster navigation and interaction.
+feat - Auto Translate System: Implemented an automatic translation system in the language translate page.
+fix - Subject Wise Daily Attendance: Fixed a bug in the daily attendance system related to subject-wise tracking.
+fix - Leave Request Bug Fix: Addressed an issue that caused problems with leave request processing.
+fix - RTL Mode Issue: Resolved the problem with right-to-left (RTL) mode display.
+fix - Admission Form Permission: Corrected the permission issue related to the admission form.
+fix - Duplicate Admission Request: Fixed a bug causing duplicate admission requests.
+fix - Color Issue in Monthly Schedule View: Rectified the color display problem in the monthly schedule view.
+improved - Backend-Powered Dynamic Onboarding Content System: Further improved the dynamic onboarding content system, backed by the backend for better management and customization.
+improved - Custom Color Option for Event: Added the option to customize colors for events to enhance visual clarity and personalization.
+improved - Performance Optimization: Optimized the application's performance for smoother and faster operation.
 ```
 
 ### v2.4.1 - 09 June, 2023
