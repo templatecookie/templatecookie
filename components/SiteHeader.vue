@@ -22,9 +22,9 @@
               class="toggle flex flex-col gap-1"
               :class="{ active: mobileNav }"
             >
-              <span class="w-5 h-0.5 bg-gray-700 inline-flex" />
-              <span class="w-5 h-0.5 bg-gray-700 inline-flex" />
-              <span class="w-5 h-0.5 bg-gray-700 inline-flex" />
+              <span class="w-5 h-0.5 bg-gray-700 inline-flex"></span>
+              <span class="w-5 h-0.5 bg-gray-700 inline-flex"></span>
+              <span class="w-5 h-0.5 bg-gray-700 inline-flex"></span>
             </div>
           </div>
           <nav class="hidden space-x-6 lg:flex items-center">
@@ -131,6 +131,7 @@
           <div
             class="absolute inset-x-0 top-0 z-30 origin-top-right transform p-2 transition lg:hidden"
             v-if="mobileNav"
+            @click="mobileNav = false"
           >
             <div
               class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5"

@@ -12,8 +12,9 @@ Currently Schooling supports 4 payment gateways.
 
 1. Paypal
 2. Stripe
-3. Paystack
+3. Flutterwave
 4. Razorpay
+5. Midtrans
 
 > Attention, you need API keys for every payment provider, which you need to retrieve from your payment gateway provider. Contact your payment gateway's support for any help.
 
@@ -53,10 +54,19 @@ The Razorpay integration gives your users the ability to pay with via the Razorp
 - Go to the Settings page -> API Keys tab on Razorpay & generate your API keys.
 - Go to your product installation Admin Panel -> Settings -> Payment -> Razorpay Tab and enter the given API Keys.
 
-### Paystack Setup
+### Flutterwave Setup
 
-The Paystack integration gives your users the ability to pay with via the Paystack payment gateway for one time & recurring purchases.
+The Flutterwave integration gives your users the ability to pay with via the Flutterwave payment gateway for purchases.
 
-- Go to Paystack and Login to your account.
-- Go to the Settings page -> API Keys
-- Go to your product Admin Panel -> Settings -> Payment -> Paystack Tab and enter the given API Keys.
+- Go to [Flutterwave](https://flutterwave.com/us/) and Login to your account.
+- Go to Settings -> API Keys page on Flutterwave get your API key.
+- Go to your product Admin Panel -> Settings -> Payment Gateway -> Manual Payment -> Flutterwave and enter the given API Key.
+
+
+### Midtrans Setup
+
+The Midtrans integration gives your users the ability to pay with via the Midtrans payment gateway for purchases.
+
+- Go to [Midtrans](https://midtrans.com/id) and Login to your account.
+- Go to Settings -> Access Keys page on Midtrans get your API key.
+- Go to your product Admin Panel -> Settings -> Payment Gateway -> Manual Payment -> Midtrans and enter the given API Key.
