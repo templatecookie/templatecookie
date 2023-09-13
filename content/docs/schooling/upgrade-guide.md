@@ -1,7 +1,7 @@
 ---
 title: Upgrade Guide
 position: 9
-category: Getting Started
+category: Others
 ---
 
 # Upgrade Guide
