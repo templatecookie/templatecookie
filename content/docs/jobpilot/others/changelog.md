@@ -8,6 +8,20 @@ category: Others
 # Changelog
 ## September
 
+### v2.77.17 - 13th September, 2023
+
+```
+- fix: language auto select issue
+- fix: preference contact social fix
+- fix: blog filter category issue
+- fix : validation improvement
+- improvement: extra jobs card height issues
+- improvement:  improvements in session data
+- improvement:Candidate Search and others UX Improve
+- style: location search field design broken issues are fixed
+- chore: code optimize and changed home page box content
+```
+
 ### v2.77.8 - 8th September, 2023
 
 ```
