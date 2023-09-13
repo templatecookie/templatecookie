@@ -17,7 +17,7 @@ Jobpilot is a modern, high-quality, and well-organized Job Portal with PHP Larav
 
 ---
 
-- Laravel 8 (Latest Version)
+- Laravel 9 (Latest Version)
 - Templating system based on Bootstrap 4
 - Beautiful User Interface
 - Employer and Candidate Management

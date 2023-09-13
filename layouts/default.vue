@@ -1,7 +1,7 @@
 <template>
   <div>
     <site-header :data="data?.global" v-if="data?.global?.logo" />
-    <slot />
+    <slot></slot>
     <site-footer
       :data="data?.global?.footer[0]"
       :social="data?.global?.socialMedias"
