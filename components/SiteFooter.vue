@@ -37,6 +37,7 @@
             >
               <a
                 :href="item.url"
+                target="_blank"
                 class="text-gray-400 hover:text-gray-300 h-10 w-10 flex justify-center items-center"
                 v-for="item in socials"
                 :key="item.name"
@@ -75,121 +76,78 @@
                     {{ subItem.name }}
                   </nuxt-link>
                 </li>
+
+                <li>
+                  <nuxt-link to="/products" class="text-base text-gray-400 group hover:text-gray-100">
+                    Free HTML & Figma Templates
+                  </nuxt-link>
+                </li>
               </ul>
             </div>
-            <div class="flex justify-between flex-wrap md:flex-nowrap">
-              <div>
-                <h3 class="text-base font-medium text-gray-200">
-                  Company
-                </h3>
-                <ul
-                  role="list"
-                  class="mt-4 space-y-4"
-                >
-                  <li>
-                    <nuxt-link
-                      to="/hire-us"
-                      class="text-base text-gray-400 hover:text-gray-300"
-                    >
-                      Hire Us
-                    </nuxt-link>
-                  </li>
+            <div>
+              <h3 class="text-base font-medium text-gray-200">
+                Get More Done
+              </h3>
+              <ul
+                role="list"
+                class="mt-4 space-y-4"
+              >
+                <li>
+                  <nuxt-link to="/elite-support" class="text-base text-gray-400 group hover:text-gray-100">
+                    <div>Elite Support</div>
+                    <span class="text-xs text-gray-400 group-hover:text-gray-200"> Elevate Your Success with Premium Assistance </span>
+                  </nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/hire-us" class="text-base text-gray-400 group hover:text-gray-100">
+                    <div>Hire Development Team</div>
+                    <span class="text-xs text-gray-400 group-hover:text-gray-200">Transform Your Vision into Reality with Our Expertise.</span>
+                  </nuxt-link>
+                </li>
 
-                  <li>
-                    <nuxt-link
-                      to="/installation-plans"
-                      class="text-base text-gray-400 hover:text-gray-300"
-                    >
-                      Installation Plans
-                    </nuxt-link>
-                  </li>
-
-                  <li>
-                    <nuxt-link
-                      to="/get-support"
-                      class="text-base text-gray-400 hover:text-gray-300"
-                    >
-                      Get Support
-                    </nuxt-link>
-                  </li>
-                  <li>
-                    <nuxt-link
-                      to="/docs"
-                      class="text-base text-gray-400 hover:text-gray-300"
-                    >
-                      Documentation
-                    </nuxt-link>
-                  </li>
-                  <li>
-                    <a
-                      href="https://1.envato.market/EaNJ2X"
-                      target="_blank"
-                      class="text-base text-gray-400 hover:text-gray-300"
-                    >Codecanyon Profile</a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h3 class="text-base font-medium text-gray-200">
-                  Others
-                </h3>
-                <ul
-                  role="list"
-                  class="mt-4 space-y-4"
-                >
-                  <li>
-                    <nuxt-link
-                      to="/blog"
-                      class="text-base text-gray-400 hover:text-gray-300"
-                    >
-                      Read Our Blog
-                    </nuxt-link>
-                  </li>
-                  <li>
-                    <nuxt-link
-                      to="/privacy-policy"
-                      class="text-base text-gray-400 hover:text-gray-300"
-                    >
-                      Privacy Policy
-                    </nuxt-link>
-                  </li>
-                  <li>
-                    <nuxt-link
-                      to="/refund-policy"
-                      class="text-base text-gray-400 hover:text-gray-300"
-                    >
-                      Refund Policy
-                    </nuxt-link>
-                  </li>
-                  <li>
-                    <nuxt-link
-                      to="/terms"
-                      class="text-base text-gray-400 hover:text-gray-300"
-                    >
-                      Terms & Condition
-                    </nuxt-link>
-                  </li>
-                  <li>
-                    <nuxt-link
-                      to="/products"
-                      class="text-base text-gray-400 hover:text-gray-300"
-                    >
-                      Products
-                    </nuxt-link>
-                  </li>
-                </ul>
-              </div>
+                <li>
+                  <nuxt-link to="/installation-plans" class="text-base text-gray-400 group hover:text-gray-100">
+                    <div>Installation Support</div>
+                    <!-- <span class="text-xs text-gray-400 group-hover:text-gray-200">Seamless Setup for a Worry-Free Start</span> -->
+                    <span class="text-xs text-gray-400 group-hover:text-gray-200">Seamlessly Launch Your Projects with Professional Setup.</span>
+                  </nuxt-link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-
+        <div class="mt-12 border-t border-white/10 pt-8 sm:mt-16 lg:mt-16 lg:flex lg:items-center lg:justify-center">
+          <nav class="-mb-6 columns-2 sm:flex flex-wrap xl:flex-nowrap gap-x-6 lg:gap-x-0 lg:justify-between w-full" aria-label="Footer">
+            <div class="pb-2">
+              <nuxt-link to="/get-support" class="text-sm leading-6 text-gray-400 hover:text-gray-100"> Create Support Ticket </nuxt-link>
+            </div>
+            <div class="pb-2">
+              <nuxt-link to="/docs" class="text-sm leading-6 text-gray-400 hover:text-gray-100"> Documentation </nuxt-link>
+            </div>
+            <div class="pb-2">
+              <a href="https://1.envato.market/EaNJ2X" target="_blank" class="text-sm leading-6 text-gray-400 hover:text-gray-100">Codecanyon Profile</a>
+            </div>
+            <div class="pb-2">
+              <nuxt-link to="/blog" class="text-sm leading-6 text-gray-400 hover:text-gray-100"> Read Our Blog </nuxt-link>
+            </div>
+            <div class="pb-2">
+              <nuxt-link to="/privacy-policy" class="text-sm leading-6 text-gray-400 hover:text-gray-100"> Privacy Policy </nuxt-link>
+            </div>
+            <div class="pb-2">
+              <nuxt-link to="/refund-policy" class="text-sm leading-6 text-gray-400 hover:text-gray-100"> Refund Policy </nuxt-link>
+            </div>
+            <div class="pb-2">
+              <nuxt-link to="/terms" class="text-sm leading-6 text-gray-400 hover:text-gray-100"> Terms & Condition </nuxt-link>
+            </div>
+          </nav>
+        </div>
         <div
-          class="mt-12 border-t border-gray-700 py-6 md:flex md:items-center md:justify-between"
+          class="mt-12 border-t border-white/10 py-6 md:flex md:items-center md:justify-between"
         >
           <div class="md:order-2">
             <img
               class="h-[37px] w-[390px]"
-              src="/images/payment-gateway.svg"
+              src="/images/stripe-payment.svg"
               alt="Templatecookie Payment Gateway Images"
             >
           </div>

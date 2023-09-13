@@ -32,6 +32,7 @@
     "eslint-plugin-vue": "^9.15.1",
     "lodash.groupby": "^4.6.0",
     "nuxt": "^3.6.5",
+    "nuxt-phosphor-icons": "^1.0.7",
     "nuxt-purgecss": "^2.0.0",
     "prettier": "^3.0.0"
   },
