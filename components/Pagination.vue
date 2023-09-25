@@ -16,7 +16,7 @@
       </a>
     </li>
     <li v-for="page in totalPages" :key="page" class="pagination-list flex justify-center items-center">
-      <a @click.prevent="goToPage(page)" :class="{ 'active': currentPage === page }"
+      <a @click.prevent="goToPage(page)" :class="{ 'active': currentPage == page }"
         class="cursor-pointer inline-block text-sm text-dark-gray hover:text-primary font-normal px-3.5 p-3 overflow-hidden rounded-md hover:bg-gray-f0">
         {{ page }}
       </a>
@@ -45,6 +45,11 @@
       currentPage: Number,
       totalPages: Number,
     },
+    data(){
+      return {
+        active : this.currentPage,
+      }
+    },
     methods: {
       prevPage() {
         if (this.currentPage > 1) {
@@ -67,7 +72,22 @@
           this.$emit('page-change', page);
         }
       },
+      getSearchParams(k) {
+        var p = {};
+        location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (s, k, v) { p[k] = v })
+        return k ? p[k] : p;
+      },
     },
+    mounted(){
+
+      if (this.getSearchParams('page')) {
+        // this.form.queue = this.getSearchParams('page');
+        const page = this.getSearchParams('page');
+        this.$router.push({ query: { page } });
+        this.$emit('page-change', page);
+        this.active = page
+      }
+    }
   };
 </script>
 
