@@ -8,6 +8,22 @@ category: Others
 # Changelog
 ## September
 
+### v2.77.28 - 25th September, 2023
+
+```
+- fix: Fixed featured jobs slider arrow issue.
+- fix: Addressed issues with slider buttons causing page reload
+- fix: Fixed text editor issue added for CMS.
+- fix: Resolved Iconpicker issue on the Jobategory page
+- fix: Fixed design issues on small devices in the candidate settings modal
+- fix: Fixed unwanted translated menu items
+- fix: Default language not found issue from admin dashboard
+- improvement: Performed query optimization for improved performance.
+- improvement: Cleaned up the app code-base.
+- improvement: Updated the Help widget.
+- improvement: Made improvements to the language module
+```
+
 ### v2.77.17 - 13th September, 2023
 
 ```
