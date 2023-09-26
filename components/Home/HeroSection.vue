@@ -9,7 +9,7 @@
                 <swiper-slide>
                     <div class="lg:pt-[100px] pt-16 lg:pb-[152px] pb-[120px] px-4 sm:px-6 lg:px-8">
                         <div class="max-w-[648px] w-full mx-auto">
-                            <h2 class="md:text-5xl text-3xl text-center text-white md:mb-6 mb-4">Get Elite Support for
+                            <h2 class="md:text-5xl md:leading-[56px] font-semibold text-3xl text-center text-white md:mb-6 mb-4">Get Elite Support for
                                 your business, Worry
                                 Free.</h2>
                             <p class="md:text-xl text-base text-center text-white/80 md:mb-8 mb-6">Let us handle the
@@ -42,7 +42,7 @@
                 <swiper-slide>
                     <div class="py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
                         <div class="max-w-[648px] w-full mx-auto">
-                            <h2 class="md:text-5xl text-3xl text-center text-white md:mb-6 mb-4">Looking for Partner for
+                            <h2 class="md:text-5xl md:leading-[56px] font-semibold text-3xl text-center text-white md:mb-6 mb-4">Looking for Partner for
                                 Your Next Project?</h2>
                             <p class="md:text-xl text-base text-center text-white/80 md:mb-8 mb-6">We have a talented
                                 and experienced team of designers and developers who are committed to offering the best
@@ -70,7 +70,7 @@
                 <swiper-slide>
                     <div class="py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
                         <div class="max-w-[648px] w-full mx-auto">
-                            <h2 class="md:text-5xl text-3xl text-center text-white md:mb-6 mb-4">Need Customer Support
+                            <h2 class="md:text-5xl md:leading-[56px] font-semibold text-3xl text-center text-white md:mb-6 mb-4">Need Customer Support
                                 Worry Free, We’re Here
                             </h2>
                             <p class="md:text-xl text-base text-center text-white/80 md:mb-8 mb-6">Our customer support
@@ -225,7 +225,7 @@
         left: 0;
         width: 0;
         height: 100%;
-        border-top: 4px solid rgba(255, 255, 255, 0.36);
+        border-top: 4px solid white;
         /* Adjust the border properties as needed */
     }
 
