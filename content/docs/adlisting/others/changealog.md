@@ -9,6 +9,32 @@ category: Others
 
 ---
 
+### v3.0.0 - 28th September 2023
+
+```
+- feat: Upgraded to Laravel 10
+- fix: Homepage category count upgrade issue resolved
+- fix: Leaflet map filter issue fixed
+- fix: Category filter clear button added on ad listing page
+- fix: Breadcrumb height issues resolved
+- fix: Social media button alignment issues fixed
+- fix: Slider height issues fixed
+- fix: Mobile menu responsive issues fixed
+- fix: Sign-in page design issues fixed
+
+- impr: Redesign new homepage layout
+- impr: Code optimization
+- impr: Code structure optimization
+- impr: Language issue fixed
+- impr: Onboarding content optimization
+- impr: Query optimization
+- impr: Location-wise ad searching
+- impr: Invoice redesign
+
+- test: Automated test added.
+```
+
+
 ### v2.15.1 - 30th August 2023
 
 ```
