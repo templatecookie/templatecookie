@@ -6,6 +6,13 @@ category: Others
 ---
 
 # Changelog
+## October
+### v2.77.30 - 02th October, 2023
+
+```
+- fix: Fixed price plan page issue
+- fix: added manual currency rate option added in currency page
+```
 ## September
 
 ### v2.77.28 - 25th September, 2023
