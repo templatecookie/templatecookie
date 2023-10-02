@@ -31,7 +31,7 @@ category: Others
 - impr: Location-wise ad searching
 - impr: Invoice redesign
 
-- test: Automated test added.
+- test: Automated test added. 
 ```
 
 
