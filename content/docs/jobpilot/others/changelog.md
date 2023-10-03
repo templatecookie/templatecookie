@@ -7,6 +7,11 @@ category: Others
 
 # Changelog
 ## October
+### v2.77.31 - 03th October, 2023
+
+```
+- fix: Fixed issue from Online payment gateway
+```
 ### v2.77.30 - 02th October, 2023
 
 ```
