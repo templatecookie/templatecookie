@@ -21,6 +21,6 @@ NOTE: Don't change the left side of the language. If you change the left side o
 
 ## Screenshot
 
-![](/docs/jobpilot/setting/manually_1.png)
+![](/public/docs/jobpilot/setting/manually_1.png)
 <br>
-![](/docs/jobpilot/setting/manually_2.png)
+![](/public/docs/jobpilot/setting/manually_2.png)

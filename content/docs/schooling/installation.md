@@ -47,11 +47,11 @@ We recommend
 
 Log in to your shared hosting and go to file manager. To upload files go to the `public_html` Folder and start uploading. Click on `Select File` and choose app.zip file. Please wait for the completion and close the tab once it is finished. Then reload the file manager and extract the file following the screenshot.
 
-![](/docs/jobpilot/install/s2.png)
-![](/docs/jobpilot/install/s3.png)
-![](/docs/jobpilot/install/s4.png)
-![](/docs/jobpilot/install/s5.png)
-![](/docs/jobpilot/install/s5_2.png)
+![](/public/docs/jobpilot/install/s2.png)
+![](/public/docs/jobpilot/install/s3.png)
+![](/public/docs/jobpilot/install/s4.png)
+![](/public/docs/jobpilot/install/s5.png)
+![](/public/docs/jobpilot/install/s5_2.png)
 
 ### Step 2: Set the folder permissions
 
@@ -61,33 +61,33 @@ The application requires `775` permission to work properly. Set up 775 permissio
 - `storage/framework`
 - `storage/logs`
 
-![](/docs/jobpilot/install/s7.png)
-![](/docs/jobpilot/install/s8.png)
-![](/docs/jobpilot/install/s9.png)
+![](/public/docs/jobpilot/install/s7.png)
+![](/public/docs/jobpilot/install/s8.png)
+![](/public/docs/jobpilot/install/s9.png)
 
 ### Step 3: Create a Database
 
 We need a database for the next step. Let's create a database by clicking on the `MYSQL Database Wizard` from your hosting panel. Once the database is created assign all database permission
 Follow the screenshots for step by step process.
 
-![](/docs/jobpilot/install/s11.png)
-![](/docs/jobpilot/install/s12.png)
-![](/docs/jobpilot/install/s13.png)
-![](/docs/jobpilot/install/s14.png)
+![](/public/docs/jobpilot/install/s11.png)
+![](/public/docs/jobpilot/install/s12.png)
+![](/public/docs/jobpilot/install/s13.png)
+![](/public/docs/jobpilot/install/s14.png)
 
 ### Step 4: Import the database
 
 We are going to import the demo database from Cpanel open `phpmyadmin` app. Then select your database and click on import. Choose the backup database from your computer and click on the "Go" Button.
 
-![](/docs/jobpilot/install/s18.png)
-![](/docs/jobpilot/install/s19.png)
+![](/public/docs/jobpilot/install/s18.png)
+![](/public/docs/jobpilot/install/s19.png)
 
 ### Step 5: Set DB Credentials on `.env` File
 
 Now we need to set up database credentials in our app config. Go to your application folder and follow the screenshot.
 
-![](/docs/jobpilot/install/s15.png)
-![](/docs/jobpilot/install/s16.png)
+![](/public/docs/jobpilot/install/s15.png)
+![](/public/docs/jobpilot/install/s16.png)
 
 ### Congratulations
 
