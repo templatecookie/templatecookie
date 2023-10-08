@@ -14,7 +14,8 @@
     "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
     "lint:prettier": "prettier --check .",
     "lint": "yarn lint:js && yarn lint:prettier",
-    "lintfix": "prettier --write --list-different . && yarn lint:js --fix"
+    "lintfix": "prettier --write --list-different . && yarn lint:js --fix",
+    "devupgrade": "nuxi upgrade"
   },
   "engines": {
     "node": "18.x"
@@ -31,7 +32,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.15.1",
     "lodash.groupby": "^4.6.0",
-    "nuxt": "^3.6.5",
+    "nuxt": "^3.7.4",
     "nuxt-phosphor-icons": "^1.0.7",
     "nuxt-purgecss": "^2.0.0",
     "prettier": "^3.0.0"
