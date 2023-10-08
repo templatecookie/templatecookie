@@ -14,10 +14,10 @@ The indexing API is an Application Programming Interface that allows site owners
 
 - Go to the [Google API Console](https://console.developers.google.com/) and create a new project.
 
-![](/public/docs/jobpilot/google-job/1.png)
+![](/docs/jobpilot/google-job/1.png)
 
 - Give it a name and click “CREATE”.
-  ![](/public/docs/jobpilot/google-job/2.png)
+  ![](/docs/jobpilot/google-job/2.png)
 
 ### 2. Create a service account
 
@@ -25,19 +25,19 @@ The service account will act as the email that will interact with the indexing A
 
 - Go to the [Service Accounts](https://console.cloud.google.com/apis/credentials) page and Click on “Manage service accounts”.
 
-![](/public/docs/jobpilot/google-job/3.png)
+![](/docs/jobpilot/google-job/3.png)
 
 - Click on `CREATE SERVICE ACCOUNT`.
 
-![](/public/docs/jobpilot/google-job/4.png)
+![](/docs/jobpilot/google-job/4.png)
 
 - Then, create the service account with the information that you want.
 
-![](/public/docs/jobpilot/google-job/5.png)
+![](/docs/jobpilot/google-job/5.png)
 
 - Select the `Owner` role.
 
-![](/public/docs/jobpilot/google-job/6.png)
+![](/docs/jobpilot/google-job/6.png)
 
 - You can skip the next step and create the service account.
 
@@ -45,15 +45,15 @@ The service account will act as the email that will interact with the indexing A
 
 First, store the email ending in “gserviceaccount.com” for later use. For the newly created service account, you will need to create the API keys that will act as the username and password for your application.
 
-![](/public/docs/jobpilot/google-job/7.png)
+![](/docs/jobpilot/google-job/7.png)
 
 - Click on `ADD KEY` > `Create new key`.
 
-![](/public/docs/jobpilot/google-job/8.png)
+![](/docs/jobpilot/google-job/8.png)
 
 - Select JSON for your private key, and then click on `CREATE`.
 
-![](/public/docs/jobpilot/google-job/9.png)
+![](/docs/jobpilot/google-job/9.png)
 
 - Save the file somewhere safe.
 
@@ -63,7 +63,7 @@ Now, the API needs to be enabled in your project for you to use it.
 
 - Go to the [Indexing API](https://console.cloud.google.com/apis/library/indexing.googleapis.com) page and click on `ENABLE`.
 
-![](/public/docs/jobpilot/google-job/10.png)
+![](/docs/jobpilot/google-job/10.png)
 
 ### 5. Give Owner Status to the Service Account
 
@@ -73,11 +73,11 @@ For the indexing API to work properly, you need to give ownership to your servic
 
 - Add the property that you want to use the indexing API on, or choose from the list.
 
-![](/public/docs/jobpilot/google-job/11.png)
+![](/docs/jobpilot/google-job/11.png)
 
 - Go to `Verified owners` and click on `ADD AN OWNER`.
 
-![](/public/docs/jobpilot/google-job/12.png)
+![](/docs/jobpilot/google-job/12.png)
 
 ### 6. Final Step
 

@@ -2,7 +2,7 @@
   <div>
     <section
       class="py-12 lg:pb-12 bg-no-repeat bg-center bg-cover"
-      style="background-image: url(&quot;/public/hero-bg.png&quot;)"
+      style="background-image: url('/hero-bg.png')"
     >
       <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="text-left">

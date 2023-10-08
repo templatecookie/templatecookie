@@ -1,5 +1,5 @@
 <template>
-    <section class="section-bg font-lexend" style="background-image: url('public/hero-bg.jpg');">
+    <section class="section-bg font-lexend" style="background-image: url('hero-bg.jpg');">
         <div class="mx-auto max-w-7xl">
             <swiper :loop="true" :autoplay="{
                 delay: 5000,

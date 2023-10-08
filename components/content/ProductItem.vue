@@ -30,7 +30,7 @@ export default {
   methods: {
     resolveImage() {
       try {
-        return `public/${this.product._path}/preview.png`;
+        return `${this.product._path}/preview.png`;
       } catch (error) {
         return null;
       }
