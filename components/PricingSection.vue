@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-gray-900"
+    class="bg-gray-900 pricing-section"
     :id="id"
   >
     <div class="relative overflow-hidden pt-24 pb-96 lg:pt-32">
