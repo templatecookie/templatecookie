@@ -6,7 +6,7 @@ export default defineNuxtConfig({
       datoCmsToken: process.env.DATO_CMS_TOKEN,
     },
   },
-
+  ssr: false,
   app: {
     head: {
       title: "Premium PHP Scripts & HTML Templates | Templatecookie.com",
@@ -28,13 +28,6 @@ export default defineNuxtConfig({
           innerHTML: `!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
           posthog.init('phc_gZ1gM5ohs92IjEQMziTLugJTGwgOVZy62QRHrgcF2G7',{api_host:'https://app.posthog.com'})`
         },
-        // {
-        //   src: 'https://example.com/analytics.js',
-        //   // this will always run
-        //   onload: (el) => {
-        //     console.log('loaded', el)
-        //   }
-        // }
       ],
     },
   },
@@ -42,7 +35,6 @@ export default defineNuxtConfig({
   css: [
     // SCSS file in the project
     "~/assets/scss/app.scss",
-    // "aos/dist/aos.css",
   ],
 
   modules: [
@@ -50,26 +42,17 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxt/image",
     "@nuxtjs/google-fonts",
-    // '@nuxtjs/sentry',
-    // '@nuxtjs/apollo',
     "nuxt-phosphor-icons",
   ],
-  
+
   // PhosphorIcon Config
   phosphor: {
     prefix: "Ph",
   },
-
   plugins: [
     { src: "@/plugins/aos", mode: "client" },
     { src: "@/plugins/datocms.js", mode: "client" },
   ],
-
-
-
-  //   purgeCSS: {
-  //     whitelist: ["aos-init", "aos-animate", "data-aos-delay", "data-aos-duration", "fade-up", "zoom-in"],
-  // },
   content: {
     api: {
       baseURL: "/api/_my_content",
@@ -79,16 +62,6 @@ export default defineNuxtConfig({
     },
   },
 
-  // apollo: {
-  //   clients: {
-  //     default: './graphql/config/config.js'
-  //   }
-  // }
-  // sentry: {
-  //   dsn: 'https://72cc635251b84e40964ee9111b009c8e@o1134535.ingest.sentry.io/6438928',
-  //   // publishRelease: true,
-  //   // sourceMapStyle: 'hidden-source-map',
-  // }
   googleFonts: {
     display: "swap",
     families: {
