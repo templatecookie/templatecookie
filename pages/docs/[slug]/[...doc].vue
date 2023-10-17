@@ -123,17 +123,11 @@ const tocLinks = data?._rawValue?.body?.toc?.links;
 const title = data?._rawValue?.title;
 const description = data?._rawValue?.description;
 
-useHead({
-  title,
-  meta: [
-    { name: "description", content: description },
-    // Open Graph
-    { property: "og:title", content: title },
-    { property: "og:description", content: description },
-    // Twitter Card
-    { name: "twitter:title", content: title },
-    { name: "twitter:description", content: description },
-  ],
+useSeoMeta({
+  title: title,
+  ogTitle: title,
+  description: description,
+  ogDescription: description,
 });
 
 onMounted(() => {
