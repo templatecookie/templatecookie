@@ -9,6 +9,18 @@ category: Others
 
 ---
 
+
+### v3.1.0 - 13th October 2023
+
+```
+- feat: Progressive Web App Integration
+- fix: recent ads pagination
+- fix: Customer login issue fixed
+- improvement: Optimize code performance
+
+```
+
+
 ### v3.0.0 - 28th September 2023
 
 ```
