@@ -2,7 +2,7 @@
   <div class="bg-gray-50">
     <div class="relative overflow-hidden">
       <div
-        class="absolute inset-y-0 h-full w-full"
+        class="absolute md:block hidden inset-y-0 h-full w-full"
         aria-hidden="true"
       >
         <div class="relative h-full">
