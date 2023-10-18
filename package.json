@@ -35,6 +35,7 @@
     "nuxt": "^3.7.4",
     "nuxt-phosphor-icons": "^1.0.7",
     "nuxt-purgecss": "^2.0.0",
+    "nuxt-simple-sitemap": "^3.4.0",
     "prettier": "^3.0.0"
   },
   "dependencies": {

@@ -43,7 +43,8 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxtjs/google-fonts",
     "nuxt-phosphor-icons",
-    '@nuxtjs/robots'
+    '@nuxtjs/robots',
+    'nuxt-simple-sitemap'
   ],
 
   // PhosphorIcon Config
