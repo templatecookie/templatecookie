@@ -9,7 +9,6 @@ category: Others
 
 ---
 
-
 ### v3.1.0 - 13th October 2023
 
 ```
@@ -19,7 +18,6 @@ category: Others
 - improvement: Optimize code performance
 
 ```
-
 
 ### v3.0.0 - 28th September 2023
 
@@ -43,9 +41,8 @@ category: Others
 - impr: Location-wise ad searching
 - impr: Invoice redesign
 
-- test: Automated test added. 
+- test: Automated test added.
 ```
-
 
 ### v2.15.1 - 30th August 2023
 

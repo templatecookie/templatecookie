@@ -20,7 +20,7 @@ category: Others
 - Fix: Transaction search bug from admin and accountant role
 - Fix: Online Class: Search Optimize for student role
 - Fix: Frontend announce page issue.
-- Improve: Upgrade gidue updated. 
+- Improve: Upgrade gidue updated.
 ```
 
 ### v2.9.11 - 30 August, 2023

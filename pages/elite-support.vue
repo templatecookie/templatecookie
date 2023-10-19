@@ -713,7 +713,10 @@
     </div>
 
     <!-- / Pricing Plans -->
-    <div class="bg-white py-24 sm:py-32" id="pricing">
+    <div
+      class="bg-white py-24 sm:py-32"
+      id="pricing"
+    >
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-4xl text-center">
           <h2 class="text-base font-semibold leading-7 text-primary">
@@ -737,15 +740,16 @@
           <div
             class="rounded-3xl p-8 xl:p-10"
             :class="
-              pricing.popular
-                ? 'ring-primary ring-2'
-                : 'ring-gray-200 ring-1'
+              pricing.popular ? 'ring-primary ring-2' : 'ring-gray-200 ring-1'
             "
             v-for="(pricing, index) in packages"
             :key="index"
           >
             <div class="flex items-center justify-between gap-x-4">
-              <h3 id="tier-freelancer" class="text-lg font-semibold leading-8" :class="pricing.popular ? 'text-primary' : 'text-gray-900'"
+              <h3
+                id="tier-freelancer"
+                class="text-lg font-semibold leading-8"
+                :class="pricing.popular ? 'text-primary' : 'text-gray-900'"
               >
                 {{ pricing.name }}
               </h3>
@@ -759,20 +763,31 @@
             <p class="mt-4 text-sm leading-6 text-gray-600">
               {{ pricing.description }}
             </p>
-            <p class="mt-6 flex items-baseline gap-x-1" v-if="pricing.price === null">
+            <p
+              class="mt-6 flex items-baseline gap-x-1"
+              v-if="pricing.price === null"
+            >
               <span class="text-2xl font-bold tracking-tight text-gray-900">CUSTOM</span>
             </p>
-            <p class="mt-6 flex items-baseline gap-x-1" v-else>
+            <p
+              class="mt-6 flex items-baseline gap-x-1"
+              v-else
+            >
               <span class="text-4xl font-bold tracking-tight text-gray-900">${{ pricing.price }}</span>
               <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
             </p>
 
-              <!-- href="https://share.hsforms.com/1bXIHNkLyT6yrFoXjHPBNggd7a3t"  -->
-            <a 
-              :href="pricing.purchase_url" 
-              :aria-describedby="pricing.name" 
+            <!-- href="https://share.hsforms.com/1bXIHNkLyT6yrFoXjHPBNggd7a3t"  -->
+            <a
+              :href="pricing.purchase_url"
+              :aria-describedby="pricing.name"
               class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-              :class="pricing.popular ? ' bg-primary text-white shadow-sm hover:bg-indigo-500' : 'text-primary ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300'">
+              :class="
+                pricing.popular
+                  ? ' bg-primary text-white shadow-sm hover:bg-indigo-500'
+                  : 'text-primary ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300'
+              "
+            >
               Subscribe now
             </a>
 
@@ -802,8 +817,16 @@
             </ul>
           </div>
         </div>
-        <p class="mx-auto mt-8 max-w-3xl text-center text-base leading-8 text-gray-900">
-          <span>Support plans does not include script purchase price. Script purchased separately from</span> <a class="inline-block" href="https://1.envato.market/EaNJ2X" target="_blank">our profile</a>
+        <p
+          class="mx-auto mt-8 max-w-3xl text-center text-base leading-8 text-gray-900"
+        >
+          <span>Support plans does not include script purchase price. Script
+            purchased separately from</span>
+          <a
+            class="inline-block"
+            href="https://1.envato.market/EaNJ2X"
+            target="_blank"
+          >our profile</a>
         </p>
       </div>
     </div>
@@ -882,7 +905,8 @@ export default {
         },
         {
           name: "Startup",
-          description: "Elevate Your Support Experience, Unleash Your Potential.",
+          description:
+            "Elevate Your Support Experience, Unleash Your Potential.",
           price: 199,
           popular: false,
           purchase_url: "https://buy.stripe.com/5kA0425pr7I2aJi28b",
@@ -890,11 +914,13 @@ export default {
             { name: "Ongoing Maintenance" },
             { name: "Priority Support within 12 Hours" },
             { name: "Quick Bug Fixing" },
-            { name: "Access Email Support", },
+            { name: "Access Email Support" },
             { name: "Access to Customer Panel" },
             { name: "Supported 1 Domain" },
             { name: "Script Installation & Server Maintenance" },
-            { name: "2 hours included for modifications or new feature implementation ",},
+            {
+              name: "2 hours included for modifications or new feature implementation ",
+            },
           ],
         },
         {
@@ -911,7 +937,9 @@ export default {
             { name: "Access to Customer Panel" },
             { name: "Supported 2 Domain" },
             { name: "Script Installation & Server Maintenance" },
-            { name: "5 hours included for modifications or new feature implementation ",},
+            {
+              name: "5 hours included for modifications or new feature implementation ",
+            },
             { name: "Access to Whatsapp Support" },
             { name: "Expert Technical Guidance" },
           ],

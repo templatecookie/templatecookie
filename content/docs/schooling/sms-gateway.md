@@ -22,7 +22,6 @@ Let's walk through the steps to obtain these details.
 
 3. On the dashboard, you will find your **Account SID** and **Auth Token**. These credentials are crucial for authenticating your requests to Twilio. Ensure you keep them secure and do not share them publicly.
 
-
 ### Step 2: Obtain a Twilio Phone Number
 
 1. In the Twilio Console, go to the Phone Numbers section.
@@ -30,7 +29,6 @@ Let's walk through the steps to obtain these details.
 2. Click on the "Buy a Number" button to acquire a new phone number if you don't already have one.
 
 3. Follow the on-screen instructions to search for and select a phone number that suits your needs. You can also port an existing phone number if necessary.
-
 
 ### Step 3: Store Credentials Securely
 

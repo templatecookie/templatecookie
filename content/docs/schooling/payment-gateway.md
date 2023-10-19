@@ -62,7 +62,6 @@ The Flutterwave integration gives your users the ability to pay with via the Flu
 - Go to Settings -> API Keys page on Flutterwave get your API key.
 - Go to your product Admin Panel -> Settings -> Payment Gateway -> Manual Payment -> Flutterwave and enter the given API Key.
 
-
 ### Midtrans Setup
 
 The Midtrans integration gives your users the ability to pay with via the Midtrans payment gateway for purchases.

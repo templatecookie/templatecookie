@@ -15,12 +15,12 @@ Following the steps below, you can perform an upgrade on your app.
   </section>
 </div>
 
-
 ### Watch Video Demo
 
 [![Watch the video](https://i.imgur.com/hEep8hr.png)](https://www.loom.com/share/a9459471fe6f466790a10de3e0260be3?sid=5475c85c-1b07-4218-a9bd-2c2f723ead25)
 
 ### Step 1 - Delete a file
+
 Delete the file (en.json) that are located inside your domain_root/resources/lang folder.
 
 ### Step 2 - Backup the important files
@@ -46,7 +46,7 @@ Extract the downloaded file and upload the **app.zip** file to your domain root.
 
 Extract the **app.zip** file to your domain root.
 
-### Step 7 - Replace the important files 
+### Step 7 - Replace the important files
 
 Please replace the following files and folders in their respective directories.
 

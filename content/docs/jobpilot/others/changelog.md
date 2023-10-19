@@ -6,18 +6,22 @@ category: Others
 ---
 
 # Changelog
+
 ## October
+
 ### v2.77.31 - 03th October, 2023
 
 ```
 - fix: Fixed issue from Online payment gateway
 ```
+
 ### v2.77.30 - 02th October, 2023
 
 ```
 - fix: Fixed price plan page issue
 - fix: added manual currency rate option added in currency page
 ```
+
 ## September
 
 ### v2.77.28 - 25th September, 2023
@@ -108,6 +112,7 @@ category: Others
 - improvement: Design improvements
 - and many more...
 ```
+
 ## June
 
 ### v2.63.0 - 10th June, 2023

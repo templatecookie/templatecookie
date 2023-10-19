@@ -16,6 +16,7 @@ Following the steps below, you can perform an upgrade on your app.
 </div>
 
 ### Step 1 - Delete a file
+
 Delete the file (en.json) that are located inside your domain_root/lang folder.
 
 ### Step 2 - Backup the important files
@@ -41,7 +42,7 @@ Extract the downloaded file and upload the **app.zip** file to your domain root.
 
 Extract the **app.zip** file to your domain root.
 
-### Step 7 - Replace the important files 
+### Step 7 - Replace the important files
 
 Please replace the following files and folders in their respective directories.
 
@@ -53,4 +54,3 @@ Please replace the following files and folders in their respective directories.
 ### Step 8 - Run the upgrade command
 
 Run the upgrade command by clicking on "Upgrade Now" from Setting. **Admin panel** -> **Settings** -> **Upgrade** -> **Upgrade Now**
-

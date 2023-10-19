@@ -22,9 +22,9 @@
               class="toggle flex flex-col gap-1"
               :class="{ active: mobileNav }"
             >
-              <span class="w-5 h-0.5 bg-gray-700 inline-flex"></span>
-              <span class="w-5 h-0.5 bg-gray-700 inline-flex"></span>
-              <span class="w-5 h-0.5 bg-gray-700 inline-flex"></span>
+              <span class="w-5 h-0.5 bg-gray-700 inline-flex" />
+              <span class="w-5 h-0.5 bg-gray-700 inline-flex" />
+              <span class="w-5 h-0.5 bg-gray-700 inline-flex" />
             </div>
           </div>
           <nav class="hidden space-x-6 lg:flex items-center">

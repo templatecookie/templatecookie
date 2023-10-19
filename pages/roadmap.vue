@@ -9,19 +9,22 @@
             Product Roadmap
           </h1>
           <p class="text-white text-lg mb-6 lg:mb-9 max-w-xl m-auto font-light">
-            Engage with us on our roadmap! Share your ideas, vote on others, and be part of the innovation journey.
+            Engage with us on our roadmap! Share your ideas, vote on others, and
+            be part of the innovation journey.
           </p>
         </div>
       </div>
     </div>
     <div>
-      <div data-productlift-embed="d77067a9-03fc-4683-990b-f0ed41624c9b"></div>
+      <div data-productlift-embed="d77067a9-03fc-4683-990b-f0ed41624c9b" />
     </div>
   </div>
 </template>
 
 <script setup>
-  useHead({
-    script: [{ src: 'https://roadmap.templatecookie.com/widgets_sdk', defer: true, }],
-  });
+useHead({
+  script: [
+    { src: "https://roadmap.templatecookie.com/widgets_sdk", defer: true },
+  ],
+});
 </script>
