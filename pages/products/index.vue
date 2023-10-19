@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- Banner  -->
-        <section class="pb-14 lg:pb-72 pt-14 lg:pt-32 bg-no-repeat bg-center bg-cover" :style="{ backgroundImage: `url(${bannerImg})` }">
+        <section class="py-14 lg:py-32 bg-no-repeat bg-center bg-cover" :style="{ backgroundImage: `url(${bannerImg})` }">
             <div class="mx-auto max-w-7xl px-4 sm:px-6">
                 <div class="text-center">
                     <h1 class="text-4xl md:text-heading-40 textdark mb-6 max-w-680 mx-auto font-semibold">

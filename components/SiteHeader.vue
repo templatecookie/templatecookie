@@ -255,6 +255,11 @@ export default {
           url: "/installation-plans",
           blank: false,
         },
+        {
+          name: "Product Roadmap",
+          url: "/roadmap",
+          blank: false,
+        },
       ],
     };
   },
