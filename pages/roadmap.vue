@@ -21,9 +21,7 @@
 </template>
 
 <script setup>
-  // Productlift Roadmap
-  const script = document.createElement("script");
-  script.src = "https://roadmap.templatecookie.com/widgets_sdk";
-  script.setAttribute('defer', '')
-  document.body.appendChild(script);
+  useHead({
+    script: [{ src: 'https://roadmap.templatecookie.com/widgets_sdk', defer: true, }],
+  });
 </script>
