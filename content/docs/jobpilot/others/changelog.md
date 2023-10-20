@@ -24,6 +24,7 @@ category: Others
 - fix: language direction fix
 - fix:password reset issue fixed
 - refactor: Update old twitter logo
+
 - Improvement : Improvement on sitemap.xml for SEO Optimization
 ```
 
