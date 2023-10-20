@@ -11,15 +11,15 @@ category: Others
 
 ### v3.1.10 - 20th October 2023
 
-- fix: offline page css update
+- fix: Offline page css update
 - fix: Post Category, Update, Delete, Validation problem fixed. Image replace when delete or update fixed.
-- fix:  APP_DEBUG env settings doing...
+- fix: APP_DEBUG env settings doing...
 - fix: resolved env update issue
 - fix: APP_DEBUG on off problem fixed
-- fix:  RECAPTCHA Configuration config setup fixed.
+- fix: RECAPTCHA Configuration config setup fixed.
 - fix: preference APP_MODE problem fixed.
 - fix: SMTP update problem fixed.
-- fix:  Cookie Consent showing problem fixed.
+- fix: Cookie Consent showing problem fixed.
 - fix: CMS Settings multiple issue fix.
 
 ```
