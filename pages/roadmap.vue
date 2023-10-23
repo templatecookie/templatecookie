@@ -28,7 +28,7 @@ useHead({
   ],
 });
 
-const title = "TemplateCookie Product Roadmap | Explore Our Innovation Journey";
+const title = "Templatecookie Product Roadmap | Explore Our Innovation Journey";
 const description = "Stay in the loop with TemplateCookie's Product Roadmap. Witness innovation in action, submit your ideas, and vote on upcoming features. Join us in shaping the future of our products.";
 
 useSeoMeta({
