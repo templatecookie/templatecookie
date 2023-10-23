@@ -9,7 +9,7 @@ category: Others
 
 ## October
 
-### v2.82.0 - 20th October, 2023
+### v2.82.0 - 23th October, 2023
 
 ```
 - feat: auto language translate for plan description
