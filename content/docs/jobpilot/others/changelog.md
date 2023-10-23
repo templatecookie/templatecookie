@@ -9,6 +9,25 @@ category: Others
 
 ## October
 
+### v2.82.0 - 23th October, 2023
+
+```
+- feat: auto language translate for plan description
+- feat: education create option from admin section
+- feat: experience create option from admin section
+- feat: add Pre-loader
+- feat: added Intervention Image package add to reduce Image size
+
+- fix: candidate profile view bug fix
+- fix: job create error
+- fix: current country issue
+- fix: language direction fix
+- fix:password reset issue fixed
+- refactor: Update old twitter logo
+
+- Improvement : Improvement on sitemap.xml for SEO Optimization
+```
+
 ### v2.77.31 - 03th October, 2023
 
 ```

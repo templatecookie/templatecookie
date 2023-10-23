@@ -277,4 +277,8 @@ export default {
   opacity: 1;
   transform: translateY(12px);
 }
+.bg-primary.router-link-active {
+  color: white !important;
+  background-color: rgb(117, 52, 255) !important;
+}
 </style>
