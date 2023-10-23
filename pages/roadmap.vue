@@ -27,4 +27,15 @@ useHead({
     { src: "https://roadmap.templatecookie.com/widgets_sdk", defer: true },
   ],
 });
+
+const title = "TemplateCookie Product Roadmap | Explore Our Innovation Journey";
+const description = "Stay in the loop with TemplateCookie's Product Roadmap. Witness innovation in action, submit your ideas, and vote on upcoming features. Join us in shaping the future of our products.";
+
+useSeoMeta({
+  title: title,
+  ogTitle: title,
+  description: description,
+  ogDescription: description,
+  ogImage: "/social-meta.png",
+});
 </script>
