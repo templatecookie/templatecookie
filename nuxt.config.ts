@@ -69,6 +69,7 @@ export default defineNuxtConfig({
                 "https://www.pinterest.com/templatecookie/",
                 "https://dribbble.com/templatecookie/",
                 "https://github.com/templatecookie",
+                "https://www.behance.net/templatecookie",
                 "https://www.figma.com/@templatecookie"
               ],
               "founder": {
