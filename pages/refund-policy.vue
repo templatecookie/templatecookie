@@ -3,9 +3,7 @@
     <div class="bg-gray-f0 py-12">
       <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="text-center max-w-4xl m-auto pt-6">
-          <h1
-            class="text-dark text-5xl font-semibold mb-6 lg:mb-9 tracking-ls02"
-          >
+          <h1 class="text-dark text-5xl font-semibold mb-6 lg:mb-9 tracking-ls02">
             Refund Policy
           </h1>
         </div>
@@ -111,21 +109,28 @@
 </template>
 
 <script setup>
-const title = "Refund Policy | Our commitment to customer satisfaction";
-const description =
-  "Our refund policy ensures that our customers receive a satisfactory experience. If you're unhappy with your purchase or encounter issues, we're here to help. Learn more about our refund policy and eligibility criteria.";
+  const title = "Refund Policy | Our commitment to customer satisfaction";
+  const description =
+    "Our refund policy ensures that our customers receive a satisfactory experience. If you're unhappy with your purchase or encounter issues, we're here to help. Learn more about our refund policy and eligibility criteria.";
 
-useHead({
-  title: title,
-  meta: [
-    { name: "description", content: description },
-    { property: "og:title", name: "og:title", content: title },
-    { name: "og:description", content: description },
-    { property: "og:type", name: "og:type", content: "website" },
-    { property: "og:image", name: "og:image", content: "/social-meta.png" },
-  ],
-});
+  const route = useRoute()
+  useHead({
+    title: title,
+    meta: [
+      { name: "description", content: description },
+      { property: "og:title", name: "og:title", content: title },
+      { name: "og:description", content: description },
+      { property: "og:type", name: "og:type", content: "website" },
+      { property: "og:image", name: "og:image", content: "/social-meta.png" },
+    ],
+    link: [
+      {
+        rel: 'canonical',
+        href: 'https://www.templatecookie.com' + route.path,
+      },
+    ],
+  });
 
-const date = new Date("2023-03-31");
-let currentDate = date.toLocaleDateString();
+  const date = new Date("2023-03-31");
+  let currentDate = date.toLocaleDateString();
 </script>

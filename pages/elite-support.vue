@@ -839,7 +839,15 @@ export default {
     const title = "Elite Support | Streamlined Solutions for Unmatched Success";
     const description =
       "Experience Elite Support - a premium service tailored to your technical needs. Enjoy priority assistance, rapid response times, and personalized solutions for your business. Propel your success with our reliable development partner and elevate your projects to new heights. Maximize efficiency and achieve exceptional outcomes with our streamlined support. Subscribe now and unlock the path to unparalleled success.";
-
+    const route = useRoute()
+    useHead({
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://www.templatecookie.com' + route.path,
+        },
+      ],
+    })
     useSeoMeta({
       title: title,
       ogTitle: title,

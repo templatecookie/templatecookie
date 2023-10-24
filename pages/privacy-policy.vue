@@ -3,9 +3,7 @@
     <div class="bg-gray-f0 py-12">
       <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="text-center max-w-4xl m-auto pt-6">
-          <h1
-            class="text-dark text-5xl font-semibold mb-6 lg:mb-9 tracking-ls02"
-          >
+          <h1 class="text-dark text-5xl font-semibold mb-6 lg:mb-9 tracking-ls02">
             Privacy Policy
           </h1>
         </div>
@@ -115,18 +113,27 @@
 </template>
 
 <script setup>
-let title = "Privacy Policy | Templatecookie";
-const description =
-  "Learn about how Templatecookie collects, uses, and protects your personal information with our Privacy Policy. We respect your privacy and strive to provide a secure and transparent experience on our website.";
+  let title = "Privacy Policy | Templatecookie";
+  const description =
+    "Learn about how Templatecookie collects, uses, and protects your personal information with our Privacy Policy. We respect your privacy and strive to provide a secure and transparent experience on our website.";
 
-useSeoMeta({
-  title: title,
-  ogTitle: title,
-  description: description,
-  ogDescription: description,
-  ogImage: "/social-meta.png",
-});
+  useSeoMeta({
+    title: title,
+    ogTitle: title,
+    description: description,
+    ogDescription: description,
+    ogImage: "/social-meta.png",
+  });
 
-let date = new Date("2023-03-31");
-const currentDate = date.toLocaleDateString();
+  let date = new Date("2023-03-31");
+  const currentDate = date.toLocaleDateString();
+  const route = useRoute()
+  useHead({
+    link: [
+      {
+        rel: 'canonical',
+        href: 'https://www.templatecookie.com' + route.path,
+      },
+    ],
+  })
 </script>

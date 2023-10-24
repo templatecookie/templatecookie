@@ -45,10 +45,18 @@
 import ALL_BLOG_QUERY from "~/graphql/blog/allBlogPosts.js";
 
 export default {
-  async setup() {
+  setup() {
     const title = `Blog - Templatecookie.com`;
     const description = "Read templatecookie blog. Updated Weekly";
-
+    // const route = useRoute()
+    // useHead({
+    //   link: [
+    //     {
+    //       rel: 'canonical',
+    //       href: 'https://www.templatecookie.com' + route.path,
+    //     },
+    //   ],
+    // })
     useSeoMeta({
       title: title,
       ogTitle: title,
@@ -57,13 +65,15 @@ export default {
       ogImage: "/social-meta.png",
     });
 
-    const { data } = await useGraphqlQuery({ query: ALL_BLOG_QUERY });
+    const { data } = useGraphqlQuery({ query: ALL_BLOG_QUERY });
     const posts = data._rawValue.allPosts;
     return {
       posts,
     };
   },
 };
+
+
 </script>
 
 <style></style>

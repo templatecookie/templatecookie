@@ -3,9 +3,7 @@
     <div class="bg-gray-f0 py-12">
       <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="text-center max-w-4xl m-auto pt-6">
-          <h1
-            class="text-dark text-5xl font-semibold mb-6 lg:mb-9 tracking-ls02"
-          >
+          <h1 class="text-dark text-5xl font-semibold mb-6 lg:mb-9 tracking-ls02">
             Terms & Conditions
           </h1>
         </div>
@@ -103,17 +101,26 @@
 </template>
 
 <script setup>
-const title = "Terms and Conditions | Templatecookie";
-const description =
-  "By using Templatecookie, you agree to be bound by our Terms and Conditions. We provide high-quality templates and resources for web development, while also outlining our expectations for user conduct and ownership of content. Learn more here.";
+  const title = "Terms and Conditions | Templatecookie";
+  const description =
+    "By using Templatecookie, you agree to be bound by our Terms and Conditions. We provide high-quality templates and resources for web development, while also outlining our expectations for user conduct and ownership of content. Learn more here.";
 
-useSeoMeta({
-  title: title,
-  ogTitle: title,
-  description: description,
-  ogDescription: description,
-  ogImage: "/social-meta.png",
-});
+  useSeoMeta({
+    title: title,
+    ogTitle: title,
+    description: description,
+    ogDescription: description,
+    ogImage: "/social-meta.png",
+  });
+  const route = useRoute()
+  useHead({
+    link: [
+      {
+        rel: 'canonical',
+        href: 'https://www.templatecookie.com' + route.path,
+      },
+    ],
+  })
 </script>
 
 <style></style>

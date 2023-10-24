@@ -98,7 +98,7 @@ export default {
     const title = "All Products Listing";
     const description =
       "Browse Templatecookie all products, Templatecookie has HTML, Figma & Laravel products.";
-
+    
     useSeoMeta({
       title: title,
       ogTitle: title,
