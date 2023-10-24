@@ -58,7 +58,7 @@
 
       const { data, error } = await useGraphqlQuery({ query: ALL_PRODUCT_PLANS });
       products.value = data?._rawValue?.allProductplans;
-
+F
       const selectedProductData = computed(() => {
         return products.value.find((elem) => {
           return (

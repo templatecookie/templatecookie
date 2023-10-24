@@ -46,8 +46,8 @@ You will find all the route files under `routes/web.php & Modules/*/Routes/web.p
 
 Application core routes located in route files. If you want to change something. You can do here.
 
-![screenshot](/docs/jobpilot/screenshot/editcode/route.png)
-![screenshot](/docs/jobpilot/screenshot/editcode/route2.png)
+![Jobpilot route setup](/docs/jobpilot/screenshot/editcode/route.png)
+![Jobpilot route setup](/docs/jobpilot/screenshot/editcode/route2.png)
 
 ### Blade File Edit
 
@@ -55,8 +55,8 @@ You will find all the blade files under `resources/views` and `Modules/*/resourc
 
 Application core views code located in blade files. If you want to change something. You can do here.
 
-![screenshot](/docs/jobpilot/screenshot/editcode/blade.png)
-![screenshot](/docs/jobpilot/screenshot/editcode/blade2.png)
+![Jobpilot view file setup](/docs/jobpilot/screenshot/editcode/blade.png)
+![Jobpilot view file setup](/docs/jobpilot/screenshot/editcode/blade2.png)
 
 <!--
 ### Controller File Edit

@@ -45,11 +45,11 @@ We recommend
 
 Log in to your shared hosting and go to file manager. To upload files go to the `public_html` Folder and start uploading. Click on `Select File` and choose app.zip file. Please wait for the completion and close the tab once it is finished. Then reload the file manager and extract the file following the screenshot.
 
-![](/docs/adlisting/install/s2.png)
-![](/docs/adlisting/install/s3.png)
-![](/docs/adlisting/install/s4.png)
-![](/docs/adlisting/install/s5.png)
-![](/docs/adlisting/install/s5_2.png)
+![Adlisting Installation Step 2](/docs/adlisting/install/s2.png)
+![Adlisting Installation Step 3](/docs/adlisting/install/s3.png)
+![Adlisting Installation Step 4](/docs/adlisting/install/s4.png)
+![Adlisting Installation Step 5](/docs/adlisting/install/s5.png)
+![Adlisting Installation Step 5_2](/docs/adlisting/install/s5_2.png)
 
 ### Step 2: Set the folder permissions
 
@@ -59,33 +59,33 @@ The application requires `775` permission to work properly. Set up 775 permissio
 - `storage/framework`
 - `storage/logs`
 
-![](/docs/adlisting/install/s7.png)
-![](/docs/adlisting/install/s8.png)
-![](/docs/adlisting/install/s9.png)
+![Adlisting Installation Step 7](/docs/adlisting/install/s7.png)
+![Adlisting Installation Step 8](/docs/adlisting/install/s8.png)
+![Adlisting Installation Step 9](/docs/adlisting/install/s9.png)
 
 ### Step 3: Create a Database
 
 We need a database for the next step. Let's create a database by clicking on the `MYSQL Database Wizard` from your hosting panel. Once the database is created assign all databaseÂ permission
 Follow the screenshots for step by step process.
 
-![](/docs/adlisting/install/s11.png)
-![](/docs/adlisting/install/s12.png)
-![](/docs/adlisting/install/s13.png)
-![](/docs/adlisting/install/s14.png)
+![Adlisting Installation Step 11](/docs/adlisting/install/s11.png)
+![Adlisting Installation Step 12](/docs/adlisting/install/s12.png)
+![Adlisting Installation Step 13](/docs/adlisting/install/s13.png)
+![Adlisting Installation Step 14](/docs/adlisting/install/s14.png)
 
 ### Step 4: Import the database
 
 We are going to import the demo database from Cpanel open `phpmyadmin` app. Then select your database and click on import. Choose the backup database from your computer and click on the "Go" Button.
 
-![](/docs/adlisting/install/s18.png)
-![](/docs/adlisting/install/s19.png)
+![Adlisting Installation Step 18](/docs/adlisting/install/s18.png)
+![Adlisting Installation Step 19](/docs/adlisting/install/s19.png)
 
 ### Step 5: Set DB Credentials on `.env` File
 
 Now we need to set up database credentials in our app config. Go to your application folder and follow the screenshot.
 
-![](/docs/adlisting/install/s15.png)
-![](/docs/adlisting/install/s16.png)
+![Adlisting Installation Step 15](/docs/adlisting/install/s15.png)
+![Adlisting Installation Step 16](/docs/adlisting/install/s16.png)
 
 ### Congratulations
 
@@ -93,8 +93,8 @@ Carefully, Set the necessary details marked in the screenshot. Congratulations ð
 
 `Notice: You must fill in the red mark field.`
 
-![](/docs/adlisting/install/s17.png)
-![](/docs/adlisting/install/s20.png)
+![Adlisting Installation Step 17](/docs/adlisting/install/s17.png)
+![Adlisting Installation Step 20](/docs/adlisting/install/s20.png)
 
 ### Admin Login Credentials
 

@@ -527,7 +527,7 @@
             <img
               class="aspect-[14/13] max-w-xs w-full rounded-2xl object-cover"
               src="/images/zakir-hossen.png"
-              alt=""
+              alt="zakir hossen"
             >
             <h3
               class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white"
