@@ -7,9 +7,9 @@ export default defineNuxtConfig({
     },
   },
   routeRules: {
-    '/blog/**': { ssr: false },
-    '/installation-plans/**': { ssr: false },
-    '/products/**': { ssr: false },
+    "/blog/**": { ssr: false },
+    "/installation-plans/**": { ssr: false },
+    "/products/**": { ssr: false },
   },
   app: {
     head: {
@@ -35,6 +35,85 @@ export default defineNuxtConfig({
         {
           innerHTML: `window.$crisp=[];window.CRISP_WEBSITE_ID="2b1427db-935d-4009-9088-6ae45945a27c";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`,
         },
+
+        {
+          type: 'application/ld+json',
+          innerHTML: JSON.stringify(
+            {
+              "@context": "http://schema.org",
+              "@type": "Organization",
+              "name": "Templatecookie",
+              "url": "https://www.templatecookie.com",
+              "logo": "https://www.templatecookie.com/logo.svg",
+              "description": "Templatecookie is a team of developers working on building quality templates and scripts! We create high-quality products to help you manage your business.",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "37/4, 3/A, Dhaka Uddan",
+                "addressLocality": "Dhaka",
+                "addressRegion": "Dhaka",
+                "postalCode": "1207",
+                "addressCountry": "Bangladesh"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "Sales Inquery",
+                "telephone": "+8801610774060",
+                "email": "hello@templatecookie.com",
+                "availableLanguage": "English",
+                "sameAs": "https://api.whatsapp.com/send?phone=8801610774060"
+              },
+              "email": "hello@templatecookie.com",
+              "telephone": "+8801610774060",
+              "sameAs": [
+                "https://www.facebook.com/templatecookie",
+                "https://www.pinterest.com/templatecookie/",
+                "https://dribbble.com/templatecookie/",
+                "https://github.com/templatecookie",
+                "https://www.figma.com/@templatecookie"
+              ],
+              "founder": {
+                "@type": "Person",
+                "name": "Zakir Hossen",
+                "email": "web.zakirbd@gmail.com",
+                "jobTitle": "Founder & CEO"
+              },
+              "product": [
+                {
+                  "@type": "Product",
+                  "name": "Jobpilot - Job Portal Laravel Script",
+                  "description": "Description of Product 1",
+                  "url": "https://templatecookie.com/demo/jobpilot-job-portal-script-php-laravel"
+                },
+                {
+                  "@type": "Product",
+                  "name": "Schooling - School Management System (SPA) Laravel Script",
+                  "description": "Description of Product 2",
+                  "url": "https://www.templatecookie.com/demo/schooling-school-management-system-script"
+                },
+                {
+                  "@type": "Product",
+                  "name": "Adlisting - Buy Sell Classified Ads Marketplace Laravel Script",
+                  "description": "Description of Product 2",
+                  "url": "https://www.templatecookie.com/demo/adlisting-classified-ads-script"
+                }
+              ],
+              "service": [
+                {
+                  "@type": "Service",
+                  "name": "Installation Plans",
+                  "description": "Streamline Your Setup with Templatecookie's Installation Plans. Effortlessly deploy software on the cloud with our tailored solutions. Choose the perfect plan for your needs.",
+                  "url": "https://www.templatecookie.com/installation-plans"
+                },
+                {
+                  "@type": "Service",
+                  "name": "Elite Support",
+                  "description": "Let us handle the technical parts, you focus on the business. Welcome to Templatecookie's Elite Support, where you can hire our team of expert developers at an unbelievably affordable rate.",
+                  "url": "https://www.templatecookie.com/elite-support"
+                }
+              ]
+            }
+          )
+        }
       ],
     },
   },
@@ -90,6 +169,6 @@ export default defineNuxtConfig({
     options: {
       // linkActiveClass: "khalil-vai",
       linkExactActiveClass: "!text-primary",
-    }
-  }
+    },
+  },
 });
