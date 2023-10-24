@@ -162,18 +162,3 @@
     },
   };
 </script>
-<!-- <script>
-  export default {
-    setup() {
-      const route = useRoute()
-      useHead({
-        link: [
-          {
-            rel: 'canonical',
-            href: 'https://www.templatecookie.com' + route.path,
-          },
-        ],
-      })
-    }
-  }
-</script> -->
