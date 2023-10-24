@@ -6,7 +6,11 @@ export default defineNuxtConfig({
       datoCmsToken: process.env.DATO_CMS_TOKEN,
     },
   },
-  ssr: true,
+  routeRules: {
+    '/blog/**': { ssr: false },
+    '/installation-plans/**': { ssr: false },
+    '/products/**': { ssr: false },
+  },
   app: {
     head: {
       title: "Premium PHP Scripts & HTML Templates | Templatecookie.com",
