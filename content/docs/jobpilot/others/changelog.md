@@ -9,6 +9,15 @@ category: Others
 
 ## October
 
+### v2.83.0  - 25th October, 2023
+
+```
+- feat: PWA Integration
+
+- fix: job bulk import issue
+- fix: candidate page visit issue
+```
+
 ### v2.82.0 - 23th October, 2023
 
 ```
