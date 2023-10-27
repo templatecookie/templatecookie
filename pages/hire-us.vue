@@ -4,7 +4,7 @@
     <hire-our-services />
     <hire-working-process />
     <hire-our-experties />
-    <!-- <hire-contact-us /> -->
+    <hire-contact-us />
   </div>
 </template>
 
