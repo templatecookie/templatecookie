@@ -22,11 +22,11 @@
         </defs>
         <rect width="404" height="404" fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)" />
       </svg>
-      <div class="text-center">
+      <div class="text-center" data-aos="fade-up" data-aos-delay="200">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Contact Us
         </h2>
-        <p class="mt-4 text-lg leading-6 text-gray-500">
+        <p class="mt-4 text-lg leading-6 text-gray-500" data-aos="fade-up" data-aos-delay="300">
           Our team will reach you within 24 hours and schedule a meeting at your
           convenience. Simply fill out the form.
         </p>
@@ -35,7 +35,7 @@
         <div class="w-full">
           <div
             class="relative z-10 h-auto p-8 py-10 overflow-hidden bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7"
-            data-rounded="rounded-lg" data-rounded-max="rounded-full">
+            data-rounded="rounded-lg" data-rounded-max="rounded-full" data-aos="fade-up" data-aos-delay="400">
             <form accept-charset="UTF-8" @submit="validateEmail"
               :action="isValidEmail ? 'https://pbj887.infusionsoft.com/app/form/process/a686c8c396862f4b1d3fd2e84ff2f89f' : ''"
               class="infusion-form" id="inf_form_a686c8c396862f4b1d3fd2e84ff2f89f" method="POST">
