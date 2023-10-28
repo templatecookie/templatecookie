@@ -62,7 +62,7 @@
             <structured-text
               :data="post.description"
               :render-inline-record="renderInlineRecord"
-              render-link-to-record="renderLinkToRecord"
+              :render-link-to-record="renderLinkToRecord"
             />
           </div>
         </div>
@@ -132,76 +132,51 @@
   </div>
 </template>
 
-<script>
-import dayjs from "dayjs";
+<script setup>
+import dayjs from 'dayjs';
 import BLOG_DETAILS from "~/graphql/blog/postDetails";
+const route = useRoute();
+const { slug } = route?.params;
 
-export default {
-  methods: {
-    renderInlineRecord: ({ record, h }) => {
-      switch (record.__typename) {
-        case "ProductRecord":
-          return h(
-            "nuxt-link",
-            { href: `/demo/${record.slug}` },
-            record.firstName,
-          );
-        case "PostRecord":
-          return h(
-            "nuxt-link",
-            { ...transformedMeta, to: `/blog/${record.slug}` },
-            children,
-          );
-        case "TagRecord":
-          return h(
-            "nuxt-link",
-            { ...transformedMeta, to: `/blog/${record.slug}` },
-            children,
-          );
-        default:
-          return null;
-      }
-    },
-    renderLinkToRecord: ({ record, h, children, transformedMeta }) => {
-      switch (record.__typename) {
-        case "TeamMemberRecord":
-          return h(
-            "a",
-            { ...transformedMeta, href: `/team/${record.slug}` },
-            children,
-          );
-        default:
-          return null;
-      }
-    },
-    formateDate(data) {
-      return dayjs(data).format("D MMMM, YYYY");
-    },
-  },
+const { data } = await useGraphqlQuery({ query: BLOG_DETAILS, variables: { slug } });
+const post = ref([]);
+const relatedPosts = ref([]);
+post.value = data._rawValue.post;
+relatedPosts.value = data._rawValue.allPosts;
 
-  async setup() {
-    const { data } = await useGraphqlQuery({ query: BLOG_DETAILS });
-    const post = ref([]);
-    const relatedPosts = ref([]);
-    post.value = data._rawValue.post;
-    relatedPosts.value = data._rawValue.allPosts;
+const title = `${post?._rawValue?.title} | Templatecookie.com`;
+const description = post?._rawValue?.shortDescription;
+const image = post?._rawValue?.image?.url;
 
-    const title = `${post?._rawValue?.title} | Templatecookie.com`;
-    const description = post?._rawValue?.shortDescription;
-    const image = post?._rawValue?.image?.url;
+useSeoMeta({
+  title: title,
+  ogTitle: title,
+  description: description,
+  ogDescription: description,
+  ogImage: image,
+});
 
-    useSeoMeta({
-      title: title,
-      ogTitle: title,
-      description: description,
-      ogDescription: description,
-      ogImage: image,
-    });
+const formateDate = (data) =>{
+  return dayjs(data).format("D MMMM, YYYY");
+}
 
-    return {
-      post,
-      relatedPosts,
-    };
-  },
+const renderInlineRecord = ({ record, children }) => {
+  switch (record.__typename) {
+    case "ProductRecord":
+      return h('a', { href: `/demo/${record.slug}` }, [record.firstName]);
+    case "PostRecord":
+      return h('a', { href: `/blog/${record.slug}` }, children);
+    case "TagRecord":
+      return h('a', { href: `/blog/${record.slug}` }, children);
+    default:
+      return null;
+  }
 };
+const renderLinkToRecord = ({ record, children }) => {
+  if (record.__typename === 'TeamMemberRecord') {
+    return h('a', { href: `/team/${record.slug}` }, children);
+  }
+  return null;
+};
+
 </script>
