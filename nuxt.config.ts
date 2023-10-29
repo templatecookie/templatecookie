@@ -83,20 +83,35 @@ export default defineNuxtConfig({
                 {
                   "@type": "Product",
                   "name": "Jobpilot - Job Portal Laravel Script",
-                  "description": "Description of Product 1",
-                  "url": "https://templatecookie.com/demo/jobpilot-job-portal-script-php-laravel"
+                  "description": "Jobpilot is a modern and high-quality Job Portal PHP Script that offers a wealth of features and tools to help you create a successful job portal or career portal business.",
+                  "url": "https://templatecookie.com/demo/jobpilot-job-portal-script-php-laravel",
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.12",  // The average rating of the product
+                    "reviewCount": "34"    // The number of reviews for the product
+                  }
                 },
                 {
                   "@type": "Product",
                   "name": "Schooling - School Management System (SPA) Laravel Script",
-                  "description": "Description of Product 2",
-                  "url": "https://www.templatecookie.com/demo/schooling-school-management-system-script"
+                  "description": "Efficiently manage your school with Schooling. The all-in-one PHP script for schools with multi-language support, payment gateway integration, and powerful academic management features. Try it now.",
+                  "url": "https://www.templatecookie.com/demo/schooling-school-management-system-script",
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.33",  // The average rating of the product
+                    "reviewCount": "6"    // The number of reviews for the product
+                  }
                 },
                 {
                   "@type": "Product",
                   "name": "Adlisting - Buy Sell Classified Ads Marketplace Laravel Script",
-                  "description": "Description of Product 2",
-                  "url": "https://www.templatecookie.com/demo/adlisting-classified-ads-script"
+                  "description": "Adlisting is a premium PHP script with minimal, clean, flexible, and structured code. Using the script you can create stunning ad listing websites to buy/sell classified ads and generate revenues.",
+                  "url": "https://www.templatecookie.com/demo/adlisting-classified-ads-script",
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "3.40",  // The average rating of the product
+                    "reviewCount": "5"    // The number of reviews for the product
+                  }
                 }
               ],
               "service": [
