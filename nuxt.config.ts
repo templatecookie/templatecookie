@@ -148,6 +148,17 @@ export default defineNuxtConfig({
     "@nuxtjs/robots",
     "nuxt-simple-sitemap",
   ],
+  robots: {
+    UserAgent: '*',
+    Disallow: [
+      '/jobpilot.templatecookie.com/job/',
+      '/jobpilot.templatecookie.com/employers/',
+      '/templatecookie.com/api/',
+      '/jobpilot.templatecookie.com/post/',
+      '/adlisting.templatecookie.com/ad/',
+      '/adlisting.templatecookie.com/blog/'
+    ],
+  },
 
   // PhosphorIcon Config
   phosphor: {
