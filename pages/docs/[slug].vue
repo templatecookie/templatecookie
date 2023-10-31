@@ -69,6 +69,7 @@
 
 <script setup>
 const { path } = useRoute();
+const router = useRouter();
 const newPath = path.match(/^\/docs\/\w+/);
 // fetch all pages.
 const { data } = await useAsyncData("docs-product", () =>
@@ -100,6 +101,13 @@ useHead({
       href: "https://templatecookie.com" + route.path,
     },
   ],
+});
+
+router.afterEach((updatedRoute) => {
+  console.log({ updatedRoute });
+  if (updatedRoute.name === "docs-slug") {
+    product.value = { ...data._rawValue[0], seoTitle: data._rawValue[0].title };
+  }
 });
 </script>
 
