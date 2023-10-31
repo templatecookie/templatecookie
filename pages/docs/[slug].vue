@@ -68,8 +68,11 @@
 </template>
 
 <script setup>
+import groupBy from "lodash.groupby";
+
 const { path } = useRoute();
 const router = useRouter();
+
 const newPath = path.match(/^\/docs\/\w+/);
 // fetch all pages.
 const { data } = await useAsyncData("docs-product", () =>
@@ -83,6 +86,15 @@ const { data } = await useAsyncData("docs-product", () =>
 const product = ref([]);
 product.value = { ...data._rawValue[0], seoTitle: data._rawValue[0].title };
 
+// group by categories using lodash library
+const categories = groupBy(data._rawValue, "category");
+
+router.afterEach((updatedRoute) => {
+  if (updatedRoute.name === "docs-slug") {
+    product.value = { ...data._rawValue[0], seoTitle: data._rawValue[0].title };
+  }
+});
+
 useSeoMeta({
   title: product.value.title,
   ogTitle: product.value.title,
@@ -90,24 +102,13 @@ useSeoMeta({
   ogDescription: product.value.description,
 });
 
-// group by categories using lodash library
-import groupBy from "lodash.groupby";
-const categories = groupBy(data._rawValue, "category");
-const route = useRoute();
 useHead({
   link: [
     {
       rel: "canonical",
-      href: "https://templatecookie.com" + route.path,
+      href: "https://templatecookie.com" + path,
     },
   ],
-});
-
-router.afterEach((updatedRoute) => {
-  console.log({ updatedRoute });
-  if (updatedRoute.name === "docs-slug") {
-    product.value = { ...data._rawValue[0], seoTitle: data._rawValue[0].title };
-  }
 });
 </script>
 
