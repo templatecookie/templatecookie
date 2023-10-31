@@ -1,9 +1,7 @@
 <template>
   <div class="flex w-full md:flex-wrap">
     <div class="px-6 pb-0 w-8/12 h-full">
-      <h2 class="text-4xl mb-10 font-semibold">
-        Frequently Asked Questions
-      </h2>
+      <h2 class="text-4xl mb-10 font-semibold">Frequently Asked Questions</h2>
       <div class="mt-12 lg:col-span-2 lg:mt-0">
         <dl class="space-y-12 markdown-body">
           <div>
@@ -36,3 +34,24 @@
     </div>
   </div>
 </template>
+
+<script setup>
+const route = useRoute();
+const emit = defineEmits(["onLoad"]);
+const productName =
+  route.params.slug.charAt(0).toUpperCase() + route.params.slug.slice(1);
+
+const seoTitle = `Frequently Asked Questions - ${productName} Documentation`;
+const description = "";
+
+useSeoMeta({
+  title: seoTitle,
+  ogTitle: seoTitle,
+  description: description,
+  ogDescription: description,
+});
+
+onBeforeMount(() => {
+  emit("onLoad", { seoTitle, description });
+});
+</script>
