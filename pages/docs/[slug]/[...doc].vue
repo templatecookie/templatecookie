@@ -101,6 +101,7 @@
 <script setup>
 const currentlyActiveToc = ref("");
 const content = ref(null);
+const emit = defineEmits(["onLoad"]);
 function tocHeadClick(link) {
   return (currentlyActiveToc.value = link.id);
 }
@@ -110,12 +111,13 @@ const observerOptions = {
   threshold: 0,
 };
 const { path } = useRoute();
+const router = useRouter();
 const { data } = await useAsyncData("home", () =>
   queryContent(`${path}`)
     .sort({
       position: "asc",
     })
-    .findOne(),
+    .findOne()
 );
 
 content.value = data?._rawValue?.body;
@@ -123,14 +125,21 @@ const tocLinks = data?._rawValue?.body?.toc?.links;
 const title = data?._rawValue?.title;
 const description = data?._rawValue?.description;
 
+// Find the product name and capitilized
+const productName = data?._rawValue?._path?.replace(/\/docs\/([^/]+).*/, "$1");
+const capitalizeProductName =
+  productName.charAt(0).toUpperCase() + productName.slice(1);
+const seoTitle = `${title} - ${capitalizeProductName} Documentation`;
+
 useSeoMeta({
-  title: title,
-  ogTitle: title,
+  title: seoTitle,
+  ogTitle: seoTitle,
   description: description,
   ogDescription: description,
 });
 
 onMounted(() => {
+  emit("onLoad", { seoTitle, description });
   tocHeadClick(tocLinks.length ?? tocLinks[0]);
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
