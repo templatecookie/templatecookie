@@ -7,6 +7,21 @@ category: Others
 
 # Changelog
 
+## November
+
+### v3.0 - 1st November, 2023
+
+```
+- feat: Laravel 10 compatibility
+
+- fix: Bulk job import issue fix
+- fix: Company broken url issue fix
+- fix: PWA configuration update issue fix
+- fix: Failed written test issue fix
+
+- Improvement : Mail configuration update
+```
+
 ## October
 
 ### v2.83.0  - 25th October, 2023
