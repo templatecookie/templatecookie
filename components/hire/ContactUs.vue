@@ -80,10 +80,7 @@
         </p>
       </div>
       <div class="mt-12">
-        <div
-          id="hireUsForm"
-          class="pt-8 py-4 px-6 bg-white rounded-lg"
-        />
+        <div id="hireUsForm" class="pt-8 py-4 px-6 bg-white rounded-lg" />
         <!-- <form action="#" method="POST" class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
           <div class="sm:col-span-2">
             <label for="first-name" class="block text-sm font-medium text-gray-700">Your name</label>
@@ -122,15 +119,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  mounted() {
-    window.hbspt.forms.create({
-      region: "na1",
-      portalId: "22174697",
-      formId: "55ae1706-e17a-40a0-81db-275fc2d1030a",
-      target: "#hireUsForm",
-    });
-  },
-};
+<script setup>
+onMounted(() => {
+  window?.hbspt?.forms?.create({
+    region: "na1",
+    portalId: "22174697",
+    formId: "55ae1706-e17a-40a0-81db-275fc2d1030a",
+    target: "#hireUsForm",
+  });
+});
 </script>

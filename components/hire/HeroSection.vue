@@ -1,9 +1,6 @@
 <template>
   <div class="relative overflow-hidden bg-gray-800">
-    <div
-      class="hidden sm:absolute sm:inset-0 sm:block"
-      aria-hidden="true"
-    >
+    <div class="hidden sm:absolute sm:inset-0 sm:block" aria-hidden="true">
       <svg
         class="absolute bottom-0 right-0 mb-48 translate-x-1/2 transform text-gray-700 lg:top-0 lg:mt-28 lg:mb-0 xl:translate-x-0 xl:transform-none"
         width="364"
@@ -20,13 +17,7 @@
             height="20"
             patternUnits="userSpaceOnUse"
           >
-            <rect
-              x="0"
-              y="0"
-              width="4"
-              height="4"
-              fill="currentColor"
-            />
+            <rect x="0" y="0" width="4" height="4" fill="currentColor" />
           </pattern>
         </defs>
         <rect
@@ -55,7 +46,7 @@
               class="mt-4 text-4xl font-bold text-white sm:text-5xl lg:text-6xl lg:leading-snug"
               data-aos-delay="200"
             >
-              Looking for Partner <br>
+              Looking for Partner <br />
               for your Next Project?
             </h1>
             <p
@@ -81,15 +72,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  mounted() {
-    window.hbspt.forms.create({
-      region: "na1",
-      portalId: "22174697",
-      formId: "55ae1706-e17a-40a0-81db-275fc2d1030a",
-      target: "#hubspotForm",
-    });
-  },
-};
+<script setup>
+onMounted(() => {
+  window?.hbspt?.forms?.create({
+    region: "na1",
+    portalId: "22174697",
+    formId: "55ae1706-e17a-40a0-81db-275fc2d1030a",
+    target: "#hubspotForm",
+  });
+});
 </script>
