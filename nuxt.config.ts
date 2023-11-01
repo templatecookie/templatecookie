@@ -20,7 +20,6 @@ export default defineNuxtConfig({
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
-          hid: "description",
           name: "description",
           content:
             "A team of talented developers working on building quality UI,HTML templates and PHP scripts! Reuseable Website Templates & PHP Scripts for your next project!",
@@ -176,6 +175,7 @@ export default defineNuxtConfig({
     markdown: {
       toc: { depth: 2, searchDepth: 2 },
     },
+    contentHead: false
   },
 
   googleFonts: {

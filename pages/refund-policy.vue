@@ -15,12 +15,8 @@
     <div class="py-12">
       <div class="flex justify-center">
         <div class="max-w-2xl mx-auto px-4 py-8 sm:px-6">
-          <h1 class="text-2xl font-bold mb-4">
-            Refund Policy
-          </h1>
-          <p class="mt-2 text-gray-600">
-            Last updated: {{ currentDate }}
-          </p>
+          <h2 class="text-2xl font-bold mb-4">Refund Policy</h2>
+          <p class="mt-2 text-gray-600">Last updated: {{ currentDate }}</p>
           <p class="mt-4">
             At Templatecookie, we are committed to providing high-quality
             products and services to our customers. We understand that sometimes

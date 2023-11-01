@@ -1,9 +1,7 @@
 <template>
   <div class="flex w-full md:flex-wrap">
     <div class="px-6 pb-0 w-8/12 h-full">
-      <h2 class="text-4xl mb-10 font-semibold">
-        Hosting & domains
-      </h2>
+      <h2 class="text-4xl mb-10 font-semibold">Hosting & domains</h2>
       <div class="mb-8">
         <h4 class="text-2xl font-medium my-5">
           VPS Hosting (intermediate, advanced)
@@ -17,7 +15,8 @@
             target="_blank"
             class="text-blue-600"
           >
-            Cloudways.</a>
+            Cloudways.</a
+          >
         </p>
         <a
           href="http://go.templatecookie.com/cloudways"
@@ -33,11 +32,7 @@
             fill="currentColor"
             viewBox="0 0 256 256"
           >
-            <rect
-              width="256"
-              height="256"
-              fill="none"
-            />
+            <rect width="256" height="256" fill="none" />
             <path
               d="M122.3,71.4l19.8-19.8a44.1,44.1,0,0,1,62.3,62.3l-28.3,28.2a43.9,43.9,0,0,1-62.2,0"
               fill="none"
@@ -67,7 +62,8 @@
             href="http://go.templatecookie.com/digitalocean"
             target="_blank"
             class="text-blue-600"
-          >Digitalocean</a>.
+            >Digitalocean</a
+          >.
         </p>
         <a
           href="http://go.templatecookie.com/digitalocean"
@@ -83,11 +79,7 @@
             fill="currentColor"
             viewBox="0 0 256 256"
           >
-            <rect
-              width="256"
-              height="256"
-              fill="none"
-            />
+            <rect width="256" height="256" fill="none" />
             <path
               d="M122.3,71.4l19.8-19.8a44.1,44.1,0,0,1,62.3,62.3l-28.3,28.2a43.9,43.9,0,0,1-62.2,0"
               fill="none"
@@ -109,9 +101,7 @@
       </div>
 
       <div class="mb-8">
-        <h4 class="text-2xl font-medium my-5">
-          Shared hosting (beginner)
-        </h4>
+        <h4 class="text-2xl font-medium my-5">Shared hosting (beginner)</h4>
         <p class="my-4">
           When you are starting out and you do not have that much knowledge, I
           would highly suggest getting a
@@ -119,7 +109,8 @@
             href="http://go.templatecookie.com/namecheap"
             class="text-blue-600"
             target="_blank"
-          >shared webhosting</a>
+            >shared webhosting</a
+          >
           plan.
         </p>
 
@@ -142,11 +133,7 @@
             fill="currentColor"
             viewBox="0 0 256 256"
           >
-            <rect
-              width="256"
-              height="256"
-              fill="none"
-            />
+            <rect width="256" height="256" fill="none" />
             <path
               d="M122.3,71.4l19.8-19.8a44.1,44.1,0,0,1,62.3,62.3l-28.3,28.2a43.9,43.9,0,0,1-62.2,0"
               fill="none"
@@ -168,9 +155,7 @@
       </div>
 
       <div class="mb-8">
-        <h4 class="text-2xl font-medium my-5">
-          Domains
-        </h4>
+        <h4 class="text-2xl font-medium my-5">Domains</h4>
         <p class="my-4">
           Since I have found
           <a
@@ -198,11 +183,7 @@
             fill="currentColor"
             viewBox="0 0 256 256"
           >
-            <rect
-              width="256"
-              height="256"
-              fill="none"
-            />
+            <rect width="256" height="256" fill="none" />
             <path
               d="M122.3,71.4l19.8-19.8a44.1,44.1,0,0,1,62.3,62.3l-28.3,28.2a43.9,43.9,0,0,1-62.2,0"
               fill="none"
@@ -225,3 +206,24 @@
     </div>
   </div>
 </template>
+
+<script setup>
+const route = useRoute();
+const emit = defineEmits(["onLoad"]);
+const productName =
+  route.params.slug.charAt(0).toUpperCase() + route.params.slug.slice(1);
+
+const seoTitle = `Hosting & domains - ${productName} Documentation`;
+const description = "";
+
+useSeoMeta({
+  title: seoTitle,
+  ogTitle: seoTitle,
+  description: description,
+  ogDescription: description,
+});
+
+onBeforeMount(() => {
+  emit("onLoad", { seoTitle, description });
+});
+</script>
