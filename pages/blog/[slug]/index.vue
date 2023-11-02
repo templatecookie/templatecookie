@@ -3,27 +3,16 @@
     <div class="bg-blue-600">
       <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="py-12">
-          <h1 class="!text-white text-2xl lg:text-5xl mb-2">
-            Blog Details
-          </h1>
+          <h1 class="!text-white text-2xl lg:text-5xl mb-2">Blog Details</h1>
           <div class="text-gray-200 font-light">
-            <nuxt-link
-              to="/blog"
-              class="!text-gray-200 hover:text-gray-600"
-            >
+            <nuxt-link to="/blog" class="!text-gray-200 hover:text-gray-600">
               Home
             </nuxt-link>
-            <nuxt-link
-              class="!text-gray-200 hover:text-gray-600"
-              to="/blog"
-            >
+            <nuxt-link class="!text-gray-200 hover:text-gray-600" to="/blog">
               Blog
             </nuxt-link>
             /
-            <a
-              href="javascript:void(0)"
-              class="!text-gray-300"
-            >
+            <a href="javascript:void(0)" class="!text-gray-300">
               {{ post.title }}
             </a>
           </div>
@@ -43,11 +32,7 @@
                 formateDate(post.updatedAt)
               }}</span>
               Category:
-              <a
-                href="#"
-                v-for="(tag, index) in post.tags"
-                :key="index"
-              >
+              <a href="#" v-for="(tag, index) in post.tags" :key="index">
                 {{ tag.name }},
               </a>
             </div>
@@ -57,7 +42,7 @@
             v-if="post.image && post.image.url"
             :src="post.image.url"
             :alt="post.title"
-          >
+          />
           <div class="content py-4 markdown-body">
             <structured-text
               :data="post.description"
@@ -73,7 +58,7 @@
             >
               Read More
             </h4>
-            <hr class="my-6">
+            <hr class="my-6" />
             <div class="-my-8 divide-y-2 divide-gray-100">
               <div
                 class="py-8 flex flex-wrap md:flex-nowrap group"
@@ -85,7 +70,8 @@
                     class="font-semibold title-font text-gray-700"
                     v-for="(tag, index) in item.tags"
                     :key="index"
-                  >{{ tag.name }}</span>
+                    >{{ tag.name }}</span
+                  >
                   <span class="mt-1 text-gray-500 text-sm">{{
                     item.updatedAt
                   }}</span>
@@ -133,12 +119,15 @@
 </template>
 
 <script setup>
-import dayjs from 'dayjs';
+import dayjs from "dayjs";
 import BLOG_DETAILS from "~/graphql/blog/postDetails";
 const route = useRoute();
 const { slug } = route?.params;
 
-const { data } = await useGraphqlQuery({ query: BLOG_DETAILS, variables: { slug } });
+const { data } = await useGraphqlQuery({
+  query: BLOG_DETAILS,
+  variables: { slug },
+});
 const post = ref([]);
 const relatedPosts = ref([]);
 post.value = data._rawValue.post;
@@ -156,27 +145,35 @@ useSeoMeta({
   ogImage: image,
 });
 
-const formateDate = (data) =>{
+const formateDate = (data) => {
   return dayjs(data).format("D MMMM, YYYY");
-}
+};
 
 const renderInlineRecord = ({ record, children }) => {
   switch (record.__typename) {
     case "ProductRecord":
-      return h('a', { href: `/demo/${record.slug}` }, [record.firstName]);
+      return h("a", { href: `/demo/${record.slug}` }, [record.firstName]);
     case "PostRecord":
-      return h('a', { href: `/blog/${record.slug}` }, children);
+      return h("a", { href: `/blog/${record.slug}` }, children);
     case "TagRecord":
-      return h('a', { href: `/blog/${record.slug}` }, children);
+      return h("a", { href: `/blog/${record.slug}` }, children);
     default:
       return null;
   }
 };
 const renderLinkToRecord = ({ record, children }) => {
-  if (record.__typename === 'TeamMemberRecord') {
-    return h('a', { href: `/team/${record.slug}` }, children);
+  if (record.__typename === "TeamMemberRecord") {
+    return h("a", { href: `/team/${record.slug}` }, children);
   }
   return null;
 };
 
+useHead({
+  link: [
+    {
+      rel: "canonical",
+      href: "https://templatecookie.com" + route.path,
+    },
+  ],
+});
 </script>
