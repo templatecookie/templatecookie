@@ -22,8 +22,7 @@
               data-aos="fade-up" data-aos-delay="100">
               Partner with us today!
             </a>
-            <h1 data-aos="fade-up" class="mt-4 text-4xl font-bold text-white sm:text-5xl lg:text-6xl lg:leading-snug"
-              data-aos-delay="200">
+            <h1 class="mt-4 text-4xl font-bold text-white sm:text-5xl lg:text-6xl lg:leading-snug">
               Looking for Partner <br>
               for your Next Project?
             </h1>

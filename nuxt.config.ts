@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     "/installation-plans/**": { ssr: false },
     "/products/**": { ssr: false },
   },
-  ssr: false,
+  ssr: true,
   app: {
     head: {
       title: "Premium PHP Scripts & HTML Templates | Templatecookie.com",
