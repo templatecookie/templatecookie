@@ -86,7 +86,6 @@ const route = useRoute();
 const { data, error } = await useGraphqlQuery({ query: ALL_PRODUCT_PLANS });
 products.value = data?._rawValue?.allProductplans;
 selectedProduct.value = "id" + products.value[0]?.product?.id;
-console.log({ products });
 
 const selectedProductData = computed(() => {
   return products.value.find((elem) => {
