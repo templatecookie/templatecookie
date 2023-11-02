@@ -189,8 +189,7 @@ export default defineNuxtConfig({
   router: {
     // https://router.vuejs.org/api/interfaces/routeroptions.html
     options: {
-      // linkActiveClass: "khalil-vai",
-      linkExactActiveClass: "!text-primary",
+      linkExactActiveClass: "text-primary",
     },
   },
 });
