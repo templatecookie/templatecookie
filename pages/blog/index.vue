@@ -44,6 +44,9 @@ useSeoMeta({
   description: description,
   ogDescription: description,
   ogImage: "/social-meta.png",
+});
+
+useHead({
   link: [
     {
       rel: "canonical",
