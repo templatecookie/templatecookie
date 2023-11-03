@@ -8,22 +8,23 @@ category: Others
 # Changelog
 
 ---
-### v3.6.17 - 3rd November 2023
+### v3.2.0 - 3rd November 2023
 ```
-- feat: RTL Support.
-- feat: Implement Error Handling with Try-Catch.
-- feat: Customize Video URL on the About Page.
 - feat: Add reCAPTCHA to Blog Comment Section.
-- feat: Set Latitude and Longitude on Map
 
+- fix: RTL support.
 - fix: Social account visibility.
-- fix: Social login issue fix
-- fix: App name update issue
-- fix: Mail string issue fix
+- fix: Social login issue fix.
+- fix: App name update issue.
+- fix: Mail string issue fix.
+- fix: Set latitude and longitude on map.
+- fix: Customize video URL on the about page.
 
+- improvement: Implement error handling with try-catch.
 - improvement: Admin section quick action items.
 - improvement: Config zakirsoft.php to templatecookie.php
-- improvement: links.blade.php replace with styles.blade.php
+- improvement: Replace links.blade.php to styles.blade.
+php
 ```
 ### v3.1.10 - 20th October 2023
 
