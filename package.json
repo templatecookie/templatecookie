@@ -35,13 +35,13 @@
     "nuxt": "^3.7.4",
     "nuxt-phosphor-icons": "^1.0.7",
     "nuxt-purgecss": "^2.0.0",
+    "nuxt-simple-robots": "^3.1.9",
     "nuxt-simple-sitemap": "^3.4.0",
     "prettier": "^3.0.0"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.7",
     "@heroicons/vue": "^2.0.13",
-    "@nuxtjs/robots": "^3.0.0",
     "@tailwindcss/forms": "^0.5.3",
     "autoprefixer": "^10.4.14",
     "dayjs": "^1.11.9",

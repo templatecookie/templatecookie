@@ -6,12 +6,15 @@ export default defineNuxtConfig({
       datoCmsToken: process.env.DATO_CMS_TOKEN,
     },
   },
-  routeRules: {
-    "/blog/**": { ssr: false },
-    "/installation-plans/**": { ssr: false },
-    "/products/**": { ssr: false },
-  },
+  // routeRules: {
+  //   "/blog/**": { ssr: false },
+  //   "/installation-plans/**": { ssr: false },
+  //   "/products/**": { ssr: false },
+  // },
   ssr: true,
+  site: {
+    url: 'https://www.templatecookie.com/',
+  },
   app: {
     head: {
       title: "Premium PHP Scripts & HTML Templates | Templatecookie.com",
@@ -145,12 +148,11 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxtjs/google-fonts",
     "nuxt-phosphor-icons",
-    "@nuxtjs/robots",
+    "nuxt-simple-robots",
     "nuxt-simple-sitemap",
   ],
   robots: {
-    UserAgent: '*',
-    Disallow: [
+    disallow: [
       '/jobpilot.templatecookie.com/job/',
       '/jobpilot.templatecookie.com/employers/',
       '/templatecookie.com/api/',
@@ -196,7 +198,7 @@ export default defineNuxtConfig({
     // https://router.vuejs.org/api/interfaces/routeroptions.html
     options: {
       // linkActiveClass: "khalil-vai",
-      linkExactActiveClass: "!text-primary",
+      // linkExactActiveClass: "!text-primary",
     },
   },
 });

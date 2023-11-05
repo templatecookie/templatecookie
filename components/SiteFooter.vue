@@ -1,7 +1,7 @@
 <template>
   <div>
     <footer
-      class="bg-gray-900 mt-20"
+      class="bg-gray-900 mt-20 tc-primary-footer"
       aria-labelledby="footer-heading"
     >
       <h2
@@ -16,15 +16,14 @@
       >
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
           <div class="space-y-8 xl:col-span-1">
-            <img
+            <!-- <img
               class="h-10"
               v-if="footer.logo.url"
               :src="footer.logo.url"
               alt="Templatecookie Footer Logo"
-            >
+            > -->
             <img
               class="h-10"
-              v-else
               src="/logo-white.svg"
               alt="Templatecookie White Logo SVG"
             >

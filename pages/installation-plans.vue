@@ -80,70 +80,55 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import ALL_PRODUCT_PLANS from "../graphql/allProductPlans";
-import useGraphqlQuery from "~/composables/useGraphqlQuery";
+const selectedProduct = ref(null);
+const products = ref({});
+const bannerImg = ref("/img-five.png");
 
-export default {
-  async setup() {
-    const selectedProduct = ref(null);
-    const products = ref({});
-    const bannerImg = ref("/img-five.png");
+const { data, error } = await useGraphqlQuery({ query: ALL_PRODUCT_PLANS });
+products.value = data?._rawValue?.allProductplans;
 
-    const { data, error } = await useGraphqlQuery({ query: ALL_PRODUCT_PLANS });
-    products.value = data?._rawValue?.allProductplans;
+const selectedProductData = computed(() => {
+  return products.value.find((elem) => {
+    return (
+      elem.product.id ===
+      (selectedProduct.value
+        ? selectedProduct.value.replace("id", "")
+        : null)
+    );
+  });
+});
 
-    const selectedProductData = computed(() => {
-      return products.value.find((elem) => {
-        return (
-          elem.product.id ===
-          (selectedProduct.value
-            ? selectedProduct.value.replace("id", "")
-            : null)
-        );
-      });
-    });
+const selectedProductPlans = computed(() => {
+  if (selectedProductData.value) {
+    return selectedProductData?.value?.plans?.map(
+      (item) => item.priceplan[0],
+    );
+  }
+});
 
-    const selectedProductPlans = computed(() => {
-      if (selectedProductData.value) {
-        return selectedProductData?.value?.plans?.map(
-          (item) => item.priceplan[0],
-        );
-      }
-    });
+const title = "Installation Plans | Templatecookie Products";
+const description =
+  "Buy our premium installation support package, our expert team will help you get your app installed & configured.";
 
-    const title = "Installation Plans | Templatecookie Products";
-    const description =
-      "Buy our premium installation support package, our expert team will help you get your app installed & configured.";
+useSeoMeta({
+  title: title,
+  ogTitle: title,
+  description: description,
+  ogDescription: description,
+  ogImage: "/social.png",
+});
 
-    useSeoMeta({
-      title: title,
-      ogTitle: title,
-      description: description,
-      ogDescription: description,
-      ogImage: "/social.png",
-    });
-
-    const scrollDown = () => {
-      const elements = document.getElementsByClassName("pricing-section");
-      if (elements.length > 0) {
-        elements[0].scrollIntoView({ behavior: "smooth" });
-      }
-    };
-
-    return {
-      bannerImg,
-      products,
-      selectedProduct,
-      selectedProductData,
-      selectedProductPlans,
-      scrollDown,
-    };
-  },
-  created() {
-    this.selectedProduct = "id" + this.products[0]?.product?.id;
-  },
+const scrollDown = () => {
+  const elements = document.getElementsByClassName("pricing-section");
+  if (elements.length > 0) {
+    elements[0].scrollIntoView({ behavior: "smooth" });
+  }
 };
+
+// "id" + products[0]?.product?.id
+console.log(products) 
 </script>
 
 <style lang="scss" scoped>

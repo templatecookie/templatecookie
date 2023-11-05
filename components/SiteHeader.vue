@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white">
-    <header>
+    <header class="tc-primary-header">
       <div class="relative bg-white">
         <div
           class="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 md:justify-start lg:space-x-10"
@@ -277,8 +277,11 @@ export default {
   opacity: 1;
   transform: translateY(12px);
 }
-.bg-primary.router-link-active {
+.tc-primary-header .router-link-exact-active:not(.bg-primary) {
+  color: rgb(11, 99, 229) !important;
+}
+
+.tc-primary-footer .router-link-exact-active:not(.bg-primary) {
   color: white !important;
-  background-color: rgb(117, 52, 255) !important;
 }
 </style>
