@@ -81,9 +81,28 @@
 </template>
 
 <script setup>
+import useGraphqlQuery from "~/composables/useGraphqlQuery";
+import HOMEPAGE_QUERY from "../graphql/homepage";
+
 const title = "Premium Quality Scripts & HTML Templates | Templatecookie.com";
 const description =
   "Templatecookie is a team of developers working on building quality templates and scripts! We create high-quality products to help you manage your business.";
+
+const mobileMenuOpen = ref(false);
+const { data, error } = await useGraphqlQuery({ query: HOMEPAGE_QUERY });
+const homepage = data._rawValue.homepage;
+const latestProducts = data._rawValue.allProducts;
+const latestPosts = data._rawValue.allPosts;
+const route = useRoute();
+
+useHead({
+  link: [
+    {
+      rel: "canonical",
+      href: "https://templatecookie.com" + route.path,
+    },
+  ],
+});
 
 useSeoMeta({
   title: title,
@@ -93,22 +112,8 @@ useSeoMeta({
   ogImage: "/social-meta.png",
 });
 
-import useGraphqlQuery from "~/composables/useGraphqlQuery";
-import HOMEPAGE_QUERY from "../graphql/homepage";
-
-const mobileMenuOpen = ref(false);
-const { data, error } = await useGraphqlQuery({ query: HOMEPAGE_QUERY });
-const homepage = data._rawValue.homepage;
-const latestProducts = data._rawValue.allProducts;
-const latestPosts = data._rawValue.allPosts;
-
-const route = useRoute();
-useHead({
-  link: [
-    {
-      rel: "canonical",
-      href: "https://templatecookie.com" + route.path,
-    },
-  ],
+defineOgImage({
+  title: title,
+  description: description,
 });
 </script>
