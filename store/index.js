@@ -1,15 +1,11 @@
-export const state = () => ({
-  global: null,
-});
+// store.js
+import { reactive } from 'vue'
 
-export const getters = {
-  getGlobalData(state) {
-    return state.global;
-  },
-};
+const store = reactive({
+  global: {},
+  setGlobal(data) {
+    this.global = data
+  }
+})
 
-export const mutations = {
-  SET_GLOBAL_DATA(state, data) {
-    state.global = data;
-  },
-};
+export default store;

@@ -11,7 +11,9 @@
 </template>
 
 <script setup>
+import store from "~/store";
 import Global from "../graphql/global";
 
 const { data } = await useGraphqlQuery({ query: Global });
+store.setGlobal(data.value.global);
 </script>
