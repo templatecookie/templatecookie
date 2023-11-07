@@ -470,71 +470,7 @@
       </div>
     </div>
 
-    <!-- / Team  -->
-    <div class="bg-gray-900 py-24 sm:py-32">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl lg:mx-0">
-          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Team Expertise
-          </h2>
-          <p class="mt-6 text-lg leading-8 text-gray-300">
-            Our team of highly skilled developers specializes in PHP scripting
-            and web development. With years of experience, they possess in-depth
-            knowledge of our products and are committed to delivering
-            exceptional support.
-          </p>
-        </div>
-        <ul
-          role="list"
-          class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-3"
-        >
-          <li>
-            <img
-              class="aspect-[14/13] max-w-xs w-full rounded-2xl object-cover"
-              src="/images/zafor-iqbal.jpg"
-              alt=""
-            />
-            <h3
-              class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white"
-            >
-              Zafor Iqbal
-            </h3>
-            <p class="text-base leading-7 text-gray-300">
-              User Interface Designer
-            </p>
-            <!-- <p class="text-sm leading-6 text-gray-500">Toronto, Canada</p> -->
-          </li>
-          <li>
-            <img
-              class="aspect-[14/13] max-w-xs w-full rounded-2xl object-cover"
-              src="/images/ariful-islam.png"
-              alt=""
-            />
-            <h3
-              class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white"
-            >
-              Ariful Islam
-            </h3>
-            <p class="text-base leading-7 text-gray-300">Software Developer</p>
-            <!-- <p class="text-sm leading-6 text-gray-500">Toronto, Canada</p> -->
-          </li>
-          <li>
-            <img
-              class="aspect-[14/13] max-w-xs w-full rounded-2xl object-cover"
-              src="/images/zakir-hossen.png"
-              alt="zakir hossen"
-            />
-            <h3
-              class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white"
-            >
-              Zakir Hossen
-            </h3>
-            <p class="text-base leading-7 text-gray-300">Project Manager</p>
-            <!-- <p class="text-sm leading-6 text-gray-500">Toronto, Canada</p> -->
-          </li>
-        </ul>
-      </div>
-    </div>
+    <team-section title="Team Expertise" description="Our team of highly skilled developers specializes in Custom software and website development. With years of experience, they possess in-depth knowledge of our products and are committed to delivering exceptional support." :members="teamMembers" />
 
     <!-- / FAQ  -->
     <div class="bg-white">
@@ -950,6 +886,44 @@ export default {
           ],
         },
       ],
+      teamMembers: [
+        {
+          name: 'Zafor Iqbal',
+          role: "User Interface Designer",
+          location: "Dhaka, Bangladesh",
+          avatar: "/images/zafor-iqbal.jpg",
+        },
+        {
+          name: 'Rakibul Islam',
+          role: "Frontend Developer",
+          location: "Dhaka, Bangladesh",
+          avatar: "/images/rakibul-islam.png",
+        },
+        {
+          name: 'Suraiya Aysha',
+          role: "Laravel Developer",
+          location: "Khulna, Bangladesh",
+          avatar: "/images/suraiya-aysha.png",
+        },
+        {
+          name: 'Opu Saha',
+          role: "Laravel Developer",
+          location: "Narsingdi, Bangladesh",
+          avatar: "/images/opu-saha.png",
+        },
+        {
+          name: 'Khalil Uddin',
+          role: "Laravel Developer",
+          location: "Noakhali, Bangladesh",
+          avatar: "/images/khalil-uddin.png",
+        },
+        {
+          name: 'Zakir Hossen',
+          role: "CEO & Founder",
+          location: "Dhaka, Bangladesh",
+          avatar: "/images/zakir-hossen.png",
+        },
+      ]
     };
   },
 };
