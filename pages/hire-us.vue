@@ -9,10 +9,13 @@
 </template>
 
 <script setup>
+import store from "~/store";
+
 const title = "Hire Expert Designer & Developers | Templatecookie";
 const description =
   "We have expert developers and designers to help you build your next dream project. Our team composed with experts in various industry";
 const route = useRoute();
+const siteLogo = store.global?.logo?.url;
 
 useSeoMeta({
   title: title,
@@ -58,8 +61,10 @@ useHead({
   ],
 });
 
-// defineOgImage({
-//   title: title,
-//   description: description,
-// });
+defineOgImage({
+  component: "Hireus",
+  title: title,
+  description: description,
+  siteLogo: siteLogo,
+});
 </script>
