@@ -33,6 +33,7 @@
       </div>
     </div>
 
+    <!-- // What we do?  -->
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <div class="max-w-2xl mx-auto">
         <div class="grid gap-12">
@@ -164,7 +165,7 @@
       </div>
     </div>
 
-    <!-- Comparison -->
+    <!-- Benefits and Features -->
     <div class="relative isolate bg-gray-100 px-6 py-24 sm:py-32 lg:px-8">
       <div
         class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl"
@@ -470,8 +471,118 @@
       </div>
     </div>
 
+    <!-- Team Section  -->
     <team-section title="Team Expertise" description="Our team of highly skilled developers specializes in Custom software and website development. With years of experience, they possess in-depth knowledge of our products and are committed to delivering exceptional support." :members="teamMembers" />
 
+    <!-- / Pricing Plans -->
+    <div class="bg-white py-24 sm:py-32" id="pricing">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-4xl text-center">
+          <h2 class="text-base font-semibold leading-7 text-primary">
+            Pricing
+          </h2>
+          <p
+            class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
+          >
+            Pricing plans for teams of&nbsp;all&nbsp;sizes
+          </p>
+        </div>
+        <p
+          class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600"
+        >
+          Choose the Right Plan for You: Tailored Support for Your Success
+        </p>
+
+        <div
+          class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+        >
+          <div
+            class="rounded-3xl p-8 xl:p-10"
+            :class="
+              pricing.popular ? 'ring-primary ring-2' : 'ring-gray-200 ring-1'
+            "
+            v-for="(pricing, index) in packages"
+            :key="index"
+          >
+            <div class="flex items-center justify-between gap-x-4">
+              <h3
+                id="tier-freelancer"
+                class="text-lg font-semibold leading-8"
+                :class="pricing.popular ? 'text-primary' : 'text-gray-900'"
+              >
+                {{ pricing.name }}
+              </h3>
+              <p
+                v-if="pricing.popular"
+                class="rounded-full bg-primary/10 px-2.5 py-1 text-xs font-semibold leading-5 text-primary"
+              >
+                Most popular
+              </p>
+            </div>
+            <p class="mt-4 text-sm leading-6 text-gray-600">
+              {{ pricing.description }}
+            </p>
+            <p
+              class="mt-6 flex items-baseline gap-x-1"
+              v-if="pricing.price === null"
+            >
+              <span class="text-2xl font-bold tracking-tight text-gray-900"
+                >CUSTOM</span
+              >
+            </p>
+            <p class="mt-6 flex items-baseline gap-x-1" v-else>
+              <span class="text-4xl font-bold tracking-tight text-gray-900"
+                >${{ pricing.price }}</span
+              >
+              <span class="text-sm font-semibold leading-6 text-gray-600"
+                >/month</span
+              >
+            </p>
+
+            <!-- href="https://share.hsforms.com/1bXIHNkLyT6yrFoXjHPBNggd7a3t"  -->
+            <a
+              :href="pricing.purchase_url"
+              :aria-describedby="pricing.name"
+              class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              :class="
+                pricing.popular
+                  ? ' bg-primary text-white shadow-sm hover:bg-indigo-500'
+                  : 'text-primary ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300'
+              "
+            >
+              Subscribe now
+            </a>
+
+            <ul
+              role="list"
+              class="mt-8 space-y-3 text-sm leading-6 text-gray-600 xl:mt-10"
+            >
+              <li
+                class="flex gap-x-3"
+                v-for="(item, index) in pricing.items"
+                :key="index"
+              >
+                <svg
+                  class="h-6 w-5 flex-none text-primary"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                {{ item.name }}
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="mx-auto mt-8 max-w-3xl text-center text-base leading-8 text-gray-900"> Need personalized support? <a class="inline-block underline hover:text-primary" href="https://1.envato.market/EaNJ2X" target="_blank"> Schedule a call </a> and let's craft a plan that's uniquely yours for success.
+        </p>
+      </div>
+    </div>
     <!-- / FAQ  -->
     <div class="bg-white">
       <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
@@ -628,7 +739,7 @@
           </h2>
           <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-blue-200">
             Supercharge your projects with Elite Support. Get expert assistance,
-            personalized guidance, and lightning-fast issue resolution. Elevate
+            personalized guidance, and lightning-fast bug fixing. Elevate
             your business with unbeatable technical support."
           </p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
@@ -642,127 +753,6 @@
       </div>
     </div>
 
-    <!-- / Pricing Plans -->
-    <div class="bg-white py-24 sm:py-32" id="pricing">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto max-w-4xl text-center">
-          <h2 class="text-base font-semibold leading-7 text-primary">
-            Pricing
-          </h2>
-          <p
-            class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
-          >
-            Pricing plans for teams of&nbsp;all&nbsp;sizes
-          </p>
-        </div>
-        <p
-          class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600"
-        >
-          Choose the Right Plan for You: Tailored Support for Your Success
-        </p>
-
-        <div
-          class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3"
-        >
-          <div
-            class="rounded-3xl p-8 xl:p-10"
-            :class="
-              pricing.popular ? 'ring-primary ring-2' : 'ring-gray-200 ring-1'
-            "
-            v-for="(pricing, index) in packages"
-            :key="index"
-          >
-            <div class="flex items-center justify-between gap-x-4">
-              <h3
-                id="tier-freelancer"
-                class="text-lg font-semibold leading-8"
-                :class="pricing.popular ? 'text-primary' : 'text-gray-900'"
-              >
-                {{ pricing.name }}
-              </h3>
-              <p
-                v-if="pricing.popular"
-                class="rounded-full bg-primary/10 px-2.5 py-1 text-xs font-semibold leading-5 text-primary"
-              >
-                Most popular
-              </p>
-            </div>
-            <p class="mt-4 text-sm leading-6 text-gray-600">
-              {{ pricing.description }}
-            </p>
-            <p
-              class="mt-6 flex items-baseline gap-x-1"
-              v-if="pricing.price === null"
-            >
-              <span class="text-2xl font-bold tracking-tight text-gray-900"
-                >CUSTOM</span
-              >
-            </p>
-            <p class="mt-6 flex items-baseline gap-x-1" v-else>
-              <span class="text-4xl font-bold tracking-tight text-gray-900"
-                >${{ pricing.price }}</span
-              >
-              <span class="text-sm font-semibold leading-6 text-gray-600"
-                >/month</span
-              >
-            </p>
-
-            <!-- href="https://share.hsforms.com/1bXIHNkLyT6yrFoXjHPBNggd7a3t"  -->
-            <a
-              :href="pricing.purchase_url"
-              :aria-describedby="pricing.name"
-              class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-              :class="
-                pricing.popular
-                  ? ' bg-primary text-white shadow-sm hover:bg-indigo-500'
-                  : 'text-primary ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300'
-              "
-            >
-              Subscribe now
-            </a>
-
-            <ul
-              role="list"
-              class="mt-8 space-y-3 text-sm leading-6 text-gray-600 xl:mt-10"
-            >
-              <li
-                class="flex gap-x-3"
-                v-for="(item, index) in pricing.items"
-                :key="index"
-              >
-                <svg
-                  class="h-6 w-5 flex-none text-primary"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                {{ item.name }}
-              </li>
-            </ul>
-          </div>
-        </div>
-        <p
-          class="mx-auto mt-8 max-w-3xl text-center text-base leading-8 text-gray-900"
-        >
-          <span
-            >Support plans does not include script purchase price. Script
-            purchased separately from</span
-          >
-          <a
-            class="inline-block"
-            href="https://1.envato.market/EaNJ2X"
-            target="_blank"
-            >our profile</a
-          >
-        </p>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -770,8 +760,7 @@
 export default {
   setup() {
     const title = "Elite Support | Streamlined Solutions for Unmatched Success";
-    const description =
-      "Experience Elite Support - a premium service tailored to your technical needs. Enjoy priority assistance, rapid response times, and personalized solutions for your business. Propel your success with our reliable development partner and elevate your projects to new heights. Maximize efficiency and achieve exceptional outcomes with our streamlined support. Subscribe now and unlock the path to unparalleled success.";
+    const description = "Experience Elite Support - a premium service tailored to your technical needs. Enjoy priority assistance, rapid response times, and personalized solutions for your business. Propel your success with our reliable development partner and elevate your projects to new heights. Maximize efficiency and achieve exceptional outcomes with our streamlined support. Subscribe now and unlock the path to unparalleled success.";
     const route = useRoute();
     useHead({
       link: [
@@ -859,9 +848,7 @@ export default {
             { name: "Access to Customer Panel" },
             { name: "Supported 1 Domain" },
             { name: "Script Installation & Server Maintenance" },
-            {
-              name: "2 hours included for modifications or new feature implementation ",
-            },
+            { name: "5 hours included for modifications or new feature implementation ", },
           ],
         },
         {
@@ -878,9 +865,7 @@ export default {
             { name: "Access to Customer Panel" },
             { name: "Supported 2 Domain" },
             { name: "Script Installation & Server Maintenance" },
-            {
-              name: "5 hours included for modifications or new feature implementation ",
-            },
+            { name: "10 hours included for modifications or new feature implementation ", },
             { name: "Access to Whatsapp Support" },
             { name: "Expert Technical Guidance" },
           ],
@@ -898,12 +883,6 @@ export default {
           role: "Frontend Developer",
           location: "Dhaka, Bangladesh",
           avatar: "/images/rakibul-islam.png",
-        },
-        {
-          name: 'Suraiya Aysha',
-          role: "Laravel Developer",
-          location: "Khulna, Bangladesh",
-          avatar: "/images/suraiya-aysha.png",
         },
         {
           name: 'Opu Saha',
