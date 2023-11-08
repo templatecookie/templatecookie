@@ -27,9 +27,7 @@
               <div
                 class="flex items-center justify-center lg:justify-end space-x-3 sort-filter"
               >
-                <h5 class="whitespace-nowrap text-sm leading-5">
-                  Category :
-                </h5>
+                <h5 class="whitespace-nowrap text-sm leading-5">Category :</h5>
                 <div class="w-48">
                   <v-select
                     label="name"
@@ -49,20 +47,14 @@
 
     <!-- Filter Item content -->
     <section>
-      <div
-        class="mx-auto max-w-7xl px-4 sm:px-6"
-        v-if="products?.length"
-      >
+      <div class="mx-auto max-w-7xl px-4 sm:px-6" v-if="products?.length">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 my-8">
           <div
             v-for="(item, itemIndex) in displayedProducts"
             :key="itemIndex"
             class="flex items-stretch"
           >
-            <ProductCard
-              :product="item"
-              :large="true"
-            />
+            <ProductCard :product="item" :large="true" />
           </div>
         </div>
         <!-- pagination   -->
@@ -73,10 +65,7 @@
         />
       </div>
 
-      <div
-        class="mx-auto max-w-7xl px-4 sm:px-6 py-16"
-        v-else
-      >
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16" v-else>
         <div class="text-center text-2xl pb-6 text-red-400">
           No products available, try with different filter!
         </div>
@@ -85,65 +74,52 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import ALL_PRODUCTS from "../../graphql/allProducts";
 
-export default {
-  async setup() {
-    const products = ref(null);
-    const { data } = await useGraphqlQuery({
-      query: ALL_PRODUCTS,
-    });
-    products.value = data?._rawValue?.allProducts;
-    const title = "All Products Listing";
-    const description =
-      "Browse Templatecookie all products, Templatecookie has HTML, Figma & Laravel products.";
+const bannerImg = "/images/img-five.png";
+const selectedCategory = ref({});
+const categoryList = [
+  {
+    name: "All Categories",
+    slug: "",
+  },
+];
+const products = ref(null);
+const currentPage = ref(1);
+const itemsPerPage = ref(8);
+const { data } = await useGraphqlQuery({
+  query: ALL_PRODUCTS,
+});
+products.value = data?._rawValue?.allProducts;
+const title = "All Products Listing";
+const description =
+  "Browse Templatecookie all products, Templatecookie has HTML, Figma & Laravel products.";
 
-    useSeoMeta({
-      title: title,
-      ogTitle: title,
-      description: description,
-      ogDescription: description,
-      ogImage: "/social-meta.png",
-    });
-
-    return {
-      products,
-    };
-  },
-  data() {
-    return {
-      bannerImg: "/images/img-five.png",
-      selectedCategory: {},
-      tabs: [],
-      activeTechnology: "",
-      categoryList: [
-        {
-          name: "All Categories",
-          slug: "",
-        },
-      ],
-      productsNo: this.products,
-      currentPage: 1,
-      itemsPerPage: 8,
-    };
-  },
-  computed: {
-    totalPages() {
-      const pageno = Math.ceil(this.productsNo.length / this.itemsPerPage);
-      console.log(pageno);
-      return pageno;
-    },
-    displayedProducts() {
-      const startIndex = (this.currentPage - 1) * this.itemsPerPage;
-      const endIndex = startIndex + this.itemsPerPage;
-      return this.products.slice(startIndex, endIndex);
-    },
-  },
-  methods: {
-    handlePageChange(newPage) {
-      this.currentPage = newPage;
-    },
-  },
+const handlePageChange = (newPage) => {
+  currentPage.value = newPage;
 };
+
+const totalPages = computed(() =>
+  Math.ceil(products.value.length / itemsPerPage.value)
+);
+
+const displayedProducts = computed(() => {
+  const startIndex = (currentPage.value - 1) * itemsPerPage.value;
+  const endIndex = startIndex + itemsPerPage.value;
+  return products.value.slice(startIndex, endIndex);
+});
+
+useSeoMeta({
+  title: title,
+  ogTitle: title,
+  description: description,
+  ogDescription: description,
+  ogImage: "/social-meta.png",
+});
+
+defineOgImage({
+  title: title,
+  description: description,
+});
 </script>
