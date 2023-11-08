@@ -46,4 +46,9 @@ useSeoMeta({
   ogDescription: description,
   ogImage: "/social-meta.png",
 });
+
+defineOgImage({
+  title: title,
+  description: description,
+});
 </script>

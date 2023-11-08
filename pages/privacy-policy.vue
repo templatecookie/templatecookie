@@ -15,12 +15,8 @@
     <div class="py-12">
       <div class="flex justify-center">
         <div class="max-w-2xl mx-auto px-4 py-8 sm:px-6">
-          <h2 class="text-2xl font-bold mb-4">
-            Privacy Policy
-          </h2>
-          <p class="mt-2 text-gray-600">
-            Last updated: {{ currentDate }}
-          </p>
+          <h2 class="text-2xl font-bold mb-4">Privacy Policy</h2>
+          <p class="mt-2 text-gray-600">Last updated: {{ currentDate }}</p>
           <p class="mt-4">
             Templatecookie ("us", "we", or "our") operates
             https://templatecookie.com (the "Site"). This page informs you of
@@ -137,5 +133,10 @@ useHead({
       href: "https://templatecookie.com" + route.path,
     },
   ],
+});
+
+defineOgImage({
+  title: title,
+  description: description,
 });
 </script>
