@@ -74,6 +74,12 @@ useSeoMeta({
   ogDescription: description,
   ogImage: image,
 });
+
+defineOgImage({
+  title: title,
+  description: description,
+  component: "Projects",
+});
 </script>
 
 <style lang="scss" scoped>
