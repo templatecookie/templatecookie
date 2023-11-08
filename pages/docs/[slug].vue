@@ -110,6 +110,11 @@ useHead({
     },
   ],
 });
+
+defineOgImage({
+  title: product.value.title,
+  description: product.value.description,
+});
 </script>
 
 <style scoped>

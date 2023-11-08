@@ -54,4 +54,9 @@ useSeoMeta({
 onBeforeMount(() => {
   emit("onLoad", { seoTitle, description });
 });
+
+defineOgImage({
+  title: seoTitle,
+  description: description,
+});
 </script>

@@ -138,6 +138,11 @@ useSeoMeta({
   ogDescription: description,
 });
 
+defineOgImage({
+  title: seoTitle,
+  description: description,
+});
+
 onMounted(() => {
   emit("onLoad", { seoTitle, description });
   tocHeadClick(tocLinks.length ?? tocLinks[0]);

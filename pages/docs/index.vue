@@ -3,7 +3,7 @@
     <section
       class="realtive py-12 lg:py-20 bg-no-repeat bg-center bg-cover"
       style="
-        background-image: url(&quot;https://www.datocms-assets.com/73511/1653474086-hero_bg.png&quot;);
+        background-image: url('https://www.datocms-assets.com/73511/1653474086-hero_bg.png');
       "
     >
       <div class="mx-auto max-w-7xl px-4 sm:px-6">
@@ -44,7 +44,7 @@ import ContentProductItem from "~/components/content/ProductItem.vue";
 const bannerImg = ref("/images/img-five.png");
 const title = ref("Templatecookie Product Documentation");
 const description = ref(
-  "Don't have previous experience using our products? Read the documentation to learn more about the features and topics?",
+  "Don't have previous experience using our products? Read the documentation to learn more about the features and topics?"
 );
 const route = useRoute();
 useHead({
@@ -74,6 +74,11 @@ const { data } = await useAsyncData("docs", () =>
   queryContent("/docs")
     .where({ status: { $contains: "true" } })
     .where({ category: { $contains: "Getting Started" } })
-    .find(),
+    .find()
 );
+
+defineOgImage({
+  title: title,
+  description: description,
+});
 </script>
