@@ -31,13 +31,14 @@
 
 <script setup>
 import ALL_BLOG_QUERY from "~/graphql/blog/allBlogPosts.js";
+import store from "~/store";
 const route = useRoute();
 const title = `Blog - Templatecookie.com`;
 const description = "Read templatecookie blog. Updated Weekly";
 
 const { data } = await useGraphqlQuery({ query: ALL_BLOG_QUERY });
 const posts = data._rawValue.allPosts;
-
+const siteLogo = store.global?.logo?.url;
 useSeoMeta({
   title: title,
   ogTitle: title,
@@ -53,6 +54,13 @@ useHead({
       href: "https://templatecookie.com" + route.path,
     },
   ],
+});
+
+defineOgImage({
+  component: "Blog",
+  title: title,
+  description: `Don't have previous experience using our products? Read the documentation to learn more about the complex features and topics.`,
+  siteLogo,
 });
 </script>
 

@@ -142,6 +142,7 @@ export default defineNuxtConfig({
     "nuxt-phosphor-icons",
     "nuxt-simple-robots",
     "nuxt-simple-sitemap",
+    'nuxt-og-image'
   ],
   robots: {
     disallow: [

@@ -75,13 +75,14 @@
 </template>
 
 <script setup>
+import store from "~/store";
 import ALL_PRODUCT_PLANS from "../graphql/allProductPlans";
 
 const selectedProduct = ref(null);
 const products = ref({});
 const bannerImg = ref("/img-five.png");
 const route = useRoute();
-
+const siteLogo = store.global.logo.url;
 const { data, error } = await useGraphqlQuery({ query: ALL_PRODUCT_PLANS });
 products.value = data?._rawValue?.allProductplans;
 selectedProduct.value = "id" + products.value[0]?.product?.id;
@@ -127,6 +128,13 @@ useHead({
       href: "https://templatecookie.com" + route.path,
     },
   ],
+});
+
+defineOgImage({
+  title,
+  description,
+  component: "Hireus",
+  siteLogo,
 });
 </script>
 

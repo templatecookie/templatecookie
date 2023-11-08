@@ -131,4 +131,9 @@ useHead({
 
 const date = new Date("2023-03-31");
 let currentDate = date.toLocaleDateString();
+
+defineOgImage({
+  title: title,
+  description: description,
+});
 </script>

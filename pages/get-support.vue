@@ -45,7 +45,7 @@
                 >
                   {{ section.name }}
                 </h3>
-                <hr>
+                <hr />
                 <ul class="py-4 px-6 gap-2 flex flex-col">
                   <li
                     class="flex gap-2"
@@ -61,11 +61,7 @@
                       fill="currentColor"
                       viewBox="0 0 256 256"
                     >
-                      <rect
-                        width="256"
-                        height="256"
-                        fill="none"
-                      />
+                      <rect width="256" height="256" fill="none" />
                       <polyline
                         points="172 104 113.3 160 84 132"
                         fill="none"
@@ -97,10 +93,7 @@
                 We are available from Monday to Friday
                 <strong>9 AM to 5 PM (GMT +6)</strong>
               </div>
-              <div
-                id="hubspotForm"
-                v-once
-              />
+              <div id="hubspotForm" v-once />
             </div>
           </div>
         </div>
@@ -109,99 +102,95 @@
   </div>
 </template>
 
-<script>
-export default {
-  setup() {
-    const title = "Get Customer Support - Templatecookie.com";
-    const description =
-      "Having trouble with our products? Get in touch and create a support ticket";
-    const route = useRoute();
-    useHead({
-      link: [
-        {
-          rel: "canonical",
-          href: "https://templatecookie.com" + route.path,
-        },
-      ],
-    });
-    useSeoMeta({
-      title: title,
-      ogTitle: title,
-      description: description,
-      ogDescription: description,
-      ogImage: "/social-meta.png",
-    });
+<script setup>
+const title = "Get Customer Support - Templatecookie.com";
+const description =
+  "Having trouble with our products? Get in touch and create a support ticket";
+const supportFeatures = [
+  {
+    name: "Find solution quicker by following steps below.",
+    color: "blue",
+    items: [
+      {
+        title:
+          "Check our documentation online for the answer to your question.",
+      },
+      {
+        title: "Support query need to be within Envato item support policy.",
+      },
+      {
+        title:
+          "You should maintain only one support ticket at a time. Creating multiple ticket can cause unexpected delays.",
+      },
+      {
+        title:
+          "Ticket should provide as much issue details as possible such as screenshot, video, login access, URL etc",
+      },
+    ],
   },
-  data() {
-    return {
-      guides: [],
-      supportFeatures: [
-        {
-          name: "Find solution quicker by following steps below.",
-          color: "blue",
-          items: [
-            {
-              title:
-                "Check our documentation online for the answer to your question.",
-            },
-            {
-              title:
-                "Support query need to be within Envato item support policy.",
-            },
-            {
-              title:
-                "You should maintain only one support ticket at a time. Creating multiple ticket can cause unexpected delays.",
-            },
-            {
-              title:
-                "Ticket should provide as much issue details as possible such as screenshot, video, login access, URL etc",
-            },
-          ],
-        },
-        {
-          name: "Item Support Includes",
-          color: "green",
-          items: [
-            {
-              title: "Availability of the author to answer questions",
-            },
-            {
-              title: "Answering technical questions about item’s features",
-            },
-            {
-              title: "Assistance with reported bugs and issues",
-            },
-          ],
-        },
-        {
-          name: "Does not includes",
-          color: "red",
-          items: [
-            {
-              title: "Customization services",
-            },
-            {
-              title: "Installation services",
-            },
-          ],
-        },
-      ],
-    };
+  {
+    name: "Item Support Includes",
+    color: "green",
+    items: [
+      {
+        title: "Availability of the author to answer questions",
+      },
+      {
+        title: "Answering technical questions about item’s features",
+      },
+      {
+        title: "Assistance with reported bugs and issues",
+      },
+    ],
   },
-  mounted() {
-    const script = document.createElement("script");
-    script.src = "https://js.hsforms.net/forms/v2.js";
-    document.body.appendChild(script);
-    script.addEventListener("load", () => {
-      if (window.hbspt) {
-        window.hbspt.forms.create({
-          region: "na1",
-          portalId: "22174697",
-          formId: "3d6aa885-36d6-4ede-99d0-d53b25f32bc2",
-          target: "#hubspotForm",
-        });
-      }
-    });
+  {
+    name: "Does not includes",
+    color: "red",
+    items: [
+      {
+        title: "Customization services",
+      },
+      {
+        title: "Installation services",
+      },
+    ],
   },
-};
+];
+const route = useRoute();
+
+onMounted(() => {
+  const script = document.createElement("script");
+  script.src = "https://js.hsforms.net/forms/v2.js";
+  document.body.appendChild(script);
+  script.addEventListener("load", () => {
+    if (window.hbspt) {
+      window.hbspt.forms.create({
+        region: "na1",
+        portalId: "22174697",
+        formId: "3d6aa885-36d6-4ede-99d0-d53b25f32bc2",
+        target: "#hubspotForm",
+      });
+    }
+  });
+});
+useHead({
+  link: [
+    {
+      rel: "canonical",
+      href: "https://templatecookie.com" + route.path,
+    },
+  ],
+});
+useSeoMeta({
+  title: title,
+  ogTitle: title,
+  description: description,
+  ogDescription: description,
+  ogImage: "/social-meta.png",
+});
+
+defineOgImage({
+  title: title,
+  description: description,
+});
 </script>

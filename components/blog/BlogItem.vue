@@ -9,7 +9,7 @@
         v-if="item.image && item.image.url"
         :src="item.image.url"
         :alt="item.title"
-      >
+      />
     </div>
     <div class="p-6 bg-white">
       <p
@@ -36,7 +36,7 @@ export default {
   props: ["item"],
   data() {
     return {
-      pathName: `blog/${this.item.slug}`,
+      pathName: `/blog/${this.item.slug}`,
     };
   },
   methods: {
