@@ -60,8 +60,6 @@ defineOgImage({
   component: "Blog",
   title: title,
   description: `Don't have previous experience using our products? Read the documentation to learn more about the complex features and topics.`,
-  image:
-    "https://images.unsplash.com/photo-1542435503-956c469947f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmxvZ3xlbnwwfHwwfHx8MA%3D%3D",
   siteLogo,
 });
 </script>

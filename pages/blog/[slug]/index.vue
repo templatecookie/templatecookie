@@ -121,6 +121,7 @@
 <script setup>
 import dayjs from "dayjs";
 import BLOG_DETAILS from "~/graphql/blog/postDetails";
+import store from "~/store";
 const route = useRoute();
 const { slug } = route?.params;
 
@@ -136,6 +137,7 @@ relatedPosts.value = data._rawValue.allPosts;
 const title = `${post?._rawValue?.title} | Templatecookie.com`;
 const description = post?._rawValue?.shortDescription;
 const image = post?._rawValue?.image?.url;
+const siteLogo = store.global?.logo?.url;
 
 useSeoMeta({
   title: title,
@@ -175,5 +177,11 @@ useHead({
       href: "https://templatecookie.com" + route.path,
     },
   ],
+});
+
+defineOgImage({
+  title: title,
+  description: description,
+  siteLogo: siteLogo,
 });
 </script>
