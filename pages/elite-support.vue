@@ -470,7 +470,11 @@
       </div>
     </div>
 
-    <team-section title="Team Expertise" description="Our team of highly skilled developers specializes in Custom software and website development. With years of experience, they possess in-depth knowledge of our products and are committed to delivering exceptional support." :members="teamMembers" />
+    <team-section
+      title="Team Expertise"
+      description="Our team of highly skilled developers specializes in Custom software and website development. With years of experience, they possess in-depth knowledge of our products and are committed to delivering exceptional support."
+      :members="teamMembers"
+    />
 
     <!-- / FAQ  -->
     <div class="bg-white">
@@ -766,165 +770,156 @@
   </div>
 </template>
 
-<script>
-export default {
-  setup() {
-    const title = "Elite Support | Streamlined Solutions for Unmatched Success";
-    const description =
-      "Experience Elite Support - a premium service tailored to your technical needs. Enjoy priority assistance, rapid response times, and personalized solutions for your business. Propel your success with our reliable development partner and elevate your projects to new heights. Maximize efficiency and achieve exceptional outcomes with our streamlined support. Subscribe now and unlock the path to unparalleled success.";
-    const route = useRoute();
-    useHead({
-      link: [
-        {
-          rel: "canonical",
-          href: "https://templatecookie.com" + route.path,
-        },
-      ],
-    });
-    useSeoMeta({
-      title: title,
-      ogTitle: title,
-      description: description,
-      ogDescription: description,
-      ogImage: "/social-meta.png",
-    });
+<script setup>
+const title = "Elite Support | Streamlined Solutions for Unmatched Success";
+const description =
+  "Experience Elite Support - a premium service tailored to your technical needs. Enjoy priority assistance, rapid response times, and personalized solutions for your business. Propel your success with our reliable development partner and elevate your projects to new heights. Maximize efficiency and achieve exceptional outcomes with our streamlined support. Subscribe now and unlock the path to unparalleled success.";
+const route = useRoute();
+const contact = false;
+const hubspotLoaded = false;
+const compairison = [
+  {
+    name: "Challanges",
+    items: [
+      { name: "Limited Technical Knowledge" },
+      { name: "Difficulty hiring the right talent" },
+      {
+        name: "Challenges translating business requirements into technical terms",
+      },
+      { name: "Struggles managing technical projects effectively" },
+      {
+        name: "Handling technical challenges and risks without expertise",
+      },
+      { name: "Difficulty keeping up with evolving technology trends" },
+    ],
   },
-  data() {
-    return {
-      contact: false,
-      hubspotLoaded: false,
-      compairison: [
-        {
-          name: "Challanges",
-          items: [
-            { name: "Limited Technical Knowledge" },
-            { name: "Difficulty hiring the right talent" },
-            {
-              name: "Challenges translating business requirements into technical terms",
-            },
-            { name: "Struggles managing technical projects effectively" },
-            {
-              name: "Handling technical challenges and risks without expertise",
-            },
-            { name: "Difficulty keeping up with evolving technology trends" },
-          ],
-        },
-        {
-          name: "Benefits",
-          items: [
-            { name: "Access to technical expertise and specialized skills" },
-            {
-              name: "Efficient execution of projects by experienced professionals",
-            },
-            { name: "Scalability and flexibility to adapt to changing needs" },
-            { name: "Cost optimization through streamlined processes" },
-            { name: "Mitigation of technical risks and challenges" },
-            { name: "Stay updated with the latest technology trends" },
-            {
-              name: "Focus on core competencies and strategic decision-making",
-            },
-            {
-              name: "Expert guidance and support throughout the development process",
-            },
-          ],
-        },
-      ],
-      packages: [
-        {
-          name: "Essential",
-          description: "Simplify Support, Fuel Your Progress",
-          price: 49,
-          popular: false,
-          purchase_url: "https://buy.stripe.com/dR6g305pr4vQ2cM9AE",
-          items: [
-            { name: "Ongoing Maintenance" },
-            { name: "Priority Support Within 24 Hours" },
-            { name: "Quick Bug Fixing" },
-            { name: "Access Email Support" },
-            { name: "Supported 1 Domain" },
-          ],
-        },
-        {
-          name: "Startup",
-          description:
-            "Elevate Your Support Experience, Unleash Your Potential.",
-          price: 199,
-          popular: false,
-          purchase_url: "https://buy.stripe.com/5kA0425pr7I2aJi28b",
-          items: [
-            { name: "Ongoing Maintenance" },
-            { name: "Priority Support within 12 Hours" },
-            { name: "Quick Bug Fixing" },
-            { name: "Access Email Support" },
-            { name: "Access to Customer Panel" },
-            { name: "Supported 1 Domain" },
-            { name: "Script Installation & Server Maintenance" },
-            {
-              name: "2 hours included for modifications or new feature implementation ",
-            },
-          ],
-        },
-        {
-          name: "Growth",
-          description: "Unmatched Support, Customized for Your Success.",
-          price: 249,
-          popular: true,
-          purchase_url: "https://buy.stripe.com/9AQeYWcRT0fAaJi146",
-          items: [
-            { name: "Ongoing Maintenance" },
-            { name: "Priority Support within 8 Hours" },
-            { name: "Quick Bug Fixing" },
-            { name: "Access to email support" },
-            { name: "Access to Customer Panel" },
-            { name: "Supported 2 Domain" },
-            { name: "Script Installation & Server Maintenance" },
-            {
-              name: "5 hours included for modifications or new feature implementation ",
-            },
-            { name: "Access to Whatsapp Support" },
-            { name: "Expert Technical Guidance" },
-          ],
-        },
-      ],
-      teamMembers: [
-        {
-          name: 'Zafor Iqbal',
-          role: "User Interface Designer",
-          location: "Dhaka, Bangladesh",
-          avatar: "/images/zafor-iqbal.jpg",
-        },
-        {
-          name: 'Rakibul Islam',
-          role: "Frontend Developer",
-          location: "Dhaka, Bangladesh",
-          avatar: "/images/rakibul-islam.png",
-        },
-        {
-          name: 'Suraiya Aysha',
-          role: "Laravel Developer",
-          location: "Khulna, Bangladesh",
-          avatar: "/images/suraiya-aysha.png",
-        },
-        {
-          name: 'Opu Saha',
-          role: "Laravel Developer",
-          location: "Narsingdi, Bangladesh",
-          avatar: "/images/opu-saha.png",
-        },
-        {
-          name: 'Khalil Uddin',
-          role: "Laravel Developer",
-          location: "Noakhali, Bangladesh",
-          avatar: "/images/khalil-uddin.png",
-        },
-        {
-          name: 'Zakir Hossen',
-          role: "CEO & Founder",
-          location: "Dhaka, Bangladesh",
-          avatar: "/images/zakir-hossen.png",
-        },
-      ]
-    };
+  {
+    name: "Benefits",
+    items: [
+      { name: "Access to technical expertise and specialized skills" },
+      {
+        name: "Efficient execution of projects by experienced professionals",
+      },
+      { name: "Scalability and flexibility to adapt to changing needs" },
+      { name: "Cost optimization through streamlined processes" },
+      { name: "Mitigation of technical risks and challenges" },
+      { name: "Stay updated with the latest technology trends" },
+      {
+        name: "Focus on core competencies and strategic decision-making",
+      },
+      {
+        name: "Expert guidance and support throughout the development process",
+      },
+    ],
   },
-};
+];
+const packages = [
+  {
+    name: "Essential",
+    description: "Simplify Support, Fuel Your Progress",
+    price: 49,
+    popular: false,
+    purchase_url: "https://buy.stripe.com/dR6g305pr4vQ2cM9AE",
+    items: [
+      { name: "Ongoing Maintenance" },
+      { name: "Priority Support Within 24 Hours" },
+      { name: "Quick Bug Fixing" },
+      { name: "Access Email Support" },
+      { name: "Supported 1 Domain" },
+    ],
+  },
+  {
+    name: "Startup",
+    description: "Elevate Your Support Experience, Unleash Your Potential.",
+    price: 199,
+    popular: false,
+    purchase_url: "https://buy.stripe.com/5kA0425pr7I2aJi28b",
+    items: [
+      { name: "Ongoing Maintenance" },
+      { name: "Priority Support within 12 Hours" },
+      { name: "Quick Bug Fixing" },
+      { name: "Access Email Support" },
+      { name: "Access to Customer Panel" },
+      { name: "Supported 1 Domain" },
+      { name: "Script Installation & Server Maintenance" },
+      {
+        name: "2 hours included for modifications or new feature implementation ",
+      },
+    ],
+  },
+  {
+    name: "Growth",
+    description: "Unmatched Support, Customized for Your Success.",
+    price: 249,
+    popular: true,
+    purchase_url: "https://buy.stripe.com/9AQeYWcRT0fAaJi146",
+    items: [
+      { name: "Ongoing Maintenance" },
+      { name: "Priority Support within 8 Hours" },
+      { name: "Quick Bug Fixing" },
+      { name: "Access to email support" },
+      { name: "Access to Customer Panel" },
+      { name: "Supported 2 Domain" },
+      { name: "Script Installation & Server Maintenance" },
+      {
+        name: "5 hours included for modifications or new feature implementation ",
+      },
+      { name: "Access to Whatsapp Support" },
+      { name: "Expert Technical Guidance" },
+    ],
+  },
+];
+const teamMembers = [
+  {
+    name: "Zafor Iqbal",
+    role: "User Interface Designer",
+    location: "Dhaka, Bangladesh",
+    avatar: "/images/zafor-iqbal.jpg",
+  },
+  {
+    name: "Rakibul Islam",
+    role: "Frontend Developer",
+    location: "Dhaka, Bangladesh",
+    avatar: "/images/rakibul-islam.png",
+  },
+  {
+    name: "Suraiya Aysha",
+    role: "Laravel Developer",
+    location: "Khulna, Bangladesh",
+    avatar: "/images/suraiya-aysha.png",
+  },
+  {
+    name: "Opu Saha",
+    role: "Laravel Developer",
+    location: "Narsingdi, Bangladesh",
+    avatar: "/images/opu-saha.png",
+  },
+  {
+    name: "Khalil Uddin",
+    role: "Laravel Developer",
+    location: "Noakhali, Bangladesh",
+    avatar: "/images/khalil-uddin.png",
+  },
+  {
+    name: "Zakir Hossen",
+    role: "CEO & Founder",
+    location: "Dhaka, Bangladesh",
+    avatar: "/images/zakir-hossen.png",
+  },
+];
+useHead({
+  link: [
+    {
+      rel: "canonical",
+      href: "https://templatecookie.com" + route.path,
+    },
+  ],
+});
+useSeoMeta({
+  title: title,
+  ogTitle: title,
+  description: description,
+  ogDescription: description,
+  ogImage: "/social-meta.png",
+});
 </script>
