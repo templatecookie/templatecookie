@@ -204,13 +204,13 @@ defineProps({
 
     <div class="p-12">
       <img :src="siteLogo" alt="site logo" />
-      <div class="flex flex-col h-full relative mt-16" style="z-index: 10">
+      <div class="flex flex-col h-full relative mt-6" style="z-index: 10">
         <div>
-          <h1 class="text-7xl text-slate-900 mb-12">
+          <h1 class="text-5xl text-slate-900 mb-12">
             {{ title }}
           </h1>
           <div
-            class="text-3xl leading-tight max-w-4xl text-slate-700 leading-10"
+            class="text-3xl leading-tight max-w-4xl text-slate-700 leading-10 line-clamp-4"
             style="
               font-family: Inter, ui-sans-serif, system-ui, -apple-system,
                 BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
