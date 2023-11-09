@@ -135,6 +135,7 @@ export default defineNuxtConfig({
   ],
 
   modules: [
+    '@nuxt/image',
     "@nuxtjs/tailwindcss",
     "@nuxt/content",
     "@nuxt/image",
@@ -142,7 +143,7 @@ export default defineNuxtConfig({
     "nuxt-phosphor-icons",
     "nuxt-simple-robots",
     "nuxt-simple-sitemap",
-    'nuxt-og-image'
+    'nuxt-og-image',
   ],
   robots: {
     disallow: [
