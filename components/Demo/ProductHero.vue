@@ -125,7 +125,7 @@
         </div>
         <div class="mx-auto max-w-7xl px-4 sm:px-6">
           <NuxtImg
-            class="relative rounded-lg shadow-lg mx-auto"
+            class="relative rounded-lg shadow-lg mx-auto w-full"
             :src="product.demoBanner.url"
             :alt="product.name"
           />
