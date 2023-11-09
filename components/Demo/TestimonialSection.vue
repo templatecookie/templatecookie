@@ -5,9 +5,7 @@
   >
     <div class="mx-auto max-w-7xl py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
       <div class="mb-8 text-center">
-        <h2 class="text-lg font-semibold text-primary">
-          Testimonial
-        </h2>
+        <h2 class="text-lg font-semibold text-primary">Testimonial</h2>
         <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
           {{ data.title }}
         </h2>
@@ -48,11 +46,11 @@
                     class="flex-shrink-0 mr-3"
                     v-if="item.image && item.image.url"
                   >
-                    <img
+                    <NuxtImg
                       class="h-8 w-8 rounded-full sm:h-[2.875rem] sm:w-[2.875rem]"
                       :src="item.image"
                       :alt="item.name"
-                    >
+                    />
                   </div>
 
                   <div>
@@ -70,10 +68,7 @@
         </swiper-slide>
       </swiper>
       <div class="custom-pagination relative flex justify-center pt-16">
-        <div
-          class="swiper-pagination"
-          slot="pagination"
-        />
+        <div class="swiper-pagination" slot="pagination" />
       </div>
     </div>
   </section>

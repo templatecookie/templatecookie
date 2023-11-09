@@ -203,7 +203,7 @@ defineProps({
     </svg>
 
     <div class="p-12">
-      <img :src="siteLogo" alt="site logo" />
+      <NuxtImg :src="siteLogo" alt="site logo" />
       <div class="flex flex-col h-full relative mt-6" style="z-index: 10">
         <div>
           <h1 class="text-5xl text-slate-900 mb-12">

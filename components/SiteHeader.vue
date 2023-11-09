@@ -8,12 +8,12 @@
           <div class="flex justify-start lg:w-0 lg:flex-1">
             <nuxt-link to="/">
               <span class="sr-only">Templatecookie</span>
-              <img
+              <NuxtImg
                 class="h-8 w-auto sm:h-10"
                 :src="hdata.logo.url"
                 v-if="hdata"
                 alt="Templatecookie.com Premium Quality Scripts & HTML Templates"
-              >
+              />
             </nuxt-link>
           </div>
           <div class="lg:hidden ml-auto">
@@ -73,12 +73,12 @@
                         <div
                           class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-primary text-white sm:h-12 sm:w-12"
                         >
-                          <img
+                          <NuxtImg
                             class="w-full h-full object-cover rounded-md"
                             v-if="product.thumbnail"
                             :src="product.thumbnail.url"
                             :alt="product.name"
-                          >
+                          />
                         </div>
                         <div class="ml-4">
                           <p class="text-base font-medium text-gray-900">
@@ -139,11 +139,11 @@
               <div class="px-5 pt-5 pb-6">
                 <div class="flex items-center justify-between">
                   <div>
-                    <img
+                    <NuxtImg
                       class="h-8 w-auto"
                       :src="hdata.logo.url"
                       alt="Templatecookie.com Premium Quality Scripts & HTML Templates"
-                    >
+                    />
                   </div>
                   <div class="-mr-2">
                     <button
@@ -184,12 +184,12 @@
                       <div
                         class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-primary text-white"
                       >
-                        <img
+                        <NuxtImg
                           class="w-full h-full object-cover rounded-md"
                           v-if="product.thumbnail"
                           :src="product.thumbnail.url"
                           :alt="product.name"
-                        >
+                        />
                       </div>
                       <div class="ml-4 text-base font-medium text-gray-900">
                         {{ product.name }}
@@ -220,10 +220,7 @@
                     class="mt-6 text-center text-base font-medium text-gray-500"
                   >
                     Like our works?
-                    <nuxt-link
-                      to="/hire-us"
-                      class="text-gray-900"
-                    >
+                    <nuxt-link to="/hire-us" class="text-gray-900">
                       Hire Us
                     </nuxt-link>
                   </p>

@@ -1,9 +1,6 @@
 <template>
   <div>
-    <div
-      class="pt-28 lg:pt-40 bg-dark"
-      :class="section.cssClass"
-    >
+    <div class="pt-28 lg:pt-40 bg-dark" :class="section.cssClass">
       <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="text-center mb-40">
           <h2
@@ -19,11 +16,11 @@
             class="inline-block bg-primary rounded-[7px] m-2 py-4 px-9 text-lg text-white duration-300 hover:bg-black"
           >
             Buy Now
-            <img
+            <NuxtImg
               class="inline-block ml-2"
               src="/icons/arrow-right.svg"
               alt="Templatecookie Arrow Right Icon"
-            >
+            />
           </a>
           <nuxt-link
             to="/hire-us"
@@ -50,11 +47,11 @@
             v-for="(item, index) in section.screenshots"
             :key="index"
           >
-            <img
+            <NuxtImg
               class="w-full h-60 object-cover border border-white p-3 pb-0 border-b-0"
               :src="item.url"
               :alt="product.name"
-            >
+            />
           </swiper-slide>
         </swiper>
       </div>

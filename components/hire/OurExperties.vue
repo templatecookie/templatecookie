@@ -26,13 +26,13 @@
             <div class="sr-only">
               {{ item.name }}
             </div>
-            <img
+            <NuxtImg
               class="max-h-12 aos"
               :src="item.logo"
               :alt="item.name"
               data-aos="flip-up"
               :data-aos-delay="100 * index"
-            >
+            />
           </div>
         </div>
       </div>

@@ -118,23 +118,17 @@
         </div>
       </div>
 
-      <div
-        class="relative"
-        v-if="product.demoBanner"
-      >
-        <div
-          class="absolute inset-0 flex flex-col"
-          aria-hidden="true"
-        >
+      <div class="relative" v-if="product.demoBanner">
+        <div class="absolute inset-0 flex flex-col" aria-hidden="true">
           <div class="flex-1" />
           <div class="w-full flex-1 bg-gray-800" />
         </div>
         <div class="mx-auto max-w-7xl px-4 sm:px-6">
-          <img
+          <NuxtImg
             class="relative rounded-lg shadow-lg mx-auto"
             :src="product.demoBanner.url"
             :alt="product.name"
-          >
+          />
         </div>
       </div>
     </div>
@@ -166,11 +160,7 @@
             :key="index"
           >
             <div class="flex justify-center bg-white py-2 px-4 rounded">
-              <img
-                class="h-12"
-                :src="item.url"
-                :alt="item.alt"
-              >
+              <NuxtImg class="h-12" :src="item.url" :alt="item.alt" />
             </div>
           </swiper-slide>
         </swiper>

@@ -22,20 +22,14 @@
       <div
         class="flex flex-1 flex-col justify-between rounded-2xl bg-gray-50 p-6 sm:p-8"
       >
-        <ul
-          role="list"
-          class="space-y-6"
-        >
+        <ul role="list" class="space-y-6">
           <li
             v-for="feature in item.features"
             :key="feature.id"
             class="flex items-start"
           >
             <div class="flex-shrink-0">
-              <img
-                src="/icons/check.svg"
-                alt="Templatecookie Check Icon"
-              >
+              <NuxtImg src="/icons/check.svg" alt="Templatecookie Check Icon" />
             </div>
             <p class="ml-3 text-sm leading-6 text-gray-600">
               {{ feature.name }}

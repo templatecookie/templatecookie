@@ -1,6 +1,10 @@
 <template>
   <li>
-    <img class="aspect-[14/13] max-w-xs w-full rounded-2xl object-cover" :src="item.avatar" :alt="item.name + ' - ' + item.role " />
+    <NuxtImg
+      class="aspect-[14/13] max-w-xs w-full rounded-2xl object-cover"
+      :src="item.avatar"
+      :alt="item.name + ' - ' + item.role"
+    />
     <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">
       {{ item.name }}
     </h3>
@@ -12,9 +16,8 @@
 </template>
 
 <script setup>
-const props = defineProps(['item'])
+const props = defineProps(["item"]);
 </script>
 
 <style>
-
 </style>

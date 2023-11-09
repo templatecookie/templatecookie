@@ -48,12 +48,12 @@
           class="lg:w-1/2 w-full order-1 lg:order-2 mb-6 lg:mb-0 h-80 lg:h-[680px] clip-thumb"
           data-aos="slide-left"
         >
-          <img
+          <NuxtImg
             v-if="section.info[0].background"
             :src="section.info[0].background.url"
             alt=""
             class="w-full h-full object-cover object-center rounded-lg"
-          >
+          />
         </div>
       </div>
     </div>
@@ -67,15 +67,9 @@
           class="flex flex-col sm:w-64 flex-grow sm:flex-row items-center justify-center sm:justify-start sm:space-x-3 p-6 rounded-xl overflow-hidden mb-4"
           :class="item.cssClass"
         >
-          <div
-            class="text-center sm:text-left"
-            v-if="item.image"
-          >
+          <div class="text-center sm:text-left" v-if="item.image">
             <span class="inline-block">
-              <nuxt-img
-                :src="item.image.url"
-                alt=""
-              />
+              <nuxt-img :src="item.image.url" alt="" />
             </span>
             <h2 class="text-xl font-medium text-dark mb-2 mt-4">
               {{ item.title }}
