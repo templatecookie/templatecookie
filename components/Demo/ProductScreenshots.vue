@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="py-20 lg:pt-124"
-    :id="data.sectionId ? data.sectionId : data.id"
-  >
+  <div class="py-20 lg:pt-124" :id="data.sectionId ? data.sectionId : data.id">
     <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <div
         class="lg:max-w-[536px] m-auto text-center mb-10 lg:mb-16"
@@ -21,20 +18,13 @@
         class="relative"
         v-if="data.screenshots && data.screenshots.length > 1"
       >
-        <swiper
-          :navigation="true"
-          :modules="modules"
-          class="mySwiper"
-        >
-          <swiper-slide
-            v-for="(item, index) in data.screenshots"
-            :key="index"
-          >
-            <img
+        <swiper :navigation="true" :modules="modules" class="mySwiper">
+          <swiper-slide v-for="(item, index) in data.screenshots" :key="index">
+            <NuxtImg
               class="w-full lg:min-h-[600px] lg:max-h-[600px] h-full rounded-xl"
               :src="item.url"
               alt="Templatecookie Products Screenshots"
-            >
+            />
           </swiper-slide>
         </swiper>
       </div>
@@ -42,11 +32,11 @@
         class="relative"
         v-if="data.screenshots && data.screenshots.length === 1"
       >
-        <img
+        <NuxtImg
           class="w-full h-full rounded-xl"
           :src="data.screenshots[0].url"
           alt="Templatecookie Product Screenshots"
-        >
+        />
       </div>
     </div>
   </div>

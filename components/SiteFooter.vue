@@ -4,12 +4,7 @@
       class="bg-gray-900 mt-20 tc-primary-footer"
       aria-labelledby="footer-heading"
     >
-      <h2
-        id="footer-heading"
-        class="sr-only"
-      >
-        Footer
-      </h2>
+      <h2 id="footer-heading" class="sr-only">Footer</h2>
       <div
         class="mx-auto pt-12 px-4 sm:px-6 sm:pt-16 lg:max-w-7xl lg:px-8 lg:pt-24"
         v-if="footer"
@@ -22,18 +17,15 @@
               :src="footer.logo.url"
               alt="Templatecookie Footer Logo"
             > -->
-            <img
+            <NuxtImg
               class="h-10"
               src="/logo-white.svg"
               alt="Templatecookie White Logo SVG"
-            >
+            />
             <p class="text-base text-gray-400">
               {{ footer.description }}
             </p>
-            <div
-              class="flex space-x-6"
-              v-if="socials"
-            >
+            <div class="flex space-x-6" v-if="socials">
               <a
                 :href="item.url"
                 target="_blank"
@@ -42,32 +34,19 @@
                 :key="item.name"
               >
                 <span class="sr-only">Facebook</span>
-                <img
-                  :src="item.icon.url"
-                  :alt="item.name"
-                >
+                <NuxtImg :src="item.icon.url" :alt="item.name" />
               </a>
             </div>
           </div>
           <div
             class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 xl:col-span-2 xl:mt-0"
           >
-            <div
-              v-for="item in footer.menuitems"
-              :key="item.id"
-            >
+            <div v-for="item in footer.menuitems" :key="item.id">
               <h3 class="text-base font-medium text-gray-200">
                 {{ item.label }}
               </h3>
-              <ul
-                role="list"
-                class="mt-4 space-y-4"
-                v-if="item.products"
-              >
-                <li
-                  v-for="(subItem, index) in item.products"
-                  :key="index"
-                >
+              <ul role="list" class="mt-4 space-y-4" v-if="item.products">
+                <li v-for="(subItem, index) in item.products" :key="index">
                   <nuxt-link
                     class="text-base text-gray-400 hover:text-gray-300"
                     :to="{ name: 'demo-slug', params: { slug: subItem.slug } }"
@@ -87,13 +66,8 @@
               </ul>
             </div>
             <div>
-              <h3 class="text-base font-medium text-gray-200">
-                Get More Done
-              </h3>
-              <ul
-                role="list"
-                class="mt-4 space-y-4"
-              >
+              <h3 class="text-base font-medium text-gray-200">Get More Done</h3>
+              <ul role="list" class="mt-4 space-y-4">
                 <li>
                   <nuxt-link
                     to="/elite-support"
@@ -115,8 +89,9 @@
                     <div>Hire Development Team</div>
                     <span
                       class="text-xs text-gray-400 group-hover:text-gray-200"
-                    >Transform Your Vision into Reality with Our
-                      Expertise.</span>
+                      >Transform Your Vision into Reality with Our
+                      Expertise.</span
+                    >
                   </nuxt-link>
                 </li>
 
@@ -129,8 +104,9 @@
                     <!-- <span class="text-xs text-gray-400 group-hover:text-gray-200">Seamless Setup for a Worry-Free Start</span> -->
                     <span
                       class="text-xs text-gray-400 group-hover:text-gray-200"
-                    >Seamlessly Launch Your Projects with Professional
-                      Setup.</span>
+                      >Seamlessly Launch Your Projects with Professional
+                      Setup.</span
+                    >
                   </nuxt-link>
                 </li>
               </ul>
@@ -165,7 +141,8 @@
                 href="https://1.envato.market/EaNJ2X"
                 target="_blank"
                 class="text-sm leading-6 text-gray-400 hover:text-gray-100"
-              >Codecanyon Profile</a>
+                >Codecanyon Profile</a
+              >
             </div>
             <div class="pb-2">
               <nuxt-link
@@ -205,11 +182,11 @@
           class="mt-12 border-t border-white/10 py-6 md:flex md:items-center md:justify-between"
         >
           <div class="md:order-2">
-            <img
+            <NuxtImg
               class="h-[37px] w-[390px]"
               src="/images/stripe-payment.svg"
               alt="Templatecookie Payment Gateway Images"
-            >
+            />
           </div>
           <p class="mt-8 text-sm text-gray-400 md:order-3 md:mt-0">
             &copy; {{ new Date().getFullYear() }} All Rights Reserved -

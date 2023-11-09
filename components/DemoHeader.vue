@@ -25,11 +25,11 @@
           <div class="flex justify-start lg:w-0 lg:flex-1">
             <nuxt-link to="/">
               <span class="sr-only">Templatecookie</span>
-              <img
+              <NuxtImg
                 class="h-8 w-auto sm:h-10"
                 src="/logo-white.svg"
                 alt="Premium Quality Scripts & HTML Templates | Templatecookie.com "
-              >
+              />
             </nuxt-link>
           </div>
           <div class="-my-2 -mr-2 md:hidden">
@@ -59,10 +59,7 @@
           <div
             class="hidden items-center justify-end md:flex md:flex-1 lg:w-0 space-x-4"
           >
-            <template
-              v-for="(item, index) in mainMenuItems"
-              :key="index"
-            >
+            <template v-for="(item, index) in mainMenuItems" :key="index">
               <button-element
                 :label="item.name"
                 :href="item.href"
@@ -120,11 +117,11 @@
           <div class="px-5 pt-5 pb-6">
             <div class="flex items-center justify-between">
               <nuxt-link to="/">
-                <img
+                <NuxtImg
                   class="h-8 w-auto"
                   src="/logo.svg"
                   alt="Templatecookie.com Premium Quality Scripts & HTML Templates"
-                >
+                />
               </nuxt-link>
               <div class="-mr-2">
                 <button

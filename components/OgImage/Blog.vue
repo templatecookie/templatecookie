@@ -135,7 +135,7 @@ const titleAttrs = computed(() => {
           </div>
         </div>
         <div class="text-white w-full flex flex-row">
-          <img
+          <NuxtImg
             v-if="siteLogo"
             :src="siteLogo"
             height="50"
@@ -148,7 +148,7 @@ const titleAttrs = computed(() => {
       </div>
     </div>
     <div class="w-1/2 items-end justify-center">
-      <img
+      <NuxtImg
         v-if="image"
         :src="image"
         height="630"

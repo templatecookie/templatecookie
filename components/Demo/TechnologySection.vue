@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="bg-white"
-    :id="data.sectionId ? data.sectionId : data.id"
-  >
+  <div class="bg-white" :id="data.sectionId ? data.sectionId : data.id">
     <div class="mx-auto max-w-7xl py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
       <div>
         <div class="mb-14 text-center">
@@ -28,13 +25,13 @@
             <div class="sr-only">
               {{ item.name }}
             </div>
-            <img
+            <NuxtImg
               :src="item.icon.url"
               :alt="item.name"
               data-aos="fade-up"
               :data-aos-delay="index * 100"
               class="max-h-12 aos-init aos-animate"
-            >
+            />
           </div>
         </div>
       </div>

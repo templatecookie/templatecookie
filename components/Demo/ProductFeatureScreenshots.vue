@@ -17,19 +17,16 @@
           {{ data.description }}
         </p>
       </div>
-      <div
-        id="tabs"
-        class="lg:grid grid-cols-12 gap-6"
-      >
+      <div id="tabs" class="lg:grid grid-cols-12 gap-6">
         <div class="col-span-8 order-2">
           <div class="content lg:pl-6 mb-6">
             <div class="tabcontent">
               <div class="h-[340px] md:h-[600px] overflow-hidden rounded-20">
-                <img
+                <NuxtImg
                   class="rounded-20"
                   :src="activeItem"
                   :alt="data.title"
-                >
+                />
               </div>
             </div>
           </div>

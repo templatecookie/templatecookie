@@ -7,11 +7,11 @@
       :key="product._path"
       class="product-card__img relative inline-block overflow-hidden rounded-lg w-full product-card__img-wrapper mb-4"
     >
-      <img
+      <NuxtImg
         :src="resolveImage()"
         :alt="product.title"
         class="w-full h-full mb-4 object-cover overflow-hidden"
-      >
+      />
       <div class="product-card__text">
         <h2 class="text-dark mb-3 font-normal text-lg">
           {{ product.title }}

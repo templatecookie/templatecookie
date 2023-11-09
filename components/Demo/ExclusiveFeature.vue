@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="py-20 lg:py-124"
-    :id="data.sectionId ? data.sectionId : data.id"
-  >
+  <div class="py-20 lg:py-124" :id="data.sectionId ? data.sectionId : data.id">
     <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <div class="lg:grid grid-cols-12 gap-6">
         <div
@@ -16,11 +13,11 @@
             data-aos-delay="300"
             data-aos-once="true"
           >
-            <img
+            <NuxtImg
               class="w-full h-full object-cover rounded-20"
               :src="data.image.url"
               :alt="data.title"
-            >
+            />
           </div>
         </div>
         <div class="col-span-6 flex items-center order-2">
@@ -45,11 +42,11 @@
                 class="inline-block bg-primary rounded-7 py-4 px-9 text-lg text-white duration-300 hover:bg-dark"
               >
                 {{ data.action[0].label }}
-                <img
+                <NuxtImg
                   class="inline-block ml-2"
                   src="/icons/arrow-right.svg"
                   alt="Templatecookie Arrow Right Icon"
-                >
+                />
               </a>
               <nuxt-link
                 v-else
@@ -57,11 +54,11 @@
                 class="inline-block bg-primary rounded-7 py-4 px-9 text-lg text-white duration-300 hover:bg-dark"
               >
                 {{ data.action[0].label }}
-                <img
+                <NuxtImg
                   class="inline-block ml-2"
                   src="/icons/arrow-right.svg"
                   alt="Templatecookie Arrow Right"
-                >
+                />
               </nuxt-link>
             </div>
           </div>

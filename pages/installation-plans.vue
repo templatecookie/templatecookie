@@ -50,7 +50,7 @@
                 "
               >
                 <div class="flex-shrink-0" v-if="item?.product?.thumbnail">
-                  <img
+                  <NuxtImg
                     class="w-16 h-16 object-cover rounded-md"
                     :src="item.product.thumbnail.url"
                     :alt="item.product.name"

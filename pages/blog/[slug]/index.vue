@@ -37,7 +37,7 @@
               </a>
             </div>
           </div>
-          <img
+          <NuxtImg
             class="w-full h-auto object-cover"
             v-if="post.image && post.image.url"
             :src="post.image.url"
