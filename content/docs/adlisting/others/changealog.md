@@ -8,7 +8,7 @@ category: Others
 # Changelog
 
 ---
-### v3.5.0 - 11th November 2023
+### v3.4.0 - 11th November 2023
 ```
 - feat: Added safety tips on the ad details page
 - feat: Report ad feature added
