@@ -8,6 +8,18 @@ category: Others
 # Changelog
 
 ---
+### v3.4.0 - 11th November 2023
+```
+- feat: Added safety tips on the ad details page
+- feat: Report ad feature added
+
+- fix: Order page select2 issues fix
+
+- impr: Order page design improvement
+- impr: Post & edit ad page design improvement
+- impr: Performance improvement
+- impr: Ad wishlist response time improvement
+```
 ### v3.2.0 - 3rd November 2023
 ```
 - feat: Add reCAPTCHA to Blog Comment Section.
@@ -20,10 +32,10 @@ category: Others
 - fix: Set latitude and longitude on map.
 - fix: Customize video URL on the about page.
 
-- improvement: Implement error handling with try-catch.
-- improvement: Admin section quick action items.
-- improvement: Config zakirsoft.php to templatecookie.php
-- improvement: Replace links.blade.php to styles.blade.
+- impr: Implement error handling with try-catch.
+- impr: Admin section quick action items.
+- impr: Config zakirsoft.php to templatecookie.php
+- impr: Replace links.blade.php to styles.blade.
 php
 ```
 ### v3.1.10 - 20th October 2023
