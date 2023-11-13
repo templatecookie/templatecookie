@@ -34,7 +34,7 @@
                 :key="item.name"
               >
                 <span class="sr-only">Facebook</span>
-                <NuxtImg :src="item.icon.url" :alt="item.name" />
+                <img :src="item?.icon?.url" :alt="item.name" width="100" />
               </a>
             </div>
           </div>
