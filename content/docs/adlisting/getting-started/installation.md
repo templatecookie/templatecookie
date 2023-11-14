@@ -41,6 +41,12 @@ We recommend
   </section>
 </div>
 
+Before you move forward, please ensure server requirements are met. 👆
+
+### Watch Video Demo
+
+[![Watch the video](/docs/install_upgrade/adlisting_install.png)](https://www.loom.com/share/b9476d06d04c4a42bb8d12782c324ead?sid=8e1e450b-e4e1-41a4-ac31-86db46f29cf2)  
+
 ### Step 1: Upload your files
 
 Log in to your shared hosting and go to file manager. To upload files go to the `public_html` Folder and start uploading. Click on `Select File` and choose app.zip file. Please wait for the completion and close the tab once it is finished. Then reload the file manager and extract the file following the screenshot.

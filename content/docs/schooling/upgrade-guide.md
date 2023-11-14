@@ -15,6 +15,10 @@ Following the steps below, you can perform an upgrade on your app.
   </section>
 </div>
 
+### Watch Video Demo
+
+[![Watch the video](/docs/install_upgrade/schooling_upgrade.png)](https://www.loom.com/share/a9459471fe6f466790a10de3e0260be3?sid=5475c85c-1b07-4218-a9bd-2c2f723ead25)  
+
 ### Step 1 - Delete a file
 
 Delete the file (en.json) that are located inside your domain_root/lang folder.

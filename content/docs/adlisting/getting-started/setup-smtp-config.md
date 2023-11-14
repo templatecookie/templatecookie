@@ -20,6 +20,8 @@ To send all the necessary emails, we need an Email Delivery service. Adlisting u
 4. Postmark
 5. Sendmail
 6. Sengrid
+7. Gmail
+8. cPanel
 
 **In short, it is used to send emails to your site users..!! You can use any email delivery platform as long as it supports SMTP.**
 
@@ -101,3 +103,44 @@ It will look something like this.
 NOTE: The `/.env` file settings override those of the admin panel.
 
 **Note:** Don't forget to change your sender email address in your `SMTP Settings` page -> `Mail From Address` to match it with an allowed email address of your SMTP server.
+
+### 7. How to get Gmail SMTP Credentials?
+
+1. Create to your Gmail account. (<a href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp">Create Account</a>)
+2. Go to `Settings` -> `See all settings` -> `Accounts and Import` -> `Other Google Account settings`
+3. Click on `Security` from the left sidebar.
+4. Click on `Less secure app access` and turn it on.
+5. Go to `Settings` -> `See all settings` -> `Accounts and Import` -> `Other Google Account settings`
+6. Click on `Apps with account access` from the left sidebar.
+7. Click on `Manage apps` and click on `Allow less secure apps: ON` button.
+8. Copy the SMTP Credentials and paste it in your `.env` file or `Admin Panel` -> `Settings` -> `SMTP`.
+
+**Note:** Don't forget to change your sender email address in your `SMTP Settings` page -> `Mail From Address` to match it with an allowed email address of your SMTP server.
+
+``` 
+    MAIL_MAILER=smtp
+    MAIL_HOST=smtp.gmail.com
+    MAIL_PORT=587
+    MAIL_USERNAME=your-gmail-username
+    MAIL_PASSWORD=your-gmail-password
+    MAIL_ENCRYPTION=tls
+```
+
+### 8. How to get cPanel SMTP Credentials?
+
+1. Login to your cPanel account.
+2. Go to `Email` -> `Email Accounts`
+![Adlisting cPanel SMTP Process](/docs/jobpilot/setting/smtp/smtp-0.png)
+
+3. Click on `Create` button.
+![Adlisting cPanel SMTP Process](/docs/jobpilot/setting/smtp/smtp-1.png)
+
+4. Choose a username, password and click on `Create` button.
+![Adlisting cPanel SMTP Process](/docs/jobpilot/setting/smtp/smtp-2.png)
+
+5. Go to `Email` -> `Email Accounts` and click on `Connect Devices` button.
+![Adlisting cPanel SMTP Process](/docs/jobpilot/setting/smtp/smtp-3.png)
+
+6. Copy the SMTP Credentials and paste it in your `.env` file or `Admin Panel` -> `Settings` -> `SMTP`.
+![Adlisting cPanel SMTP Process](/docs/jobpilot/setting/smtp/smtp-4.png)
+
