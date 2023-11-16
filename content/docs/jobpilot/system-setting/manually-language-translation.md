@@ -1,10 +1,17 @@
 ---
-title: Manually Language Translation
+title: Website Language Translation
 position: 27
 category: System Setting
 ---
 
-# Manually Language Translation
+<!--  -->
+
+#### Watch Video Demo ( How to translate language)
+
+[![Watch the video](/docs/jobpilot/setting/website-translation.png)](https://www.loom.com/share/14eb42277c99497eb1dde216479f24d6?sid=a25a5b17-1fe6-47bd-8b99-dd29f0ceda04)  
+
+
+## Manually Language Translation
 
 If you want to translate your application and you don't want to use the auto translation feature and 1000+ clicks, you can do it manually. Follow the steps below to translate your application.
 
