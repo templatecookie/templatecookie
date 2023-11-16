@@ -883,12 +883,6 @@ const teamMembers = [
     avatar: "/images/rakibul-islam.png",
   },
   {
-    name: "Suraiya Aysha",
-    role: "Laravel Developer",
-    location: "Khulna, Bangladesh",
-    avatar: "/images/suraiya-aysha.png",
-  },
-  {
     name: "Opu Saha",
     role: "Laravel Developer",
     location: "Narsingdi, Bangladesh",
