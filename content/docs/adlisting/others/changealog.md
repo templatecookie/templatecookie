@@ -10,7 +10,7 @@ category: Others
 ---
 ### v3.5.0 - 16th November 2023
 ```
-- feat: D Map alternative Dropdown for quick  country, state, and city selection.
+- feat: Map alternative Dropdown for quick  country, state, and city selection.
 
 - fix: Custom field file download issue fix
 - fix: Gallery image slider problem fix
