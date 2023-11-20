@@ -9,6 +9,21 @@ category: Others
 
 ## November
 
+### v3.1.0 - 20th November, 2023
+
+```
+- feat: Implementation of Chat functionality.
+
+- fix: Resolved CMS page issue.
+- fix: Addressed the issue on the Refund Policy page.
+- fix: Fixed the problem with saving bookmarks.
+
+- Improvement : Redesigned the Candidate Bookmark popup.
+- Improvement: Integrated a search system into the Language page.
+- Improvement: Improved the design of the Pricing page by adding FAQ section.
+
+```
+
 ### v3.0 - 1st November, 2023
 
 ```
