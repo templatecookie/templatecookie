@@ -113,7 +113,7 @@
 <script setup>
 let title = "Privacy Policy | Templatecookie";
 const description =
-  "Learn about how Templatecookie collects, uses, and protects your personal information with our Privacy Policy. We respect your privacy and strive to provide a secure and transparent experience on our website.";
+  "Discover our Privacy Policy: Your information is respected, secured, and transparently handled at Templatecookie";
 
 useSeoMeta({
   title: title,
