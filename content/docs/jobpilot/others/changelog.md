@@ -8,7 +8,7 @@ category: Others
 # Changelog
 
 ## November
-### v3.3.0 - 22th November, 2023
+### v3.3.0 - 22th November, 2023 
 
 ```
 - feat: Export candidate data pdf,csv,xlsx format.
