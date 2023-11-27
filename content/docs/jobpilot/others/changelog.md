@@ -8,6 +8,15 @@ category: Others
 # Changelog
 
 ## November
+
+### v3.3.2 - 23th November, 2023
+
+```
+- fix: Upgrade time to resolve migration issues.
+- fix: Fix bugs on the payment settings page.
+
+```
+
 ### v3.3.0 - 22th November, 2023
 
 ```
