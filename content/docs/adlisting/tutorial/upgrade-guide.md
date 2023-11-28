@@ -1,7 +1,7 @@
 ---
 title: Upgrade Guide
-position: 24
-category: System Setting
+position: 31
+category: Others
 ---
 
 # Upgrade Guide
