@@ -322,14 +322,216 @@
 
     <!-- Process -->
     <div class="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto space-y-[2rem]">
-      <div class="text-left">
+      <div class="text-center">
         <h2 class="text-3xl text-gray-800 font-bold lg:text-4xl">
-          Our Custom Web Development Services Can Help You With:
+          Our Web Development Process
         </h2>
         <p class="mt-3 text-gray-800">
-          "With years of experience in providing custom web development
-          services, we apply industry best practices to achieve superior
-          results."
+          "We follow a thoughtfully structured web development process, adhering
+          to industry best practices embraced by the world's leading app and web
+          development companies. This approach allows us to craft tailored
+          solutions for clients worldwide."
+        </p>
+      </div>
+      <div class="max-w-[700px] mx-auto px-5">
+        <ol class="relative border-s border-gray-200">
+          <li class="mb-10 ms-8">
+            <span
+              class="absolute flex items-center justify-center w-[45px] h-[45px] bg-blue-100 text-blue-700 rounded-full -start-6 ring-8 ring-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"
+                />
+              </svg>
+            </span>
+            <h3
+              class="flex items-center mb-1 text-lg font-semibold text-gray-900"
+            >
+              Consulting, Planning, Research Analysis and Everything in Between
+            </h3>
+
+            <p class="mb-4 text-base font-normal text-gray-500">
+              We kick off our development journey with a client interview to
+              truly grasp their needs. Our expert team then charts out a
+              detailed schedule, crafts a detailed plan outlining the solution's
+              scope and identifying costs. We're all about efficiency, so we
+              explore cost-cutting opportunities too. Additionally, our custom
+              web development services delve deep into competitive analysis and
+              target audience research. Once we agree on the website's key
+              priorities, it's full steam ahead to the next stage of
+              development.
+            </p>
+          </li>
+          <li class="mb-10 ms-8">
+            <span
+              class="absolute flex items-center justify-center w-[45px] h-[45px] bg-blue-100 text-blue-700 rounded-full -start-6 ring-8 ring-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"
+                />
+              </svg>
+            </span>
+            <h3
+              class="flex items-center mb-1 text-lg font-semibold text-gray-900"
+            >
+              Design and Prototyping
+            </h3>
+
+            <p class="mb-4 text-base font-normal text-gray-500">
+              In the natural flow of development, design takes center stage, and
+              web development is no different. What sets us apart in creating
+              top-notch prototypes? It starts with a focus on user convenience –
+              our UX design addresses end-users' challenges. Then, our talented
+              UI designers craft visually stunning mockups to enhance user
+              satisfaction and engagement. Finally, once the prototypes are
+              polished to perfection, we ensure they meet the customer's
+              expectations through collaborative agreement.
+            </p>
+          </li>
+          <li class="mb-10 ms-8">
+            <span
+              class="absolute flex items-center justify-center w-[45px] h-[45px] bg-blue-100 text-blue-700 rounded-full -start-6 ring-8 ring-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"
+                />
+              </svg>
+            </span>
+            <h3
+              class="flex items-center mb-1 text-lg font-semibold text-gray-900"
+            >
+              Website Development Stage
+            </h3>
+
+            <p class="mb-4 text-base font-normal text-gray-500">
+              At this phase, we dive into the heart of web development. This is
+              where our skilled programmers take the stage, turning prototypes
+              into a fully functional reality. For instance, let's consider a
+              call button designed by our creative team – rectangular, green,
+              and adorned with an inviting slogan ('Book tickets now'). While
+              the design is fantastic, it's the programmer's task to make it
+              active. They ensure that when a user clicks the button, they
+              seamlessly land on the coveted ticket booking page. In a nutshell,
+              our programmers translate all the creative attributes designed by
+              the team into a programming language, whether it's PHP, Java,
+              JavaScript, Python, or ASP.NET technologies.
+            </p>
+          </li>
+          <li class="mb-10 ms-8">
+            <span
+              class="absolute flex items-center justify-center w-[45px] h-[45px] bg-blue-100 text-blue-700 rounded-full -start-6 ring-8 ring-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"
+                />
+              </svg>
+            </span>
+            <h3
+              class="flex items-center mb-1 text-lg font-semibold text-gray-900"
+            >
+              Thorough Testing As A Guarantee of Flawless integration
+            </h3>
+
+            <p class="mb-4 text-base font-normal text-gray-500">
+              "What if a link leads to nowhere, information is jumbled, or a
+              pop-up doesn't show up? Testing often helps us reveal these flaws,
+              but no need to worry. The more bugs we uncover and fix, the
+              smoother your web solution will run. Once we're confident
+              everything operates as intended, we seamlessly integrate the web
+              software with your corporate or third-party systems, ensuring
+              swift and flawless results for your business."
+            </p>
+          </li>
+          <li class="mb-10 ms-8">
+            <span
+              class="absolute flex items-center justify-center w-[45px] h-[45px] bg-blue-100 text-blue-700 rounded-full -start-6 ring-8 ring-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"
+                />
+              </svg>
+            </span>
+            <h3
+              class="flex items-center mb-1 text-lg font-semibold text-gray-900"
+            >
+              Support and Maintenance
+            </h3>
+
+            <p class="mb-4 text-base font-normal text-gray-500">
+              As your campaign progresses, we'll consistently assess your
+              website. If any new issues crop up, we'll collaborate with you to
+              develop a detailed strategy for prompt fixes. Staying ahead of
+              industry guidelines, we stay abreast of the latest innovations,
+              ensuring your website remains at the forefront of SEO (search
+              engine optimization) requirements.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <!-- End Process -->
+
+    <!-- Best practices -->
+    <div class="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto space-y-[2rem]">
+      <div class="text-left">
+        <h2 class="text-3xl text-gray-800 font-bold lg:text-4xl">
+          Our Web Development Process
+        </h2>
+        <p class="mt-3 text-gray-800">
+          "We follow a thoughtfully structured web development process, adhering
+          to industry best practices embraced by the world's leading app and web
+          development companies. This approach allows us to craft tailored
+          solutions for clients worldwide."
         </p>
       </div>
       <ol class="relative border-s border-gray-200">
@@ -515,8 +717,7 @@
         </li>
       </ol>
     </div>
-
-    <!-- End Process -->
+    <!-- End Best practices -->
   </div>
 </template>
 
