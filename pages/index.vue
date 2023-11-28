@@ -1,86 +1,130 @@
 <template>
   <div>
-    <home-hero-section
-      :data="homepage.heroSection"
-      v-if="homepage && homepage?.heroSection"
-    />
-
-    <!-- Latest Product -->
-    <section
-      class="latest"
-      v-if="homepage && homepage?.latestProduct"
-      id="products"
-    >
+    <!-- Hero -->
+    <div class="relative overflow-hidden">
+      <!-- Gradients -->
       <div
-        class="mx-auto max-w-7xl py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8"
+        aria-hidden="true"
+        class="flex absolute -top-96 start-1/2 transform -translate-x-1/2"
       >
-        <div class="mb-[72px] text-center">
-          <h2
-            class="text-4xl md:text-5xl text-dark font-semibold capitalize tracking-1 mb-8"
-          >
-            {{ homepage.latestProduct[0].title }}
-          </h2>
-          <p
-            class="text-lg font-light max-w-lg mx-auto text-dark"
-            v-if="homepage?.latestProduct[0].description"
-          >
-            {{ homepage.latestProduct[0].description }}
-          </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-          <div
-            v-for="(item, index) in latestProducts"
-            :key="index"
-            class="flex items-stretch aos"
-            data-aos="fade-up"
-            :data-aos-delay="index * 100"
-          >
-            <ProductCard :product="item" :large="false" />
+        <div
+          class="bg-gradient-to-r from-violet-300/50 to-purple-100 blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem] dark:from-violet-900/50 dark:to-purple-900"
+        ></div>
+        <div
+          class="bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 blur-3xl w-[90rem] h-[50rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem] dark:from-indigo-900/70 dark:via-indigo-900/70 dark:to-blue-900/70"
+        ></div>
+      </div>
+      <!-- End Gradients -->
+
+      <div class="relative z-10">
+        <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+          <div class="max-w-2xl text-center mx-auto">
+            <p
+              class="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400"
+            >
+              Templatecookie: A vision for 2023
+            </p>
+
+            <!-- Title -->
+            <div class="mt-5 max-w-2xl">
+              <h1
+                class="block font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-gray-200"
+              >
+                Custom Web Development Services
+              </h1>
+            </div>
+            <!-- End Title -->
+
+            <div class="mt-5 max-w-3xl">
+              <p class="text-lg text-gray-600 dark:text-gray-400">
+                At our core, we're all about developing unique, responsive web
+                development solutions– no cookie-cutter projects. Each website
+                we create is unique, finely tailored to meet your users' exact
+                needs. Forget templates and plugins; our custom builds are all
+                about delivering a website that's uniquely yours—user-friendly,
+                stable, reliable- and stands out from the crowd.
+              </p>
+            </div>
+
+            <!-- Buttons -->
+            <div class="mt-8 gap-3 flex justify-center">
+              <a
+                class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                href="#"
+              >
+                Get started
+                <svg
+                  class="flex-shrink-0 w-4 h-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </a>
+            </div>
+            <!-- End Buttons -->
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Why Should  -->
-    <home-top-features-section
-      v-if="homepage && homepage.topFeatures"
-      :data="homepage.topFeatures"
-    />
-    <home-why-us
-      v-if="homepage && homepage.whyUsSection"
-      :data="homepage.whyUsSection"
-    />
-    <div class="bg-primary">
-      <div class="mx-auto max-w-2xl py-16 px-6 text-center sm:py-20 lg:px-8">
-        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          <span class="block"> Lunch your site faster </span>
-          <span class="block"> Hire us today </span>
-        </h2>
-        <p class="mt-4 text-lg leading-6 text-white">
-          Our team composed with expert designer and developers to handle
-          project at any size
-        </p>
-        <div class="flex flex-wrap gap-4 justify-center mt-4">
-          <nuxt-link
-            to="/hire-us"
-            class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-dark hover:text-white hover:bg-dark sm:w-auto"
+      <div class="bg-white">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <h2 class="text-center text-lg font-semibold leading-8 text-gray-900">
+            Trusted by the world’s most innovative teams
+          </h2>
+          <div
+            class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5"
           >
-            Hire Us Now
-          </nuxt-link>
-          <nuxt-link
-            to="/installation-plans"
-            class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-dark hover:text-white hover:bg-dark sm:w-auto"
-          >
-            Installation Plans
-          </nuxt-link>
+            <img
+              class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
+              alt="Transistor"
+              width="158"
+              height="48"
+            />
+            <img
+              class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
+              alt="Reform"
+              width="158"
+              height="48"
+            />
+            <img
+              class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
+              alt="Tuple"
+              width="158"
+              height="48"
+            />
+            <img
+              class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+              src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
+              alt="SavvyCal"
+              width="158"
+              height="48"
+            />
+            <img
+              class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+              src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
+              alt="Statamic"
+              width="158"
+              height="48"
+            />
+          </div>
         </div>
       </div>
     </div>
-    <home-blog-section :data="latestPosts" />
+    <!-- End Hero -->
   </div>
 </template>
 
-<script setup>
+<script  setup>
 import useGraphqlQuery from "~/composables/useGraphqlQuery";
 import HOMEPAGE_QUERY from "../graphql/homepage";
 
