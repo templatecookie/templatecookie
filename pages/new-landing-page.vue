@@ -130,7 +130,9 @@
         >
           Our Custom Web Development Services Can Help You With:
         </h2>
-        <p class="mt-3 text-gray-800 dark:text-gray-400">
+        <p
+          class="mt-3 text-gray-800 dark:text-gray-400 md:max-w-[800px] mx-auto"
+        >
           "With years of experience in providing custom web development
           services, we apply industry best practices to achieve superior
           results."
@@ -326,7 +328,7 @@
         <h2 class="text-3xl text-gray-800 font-bold lg:text-4xl">
           Our Web Development Process
         </h2>
-        <p class="mt-3 text-gray-800">
+        <p class="mt-3 text-gray-800 md:max-w-[800px] mx-auto">
           "We follow a thoughtfully structured web development process, adhering
           to industry best practices embraced by the world's leading app and web
           development companies. This approach allows us to craft tailored
@@ -527,7 +529,7 @@
         <h2 class="text-3xl text-gray-800 font-bold lg:text-4xl">
           Our Best Practices
         </h2>
-        <p class="mt-3 text-gray-800">
+        <p class="mt-3 text-gray-800 md:max-w-[800px] mx-auto">
           At TemplateCookie, we strive to not just meet but surpass our clients'
           expectations with our custom website projects. Along with customer
           satisfaction, we also take pride in transparent communication,
