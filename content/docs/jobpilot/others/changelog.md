@@ -8,7 +8,19 @@ category: Others
 # Changelog
 
 ## November
+### v3.6.0 - 4th December, 2023
 
+```
+- feat: Map alternative Dropdown for quick  country, state, and city selection.
+- feat: System Information with Admin Visibility
+- feat: Log Information with Admin Visibility
+
+
+- fix: job update isssue as a admin
+- fix: mobile version toogle bar issue
+- fix: job edit update isssue as a company
+
+```
 ### v3.3.2 - 23th November, 2023
 
 ```
