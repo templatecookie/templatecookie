@@ -4,11 +4,11 @@
     <div class="bg-gray-900">
       <div class="bg-gradient-to-b from-violet-600/[.15] via-transparent">
         <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
-          <div class="max-w-3xl text-center mx-auto">
+          <div class="max-w-4xl text-center mx-auto">
             <h1
-              class="block font-medium text-gray-50 text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
+              class="block font-medium leading-normal text-gray-50 text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
             >
-              Worry Free, Tech Support
+              Worry Free <br /> Recurring Tech Support
             </h1>
           </div>
 

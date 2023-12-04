@@ -22,7 +22,7 @@
           <div
             class="mt-10 max-w-xl text-base leading-7 text-gray-700 lg:max-w-none"
           >
-            <p class="text-base font-semibold leading-7 text-indigo-600">
+            <p class="text-base font-semibold leading-7 text-primary">
               Our Story
             </p>
             <h2

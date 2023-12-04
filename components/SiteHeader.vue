@@ -10,8 +10,7 @@
               <span class="sr-only">Templatecookie</span>
               <NuxtImg
                 class="h-8 w-auto sm:h-10"
-                :src="hdata.logo.url"
-                v-if="hdata"
+                :src="logo?.url"
                 alt="Templatecookie.com Premium Quality Scripts & HTML Templates"
               />
             </nuxt-link>
@@ -34,7 +33,7 @@
                 class="group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 lg:focus:ring-transparent focus:ring-primary focus:ring-offset-2"
                 aria-expanded="false"
               >
-                <span class="font-lexend">Products</span>
+                <span class="font-lexend">Our Products</span>
                 <svg
                   :class="solutionStatus ? 'text-gray-600' : 'text-gray-400'"
                   class="ml-2 h-5 w-5 group-hover:text-gray-500"
@@ -53,11 +52,8 @@
 
               <transition name="flayout-menu">
                 <div
-                  class="dropdown-item absolute z-10 -ml-4 w-screen max-w-md transform lg:left-0 lg:ml-0 lg:max-w-2xl"
-                >
-                  <div
-                    class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5"
-                  >
+                  class="dropdown-item absolute z-50 -ml-4 w-screen max-w-md transform lg:left-0 lg:ml-0 lg:max-w-2xl" >
+                  <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                     <div
                       class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2"
                     >
@@ -66,7 +62,7 @@
                           name: 'demo-slug',
                           params: { slug: product.slug },
                         }"
-                        v-for="(product, index) in hdata.selectedProducts"
+                        v-for="(product, index) in selectedProducts"
                         :key="index"
                         class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                       >
@@ -91,49 +87,87 @@
                 </div>
               </transition>
             </div>
+            <div class="relative dropdown-btn">
+              <button
+                :class="solutionStatus ? 'text-gray-900' : 'text-gray-500'"
+                class="group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 lg:focus:ring-transparent focus:ring-primary focus:ring-offset-2"
+                aria-expanded="false"
+              >
+                <span class="font-lexend">Our Services</span>
+                <svg
+                  :class="solutionStatus ? 'text-gray-600' : 'text-gray-400'"
+                  class="ml-2 h-5 w-5 group-hover:text-gray-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
 
-            <nuxt-link
-              v-for="(item, index) in menuItems"
-              :key="index"
-              :to="item.url"
-              class="text-base font-medium text-gray-500 hover:text-gray-900"
-            >
-              {{ item.name }}
-            </nuxt-link>
+              <transition name="flayout-menu">
+                <div
+                  class="dropdown-item absolute z-50 -ml-4 w-screen max-w-md transform lg:left-0 lg:ml-0 lg:max-w-2xl" >
+                  <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                    <div class="w-screen max-w-sm flex-auto rounded-3xl bg-white p-4 text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+                      <div v-for="item in solutions" :key="item.name" class="relative rounded-lg p-4 hover:bg-gray-50">
+                        <nuxt-link :to="item.href" class="font-semibold text-gray-900">
+                          {{ item.name }}
+                          <span class="absolute inset-0" />
+                        </nuxt-link>
+                        <p class="mt-1 text-gray-600">{{ item.description }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </transition>
+            </div>
+              <Popover class="relative">
+                <PopoverButton class="inline-flex items-center gap-x-1 text-base font-medium leading-6 text-gray-500 font-lexend">
+                  <span>Company</span>
+                  <ChevronDownIcon class="h-5 w-5" aria-hidden="true" />
+                </PopoverButton>
+
+                
+              <transition name="flayout-menu">
+                  <PopoverPanel class="absolute left-1/2 z-50 mt-5 flex w-screen max-w-min -translate-x-1/2 px-4">
+                    <div class="w-56 shrink rounded-xl bg-white p-4 text-sm font-semibold leading-6 text-gray-900 shadow-lg ring-1 ring-gray-900/5">
+                      <nuxt-link v-for="item in company" :key="item.name" :to="item.href" class="block p-2 hover:text-primary">{{ item.name }}</nuxt-link>
+                    </div>
+                  </PopoverPanel>
+                </transition>
+              </Popover>
           </nav>
           <div class="hidden items-center justify-end lg:flex md:flex-1 lg:w-0">
             <nuxt-link
               to="/hire-us"
               class="whitespace-nowrap lg:hidden xl:block block text-base font-medium text-gray-500 hover:text-gray-900"
             >
-              Hire Us
+              Roadmap
             </nuxt-link>
             <nuxt-link
               to="/elite-support"
               class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-primary px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-secondary"
             >
-              Elite Support
+              Customer Support
             </nuxt-link>
           </div>
         </div>
 
-        <!--
-          Mobile menu, show/hide based on mobile menu state.
-
-          Entering: "duration-200 ease-out"
-            From: "opacity-0 scale-95"
-            To: "opacity-100 scale-100"
-          Leaving: "duration-100 ease-in"
-            From: "opacity-100 scale-100"
-            To: "opacity-0 scale-95"
-        -->
+        <!-- Our Mobile Menu  -->
         <transition name="fade">
           <div
-            class="absolute inset-x-0 top-0 z-30 origin-top-right transform p-2 transition lg:hidden"
+            class="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition lg:hidden"
             v-if="mobileNav"
             @click="mobileNav = false"
           >
             <div
+              v-if="data & logo"
               class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5"
             >
               <div class="px-5 pt-5 pb-6">
@@ -141,7 +175,7 @@
                   <div>
                     <NuxtImg
                       class="h-8 w-auto"
-                      :src="hdata.logo.url"
+                      :src="logo?.url"
                       alt="Templatecookie.com Premium Quality Scripts & HTML Templates"
                     />
                   </div>
@@ -177,7 +211,7 @@
                         name: 'demo-slug',
                         params: { slug: product.slug },
                       }"
-                      v-for="(product, index) in hdata.selectedProducts"
+                      v-for="(product, index) in selectedProducts"
                       :key="index"
                       class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50"
                     >
@@ -233,36 +267,44 @@
     </header>
   </div>
 </template>
-<script>
-export default {
-  props: ["data"],
-  data() {
-    return {
-      solutionStatus: false,
-      mobileNav: false,
-      hdata: this.data,
-      menuItems: [
-        {
-          name: "Support Ticket",
-          url: "/get-support",
-          blank: false,
-        },
-        {
-          name: "Installation Plans",
-          url: "/installation-plans",
-          blank: false,
-        },
-        {
-          name: "Product Roadmap",
-          url: "/roadmap",
-          blank: false,
-        },
-      ],
-    };
+
+<script setup>
+import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
+import { ChevronDownIcon } from '@heroicons/vue/20/solid'
+
+const company = [
+  { name: 'About Us', href: '/about-us' },
+  { name: 'Contact Us', href: '/contact-us' },
+  { name: 'Our Blog', href: '/blog' },
+]
+
+const solutions = [
+  {
+    name: 'Installation Plans',
+    description: 'Learn about tips, product updates and company culture',
+    href: '/installation-plans'
   },
-  mounted() {},
-};
+  {
+    name: 'Recurring Support',
+    description: 'Get all of your questions answered in our forums of contact support',
+    href: '/elite-support',
+  },
+  {
+    name: 'Hire Us',
+    description: 'Learn how to maximize our platform to get the most out of it',
+    href: '/hire-us'
+  },
+]
+
+const { data } = defineProps(['data']);
+const { logo, selectedProducts } = toRefs(data);
+
+
+const solutionStatus = ref(false);
+const mobileNav = ref(false);
+
 </script>
+
 <style>
 .dropdown-item {
   visibility: hidden;
