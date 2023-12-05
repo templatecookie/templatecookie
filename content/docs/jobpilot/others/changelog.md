@@ -7,7 +7,7 @@ category: Others
 
 # Changelog
 
-## November
+## December
 ### v3.6.0 - 4th December, 2023
 
 ```
@@ -21,6 +21,7 @@ category: Others
 - fix: job edit update isssue as a company
 
 ```
+## November
 ### v3.3.2 - 23th November, 2023
 
 ```
