@@ -1,7 +1,7 @@
 <template>
   <li>
     <NuxtImg
-      class="aspect-[14/13] max-w-xs w-full rounded-2xl object-cover"
+      class="aspect-[14/13] md:max-w-xs w-full rounded-2xl object-cover"
       :src="item.avatar"
       :alt="item.name + ' - ' + item.role"
     />

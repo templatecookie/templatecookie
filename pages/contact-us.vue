@@ -1,7 +1,7 @@
 <template>
   <div>
     <contact-hero-section />
-    <div class="bg-white py-24 sm:py-32">
+    <div class="bg-white pt-8 pb-0 sm:pt-24 sm:pb-16 lg:pt-32 lg:pb-24">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div
           class="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none"
@@ -20,7 +20,7 @@
             <div
               class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8"
             >
-              <div class="rounded-2xl bg-gray-50 p-10">
+              <div class="rounded-2xl bg-gray-50 sm:p-10 p-5">
                 <h3 class="text-base font-semibold leading-7 text-gray-900">
                   Email
                 </h3>
@@ -41,7 +41,7 @@
                   </div>
                 </dl>
               </div>
-              <div class="rounded-2xl bg-gray-50 p-10">
+              <div class="rounded-2xl bg-gray-50 sm:p-10 p-5">
                 <h3 class="text-base font-semibold leading-7 text-gray-900">
                   Phone
                 </h3>
@@ -66,8 +66,8 @@
             </div>
           </div>
 
-          <div class="!mt-16 flex pt-16">
-            <div class="flex gap-x-6">
+          <div class="md:!mt-16 !mt-8 flex flex-col gap-6 md:flex-row md:pt-16 pt-8">
+            <div class="flex flex-col lg:flex-row gap-6">
               <div
                 class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary"
               >
@@ -91,7 +91,7 @@
                 </p>
               </div>
             </div>
-            <div class="flex gap-x-6">
+            <div class="flex flex-col lg:flex-row gap-6">
               <div
                 class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary"
               >
@@ -115,7 +115,7 @@
                 </p>
               </div>
             </div>
-            <div class="flex gap-x-6">
+            <div class="flex flex-col lg:flex-row gap-6">
               <div
                 class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary"
               >

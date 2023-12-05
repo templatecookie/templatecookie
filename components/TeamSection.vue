@@ -1,6 +1,6 @@
 <template>
   <!-- / Team  -->
-  <div class="bg-gray-900 py-24 sm:py-32">
+  <div class="bg-gray-900 py-8 sm:py-24 md:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0">
         <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -15,7 +15,7 @@
       </div>
       <ul
         role="list"
-        class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-3"
+        class="mx-auto md:mt-20 mt-8 grid max-w-2xl grid-cols-1 gap-x-8 md:gap-y-14 gap-y-8 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-3"
       >
         <team-item v-for="(member, index) in members" :key="index" :item="member" />
       </ul>
