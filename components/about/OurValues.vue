@@ -1,10 +1,10 @@
 <template>
-  <div class="mx-auto my-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+  <div class="mx-auto lg:my-32 sm:my-16 my-8 max-w-7xl px-6 sm:mt-40 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0">
       <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our values</h2>
-      <p class="mt-6 text-lg leading-8 text-gray-600">Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.</p>
+      <p class="md:mt-6 mt-4 text-lg leading-8 text-gray-600">Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.</p>
     </div>
-    <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+    <dl class="mx-auto md:mt-16 mt-8 grid max-w-2xl grid-cols-1 gap-x-8 lg:gap-y-16 sm:gap-y-8 gap-y-4 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
       <div>
         <dt class="font-semibold text-gray-900 text-lg"> Excellence </dt>
         <dd class="mt-1 text-gray-700"> We demand the utmost, delivering perfection every time. </dd>
