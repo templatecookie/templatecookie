@@ -8,6 +8,11 @@ category: Others
 # Changelog
 
 ## December
+### v3.6.1 - 6th December, 2023
+
+```
+- Improvement: Revise the design for the mobile version.
+```
 ### v3.6.0 - 4th December, 2023
 
 ```
