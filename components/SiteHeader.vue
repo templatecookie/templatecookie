@@ -110,7 +110,7 @@
             </div>
           </nav>
           <div class="hidden items-center justify-end lg:flex md:flex-1 lg:w-0">
-            <nuxt-link to="/hire-us"
+            <nuxt-link to="/roadmap"
               class="whitespace-nowrap lg:hidden xl:block block text-base font-medium text-gray-500 hover:text-gray-900">
               Roadmap
             </nuxt-link>
