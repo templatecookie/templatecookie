@@ -114,7 +114,7 @@
               class="whitespace-nowrap lg:hidden xl:block block text-base font-medium text-gray-500 hover:text-gray-900">
               Roadmap
             </nuxt-link>
-            <nuxt-link to="/elite-support"
+            <nuxt-link to="/get-support"
               class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-primary px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-secondary">
               Customer Support
             </nuxt-link>
