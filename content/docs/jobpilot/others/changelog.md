@@ -8,6 +8,14 @@ category: Others
 # Changelog
 
 ## December
+### v3.6.5 - 13th December, 2023
+
+```
+- fix: PayPal payment issue
+- fix: Linkedin login issue
+- fix: Design issues in job create and edit
+- fix: Bookmarks Candidate profile modal view issue  
+```
 ### v3.6.1 - 6th December, 2023
 
 ```
