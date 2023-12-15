@@ -8,6 +8,11 @@ category: Others
 # Changelog
 
 ## December
+## v3.6.6 - 15th December, 2023
+
+```
+- fix: Display issue with candidate details.
+```
 ### v3.6.5 - 13th December, 2023
 
 ```
