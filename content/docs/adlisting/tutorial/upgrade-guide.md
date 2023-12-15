@@ -1,7 +1,7 @@
 ---
 title: Upgrade Guide
-position: 24
-category: System Setting
+position: 31
+category: Others
 ---
 
 # Upgrade Guide
@@ -28,6 +28,7 @@ Delete the file (en.json) that are located inside your domain_root/resources/lan
 - public/uploads
 - resources/lang
 - storage
+- config
 - .env
 
 ### Step 3 - Delete the old files
@@ -53,6 +54,7 @@ Please replace the following files and folders in their respective directories.
 - public/uploads
 - resources/lang
 - storage
+- config
 - .env
 
 ### Step 8 - Run the upgrade command

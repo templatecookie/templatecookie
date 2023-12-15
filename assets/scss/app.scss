@@ -274,6 +274,10 @@ html {
   }
 }
 
+body:has(.mobile-menu-active) {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 767px) {
   [data-aos] {
     pointer-events: auto !important;

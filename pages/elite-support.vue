@@ -4,11 +4,11 @@
     <div class="bg-gray-900">
       <div class="bg-gradient-to-b from-violet-600/[.15] via-transparent">
         <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
-          <div class="max-w-3xl text-center mx-auto">
+          <div class="max-w-4xl text-center mx-auto">
             <h1
-              class="block font-medium text-gray-50 text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
+              class="block font-medium leading-normal text-gray-50 text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
             >
-              Worry Free, Tech Support
+              Worry Free <br /> Recurring Tech Support
             </h1>
           </div>
 
@@ -774,7 +774,7 @@ import store from "~/store";
 
 const title = "Elite Support | Streamlined Solutions for Unmatched Success";
 const description =
-  "Experience Elite Support - a premium service tailored to your technical needs. Enjoy priority assistance, rapid response times, and personalized solutions for your business. Propel your success with our reliable development partner and elevate your projects to new heights. Maximize efficiency and achieve exceptional outcomes with our streamlined support. Subscribe now and unlock the path to unparalleled success.";
+  "Unlock premium support with Templatecookie Elite. Elevate your business journey with personalized assistance for unparalleled success";
 const route = useRoute();
 const siteLogo = store.global.logo.url;
 const compairison = [

@@ -94,7 +94,7 @@ const { data } = await useGraphqlQuery({
 products.value = data?._rawValue?.allProducts;
 const title = "All Products Listing";
 const description =
-  "Browse Templatecookie all products, Templatecookie has HTML, Figma & Laravel products.";
+  "Explore a range of free HTML and Figma templates at Templatecookie. Elevate your projects with our versatile and user-friendly design solutions. Browse now!";
 
 const handlePageChange = (newPage) => {
   currentPage.value = newPage;

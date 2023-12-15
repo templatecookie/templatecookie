@@ -34,7 +34,7 @@ import ALL_BLOG_QUERY from "~/graphql/blog/allBlogPosts.js";
 import store from "~/store";
 const route = useRoute();
 const title = `Blog - Templatecookie.com`;
-const description = "Read templatecookie blog. Updated Weekly";
+const description = "Discover tech insights and innovation at the Templatecookie blog. Stay informed and inspired within the digital landscape.";
 
 const { data } = await useGraphqlQuery({ query: ALL_BLOG_QUERY });
 const posts = data._rawValue.allPosts;
