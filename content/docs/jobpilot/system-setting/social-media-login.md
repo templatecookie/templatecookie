@@ -69,21 +69,24 @@ NOTE:
 1.  Register for regular LinkedIn account, if you don't already have one.
 2.  Open [this url](https://www.linkedin.com/developer/apps), and **Create a New App.**
 3.  Get the new app settings.
-![Must be active this two prodyct](docs/jobpilot/screenshot/admin/setting/linkedin_product.png)
+![Active Product](/docs/jobpilot/install/linkedin_product.png)
+
 Now, you have to setup your admin panel:
 
 - Go to your **Admin panel** -> **Settings** -> **General** -> **Social Login**
 - For LinkedIn: set '**LinkedIn Client ID**' and '**LinkedIn Client Secret**'
 - And save your changes.
 - You are done.
-![Credentail Update Process](docs/jobpilot/screenshot/admin/setting/linkedin_credentail.png)
+![update credentail](/docs/jobpilot/install/linkedin_credentail.png)
 
-```
+
 
 NOTE:
 
 - The `/.env` file settings override those of the admin panel.
-- The "**OAuth redirect URI**" is: (`http://` or `https://`) `templatecookie.com/auth/linkedin-openid/callback` 
+- The "**OAuth redirect URI**" is: (`http://` or `https://`) `templatecookie.com/auth/linkedin/callback`
+
+![Set Auth url](/docs/jobpilot/install/linkedin_aut_url.png)
 
 ### Twitter
 
