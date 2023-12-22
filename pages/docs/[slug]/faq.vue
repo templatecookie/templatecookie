@@ -42,7 +42,7 @@ const productName =
   route.params.slug.charAt(0).toUpperCase() + route.params.slug.slice(1);
 
 const seoTitle = `Frequently Asked Questions - ${productName} Documentation`;
-const description = "";
+const description = "Find answers to your questions with ease on the Templatecookie FAQ page. Your queries addressed for a seamless experience. Explore now!";
 
 useSeoMeta({
   title: seoTitle,

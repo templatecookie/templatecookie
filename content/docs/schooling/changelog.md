@@ -6,6 +6,13 @@ category: Others
 ---
 
 # Changelog
+### v2.9.19 - 15 December, 2023
+
+```
+- Fix: Schedule Create issue
+- Fix: Schedule Update issue
+- Fix: Resolved plan currency issue
+```
 
 ### v2.9.16 - 13 October, 2023
 

@@ -87,7 +87,7 @@ const teamMembers = [
     name: "Zakir Hossen",
     role: "CEO & Founder",
     location: "Dhaka, Bangladesh",
-    avatar: "/images/zakir-hossen.png",
+    avatar: "/images/zakir-hossen-low-res.png",
   },
 ];
 

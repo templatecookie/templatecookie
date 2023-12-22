@@ -7,7 +7,75 @@ category: Others
 
 # Changelog
 
+## December
+## v3.6.6 - 15th December, 2023
+
+```
+- fix: Display issue with candidate details.
+```
+### v3.6.5 - 13th December, 2023
+
+```
+- fix: PayPal payment issue
+- fix: Linkedin login issue
+- fix: Design issues in job create and edit
+- fix: Bookmarks Candidate profile modal view issue  
+```
+### v3.6.1 - 6th December, 2023
+
+```
+- Improvement: Revise the design for the mobile version.
+```
+### v3.6.0 - 4th December, 2023
+
+```
+- feat: Map alternative Dropdown for quick  country, state, and city selection.
+- feat: System Information with Admin Visibility
+- feat: Log Information with Admin Visibility
+
+
+- fix: job update isssue as a admin
+- fix: mobile version toogle bar issue
+- fix: job edit update isssue as a company
+
+```
 ## November
+### v3.3.2 - 23th November, 2023
+
+```
+- fix: Upgrade time to resolve migration issues.
+- fix: Fix bugs on the payment settings page.
+
+```
+
+### v3.3.0 - 22th November, 2023
+
+```
+- feat: Export candidate data pdf,csv,xlsx format.
+- feat: Update SSLCOMMERZ  payment gateway
+
+- fix: Issue resolved due to CMS file update.
+
+- Improvement: Improve ad order feature.
+- Improvement: Contact page map section remove.
+- Improvement: Remove unnecessary CSS.
+
+```
+
+### v3.1.0 - 20th November, 2023
+
+```
+- feat: Implementation of Chat functionality.
+
+- fix: Resolved CMS page issue.
+- fix: Addressed the issue on the Refund Policy page.
+- fix: Fixed the problem with saving bookmarks.
+
+- Improvement : Redesigned the Candidate Bookmark popup.
+- Improvement: Integrated a search system into the Language page.
+- Improvement: Improved the design of the Pricing page by adding FAQ section.
+
+```
 
 ### v3.0 - 1st November, 2023
 

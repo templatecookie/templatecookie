@@ -109,7 +109,7 @@
 <script setup>
 const title = "Refund Policy | Our commitment to customer satisfaction";
 const description =
-  "Our refund policy ensures that our customers receive a satisfactory experience. If you're unhappy with your purchase or encounter issues, we're here to help. Learn more about our refund policy and eligibility criteria.";
+  "Explore our Refund Policy for a clear understanding of how we handle refunds. Your satisfaction is our priority, and we aim to provide transparency in every transaction.";
 
 const route = useRoute();
 useHead({

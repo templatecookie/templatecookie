@@ -184,7 +184,7 @@ export default {
   },
   data() {
     return {
-      bgImage: "/images/img-five.png",
+      bgImage: "/img-five.png",
       modules: [FreeMode, Autoplay],
 
       breakpoints: {

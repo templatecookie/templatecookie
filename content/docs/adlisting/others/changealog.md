@@ -8,6 +8,15 @@ category: Others
 # Changelog
 
 ---
+### v3.5.0 - 16th November 2023
+```
+- feat: Map alternative Dropdown for quick  country, state, and city selection.
+
+- fix: Custom field file download issue fix
+- fix: Gallery image slider problem fix
+
+- impr: Role unchanged for Super Admin
+```
 ### v3.4.0 - 11th November 2023
 ```
 - feat: Added safety tips on the ad details page

@@ -1,7 +1,7 @@
 <template>
   <div>
     <contact-hero-section />
-    <div class="bg-white py-24 sm:py-32">
+    <div class="bg-white pt-8 pb-0 sm:pt-24 sm:pb-16 lg:pt-32 lg:pb-24">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div
           class="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none"
@@ -20,7 +20,7 @@
             <div
               class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8"
             >
-              <div class="rounded-2xl bg-gray-50 p-10">
+              <div class="rounded-2xl bg-gray-50 sm:p-10 p-5">
                 <h3 class="text-base font-semibold leading-7 text-gray-900">
                   Email
                 </h3>
@@ -29,7 +29,7 @@
                     <dt class="sr-only">Support</dt>
                     <dd>
                       <a
-                        class="font-semibold text-indigo-600"
+                        class="font-semibold text-primary"
                         href="mailto:support@templatecookie.com"
                         >support@templatecookie.com</a
                       >
@@ -41,7 +41,7 @@
                   </div>
                 </dl>
               </div>
-              <div class="rounded-2xl bg-gray-50 p-10">
+              <div class="rounded-2xl bg-gray-50 sm:p-10 p-5">
                 <h3 class="text-base font-semibold leading-7 text-gray-900">
                   Phone
                 </h3>
@@ -50,10 +50,10 @@
                     <dt class="sr-only">Email</dt>
                     <dd>
                       <a
-                        class="font-semibold text-indigo-600"
-                        href="tel:01610774060"
+                        class="font-semibold text-primary"
+                        href="https://wa.me/8801625592566"
                       >
-                        880 (1610) 774-060
+                        880 1625 592-566
                       </a>
                     </dd>
                   </div>
@@ -66,80 +66,77 @@
             </div>
           </div>
 
-          <div class="mt-20 flex pt-4">
-            <div class="flex gap-x-6">
+          <div class="md:!mt-16 !mt-8 flex flex-col gap-6 md:flex-row md:pt-16 pt-8">
+            <div class="flex flex-col lg:flex-row gap-6">
               <div
-                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-indigo-600"
+                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary"
               >
-                <ChatBubbleLeftRightIcon
+                <LightBulbIcon
                   class="h-6 w-6 text-white"
                   aria-hidden="true"
                 />
               </div>
               <div>
                 <h3 class="text-base font-semibold leading-7 text-gray-900">
-                  Sales support
+                  Product Roadmap
                 </h3>
                 <p class="mt-2 leading-7 text-gray-600">
-                  Ut cursus est ut amet. Lobortis eget egestas leo vitae eget
-                  porttitor risus blandit. Nunc a in lorem vel iaculis
-                  porttitor.
+                  Explore the future of our offerings. Check out our Product Roadmap to see what exciting features and innovations we have in store for you.
                 </p>
                 <p class="mt-4">
-                  <a
-                    href="#"
-                    class="text-sm font-semibold leading-6 text-indigo-600"
-                    >Contact us <span aria-hidden="true">&rarr;</span></a
-                  >
+                  <a href="#"
+                    class="text-sm font-semibold leading-6 text-primary">
+                     View Roadmap <span aria-hidden="true">&rarr;</span>
+                  </a>
                 </p>
               </div>
             </div>
-            <div class="flex gap-x-6">
+            <div class="flex flex-col lg:flex-row gap-6">
               <div
-                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-indigo-600"
+                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary"
               >
-                <BugAntIcon class="h-6 w-6 text-white" aria-hidden="true" />
+                <BriefcaseIcon class="h-6 w-6 text-white" aria-hidden="true" />
               </div>
               <div>
                 <h3 class="text-base font-semibold leading-7 text-gray-900">
-                  Bug reports
+                  Hire Us
                 </h3>
                 <p class="mt-2 leading-7 text-gray-600">
-                  Expedita qui non ut quia ipsum voluptatum ipsam pariatur.
-                  Culpa vitae ipsum minus eius vero quo quibusdam.
+                  Ready to bring your ideas to life? Discover how our expert team can transform your vision into reality. Hire us for tailored solutions.
                 </p>
                 <p class="mt-4">
                   <a
                     href="#"
-                    class="text-sm font-semibold leading-6 text-indigo-600"
-                    >Report a bug <span aria-hidden="true">&rarr;</span></a
-                  >
+                    class="text-sm font-semibold leading-6 text-primary"
+                    >
+                    Get Started
+                    <span aria-hidden="true">&rarr;</span>
+                    </a>
                 </p>
               </div>
             </div>
-            <div class="flex gap-x-6">
+            <div class="flex flex-col lg:flex-row gap-6">
               <div
-                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-indigo-600"
+                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary"
               >
-                <ComputerDesktopIcon
+                <BookOpenIcon
                   class="h-6 w-6 text-white"
                   aria-hidden="true"
                 />
               </div>
               <div>
                 <h3 class="text-base font-semibold leading-7 text-gray-900">
-                  Technical support
+                  Product Documentation
                 </h3>
                 <p class="mt-2 leading-7 text-gray-600">
-                  Sint aut modi porro consequatur architecto commodi qui
-                  consequatur. Dignissimos adipisci minima.
+                  Access comprehensive documentation for our products. Learn how to make the most of our offerings with detailed guides and resources.
                 </p>
                 <p class="mt-4">
-                  <a
-                    href="#"
-                    class="text-sm font-semibold leading-6 text-indigo-600"
-                    >Join our Discord <span aria-hidden="true">&rarr;</span></a
-                  >
+                  <a href="#"
+                    class="text-sm font-semibold leading-6 text-primary">
+                      Explore Documentation
+                      <span aria-hidden="true">&rarr;</span>
+                    </a>
                 </p>
               </div>
             </div>
@@ -151,11 +148,7 @@
 </template>
 
 <script setup>
-import {
-  BugAntIcon,
-  ChatBubbleLeftRightIcon,
-  ComputerDesktopIcon,
-} from "@heroicons/vue/24/outline";
+import { LightBulbIcon, BriefcaseIcon, BookOpenIcon } from "@heroicons/vue/24/outline";
 const title =
   "Contact Us | Templatecookie - Get in Touch with Your Digital Partner";
 const description =

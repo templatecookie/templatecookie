@@ -89,7 +89,7 @@
 <script setup>
 const title = "Terms and Conditions | Templatecookie";
 const description =
-  "By using Templatecookie, you agree to be bound by our Terms and Conditions. We provide high-quality templates and resources for web development, while also outlining our expectations for user conduct and ownership of content. Learn more here.";
+  "Read through our Terms and Conditions to understand the guidelines governing your interactions with Templatecookie. We prioritize clarity and fairness in our agreements.";
 
 useSeoMeta({
   title: title,
