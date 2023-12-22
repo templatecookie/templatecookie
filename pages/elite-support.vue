@@ -4,29 +4,28 @@
     <div class="bg-gray-900">
       <div class="bg-gradient-to-b from-violet-600/[.15] via-transparent">
         <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
-          <div class="max-w-4xl text-center mx-auto">
-            <h1
-              class="block font-medium leading-normal text-gray-50 text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
-            >
-              Worry Free <br /> Recurring Tech Support
-            </h1>
-          </div>
+          <h1
+            class="max-w-5xl text-center mx-auto mb-9 !leading-snug font-medium text-gray-50 text-4xl sm:text-5xl md:text-5xl lg:text-[5.5rem]"
+          >
+            Worry Free <br /> Recurring Tech Support
+          </h1>
 
-          <div class="max-w-3xl text-center mx-auto">
-            <p class="text-lg text-gray-200">
-              Let us handle the technical parts, you focus on the business.
-              Welcome to Templatecookie's Elite Support, where you can hire our
-              team of expert developers at an unbelievably affordable rate. Say
-              goodbye to technical headaches and experience top-notch assistance
-              Script.
-            </p>
-          </div>
+          <p class="max-w-4xl text-center mx-auto text-2xl text-gray-200">
+            Let us handle the technical parts, you focus on the business.
+            Say goodbye to technical headaches and experience top-notch assistance Script.
+          </p>
 
-          <div class="flex justify-center">
+          <div class="flex justify-center gap-4">
             <button-element
               label="View Pricing"
               href="#pricing"
-              css-class="bg-primary hover:bg-secondary text-white"
+              css-class="bg-primary hover:bg-secondary text-white text-lg"
+            />
+
+            <button-element
+              label="Schedule a call"
+              href="https://tidycal.com/devzakir/"
+              css-class="bg-secondary text-white hover:bg-primary text-lg"
             />
           </div>
         </div>
@@ -898,7 +897,7 @@ const teamMembers = [
     name: "Zakir Hossen",
     role: "CEO & Founder",
     location: "Dhaka, Bangladesh",
-    avatar: "/images/zakir-hossen.png",
+    avatar: "/images/zakir-hossen-low-res.png",
   },
 ];
 useHead({

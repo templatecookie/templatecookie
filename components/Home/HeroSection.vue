@@ -21,7 +21,7 @@
           >
             <div class="max-w-[648px] w-full mx-auto">
               <h2
-                class="md:text-5xl md:leading-[56px] font-semibold text-3xl text-center text-white md:mb-6 mb-4"
+                class="md:text-5xl md:leading-snug font-semibold text-3xl text-center text-white md:mb-6 mb-4"
               >
                 Get Elite Support for your business, Worry Free.
               </h2>

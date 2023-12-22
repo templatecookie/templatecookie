@@ -77,7 +77,7 @@
 <script setup>
 import ALL_PRODUCTS from "../../graphql/allProducts";
 
-const bannerImg = "/images/img-five.png";
+const bannerImg = "/img-five.png";
 const selectedCategory = ref({});
 const categoryList = [
   {

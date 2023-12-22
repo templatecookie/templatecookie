@@ -41,7 +41,7 @@
 <script setup>
 import ContentProductItem from "~/components/content/ProductItem.vue";
 
-const bannerImg = ref("/images/img-five.png");
+const bannerImg = ref("/img-five.png");
 const title = ref("Templatecookie Product Documentation");
 const description = ref(
   "Don't have previous experience using our products? Read the documentation to learn more about the features and topics?"

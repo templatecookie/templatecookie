@@ -207,7 +207,7 @@
 </template>
 
 <script setup>
-  import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
+  // import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
   import { ChevronDownIcon } from '@heroicons/vue/20/solid'
 
   const company = [
@@ -218,9 +218,9 @@
 
   const solutions = [
     {
-      name: 'Installation Plans',
-      description: 'Learn about tips, product updates and company culture',
-      href: '/installation-plans'
+      name: 'Hire Us',
+      description: 'Learn how to maximize our platform to get the most out of it',
+      href: '/hire-us'
     },
     {
       name: 'Recurring Support',
@@ -228,9 +228,9 @@
       href: '/elite-support',
     },
     {
-      name: 'Hire Us',
-      description: 'Learn how to maximize our platform to get the most out of it',
-      href: '/hire-us'
+      name: 'Installation Plans',
+      description: 'Learn about tips, product updates and company culture',
+      href: '/installation-plans'
     },
   ]
 

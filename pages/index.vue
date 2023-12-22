@@ -5,6 +5,8 @@
       v-if="homepage && homepage?.heroSection"
     />
 
+    <logo-cloud />
+
     <!-- Latest Product -->
     <section
       class="latest"
@@ -53,14 +55,27 @@
     <div class="bg-primary">
       <div class="mx-auto max-w-2xl py-16 px-6 text-center sm:py-20 lg:px-8">
         <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          <span class="block"> Lunch your site faster </span>
+          <span class="block"> Launch your Website faster </span>
           <span class="block"> Hire us today </span>
         </h2>
         <p class="mt-4 text-lg leading-6 text-white">
           Our team composed with expert designer and developers to handle
           project at any size
         </p>
-        <div class="flex flex-wrap gap-4 justify-center mt-4">
+        <div class="flex justify-center gap-4 mt-8">
+            <button-element
+              label="Hire Us Now"
+              href="/hire-us"
+              css-class="bg-white hover:bg-dark text-primary"
+            />
+
+            <button-element
+              label="Schedule a call"
+              href="https://tidycal.com/devzakir"
+              css-class="bg-secondary text-white hover:bg-dark"
+            />
+          </div>
+        <!-- <div class="flex flex-wrap gap-4 justify-center mt-4">
           <nuxt-link
             to="/hire-us"
             class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-dark hover:text-white hover:bg-dark sm:w-auto"
@@ -71,9 +86,8 @@
             to="/installation-plans"
             class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-dark hover:text-white hover:bg-dark sm:w-auto"
           >
-            Installation Plans
           </nuxt-link>
-        </div>
+        </div> -->
       </div>
     </div>
     <home-blog-section :data="latestPosts" />
