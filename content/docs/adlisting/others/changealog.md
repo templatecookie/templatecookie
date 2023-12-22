@@ -12,7 +12,7 @@ category: Others
 ### v4.0 - 23rd December 2023
 ```
 - feat: Enhanced Website Design
-- feat: Switch to tailwindcss design
+- feat: Switched to TailwindCSS design system
 - feat: Added report to seller
 - feat: Added report to ad
 - feat: Integrated messenger built with vuejs
