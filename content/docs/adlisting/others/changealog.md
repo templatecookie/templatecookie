@@ -8,6 +8,21 @@ category: Others
 # Changelog
 
 ---
+## December
+### v4.0 - 23rd December 2023
+```
+- feat: Enhanced Website Design
+- feat: Switch to tailwindcss design
+- feat: Added report to seller
+- feat: Added report to ad
+- feat: Integrated messenger built with vuejs
+- feat: Enabled ad draft saving
+
+- impr: Optimized PWA content
+- impr: and many more...
+```
+
+## November
 ### v3.5.0 - 16th November 2023
 ```
 - feat: Map alternative Dropdown for quick  country, state, and city selection.
@@ -47,6 +62,7 @@ category: Others
 - impr: Replace links.blade.php to styles.blade.
 php
 ```
+## October
 ### v3.1.10 - 20th October 2023
 
 - fix: Offline page css update
@@ -71,7 +87,7 @@ php
 - improvement: Optimize code performance
 
 ```
-
+## September
 ### v3.0.0 - 28th September 2023
 
 ```
