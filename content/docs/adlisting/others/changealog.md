@@ -9,6 +9,14 @@ category: Others
 
 ---
 ## December
+### v4.0.5 - 25th December 2023
+```
+- fix: Payment page issue fix
+- fix: Post page issue fix
+- fix: Ads create page issue fix
+- fix: Add Currency  page issue fix
+- improve: Design improve filter page
+```
 ### v4.0 - 23rd December 2023
 ```
 - feat: New UI Design ✨
