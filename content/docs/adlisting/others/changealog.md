@@ -11,7 +11,7 @@ category: Others
 ## December
 ### v4.0 - 23rd December 2023
 ```
-- feat: Enhanced Website Design
+- feat: New UI Design ✨
 - feat: Switched to TailwindCSS design system
 - feat: Added report to seller
 - feat: Added report to ad
