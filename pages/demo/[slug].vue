@@ -40,6 +40,8 @@
 
 <script setup>
 import PRODUCT_DEMO from "~/graphql/productDemo";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 
 definePageMeta({
   layout: "empty",
@@ -79,6 +81,10 @@ defineOgImage({
   title: title,
   description: description,
   component: "Projects",
+});
+
+onMounted(() => {
+  AOS.init();
 });
 </script>
 
