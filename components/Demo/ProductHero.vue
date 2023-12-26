@@ -140,7 +140,7 @@
       v-if="product.logoCloudsImages && product.logoCloudsTitle"
     >
       <div class="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-        <h2 class="text-center text-base font-semibold text-gray-400">
+        <h2 class="text-center text-base font-semibold text-white">
           {{ product.logoCloudsTitle }}
         </h2>
         <swiper

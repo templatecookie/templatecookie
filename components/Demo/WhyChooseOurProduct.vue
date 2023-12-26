@@ -1,39 +1,50 @@
 <template>
-  <div class="bg-white">
-    <div class="mx-auto max-w-7xl py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
-      <div class="mb-14 text-center">
-        <p
-          class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
-        >
-          Why choose our product?
-        </p>
-        <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-          Experience the power of innovation, efficiency, and success with
-          {{ product.shortName }}
-        </p>
+  <section id="why-choose-us" class="bg-white">
+    <div
+      class="mx-auto max-w-7xl flex gap-[6rem] items-center pt-[9rem] pb-[3rem]"
+    >
+      <div class="w-full md:max-w-[550px]">
+        <NuxtImg
+          src="/images/why-choose-us.png"
+          alt="why choose us img"
+          class="w-full"
+        />
       </div>
-      <dl class="grid max-w-xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">
-        <div
-          class="flex flex-col shadow-sm p-4 py-6 rounded-lg bg-blue-600"
-          v-for="(item, index) in items"
-          :key="index"
-        >
-          <div
-            class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-white"
-            v-html="item.icon"
-          />
-          <dt class="text-2xl font-semibold leading-7 mb-2 text-white">
-            {{ item.name }}
-          </dt>
-          <dd
-            class="mt-1 flex flex-auto flex-col text-base font-light leading-7 text-white"
+      <div>
+        <div class="mb-8 text-left">
+          <p
+            class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
           >
-            {{ item.description }}
-          </dd>
+            Why choose our product?
+          </p>
+          <p class="mt-5 max-w-prose mx-auto text-xl text-gray-600">
+            Experience the power of innovation, efficiency, and success with
+            <b>{{ product.shortName }}</b>
+          </p>
         </div>
-      </dl>
+        <dl class="divide-y divide-y-gray-100 space-y-4">
+          <div
+            class="flex items-start py-3 gap-2"
+            v-for="(item, index) in items"
+            :key="index"
+          >
+            <div
+              class="flex items-center justify-center rounded-lg bg-white font-bold"
+              v-html="item.icon"
+            />
+            <div class="space-y-2">
+              <dt class="text-2xl font-semibold text-gray-900">
+                {{ item.name }}
+              </dt>
+              <dd class="text-base text-gray-800 font-medium max-w-[500px]">
+                {{ item.description }}
+              </dd>
+            </div>
+          </div>
+        </dl>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
