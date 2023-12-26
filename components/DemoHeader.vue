@@ -221,51 +221,27 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import ButtonElement from "./ButtonElement.vue";
-export default {
-  props: ["product"],
-  components: { ButtonElement },
-  data() {
-    return {
-      mobileMenu: false,
-      subMenuItems: [
-        {
-          name: "Features",
-          href: "",
-        },
-        {
-          name: "Screenshots",
-          href: "",
-        },
-        {
-          name: "Payment Methods",
-          href: "",
-        },
-        {
-          name: "Testimonial",
-          href: "",
-        },
-        {
-          name: "Installation Plans",
-          href: "",
-        },
-      ],
-      mainMenuItems: [
-        {
-          id: "cart",
-          name: "Buy Now",
-          href: "#pricing",
-          status: true,
-        },
-        {
-          id: "customization",
-          status: this.product.offerRequestCustomization,
-          name: "Request Customization",
-          href: "/hire-us",
-        },
-      ],
-    };
+
+const props = defineProps({
+  product: Object,
+});
+
+const mobileMenu = ref(false);
+
+const mainMenuItems = [
+  {
+    id: "cart",
+    name: "Buy Now",
+    href: "#pricing",
+    status: true,
   },
-};
+  {
+    id: "customization",
+    status: props.product.offerRequestCustomization,
+    name: "Request Customization",
+    href: "/hire-us",
+  },
+];
 </script>
