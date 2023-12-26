@@ -13,11 +13,10 @@
     <nuxt-link
       v-else
       :to="href"
-      :class="cssClass ? cssClass : 'bg-primary hover:bg-dark'"
-      class="py-3 px-6 flex items-center transition-all justify-center text-sm-17 rounded-lg overflow-hidden max-w-max"
+      class="text-white opacity-80 hover:opacity-100 transition-all duration-200 ease-linear inline-flex items-center gap-1"
     >
-      {{ label }}
       <slot name="icon" />
+      {{ label }}
     </nuxt-link>
   </div>
 </template>
