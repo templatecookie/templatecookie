@@ -20,7 +20,7 @@
     <div class="relative bg-dark">
       <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div
-          class="flex items-center justify-between lg:border-b-2 border-gray-100/40 py-6 md:justify-start md:space-x-10"
+          class="flex items-center justify-between py-6 md:justify-start md:space-x-10 border-b border-b-gray-50/30"
         >
           <div class="flex justify-start lg:w-0 lg:flex-1">
             <nuxt-link to="/">
@@ -114,13 +114,13 @@
         class="mx-auto max-w-7xl px-4 sm:px-6"
         v-if="product.menuItems && product.menuItems.length"
       >
-        <nav class="hidden md:flex md:justify-between py-1 pb-4">
-          <div class="flex flex-wrap">
+        <nav class="hidden md:flex md:justify-between py-3">
+          <div class="flex flex-wrap gap-8">
             <a
               :href="item.href"
               v-for="(item, index) in product.menuItems"
               :key="index"
-              class="text-sm text-gray-400 hover:text-gray-900 hover:bg-gray-200 rounded-xl py-2 px-4"
+              class="text-sm text-white opacity-80 hover:opacity-100 transition duration-200 ease-linear"
             >
               {{ item.label }}
             </a>
@@ -129,24 +129,27 @@
             <nuxt-link
               v-if="product.docsUrl"
               :to="product.docsUrl"
-              class="text-sm text-gray-900 bg-gray-100 rounded-xl py-2 px-4"
+              class="text-sm text-white opacity-80 hover:opacity-100 transition duration-200 ease-linear inline-flex items-center gap-1"
             >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.5 2A1.5 1.5 0 0 0 3 3.5v13A1.5 1.5 0 0 0 4.5 18h11a1.5 1.5 0 0 0 1.5-1.5V7.621a1.5 1.5 0 0 0-.44-1.06l-4.12-4.122A1.5 1.5 0 0 0 11.378 2H4.5Zm2.25 8.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Zm0 3a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
               Documentation
             </nuxt-link>
           </div>
         </nav>
       </div>
 
-      <!--
-        Mobile menu, show/hide based on mobile menu state.
-
-        Entering: "duration-200 ease-out"
-          From: "opacity-0 scale-95"
-          To: "opacity-100 scale-100"
-        Leaving: "duration-100 ease-in"
-          From: "opacity-100 scale-100"
-          To: "opacity-0 scale-95"
-      -->
       <div
         class="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden z-40"
         v-if="mobileMenu"
