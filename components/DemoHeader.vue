@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <header class="sticky top-0 w-full left-0 z-[999999]">
     <div
       v-if="product.showNotice"
       class="flex items-center justify-center gap-x-6 bg-primary px-6 py-2.5 sm:px-3.5"
@@ -120,7 +120,7 @@
               :href="item.href"
               v-for="(item, index) in product.menuItems"
               :key="index"
-              class="text-sm text-white opacity-80 hover:opacity-100 transition duration-200 ease-linear"
+              class="text-sm text-white opacity-80 hover:opacity-100 transition duration-200 ease-linear before:content-['#'] before:pr-1 before:opacity-0 hover:before:opacity-100"
             >
               {{ item.label }}
             </a>
@@ -221,7 +221,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </header>
 </template>
 
 <script setup>
