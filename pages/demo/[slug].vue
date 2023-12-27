@@ -3,6 +3,8 @@
     <demo-header :product="product" v-if="product" />
     <demo-product-hero :product="product" v-if="product" />
     <demo-product-stats />
+    <demo-product-homepage />
+    <demo-product-payment-gateways :product="product" v-if="product" />
     <demo-why-choose-our-product
       :product="product"
       v-if="product?.whyChooseUs"

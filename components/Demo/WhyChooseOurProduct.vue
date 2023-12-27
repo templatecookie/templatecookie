@@ -6,6 +6,8 @@
       <div
         class="max-w-full lg:max-w-[550px] hidden lg:inline"
         data-aos="zoom-in"
+        data-aos-mirror="true"
+        data-aos-once="false"
       >
         <NuxtImg
           src="/images/why-choose-us.png"
@@ -31,6 +33,9 @@
             v-for="(item, index) in items"
             :key="index"
             data-aos="fade-down"
+            data-aos-mirror="true"
+            :data-aos-duration="1000 * index"
+            data-aos-once="false"
           >
             <div
               class="flex items-center justify-center rounded-lg bg-blue-50 h-[40px] w-[40px] font-bold group-hover:bg-primary group-hover:text-white text-primary"

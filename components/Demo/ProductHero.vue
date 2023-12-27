@@ -6,7 +6,9 @@
       <div class="relative pt-6 pb-16 sm:pb-24">
         <div
           class="mx-auto mt-16 max-w-7xl px-4 sm:mt-24 sm:px-6"
-          data-aos="fade-up"
+          data-aos="fade-in"
+          data-aos-mirror="true"
+          data-aos-once="false"
         >
           <div class="text-center">
             <h1
@@ -72,7 +74,13 @@
         </div>
       </div>
 
-      <div class="relative mt-[-40px]" v-if="product.demoBanner">
+      <div
+        class="relative mt-[-40px]"
+        v-if="product.demoBanner"
+        data-aos="fade-in"
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
         <swiper
           class="swiper w-full md:w-[60%]"
           :slides-per-view="1"
@@ -99,37 +107,6 @@
         </swiper>
       </div>
     </div>
-    <!-- <div v-if="product.logoCloudsImages && product.logoCloudsTitle">
-      <div class="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-        <h2 class="text-center text-base font-semibold text-white">
-          {{ product.logoCloudsTitle }}
-        </h2>
-        <swiper
-          class="swiper"
-          :slides-per-view="4"
-          :space-between="24"
-          :loop="true"
-          :free-mode="true"
-          :speed="10000"
-          :modules="modules"
-          :autoplay="{
-            delay: 1,
-            disableOnInteraction: false,
-          }"
-          :breakpoints="breakpoints"
-        >
-          <swiper-slide
-            class="mt-8 slider-full"
-            v-for="(item, index) in product.logoCloudsImages"
-            :key="index"
-          >
-            <div class="flex justify-center bg-white py-2 px-4 rounded">
-              <NuxtImg class="h-12" :src="item.url" :alt="item.alt" />
-            </div>
-          </swiper-slide>
-        </swiper>
-      </div>
-    </div> -->
   </div>
 </template>
 
