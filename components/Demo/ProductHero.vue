@@ -72,14 +72,31 @@
         </div>
       </div>
 
-      <div class="relative" v-if="product.demoBanner">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6" data-aos="fade-down">
-          <NuxtImg
-            class="relative rounded-lg shadow-lg mx-auto w-full"
-            :src="product.demoBanner.url"
-            :alt="product.name"
-          />
-        </div>
+      <div class="relative mt-[-40px]" v-if="product.demoBanner">
+        <swiper
+          class="swiper w-full md:w-[60%]"
+          :slides-per-view="1"
+          :space-between="24"
+          :loop="true"
+          :free-mode="true"
+          :speed="10000"
+          :modules="modules"
+          :autoplay="{
+            delay: 1,
+            disableOnInteraction: false,
+          }"
+        >
+          <swiper-slide
+            class="mt-8 slider-full"
+            v-for="(item, index) in heroSliderImages"
+            :key="index"
+          >
+            <div class="flex justify-center bg-white py-2 px-4 rounded">
+              <!-- {{ item }} -->
+              <img class="h-12" :src="item" :alt="`images-slider-${index}`" />
+            </div>
+          </swiper-slide>
+        </swiper>
       </div>
     </div>
     <!-- <div v-if="product.logoCloudsImages && product.logoCloudsTitle">
@@ -116,55 +133,63 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/free-mode";
 import { FreeMode, Autoplay } from "swiper/modules";
+import HeroSlider1 from "~/assets/images/hero-slider-1.png";
+import HeroSlider2 from "~/assets/images/hero-slider-2.png";
+import HeroSlider3 from "~/assets/images/hero-slider-3.png";
+import HeroSlider4 from "~/assets/images/hero-slider-4.png";
+import HeroSlider5 from "~/assets/images/hero-slider-5.png";
 
-export default {
-  props: {
-    product: {
-      type: Object,
-      required: true,
-    },
+const props = defineProps({
+  product: {
+    type: Object,
+    required: true,
   },
-  data() {
-    return {
-      bgImage: "/img-five.png",
-      modules: [FreeMode, Autoplay],
+});
 
-      breakpoints: {
-        1199: {
-          slidesPerView: 4,
-        },
-        1024: {
-          slidesPerView: 3,
-        },
-        768: {
-          slidesPerView: 2,
-        },
-        640: {
-          slidesPerView: 2,
-        },
-        320: {
-          slidesPerView: 1,
-        },
-      },
-    };
-  },
-  methods: {
-    getBanner() {
-      return this.product.demoBanner && this.product.demoBanner.url
-        ? this.product.demoBanner.url
-        : this.bgImage;
-    },
-  },
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
-};
+const modules = [FreeMode, Autoplay];
+
+// const breakpoints = {
+//   1199: {
+//     slidesPerView: 4,
+//   },
+//   1024: {
+//     slidesPerView: 3,
+//   },
+//   768: {
+//     slidesPerView: 2,
+//   },
+//   640: {
+//     slidesPerView: 2,
+//   },
+//   320: {
+//     slidesPerView: 1,
+//   },
+// };
+
+const heroSliderImages = [
+  HeroSlider1,
+  HeroSlider2,
+  HeroSlider3,
+  HeroSlider4,
+  HeroSlider5,
+];
 </script>
 
-<style></style>
+<style scoped>
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+</style>
+
