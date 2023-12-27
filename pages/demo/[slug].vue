@@ -2,6 +2,7 @@
   <div>
     <demo-header :product="product" v-if="product" />
     <demo-product-hero :product="product" v-if="product" />
+    <demo-product-stats />
     <demo-why-choose-our-product
       :product="product"
       v-if="product?.whyChooseUs"
