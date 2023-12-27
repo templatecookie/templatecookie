@@ -22,15 +22,7 @@
       <div v-if="section.__typename == 'ProductctaRecord'">
         <demo-call-to-action :section="section" :product="product" />
       </div>
-      <div v-if="section.__typename == 'PriceplanRecord'">
-        <PricingSection
-          :plans="section.plans"
-          :id="section.sectionId ? section.sectionId : section.id"
-          :info="section.info[0]"
-          :extra-offer="product.extraOffer"
-          :request-customization="product.offerRequestCustomization"
-        />
-      </div>
+
       <div v-if="section.__typename == 'TestimonialSectionRecord'">
         <demo-testimonial-section :data="section" />
       </div>

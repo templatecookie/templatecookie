@@ -1,8 +1,8 @@
 <template>
   <section class="space-y-8 pt-16">
-    <div class="text-center space-y-4">
+    <div class="text-center space-y-12">
       <h4
-        class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl leading-10"
+        class="mt-2 pb-16 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl leading-10 after:bg-no-repeat after:w-full after:left-0 after:bottom-5 after:content-[url('~/assets/images/Underline.png')] after:absolute relative"
       >
         Integrated Most Popular Payment Gateways
       </h4>

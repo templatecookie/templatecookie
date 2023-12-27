@@ -18,7 +18,7 @@
           <template #suffix> + </template>
         </count-up>
 
-        <p class="mt-1 text-gray-900 font-bold">Different Home Pages</p>
+        <p class="mt-1 text-gray-900 font-bold text-xl">Different Home Pages</p>
       </div>
       <!-- End Stats -->
 
@@ -33,7 +33,7 @@
         >
           <template #suffix> + </template>
         </count-up>
-        <p class="mt-1 text-gray-900 font-bold">Job Pages</p>
+        <p class="mt-1 text-gray-900 font-bold text-xl">Job Pages</p>
       </div>
       <!-- End Stats -->
       <!-- Stats -->
@@ -47,7 +47,7 @@
         >
           <template #suffix> + </template>
         </count-up>
-        <p class="mt-1 text-gray-900 font-bold">Inner Pages</p>
+        <p class="mt-1 text-gray-900 font-bold text-xl">Inner Pages</p>
       </div>
       <!-- End Stats -->
 
@@ -62,7 +62,7 @@
         >
           <template #suffix> + </template>
         </count-up>
-        <p class="mt-1 text-gray-900 font-bold">Blog Pages</p>
+        <p class="mt-1 text-gray-900 font-bold text-xl">Blog Pages</p>
       </div>
       <!-- End Stats -->
     </div>
