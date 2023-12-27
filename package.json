@@ -50,6 +50,7 @@
     "postcss": "^8.4.24",
     "sass": "^1.63.5",
     "swiper": "^10.0.0",
+    "vue-countup-v3": "^1.4.0",
     "vue-datocms": "^4.0.5"
   }
 }
