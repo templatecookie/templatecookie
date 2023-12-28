@@ -35,6 +35,8 @@
         <tabs-candidate-pages v-if="selectedTab === 'candidate-pages'" />
         <tabs-inner-pages v-if="selectedTab === 'inner-pages'" />
         <tabs-blog-pages v-if="selectedTab === 'blog-pages'" />
+        <tabs-auth-pages v-if="selectedTab === 'auth-pages'" />
+        <tabs-company-pages v-if="selectedTab === 'company-pages'" />
       </div>
     </div>
   </section>
@@ -42,7 +44,7 @@
 
 <script setup>
 import jobIcon from "~/assets/images/icons/job.png";
-// import companyIcon from "~/assets/images/icons/recruiter.png";
+import companyIcon from "~/assets/images/icons/recruiter.png";
 import candidateIcon from "~/assets/images/icons/candidate.png";
 import innerIcon from "~/assets/images/icons/inner.png";
 import blogIcon from "~/assets/images/icons/blog.png";
@@ -54,11 +56,11 @@ const pages = [
     tab: "jobs-pages",
     icon: jobIcon,
   },
-  // {
-  //   title: "Company",
-  //   tab: "company-pages",
-  //   icon: companyIcon,
-  // },
+  {
+    title: "Company",
+    tab: "company-pages",
+    icon: companyIcon,
+  },
   {
     title: "Candidates",
     tab: "candidate-pages",
@@ -76,7 +78,7 @@ const pages = [
   },
   {
     title: "Authentication",
-    tab: "authentication-pages",
+    tab: "auth-pages",
     icon: authIcon,
   },
 ];

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full" data-aos="slide-right">
+  <div class="w-full">
     <div
       class="w-full relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
     >
@@ -7,7 +7,7 @@
         class="rounded-md overflow-hidden bg-white shadow-sm"
         v-for="(item, index) in data"
         :key="item.title"
-        data-aos="fade-up"
+        data-aos="zoom-in"
         data-aos-mirror="true"
         :data-aos-delay="100 * index"
         data-aos-once="false"
@@ -44,25 +44,25 @@
 </template>
 
 <script setup>
-import image1 from "~/assets/images/jobs/1.jpg";
-import image2 from "~/assets/images/jobs/2.jpg";
-import image3 from "~/assets/images/jobs/3.jpg";
+import image1 from "~/assets/images/company/1.jpg";
+import image2 from "~/assets/images/company/2.jpg";
+import image3 from "~/assets/images/company/3.jpg";
 
 const data = [
   {
-    title: "Find Employers",
-    img: image1,
+    title: "Companies",
+    img: image2,
     link: "https://jobpilot.templatecookie.com/employers",
   },
   {
-    title: "Find Job",
-    img: image2,
-    link: "https://jobpilot.templatecookie.com/jobs",
+    title: "Company Details",
+    img: image3,
+    link: "https://jobpilot.templatecookie.com/employer/domrin",
   },
   {
-    title: "Job Details Page",
-    img: image3,
-    link: "https://jobpilot.templatecookie.com/job/react-developer_1703736115_3113142750",
+    title: "Company Dashboard",
+    img: image1,
+    link: "https://jobpilot.templatecookie.com/login",
   },
 ];
 </script>
