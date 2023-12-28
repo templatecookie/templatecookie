@@ -34,6 +34,7 @@
         <tabs-jobs-pages v-if="selectedTab === 'jobs-pages'" />
         <tabs-candidate-pages v-if="selectedTab === 'candidate-pages'" />
         <tabs-inner-pages v-if="selectedTab === 'inner-pages'" />
+        <tabs-blog-pages v-if="selectedTab === 'blog-pages'" />
       </div>
     </div>
   </section>
