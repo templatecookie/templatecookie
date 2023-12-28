@@ -45,7 +45,7 @@
       </div>
     </div>
     <div
-      class="mx-auto max-w-7xl px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+      class="mx-auto max-w-7xl px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
     >
       <tabs-frontend-features v-if="tab === 'frontend'" />
       <tabs-backend-features v-if="tab === 'backend'" />
