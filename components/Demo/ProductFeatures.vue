@@ -16,6 +16,7 @@
           <li
             class="me-2 basis-[50%] inline-flex gap-2 pb-3 text-dark font-bold items-center justify-center border-b-2 border-transparent group hover:active-tab"
             role="button"
+            @click="tab = 'frontend'"
           >
             <div class="h-[40px] w-[40px]">
               <img
@@ -29,6 +30,7 @@
           <li
             class="me-2 basis-[50%] inline-flex justify-center gap-2 pb-3 text-dark font-bold items-center border-b-2 border-transparent group hover:active-tab"
             role="button"
+            @click="tab = 'backend'"
           >
             <div class="h-[40px] w-[40px]">
               <img
@@ -42,11 +44,17 @@
         </ul>
       </div>
     </div>
+    <div
+      class="mx-auto max-w-7xl px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+    >
+      <tabs-frontend-features v-if="tab === 'frontend'" />
+      <tabs-backend-features v-if="tab === 'backend'" />
+    </div>
   </section>
 </template>
 
-<script>
-export default {};
+<script setup>
+const tab = ref("frontend");
 </script>
 
 <style>
