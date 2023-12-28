@@ -12,6 +12,8 @@
       :product="product"
       v-if="product?.whyChooseUs"
     />
+    <demo-product-documentation />
+    <demo-product-support />
     <!-- <div v-for="(section, index) in product?.contents" :key="index">
       <div v-if="section.__typename == 'ExclusivefeatureRecord'">
         <demo-exclusive-feature :data="section" />
