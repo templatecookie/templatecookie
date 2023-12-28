@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full" data-aos="slide-right">
+  <div class="w-full">
     <div
       class="w-full relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
     >
@@ -7,10 +7,8 @@
         class="rounded-md overflow-hidden bg-white shadow-sm"
         v-for="(item, index) in data"
         :key="item.title"
-        data-aos="fade-up"
-        data-aos-mirror="true"
+        data-aos="zoom-in"
         :data-aos-delay="100 * index"
-        data-aos-once="false"
       >
         <div>
           <img :src="item.img" :alt="item.title" />

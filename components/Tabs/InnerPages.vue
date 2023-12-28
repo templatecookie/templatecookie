@@ -42,25 +42,49 @@
 </template>
 
 <script setup>
-import image1 from "~/assets/images/candidate/1.jpg";
-import image2 from "~/assets/images/candidate/2.jpg";
-import image3 from "~/assets/images/candidate/3.jpg";
+import image1 from "~/assets/images/inner/1.jpg";
+import image2 from "~/assets/images/inner/2.jpg";
+import image5 from "~/assets/images/inner/5.jpg";
+import image6 from "~/assets/images/inner/6.jpg";
+import image7 from "~/assets/images/inner/7.jpg";
+import image8 from "~/assets/images/inner/8.jpg";
+import image9 from "~/assets/images/inner/9.jpg";
 
 const data = [
   {
-    title: "Candidate Page",
+    title: "Overview",
     img: image1,
-    link: "https://jobpilot.templatecookie.com/candidates",
+    link: "https://jobpilot.templatecookie.com/company/dashboard",
   },
   {
-    title: "Candidate Profile",
+    title: "Post Job",
     img: image2,
-    link: "https://jobpilot.templatecookie.com/candidates",
+    link: "https://jobpilot.templatecookie.com/company/dashboard",
   },
   {
-    title: "Candidate Dashboard",
-    img: image3,
-    link: "https://jobpilot.templatecookie.com/candidates",
+    title: "My Job",
+    img: image5,
+    link: "https://jobpilot.templatecookie.com/company/dashboard",
+  },
+  {
+    title: "Job Application",
+    img: image6,
+    link: "https://jobpilot.templatecookie.com/company/dashboard",
+  },
+  {
+    title: "Plans & Billing",
+    img: image7,
+    link: "https://jobpilot.templatecookie.com/company/dashboard",
+  },
+  {
+    title: "Job Alert",
+    img: image8,
+    link: "https://jobpilot.templatecookie.com/company/dashboard",
+  },
+  {
+    title: "Settings",
+    img: image9,
+    link: "https://jobpilot.templatecookie.com/company/dashboard",
   },
 ];
 </script>

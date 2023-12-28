@@ -31,7 +31,9 @@
         </ul>
       </div>
       <div class="w-full">
-        <tabs-jobs-pages />
+        <tabs-jobs-pages v-if="selectedTab === 'jobs-pages'" />
+        <tabs-candidate-pages v-if="selectedTab === 'candidate-pages'" />
+        <tabs-inner-pages v-if="selectedTab === 'inner-pages'" />
       </div>
     </div>
   </section>
