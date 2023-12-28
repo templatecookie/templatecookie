@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities{
+  .active-tab{
+    @apply !border-primary-500 !text-primary-500
+  }
+}
+
