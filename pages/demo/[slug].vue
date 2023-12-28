@@ -5,12 +5,14 @@
     <demo-product-stats />
     <demo-product-payment-gateways :product="product" v-if="product" />
     <demo-product-pages />
-    <!-- <demo-why-choose-our-product
+
+    <demo-product-features />
+    <demo-product-testimonial />
+    <demo-why-choose-our-product
       :product="product"
       v-if="product?.whyChooseUs"
-    /> -->
-    <demo-product-features />
-    <div v-for="(section, index) in product?.contents" :key="index">
+    />
+    <!-- <div v-for="(section, index) in product?.contents" :key="index">
       <div v-if="section.__typename == 'ExclusivefeatureRecord'">
         <demo-exclusive-feature :data="section" />
       </div>
@@ -30,7 +32,7 @@
       <div v-if="section.__typename == 'TechnologySectionRecord'">
         <demo-technology-section :data="section" :product="product" />
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
