@@ -14,6 +14,7 @@
     />
     <demo-product-documentation />
     <demo-product-support />
+    <demo-product-buynow />
     <!-- <div v-for="(section, index) in product?.contents" :key="index">
       <div v-if="section.__typename == 'ExclusivefeatureRecord'">
         <demo-exclusive-feature :data="section" />
