@@ -83,8 +83,7 @@
       >
         <swiper
           class="swiper w-full md:w-[60%]"
-          :slides-per-view="1"
-          :space-between="24"
+          :slides-per-view="2"
           :loop="true"
           :free-mode="true"
           :speed="10000"
