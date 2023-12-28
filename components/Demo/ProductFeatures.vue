@@ -16,9 +16,10 @@
           <li
             class="me-2 basis-[50%] inline-flex gap-2 pb-3 text-dark font-bold items-center justify-center border-b-2 border-transparent group hover:active-tab"
             role="button"
+            :class="{ 'active-tab': tab === 'frontend' }"
             @click="tab = 'frontend'"
           >
-            <div class="h-[40px] w-[40px]">
+            <div class="h-[40px] sm:h-[40px] w-[30px] sm:w-[40px]">
               <img
                 src="~/assets/images/icons/frontend-tab.png"
                 alt="frontend tab icon"
@@ -31,8 +32,9 @@
             class="me-2 basis-[50%] inline-flex justify-center gap-2 pb-3 text-dark font-bold items-center border-b-2 border-transparent group hover:active-tab"
             role="button"
             @click="tab = 'backend'"
+            :class="{ 'active-tab': tab === 'backend' }"
           >
-            <div class="h-[40px] w-[40px]">
+            <div class="h-[40px] sm:h-[40px] w-[30px] sm:w-[40px]">
               <img
                 src="~/assets/images/icons/backend.png"
                 alt="frontend tab icon"

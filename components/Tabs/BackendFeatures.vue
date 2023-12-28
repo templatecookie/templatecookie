@@ -1,5 +1,19 @@
 <template>
-  <div>backend features</div>
+  <div
+    class="bg-white shadow-sm flex gap-3 items-start hover:scale-105 p-4 border border-gray-50 rounded-lg hover:border-primary transition duration-200"
+    v-for="(item, index) in backendFeatures"
+    :key="item.name"
+    data-aos="fade-in"
+    :data-aos-delay="100 * index"
+  >
+    <div class="h-[50px] w-[50px] shrink-0">
+      <img src="~/assets/images/icons/backend.png" class="w-full" />
+    </div>
+    <div class="space-y-2">
+      <h5 v-text="item.name" class="text-gray-900 text-lg font-bold" />
+      <p v-text="item.description" class="text-gray-700 text-md font-medium" />
+    </div>
+  </div>
 </template>
 
 <script setup>
