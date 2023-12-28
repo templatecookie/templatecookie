@@ -1,7 +1,18 @@
 <template>
-  <section id="why-choose-us" class="bg-white">
+  <section class="py-[5rem]">
+    <div class="mb-8 mx-auto max-w-7xl px-4 text-center">
+      <h4
+        class="mt-2 pb-16 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl leading-10 after:bg-no-repeat after:w-full after:left-0 after:bottom-5 after:content-[url('~/assets/images/Underline.png')] after:absolute relative"
+      >
+        Why choose our product?
+      </h4>
+      <p class="text-xl text-gray-600">
+        Experience the power of innovation, efficiency, and success with
+        <b>{{ product.shortName }}</b>
+      </p>
+    </div>
     <div
-      class="mx-auto max-w-7xl flex flex-wrap gap-[6rem] items-center pt-[9rem] pb-[3rem] px-6 lg:px-0"
+      class="mx-auto max-w-7xl flex flex-wrap gap-[6rem] items-center pt-[2rem] pb-[3rem] px-6 lg:px-0"
     >
       <div
         class="max-w-full lg:max-w-[550px] hidden lg:inline"
@@ -16,26 +27,13 @@
         />
       </div>
       <div class="flex-1">
-        <div class="mb-8 text-left">
-          <p
-            class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
-          >
-            Why choose our product?
-          </p>
-          <p class="mt-5 max-w-prose mx-auto text-xl text-gray-600">
-            Experience the power of innovation, efficiency, and success with
-            <b>{{ product.shortName }}</b>
-          </p>
-        </div>
         <dl class="divide-y divide-y-gray-100 space-y-4">
           <div
             class="flex items-start py-3 gap-2 group"
             v-for="(item, index) in items"
             :key="index"
             data-aos="fade-down"
-            data-aos-mirror="true"
-            :data-aos-duration="1000 * index"
-            data-aos-once="false"
+            :data-aos-delay="100 * index"
           >
             <div
               class="flex items-center justify-center rounded-lg bg-blue-50 h-[40px] w-[40px] font-bold group-hover:bg-primary group-hover:text-white text-primary"
