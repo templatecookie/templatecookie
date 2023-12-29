@@ -12,7 +12,6 @@ category: Others
 ### v4.1.0 - 28th December 2023
 ```
 feat: Mobile Version search option add
-
 improve: Customer ads list status change rules
 style: Login page design improve
 ```
