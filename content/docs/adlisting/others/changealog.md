@@ -8,7 +8,18 @@ category: Others
 # Changelog
 
 ---
-## December
+## January
+### v4.1.6 - 1st January 2024
+```
+fix: Featured Post limit crossover issue.
+fix: Fixed the Seller review problem.
+fix: Fixed Desktop version Ads display issue.
+
+improve: Hidden the Empty Data section for improved user experience.
+improve: 404 translate issue fix.
+
+style: My listing card issues are fixed.
+```
 ### v4.1.0 - 28th December 2023
 ```
 feat: Mobile Version search option add
