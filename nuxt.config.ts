@@ -140,7 +140,6 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxt/image",
     "@nuxtjs/google-fonts",
-    "nuxt-phosphor-icons",
     "nuxt-simple-robots",
     "nuxt-simple-sitemap",
     'nuxt-og-image',
