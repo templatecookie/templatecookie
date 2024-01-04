@@ -6,6 +6,27 @@ category: Others
 ---
 
 # Changelog
+## January
+### v3.8.2 - 4th January 2024
+
+```
+- improve:job search query
+
+- fix: Share job feature improve with two new icon , height width issue. 
+
+```
+### v3.8.0 - 1st January 2024
+
+```
+- feat: Now includes a daily currency rate update functionality.
+- feat: Send direct message from candidate list
+
+- fix: Post job tags not saved issue. 
+- fix: Date picker format issue.
+- fix: Share job feature improve issue.
+- fix: Tag filter not working issue.
+- fix: Dashboard data show issue
+```
 
 ## December
 ## v3.6.6 - 15th December, 2023
