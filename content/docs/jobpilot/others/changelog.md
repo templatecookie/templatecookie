@@ -7,6 +7,14 @@ category: Others
 
 # Changelog
 ## January
+### v3.8.2 - 4th January 2024
+
+```
+- improve:job search query
+
+- fix: Share job feature improve with two new icon , height width issue. 
+
+```
 ### v3.8.0 - 1st January 2024
 
 ```
