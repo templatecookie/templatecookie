@@ -7,17 +7,6 @@ category: Others
 
 # Changelog
 ## January
-### v4.2.0 - 4th January 2024
-
-```
-- feat: Implemented SEO-friendly filtering.
-
-- fix: Resolved mail name update issue.
-- fix: Corrected translation problems.
-
-- style: Added a maintenance page.
-- style: Fixed header issues in post addition.
-```
 ### v3.8.0 - 1st January 2024
 
 ```
