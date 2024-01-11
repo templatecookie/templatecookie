@@ -7,13 +7,20 @@ category: Others
 
 # Changelog
 ## January
+### v3.8.6 - 11th January 2024
+
+```
+- fix: Email name update issue. 
+- fix: Job post FAQ select issue.
+- fix: Company profile date-picker issue.
+- fix: LinkedIn credential update issue.
+```
 ### v3.8.2 - 4th January 2024
 
 ```
 - improve:job search query
 
 - fix: Share job feature improve with two new icon , height width issue. 
-
 ```
 ### v3.8.0 - 1st January 2024
 
