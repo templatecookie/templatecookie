@@ -9,6 +9,21 @@ category: Others
 
 ---
 ## January
+### v4.7.0 - 12th January 2024
+
+```
+- feat: Stripe Recurring Plan.
+- feat: UX for Choosing categories and subcategories on the post-ad page.
+- feat: Ad resubmission.
+- feat: Location UX Dynamic.
+- feat: Affiliate System.
+
+- fix: Ads card design
+- fix: Category translate issue
+
+- style: 500 design issues are fixed.
+- style: Location show for mobile device also.
+```
 ### v4.2.0 - 4th January 2024
 
 ```
