@@ -9,6 +9,21 @@ category: Others
 
 ---
 ## January
+### v4.9.0 - 19th January 2024
+```
+- feat:Email SpamVerification.
+- feat: Add edit button to ad details page only for seller own ad.
+
+- fix: Location image not found after clicking the location.
+- fix: Meta tag issue.
+- fix: Direction issue.
+- fix: Modify profile menu.
+
+- improve: Optimize page loading. 
+
+- style: Adsense image size issues are fixed.
+- style: Rtl design issues are fixed.
+```
 ### v4.7.0 - 12th January 2024
 
 ```
