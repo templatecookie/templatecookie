@@ -1,5 +1,5 @@
 ---
-title: Website Language Translation
+title: Language Translation
 position: 27
 category: Configuration
 ---
