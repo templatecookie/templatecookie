@@ -37,333 +37,387 @@
     layout: "empty",
   });
   const product = {
-    "id": "128748729",
-    "name": "Job Portal Script: Maximize Your Earning Potential with Jobpilot",
-    "description": "Jobpilot is a modern and high-quality Job Portal Script that offers a wealth of features and tools to help you create a successful job portal website.",
-    "docsUrl": "/docs/jobpilot/",
-    "previewUrl": "https://jobpilot.templatecookie.com/",
-    "shortName": "Jobpilot",
-    "offerRequestCustomization": true,
-    "whyChooseUs": true,
-    "banner": {
-      "url": "https://www.datocms-assets.com/73511/1690592181-preview-image-1.png"
-    },
-    "demoBanner": {
-      "url": "https://www.datocms-assets.com/73511/1680017497-shikkha-1.png"
-    },
-    "logoCloudsTitle": "6 Different Payment Gateways Integrated",
-    "logoCloudsImages": [
-      {
-        "url": "https://www.datocms-assets.com/73511/1673600263-paypal.svg",
-        "alt": null
+      "id": "18221116",
+      "name": "Job Portal Script: Maximize Your Earning Potential with Jobpilot",
+      "description": "Jobpilot is a  modern and high-quality Job Portal Script that offers a wealth of features and tools to help you create a successful job portal website.",
+      "docsUrl": "/docs/jobpilot/introduction",
+      "previewUrl": "https://jobpilot.templatecookie.com/",
+      "shortName": "Jobpilot",
+      "offerRequestCustomization": true,
+      "whyChooseUs": true,
+      "banner": {
+        "url": "https://www.datocms-assets.com/73511/1653553730-jobpilot-job-portal-1.png"
       },
-      {
-        "url": "https://www.datocms-assets.com/73511/1673600269-stripe.svg",
-        "alt": null
+      "demoBanner": {
+        "url": "https://www.datocms-assets.com/73511/1691731577-detail-page_header-image.png"
       },
-      {
-        "url": "https://www.datocms-assets.com/73511/1673600364-flutterwave.png",
-        "alt": null
+      "logoCloudsTitle": "9 Diffrent Payment Gateway's Integrated",
+      "logoCloudsImages": [
+        {
+          "url": "https://www.datocms-assets.com/73511/1673600256-midtrans.svg",
+          "alt": null
+        },
+        {
+          "url": "https://www.datocms-assets.com/73511/1673600260-mollie-1.svg",
+          "alt": null
+        },
+        {
+          "url": "https://www.datocms-assets.com/73511/1673600263-paypal.svg",
+          "alt": null
+        },
+        {
+          "url": "https://www.datocms-assets.com/73511/1673600266-razorpay_logo.svg",
+          "alt": null
+        },
+        {
+          "url": "https://www.datocms-assets.com/73511/1673600269-stripe.svg",
+          "alt": null
+        },
+        {
+          "url": "https://www.datocms-assets.com/73511/1673600364-flutterwave.png",
+          "alt": null
+        },
+        {
+          "url": "https://www.datocms-assets.com/73511/1673600370-instamojo.png",
+          "alt": null
+        },
+        {
+          "url": "https://www.datocms-assets.com/73511/1673600375-sslcommerz.png",
+          "alt": null
+        }
+      ],
+      "seo": {
+        "title": "Jobpilot: The Ultimate Job Portal Script ",
+        "description": "Discover the Jobpilot PHP Laravel Script, a high-quality Job Portal Script designed to connect job seekers and employers.",
+        "image": null
       },
-      {
-        "url": "https://www.datocms-assets.com/73511/1673600266-razorpay_logo.svg",
-        "alt": null
-      },
-      {
-        "url": "https://www.datocms-assets.com/73511/1673600256-midtrans.svg",
-        "alt": null
-      },
-      {
-        "url": "https://www.datocms-assets.com/73511/1673600375-sslcommerz.png",
-        "alt": null
-      }
-    ],
-    "seo": null,
-    "showNotice": false,
-    "noticeBar": {
-      "blocks": [],
-      "links": [],
-      "value": {
-        "schema": "dast",
-        "document": {
-          "type": "root",
-          "children": [
+      "showNotice": null,
+      "noticeBar": null,
+      "actionButtons": [
+        {
+          "label": "Buy Now",
+          "href": "#pricing",
+          "target": "",
+          "cssClass": ""
+        },
+        {
+          "label": "View Live Demo",
+          "href": "https://jobpilot.templatecookie.com",
+          "target": "_blank",
+          "cssClass": "bg-dark hover:bg-secondary"
+        },
+        {
+          "label": "Admin Login",
+          "href": "https://jobpilot.templatecookie.com/admin/login",
+          "target": "_blank",
+          "cssClass": "bg-secondary hover:bg-dark"
+        }
+      ],
+      "menuItems": [
+        {
+          "label": "Features",
+          "id": "82051217",
+          "href": "#features"
+        },
+        {
+          "label": "Pricing",
+          "id": "82051218",
+          "href": "#pricing"
+        },
+        {
+          "label": "Testimonials",
+          "id": "82051219",
+          "href": "#testimonials"
+        },
+        {
+          "label": "Script Gallery",
+          "id": "82051220",
+          "href": "#screenshots"
+        },
+        {
+          "label": "Tech Stack",
+          "id": "82051221",
+          "href": "#technologies"
+        }
+      ],
+      "extraOffer": [
+        {
+          "title": "Buy our Figma Template",
+          "description": "Create a sleek job board website with Jobpilot Figma template. It has customizable components and pre-designed pages to match your brand. Affordable and perfect for recruitment agencies and businesses. Buy now and start creating your dream job board website!\n\n\n\n",
+          "state": true,
+          "label": "Purchase Figma Template",
+          "href": "https://templatecookie.gumroad.com/l/Jobpilot"
+        }
+      ],
+      "contents": [
+        {
+          "__typename": "TopfeatureRecord",
+          "id": "19323354",
+          "sectionId": "features",
+          "info": [
             {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "span",
-                  "value": ""
-                }
-              ]
+              "title": "Jobpilot Core Features",
+              "description": "Jobpilot is a complete job portal script built on the PHP Laravel Framework. You can create high-quality Job Portal website using this highly customizable & 100% responsive PHP script. Jobpilot is more than just php script; it's a complete solution for creating a high-quality job portal website. Let's delve into the core features that make Jobpilot a standout choice",
+              "bgClass": "",
+              "background": null
+            }
+          ],
+          "features": [
+            {
+              "title": "Multiple Countries, States, & Cities",
+              "description": "This feature allows users to search for jobs in multiple countries, states, and cities simultaneously. It makes it easy for users to find jobs in their desired locations.",
+              "cssClass": "",
+              "id": "19323344",
+              "image": {
+                "url": "https://www.datocms-assets.com/73511/1654079988-maptrifold.svg"
+              }
+            },
+            {
+              "title": "Build With PHP, MySQL, and Laravel",
+              "description": "This job board script is built using PHP, MySQL, and Laravel. It has a wide range of features that make it extremely convenient for users to manage the job board.",
+              "cssClass": "",
+              "id": "19323345",
+              "image": {
+                "url": "https://www.datocms-assets.com/73511/1654080133-wrench.svg"
+              }
+            },
+            {
+              "title": "Multiple Language",
+              "description": "Our job portal template provides multiple language support so that people from all over the world can access it. Users can choose to view the site in their preferred language.",
+              "cssClass": "",
+              "id": "19323346",
+              "image": {
+                "url": "https://www.datocms-assets.com/73511/1654080124-lightning.svg"
+              }
+            },
+            {
+              "title": "Social & Email Authentication",
+              "description": "Websites that offer social and email authentication functionality make it easy for users to log in and access the site. This also helps reduce the chances of user data being compromised.",
+              "cssClass": "",
+              "id": "19323347",
+              "image": {
+                "url": "https://www.datocms-assets.com/73511/1654080120-globe.svg"
+              }
+            },
+            {
+              "title": "Job Alerts, Saved & Shortlisted Jobs",
+              "description": "With these features, job seekers can easily keep track of their job search progress and receive updates on new job postings that match their criteria.",
+              "cssClass": "",
+              "id": "19323348",
+              "image": {
+                "url": "https://www.datocms-assets.com/73511/1654080114-briefcase.svg"
+              }
+            },
+            {
+              "title": "Shortlisted, Saved & Hired Application",
+              "description": "These features make it easy for employers to keep track of their hiring process and make sure that they are not missing out on any good candidates.",
+              "cssClass": "",
+              "id": "19323349",
+              "image": {
+                "url": "https://www.datocms-assets.com/73511/1654080131-usercircle.svg"
+              }
+            },
+            {
+              "title": "Front-end & Back-end Dashboard",
+              "description": "The front-end is designed to be user-friendly and easy to navigate. The backend dashboard provides administrators with a powerful tool for managing the website and its users with ease.",
+              "cssClass": "",
+              "id": "19323350",
+              "image": {
+                "url": "https://www.datocms-assets.com/73511/1654080128-stack.svg"
+              }
+            },
+            {
+              "title": "Employer & Candidate Profile",
+              "description": "Our job board template has different profile options for employers & candidates so that they can easily find each other and connect for the right job opportunity.",
+              "cssClass": "",
+              "id": "19323351",
+              "image": {
+                "url": "https://www.datocms-assets.com/73511/1654080122-identificationcard.svg"
+              }
+            },
+            {
+              "title": "Company Account Setup",
+              "description": "This job portal script script offers employers to create accounts easily and post job openings. The intuitive system will allow companies to create and manage their accounts easily and efficiently.",
+              "cssClass": "",
+              "id": "19323352",
+              "image": {
+                "url": "https://www.datocms-assets.com/73511/1654080118-crown.svg"
+              }
+            }
+          ],
+          "cssClass": ""
+        },
+        {
+          "__typename": "TestimonialSectionRecord",
+          "id": "81570529",
+          "title": "What People Say About Our Scripts & Templates",
+          "sectionId": "testimonials",
+          "description": "Don't just listen to our words, see what our valued customers think about our product.",
+          "testimonials": [
+            {
+              "id": "81570525",
+              "name": "By MitchOnline ",
+              "role": "From Envato Market",
+              "quote": "This script is fantastic, great design, and is easy to use. Hope for more updates in the close future.",
+              "image": null
+            },
+            {
+              "id": "81570526",
+              "name": "By imtyas_2104",
+              "role": "From Envato Market",
+              "quote": "Awesome features, beautiful design fully responsive. Nice and clean employer and candidate dashboard. Multiple social login methods. Featured and highlighted job options for the employer. Multiple payment methods. The templatecookie team is very professional and supportive. I had a great experience. whenever I had any problem their executive was always there to help. Thanks templatecookie, looking for more products from you.",
+              "image": null
+            },
+            {
+              "id": "81570527",
+              "name": "by harishprabhutpr ",
+              "role": "From Envato Market",
+              "quote": "Happy I've gone with Jobpilot! Great support from Zakir, they've been kind enough to take my suggestions into consideration in their new updates! Great product quality!",
+              "image": null
+            },
+            {
+              "id": "81570528",
+              "name": "by mltinio ",
+              "role": "From Envato Market",
+              "quote": "The author is very professional and responsive to all support queries. The script is well coded and easy to understand.\n\n",
+              "image": null
+            }
+          ]
+        },
+        {
+          "__typename": "TechnologySectionRecord",
+          "id": "81570516",
+          "title": "Technologies We Used To Build The Job Portal Script",
+          "sectionId": "technologies",
+          "description": "We used modern technologies to make the job portal template.We ensured that the product is high quality and meet the deamands of the users perfectly.",
+          "technologies": [
+            {
+              "id": "53222576",
+              "name": "Bootstrap",
+              "description": "HTML5 Bootstrap Templates",
+              "icon": {
+                "url": "https://www.datocms-assets.com/73511/1673324460-technology-logo-bootstrap.svg"
+              }
+            },
+            {
+              "id": "17963998",
+              "name": "Vue.js",
+              "description": "",
+              "icon": {
+                "url": "https://www.datocms-assets.com/73511/1673324488-technology-logo-vuejs.svg"
+              }
+            },
+            {
+              "id": "17963997",
+              "name": "Laravel",
+              "description": "",
+              "icon": {
+                "url": "https://www.datocms-assets.com/73511/1673324472-technology-logo-laravel.svg"
+              }
+            },
+            {
+              "id": "81570512",
+              "name": "Figma",
+              "description": "",
+              "icon": {
+                "url": "https://www.datocms-assets.com/73511/1672024150-figma.svg"
+              }
+            },
+            {
+              "id": "81570513",
+              "name": "MySQL",
+              "description": "",
+              "icon": {
+                "url": "https://www.datocms-assets.com/73511/1672024161-mysql.svg"
+              }
+            },
+            {
+              "id": "81570514",
+              "name": "Nuxt.js",
+              "description": "",
+              "icon": {
+                "url": "https://www.datocms-assets.com/73511/1672024173-nuxt.svg"
+              }
+            },
+            {
+              "id": "81570515",
+              "name": "Tailwind CSS",
+              "description": "",
+              "icon": {
+                "url": "https://www.datocms-assets.com/73511/1672024196-tailwindcss.svg"
+              }
+            }
+          ]
+        },
+        {
+          "__typename": "PriceplanRecord",
+          "id": "20799103",
+          "sectionId": "pricing",
+          "info": [
+            {
+              "id": "20799082",
+              "title": "High Quality Product, Affordable Pricing",
+              "description": "We develop high-quality products using modern technologies but still keep the pricing very reasonable. That way we can help more and more people create their dream projects!",
+              "createdAt": "2022-06-02T11:17:24+06:00",
+              "bgClass": ""
+            }
+          ],
+          "plans": [
+            {
+              "name": "Extended",
+              "description": "Extended license permits you to ask and make money from your users. Sourcecode included. This license permits you for 1 domain, purchase more license if you have multiple sites. ",
+              "price": 149,
+              "purchaseLink": "https://go.templatecookie.com/jobpilot-extended",
+              "paddleProductId": "",
+              "paddleCheckout": false,
+              "features": []
+            },
+            {
+              "name": "Regular",
+              "description": "Regular licenses allow you to let users use the platform free of charge. Sourcecode included. This license permits you to have 1 domain; purchase more licenses if you have multiple sites.",
+              "price": 79,
+              "purchaseLink": "https://go.templatecookie.com/jobpilot-regular",
+              "paddleProductId": "",
+              "paddleCheckout": false,
+              "features": []
+            }
+          ]
+        },
+        {
+          "__typename": "ProductctaRecord",
+          "id": "19667671",
+          "title": "Create Your Dream Job Portal Website Today",
+          "description": "",
+          "cssClass": "",
+          "screenshots": [
+            {
+              "url": "https://www.datocms-assets.com/73511/1654146536-15.jpg",
+              "alt": null
+            },
+            {
+              "url": "https://www.datocms-assets.com/73511/1654146531-14.jpg",
+              "alt": "Jop portal website payment interface at a glance"
+            },
+            {
+              "url": "https://www.datocms-assets.com/73511/1699007441-1654146527-13-1.jpg",
+              "alt": "Job portal php laravel script iconic features"
+            },
+            {
+              "url": "https://www.datocms-assets.com/73511/1654146522-11.jpg",
+              "alt": "Job portal website interface at a glance"
+            },
+            {
+              "url": "https://www.datocms-assets.com/73511/1654146516-10.jpg",
+              "alt": "A complete Job Portal script called  jobpilot"
             }
           ]
         }
-      }
-    },
-    "actionButtons": [
-      {
-        "label": "Try Live Demo",
-        "href": "https://jobpilot.templatecookie.com/",
-        "target": "_blank",
-        "cssClass": ""
-      },
-      {
-        "label": "View Pricing",
-        "href": "#pricing",
-        "target": "",
-        "cssClass": ""
-      }
-    ],
-    "menuItems": [
-      {
-        "label": "Top Features",
-        "id": "133264624",
-        "href": "#features"
-      },
-      {
-        "label": "Pricing",
-        "id": "133264625",
-        "href": "#pricing"
-      },
-      {
-        "label": "Testimonials",
-        "id": "147461428",
-        "href": "#testimonials"
-      }
-    ],
-    "extraOffer": [],
-    "contents": [
-      {
-        "__typename": "TopfeatureRecord",
-        "id": "133264538",
-        "sectionId": "features",
-        "info": [
-          {
-            "title": "Top Features of Schooling",
-            "description": "",
-            "bgClass": "",
-            "background": null
-          }
-        ],
-        "features": [
-          {
-            "title": "Multi Language Supported",
-            "description": "Ability to switch between multiple languages for ease of use by different users.",
-            "cssClass": "",
-            "id": "133264573",
-            "image": {
-              "url": "https://www.datocms-assets.com/73511/1654049751-2-multiple-language.svg"
-            }
-          },
-          {
-            "title": "Multi Currency",
-            "description": "Support for multiple currencies to facilitate payments from different regions.",
-            "cssClass": "",
-            "id": "133264574",
-            "image": {
-              "url": "https://www.datocms-assets.com/73511/1653558189-money.svg"
-            }
-          },
-          {
-            "title": "6 Different Payment Gateways",
-            "description": " Integration with six different payment gateway options for convenient transactions.",
-            "cssClass": "",
-            "id": "133264575",
-            "image": {
-              "url": "https://www.datocms-assets.com/73511/1653534552-creditcard.svg"
-            }
-          },
-          {
-            "title": "Recurring Admission Plan",
-            "description": "Option for recurring admission payment plans for parents and students.",
-            "cssClass": "",
-            "id": "133264576",
-            "image": {
-              "url": "https://www.datocms-assets.com/73511/1653558194-updates.svg"
-            }
-          },
-          {
-            "title": "One time & Recurring Invoice",
-            "description": " Creation of one-time and recurring invoices to streamline payment management.",
-            "cssClass": "",
-            "id": "133264577",
-            "image": {
-              "url": "https://www.datocms-assets.com/73511/1654049754-3-multiple-payment-gateway.svg"
-            }
-          },
-          {
-            "title": "5 User Types",
-            "description": " Different user types (admin, teacher, student, parent, accountant) for distinct access and functionality.",
-            "cssClass": "",
-            "id": "133264578",
-            "image": {
-              "url": "https://www.datocms-assets.com/73511/1654065392-users.svg"
-            }
-          },
-          {
-            "title": "Full Academic Management",
-            "description": "Comprehensive management of academic activities, including scheduling, grading, and attendance.",
-            "cssClass": "",
-            "id": "133264579",
-            "image": {
-              "url": "https://www.datocms-assets.com/73511/1680059490-student-education.svg"
-            }
-          },
-          {
-            "title": "Student Result Card",
-            "description": "Creation and access of student result cards for academic progress tracking.",
-            "cssClass": "",
-            "id": "133264580",
-            "image": {
-              "url": "https://www.datocms-assets.com/73511/1680059584-certificate-card.svg"
-            }
-          },
-          {
-            "title": "Live Class Schedule",
-            "description": "Display of live class schedule for students and teachers.",
-            "cssClass": "",
-            "id": "133264581",
-            "image": {
-              "url": "https://www.datocms-assets.com/73511/1654065098-calendar.svg"
-            }
-          },
-          {
-            "title": "Online Class with Zoom",
-            "description": " Conducting online classes with Zoom integration for remote learning.",
-            "cssClass": "",
-            "id": "133264582",
-            "image": {
-              "url": "https://www.datocms-assets.com/73511/1680059656-video-play.svg"
-            }
-          },
-          {
-            "title": "Student & Teacher Group Chat",
-            "description": " Facilitation of group chat between students and teachers for communication and collaboration",
-            "cssClass": "",
-            "id": "133264583",
-            "image": {
-              "url": "https://www.datocms-assets.com/73511/1680059815-group-chat.svg"
-            }
-          },
-          {
-            "title": "Assignment with File Sharing",
-            "description": "Assignment submission and file sharing between teachers and students.",
-            "cssClass": "",
-            "id": "133264584",
-            "image": {
-              "url": "https://www.datocms-assets.com/73511/1680059820-notebook-assignment.svg"
-            }
-          },
-          {
-            "title": "PDF & Excel Reports",
-            "description": "Generation of reports in PDF and Excel formats for easy data analysis and record-keeping.",
-            "cssClass": "",
-            "id": "133264585",
-            "image": {
-              "url": "https://www.datocms-assets.com/73511/1680059851-file-xls-duotone.svg"
-            }
-          },
-          {
-            "title": "Online Student Admission",
-            "description": "Online admission process for new students to streamline enrollment.",
-            "cssClass": "",
-            "id": "133264586",
-            "image": {
-              "url": "https://www.datocms-assets.com/73511/1680059954-user-circle-plus-duotone.svg"
-            }
-          },
-          {
-            "title": "Dark Mode Supported",
-            "description": "Option to switch to dark mode for a more comfortable and less eye-straining user interface.",
-            "cssClass": "",
-            "id": "133264587",
-            "image": {
-              "url": "https://www.datocms-assets.com/73511/1680059818-moon-stars-dark-mode.svg"
-            }
-          }
-        ],
-        "cssClass": ""
-      },
-      {
-        "__typename": "TestimonialSectionRecord",
-        "id": "147461427",
-        "title": "Testimonials",
-        "sectionId": "testimonials",
-        "description": "Don't just listen to our words, see what our valued customers think about our product scripts and templates.\n",
-        "testimonials": [
-          {
-            "id": "90914894",
-            "name": "by Brandego_Media",
-            "role": "From Codecanyon Market",
-            "quote": "The code is well organized and the application is lightweight. Customer support is also very good. I would recommend this purchase!",
-            "image": null
-          },
-          {
-            "id": "90914909",
-            "name": "by rks784262",
-            "role": "From Codecanyon Market",
-            "quote": "This script is a true masterpiece. Exceptionally good design and UI. Plenty of features for a reasonable price. Great value for money. The support team is also responsive. Keep improving. Thank you",
-            "image": null
-          },
-          {
-            "id": "90914865",
-            "name": "by nursahal00 ",
-            "role": "From Codecanyon Market",
-            "quote": "templatecookie is awesome, has great customer service, is a knowledgeable and great personality. Thank you for the amazing support!",
-            "image": null
-          }
-        ]
-      },
-      {
-        "__typename": "PriceplanRecord",
-        "id": "147461435",
-        "sectionId": "pricing",
-        "info": [
-          {
-            "id": "147461432",
-            "title": "High Quality Product, Affordable Pricing",
-            "description": "We develop high-quality products using modern technologies but still keep the pricing very reasonable. That way we can help more and more people create their dream projects!",
-            "createdAt": "2023-04-29T08:42:35+06:00",
-            "bgClass": ""
-          }
-        ],
-        "plans": [
-          {
-            "name": "Extended",
-            "description": "Extended license permits you to ask and make money from your users. Sourcecode included. This license permits you for 1 domain, purchase more license if you have multiple sites. ",
-            "price": 149,
-            "purchaseLink": "https://go.templatecookie.com/schooling-extended",
-            "paddleProductId": "",
-            "paddleCheckout": false,
-            "features": []
-          },
-          {
-            "name": "Regular",
-            "description": "Regular licenses allow you to let users use the platform free of charge. Sourcecode included. This license permits you to have 1 domain; purchase more licenses if you have multiple sites.",
-            "price": 59,
-            "purchaseLink": "https://go.templatecookie.com/schooling-regular",
-            "paddleProductId": "",
-            "paddleCheckout": false,
-            "features": []
-          }
-        ]
-      },
-      {
-        "__typename": "ProductctaRecord",
-        "id": "133556679",
-        "title": "Build Your Awesome School Management System Today!",
-        "description": "",
-        "cssClass": "",
-        "screenshots": []
-      }
-    ]
-  };
+      ]
+    };
   const route = useRoute();
   const { slug } = route?.params;
   const title = product?.seo?.title ?? product?.name;
-  const description =
-    product?.seo?.description ?? product?.description;
+  const description = product?.seo?.description ?? product?.description;
   const image = product?.banner?.url ?? data?.image;
 
   useHead({

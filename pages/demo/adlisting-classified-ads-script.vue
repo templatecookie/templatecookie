@@ -37,295 +37,359 @@
     layout: "empty",
   });
   const product = {
-    "id": "128748729",
-    "name": "Schooling - The Ultimate PHP Script for Efficient School Management",
-    "description": "Efficiently manage your school with Schooling. The all-in-one PHP script for schools with multi-language support, payment gateway integration, and powerful academic management features. Try it now.",
-    "docsUrl": "/docs/schooling/",
-    "previewUrl": "https://schooling.templatecookie.com/",
-    "shortName": "Schooling",
-    "offerRequestCustomization": true,
+    "id": "17994908",
+    "name": "Adlisting - Classified Ads PHP Script",
+    "description": "Adlisting is a premium PHP script with minimal, clean, flexible, and structured code. Using the script you can create stunning ad listing websites to buy/sell classified ads and generate revenues.",
+    "docsUrl": "/docs/adlisting",
+    "previewUrl": "https://adlisting.templatecookie.com/",
+    "shortName": "Adlisting",
+    "offerRequestCustomization": null,
     "whyChooseUs": true,
     "banner": {
-      "url": "https://www.datocms-assets.com/73511/1690592181-preview-image-1.png"
+      "url": "https://www.datocms-assets.com/73511/1653484663-00_preview_images.avif"
     },
     "demoBanner": {
-      "url": "https://www.datocms-assets.com/73511/1680017497-shikkha-1.png"
+      "url": "https://www.datocms-assets.com/73511/1672808809-adlisting-classified-ads-php-script.png"
     },
-    "logoCloudsTitle": "6 Different Payment Gateways Integrated",
-    "logoCloudsImages": [
-      {
-        "url": "https://www.datocms-assets.com/73511/1673600263-paypal.svg",
-        "alt": null
-      },
-      {
-        "url": "https://www.datocms-assets.com/73511/1673600269-stripe.svg",
-        "alt": null
-      },
-      {
-        "url": "https://www.datocms-assets.com/73511/1673600364-flutterwave.png",
-        "alt": null
-      },
-      {
-        "url": "https://www.datocms-assets.com/73511/1673600266-razorpay_logo.svg",
-        "alt": null
-      },
-      {
-        "url": "https://www.datocms-assets.com/73511/1673600256-midtrans.svg",
-        "alt": null
-      },
-      {
-        "url": "https://www.datocms-assets.com/73511/1673600375-sslcommerz.png",
-        "alt": null
-      }
-    ],
-    "seo": null,
-    "showNotice": false,
-    "noticeBar": {
-      "blocks": [],
-      "links": [],
-      "value": {
-        "schema": "dast",
-        "document": {
-          "type": "root",
-          "children": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "span",
-                  "value": ""
-                }
-              ]
-            }
-          ]
-        }
-      }
+    "logoCloudsTitle": "",
+    "logoCloudsImages": [],
+    "seo": {
+      "title": "Adlisting - Best Classified Ads Script ",
+      "description": "Adlisting is a premium classified ads script with minimal, clean, and structured code. Create your next classified ads website using this fantastic script.",
+      "image": null
     },
+    "showNotice": null,
+    "noticeBar": null,
     "actionButtons": [
       {
-        "label": "Try Live Demo",
-        "href": "https://schooling.templatecookie.com/",
-        "target": "_blank",
-        "cssClass": ""
-      },
-      {
-        "label": "View Pricing",
+        "label": "Buy Now",
         "href": "#pricing",
         "target": "",
         "cssClass": ""
+      },
+      {
+        "label": "View Live Demo",
+        "href": "https://adlisting.templatecookie.com",
+        "target": "_blank",
+        "cssClass": "bg-dark hover:bg-secondary"
+      },
+      {
+        "label": "Admin Login",
+        "href": "https://adlisting.templatecookie.com/admin/login",
+        "target": "_blank",
+        "cssClass": "bg-secondary hover:bg-dark"
       }
     ],
     "menuItems": [
       {
-        "label": "Top Features",
-        "id": "133264624",
+        "label": "Features",
+        "id": "83436764",
         "href": "#features"
       },
       {
+        "label": "Screenshots",
+        "id": "83436765",
+        "href": "#screenshots"
+      },
+      {
         "label": "Pricing",
-        "id": "133264625",
+        "id": "84087193",
         "href": "#pricing"
       },
       {
-        "label": "Testimonials",
-        "id": "147461428",
-        "href": "#testimonials"
+        "label": "Technology We Use",
+        "id": "84087194",
+        "href": "#technologies"
       }
     ],
     "extraOffer": [],
     "contents": [
       {
         "__typename": "TopfeatureRecord",
-        "id": "133264538",
+        "id": "19299779",
         "sectionId": "features",
         "info": [
           {
-            "title": "Top Features of Schooling",
-            "description": "",
+            "title": "Explore Adlisting Best Features",
+            "description": "Take a look at our classified ads PHP script's best features and why users love the script so much.",
             "bgClass": "",
             "background": null
           }
         ],
         "features": [
           {
-            "title": "Multi Language Supported",
-            "description": "Ability to switch between multiple languages for ease of use by different users.",
+            "title": "Category Custom Field",
+            "description": "Create different properties for different types of listings on your website built with our Adlisting script. You can customize the properties based on your needs.",
             "cssClass": "",
-            "id": "133264573",
+            "id": "19299780",
             "image": {
-              "url": "https://www.datocms-assets.com/73511/1654049751-2-multiple-language.svg"
+              "url": "https://www.datocms-assets.com/73511/1653558188-control.svg"
             }
           },
           {
-            "title": "Multi Currency",
-            "description": "Support for multiple currencies to facilitate payments from different regions.",
+            "title": "Multiple Language & Currency",
+            "description": "Multiple Language feature helps users to transact in any language without any hassle. This feature is beneficial for businesses that operate in multiple languages and have diffrent currencies.",
             "cssClass": "",
-            "id": "133264574",
+            "id": "19299784",
+            "image": {
+              "url": "https://www.datocms-assets.com/73511/1654065377-globesimple.svg"
+            }
+          },
+          {
+            "title": "Monthly Subscription & Pricing Plan",
+            "description": "Make money by selling subscriptions to recurring users and pricing plans for one-time users! You can easily create, change & manage subscription and pricing plans from the admin panel. ",
+            "cssClass": "",
+            "id": "19299785",
             "image": {
               "url": "https://www.datocms-assets.com/73511/1653558189-money.svg"
             }
           },
           {
-            "title": "6 Different Payment Gateways",
-            "description": " Integration with six different payment gateway options for convenient transactions.",
+            "title": "Google Map/Mapbox Integration",
+            "description": "Map can be extremely useful to show user/item location. Integrate the Map feature with your classified ads marketplace. You can choose map from two different providers, either Google Maps or Mapbox.",
             "cssClass": "",
-            "id": "133264575",
+            "id": "19299781",
+            "image": {
+              "url": "https://www.datocms-assets.com/73511/1654079988-maptrifold.svg"
+            }
+          },
+          {
+            "title": "GEO Location Search",
+            "description": "Forget the hassle of managing thousands of cities and states, use the Map autocomplete feature to suggest locations when the user types and all the data will be managed by Adlisting application. ",
+            "cssClass": "",
+            "id": "19299782",
+            "image": {
+              "url": "https://www.datocms-assets.com/73511/1654049722-9-advance-search-filter.svg"
+            }
+          },
+          {
+            "title": "8+ Payment Gateway",
+            "description": "This feature allows businesses to have greater flexibility when it comes to accepting payments from customers. It makes it super easy to monetize the ad listing website & run the business efficiently.",
+            "cssClass": "",
+            "id": "19299783",
             "image": {
               "url": "https://www.datocms-assets.com/73511/1653534552-creditcard.svg"
             }
           },
           {
-            "title": "Recurring Admission Plan",
-            "description": "Option for recurring admission payment plans for parents and students.",
+            "title": "Featured Ads",
+            "description": "Featured Ads are a great way to increase the visibility of your listing. By featuring your listing in a prominent location on the site, you can ensure that potential customers will see and click",
             "cssClass": "",
-            "id": "133264576",
+            "id": "86921683",
             "image": {
-              "url": "https://www.datocms-assets.com/73511/1653558194-updates.svg"
+              "url": "https://www.datocms-assets.com/73511/1654065593-star.svg"
             }
           },
           {
-            "title": "One time & Recurring Invoice",
-            "description": " Creation of one-time and recurring invoices to streamline payment management.",
+            "title": "Theme Customization",
+            "description": "Tailor the user interface and functionality of a Adlisting to best suit your business. Adlisting can be customized to provide a more efficient and intuitive experience for users.",
             "cssClass": "",
-            "id": "133264577",
+            "id": "86921684",
             "image": {
-              "url": "https://www.datocms-assets.com/73511/1654049754-3-multiple-payment-gateway.svg"
+              "url": "https://www.datocms-assets.com/73511/1654066038-circlesthreeplus.svg"
             }
           },
           {
-            "title": "5 User Types",
-            "description": " Different user types (admin, teacher, student, parent, accountant) for distinct access and functionality.",
+            "title": "Currency Switcher",
+            "description": "The Currency Switcher feature can be used to set up a default currency for your website and change the currency in the future without headache",
             "cssClass": "",
-            "id": "133264578",
+            "id": "86921685",
             "image": {
-              "url": "https://www.datocms-assets.com/73511/1654065392-users.svg"
+              "url": "https://www.datocms-assets.com/73511/1654065100-currencydollarsimple.svg"
             }
           },
           {
-            "title": "Full Academic Management",
-            "description": "Comprehensive management of academic activities, including scheduling, grading, and attendance.",
+            "title": "Watermark on Listing",
+            "description": "With this feature, you can add a watermark to your website that will make it harder for someone to copy or steal it. This is a great way to protect your website content.",
             "cssClass": "",
-            "id": "133264579",
+            "id": "86921686",
             "image": {
-              "url": "https://www.datocms-assets.com/73511/1680059490-student-education.svg"
+              "url": "https://www.datocms-assets.com/73511/1654049757-4-unlimited-category-sub-category.svg"
             }
           },
           {
-            "title": "Student Result Card",
-            "description": "Creation and access of student result cards for academic progress tracking.",
+            "title": "Customer Email Verification",
+            "description": "Customer email verification is a necessary step in any software in order to ensure that a customer's email address is valid and working.",
             "cssClass": "",
-            "id": "133264580",
+            "id": "86921687",
             "image": {
-              "url": "https://www.datocms-assets.com/73511/1680059584-certificate-card.svg"
+              "url": "https://www.datocms-assets.com/73511/1653557943-browsers-duotone-1.svg"
             }
           },
           {
-            "title": "Live Class Schedule",
-            "description": "Display of live class schedule for students and teachers.",
+            "title": "Dark/Light Mode",
+            "description": "Dark Mode is a color scheme that uses light-colored text on a dark background. This color scheme is typically used to reduce eye strain and improve readability in low-light conditions.",
             "cssClass": "",
-            "id": "133264581",
+            "id": "86921688",
             "image": {
-              "url": "https://www.datocms-assets.com/73511/1654065098-calendar.svg"
+              "url": "https://www.datocms-assets.com/73511/1654066352-spinner.svg"
             }
           },
           {
-            "title": "Online Class with Zoom",
-            "description": " Conducting online classes with Zoom integration for remote learning.",
+            "title": "Maintenance Mode",
+            "description": "Keep your website under maintenance mode until you are ready win the world! Manage your maintenance mode feature today!",
             "cssClass": "",
-            "id": "133264582",
+            "id": "86921689",
             "image": {
-              "url": "https://www.datocms-assets.com/73511/1680059656-video-play.svg"
+              "url": "https://www.datocms-assets.com/73511/1654066051-gearsix.svg"
             }
           },
           {
-            "title": "Student & Teacher Group Chat",
-            "description": " Facilitation of group chat between students and teachers for communication and collaboration",
+            "title": "Google ReCAPTCHA on Admin Panel",
+            "description": "Use google recaptcha feature to enable bot protection on your website. Make your site sercurity stronger using Google Recaptcha!",
             "cssClass": "",
-            "id": "133264583",
+            "id": "86921690",
             "image": {
-              "url": "https://www.datocms-assets.com/73511/1680059815-group-chat.svg"
+              "url": "https://www.datocms-assets.com/73511/1654052364-google-recaptcha-on-admin-panel.svg"
             }
           },
           {
-            "title": "Assignment with File Sharing",
-            "description": "Assignment submission and file sharing between teachers and students.",
+            "title": "3rd Party Tool Integration",
+            "description": "Do you want to install, Pinterest tag, Facebook pixel, or google analytics? Don't worry, we have just the right feature you need. Introducing Custom JS & CSS Feature",
             "cssClass": "",
-            "id": "133264584",
+            "id": "86921691",
             "image": {
-              "url": "https://www.datocms-assets.com/73511/1680059820-notebook-assignment.svg"
-            }
-          },
-          {
-            "title": "PDF & Excel Reports",
-            "description": "Generation of reports in PDF and Excel formats for easy data analysis and record-keeping.",
-            "cssClass": "",
-            "id": "133264585",
-            "image": {
-              "url": "https://www.datocms-assets.com/73511/1680059851-file-xls-duotone.svg"
-            }
-          },
-          {
-            "title": "Online Student Admission",
-            "description": "Online admission process for new students to streamline enrollment.",
-            "cssClass": "",
-            "id": "133264586",
-            "image": {
-              "url": "https://www.datocms-assets.com/73511/1680059954-user-circle-plus-duotone.svg"
-            }
-          },
-          {
-            "title": "Dark Mode Supported",
-            "description": "Option to switch to dark mode for a more comfortable and less eye-straining user interface.",
-            "cssClass": "",
-            "id": "133264587",
-            "image": {
-              "url": "https://www.datocms-assets.com/73511/1680059818-moon-stars-dark-mode.svg"
+              "url": "https://www.datocms-assets.com/73511/1654052349-3rd-party-tool-integration.svg"
             }
           }
         ],
         "cssClass": ""
       },
       {
+        "__typename": "FeaturescreenshotRecord",
+        "id": "19299802",
+        "sectionId": "screenshots",
+        "info": [
+          {
+            "title": "Script Gallery",
+            "updatedAt": "2022-12-30T15:22:49+06:00",
+            "description": "Take a look at some of the screenshots of our classified ads script. It will give you an idea on how it will look like when you create a website using the Adlisting PHP script.",
+            "bgClass": "",
+            "background": null
+          }
+        ],
+        "screenshots": [
+          {
+            "url": "https://www.datocms-assets.com/73511/1658126019-adlisting-full-responsive.png",
+            "alt": null
+          },
+          {
+            "url": "https://www.datocms-assets.com/73511/1672812919-39-1.png",
+            "alt": null
+          },
+          {
+            "url": "https://www.datocms-assets.com/73511/1672812924-40-1.png",
+            "alt": null
+          }
+        ]
+      },
+      {
+        "__typename": "ExclusivefeatureRecord",
+        "id": "40834598",
+        "title": "Buyer & Seller Real Time Chat",
+        "subtitle": "",
+        "description": "A real time chat application feature in a website would allow users to communicate with each other in real time. It would allow the users to get immediate response to questions and concerns. At the end of the day a great way for users to connect with each other play a big impact on business.\n\n\nSome potential features of a real time chat features:\n- Connect with buyers and sellers through messaging.\n- The ability to send and receive instant messages\n- The ability to share files and media",
+        "cssClass": "",
+        "alignment": "right",
+        "image": {
+          "url": "https://www.datocms-assets.com/73511/1658295852-messaging.jpg"
+        },
+        "action": []
+      },
+      {
+        "__typename": "ExclusivefeatureRecord",
+        "id": "35615174",
+        "title": "Multiple Social Authentication",
+        "subtitle": "",
+        "description": "The social media login feature allows users to log in to a software application using their social media account credentials. This eliminates the need for users to remember multiple usernames and passwords for different software applications. The social media login feature is a convenient way for users to access their account and is a secure way to login.\n\nAdlisting Supports these social media\n- Google\n- Facebook\n- Twitter\n- Linkedin\n- Github\n- Gitlab\n- Bitbucket",
+        "cssClass": "bg-gray-f5",
+        "alignment": "left",
+        "image": {
+          "url": "https://www.datocms-assets.com/73511/1657104661-social-media-log-in-1.png"
+        },
+        "action": []
+      },
+      {
+        "__typename": "ExclusivefeatureRecord",
+        "id": "35615175",
+        "title": "Multiple Payment Gateways",
+        "subtitle": "",
+        "description": "\nThere are lots of payment gateways available a software developer can choose from. Each gateway has its own set of features and benefits, so it is important to select the right one for your business. Some of the most popular payment gateways include PayPal, Stripe, Mollie, Flutterwave, Paystack, Razorpay, Midtrans, Instamojo and SSL Commerz.\n\nMost software programs only offer a single payment gateway. Sometimes this can be a problem for businesses that operate in multiple countries or that need to accept multiple types of payment. Our classified ads script offers multiple payment gateways, which can be extremely helpful for your business.",
+        "cssClass": "bg-blue-18",
+        "alignment": "left",
+        "image": {
+          "url": "https://www.datocms-assets.com/73511/1698994957-1658295876-multiple-payment.jpg"
+        },
+        "action": []
+      },
+      {
+        "__typename": "ExclusivefeatureRecord",
+        "id": "35615173",
+        "title": "Multiple Language",
+        "subtitle": "",
+        "description": "Most software programs are designed to function in a single language. However, Adlisting is designed to support multiple languages. This can be a useful feature for businesses that operate in multiple countries or for individuals who speak multiple languages.\n\nMultiple language functionality can be extremely helpful for businesses. It allows the business to reach a wider audience and to communicate more effectively with customers and employees who speak different languages. \n\nFor individuals, the ability to use multiple languages in a software program can be a helpful way to stay connected with friends and family who speak different languages. \n\nIt can also help the businesses and individuals to avoid potential misunderstandings or miscommunications.\n",
+        "cssClass": "",
+        "alignment": "right",
+        "image": {
+          "url": "https://www.datocms-assets.com/73511/1698995073-1654159342-multiple-language-1.jpg"
+        },
+        "action": []
+      },
+      {},
+      {
+        "__typename": "FeaturescreenshotRecord",
+        "id": "40834623",
+        "sectionId": "technologies",
+        "info": [
+          {
+            "title": "Modern Tech Stack",
+            "updatedAt": "2023-01-30T15:51:27+06:00",
+            "description": "Take a look at the technology we use to build our premium scripts and templates.",
+            "bgClass": "",
+            "background": null
+          }
+        ],
+        "screenshots": [
+          {
+            "url": "https://www.datocms-assets.com/73511/1699007350-1658318692-modern-tech-stack-1.jpg",
+            "alt": "Adlisting - Classified Ads Script Technology"
+          }
+        ]
+      },
+      {
         "__typename": "TestimonialSectionRecord",
-        "id": "147461427",
-        "title": "Testimonials",
-        "sectionId": "testimonials",
-        "description": "Don't just listen to our words, see what our valued customers think about our product scripts and templates.\n",
+        "id": "90914994",
+        "title": "Testimonial",
+        "sectionId": "Testimonial",
+        "description": "Don't just listen to our words, see what our valued customers think about our product.\n\n",
         "testimonials": [
           {
-            "id": "90914894",
-            "name": "by Brandego_Media",
+            "id": "90914970",
+            "name": "by kytka37 ",
             "role": "From Codecanyon Market",
-            "quote": "The code is well organized and the application is lightweight. Customer support is also very good. I would recommend this purchase!",
+            "quote": "Great script! I bought it, and I have full support from the developers. The developer answers the question almost immediately. Good job! I look forward to more updates :)\n\n",
             "image": null
           },
           {
-            "id": "90914909",
-            "name": "by rks784262",
+            "id": "90914986",
+            "name": "by agnewprowp",
             "role": "From Codecanyon Market",
-            "quote": "This script is a true masterpiece. Exceptionally good design and UI. Plenty of features for a reasonable price. Great value for money. The support team is also responsive. Keep improving. Thank you",
-            "image": null
-          },
-          {
-            "id": "90914865",
-            "name": "by nursahal00 ",
-            "role": "From Codecanyon Market",
-            "quote": "templatecookie is awesome, has great customer service, is a knowledgeable and great personality. Thank you for the amazing support!",
+            "quote": "I like this script it's got potential and the support is excellent\n\n",
             "image": null
           }
         ]
       },
       {
         "__typename": "PriceplanRecord",
-        "id": "147461435",
+        "id": "35616351",
         "sectionId": "pricing",
         "info": [
           {
-            "id": "147461432",
-            "title": "High Quality Product, Affordable Pricing",
+            "id": "35616332",
+            "title": "High Quality Product, Affordable Pricing ",
             "description": "We develop high-quality products using modern technologies but still keep the pricing very reasonable. That way we can help more and more people create their dream projects!",
-            "createdAt": "2023-04-29T08:42:35+06:00",
-            "bgClass": ""
+            "createdAt": "2022-07-06T16:58:38+06:00",
+            "bgClass": "bg-gray-f0"
           }
         ],
         "plans": [
@@ -333,7 +397,7 @@
             "name": "Extended",
             "description": "Extended license permits you to ask and make money from your users. Sourcecode included. This license permits you for 1 domain, purchase more license if you have multiple sites. ",
             "price": 149,
-            "purchaseLink": "https://go.templatecookie.com/schooling-extended",
+            "purchaseLink": "https://go.templatecookie.com/adlisting-extended",
             "paddleProductId": "",
             "paddleCheckout": false,
             "features": []
@@ -342,7 +406,7 @@
             "name": "Regular",
             "description": "Regular licenses allow you to let users use the platform free of charge. Sourcecode included. This license permits you to have 1 domain; purchase more licenses if you have multiple sites.",
             "price": 59,
-            "purchaseLink": "https://go.templatecookie.com/schooling-regular",
+            "purchaseLink": "https://go.templatecookie.com/adlisting-regular",
             "paddleProductId": "",
             "paddleCheckout": false,
             "features": []
@@ -351,11 +415,36 @@
       },
       {
         "__typename": "ProductctaRecord",
-        "id": "133556679",
-        "title": "Build Your Awesome School Management System Today!",
+        "id": "19299826",
+        "title": "Build Your Classified Ads Website Today!",
         "description": "",
         "cssClass": "",
-        "screenshots": []
+        "screenshots": [
+          {
+            "url": "https://www.datocms-assets.com/73511/1653712028-blogs.png",
+            "alt": null
+          },
+          {
+            "url": "https://www.datocms-assets.com/73511/1653712033-dashboard-ad.png",
+            "alt": null
+          },
+          {
+            "url": "https://www.datocms-assets.com/73511/1653712037-dashboard-back-ad.png",
+            "alt": null
+          },
+          {
+            "url": "https://www.datocms-assets.com/73511/1653712042-faq.png",
+            "alt": null
+          },
+          {
+            "url": "https://www.datocms-assets.com/73511/1653712046-home-ad.png",
+            "alt": null
+          },
+          {
+            "url": "https://www.datocms-assets.com/73511/1653712054-pricing.png",
+            "alt": null
+          }
+        ]
       }
     ]
   };
