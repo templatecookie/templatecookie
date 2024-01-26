@@ -37,10 +37,7 @@
                   class="dropdown-item absolute z-50 -ml-4 w-screen max-w-md transform lg:left-0 lg:ml-0 lg:max-w-2xl">
                   <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                     <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
-                      <nuxt-link :to="{
-                          name: 'demo-slug',
-                          params: { slug: product.slug },
-                        }" v-for="(product, index) in selectedProducts" :key="index"
+                      <nuxt-link :to="product.slug" v-for="(product, index) in selectedProducts" :key="index"
                         class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
                         <div
                           class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-primary text-white sm:h-12 sm:w-12">
@@ -73,8 +70,7 @@
               </button>
 
               <transition name="flayout-menu">
-                <div
-                  class="dropdown-item absolute z-50 -ml-4 w-screen max-w-sm transform lg:left-0 lg:ml-0">
+                <div class="dropdown-item absolute z-50 -ml-4 w-screen max-w-sm transform lg:left-0 lg:ml-0">
                   <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                     <div
                       class="w-screen max-w-sm flex-auto bg-white p-4 text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
@@ -123,7 +119,8 @@
 
         <!-- Our Mobile Menu  -->
         <transition name="fade">
-          <div class="absolute max-w-[90%] h-screen overflow-y-auto top-0 z-50 origin-top-right transform transition-all duration-300 lg:hidden"
+          <div
+            class="absolute max-w-[90%] h-screen overflow-y-auto top-0 z-50 origin-top-right transform transition-all duration-300 lg:hidden"
             :class="mobileNav ? 'inset-x-0 mobile-menu-active':'-translate-x-full'" @click="mobileNav = false">
             <div v-if="data && logo"
               class="divide-y-2 divide-gray-50 bg-white shadow-lg ring-1 ring-black ring-opacity-5">
@@ -146,10 +143,7 @@
                 </div>
                 <div class="mt-6">
                   <nav class="grid grid-cols-1 gap-7">
-                    <nuxt-link :to="{
-                        name: 'demo-slug',
-                        params: { slug: product.slug },
-                      }" v-for="(product, index) in selectedProducts" :key="index"
+                    <nuxt-link :to="product.slug" v-for="(product, index) in selectedProducts" :key="index"
                       class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
                       <div
                         class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-primary text-white">
@@ -235,8 +229,37 @@
   ]
 
   const { data } = defineProps(['data']);
-  const { logo, selectedProducts } = toRefs(data);
-
+  const { logo } = toRefs(data);
+  const selectedProducts =
+    [
+      {
+        "name": "Job Portal Script: Maximize Your Earning Potential with Jobpilot",
+        "slug": "demo/jobpilot-job-portal-script-php-laravel",
+        "shortName": "Jobpilot",
+        "thumbnail": {
+          "url": "https://www.datocms-assets.com/73511/1669616355-jobpilot.png"
+        },
+        "description": "Jobpilot is a  modern and high-quality Job Portal Script that offers a wealth of features and tools to help you create a successful job portal website."
+      },
+      {
+        "name": "Schooling - The Ultimate PHP Script for Efficient School Management",
+        "slug": "demo/schooling-school-management-system-script",
+        "shortName": "Schooling",
+        "thumbnail": {
+          "url": "https://www.datocms-assets.com/73511/1669616359-schooling.png"
+        },
+        "description": "Efficiently manage your school with Schooling. The all-in-one PHP script for schools with multi-language support, payment gateway integration, and powerful academic management features. Try it now."
+      },
+      {
+        "name": "Adlisting - Classified Ads PHP Script",
+        "slug": "demo/adlisting-classified-ads-script",
+        "shortName": "Adlisting",
+        "thumbnail": {
+          "url": "https://www.datocms-assets.com/73511/1671949568-adlisting.jpg"
+        },
+        "description": "Adlisting is a premium PHP script with minimal, clean, flexible, and structured code. Using the script you can create stunning ad listing websites to buy/sell classified ads and generate revenues."
+      }
+    ]
 
   const solutionStatus = ref(false);
   const mobileNav = ref(false);

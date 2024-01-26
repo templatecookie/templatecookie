@@ -17,7 +17,7 @@
       </div> -->
     </div>
 
-    <div class="relative bg-dark">
+    <div class="relative bg-gray-500">
       <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div
           class="flex items-center justify-between py-6 md:justify-start md:space-x-10 border-b border-b-gray-50/30"
