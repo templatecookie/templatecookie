@@ -7,6 +7,16 @@ category: Others
 
 # Changelog
 ## January
+### v3.10.0 - 30th January 2024
+
+```
+- feat: Multiple homepages support added.
+- feat: Ability to create custom pages.
+
+- fix: Resolved an issue with application updates.
+- fix: Fixed a slug creation issue for company on the admin side.
+- fix: Addressed a query issue related to locations.
+```
 ### v3.8.6 - 11th January 2024
 
 ```
