@@ -9,6 +9,22 @@ category: Others
 
 ---
 ## January
+### v4.11.0 - 30th January 2024
+```
+
+feat: Introducing the Application Promotion System.
+feat: Unread message count now displayed in the header.
+feat: Multiple homepages support added.
+
+
+fix: Resolved the issue where the location image was not found after clicking on the location.
+fix: Fixed the problem with categories in the admin listing create page.
+fix: Addressed the modal opening on reload issues.
+
+
+style: Redesigned the Ads List Category sidebar collapse for a more user-friendly design.
+style: Resolved map-related styling issues.
+```
 ### v4.9.0 - 19th January 2024
 ```
 - feat:Email SpamVerification.
