@@ -15,7 +15,6 @@ category: Others
 - fix:  Resolved education and experience issue.
 - fix:  Ensured top Company card responsiveness.
 - fix:  Enhanced mobile search menu design.
-- fix:  Addressed query issue for locations.
 - fix:  Fixed mobile menu responsiveness.
 - fix:  Optimized global variables with caching.
 - fix:  Rectified Home page caching issue.
