@@ -22,8 +22,8 @@
 
           <!-- Title -->
           <div class="mt-5 max-w-2xl">
-            <h1 class="block font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl ">
-              Your Digital Partner for Success
+            <h1 class="block font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl capitalize">
+              web app development
             </h1>
           </div>
           <!-- End Title -->
