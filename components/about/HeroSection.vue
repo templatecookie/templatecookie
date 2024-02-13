@@ -15,16 +15,16 @@
     <div class="relative z-10">
       <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
         <div class="max-w-2xl text-center mx-auto">
-          <p
+          <h1
             class="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent ">
-            Welcome to Templatecookie
-          </p>
+            web app development
+          </h1>
 
           <!-- Title -->
           <div class="mt-5 max-w-2xl">
-            <h1 class="block font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl capitalize">
-              web app development
-            </h1>
+            <p class="block font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl capitalize">
+              Your Digital Partner for Success
+            </p>
           </div>
           <!-- End Title -->
 
