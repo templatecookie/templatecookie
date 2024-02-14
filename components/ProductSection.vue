@@ -9,7 +9,7 @@
           {{ homepage.latestProduct[0].description }}
         </p>
       </div>
-      <div class=" flex justify-center">
+      <!-- <div class=" flex justify-center">
         <RadioGroup v-model="tab"
           class="grid grid-cols-2 gap-x-1 rounded-full p-1 text-center text-xs font-semibold leading-5 ring-1 ring-inset ring-gray-200">
           <RadioGroupOption as="template" v-for="option in tabs" :key="option.value" :value="option" v-slot="{ checked }">
@@ -20,18 +20,13 @@
             </div>
           </RadioGroupOption>
         </RadioGroup>
-      </div>
-      <free-products v-if="tab.value === 'free'" />
-      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6" v-if="tab.value === 'latest'">
+      </div> -->
+      <!-- <free-products v-if="tab.value === 'free'" /> -->
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
         <div v-for="(item, index) in latestProducts" :key="index" class="flex items-stretch aos" data-aos="fade-up"
           :data-aos-delay="index * 100">
           <ProductCard :product="item" :large="false" />
         </div>
-      </div>
-      <div class="flex items-center justify-center w-full">
-        <nuxt-link href="/products"
-          class="mt-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-primary px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-secondary">View
-          All </nuxt-link>
       </div>
     </div>
 
@@ -41,7 +36,7 @@
 <script setup>
 
 import { ref } from 'vue'
-import { RadioGroup, RadioGroupOption } from '@headlessui/vue'
+// import { RadioGroup, RadioGroupOption } from '@headlessui/vue'
 
 defineProps({
   homepage: {
@@ -54,13 +49,13 @@ defineProps({
   }
 })
 
-const tabs = [
-  { value: 'free', label: 'Free' },
-  { value: 'latest', label: 'Latest' },
-]
+// const tabs = [
+//   { value: 'free', label: 'Free' },
+//   { value: 'latest', label: 'Latest' },
+// ]
 
 
-const tab = ref(tabs[0])
+// const tab = ref(tabs[0])
 
 
 </script>
