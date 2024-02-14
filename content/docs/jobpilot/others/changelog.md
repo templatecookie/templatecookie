@@ -7,7 +7,17 @@ category: Others
 
 # Changelog
 ## February
-### v3.10.7 - 6th January 2024
+### v3.10.11 - 14th February 2024
+
+```
+- fix: Translations page pagination issue fixed.
+- fix: Time zone updating issue fixed.
+
+- improve: Only applied candidates can download resumes.
+
+- style:  RTL  related design issues fixed.
+```
+### v3.10.7 - 6th February 2024
 
 ```
 
