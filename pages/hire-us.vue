@@ -11,9 +11,9 @@
 <script setup>
 import store from "~/store";
 
-const title = "Hire Expert Designer & Developers | Templatecookie";
+const title = "Hire TemplateCookie: Your experienced tech Partner";
 const description =
-  "We have expert developers and designers to help you build your next dream project. Our team composed with experts in various industry";
+  "Discover the power of collaboration with TemplateCookie. Our expert team specializes in SaaS and web app development, ready to turn your ideas into reality";
 const route = useRoute();
 const siteLogo = store.global?.logo?.url;
 
