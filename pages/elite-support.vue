@@ -354,6 +354,19 @@
           Choose the Right Plan for You: Tailored Support for Your Success
         </p>
 
+        <div class="mt-10 flex justify-center">
+          <RadioGroup v-model="pricingTab"
+            class="grid grid-cols-2 gap-x-1 rounded-full p-1 text-center text-xs font-semibold leading-5 ring-1 ring-inset ring-gray-200">
+            <RadioGroupOption as="template" v-for="option in pricingTabs" :key="option.value" :value="option"
+              v-slot="{ checked }">
+              <div
+                :class="[checked ? 'bg-primary text-white' : 'text-gray-500', 'cursor-pointer rounded-full px-2.5 py-1']">
+                <span>{{ option.label }}</span>
+              </div>
+            </RadioGroupOption>
+          </RadioGroup>
+        </div>
+
         <div class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <div class="rounded-3xl p-8 xl:p-10" :class="pricing.popular ? 'ring-primary ring-2' : 'ring-gray-200 ring-1'
             " v-for="(pricing, index) in packages" :key="index">
@@ -374,9 +387,10 @@
               <span class="text-2xl font-bold tracking-tight text-gray-900">CUSTOM</span>
             </p>
             <p class="mt-6 flex items-baseline gap-x-1" v-else>
-              <span class="text-4xl font-bold tracking-tight text-gray-900">${{ pricing.price }}</span>
-              <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
+              <span class="text-4xl font-bold tracking-tight text-gray-900">${{ pricing[pricingTab.value] }}</span>
+              <span class="text-sm font-semibold leading-6 text-gray-600">/{{ pricingTab.priceSuffix }}</span>
             </p>
+            <p v-if="pricing.additional" v-text="pricing.additional" class="text-sm font-medium text-gray-800 mt-2" />
 
             <!-- href="https://share.hsforms.com/1bXIHNkLyT6yrFoXjHPBNggd7a3t"  -->
             <a :href="pricing.purchase_url" :aria-describedby="pricing.name"
@@ -572,7 +586,15 @@
 
 <script setup>
 import store from "~/store";
+import { ref } from 'vue'
+import { RadioGroup, RadioGroupLabel, RadioGroupOption } from '@headlessui/vue'
+import { CheckIcon } from '@heroicons/vue/20/solid'
 
+const pricingTabs = [
+  { value: 'monthly', label: 'Monthly', priceSuffix: 'month' },
+  { value: 'annual', label: 'Annually', priceSuffix: 'year' },
+]
+const pricingTab = ref(pricingTabs[0])
 const title = "Elite Support | Streamlined Solutions for Unmatched Success";
 const description =
   "Get Elite support for your web app and SaaS development projects. Our Templatecookie team ensures seamless implementation and troubleshooting.";
@@ -618,55 +640,56 @@ const packages = [
   {
     name: "Essential",
     description: "Simplify Support, Fuel Your Progress",
-    price: 49,
+    monthly: 49,
+    annual: 490,
     popular: false,
     purchase_url: "https://buy.stripe.com/dR6g305pr4vQ2cM9AE",
     items: [
-      { name: "Ongoing Maintenance" },
+      { name: "Unlimited Bug Fixing" },
       { name: "Priority Support Within 24 Hours" },
       { name: "Quick Bug Fixing" },
-      { name: "Access Email Support" },
-      { name: "Supported 1 Domain" },
+      { name: "Access to Project Management Tool" },
+      { name: "Automatic Upgrade To Latest Version (Must Have Cloud Hosting)" },
     ],
   },
   {
     name: "Startup",
     description: "Elevate Your Support Experience, Unleash Your Potential.",
-    price: 199,
+    monthly: 199,
+    annual: 1290,
     popular: false,
     purchase_url: "https://buy.stripe.com/5kA0425pr7I2aJi28b",
     items: [
-      { name: "Ongoing Maintenance" },
+      { name: "Unlimited Bug Fixing" },
       { name: "Priority Support within 12 Hours" },
-      { name: "Quick Bug Fixing" },
-      { name: "Access Email Support" },
-      { name: "Access to Customer Panel" },
-      { name: "Supported 1 Domain" },
-      { name: "Script Installation & Server Maintenance" },
+      { name: "Access to Project Management Tool" },
+      { name: " Automatic Upgrade To Latest Version (Must Have Cloud Hosting)" },
+      { name: " Cloud Installation & Server Maintenance" },
+      { name: "5 hours included for modifications or new feature implementation" },
       {
-        name: "2 hours included for modifications or new feature implementation ",
+        name: "Supported Upto 2 Projects",
       },
     ],
   },
   {
     name: "Growth",
     description: "Unmatched Support, Customized for Your Success.",
-    price: 249,
+    additional: 'Additional hours maybe counted as $18',
+    monthly: 199,
+    annual: 1990,
     popular: true,
     purchase_url: "https://buy.stripe.com/9AQeYWcRT0fAaJi146",
     items: [
-      { name: "Ongoing Maintenance" },
-      { name: "Priority Support within 8 Hours" },
-      { name: "Quick Bug Fixing" },
-      { name: "Access to email support" },
-      { name: "Access to Customer Panel" },
-      { name: "Supported 2 Domain" },
-      { name: "Script Installation & Server Maintenance" },
-      {
-        name: "5 hours included for modifications or new feature implementation ",
-      },
+      { name: "Unlimited Bug Fixing" },
+      { name: "Priority Support within 12 Hours" },
+      { name: "Access to Project Management Tool" },
+      { name: "Automatic Upgrade To Latest Version (Must Have Cloud Hosting)" },
+      { name: "10 hours included for modifications or new feature implementation" },
       { name: "Access to Whatsapp Support" },
       { name: "Expert Technical Guidance" },
+      {
+        name: "Cloud Installation & Server Maintenance",
+      }
     ],
   },
 ];
