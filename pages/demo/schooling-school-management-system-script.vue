@@ -36,6 +36,7 @@
 definePageMeta({
   layout: "empty",
 });
+const { data: productPrice } = await useProductPrice("35955469")
 const product = {
   "id": "128748729",
   "name": "Schooling - The Ultimate PHP Script for Efficient School Management",
@@ -336,7 +337,7 @@ const product = {
         {
           "name": "Extended",
           "description": "Extended license permits you to ask and make money from your users. Sourcecode included. This license permits you for 1 domain, purchase more license if you have multiple sites. ",
-          "price": 149,
+          "price": productPrice?.value[1]?.price,
           "purchaseLink": "https://go.templatecookie.com/schooling-extended",
           "paddleProductId": "",
           "paddleCheckout": false,
@@ -345,7 +346,7 @@ const product = {
         {
           "name": "Regular",
           "description": "Regular licenses allow you to let users use the platform free of charge. Sourcecode included. This license permits you to have 1 domain; purchase more licenses if you have multiple sites.",
-          "price": 59,
+          "price": productPrice?.value[0]?.price,
           "purchaseLink": "https://go.templatecookie.com/schooling-regular",
           "paddleProductId": "",
           "paddleCheckout": false,
