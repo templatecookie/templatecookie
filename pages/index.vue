@@ -9,8 +9,7 @@
 
     <!-- Why Should  -->
     <home-top-features-section v-if="homepage && homepage.topFeatures" :data="homepage.topFeatures" />
-    <home-why-us v-if="homepage && homepage.whyUsSection" :data="homepage.whyUsSection" />
-    <section class="py-32">
+    <section class="py-32 bg-gray-50">
       <div class="text-center mb-10">
         <h1 class="text-4xl md:text-heading-40 textdark mb-6 max-w-680 mx-auto font-semibold"> Browse Our Free Products
         </h1>
@@ -26,6 +25,7 @@
           All </nuxt-link>
       </div>
     </section>
+    <home-why-us v-if="homepage && homepage.whyUsSection" :data="homepage.whyUsSection" />
     <div class=" bg-primary">
       <div class="mx-auto max-w-2xl py-16 px-6 text-center sm:py-20 lg:px-8">
         <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">

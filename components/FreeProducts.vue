@@ -4,7 +4,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 my-8">
         <div v-for="(item, itemIndex) in displayedProducts" :key="itemIndex" class="flex items-stretch" data-aos="fade-up"
           :data-aos-delay="itemIndex * 100">
-          <ProductCard :product="item" :large="false" />
+          <ProductCard :product="item" :large="false" bg="bg-white" />
         </div>
       </div>
     </div>
