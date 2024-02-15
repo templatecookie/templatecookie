@@ -1,5 +1,5 @@
 <template>
-  <section class="latest" v-if="homepage && homepage?.latestProduct" id="products">
+  <section class="latest bg-gray-50" v-if="homepage && homepage?.latestProduct" id="products">
     <div class="mx-auto max-w-7xl py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 space-y-6">
       <div class="text-center">
         <h2 class="text-4xl md:text-5xl text-dark font-semibold capitalize tracking-1 mb-8">
@@ -25,7 +25,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
         <div v-for="(item, index) in latestProducts" :key="index" class="flex items-stretch aos" data-aos="fade-up"
           :data-aos-delay="index * 100">
-          <ProductCard :product="item" :large="false" />
+          <ProductCard :product="item" :large="false" bg="bg-white" />
         </div>
       </div>
     </div>
