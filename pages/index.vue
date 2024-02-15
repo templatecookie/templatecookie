@@ -5,29 +5,28 @@
     <logo-cloud />
 
     <!-- Latest Product -->
-    <section class="latest" v-if="homepage && homepage?.latestProduct" id="products">
-      <div class="mx-auto max-w-7xl py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
-        <div class="mb-[72px] text-center">
-          <h2 class="text-4xl md:text-5xl text-dark font-semibold capitalize tracking-1 mb-8">
-            {{ homepage.latestProduct[0].title }}
-          </h2>
-          <p class="text-lg font-light max-w-lg mx-auto text-dark" v-if="homepage?.latestProduct[0].description">
-            {{ homepage.latestProduct[0].description }}
-          </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-          <div v-for="(item, index) in latestProducts" :key="index" class="flex items-stretch aos" data-aos="fade-up"
-            :data-aos-delay="index * 100">
-            <ProductCard :product="item" :large="false" />
-          </div>
-        </div>
-      </div>
-    </section>
+    <product-section :homepage="homepage" :latestProducts="latestProducts" />
 
     <!-- Why Should  -->
     <home-top-features-section v-if="homepage && homepage.topFeatures" :data="homepage.topFeatures" />
+    <section class="py-32 bg-gray-50">
+      <div class="text-center mb-10">
+        <h1 class="text-4xl md:text-heading-40 textdark mb-6 max-w-680 mx-auto font-semibold"> Browse Our Free Products
+        </h1>
+        <p class="text-lg md:text-lg textdark mb-8 max-w-full md:max-w-536 mx-auto font-light">
+          Browse our latest products
+          for your next big idea, and see
+          what we have to offer. </p>
+      </div>
+      <free-products />
+      <div class="flex items-center justify-center w-full">
+        <nuxt-link href="/products"
+          class="mt-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-primary px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-secondary">View
+          All </nuxt-link>
+      </div>
+    </section>
     <home-why-us v-if="homepage && homepage.whyUsSection" :data="homepage.whyUsSection" />
-    <div class="bg-primary">
+    <div class=" bg-primary">
       <div class="mx-auto max-w-2xl py-16 px-6 text-center sm:py-20 lg:px-8">
         <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
           <span class="block"> Launch your Website faster </span>
