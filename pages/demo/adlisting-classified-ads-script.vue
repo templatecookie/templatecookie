@@ -398,7 +398,7 @@ const product = {
         {
           "name": "Extended",
           "description": "Extended license permits you to ask and make money from your users. Sourcecode included. This license permits you for 1 domain, purchase more license if you have multiple sites. ",
-          "price": productPrice?.value[1]?.price,
+          "price": parseInt(productPrice?.value[1]?.price),
           "purchaseLink": "https://go.templatecookie.com/adlisting-extended",
           "paddleProductId": "",
           "paddleCheckout": false,
@@ -407,7 +407,7 @@ const product = {
         {
           "name": "Regular",
           "description": "Regular licenses allow you to let users use the platform free of charge. Sourcecode included. This license permits you to have 1 domain; purchase more licenses if you have multiple sites.",
-          "price": productPrice?.value[0]?.price,
+          "price": parseInt(productPrice?.value[0]?.price),
           "purchaseLink": "https://go.templatecookie.com/adlisting-regular",
           "paddleProductId": "",
           "paddleCheckout": false,
