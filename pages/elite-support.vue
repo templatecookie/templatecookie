@@ -396,8 +396,8 @@
             <a :href="pricing.purchase_url" :aria-describedby="pricing.name"
               class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
               :class="pricing.popular
-                ? ' bg-primary text-white shadow-sm hover:bg-indigo-500'
-                : 'text-primary ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300'
+                ? ' bg-primary text-white shadow-sm hover:bg-secondary'
+                : 'text-primary ring-1 ring-inset ring-primary hover:bg-primary hover:text-white'
                 ">
               Subscribe now
             </a>
@@ -587,8 +587,7 @@
 <script setup>
 import store from "~/store";
 import { ref } from 'vue'
-import { RadioGroup, RadioGroupLabel, RadioGroupOption } from '@headlessui/vue'
-import { CheckIcon } from '@heroicons/vue/20/solid'
+import { RadioGroup, RadioGroupOption } from '@headlessui/vue'
 
 const pricingTabs = [
   { value: 'monthly', label: 'Monthly', priceSuffix: 'month' },
@@ -655,6 +654,7 @@ const packages = [
   {
     name: "Startup",
     description: "Elevate Your Support Experience, Unleash Your Potential.",
+    additional: 'Additional hours maybe counted as $26',
     monthly: 129,
     annual: 1290,
     popular: false,
@@ -674,7 +674,7 @@ const packages = [
   {
     name: "Growth",
     description: "Unmatched Support, Customized for Your Success.",
-    additional: 'Additional hours maybe counted as $18',
+    additional: 'Additional hours maybe counted as $24',
     monthly: 199,
     annual: 1990,
     popular: true,
