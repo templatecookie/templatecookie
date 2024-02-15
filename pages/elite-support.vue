@@ -655,7 +655,7 @@ const packages = [
   {
     name: "Startup",
     description: "Elevate Your Support Experience, Unleash Your Potential.",
-    monthly: 199,
+    monthly: 129,
     annual: 1290,
     popular: false,
     purchase_url: "https://buy.stripe.com/5kA0425pr7I2aJi28b",
