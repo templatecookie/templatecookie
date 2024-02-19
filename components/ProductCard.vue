@@ -2,7 +2,7 @@
   <!-- card wrapper  -->
   <div class="relative overflow-hidden border border-gray-f0 rounded-2xl product-card w-full"
     :class="[large ? 'product-card--lg' : 'product-card--sm', bg]">
-    <nuxt-link :to="pathName"
+    <nuxt-link :to="productLink"
       class="product-card__img relative inline-block overflow-hidden rounded-lg w-full product-card__img-wrapper">
       <nuxt-img v-if="product.banner?.url" :src="product.banner.url" alt="product-img"
         class="w-full h-full object-cover overflow-hidden" />
@@ -25,7 +25,7 @@
       <div class="flex justify-between items-center sm:mt-0 mt-6 product-card__actions">
         <div class="flex items-center space-x-3 order-2 sm:order-1">
           <div>
-            <nuxt-link :to="pathName"
+            <nuxt-link :to="productLink"
               class="flex items-center overflow-hidden border border-primary text-primary rounded-lg group py-3.5 px-9 whitespace-nowrap product-card__button">
               View Details
               <span class="inline-block ml-2">
@@ -59,10 +59,12 @@ const { product } = defineProps({
   bg: {
     type: String,
     default: () => 'bg-gray-50'
+  },
+  productLink: {
+    type: String,
+    required: true
   }
 })
-
-const pathName = ref(`/free-products/${product.slug}`);
 
 </script>
 
