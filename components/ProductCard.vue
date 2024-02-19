@@ -62,7 +62,7 @@ const { product } = defineProps({
   }
 })
 
-const pathName = ref(`demo/${product.slug}`);
+const pathName = ref(`/free-products/${product.slug}`);
 
 </script>
 
