@@ -3,9 +3,7 @@
     <div class="bg-gray-f0 py-12">
       <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="text-center max-w-4xl m-auto pt-6">
-          <h1
-            class="text-dark text-5xl font-semibold mb-6 lg:mb-9 tracking-ls02"
-          >
+          <h1 class="text-dark text-5xl font-semibold mb-6 lg:mb-9 tracking-ls02">
             Terms & Conditions
           </h1>
         </div>
@@ -15,7 +13,7 @@
     <div class="py-12">
       <div class="flex justify-center">
         <div class="max-w-2xl mx-auto px-4 py-8 sm:px-6">
-          <h1 class="text-2xl font-bold mb-4">TERMS AND CONDITIONS OF USE</h1>
+          <h2 class="text-2xl font-bold mb-4">TERMS AND CONDITIONS OF USE</h2>
           <p class="mb-4">
             Welcome to Templatecookie.com. These terms and conditions ("Terms")
             govern your use of our website and services. By using our website,
