@@ -3,9 +3,9 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex lg:flex-nowrap flex-wrap px-3 lg:px-0">
         <div class="lg:w-1/2 w-full lg:py-[124px] order-2 lg:order-1 pb-14 lg:pb-0 lg:pr-8">
-          <h1 class="text-4xl md:text-5xl text-dark font-semibold capitalize tracking-1 mb-8">
+          <h2 class="text-4xl md:text-5xl text-dark font-semibold capitalize tracking-1 mb-8">
             {{ section.info[0].title }}
-          </h1>
+          </h2>
           <p class="text-base font-light text-dark mb-10">
             {{ section.info[0].description }}
           </p>
