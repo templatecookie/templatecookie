@@ -41,7 +41,7 @@ const product = {
   "id": "128748729",
   "name": "Schooling - The Ultimate PHP Script for Efficient School Management",
   "description": "Efficiently manage your school with Schooling. The all-in-one PHP script for schools with multi-language support, payment gateway integration, and powerful academic management features. Try it now.",
-  "docsUrl": "/docs/schooling/",
+  "docsUrl": "/docs/schooling/get-started/introduction",
   "previewUrl": "https://schooling.templatecookie.com/",
   "shortName": "Schooling",
   "offerRequestCustomization": true,
