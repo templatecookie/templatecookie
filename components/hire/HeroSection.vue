@@ -130,7 +130,6 @@ export default {
       if (!this.isValidEmail) {
         e.preventDefault();
       }
-      console.log(isValidEmail)
     },
   },
 };

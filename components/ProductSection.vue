@@ -25,7 +25,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
         <div v-for="(item, index) in latestProducts" :key="index" class="flex items-stretch aos" data-aos="fade-up"
           :data-aos-delay="index * 100">
-          <ProductCard :product="item" :large="false" bg="bg-white" />
+          <ProductCard :product="item" :large="false" bg="bg-white" :product-link="`/demo/${item.slug}`" />
         </div>
       </div>
     </div>
@@ -48,6 +48,8 @@ defineProps({
     required: true
   }
 })
+
+
 
 // const tabs = [
 //   { value: 'free', label: 'Free' },

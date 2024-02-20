@@ -2,10 +2,7 @@
   <div>
     <demo-header :product="product" v-if="product" />
     <demo-product-hero :product="product" v-if="product" />
-    <demo-why-choose-our-product
-      :product="product"
-      v-if="product?.whyChooseUs"
-    />
+    <demo-why-choose-our-product :product="product" v-if="product?.whyChooseUs" />
     <div v-for="(section, index) in product?.contents" :key="index">
       <div v-if="section.__typename == 'ExclusivefeatureRecord'">
         <demo-exclusive-feature :data="section" />
@@ -20,13 +17,9 @@
         <demo-call-to-action :section="section" :product="product" />
       </div>
       <div v-if="section.__typename == 'PriceplanRecord'">
-        <PricingSection
-          :plans="section.plans"
-          :id="section.sectionId ? section.sectionId : section.id"
-          :info="section.info[0]"
-          :extra-offer="product.extraOffer"
-          :request-customization="product.offerRequestCustomization"
-        />
+        <PricingSection :plans="section.plans" :id="section.sectionId ? section.sectionId : section.id"
+          :info="section.info[0]" :extra-offer="product.extraOffer"
+          :request-customization="product.offerRequestCustomization" />
       </div>
       <div v-if="section.__typename == 'TestimonialSectionRecord'">
         <demo-testimonial-section :data="section" />
@@ -100,6 +93,7 @@ defineOgImage({
 
 // swiper single silder
 .single-slider {
+
   .swiper-button-prev,
   .swiper-button-next {
     top: calc(50% - 15px);
