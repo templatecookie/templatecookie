@@ -40,7 +40,7 @@ const product = {
   "id": "18221116",
   "name": "Job Portal Script: Maximize Your Earning Potential with Jobpilot",
   "description": "Jobpilot is a  modern and high-quality Job Portal Script that offers a wealth of features and tools to help you create a successful job portal website.",
-  "docsUrl": "/docs/jobpilot/introduction",
+  "docsUrl": "/docs/jobpilot/get-started/introduction",
   "previewUrl": "https://jobpilot.templatecookie.com/",
   "shortName": "Jobpilot",
   "offerRequestCustomization": true,
