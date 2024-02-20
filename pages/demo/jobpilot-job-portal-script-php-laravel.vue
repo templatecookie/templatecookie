@@ -55,35 +55,35 @@ const product = {
   "logoCloudsImages": [
     {
       "url": "https://www.datocms-assets.com/73511/1673600256-midtrans.svg",
-      "alt": null
+      "alt": 'midtrans'
     },
     {
       "url": "https://www.datocms-assets.com/73511/1673600260-mollie-1.svg",
-      "alt": null
+      "alt": 'mollie'
     },
     {
       "url": "https://www.datocms-assets.com/73511/1673600263-paypal.svg",
-      "alt": null
+      "alt": "paypal"
     },
     {
       "url": "https://www.datocms-assets.com/73511/1673600266-razorpay_logo.svg",
-      "alt": null
+      "alt": "razorpay"
     },
     {
       "url": "https://www.datocms-assets.com/73511/1673600269-stripe.svg",
-      "alt": null
+      "alt": "stripe"
     },
     {
       "url": "https://www.datocms-assets.com/73511/1673600364-flutterwave.png",
-      "alt": null
+      "alt": "flutterwave"
     },
     {
       "url": "https://www.datocms-assets.com/73511/1673600370-instamojo.png",
-      "alt": null
+      "alt": "instamojo"
     },
     {
       "url": "https://www.datocms-assets.com/73511/1673600375-sslcommerz.png",
-      "alt": null
+      "alt": "sslcommerz"
     }
   ],
   "seo": {
