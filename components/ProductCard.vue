@@ -1,14 +1,14 @@
 <template>
   <!-- card wrapper  -->
-  <div class="relative overflow-hidden border border-gray-f0 rounded-2xl product-card w-full"
+  <div class="relative overflow-hidden border border-gray-f0 rounded-2xl product-card w-full flex flex-col"
     :class="[large ? 'product-card--lg' : 'product-card--sm', bg]">
-    <nuxt-link :to="pathName"
+    <nuxt-link :to="productLink"
       class="product-card__img relative inline-block overflow-hidden rounded-lg w-full product-card__img-wrapper">
       <nuxt-img v-if="product.banner?.url" :src="product.banner.url" alt="product-img"
         class="w-full h-full object-cover overflow-hidden" />
     </nuxt-link>
 
-    <div class="product-card__text" :class="large ? 'p-8' : 'p-6'">
+    <div class="product-card__text flex flex-col flex-grow" :class="large ? 'p-8' : 'p-6'">
       <div class="tracking-widest font-normal text-secondary uppercase m-0 mb-1" :class="large ? 'text-sm' : 'text-sm'"
         v-if="product.category">
         {{ product.category.name }}
@@ -18,29 +18,27 @@
         {{ product.name }}
       </h2>
 
-      <p class="text-base text-dark-gray font-light mb-6" :class="large ? 'text-base' : 'text-sm/20'">
+      <p class="text-base text-dark-gray font-light mb-6 line-clamp-3 flex-grow"
+        :class="large ? 'text-base' : 'text-sm/20'">
         {{ product.description }}
       </p>
 
-      <div class="flex justify-between items-center sm:mt-0 mt-6 product-card__actions">
-        <div class="flex items-center space-x-3 order-2 sm:order-1">
-          <div>
-            <nuxt-link :to="pathName"
-              class="flex items-center overflow-hidden border border-primary text-primary rounded-lg group py-3.5 px-9 whitespace-nowrap product-card__button">
-              View Details
-              <span class="inline-block ml-2">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.75 12H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </span>
-            </nuxt-link>
-          </div>
-        </div>
+      <div class="product-card__actions">
+        <nuxt-link :to="productLink"
+          class="flex items-center overflow-hidden border border-primary text-primary rounded-lg group py-3.5 px-9 whitespace-nowrap product-card__button">
+          View Details
+          <span class="inline-block ml-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.75 12H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </span>
+        </nuxt-link>
       </div>
     </div>
+
   </div>
 </template>
 
@@ -59,10 +57,12 @@ const { product } = defineProps({
   bg: {
     type: String,
     default: () => 'bg-gray-50'
+  },
+  productLink: {
+    type: String,
+    required: true
   }
 })
-
-const pathName = ref(`demo/${product.slug}`);
 
 </script>
 
