@@ -73,9 +73,11 @@ const description =
 const mobileMenuOpen = ref(false);
 const { data, error } = await useGraphqlQuery({ query: HOMEPAGE_QUERY });
 const homepage = data._rawValue.homepage;
-const latestProducts = data._rawValue.allProducts;
+const latestProducts = data._rawValue.allProducts.map(item => ({ ...item, image: item.banner.url }));
 const latestPosts = data._rawValue.allPosts;
 const route = useRoute();
+
+console.log({ latestProducts, latestPosts, homepage, val: data.value })
 
 useHead({
   link: [
