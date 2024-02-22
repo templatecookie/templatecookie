@@ -17,10 +17,7 @@
     </div>
     <section class="bg-gray-50">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 py-24">
-        <div
-          class="mx-auto mt-12 grid gap-5 lg:max-w-none sm:grid-cols-2 lg:grid-cols-3"
-          v-if="posts.length"
-        >
+        <div class="mx-auto mt-12 grid gap-5 lg:max-w-none sm:grid-cols-2 lg:grid-cols-3" v-if="posts.length">
           <blog-item :item="item" v-for="(item, i) in posts" :key="i" />
         </div>
         <div v-else>No post found</div>
@@ -33,8 +30,8 @@
 import ALL_BLOG_QUERY from "~/graphql/blog/allBlogPosts.js";
 import store from "~/store";
 const route = useRoute();
-const title = `Blog - Templatecookie.com`;
-const description = "Discover tech insights and innovation at the Templatecookie blog. Stay informed and inspired within the digital landscape.";
+const title = `Templatecookie Blog: Discover the Latest & Stay Updated`;
+const description = "Discover tech insights and innovation at the Templatecookie blog. Stay informed, inspired, and engaged with our diverse range of blog posts.";
 
 const { data } = await useGraphqlQuery({ query: ALL_BLOG_QUERY });
 const posts = data._rawValue.allPosts;
@@ -59,7 +56,7 @@ useHead({
 defineOgImage({
   component: "Blog",
   title: title,
-  description: `Don't have previous experience using our products? Read the documentation to learn more about the complex features and topics.`,
+  description: description,
   siteLogo,
 });
 </script>

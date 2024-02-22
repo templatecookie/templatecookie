@@ -3,7 +3,8 @@
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      datoCmsToken: process.env.DATO_CMS_TOKEN,
+      datoCmsToken:process.env.DATO_CMS_TOKEN,
+      envatoAccessToken:process.env.ENVATO_ACCESS_TOKEN
     },
   },
   ssr: true,
@@ -140,7 +141,6 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxt/image",
     "@nuxtjs/google-fonts",
-    "nuxt-phosphor-icons",
     "nuxt-simple-robots",
     "nuxt-simple-sitemap",
     'nuxt-og-image',

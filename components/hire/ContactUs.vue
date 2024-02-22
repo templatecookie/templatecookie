@@ -2,8 +2,8 @@
   <div id="contact"
     class="overflow-hidden bg-white py-16 px-4 sm:px-6 lg:px-8 lg:py-24 pb-48 bg-hireus-banner bg-no-repeat bg-cover">
     <div class="relative mx-auto max-w-xl">
-      <svg class="absolute left-full translate-x-1/2 transform" width="404" height="404" fill="none"
-        viewBox="0 0 404 404" aria-hidden="true">
+      <svg class="absolute left-full translate-x-1/2 transform" width="404" height="404" fill="none" viewBox="0 0 404 404"
+        aria-hidden="true">
         <defs>
           <pattern id="85737c0e-0916-41d7-917f-596dc7edfa27" x="0" y="0" width="20" height="20"
             patternUnits="userSpaceOnUse">
@@ -55,8 +55,8 @@
                     <label for="inf_field_LastName" class="flex mb-1.5 text-sm">Last Name <span
                         class="text-sm text-red-600">*</span></label>
                     <input id="inf_field_LastName" name="inf_field_LastName" placeholder="Last Name"
-                      class="transition-all w-full duration-300 rounded-md hover:bg-gray-50 focus:bg-gray-50"
-                      type="text" required />
+                      class="transition-all w-full duration-300 rounded-md hover:bg-gray-50 focus:bg-gray-50" type="text"
+                      required />
                   </div>
                 </div>
                 <div class="flex flex-col md:flex-row gap-5 items-start">
@@ -64,10 +64,9 @@
                     <label for="inf_field_Email" class="flex mb-1.5 text-sm">Email <span
                         class="text-sm text-red-600">*</span></label>
                     <input id="inf_field_Email" name="inf_field_Email" placeholder="Email" v-model="email"
-
-                      class="transition-all duration-300 w-full rounded-md hover-bg-gray-50 focus-bg-gray-50"
-                      type="email" required />
-                      <span v-if="!isValidEmail" class="text-red-500">Your email is invalid !</span>
+                      class="transition-all duration-300 w-full rounded-md hover-bg-gray-50 focus-bg-gray-50" type="email"
+                      required />
+                    <span v-if="!isValidEmail" class="text-red-500">Your email is invalid !</span>
                   </div>
                   <div class="infusion-field w-full">
                     <label for="inf_custom_Chooseyourbudget" class="flex mb-1.5 text-sm">Choose your budget <span
@@ -110,28 +109,27 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        email: '',
-        isValidEmail: true,
-      };
+export default {
+  data() {
+    return {
+      email: '',
+      isValidEmail: true,
+    };
+  },
+  methods: {
+    validateEmail(e) {
+      const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+      this.isValidEmail = emailRegex.test(this.email);
+      if (!this.isValidEmail) {
+        e.preventDefault();
+      }
     },
-    methods: {
-      validateEmail(e) {
-        const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
-        this.isValidEmail = emailRegex.test(this.email);
-        if(!this.isValidEmail) {
-          e.preventDefault();
-        }
-        console.log(isValidEmail)
-      },
-    },
-  };
+  },
+};
 </script>
 
 <style>
-  .error-message {
-    color: red;
-  }
+.error-message {
+  color: red;
+}
 </style>

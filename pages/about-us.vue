@@ -5,11 +5,8 @@
     <about-our-story />
 
     <!-- team members  -->
-    <team-section
-      title="Team Expertise"
-      :members="teamMembers"
-      description="Our team of highly skilled developers specializes in Custom software and website development. With years of experience, they possess in-depth knowledge of our products and are committed to delivering exceptional support."
-    />
+    <team-section title="Team Expertise" :members="teamMembers"
+      description="Our team of highly skilled developers specializes in Custom software and website development. With years of experience, they possess in-depth knowledge of our products and are committed to delivering exceptional support." />
 
     <!-- Our values  -->
     <about-our-values />
@@ -18,9 +15,9 @@
 </template>
 
 <script setup>
-const title = "About Us | Templatecookie - Your Digital Success Partner";
+const title = "About us | Best software and web app development company";
 const description =
-  "Discover Templatecookie's journey to excellence and commitment to innovation, quality, and client satisfaction. Your digital success partner.";
+  "Discover Templatecookie. We are more than a software and web app development company. we are your trusted partner on the journey to success.";
 
 useSeoMeta({
   title: title,

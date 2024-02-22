@@ -3,9 +3,7 @@
     <div class="bg-primary py-12">
       <div class="mx-auto max-w-7xl px-4 sm:px-6">
         <div class="text-center max-w-4xl m-auto pt-6">
-          <h1
-            class="text-white text-5xl font-semibold mb-6 lg:mb-9 tracking-ls02"
-          >
+          <h1 class="text-white text-5xl font-semibold mb-6 lg:mb-9 tracking-ls02">
             Product Roadmap
           </h1>
           <p class="text-white text-lg mb-6 lg:mb-9 max-w-xl m-auto font-light">
@@ -35,7 +33,7 @@ useHead({
   ],
 });
 
-const title = "Templatecookie Product Roadmap | Explore Our Innovation Journey";
+const title = "Navigate Your Product Journey with TemplateCookie's Roadmap";
 const description =
   "Stay in the loop with Templatecookie's Product Roadmap. Witness innovation in action, submit your ideas, and vote on upcoming features. Join us in shaping the future of our products.";
 

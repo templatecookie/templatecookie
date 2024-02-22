@@ -6,6 +6,67 @@ category: Others
 ---
 
 # Changelog
+## February
+### v3.10.11 - 14th February 2024
+
+```
+- fix: Translations page pagination issue fixed.
+- fix: Time zone updating issue fixed.
+
+- improve: Only applied candidates can download resumes.
+
+- style:  RTL  related design issues fixed.
+```
+### v3.10.7 - 6th February 2024
+
+```
+
+- fix:  Corrected salary type addition.
+- fix:  Resolved education and experience issue.
+- fix:  Ensured top Company card responsiveness.
+- fix:  Enhanced mobile search menu design.
+- fix:  Fixed mobile menu responsiveness.
+- fix:  Optimized global variables with caching.
+- fix:  Rectified Home page caching issue.
+```
+## January
+### v3.10.0 - 30th January 2024
+
+```
+- feat: Multiple homepages support added.
+- feat: Ability to create custom pages.
+
+- fix: Resolved an issue with application updates.
+- fix: Fixed a slug creation issue for company on the admin side.
+- fix: Addressed a query issue related to locations.
+```
+### v3.8.6 - 11th January 2024
+
+```
+- fix: Email name update issue. 
+- fix: Job post FAQ select issue.
+- fix: Company profile date-picker issue.
+- fix: LinkedIn credential update issue.
+```
+### v3.8.2 - 4th January 2024
+
+```
+- improve:job search query
+
+- fix: Share job feature improve with two new icon , height width issue. 
+```
+### v3.8.0 - 1st January 2024
+
+```
+- feat: Now includes a daily currency rate update functionality.
+- feat: Send direct message from candidate list
+
+- fix: Post job tags not saved issue. 
+- fix: Date picker format issue.
+- fix: Share job feature improve issue.
+- fix: Tag filter not working issue.
+- fix: Dashboard data show issue
+```
 
 ## December
 ## v3.6.6 - 15th December, 2023

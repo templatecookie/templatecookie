@@ -23,8 +23,7 @@
               Partner with us today!
             </a>
             <h1 class="mt-4 text-4xl font-bold text-white sm:text-5xl lg:text-6xl lg:leading-snug">
-              Looking for Partner <br>
-              for your Next Project?
+              Looking for Partner for your Next Project? Hire TemplateCookie.
             </h1>
             <p data-aos="fade-up" data-aos-delay="300"
               class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg md:max-w-2xl mx-auto">
@@ -96,15 +95,14 @@
               <div class="infusion-field w-full">
                 <label for="inf_custom_Writemessage" class="flex mb-1.5 text-sm">Write message <span
                     class="text-sm text-red-600">*</span></label>
-                <textarea required id="inf_custom_Writemessage" name="inf_custom_Writemessage"
-                  placeholder="Write message" rows="5"
+                <textarea required id="inf_custom_Writemessage" name="inf_custom_Writemessage" placeholder="Write message"
+                  rows="5"
                   class="transition-all duration-300 flex w-full rounded-md hover:bg-gray-50 focus:bg-gray-50"></textarea>
               </div>
               <div class="infusion-submit">
                 <button
                   class="infusion-recaptcha inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-primary px-4 py-2 text-base font-medium text-white shadow-sm hover-bg-secondary"
-                  id="recaptcha_a686c8c396862f4b1d3fd2e84ff2f89f" type="submit"
-                  :disabled="!isValidEmail">Submit</button>
+                  id="recaptcha_a686c8c396862f4b1d3fd2e84ff2f89f" type="submit" :disabled="!isValidEmail">Submit</button>
               </div>
               <div class="hidden">
                 <div>&nbsp;</div>
@@ -118,28 +116,27 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        email: '',
-        isValidEmail: true,
-      };
+export default {
+  data() {
+    return {
+      email: '',
+      isValidEmail: true,
+    };
+  },
+  methods: {
+    validateEmail(e) {
+      const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+      this.isValidEmail = emailRegex.test(this.email);
+      if (!this.isValidEmail) {
+        e.preventDefault();
+      }
     },
-    methods: {
-      validateEmail(e) {
-        const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
-        this.isValidEmail = emailRegex.test(this.email);
-        if (!this.isValidEmail) {
-          e.preventDefault();
-        }
-        console.log(isValidEmail)
-      },
-    },
-  };
+  },
+};
 </script>
 
 <style>
-  .error-message {
-    color: red;
-  }
+.error-message {
+  color: red;
+}
 </style>

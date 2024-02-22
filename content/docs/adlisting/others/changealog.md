@@ -8,7 +8,81 @@ category: Others
 # Changelog
 
 ---
-## December
+## January
+### v4.11.0 - 30th January 2024
+```
+
+feat: Introducing the Application Promotion System.
+feat: Unread message count now displayed in the header.
+feat: Multiple homepages support added.
+
+
+fix: Resolved the issue where the location image was not found after clicking on the location.
+fix: Fixed the problem with categories in the admin listing create page.
+fix: Addressed the modal opening on reload issues.
+
+
+style: Redesigned the Ads List Category sidebar collapse for a more user-friendly design.
+style: Resolved map-related styling issues.
+```
+### v4.9.0 - 19th January 2024
+```
+- feat:Email SpamVerification.
+- feat: Add edit button to ad details page only for seller own ad.
+
+- fix: Location image not found after clicking the location.
+- fix: Meta tag issue.
+- fix: Direction issue.
+- fix: Modify profile menu.
+
+- improve: Optimize page loading. 
+
+- style: Adsense image size issues are fixed.
+- style: Rtl design issues are fixed.
+```
+### v4.7.0 - 12th January 2024
+
+```
+- feat: Stripe Recurring Plan.
+- feat: UX for Choosing categories and subcategories on the post-ad page.
+- feat: Ad resubmission.
+- feat: Location UX Dynamic.
+- feat: Affiliate System.
+
+- fix: Ads card design
+- fix: Category translate issue
+
+- style: 500 design issues are fixed.
+- style: Location show for mobile device also.
+```
+### v4.2.0 - 4th January 2024
+
+```
+- feat: Implemented SEO-friendly filtering.
+
+- fix: Resolved mail name update issue.
+- fix: Corrected translation problems.
+
+- style: Added a maintenance page.
+- style: Fixed header issues in post addition.
+```
+### v4.1.6 - 1st January 2024
+```
+fix: Featured Post limit crossover issue.
+fix: Fixed the Seller review problem.
+fix: Fixed Desktop version Ads display issue.
+
+improve: Hidden the Empty Data section for improved user experience.
+improve: 404 translate issue fix.
+
+style: My listing card issues are fixed.
+```
+### v4.1.0 - 28th December 2023
+```
+feat: Mobile Version search option add
+improve: Customer ads list status change rules
+style: Login page design improve
+```
 ### v4.0.5 - 25th December 2023
 ```
 - fix: Payment page issue fix
