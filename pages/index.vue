@@ -77,8 +77,6 @@ const latestProducts = data._rawValue.allProducts.map(item => ({ ...item, image:
 const latestPosts = data._rawValue.allPosts;
 const route = useRoute();
 
-console.log({ latestProducts, latestPosts, homepage, val: data.value })
-
 useHead({
   link: [
     {
