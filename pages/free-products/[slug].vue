@@ -2,8 +2,17 @@
   <div>
     <demo-header :product="product" v-if="product" />
     <demo-product-hero :product="product" v-if="product" />
+    <demo-product-stats />
+    <demo-product-payment-gateways :product="product" v-if="product" />
+    <demo-product-pages />
+
+    <demo-product-features />
+    <demo-product-testimonial />
     <demo-why-choose-our-product :product="product" v-if="product?.whyChooseUs" />
-    <div v-for="(section, index) in product?.contents" :key="index">
+    <demo-product-documentation />
+    <demo-product-support />
+    <demo-product-buynow />
+    <!-- <div v-for="(section, index) in product?.contents" :key="index">
       <div v-if="section.__typename == 'ExclusivefeatureRecord'">
         <demo-exclusive-feature :data="section" />
       </div>
@@ -16,23 +25,20 @@
       <div v-if="section.__typename == 'ProductctaRecord'">
         <demo-call-to-action :section="section" :product="product" />
       </div>
-      <div v-if="section.__typename == 'PriceplanRecord'">
-        <PricingSection :plans="section.plans" :id="section.sectionId ? section.sectionId : section.id"
-          :info="section.info[0]" :extra-offer="product.extraOffer"
-          :request-customization="product.offerRequestCustomization" />
-      </div>
       <div v-if="section.__typename == 'TestimonialSectionRecord'">
         <demo-testimonial-section :data="section" />
       </div>
       <div v-if="section.__typename == 'TechnologySectionRecord'">
         <demo-technology-section :data="section" :product="product" />
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script setup>
 import PRODUCT_DEMO from "~/graphql/productDemo";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 
 definePageMeta({
   layout: "empty",
@@ -72,6 +78,10 @@ defineOgImage({
   title: title,
   description: description,
   component: "Projects",
+});
+
+onMounted(() => {
+  AOS.init();
 });
 </script>
 

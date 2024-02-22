@@ -1,149 +1,89 @@
 <template>
-  <div class="bg-gray-50">
+  <div
+    class="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element.svg')] before:bg-no-repeat before:bg-top before:bg-cover before:w-full before:h-full before:-z-[1] before:transform before:-translate-x-1/2 bg-white/50"
+  >
     <div class="relative overflow-hidden">
-      <div
-        class="absolute md:block hidden inset-y-0 h-full w-full"
-        aria-hidden="true"
-      >
-        <div class="relative h-full">
-          <svg
-            class="absolute right-full translate-y-1/3 translate-x-1/4 transform sm:translate-x-1/2 md:translate-y-1/2 lg:translate-x-full"
-            width="404"
-            height="784"
-            fill="none"
-            viewBox="0 0 404 784"
-          >
-            <defs>
-              <pattern
-                id="e229dbec-10e9-49ee-8ec3-0286ca089edf"
-                x="0"
-                y="0"
-                width="20"
-                height="20"
-                patternUnits="userSpaceOnUse"
-              >
-                <rect
-                  x="0"
-                  y="0"
-                  width="4"
-                  height="4"
-                  class="text-gray-200"
-                  fill="currentColor"
-                />
-              </pattern>
-            </defs>
-            <rect
-              width="404"
-              height="784"
-              fill="url(#e229dbec-10e9-49ee-8ec3-0286ca089edf)"
-            />
-          </svg>
-          <svg
-            class="absolute left-full -translate-y-3/4 -translate-x-1/4 transform sm:-translate-x-1/2 md:-translate-y-1/2 lg:-translate-x-3/4"
-            width="404"
-            height="784"
-            fill="none"
-            viewBox="0 0 404 784"
-          >
-            <defs>
-              <pattern
-                id="d2a68204-c383-44b1-b99f-42ccff4e5365"
-                x="0"
-                y="0"
-                width="20"
-                height="20"
-                patternUnits="userSpaceOnUse"
-              >
-                <rect
-                  x="0"
-                  y="0"
-                  width="4"
-                  height="4"
-                  class="text-gray-200"
-                  fill="currentColor"
-                />
-              </pattern>
-            </defs>
-            <rect
-              width="404"
-              height="784"
-              fill="url(#d2a68204-c383-44b1-b99f-42ccff4e5365)"
-            />
-          </svg>
-        </div>
-      </div>
-
       <div class="relative pt-6 pb-16 sm:pb-24">
-        <div class="mx-auto mt-16 max-w-7xl px-4 sm:mt-24 sm:px-6">
+        <div
+          class="mx-auto mt-16 max-w-7xl px-4 sm:mt-24 sm:px-6"
+          data-aos="fade-in"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
           <div class="text-center">
             <h1
               class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl"
             >
-              <span class="block">{{ product.name }}</span>
+              <span
+                class="block bg-gradient-to-r from-primary to-red-600 bg-clip-text text-transparent"
+                >{{ product.name }}</span
+              >
             </h1>
             <p
-              class="mx-auto mt-3 max-w-md text-base text-gray-500 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl"
+              class="mx-auto mt-3 max-w-md text-base text-gray-900 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl"
             >
               {{ product.description }}
             </p>
           </div>
           <div class="mt-8 flex justify-center gap-4 flex-wrap">
-            <template
-              v-for="(item, index) in product.actionButtons"
-              :key="index"
+            <a
+              href="#"
+              class="transition duration-200 ease-linear inline-flex items-center justify-canter gap-2 border border-primary-500 py-2 px-4 rounded-md shadow-sm hover:bg-primary-500 hover:text-white text-gray-900 text-md"
             >
-              <a
-                v-if="item.target"
-                :href="item.href"
-                target="_blank"
-                class="block text-center sm:inline-block font-medium rounded-[7px] py-3.5 px-8 text-lg text-white duration-300 mb-3 sm:mb-0"
-                :class="
-                  item.cssClass ? item.cssClass : 'bg-primary hover:bg-dark'
-                "
-              >
-                {{ item.label }}
-              </a>
-              <nuxt-link
-                v-else
-                :to="item.href"
-                class="block text-center sm:inline-block bg-primary font-medium rounded-[7px] py-3.5 px-8 text-lg text-white duration-300 mb-3 sm:mb-0"
-                :class="
-                  item.cssClass ? item.cssClass : 'bg-primary hover:bg-dark'
-                "
-              >
-                {{ item.label }}
-              </nuxt-link>
-            </template>
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                  />
+                </svg>
+              </span>
+              Buy Now
+            </a>
+            <a
+              href="#"
+              class="transition duration-200 ease-linear inline-flex items-center justify-canter gap-2 border border-secondary py-2 px-4 rounded-md shadow-sm hover:bg-secondary hover:text-white text-gray-900 text-md"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"
+                  />
+                </svg>
+              </span>
+              Live Demo
+            </a>
           </div>
         </div>
       </div>
 
-      <div class="relative" v-if="product.demoBanner">
-        <div class="absolute inset-0 flex flex-col" aria-hidden="true">
-          <div class="flex-1" />
-          <div class="w-full flex-1 bg-gray-800" />
-        </div>
-        <div class="mx-auto max-w-7xl px-4 sm:px-6">
-          <NuxtImg
-            class="relative rounded-lg shadow-lg mx-auto w-full"
-            :src="product.demoBanner.url"
-            :alt="product.name"
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      class="bg-gray-800"
-      v-if="product.logoCloudsImages && product.logoCloudsTitle"
-    >
-      <div class="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-        <h2 class="text-center text-base font-semibold text-gray-400">
-          {{ product.logoCloudsTitle }}
-        </h2>
+      <div
+        class="relative mt-[-40px]"
+        v-if="product.demoBanner"
+        data-aos="fade-in"
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
         <swiper
-          class="swiper"
-          :slides-per-view="4"
-          :space-between="24"
+          class="swiper w-full md:w-[60%]"
+          :slides-per-view="2"
           :loop="true"
           :free-mode="true"
           :speed="10000"
@@ -152,15 +92,15 @@
             delay: 1,
             disableOnInteraction: false,
           }"
-          :breakpoints="breakpoints"
         >
           <swiper-slide
             class="mt-8 slider-full"
-            v-for="(item, index) in product.logoCloudsImages"
+            v-for="(item, index) in heroSliderImages"
             :key="index"
           >
             <div class="flex justify-center bg-white py-2 px-4 rounded">
-              <NuxtImg class="h-12" :src="item.url" :alt="item.alt" />
+              <!-- {{ item }} -->
+              <img class="h-12" :src="item" :alt="`images-slider-${index}`" />
             </div>
           </swiper-slide>
         </swiper>
@@ -169,55 +109,63 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/free-mode";
 import { FreeMode, Autoplay } from "swiper/modules";
+import HeroSlider1 from "~/assets/images/hero-slider-1.png";
+import HeroSlider2 from "~/assets/images/hero-slider-2.png";
+import HeroSlider3 from "~/assets/images/hero-slider-3.png";
+import HeroSlider4 from "~/assets/images/hero-slider-4.png";
+import HeroSlider5 from "~/assets/images/hero-slider-5.png";
 
-export default {
-  props: {
-    product: {
-      type: Object,
-      required: true,
-    },
+const props = defineProps({
+  product: {
+    type: Object,
+    required: true,
   },
-  data() {
-    return {
-      bgImage: "/img-five.png",
-      modules: [FreeMode, Autoplay],
+});
 
-      breakpoints: {
-        1199: {
-          slidesPerView: 4,
-        },
-        1024: {
-          slidesPerView: 3,
-        },
-        768: {
-          slidesPerView: 2,
-        },
-        640: {
-          slidesPerView: 2,
-        },
-        320: {
-          slidesPerView: 1,
-        },
-      },
-    };
-  },
-  methods: {
-    getBanner() {
-      return this.product.demoBanner && this.product.demoBanner.url
-        ? this.product.demoBanner.url
-        : this.bgImage;
-    },
-  },
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
-};
+const modules = [FreeMode, Autoplay];
+
+// const breakpoints = {
+//   1199: {
+//     slidesPerView: 4,
+//   },
+//   1024: {
+//     slidesPerView: 3,
+//   },
+//   768: {
+//     slidesPerView: 2,
+//   },
+//   640: {
+//     slidesPerView: 2,
+//   },
+//   320: {
+//     slidesPerView: 1,
+//   },
+// };
+
+const heroSliderImages = [
+  HeroSlider1,
+  HeroSlider2,
+  HeroSlider3,
+  HeroSlider4,
+  HeroSlider5,
+];
 </script>
 
-<style></style>
+<style scoped>
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+</style>
+
