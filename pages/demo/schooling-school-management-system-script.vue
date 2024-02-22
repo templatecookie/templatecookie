@@ -41,7 +41,7 @@ const product = {
   "id": "128748729",
   "name": "Schooling - The Ultimate PHP Script for Efficient School Management",
   "description": "Efficiently manage your school with Schooling. The all-in-one PHP script for schools with multi-language support, payment gateway integration, and powerful academic management features. Try it now.",
-  "docsUrl": "/docs/schooling/",
+  "docsUrl": "/docs/schooling/get-started/introduction",
   "previewUrl": "https://schooling.templatecookie.com/",
   "shortName": "Schooling",
   "offerRequestCustomization": true,
@@ -55,28 +55,36 @@ const product = {
   "logoCloudsTitle": "6 Different Payment Gateways Integrated",
   "logoCloudsImages": [
     {
+      "url": "https://www.datocms-assets.com/73511/1673600256-midtrans.svg",
+      "alt": 'midtrans'
+    },
+    {
+      "url": "https://www.datocms-assets.com/73511/1673600260-mollie-1.svg",
+      "alt": 'mollie'
+    },
+    {
       "url": "https://www.datocms-assets.com/73511/1673600263-paypal.svg",
-      "alt": null
-    },
-    {
-      "url": "https://www.datocms-assets.com/73511/1673600269-stripe.svg",
-      "alt": null
-    },
-    {
-      "url": "https://www.datocms-assets.com/73511/1673600364-flutterwave.png",
-      "alt": null
+      "alt": "paypal"
     },
     {
       "url": "https://www.datocms-assets.com/73511/1673600266-razorpay_logo.svg",
-      "alt": null
+      "alt": "razorpay"
     },
     {
-      "url": "https://www.datocms-assets.com/73511/1673600256-midtrans.svg",
-      "alt": null
+      "url": "https://www.datocms-assets.com/73511/1673600269-stripe.svg",
+      "alt": "stripe"
+    },
+    {
+      "url": "https://www.datocms-assets.com/73511/1673600364-flutterwave.png",
+      "alt": "flutterwave"
+    },
+    {
+      "url": "https://www.datocms-assets.com/73511/1673600370-instamojo.png",
+      "alt": "instamojo"
     },
     {
       "url": "https://www.datocms-assets.com/73511/1673600375-sslcommerz.png",
-      "alt": null
+      "alt": "sslcommerz"
     }
   ],
   "seo": {
@@ -375,7 +383,7 @@ useHead({
   link: [
     {
       rel: "canonical",
-      href: "https://templatecookie.com" + route.path,
+      href: "https://www.templatecookie.com" + route.path,
     },
   ],
 });

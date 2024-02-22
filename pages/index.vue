@@ -11,7 +11,8 @@
     <home-top-features-section v-if="homepage && homepage.topFeatures" :data="homepage.topFeatures" />
     <section class="py-32 bg-gray-50">
       <div class="text-center mb-10">
-        <h1 class="text-4xl md:text-heading-40 textdark mb-6 max-w-680 mx-auto font-semibold"> Browse Our Free Products
+        <h1 class="text-4xl md:text-heading-40 textdark mb-6 max-w-680 mx-auto font-semibold">
+          Browse Our Free Products
         </h1>
         <p class="text-lg md:text-lg textdark mb-8 max-w-full md:max-w-536 mx-auto font-light">
           Browse our latest products
@@ -72,7 +73,7 @@ const description =
 const mobileMenuOpen = ref(false);
 const { data, error } = await useGraphqlQuery({ query: HOMEPAGE_QUERY });
 const homepage = data._rawValue.homepage;
-const latestProducts = data._rawValue.allProducts;
+const latestProducts = data._rawValue.allProducts.map(item => ({ ...item, image: item.banner.url }));
 const latestPosts = data._rawValue.allPosts;
 const route = useRoute();
 

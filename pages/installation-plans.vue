@@ -23,8 +23,8 @@
               :value="'id' + item?.product?.id" v-model="selectedProduct" :checked="'id' + products[0].product.id" />
             <label :for="'id' + item?.product?.id">
               <div @click="scrollDown" class="flex items-center gap-3 rounded-xl p-5" :class="selectedProduct === `id${item?.product?.id}`
-                  ? 'border-2 border-[#0B63E5] bg-white'
-                  : 'bg-gray-f0 border-2 border-transparent'
+                ? 'border-2 border-[#0B63E5] bg-white'
+                : 'bg-gray-f0 border-2 border-transparent'
                 ">
                 <div class="flex-shrink-0" v-if="item?.product?.thumbnail">
                   <NuxtImg class="w-16 h-16 object-cover rounded-md" :src="item.product.thumbnail.url"
@@ -94,7 +94,7 @@ useHead({
   link: [
     {
       rel: "canonical",
-      href: "https://templatecookie.com" + route.path,
+      href: "https://www.templatecookie.com" + route.path,
     },
   ],
 });

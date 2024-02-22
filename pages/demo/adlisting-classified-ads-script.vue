@@ -42,7 +42,7 @@ const product = {
   "id": "17994908",
   "name": "Adlisting - Classified Ads PHP Script",
   "description": "Adlisting is a premium PHP script with minimal, clean, flexible, and structured code. Using the script you can create stunning ad listing websites to buy/sell classified ads and generate revenues.",
-  "docsUrl": "/docs/adlisting",
+  "docsUrl": "/docs/adlisting/getting-started/introduction",
   "previewUrl": "https://adlisting.templatecookie.com/",
   "shortName": "Adlisting",
   "offerRequestCustomization": null,
@@ -461,7 +461,7 @@ useHead({
   link: [
     {
       rel: "canonical",
-      href: "https://templatecookie.com" + route.path,
+      href: "https://www.templatecookie.com" + route.path,
     },
   ],
 });

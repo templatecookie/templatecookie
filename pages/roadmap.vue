@@ -28,7 +28,7 @@ useHead({
   link: [
     {
       rel: "canonical",
-      href: "https://templatecookie.com" + route.path,
+      href: "https://www.templatecookie.com" + route.path,
     },
   ],
 });
