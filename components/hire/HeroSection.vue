@@ -33,15 +33,15 @@
             </p>
           </div>
         </div>
-        <!-- <div class="mt-16 sm:mt-24 lg:col-span-6 lg:mt-0">
+        <div class="mt-16 sm:mt-24 lg:col-span-6 lg:mt-0">
           <div
             id="hubspotForm"
             class="px-6 pb-4 pt-8 bg-white sm:mx-auto sm:w-full sm:max-w-lg sm:overflow-hidden sm:rounded-lg"
             data-aos="zoom-in"
           />
-        </div> -->
+        </div>
       </div>
-      <div class="w-full mt-12 mx-auto xl:w-2/5 md:w-3/5 sm:w-4/5">
+      <!-- <div class="w-full mt-12 mx-auto xl:w-2/5 md:w-3/5 sm:w-4/5">
         <div
           class="relative z-10 h-auto p-8 py-10 overflow-hidden bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7"
           data-rounded="rounded-lg" data-rounded-max="rounded-full" data-aos="fade-up" data-aos-delay="400">
@@ -110,28 +110,28 @@
             </div>
           </form>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      email: '',
-      isValidEmail: true,
-    };
-  },
-  methods: {
-    validateEmail(e) {
-      const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
-      this.isValidEmail = emailRegex.test(this.email);
-      if (!this.isValidEmail) {
-        e.preventDefault();
-      }
-    },
-  },
+  // data() {
+  //   return {
+  //     email: '',
+  //     isValidEmail: true,
+  //   };
+  // },
+  // methods: {
+  //   validateEmail(e) {
+  //     const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+  //     this.isValidEmail = emailRegex.test(this.email);
+  //     if (!this.isValidEmail) {
+  //       e.preventDefault();
+  //     }
+  //   },
+  // },
 };
 </script>
 

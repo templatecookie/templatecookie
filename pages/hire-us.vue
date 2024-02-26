@@ -9,62 +9,80 @@
 </template>
 
 <script setup>
-import store from "~/store";
+  import store from "~/store";
 
-const title = "Hire TemplateCookie: Your experienced tech Partner";
-const description =
-  "Discover the power of collaboration with TemplateCookie. Our expert team specializes in SaaS and web app development, ready to turn your ideas into reality";
-const route = useRoute();
-const siteLogo = store.global?.logo?.url;
+  const title = "Hire TemplateCookie: Your experienced tech Partner";
+  const description =
+    "Discover the power of collaboration with TemplateCookie. Our expert team specializes in SaaS and web app development, ready to turn your ideas into reality";
+  const route = useRoute();
+  const siteLogo = store.global?.logo?.url;
 
-useSeoMeta({
-  title: title,
-  ogTitle: title,
-  description: description,
-  ogDescription: description,
-  ogImage: "/social-meta.png",
-});
+  useSeoMeta({
+    title: title,
+    ogTitle: title,
+    description: description,
+    ogDescription: description,
+    ogImage: "/social-meta.png",
+  });
 
-useHead({
-  link: [
-    {
-      rel: "canonical",
-      href: "https://www.templatecookie.com" + route.path,
-    },
-  ],
-  script: [
-    {
-      type: "text/javascript",
-      src: "https://pbj887.infusionsoft.app/app/webTracking/getTrackingCode",
-    },
-    {
-      type: "text/javascript",
-      src: "https://pbj887.infusionsoft.com/resources/external/recaptcha/production/recaptcha.js?b=1.70.0.599909",
-    },
-    {
-      src: "https://www.google.com/recaptcha/api.js?onload=onloadInfusionRecaptchaCallback&render=explicit",
-      async: "async",
-      defer: "defer",
-    },
-    {
-      type: "text/javascript",
-      src: "https://pbj887.infusionsoft.com/app/timezone/timezoneInputJs?xid=a686c8c396862f4b1d3fd2e84ff2f89f",
-    },
-    {
-      type: "text/javascript",
-      src: "https://pbj887.infusionsoft.com/js/jquery/jquery-3.3.1.js",
-    },
-    {
-      type: "text/javascript",
-      src: "https://pbj887.infusionsoft.app/app/webform/overwriteRefererJs",
-    },
-  ],
-});
+  useHead({
+    link: [
+      {
+        rel: "canonical",
+        href: "https://www.templatecookie.com" + route.path,
+      },
+    ],
+    script: [
+      {
+        type: "text/javascript",
+        src: "https://pbj887.infusionsoft.app/app/webTracking/getTrackingCode",
+      },
+      {
+        type: "text/javascript",
+        src: "https://pbj887.infusionsoft.com/resources/external/recaptcha/production/recaptcha.js?b=1.70.0.599909",
+      },
+      {
+        src: "https://www.google.com/recaptcha/api.js?onload=onloadInfusionRecaptchaCallback&render=explicit",
+        async: "async",
+        defer: "defer",
+      },
+      {
+        type: "text/javascript",
+        src: "https://pbj887.infusionsoft.com/app/timezone/timezoneInputJs?xid=a686c8c396862f4b1d3fd2e84ff2f89f",
+      },
+      {
+        type: "text/javascript",
+        src: "https://pbj887.infusionsoft.com/js/jquery/jquery-3.3.1.js",
+      },
+      {
+        type: "text/javascript",
+        src: "https://pbj887.infusionsoft.app/app/webform/overwriteRefererJs",
+      },
+    ],
+  });
 
-defineOgImage({
-  component: "Hireus",
-  title: title,
-  description: description,
-  siteLogo: siteLogo,
-});
+
+  onMounted(() => {
+    const script = document.createElement("script");
+    script.src = "https://js.hsforms.net/forms/v2.js";
+    document.body.appendChild(script);
+    script.addEventListener("load", () => {
+      if (window.hbspt) {
+        window.hbspt.forms.create({
+          region: "na1",
+          portalId: "22174697",
+          formId: "55ae1706-e17a-40a0-81db-275fc2d1030a",
+          target: "#hubspotForm",
+        });
+      }
+    });
+  });
+
+
+  defineOgImage({
+    component: "Hireus",
+    title: title,
+    description: description,
+    siteLogo: siteLogo,
+  });
 </script>
